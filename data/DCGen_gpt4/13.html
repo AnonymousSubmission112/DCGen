@@ -1,0 +1,523 @@
+<html><body><p>
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Replicated Webpage</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: white;
+        }
+
+        .navbar-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .navbar-links a {
+            text-decoration: none;
+            color: #444;
+            font-size: 16px;
+        }
+
+        .auth-buttons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .auth-buttons a {
+            text-decoration: none;
+            color: #444;
+            padding: 10px 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .auth-buttons a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .auth-buttons .sign-up {
+            background-color: #5bc0de;
+            color: white;
+            border: none;
+        }
+
+        .auth-buttons .sign-up:hover {
+            background-color: #39b3d7;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .hero {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+
+        .hero img {
+            width: 300px;
+            height: 200px;
+        }
+
+        .hero-content {
+            max-width: 50%;
+            text-align: left;
+            margin-left: 20px;
+        }
+
+        .hero-content h1 {
+            font-size: 32px;
+            margin: 0 0 10px 0;
+        }
+
+        .hero-content p {
+            font-size: 16px;
+            margin: 0 0 20px 0;
+        }
+
+        .hero-content .sign-up-btn {
+            display: inline-block;
+            background-color: #08b;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        .info-blocks {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .info-block {
+            width: 230px;
+            padding: 20px;
+            color: white;
+            border-radius: 10px;
+        }
+
+        .info-block.gray {
+            background-color: #555;
+        }
+
+        .info-block.black {
+            background-color: #222;
+        }
+
+        .info-block.purple {
+            background-color: #7a1fa2;
+        }
+
+        .info-block h4 {
+            margin-top: 0;
+        }
+
+        .features-container {
+            padding: 40px;
+            background-color: #fff;
+        }
+
+        .features-container h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .feature-item {
+            display: flex;
+            margin-bottom: 20px;
+        }
+
+        .feature-item img {
+            width: 40px;
+            height: 40px;
+            margin-right: 15px;
+        }
+
+        .feature-item div {
+            flex: 1;
+        }
+
+        .feature-item h3 {
+            font-size: 18px;
+            margin: 0;
+            color: #333;
+        }
+
+        .feature-item p {
+            margin: 5px 0 0;
+            color: #666;
+        }
+
+        .notice {
+            color: #4caf50;
+            font-weight: bold;
+        }
+
+        .underline-link {
+            text-decoration: underline;
+        }
+
+        .discover-button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 20px;
+            background-color: #6200ee;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+
+        .section {
+            padding: 50px 0;
+            text-align: center;
+            background-color: #f8f9fa;
+        }
+
+        .section h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .content-container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 30px;
+            padding: 0 15%;
+        }
+
+        .code-block {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            padding: 20px;
+            text-align: left;
+            border-radius: 5px;
+            width: 45%;
+        }
+
+        .code-block code {
+            display: block;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+
+        .feature-list {
+            text-align: left;
+            width: 45%;
+        }
+
+        .feature-list div {
+            margin-bottom: 10px;
+        }
+
+        .container-cta {
+            display: flex;
+            justify-content: space-around;
+            padding: 2rem 0;
+            background-color: #f9f9f9;
+        }
+
+        .card {
+            width: 30%;
+            text-align: center;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 1rem;
+            background-color: #ffffff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 1rem;
+        }
+
+        .card h3 {
+            font-size: 1.25rem;
+            margin: 0.5rem 0;
+        }
+
+        .card p {
+            font-size: 0.875rem;
+            color: #606060;
+        }
+
+        .cta-section {
+            text-align: center;
+            padding: 50px 0;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 50px 0;
+        }
+
+        .cta-section h2 {
+            font-size: 24px;
+            color: #212529;
+            margin-bottom: 20px;
+        }
+
+        .cta-section .cta-button {
+            display: inline-block;
+            padding: 12px 24px;
+            font-size: 16px;
+            color: #ffffff;
+            background-color: #17a2b8;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+
+        .footer {
+            background-color: #2a2a2a;
+            color: white;
+            padding: 60px 0;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .footer a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .footer .footer-section {
+            margin: 0 20px;
+        }
+
+        .footer .footer-section h4 {
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+
+        .footer .footer-section ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .footer .footer-section ul li {
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+
+        .footer .footer-section ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-bottom {
+            margin-top: 30px;
+            font-size: 12px;
+            text-align: center;
+            width: 100%;
+        }
+
+        .title {
+            text-align: center;
+            font-size: 20px;
+            color: #6c63ff;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="navbar">
+<img alt="Logo" height="40" src="placeholder.png" width="100"/>
+<div class="navbar-links">
+<a href="#">Product</a>
+<a href="#">Pricing</a>
+<a href="#">Resources</a>
+</div>
+<div class="auth-buttons">
+<a href="#">Log in</a>
+<a class="sign-up" href="#">Sign up</a>
+</div>
+</div>
+<div class="container">
+<div class="hero">
+<img alt="Placeholder Image" src="placeholder.png"/>
+<div class="hero-content">
+<h1>Documentation simplified</h1>
+<p>Build, host, and share documentation, all with a single platform.</p>
+<a class="sign-up-btn" href="#">Sign up now</a>
+</div>
+<img alt="Placeholder Image" src="placeholder.png"/>
+</div>
+<div class="info-blocks">
+<div class="info-block gray">
+<h4>Easy previews and deploys</h4>
+<p>Preview changes on every commit to your pull requests. Release documentation to your users on each merge.</p>
+</div>
+<div class="info-block black">
+<h4>Ideal developer experience</h4>
+<p>Write documentation without changing your workflow or your tools using a docs as code approach.</p>
+</div>
+<div class="info-block purple">
+<h4>Work privately or publicly</h4>
+<p>Easily share within your team or with the whole world. Manage permissions yourself or automatically with GitHub.</p>
+</div>
+</div>
+</div>
+<div class="features-container">
+<h2>Features</h2>
+<div class="feature-item">
+<img alt="Feature Icon" src="placeholder.png"/>
+<div>
+<h3>Supports any doc tool</h3>
+<p>Integrated support for <a class="underline-link" href="#">Sphinx</a>, <a class="underline-link" href="#">MkDocs</a>, <a class="underline-link" href="#">Jupyter Book</a>. Flexible enough to work with any documentation tool.</p>
+</div>
+</div>
+<div class="feature-item">
+<img alt="Feature Icon" src="placeholder.png"/>
+<div>
+<h3>Integrated search</h3>
+<p>Easily search all your docs via our dashboard, and offer your users a more powerful search with our search API.</p>
+</div>
+</div>
+<div class="feature-item">
+<img alt="Feature Icon" src="placeholder.png"/>
+<div>
+<h3>Pull request previews</h3>
+<p>Preview each pull request before releasing any changes, allowing for fast collaboration across your organization.</p>
+</div>
+</div>
+<div class="feature-item">
+<img alt="Feature Icon" src="placeholder.png"/>
+<div>
+<h3>Versioned docs</h3>
+<p>Match your product release cycle with multiple versions of your docs. Automatically build versions from any branch or tag.</p>
+</div>
+</div>
+<div class="feature-item">
+<img alt="Feature Icon" src="placeholder.png"/>
+<div>
+<h3>Private repository support <span class="notice">Paid plan feature</span></h3>
+<p>Clone private repositories using a connected GitHub, GitLab, or Bitbucket account, or clone from any Git provider with an SSH key.</p>
+</div>
+</div>
+<div class="feature-item">
+<img alt="Feature Icon" src="placeholder.png"/>
+<div>
+<h3>Single Sign On <span class="notice">Paid plan feature</span></h3>
+<p>Control who has access to your documentation with integrated authentication. Enable <span class="underline-link">$50 with GitHub</span> or <span class="underline-link">$60 with GitLab</span> to easily manage permissions in one place.</p>
+</div>
+</div>
+<a class="discover-button" href="#">Discover all our features</a>
+</div>
+<section class="section">
+<h2>Upgrade your documentation with Read the Docs</h2>
+<div class="content-container">
+<div class="code-block">
+<code>
+                    version: 2<br/>
+                    build:<br/>
+                      os: ubuntu-22.04<br/>
+                    tools:<br/>
+                      python: "3.10"<br/>
+                      # You can also specify other tool versions:<br/>
+                      # nodejs: "16"<br/>
+                      # Build documentation in the docs/ directory with Sphinx<br/>
+                    sphinx:<br/>
+                      config_file: docs/conf.py<br/>
+                      # Dependencies required to build your docs<br/>
+                    python:<br/>
+                      install:<br/>
+                        requirements: docs/requirements.txt
+                </code>
+</div>
+<div class="feature-list">
+<div>Create an account<br/><sub>Sign up with GitHub or your email.</sub></div>
+<div>Import your project<br/><sub>Select from a list of git repositories with a 1-click interface.</sub></div>
+<div>Add YAML config<br/><sub>Copy the template, it probably does what you want.</sub></div>
+<div>Your docs build on every commit<br/><sub>Like magic.</sub></div>
+</div>
+</div>
+</section>
+<div class="container-cta">
+<div class="card">
+<img alt="Flask" src="placeholder.png"/>
+<h3>Flask</h3>
+<em>Web Framework</em>
+<p>Flask is a Python web framework built with a small core and easy-to-extend philosophy.</p>
+</div>
+<div class="card">
+<img alt="Jupyter" src="placeholder.png"/>
+<h3>Jupyter</h3>
+<em>Data Science Environment</em>
+<p>Jupyter Notebook is a web-based interactive computational environment for creating notebook documents.</p>
+</div>
+<div class="card">
+<img alt="Godot Engine" src="placeholder.png"/>
+<h3>Godot Engine</h3>
+<em>Game Engine</em>
+<p>Godot Engine is a free and open source community-driven 2D and 3D game engine.</p>
+</div>
+</div>
+<div class="cta-section">
+<h2>Get your docs online in 5 minutes.</h2>
+<a class="cta-button" href="#">Create an account</a>
+</div>
+<div class="footer">
+<div class="footer-section">
+<h4>STAY UPDATED</h4>
+<ul>
+<li><a href="#">Blog</a></li>
+<li><a href="#">Newsletter</a></li>
+<li><a href="#">Status</a></li>
+</ul>
+</div>
+<div class="footer-section">
+<h4>LEARN MORE</h4>
+<ul>
+<li><a href="#">Documentation</a></li>
+<li><a href="#">Getting started guide</a></li>
+<li><a href="#">Configure your project</a></li>
+<li><a href="#">Comparison to GitHub Pages</a></li>
+<li><a href="#">Comparison to GitLab</a></li>
+<li><a href="#">Comparison to Cloudflare Pages</a></li>
+</ul>
+</div>
+<div class="footer-section">
+<h4>PRODUCT</h4>
+<ul>
+<li><a href="#">Features</a></li>
+<li><a href="#">Pricing</a></li>
+<li><a href="#">Privacy Policy</a></li>
+<li><a href="#">Terms of Service</a></li>
+</ul>
+</div>
+<div class="footer-section">
+<h4>COMPANY</h4>
+<ul>
+<li><a href="#">About us</a></li>
+<li><a href="#">Support</a></li>
+<li><a href="#">Advertise with Us</a></li>
+<li><a href="#">Contribute</a></li>
+</ul>
+</div>
+</div>
+<div class="footer-bottom">
+        © Copyright 2022, Read the Docs, Inc &amp; Contributors
+    </div>
+</body>
+</html>
+</p></body></html>

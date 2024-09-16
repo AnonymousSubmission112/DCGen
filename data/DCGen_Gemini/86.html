@@ -1,0 +1,398 @@
+<html><body><p>
+<!DOCTYPE html>
+
+<html>
+<head>
+<style>
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f2f2f2;
+}
+
+.header {
+  background-color: white;
+  padding: 20px 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.header-left img {
+  height: 17px;
+  width: 17px;
+  margin-right: 10px;
+}
+
+.header-left h1 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #007bff;
+  margin: 0;
+}
+
+.header-left p {
+  font-size: 16px;
+  color: #333;
+  margin: 5px 0;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.header-right .social-buttons {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.social-buttons button {
+  background-color: #ccc;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.social-buttons button:hover {
+  opacity: 0.8;
+}
+
+.social-buttons button.blue {
+  color: #007bff;
+}
+
+.social-buttons button.pink {
+  color: #ff69b4;
+}
+
+.header-right .social-icons {
+  width: 104px;
+  height: 90px;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.social-icons .icon {
+  width: 40px;
+  height: 40px;
+  background-color: #ccc;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.social-icons .icon.purple {
+  background-color: #800080;
+}
+
+.social-icons .icon.blue {
+  background-color: #007bff;
+}
+
+.social-icons .icon.gray {
+  background-color: #ccc;
+}
+
+.social-icons .icon.light-purple {
+  background-color: #e0c0e0;
+}
+
+.social-icons .icon:hover {
+  opacity: 0.8;
+}
+
+.content {
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.content-left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.content-left h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: black;
+  margin: 0;
+}
+
+.content-left p {
+  font-size: 16px;
+  color: #333;
+  margin: 0;
+}
+
+.content-left .version {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.content-left .version h3 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+}
+
+.content-left .version .category {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.content-left .version .category h4 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+}
+
+.content-left .version .category .url {
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+}
+
+.content-left .version .category .url:hover {
+  background-color: #f2f2f2;
+}
+
+.content-left .version .category .url .copy {
+  font-size: 12px;
+  color: #333;
+  cursor: pointer;
+}
+
+.content-left .version .category .url .arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  background-color: #ccc;
+  border-radius: 50%;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.content-right {
+  width: 275px;
+  height: 185px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.content-right .learn-more {
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+}
+
+.content-right .description {
+  font-size: 16px;
+  color: #333;
+  margin: 0;
+}
+
+.content-right .icon {
+  width: 125px;
+  height: 125px;
+  background-color: #ccc;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.footer {
+  background-color: white;
+  padding: 20px 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-left {
+  display: flex;
+  align-items: center;
+}
+
+.footer-left img {
+  height: 42px;
+  width: 42px;
+  margin-right: 10px;
+}
+
+.footer-left p {
+  font-size: 16px;
+  color: #333;
+  margin: 0;
+}
+
+.footer-right {
+  display: flex;
+  align-items: center;
+}
+
+.footer-right p {
+  font-size: 16px;
+  color: #333;
+  margin: 0;
+}
+
+.footer-right a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.footer-right a:hover {
+  text-decoration: underline;
+}
+
+</style>
+</head>
+<body>
+<div class="container">
+<div class="header">
+<div class="header-left">
+<img alt="BootstrapCDN logo" src="placeholder.png"/>
+<h1>BootstrapCDN</h1>
+<p>The recommended CDN for Bootstrap, Font Awesome, Bootswatch and Bootstrap Icons</p>
+</div>
+<div class="header-right">
+<div class="social-buttons">
+<button class="blue">Follow @jsdelivr</button>
+<button class="pink">Sponsor</button>
+</div>
+<div class="social-icons">
+<div class="icon purple"><span>B</span></div>
+<div class="icon blue"><span>▶</span></div>
+<div class="icon gray"><span>✉</span></div>
+<div class="icon light-purple"><span>📷</span></div>
+</div>
+</div>
+</div>
+<div class="content">
+<div class="content-left">
+<h2>Quick Start</h2>
+<p>Get your production ready CDN links below. You can also automate your upgrades by pulling the latest versions from our API.</p>
+<div class="version">
+<h3>v5.3.2</h3>
+<div class="category">
+<h4>CSS</h4>
+<div class="url">
+<p>https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css</p>
+<div class="copy">Click to copy</div>
+</div>
+</div>
+<div class="category">
+<h4>JavaScript</h4>
+<div class="url">
+<p>https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js</p>
+<div class="copy">Click to copy</div>
+</div>
+</div>
+<div class="category">
+<h4>JavaScript Bundle</h4>
+<div class="url">
+<p>https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js</p>
+<div class="copy">Click to copy</div>
+</div>
+</div>
+</div>
+<div class="version">
+<h3>v4.6.2</h3>
+<div class="category">
+<h4>CSS</h4>
+<div class="url">
+<p>https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css</p>
+<div class="copy">Click to copy</div>
+</div>
+</div>
+<div class="category">
+<h4>JavaScript</h4>
+<div class="url">
+<p>https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js</p>
+<div class="copy">Click to copy</div>
+</div>
+</div>
+<div class="category">
+<h4>JavaScript Bundle</h4>
+<div class="url">
+<p>https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js</p>
+<div class="copy">Click to copy</div>
+</div>
+</div>
+</div>
+</div>
+<div class="content-right">
+<div class="learn-more">LEARN MORE</div>
+<div class="description">Check what makes us production ready</div>
+<div class="icon"><img alt="Learn more icon" src="placeholder.png"/></div>
+</div>
+</div>
+<div class="footer">
+<div class="footer-left">
+<img alt="JSDelivr logo" src="placeholder.png"/>
+<p>Powered by jsDelivr and sponsored by Cloudflare, Fastly, NS1, BunnyCDN &amp; Dmitry Akulov</p>
+</div>
+<div class="footer-right">
+<a href="#">About</a>
+<a href="#">Privacy Policy</a>
+</div>
+</div>
+</div>
+</body>
+</html>
+</p></body></html>

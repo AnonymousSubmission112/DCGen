@@ -1,0 +1,238 @@
+<html><body><p>
+<!DOCTYPE html>
+
+<html>
+<head>
+<style>
+body {
+  background-color: #f0f2f5;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.header .logo {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-color: blue;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 24px;
+  float: right;
+}
+
+.header .logo:before {
+  content: "V";
+}
+
+.header hr {
+  margin-top: 10px;
+  border: 1px solid white;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.column {
+  width: 45%;
+}
+
+.column img {
+  width: 170px;
+  height: 170px;
+  margin: 20px auto;
+  display: block;
+}
+
+.form-container {
+  background-color: white;
+  padding: 20px;
+}
+
+.form-container h2 {
+  font-size: 24px;
+  color: white;
+  background-color: blue;
+  padding: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form-container input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.form-container input[type="text"]::placeholder {
+  font-size: 14px;
+}
+
+.form-container .checkbox {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.form-container .checkbox input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.form-container .checkbox label {
+  font-size: 14px;
+}
+
+.form-container .checkbox .icon {
+  margin-left: 10px;
+}
+
+.form-container button {
+  width: 100%;
+  padding: 10px;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.form-container .qr-code {
+  background-color: white;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+}
+
+.form-container .qr-code img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.form-container .qr-code p {
+  font-size: 14px;
+  margin: 0;
+}
+
+.form-container .qr-code a {
+  color: blue;
+  text-decoration: none;
+}
+
+.form-container .button-green {
+  background-color: #4CAF50;
+  margin-bottom: 10px;
+}
+
+.form-container .button-gray {
+  background-color: #ccc;
+}
+
+.form-container p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.form-container .footer {
+  font-size: 12px;
+  margin-top: 20px;
+}
+
+.footer {
+  background-color: #f0f2f5;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #555;
+}
+
+.footer a {
+  color: #555;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+</style>
+</head>
+<body>
+<div class="header">
+<div class="logo"></div>
+<h1>VK for mobile devices</h1>
+<p>Install our official mobile app and stay in touch with your friends anytime and anywhere.</p>
+<hr/>
+</div>
+<div class="container">
+<div class="column">
+<img alt="Mobile phone 1" src="placeholder.png"/>
+<img alt="Mobile phone 2" src="placeholder.png"/>
+</div>
+<div class="column form-container">
+<h2>Sign in to VK</h2>
+<input placeholder="Phone or email" type="text"/>
+<div class="checkbox">
+<input id="saveUser" type="checkbox"/>
+<label for="saveUser">Save user</label>
+<span class="icon">?</span>
+</div>
+<button>Sign in</button>
+<div class="qr-code">
+<img alt="QR code" src="placeholder.png"/>
+<p>Quick login with QR code</p>
+<p>Use your phone's camera</p>
+<a href="#">Learn more</a>
+</div>
+<button class="button-green">Sign up</button>
+<button class="button-gray">Create business page</button>
+<p>After signing up, you'll get access to all of VK ID's features</p>
+<a href="#">Learn more</a>
+<p class="footer">Recommendation technologies used</p>
+</div>
+</div>
+<div class="footer">
+<a href="#">Google Play</a>
+<a href="#">RuStore</a>
+<a href="#">App Store</a>
+<a href="#">All products &gt;</a>
+<div>
+<p>Quick login with QR code</p>
+<p>Use your phone's camera</p>
+<a href="#">Learn more</a>
+<button class="button-green">Sign up</button>
+<button class="button-gray">Create business page</button>
+<p>After signing up, you'll get access to all of VK ID's features</p>
+<a href="#">Learn more</a>
+<p>Recommendation technologies used</p>
+</div>
+<div>
+<p>VK © 2006-2024</p>
+<a href="#">About VK</a>
+<a href="#">Terms</a>
+<a href="#">Developers</a>
+<a href="#">Русский</a>
+<a href="#">English</a>
+<a href="#">All languages</a>
+</div>
+</div>
+</body>
+</html>
+</p></body></html>

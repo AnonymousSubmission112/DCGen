@@ -1,0 +1,378 @@
+<html><body><p>
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Shutterstock</title>
+<style>
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+header {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+nav {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.cta {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #f00;
+  color: #fff;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.cta:hover {
+  opacity: 0.8;
+}
+
+main {
+  padding: 20px;
+  text-align: center;
+}
+
+.hero-text {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.category-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.category-item {
+  margin: 0 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.category-icon {
+  display: inline-block;
+  margin-right: 5px;
+  font-size: 20px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 300px;
+  margin-right: 10px;
+}
+
+.search-button {
+  background-color: #f00;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.search-button:hover {
+  opacity: 0.8;
+}
+
+.search-by-image {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #f00;
+  color: #fff;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+.search-by-image:hover {
+  opacity: 0.8;
+}
+
+.trending-tags {
+  margin-bottom: 20px;
+}
+
+.trending-tags p {
+  font-size: 14px;
+  margin: 0;
+}
+
+.footer {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer p {
+  margin: 0;
+}
+
+.footer-link {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+.credits-info {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.credits-info .credit-count {
+  margin-right: 5px;
+}
+
+.credits-info .dropdown {
+  background-color: #fff;
+  color: #333;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.credits-info .dropdown:hover {
+  opacity: 0.8;
+}
+
+.user-actions {
+  display: flex;
+  align-items: center;
+}
+
+.user-actions .icon {
+  margin-right: 10px;
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.user-actions .icon:hover {
+  opacity: 0.8;
+}
+
+.user-actions .button {
+  margin-left: 10px;
+  padding: 8px 16px;
+  background-color: #fff;
+  color: #000;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.user-actions .button:hover {
+  opacity: 0.8;
+}
+
+.nav-dropdown {
+  position: absolute;
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 10px;
+  display: none;
+}
+
+.nav-dropdown li {
+  margin-bottom: 5px;
+}
+
+.nav-dropdown a {
+  color: #333;
+  text-decoration: none;
+}
+
+.nav-dropdown a:hover {
+  text-decoration: underline;
+}
+
+.nav-item:hover .nav-dropdown {
+  display: block;
+}
+
+.down-arrow {
+  font-size: 16px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.down-arrow:hover {
+  opacity: 0.8;
+}
+</style>
+</head>
+<body>
+<header>
+<div class="logo">shutterstock</div>
+<nav>
+<li class="nav-item"><a href="#">Images</a>
+<div class="nav-dropdown">
+<li><a href="#">All Images</a></li>
+<li><a href="#">Editorial</a></li>
+</div>
+<span class="down-arrow">▼</span>
+</li>
+<li class="nav-item"><a href="#">Video</a>
+<div class="nav-dropdown">
+<li><a href="#">All Videos</a></li>
+<li><a href="#">Footage</a></li>
+</div>
+<span class="down-arrow">▼</span>
+</li>
+<li class="nav-item"><a href="#">Browse Content</a>
+<div class="nav-dropdown">
+<li><a href="#">All Content</a></li>
+<li><a href="#">Collections</a></li>
+</div>
+<span class="down-arrow">▼</span>
+</li>
+<li class="nav-item"><a href="#">Design</a>
+<div class="nav-dropdown">
+<li><a href="#">All Design</a></li>
+<li><a href="#">Templates</a></li>
+</div>
+<span class="down-arrow">▼</span>
+</li>
+<li class="nav-item"><a href="#">Enterprise</a>
+<div class="nav-dropdown">
+<li><a href="#">All Enterprise</a></li>
+<li><a href="#">Solutions</a></li>
+</div>
+<span class="down-arrow">▼</span>
+</li>
+</nav>
+<div>
+<span>Get 10 royalty-free image downloads each month with a cost-saving subscription.</span>
+<a class="cta" href="#">Buy now</a>
+</div>
+<div class="credits-info">
+<span class="credit-count">0</span>
+<span class="dropdown">Credits Available</span>
+</div>
+<nav>
+<li><a href="#">Pricing</a></li>
+</nav>
+<div class="user-actions">
+<span class="icon">🌎</span>
+<span class="icon">♥</span>
+<span class="icon">🛒</span>
+<a class="button" href="#">Log in</a>
+<a class="button" href="#">Sign up</a>
+</div>
+</header>
+<main>
+<h1 class="hero-text">One library, millions of ways to tell your story</h1>
+<div class="category-list">
+<div class="category-item">
+<span class="category-icon">📷</span>
+<span>Images</span>
+</div>
+<div class="category-item">
+<span class="category-icon">▶</span>
+<span>Video</span>
+</div>
+<div class="category-item">
+<span class="category-icon">📃</span>
+<span>Editorial</span>
+</div>
+<div class="category-item">
+<span class="category-icon">🎵</span>
+<span>Music</span>
+</div>
+<div class="category-item">
+<span class="category-icon">🔊</span>
+<span>Sound effects</span>
+</div>
+<div class="category-item">
+<span class="category-icon">📄</span>
+<span>Templates</span>
+</div>
+<div class="category-item">
+<span class="category-icon">🤖</span>
+<span>AI generator</span>
+</div>
+</div>
+<div class="search-bar">
+<span class="category-icon">📷</span>
+<select class="search-input">
+<option value="all-images">All Images</option>
+<option value="editorial">Editorial</option>
+</select>
+<input class="search-input" placeholder="Start your next project" type="text"/>
+<button class="search-button">🔍</button>
+<a class="search-by-image" href="#">📷 Search by image</a>
+</div>
+<div class="trending-tags">
+<p>Trending: happy birthday, thank you, background, congratulations, welcome</p>
+</div>
+</main>
+<footer class="footer">
+<p>Photo by <a class="footer-link" href="#">Craig Taylor Photography</a></p>
+<p>We have more than 500,000,000 assets on Shutterstock.com as of March 31, 2024.</p>
+<p><a class="footer-link" href="#">Learn more about Shutterstock's license</a></p>
+<span class="down-arrow">▼</span>
+</footer>
+</body>
+</html>
+</p></body></html>

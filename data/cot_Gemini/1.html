@@ -1,0 +1,278 @@
+<html><body><p>
+<!DOCTYPE html>
+
+<html>
+<head>
+<style>
+body {
+  background-color: #f0f2f5;
+  font-family: sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px auto;
+  max-width: 960px;
+  padding: 0 20px;
+}
+
+.left-content {
+  width: 45%;
+}
+
+.right-content {
+  width: 45%;
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.app-images {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.app-image {
+  width: 150px;
+  height: 150px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-image img {
+  width: 50px;
+  height: 50px;
+}
+
+.download-links {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.download-link {
+  color: #3b5998;
+  text-decoration: none;
+}
+
+.download-link i {
+  margin-right: 5px;
+}
+
+.download-link:hover {
+  text-decoration: underline;
+}
+
+.all-products {
+  color: #3b5998;
+  text-decoration: none;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.vk-logo {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 20px;
+}
+
+.sign-in-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.save-user {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.save-user input {
+  margin-right: 5px;
+}
+
+.save-user i {
+  color: #999;
+  font-size: 12px;
+}
+
+.sign-in-button {
+  background-color: #4267b2;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.qr-code-section {
+  margin-top: 20px;
+}
+
+.qr-code-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.qr-code-description {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.qr-code-image {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.learn-more {
+  color: #3b5998;
+  text-decoration: none;
+}
+
+.learn-more:hover {
+  text-decoration: underline;
+}
+
+.sign-up-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.sign-up-description {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  padding: 0 20px;
+  color: #999;
+  font-size: 14px;
+}
+
+.footer a {
+  color: #999;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.language-links {
+  display: flex;
+}
+
+.language-link {
+  margin-left: 10px;
+  color: #3b5998;
+  text-decoration: none;
+}
+
+.language-link:hover {
+  text-decoration: underline;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="left-content">
+<img alt="VK logo" class="logo" src="placeholder.png"/>
+<h1 class="title">VK for mobile devices</h1>
+<p class="description">Install our official mobile app and stay in touch with your friends anytime and anywhere.</p>
+<div class="app-images">
+<div class="app-image">
+<img alt="Google Play" src="placeholder.png"/>
+</div>
+<div class="app-image">
+<img alt="RuStore" src="placeholder.png"/>
+</div>
+<div class="app-image">
+<img alt="App Store" src="placeholder.png"/>
+</div>
+</div>
+<div class="download-links">
+<a class="download-link" href="#"><i></i> Google Play</a>
+<a class="download-link" href="#"><i></i> RuStore</a>
+<a class="download-link" href="#"><i></i> App Store</a>
+</div>
+<a class="all-products" href="#">All products &gt;</a>
+</div>
+<div class="right-content">
+<img alt="VK logo" class="vk-logo" src="placeholder.png"/>
+<h2 class="sign-in-title">Sign in to VK</h2>
+<input class="input-field" placeholder="Phone or email" type="text"/>
+<div class="save-user">
+<input type="checkbox"/>
+<span>Save user</span>
+<i class="fa fa-question-circle"></i>
+</div>
+<button class="sign-in-button">Sign in</button>
+<div class="qr-code-section">
+<h3 class="qr-code-title">Quick login with QR code</h3>
+<p class="qr-code-description">Use your phone's camera</p>
+<img alt="QR code" class="qr-code-image" src="placeholder.png"/>
+<a class="learn-more" href="#">Learn more</a>
+</div>
+<button class="sign-up-button">Sign up</button>
+<p class="sign-up-description">After signing up, you'll get access to all of VK ID's features</p>
+<a class="learn-more" href="#">Learn more</a>
+<p>Recommendation technologies used</p>
+</div>
+</div>
+<div class="footer">
+<p>VK © 2006-2024</p>
+<div>
+<a class="footer-link" href="#">About VK</a>
+<a class="footer-link" href="#">Terms</a>
+<a class="footer-link" href="#">Developers</a>
+</div>
+<div class="language-links">
+<a class="language-link" href="#">Русский</a>
+<a class="language-link" href="#">English</a>
+<a class="language-link" href="#">All languages</a>
+</div>
+</div>
+</body>
+</html>
+</p></body></html>

@@ -1,0 +1,498 @@
+<html><body><p>
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Mediavine</title>
+<style>
+        body {
+            margin: 0;
+            font-family: 'Helvetica Neue', sans-serif;
+            background-color: #f4f4f4;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 100px;
+            background-color: #fff;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 10;
+        }
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            font-size: 24px;
+            color: #333;
+        }
+        .logo img {
+            width: 100px;
+        }
+        nav {
+            display: flex;
+            gap: 30px;
+        }
+        nav a {
+            color: #333;
+            text-decoration: none;
+        }
+        .nav-dropdown {
+            position: relative;
+        }
+        .nav-dropdown ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #fff;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 10px;
+            border-radius: 4px;
+        }
+        .nav-dropdown ul li {
+            margin-bottom: 10px;
+        }
+        .nav-dropdown ul li a {
+            color: #333;
+        }
+        .nav-dropdown:hover ul {
+            display: block;
+        }
+        .search-button {
+            display: flex;
+            align-items: center;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 8px 12px;
+            cursor: pointer;
+        }
+        .search-button img {
+            width: 16px;
+        }
+        .search-button span {
+            margin-left: 8px;
+            font-size: 16px;
+            color: #333;
+        }
+        .apply-button {
+            background-color: #0088c2;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 4px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .hero {
+            background-color: #fff;
+            padding: 100px;
+        }
+        .hero-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .hero-text {
+            font-size: 48px;
+            font-weight: 700;
+            color: #333;
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
+        .hero-description {
+            font-size: 18px;
+            color: #555;
+            line-height: 1.5;
+        }
+        .hero-image {
+            width: 400px;
+            height: 300px;
+            border-radius: 8px;
+            background-color: #ddd;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        .hero-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .hero-button {
+            display: inline-block;
+            background-color: #0088c2;
+            color: #fff;
+            padding: 12px 24px;
+            border-radius: 4px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+        .hero-play-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 50%;
+            border: none;
+            cursor: pointer;
+        }
+        .hero-play-button img {
+            width: 30px;
+        }
+        .section {
+            padding: 100px;
+        }
+        .section-title {
+            font-size: 36px;
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .section-content {
+            display: flex;
+            gap: 30px;
+        }
+        .section-item {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+        }
+        .section-image {
+            width: 100%;
+            height: 200px;
+            border-radius: 8px;
+            background-color: #ddd;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .section-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .section-description {
+            font-size: 16px;
+            color: #555;
+            line-height: 1.5;
+        }
+        .section-button {
+            display: inline-block;
+            background-color: #0088c2;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 4px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+        .footer {
+            background-color: #222;
+            color: #fff;
+            padding: 50px;
+            text-align: center;
+        }
+        .footer-logo {
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+        .footer-logo img {
+            width: 100px;
+        }
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 20px;
+        }
+        .footer-links a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .footer-social {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        .footer-social a {
+            background-color: #fff;
+            color: #222;
+            padding: 10px;
+            border-radius: 50%;
+            text-decoration: none;
+        }
+        .footer-info {
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+        .footer-copyright {
+            font-size: 12px;
+        }
+        .section-item {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+        }
+        .section-item::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #0088c2;
+            opacity: 0.05;
+            border-radius: 8px;
+            z-index: -1;
+        }
+        .section-item:hover::before {
+            opacity: 0.2;
+        }
+        .section-item:hover .section-title {
+            color: #0088c2;
+        }
+        .section-title {
+            font-size: 24px;
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .section-description {
+            font-size: 14px;
+            color: #555;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+        .section-button {
+            display: inline-block;
+            background-color: #0088c2;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 4px;
+            border: none;
+            cursor: pointer;
+            font-size: 14px;
+            margin-top: 20px;
+        }
+        .section-image {
+            width: 100%;
+            height: 250px;
+            border-radius: 8px;
+            background-color: #ddd;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .section-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .section-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+        .section-item {
+            flex: 1 1 300px;
+        }
+        .section-item.wide {
+            flex: 1 1 600px;
+        }
+        .hero-content {
+            gap: 50px;
+        }
+        .hero-text {
+            font-size: 56px;
+        }
+        .hero-image {
+            width: 500px;
+            height: 350px;
+        }
+        .hero-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .hero-play-button {
+            background-color: #fff;
+            padding: 12px;
+        }
+        .hero-play-button img {
+            width: 36px;
+        }
+        .footer-links {
+            margin-bottom: 30px;
+        }
+        .footer-social {
+            margin-bottom: 30px;
+        }
+        .footer-info {
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+        .footer-copyright {
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+<header>
+<div class="logo">
+<img alt="Mediavine Logo" src="placeholder.png"/>
+</div>
+<nav>
+<a href="#">About</a>
+<div class="nav-dropdown">
+<a href="#">Ad Management</a>
+<ul>
+<li><a href="#">Advertisers</a></li>
+<li><a href="#">Blog</a></li>
+</ul>
+</div>
+<a href="#">Products</a>
+<a href="#">Events</a>
+<a href="#">Dashboard</a>
+<a href="#">Help</a>
+<a href="#">Contact Us</a>
+</nav>
+<div>
+<div class="search-button">
+<img alt="Search Icon" src="placeholder.png"/>
+<span>Search</span>
+</div>
+<button class="apply-button">Apply</button>
+</div>
+</header>
+<main>
+<section class="hero">
+<div class="hero-content">
+<div>
+<h1 class="hero-text">Full-Service Ad Management</h1>
+<p class="hero-description">Building sustainable businesses for content creators.</p>
+<button class="hero-button">Apply Now</button>
+</div>
+<div class="hero-image">
+<img alt="Hero Image" src="placeholder.png"/>
+<div class="hero-play-button">
+<img alt="Play Button" src="placeholder.png"/>
+</div>
+</div>
+</div>
+</section>
+<section class="section">
+<h2 class="section-title">Welcome to Mediavine</h2>
+<p class="section-description">As your exclusive, full-service ad management partner, Mediavine does the heavy lifting so you can focus on creating amazing content.</p>
+<div class="section-content">
+<div class="section-item wide">
+<img alt="Section Image" src="placeholder.png"/>
+</div>
+<div class="section-item">
+<h3 class="section-title">Who We Are</h3>
+<p class="section-description">Mediavine was founded by content creators, for content creators. Our goal is to provide your readers with the best possible user experience and you with maximum earnings, all with full transparency.</p>
+</div>
+</div>
+</section>
+<section class="section">
+<div class="section-content">
+<div class="section-item">
+<h3 class="section-title">Mediavine is for You</h3>
+<p class="section-description">Whether you're a fashionista, world traveler, recipe developer or DIY guru, we've got you covered. We serve bloggers in every lifestyle niche, from finance to fitness.</p>
+</div>
+<div class="section-item">
+<img alt="Section Image" src="placeholder.png"/>
+</div>
+</div>
+</section>
+<section class="section">
+<div class="section-content">
+<div class="section-item">
+<img alt="Section Image" src="placeholder.png"/>
+</div>
+<div class="section-item wide">
+<h3 class="section-title">Advertisers and Brands</h3>
+<p class="section-description">Mediavine is a Top 20 Comscore property, exclusively reaching over 125 million monthly unique visitors. With best-in-class technology and a commitment to traffic quality and brand safety, we ensure optimal performance for your campaigns.</p>
+<button class="section-button">Programmatic Advertising</button>
+</div>
+</div>
+</section>
+<section class="section">
+<h2 class="section-title">Our Team is Your Team</h2>
+<p class="section-description">When you join Mediavine, you gain a partner dedicated to your business success. Our support team provides help around the clock, every day of the week.</p>
+<p class="section-description">If you're creating amazing and original content, whatever it may be, we're here to help you grow. Ads are just the beginning.</p>
+<button class="section-button">Apply Now</button>
+<div class="section-content">
+<div class="section-item wide">
+<img alt="Section Image" src="placeholder.png"/>
+</div>
+</div>
+</section>
+</main>
+<footer class="footer">
+<div class="footer-logo">
+<img alt="Mediavine Logo" src="placeholder.png"/>
+</div>
+<div class="footer-links">
+<a href="#">Dashboard</a>
+<a href="#">Help</a>
+<a href="#">Products</a>
+<a href="#">Newsroom</a>
+<a href="#">SEO Like A CEO</a>
+<a href="#">On Air Podcast</a>
+<a href="#">Mediavine Live</a>
+<a href="#">COVID-19</a>
+<a href="#">Careers</a>
+<a href="#">Recruiter Advocacy</a>
+<a href="#">Publishers Page</a>
+<a href="#">Status Page</a>
+<a href="#">Contact Us</a>
+</div>
+<div class="footer-social">
+<a href="#">
+<img alt="LinkedIn Icon" src="placeholder.png"/>
+</a>
+<a href="#">
+<img alt="Facebook Icon" src="placeholder.png"/>
+</a>
+<a href="#">
+<img alt="Twitter Icon" src="placeholder.png"/>
+</a>
+<a href="#">
+<img alt="Instagram Icon" src="placeholder.png"/>
+</a>
+<a href="#">
+<img alt="YouTube Icon" src="placeholder.png"/>
+</a>
+</div>
+<div class="footer-info">
+            159 W 25th St., Suite #427
+        </div>
+<div class="footer-info">
+            NY, NY 10001
+        </div>
+<div class="footer-info">
+            888-705-1246
+        </div>
+<div class="footer-copyright">
+<a href="#">BRAND SAFETY POLICY</a> | <a href="#">PRIVACY POLICY</a> | <a href="#">US PRIVACY NOTICE</a> | <a href="#">TERMS AND CONDITIONS</a> | © 2024 MEDIAVINE
+        </div>
+</footer>
+</body>
+</html>
+</p></body></html>

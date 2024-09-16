@@ -1,0 +1,421 @@
+<html><body><p>
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Replicated Webpage</title>
+<style>
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+        }
+
+        .header {
+            background-color: #b31b1b;
+            color: white;
+            text-align: right;
+            padding: 10px;
+            font-size: 12px;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            border-bottom: 1px solid #e5e5e5;
+        }
+
+        .nav img {
+            height: 50px;
+        }
+
+        .nav .links {
+            display: flex;
+            gap: 20px;
+            font-size: 16px;
+        }
+
+        .carousel {
+            position: relative;
+            background-color: #f3f3f3;
+            text-align: center;
+            padding: 60px 0;
+        }
+
+        .carousel img {
+            max-width: 100%;
+            max-height: 400px;
+        }
+
+        .carousel .caption {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 10px;
+            font-size: 24px;
+        }
+
+        .news {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+            border-bottom: 1px solid #e5e5e5;
+        }
+
+        .news-item, .chronicle {
+            background-color: #f9f9f9;
+            padding: 20px;
+            text-align: center;
+            width: 30%;
+        }
+
+        .chronicle {
+            border-left: 3px solid red;
+        }
+
+        .news img, .chronicle img {
+            max-width: 100%;
+            margin-bottom: 10px;
+        }
+
+        .events {
+            text-align: center;
+            padding: 20px;
+            border-bottom: 1px solid #e5e5e5;
+        }
+
+        .events p {
+            font-size: 14px;
+        }
+
+        .ticker {
+            display: flex;
+            overflow: hidden;
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+        }
+
+        .ticker-item {
+            flex: 1;
+            padding: 0 15px;
+            display: flex;
+            align-items: center;
+            white-space: nowrap;
+        }
+
+        .ticker-item img {
+            width: 50px;
+            height: 50px;
+            margin-right: 15px;
+        }
+
+        .ticker-title {
+            font-size: 14px;
+        }
+
+        .social {
+            background-color: #e9e9e9;
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        .social p {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .social button {
+            border: 2px solid red;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: white;
+            color: red;
+        }
+
+        .container {
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .left-section {
+            background: #f2f2f2;
+            width: 70%;
+            padding: 60px;
+            text-align: center;
+            position: relative;
+        }
+
+        .left-section img {
+            width: 100px;
+        }
+
+        .left-section p {
+            font-size: 24px;
+            margin: 20px 0;
+        }
+
+        .left-section button {
+            background: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .right-section {
+            background: #fff;
+            width: 30%;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #ccc;
+        }
+
+        .right-section img {
+            width: 100%;
+            height: auto;
+        }
+
+        .right-section button {
+            margin-top: 20px;
+            background: none;
+            color: #333;
+            padding: 10px 20px;
+            border: 1px solid #333;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .quote-section {
+            background-color: #4f4f4f;
+            color: white;
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        .quote {
+            font-size: 1.5em;
+            margin-bottom: 30px;
+        }
+
+        .author {
+            margin-bottom: 50px;
+            font-style: italic;
+        }
+
+        .button {
+            background-color: transparent;
+            border: 2px solid white;
+            color: white;
+            padding: 10px 30px;
+            text-transform: uppercase;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .button:hover {
+            background-color: white;
+            color: #4f4f4f;
+        }
+
+        .footer {
+            display: flex;
+            background-color: #1c1c1c;
+            color: white;
+            padding: 40px;
+            justify-content: space-between;
+        }
+
+        .footer-column {
+            flex: 1;
+        }
+
+        .footer-column h4 {
+            margin-top: 0;
+        }
+
+        .footer-links, .footer-visit {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .footer-links li, .footer-visit li {
+            margin-bottom: 10px;
+        }
+
+        .footer-links a, .footer-visit a {
+            color: #b5b5b5;
+            text-decoration: none;
+        }
+
+        .footer-section {
+            flex: 1;
+            padding: 0 20px;
+        }
+
+        .live-weather {
+            display: flex;
+            margin-bottom: 20px;
+        }
+
+        .live-weather div {
+            flex: 1;
+            text-align: center;
+            padding: 20px;
+            background-color: #333333;
+            margin-right: 10px;
+        }
+
+        .live-weather div:last-child {
+            margin-right: 0;
+        }
+
+        .footer-image {
+            width: 100%;
+            height: 200px;
+            background-image: url('placeholder.png');
+            background-size: cover;
+            background-position: center;
+        }
+
+    </style>
+</head>
+<body>
+<div class="header">
+    APPLY VISIT GIVE STUDENTS FAMILIES FACULTY &amp; STAFF ALUMNI
+  </div>
+<div class="nav">
+<img alt="Logo" src="placeholder.png"/>
+<div class="links">
+<a href="#">About Cornell</a>
+<a href="#">Admissions</a>
+<a href="#">Academics</a>
+<a href="#">Research</a>
+<a href="#">Public Engagement</a>
+<a href="#">Life at Cornell</a>
+</div>
+</div>
+<div class="carousel">
+<img alt="Carousel Image" src="placeholder.png"/>
+<div class="caption">High stalks: Could rhubarb be New York State’s next big crop?</div>
+</div>
+<div class="news">
+<div class="news-item">
+<img alt="News Image" src="placeholder.png"/>
+<p>Cornell gets ready for Commencement, Convocation</p>
+</div>
+<div class="news-item">
+<img alt="News Image" src="placeholder.png"/>
+<p>Community college transfers flourish at Cornell</p>
+</div>
+<div class="chronicle">
+<h2>Cornell Chronicle</h2>
+<p><strong>ENGAGEMENT</strong><br/>Students transmit health care data without cell service, internet</p>
+<p><strong>RESEARCH</strong><br/>Kenyan fishers face increased drowning risk from climate change</p>
+<p><strong>SUSTAINABILITY</strong><br/>Houston to Vatican climate summit: Ag is ‘most powerful weapon’</p>
+<p class="see-all"><a href="#">More News</a> | <a href="#">For media</a></p>
+</div>
+</div>
+<div class="events">
+<p><strong>IMPORTANT DATES</strong></p>
+<p>MAY 24 - University Commencement Weekend</p>
+<p>MAY 28 - Summer Special Session 1 and 2 Instruction Begins</p>
+<p>JUNE 19 - Juneteenth/Holiday/No Classes</p>
+</div>
+<div class="ticker">
+<div class="ticker-item">
+<img alt="Ticker Image" src="placeholder.png"/>
+<div class="ticker-title">Class of 2024 celebrated at Carnegie Hall Commencement</div>
+</div>
+<div class="ticker-item">
+<img alt="Ticker Image" src="placeholder.png"/>
+<div class="ticker-title">Hard work, personal stories bring speech team big wins</div>
+</div>
+<div class="ticker-item">
+<img alt="Ticker Image" src="placeholder.png"/>
+<div class="ticker-title">New method produces fresher, tastier cold-pressed Concord grape juice</div>
+</div>
+<div class="ticker-item">
+<img alt="Ticker Image" src="placeholder.png"/>
+<div class="ticker-title">Renovations to revitalize Sibley Dome as vibrant hub for AAP</div>
+</div>
+</div>
+<div class="social">
+<p>Explore #Cornell on Social Media</p>
+<button>SOCIAL MEDIA DIRECTORY</button>
+</div>
+<div class="container">
+<div class="left-section">
+<img alt="Large Placeholder Image" src="placeholder.png"/>
+<p>Cornellians are united by a shared purpose.</p>
+<button>EXPLORE</button>
+</div>
+<div class="right-section">
+<img alt="Small Placeholder Image" src="placeholder.png"/>
+<button>LEARN MORE</button>
+</div>
+</div>
+<div class="quote-section">
+<div class="quote">
+        “I would found an institution where any person can find instruction in any study.”
+    </div>
+<div class="author">EZRA CORNELL, 1868</div>
+<a class="button" href="#">Experience Cornell</a>
+</div>
+<div class="footer">
+<div class="footer-section">
+<div class="footer-column">
+<h4>Helpful Links</h4>
+<ul class="footer-links">
+<li><a href="#">Academic Calendar</a></li>
+<li><a href="#">Leadership</a></li>
+<li><a href="#">Careers</a></li>
+<li><a href="#">Events</a></li>
+<li><a href="#">News</a></li>
+<li><a href="#">Title IX</a></li>
+<li><a href="#">Emergency Preparedness</a></li>
+<li><a href="#">University Statements</a></li>
+</ul>
+</div>
+</div>
+<div class="footer-section">
+<div class="footer-column">
+<h4>Visiting Cornell</h4>
+<ul class="footer-visit">
+<li><a href="#">Campus and Virtual Tours</a></li>
+<li><a href="#">Maps &amp; Directions</a></li>
+<li><a href="#">Ithaca-NYC Travel</a></li>
+<li><a href="#">Johnson Museum</a></li>
+<li><a href="#">Botanic Gardens</a></li>
+<li><a href="#">Ithaca</a></li>
+</ul>
+</div>
+</div>
+<div class="footer-section">
+<div class="live-weather">
+<div>LIVE VIEW</div>
+<div>WEATHER<br/>74°F / 23°C</div>
+</div>
+<div class="footer-image"></div>
+</div>
+</div>
+</body>
+</html>
+</p></body></html>

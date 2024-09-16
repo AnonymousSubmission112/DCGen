@@ -1,0 +1,270 @@
+<html><body><p>
+<!DOCTYPE html>
+
+<html>
+<head>
+<style>
+body {
+  background-color: #f0f2f5;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.left-content {
+  width: 45%;
+}
+
+.right-content {
+  width: 45%;
+  padding: 20px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.images {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.image-container {
+  width: 140px;
+  height: 140px;
+  background-color: #f0f2f5;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container img {
+  width: 30px;
+  height: 30px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.button {
+  background-color: #4a76ca;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #3963bb;
+}
+
+.green-button {
+  background-color: #4CAF50;
+}
+
+.green-button:hover {
+  background-color: #3e8e41;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  margin-top: 30px;
+}
+
+.footer-left {
+  font-size: 14px;
+}
+
+.footer-right {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-link {
+  color: #4a76ca;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+}
+
+.sign-in-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.input-field {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox {
+  width: 16px;
+  height: 16px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-right: 5px;
+}
+
+.checkbox-checked {
+  background-color: #4a76ca;
+}
+
+.checkbox-label {
+  font-size: 14px;
+}
+
+.qr-code {
+  width: 80px;
+  height: 80px;
+  background-color: #f0f2f5;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.qr-code-label {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.learn-more {
+  color: #4a76ca;
+  text-decoration: none;
+}
+
+.learn-more:hover {
+  text-decoration: underline;
+}
+
+.create-business-page {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.create-business-page:hover {
+  background-color: #3e8e41;
+}
+
+.create-business-page-info {
+  font-size: 14px;
+  margin-top: 10px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="left-content">
+<h1>VK for mobile devices</h1>
+<p>Install our official mobile app and stay in touch with your friends anytime and anywhere.</p>
+<div class="images">
+<div class="image-container">
+<img alt="" src="placeholder.png"/>
+</div>
+<div class="image-container">
+<img alt="" src="placeholder.png"/>
+</div>
+</div>
+<div class="buttons">
+<button class="button">
+<img alt="Google Play" src="placeholder.png"/> Google Play
+      </button>
+<button class="button">
+<img alt="RuStore" src="placeholder.png"/> RuStore
+      </button>
+<button class="button">
+<img alt="App Store" src="placeholder.png"/> App Store
+      </button>
+</div>
+<a class="footer-link" href="#">All products &gt;</a>
+</div>
+<div class="right-content">
+<img alt="VK logo" class="logo" src="placeholder.png"/>
+<h2>Sign in to VK</h2>
+<div class="sign-in-container">
+<input class="input-field" placeholder="Phone or email" type="text"/>
+<div class="checkbox-container">
+<div class="checkbox checkbox-checked"></div>
+<label class="checkbox-label" for="save-user">Save user</label>
+<span class="footer-link">?</span>
+</div>
+<button class="button">Sign in</button>
+<div class="qr-code"></div>
+<p class="qr-code-label">Quick login with QR code</p>
+<p>Use your phone's camera</p>
+<a class="learn-more" href="#">Learn more</a>
+<button class="button green-button">Sign up</button>
+<button class="create-business-page">Create business page</button>
+<p class="create-business-page-info">After signing up, you'll get access to all of VK ID's features</p>
+<a class="learn-more" href="#">Learn more</a>
+</div>
+<p>Recommendation technologies used</p>
+</div>
+</div>
+<div class="footer">
+<div class="footer-left">
+    VK © 2006-2024
+  </div>
+<div class="footer-right">
+<a class="footer-link" href="#">About VK</a>
+<a class="footer-link" href="#">Terms</a>
+<a class="footer-link" href="#">Developers</a>
+<a class="footer-link" href="#">Русский</a>
+<a class="footer-link" href="#">English</a>
+<a class="footer-link" href="#">All languages</a>
+</div>
+</div>
+</body>
+</html>
+</p></body></html>

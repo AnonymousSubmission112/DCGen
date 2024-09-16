@@ -1,0 +1,488 @@
+<html><body><p>
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>阿里云公共DNS</title>
+<style>
+body {
+  margin: 0;
+  font-family: "PingFang SC", sans-serif;
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+.header {
+  background-color: #1a2952;
+  color: #fff;
+  padding: 15px 0;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header .logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.header .nav {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header .nav li {
+  margin-left: 20px;
+}
+
+.header .nav li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.hero {
+  background-color: #fff;
+  padding: 80px 0;
+}
+
+.hero .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero .title {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.hero .subtitle {
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+.hero .btn {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #ff6a00;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.hero .btn:hover {
+  opacity: 0.8;
+}
+
+.features {
+  background-color: #fff;
+  padding: 80px 0;
+}
+
+.features .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.features .feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  margin: 0 20px;
+}
+
+.features .feature img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 20px;
+}
+
+.features .feature h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.features .feature p {
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.how-to {
+  background-color: #fff;
+  padding: 80px 0;
+}
+
+.how-to .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.how-to .title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.how-to .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.how-to .left {
+  width: 300px;
+}
+
+.how-to .left h4 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.how-to .left ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.how-to .left li {
+  margin-bottom: 10px;
+}
+
+.how-to .left li span {
+  font-weight: bold;
+}
+
+.how-to .right {
+  width: 600px;
+}
+
+.how-to .right .img-container {
+  width: 200px;
+  height: 200px;
+  border: 1px solid #ddd;
+  margin-right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.how-to .right .img-container img {
+  width: 100%;
+  height: 100%;
+}
+
+.how-to .right .img-container:nth-child(1) {
+  margin-right: 40px;
+}
+
+.features-two {
+  background-color: #fff;
+  padding: 80px 0;
+}
+
+.features-two .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.features-two .feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 250px;
+  margin: 0 20px;
+}
+
+.features-two .feature img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 20px;
+}
+
+.features-two .feature h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.features-two .feature p {
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.footer {
+  background-color: #1a2952;
+  color: #fff;
+  padding: 40px 0;
+}
+
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer .copyright {
+  font-size: 14px;
+}
+
+.footer .links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer .links li {
+  margin-left: 20px;
+}
+
+.footer .links li a {
+  color: #fff;
+  text-decoration: none;
+}
+</style>
+</head>
+<body>
+<header class="header">
+<div class="container">
+<div class="logo">
+      阿里云公共DNS
+    </div>
+<ul class="nav">
+<li><a href="#">解决方案</a></li>
+<li><a href="#">知识中心</a></li>
+</ul>
+</div>
+</header>
+<section class="hero">
+<div class="container">
+<div class="title">
+      阿里云公共DNS
+    </div>
+<div class="subtitle">
+      更智能、更稳定、更高效的接入口
+    </div>
+<a class="btn" href="#">免费使用</a>
+<a class="btn" href="#">企业接入</a>
+</div>
+</section>
+<section class="features">
+<div class="container">
+<div class="feature">
+<img alt="快速" src="placeholder.png"/>
+<h3>快速</h3>
+<p>公共DNS(递归解析)+ 云解析(权威DNS)深度解析, 一站式DNS解析服务;</p>
+<p>先进技术不断改进与落地, 响应解析新价值.</p>
+</div>
+<div class="feature">
+<img alt="稳定" src="placeholder.png"/>
+<h3>稳定</h3>
+<p>全球数百台智能 DNS 设备, 多层级安全防控, 多年技术沉淀 &amp; 经验积累,  完善服务体系, 稳定高效服务;</p>
+</div>
+<div class="feature">
+<img alt="安全" src="placeholder.png"/>
+<h3>安全</h3>
+<p>支持用户EC5T技术, 增强解析, 支持DoT/DoH协议, 保护用户隐私, 安全快捷.</p>
+</div>
+</div>
+</section>
+<section class="how-to">
+<div class="container">
+<div class="title">
+      如何使用阿里云公共DNS
+    </div>
+<div class="content">
+<div class="left">
+<h4>企业用户</h4>
+<ul>
+<li>企业用户, 可按需接入, 更有智能运维, 更快.</li>
+</ul>
+<h4>普通用户</h4>
+<ul>
+<li>普通用户, 可以尝试公共DNS 的新功能, 享受更高效安全.</li>
+</ul>
+</div>
+<div class="right">
+<div class="img-container">
+<img alt="企业用户" src="placeholder.png"/>
+</div>
+<div class="img-container">
+<img alt="普通用户" src="placeholder.png"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="features-two">
+<div class="container">
+<div class="feature">
+<img alt="SDK" src="placeholder.png"/>
+<h3>SDK</h3>
+</div>
+<div class="feature">
+<img alt="DoH JSON API" src="placeholder.png"/>
+<h3>DoH JSON API</h3>
+</div>
+<div class="feature">
+<img alt="DoT/DoH" src="placeholder.png"/>
+<h3>DoT/DoH配置</h3>
+</div>
+</div>
+</section>
+<section class="how-to">
+<div class="container">
+<div class="content">
+<div class="left">
+<h4>传统DNS接入方法</h4>
+<ul>
+<li><span>Windows</span></li>
+<li><span>Linux</span></li>
+<li><span>macOS</span></li>
+</ul>
+</div>
+<div class="right">
+<div class="img-container">
+<img alt="传统DNS接入方法" src="placeholder.png"/>
+</div>
+<div class="img-container">
+<img alt="DoT接入方法" src="placeholder.png"/>
+</div>
+<div class="img-container">
+<img alt="DoH接入方法" src="placeholder.png"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="features-two">
+<div class="container">
+<div class="feature">
+<img alt="DoT接入方法" src="placeholder.png"/>
+<h3>DoT接入方法</h3>
+<p>Android</p>
+</div>
+<div class="feature">
+<img alt="DoH接入方法" src="placeholder.png"/>
+<h3>DoH接入方法</h3>
+<p>Firefox</p>
+<p>Chrome</p>
+</div>
+</div>
+</section>
+<section class="how-to">
+<div class="container">
+<div class="content">
+<div class="left">
+<h4>国内节点</h4>
+<ul>
+<li><span>青岛</span></li>
+<li><span>北京</span></li>
+<li><span>上海</span></li>
+<li><span>天津</span></li>
+<li><span>陕西</span></li>
+<li><span>辽宁</span></li>
+</ul>
+</div>
+<div class="right">
+<div class="img-container">
+<img alt="国内节点" src="placeholder.png"/>
+</div>
+<div class="img-container">
+<img alt="海外节点" src="placeholder.png"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="features-two">
+<div class="container">
+<div class="feature">
+<img alt="海外节点" src="placeholder.png"/>
+<h3>海外节点</h3>
+<p>麻布</p>
+<p>伦敦</p>
+<p>东京</p>
+<p>莫斯科</p>
+<p>洛杉矶</p>
+<p>达拉斯</p>
+<p>新加坡,  硅谷, 伦敦, 纽约,  德国,  瑞士, 
+        <br/>
+<p>印度,  新加坡及海外150个国家地区.</p>
+</p>
+</div>
+</div>
+</section>
+<section class="features-two">
+<div class="container">
+<div class="feature">
+<img alt="产品详情" src="placeholder.png"/>
+<h3>产品详情</h3>
+<p>云解析</p>
+<p>公共DNS服务</p>
+<p>全站加速 GTM</p>
+<p>内网DNS(Private Zone)</p>
+</div>
+<div class="feature">
+<img alt="联系我们" src="placeholder.png"/>
+<h3>联系我们</h3>
+</div>
+</div>
+</section>
+<section class="how-to">
+<div class="container">
+<div class="content">
+<div class="left">
+<img alt="联系我们" src="placeholder.png"/>
+</div>
+<div class="right">
+<img alt="联系我们" src="placeholder.png"/>
+</div>
+</div>
+</div>
+</section>
+<footer class="footer">
+<div class="container">
+<div class="copyright">
+      © 2024 alidns.com 版权所有 浙ICP备000002876-29
+    </div>
+<ul class="links">
+<li><a href="#">关于我们</a></li>
+<li><a href="#">联系我们</a></li>
+</ul>
+</div>
+</footer>
+</body>
+</html>
+</p></body></html>

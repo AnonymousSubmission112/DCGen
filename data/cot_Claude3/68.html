@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>UNPKG</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            font-size: 36px;
+            color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        li {
+            margin-bottom: 10px;
+        }
+        
+        code {
+            font-family: monospace;
+            background-color: #f2f2f2;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+        }
+        
+        .footer img {
+            max-width: 100px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>UNPKG</h1>
+        <p>unpkg is a fast, global content delivery network for everything on npm. Use it to quickly and easily load any file from any package using a URL.</p>
+        <p>unpkg.com/package@version/file</p>
+        
+        <h2>Examples</h2>
+        <p>Using a fixed version:</p>
+        <ul>
+            <li><code>unpkg.com/react@16.7.0/umd/react.production.min.js</code></li>
+            <li><code>unpkg.com/react-dom@16.7.0/umd/react-dom.production.min.js</code></li>
+        </ul>
+        <p>You may also use a semver range or a tag instead of a fixed version number, or omit the version to get the latest version (but this is not recommended because it can change unexpectedly).</p>
+        <ul>
+            <li><code>unpkg.com/react@^16/umd/react.production.min.js</code></li>
+            <li><code>unpkg.com/react/umd/react.production.min.js</code></li>
+        </ul>
+        <p>If you omit the file path for use it /dist/ (unpkg will serve the file specified by the unpkg field in package.json, or main if not set):</p>
+        <ul>
+            <li><code>unpkg.com/jquery</code></li>
+            <li><code>unpkg.com/d3</code></li>
+        </ul>
+        <p>Append a / at the end of a URL to view a listing of all the files in a package:</p>
+        <ul>
+            <li><code>unpkg.com/react/</code></li>
+            <li><code>unpkg.com/react-router/</code></li>
+        </ul>
+        
+        <h2>Query Parameters</h2>
+        <p><code>?meta</code></p>
+        <p>Return metadata about any file in a package as JSON (e.g. /any/file?meta).</p>
+        <p><code>?module</code></p>
+        <p>Expand all "bare" import specifiers to neighboring modules to unpkg URLs. This feature is very useful for creating CodePen/JSBin/JSFiddle demos.</p>
+        
+        <h2>Cache Behavior</h2>
+        <p>The CDN caches files based on their permanent URL which includes the npm package version. This works because npm does not allow package authors to overwrite a package that has already been published with a different one at the same version number.</p>
+        <p>Browsers are instructed via the Cache-Control header to cache assets indefinitely (1 year).</p>
+        <p>URLs that specify a fixed version number will be cached indefinitely. URLs without a version will be cached until the package.json file for the project gets a version bump. At that point, unpkg will serve the latest version when no version is specified, or the makeshift try/latest version where a semver range is given. Headers are cached for 10 minutes at the CDN's Edge locations.</p>
+        <p>If you want users to be able to get the latest version when you cut a new release, the best policy is to put the version number in your build tools in your deployment instructions. This will also make it more quickly because we won't have to resolve the latest version and redirect them.</p>
+        
+        <h2>Workflow</h2>
+        <p>For npm package authors, unpkg offloads the burden of publishing your node.js CDN or addition to the main registry. All you need to do is include your UMD build in your main package.json repo.</p>
+        <p>Here's an example:</p>
+        <p>You can do the easy things:</p>
+        <ul>
+            <li>Add the umd/ (or dist/) directory to your .gitignore file</li>
+            <li>Add the umd/ directory to your file .gitignore in package.json</li>
+            <li>Use a build script to generate your UMD build in the umd/ directory when you publish</li>
+        </ul>
+        <p>Then in Pros when you ship, npm@5 has now built a way to run a script on publish as well.</p>
+        
+        <h2>About</h2>
+        <p>unpkg is an open source project built and maintained by <a href="https://www.linkedin.com/in/mjackson/">Michael Jackson</a>. unpkg is not affiliated with or supported by npm, Inc. in any way. Please do not contact npm for help with unpkg. Instead, please reach out to us directly with any questions or concerns.</p>
+        <p>The unpkg CDN is powered by <a href="https://www.cloudflare.com/">Cloudflare</a>, one of the world's largest and fastest cloud network platforms.</p>
+        
+        <div class="footer">
+            <img src="placeholder.png" alt="Cloudflare Logo">
+            <p>The entire server runs on an immutable infrastructure provided by ci.pki. The app servers run in 17 cities around the world, and come and go based on active requests.</p>
+            <img src="placeholder.png" alt="Immutable Infrastructure">
+        </div>
+    </div>
+    
+    <div class="footer">
+        Built a code&nbsp; &copy; 2019 UNPKG
+    </div>
+</body>
+</html>

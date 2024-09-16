@@ -1,0 +1,197 @@
+<html><body><p>
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Document</title>
+<style>
+body {
+  margin: 0;
+  background-color: #f9f9f9;
+  font-family: sans-serif;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.top-bar button {
+  background-color: transparent;
+  border: none;
+  padding: 8px 12px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 16px;
+}
+
+.top-bar .menu {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.top-bar .menu span {
+  width: 30px;
+  height: 3px;
+  background-color: #333;
+  margin: 4px 0;
+  display: block;
+}
+
+.weather-card {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: #fff;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.weather-card .temp {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.weather-card .desc {
+  margin-top: 4px;
+  font-size: 14px;
+}
+
+.weather-card .icon {
+  width: 30px;
+  height: 30px;
+  background-color: #eee;
+  border-radius: 50%;
+  margin-left: auto;
+}
+
+.search-bar {
+  position: relative;
+  width: 80%;
+  margin: 100px auto 40px;
+  background-color: #fff;
+  padding: 12px 16px;
+  border-radius: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  padding: 0 16px;
+}
+
+.search-bar .icons {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.search-bar .icons svg {
+  width: 20px;
+  height: 20px;
+  fill: #333;
+  margin-left: 16px;
+  cursor: pointer;
+}
+
+.currency-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  width: 80%;
+  padding: 16px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.currency-info .currency {
+  display: flex;
+  align-items: center;
+}
+
+.currency-info .currency .icon {
+  width: 40px;
+  height: 40px;
+  background-color: #eee;
+  border-radius: 50%;
+  margin-right: 16px;
+}
+
+.currency-info .currency span {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.currency-info .price {
+  font-size: 16px;
+}
+
+.footer {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #fff;
+  padding: 12px 16px;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.footer svg {
+  width: 30px;
+  height: 30px;
+  fill: #888;
+}
+</style>
+</head>
+<body>
+<div class="top-bar">
+<button>Войти</button>
+<div class="menu">
+<span></span>
+<span></span>
+<span></span>
+</div>
+</div>
+<div class="weather-card">
+<div class="temp">Сегодня: сильный дождь</div>
+<div class="desc">+24...+26° - слабый ветер</div>
+<div class="desc">3 м/с</div>
+<div class="icon"></div>
+</div>
+<div class="search-bar">
+<input placeholder="Найдется всё" type="text"/>
+<div class="icons">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M16.65 0c-5.6 0-10.14 4.53-10.14 10.14 0 5.6 4.53 10.14 10.14 10.14 5.61 0 10.14-4.53 10.14-10.14 0-5.6-4.53-10.14-10.14-10.14zm-4.88 13.74c-1.4 1.4-3.7 1.4-5.1 0l-1.4-1.4c-1.4-1.4-1.4-3.7 0-5.1l1.4-1.4c1.4-1.4 3.7-1.4 5.1 0l1.4 1.4c1.4 1.4 1.4 3.7 0 5.1z"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M21.71 11.71a8 8 0 0 0-8.71-8.71H6.29a8 8 0 0 0-8.71 8.71V18.29a8 8 0 0 0 8.71 8.71h12.42a8 8 0 0 0 8.71-8.71V11.71zM12 18.29c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6z"></path></svg>
+</div>
+</div>
+<div class="currency-info">
+<div class="currency">
+<div class="icon"></div>
+<span>25°</span>
+</div>
+<div class="price">USD 90.25</div>
+<div class="price">EUR 97.88</div>
+<div class="price">Гонконг</div>
+</div>
+<div class="footer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"></path></svg>
+</div>
+</body>
+</html>
+</p></body></html>

@@ -1,0 +1,384 @@
+<html><body><p>
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Replicated Website Section</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        .alert-bar {
+            background-color: #f00;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+        .alert-bar a {
+            color: #fff;
+            text-decoration: underline;
+            font-weight: bold;
+        }
+        nav {
+            background-color: #343a40;
+            padding: 0.5rem 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #ffffff;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            margin: 0 1rem;
+        }
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+        nav .right-buttons button {
+            background-color: #d9534f;
+            border: none;
+            color: white;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+            margin-left: 1rem;
+        }
+        .hero-section {
+            background-color: #000;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        .hero-section h1 {
+            font-size: 42px;
+            color: #fff;
+            display: inline-block;
+            padding: 0 20px;
+        }
+        .hero-section p {
+            font-size: 24px;
+            color: #fff;
+            display: inline-block;
+            padding: 0 20px;
+        }
+        .cta-buttons {
+            margin-top: 20px;
+        }
+        .cta-buttons a {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 5px;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            border: 2px solid #fff;
+        }
+        .cta-buttons a.explore {
+            background-color: transparent;
+        }
+        .cta-buttons a.research {
+            background-color: #333;
+        }
+        .cookie-banner {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #ffffff;
+            border-top: 1px solid #f1f1f1;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px -4px 8px;
+            z-index: 1000;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .cookie-banner button {
+            background-color: #f96302;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .cookie-banner button:hover {
+            background-color: #e85502;
+        }
+        .container {
+            width: 100%;
+            text-align: center;
+            margin: 0 auto;
+        }
+        .title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .logos {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        .logos img {
+            width: 100px;
+            height: 100px;
+        }
+        .section {
+            padding: 50px 20px;
+        }
+        .grid {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+        .card {
+            background-color: #f5f5f5;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 20px;
+            width: calc(33.333% - 40px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        @media (max-width: 768px) {
+            .card {
+                width: calc(50% - 40px);
+            }
+        }
+        @media (max-width: 480px) {
+            .card {
+                width: calc(100% - 40px);
+            }
+        }
+        .card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+        .card h3 {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 15px 0 10px;
+        }
+        .card p {
+            margin: 0;
+        }
+        .button-container {
+            margin-bottom: 50px;
+        }
+        .button {
+            text-decoration: none;
+            color: black;
+            background-color: #fad24d;
+            padding: 15px 30px;
+            border-radius: 30px;
+            margin: 10px;
+            display: inline-block;
+        }
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            padding: 40px;
+            background-color: #2E2E2E;
+            color: #ffffff;
+        }
+        .footer-column {
+            width: 23%;
+        }
+        .footer h6 {
+            margin-top: 0;
+            margin-bottom: 20px;
+            font-size: 14px;
+            text-transform: uppercase;
+            color: #ff4900;
+        }
+        .footer ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .footer ul li {
+            margin-bottom: 15px;
+        }
+        .footer ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 12px;
+        }
+        .footer ul li a:hover {
+            text-decoration: underline;
+        }
+        .footer img {
+            width: 100px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+<div class="alert-bar">
+        Get a 14-touch look at attacker behaviors and vulnerabilities   |   <a href="#">THE 2021 ATTACKER INTELLIGENCE REPORT</a>
+</div>
+<nav>
+<ul>
+<li><a href="#products">PRODUCTS</a></li>
+<li><a href="#services">SERVICES</a></li>
+<li><a href="#support">SUPPORT &amp; RESOURCES</a></li>
+<li><a href="#company">COMPANY</a></li>
+<li><a href="#research">RESEARCH</a></li>
+</ul>
+<div class="right-buttons">
+<button>EN</button>
+<button>SIGN IN</button>
+</div>
+</nav>
+<div class="hero-section">
+<h1>Command Your Attack Surface</h1>
+<p>Anticipate, Pinpoint, Act</p>
+<div class="cta-buttons">
+<a class="explore" href="#">EXPLORE OUR MDR SOLUTION</a>
+<a class="research" href="#">ACCESS NEW RESEARCH</a>
+</div>
+</div>
+<div class="cookie-banner">
+<div>We use Cookies on our site to enhance site navigation, analyze site usage, and assist in our marketing efforts. <a href="#" style="color: #f96302;">Privacy Policy</a></div>
+<button>Cookies Settings</button>
+</div>
+<div class="container section">
+<div class="title">Helping 11,000+ global companies take the gloves off - <a href="#">View Customer Stories</a></div>
+<div class="logos">
+<img alt="Placeholder Logo" src="placeholder.png"/>
+<img alt="Placeholder Logo" src="placeholder.png"/>
+<img alt="Placeholder Logo" src="placeholder.png"/>
+<img alt="Placeholder Logo" src="placeholder.png"/>
+<img alt="Placeholder Logo" src="placeholder.png"/>
+<img alt="Placeholder Logo" src="placeholder.png"/>
+</div>
+</div>
+<div class="container section">
+<h2>Level up SecOps. With the only endpoint to cloud, unified cybersecurity platform.</h2>
+<p>Analyze attack vectors distinct to your organization, link them to exposures, and confidently act to prevent breaches with leading MDR.</p>
+<div class="grid">
+<div class="card">
+<img alt="Placeholder" src="placeholder.png"/>
+<h3>MDR with Unlimited Incident Response</h3>
+<p>Gain 24/7 XDR monitoring, remediation, and DFIR from SOC experts.</p>
+</div>
+<div class="card">
+<img alt="Placeholder" src="placeholder.png"/>
+<h3>Next-Gen SIEM</h3>
+<p>Pinpoint threats wherever they start with cloud-first detection and response.</p>
+</div>
+<div class="card">
+<img alt="Placeholder" src="placeholder.png"/>
+<h3>Cloud Security</h3>
+<p>Secure multi-cloud environments with complete visibility.</p>
+</div>
+<div class="card">
+<img alt="Placeholder" src="placeholder.png"/>
+<h3>Vulnerability Management</h3>
+<p>Understand risk across hybrid environments.</p>
+</div>
+<div class="card">
+<img alt="Placeholder" src="placeholder.png"/>
+<h3>Threat Intelligence</h3>
+<p>Discover and remediate external threats.</p>
+</div>
+<div class="card">
+<img alt="Placeholder" src="placeholder.png"/>
+<h3>Exposure Management</h3>
+<p>Get continuous assessment and validation of your attack surface.</p>
+</div>
+</div>
+</div>
+<div class="container section">
+<h2>Get unparalleled insights from Rapid7 Labs</h2>
+<p>Our leading attack experts analyze vulnerabilities...</p>
+<div class="button-container">
+<a class="button" href="#">Learn more about Rapid7 Labs</a>
+</div>
+<h2>Analyze this: our difference is real</h2>
+<p>Bringing a unique practitioner focus to security operations means...</p>
+<div class="button-container">
+<a class="button" href="#">Gartner's MDR Research</a>
+</div>
+<h2>One stop for security news, research, and real-time analysis.</h2>
+<p>Subscribe to our blog, and stay ahead of trending topics...</p>
+<div class="button-container">
+<a class="button" href="#">READ FULL POST</a>
+<a class="button" href="#">VIEW ALL POSTS</a>
+</div>
+<h2>Confidently anticipate, pinpoint, and act to secure your organization.</h2>
+<div class="button-container">
+<a class="button" href="#">LET'S TALK</a>
+<a class="button" href="#">FOLLOW US</a>
+</div>
+</div>
+<div class="footer">
+<div class="footer-column">
+<h6>Contact Us</h6>
+<img alt="Logo" src="placeholder.png"/>
+<ul>
+<li>Customer Support</li>
+<li>+1-866-390-8113 (Toll Free)</li>
+<li>Support line</li>
+<li>+1-617-247-1717 (local)</li>
+<li><a href="#">Need to report an Incident or Breach?</a></li>
+<li><a href="#">Get Help</a></li>
+</ul>
+</div>
+<div class="footer-column">
+<h6>Solutions</h6>
+<ul>
+<li><a href="#">Insight Platform</a></li>
+<li><a href="#">Managed Threat Complete</a></li>
+<li><a href="#">Cloud Risk Complete</a></li>
+</ul>
+</div>
+<div class="footer-column">
+<h6>Support &amp; Resources</h6>
+<ul>
+<li><a href="#">Product Support</a></li>
+<li><a href="#">Resource Library</a></li>
+<li><a href="#">Events &amp; Webcasts</a></li>
+<li><a href="#">Training &amp; Certification</a></li>
+<li><a href="#">Cybersecurity Foundations</a></li>
+<li><a href="#">Vulnerability &amp; Exploit Database</a></li>
+</ul>
+</div>
+<div class="footer-column">
+<h6>About Us</h6>
+<ul>
+<li><a href="#">Company</a></li>
+<li><a href="#">Diversity, Equity, and Inclusion</a></li>
+<li><a href="#">Leaders</a></li>
+<li><a href="#">News &amp; Press Releases</a></li>
+<li><a href="#">Public Policy</a></li>
+<li><a href="#">Careers</a></li>
+<li><a href="#">Open Source</a></li>
+<li><a href="#">Investors</a></li>
+</ul>
+</div>
+<div class="footer-column">
+<h6>Connect With Us</h6>
+<ul>
+<li><a href="#">Contact</a></li>
+<li><a href="#">Blog</a></li>
+<li><a href="#">Support Login</a></li>
+<li><a href="#">Careers</a></li>
+</ul>
+<img alt="Social Icons" src="placeholder.png"/>
+</div>
+</div>
+</body>
+</html>
+</p></body></html>

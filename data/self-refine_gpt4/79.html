@@ -1,0 +1,340 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+        }
+        
+        header, footer {
+            background-color: #1f1f2e;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        header .right {
+            text-align: right;
+            padding-right: 20px;
+            position: absolute;
+            right: 0;
+            top: 25px;
+        }
+
+        .content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section.white {
+            background-color: white;
+            padding: 60px 20px;
+        }
+
+        .section.dark {
+            background-color: #202e4d;
+            color: white;
+            padding: 80px 20px;
+            position: relative;
+            text-align: center;
+        }
+
+        .section.white h2, 
+        .section.dark h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .section.white p, 
+        .section.dark p {
+            max-width: 800px;
+            margin: 0 auto 40px;
+        }
+
+        .section.white img, 
+        .section.dark img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+        }
+
+        .button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 25px;
+            border: none;
+            text-align: center;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 15px;
+            text-decoration: none;
+        }
+
+        .features {
+            display: flex;
+            justify-content: space-between;
+            text-align: left;
+        }
+
+        .features .feature {
+            flex-basis: 22%;
+        }
+
+        .features .feature h3 {
+            font-size: 18px;
+        }
+
+        .pricing {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-top: 60px;
+        }
+
+        .pricing .plan {
+            border: 1px solid #ccc;
+            padding: 20px;
+            text-align: center;
+            flex-basis: 30%;
+            position: relative;
+        }
+
+        .pricing .plan.popular h3 {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            margin-top: -20px;
+            margin-bottom: 20px;
+        }
+
+        .pricing .plan .price {
+            font-size: 32px;
+            color: red;
+        }
+        
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            padding: 40px 20px 60px;
+            background-color: #1f1f2e;
+            color: white;
+        }
+
+        .footer .column {
+            width: 30%;
+        }
+
+        .footer .column ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .footer .column ul li {
+            margin-bottom: 8px;
+        }
+
+        .footer .social {
+            text-align: right;
+        }
+
+        .footer .social ul {
+            display: inline-block;
+            padding: 0;
+        }
+
+        .footer .social ul li {
+            display: inline;
+            margin-left: 15px;
+        }
+
+        .languages {
+            text-align: center;
+            color: white;
+            font-size: 14px;
+            margin-top: 30px;
+        }
+
+        .languages ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .languages ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="content">
+            <h1><img src="placeholder.png" alt="Logo"> Products Forum Languages</h1>
+            <div class="right">
+                Products | Forum | Languages
+            </div>
+        </div>
+    </header>
+
+    <div class="section dark">
+        <div class="content">
+            <h2>µTorrent Web</h2>
+            <p>Play torrents while you download. Ideal for new users.</p>
+            <a href="#" class="button">FREE DOWNLOAD</a>
+            <img src="placeholder.png" alt="Image">
+        </div>
+    </div>
+
+    <div class="section white">
+        <div class="content">
+            <h2><img src="placeholder.png" alt="Icon"> µTorrent Classic</h2>
+            <p>A very tiny desktop torrent client for experienced users.</p>
+            <a href="#" class="button">FREE DOWNLOAD</a>
+            <img src="placeholder.png" alt="Image">
+        </div>
+    </div>
+
+    <div class="section white">
+        <div class="content">
+            <h2>Features</h2>
+            <div class="features">
+                <div class="feature">
+                    <img src="placeholder.png" alt="Icon">
+                    <h3>Download torrents in bulk</h3>
+                    <p>µTorrent Classic enables simultaneous torrent downloads that you can manage in a single location.</p>
+                </div>
+                <div class="feature">
+                    <img src="placeholder.png" alt="Icon">
+                    <h3>Optimize your bandwidth</h3>
+                    <p>µTorrent Classic auto-adjusts bandwidth usage, based on your network and internet connection, to ensure fast downloads.</p>
+                </div>
+                <div class="feature">
+                    <img src="placeholder.png" alt="Icon">
+                    <h3>Schedule your downloads</h3>
+                    <p>Set the day and time for your torrent downloads to start, stop or seed.</p>
+                </div>
+                <div class="feature">
+                    <img src="placeholder.png" alt="Icon">
+                    <h3>Remotely connect to µTorrent Classic</h3>
+                    <p>Add torrents to µTorrent Classic remotely from a web browser on any device.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section white">
+        <div class="content">
+            <h2>Premium</h2>
+            <p>Go Pro for Added Security and No Distractions.</p>
+            <div class="pricing">
+                <div class="plan">
+                    <h3>PRO+VPN</h3>
+                    <p>Privacy Online</p>
+                    <div class="price">LIMITED TIME ONLY<br>30% OFF<br>List Price: $69.95</div>
+                    <p>per year</p>
+                    <a href="#" class="button">WEB</a>
+                    <a href="#" class="button">CLASSIC</a>
+                </div>
+                <div class="plan popular">
+                    <h3>PRO</h3>
+                    <p>Enhanced Security</p>
+                    <div class="price">LIMITED TIME ONLY<br>30% OFF<br>List Price: $19.95</div>
+                    <p>per year</p>
+                    <a href="#" class="button">WEB</a>
+                    <a href="#" class="button">CLASSIC</a>
+                </div>
+                <div class="plan">
+                    <h3>AD-FREE</h3>
+                    <p>No Distractions</p>
+                    <div class="price">$4.95</div>
+                    <p>per year</p>
+                    <a href="#" class="button">WEB</a>
+                    <a href="#" class="button">CLASSIC</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section white">
+        <div class="content">
+            <h2>Mobile</h2>
+            <p>Learn more About our Mobile Torrent Application.</p>
+            <div class="content">
+                <h2><img src="placeholder.png" alt="Icon"> µTorrent Android</h2>
+                <p>
+                    Get the #1 torrent downloader on Google Play with over 100 million downloads. µTorrent Android helps you download torrent files or magnet links from your Android smartphone or tablet. Enjoy a simplified torrent download experience with no speed or size limits!
+                    <ul>
+                        <li>Download torrents and magnet links</li>
+                        <li>Choose your file download location</li>
+                        <li>Fast, light and powerful</li>
+                    </ul>
+                </p>
+                <img src="placeholder.png" alt="Image">
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="content">
+            <div class="footer">
+                <div class="column">
+                    <h3>Company</h3>
+                    <ul>
+                        <li>About</li>
+                        <li>Contact</li>
+                        <li>Press</li>
+                        <li>Jobs</li>
+                        <li>Blog</li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h3>Downloads</h3>
+                    <ul>
+                        <li>Windows</li>
+                        <li>Mac</li>
+                        <li>Android</li>
+                        <li>Linux</li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h3>Support</h3>
+                    <ul>
+                        <li>Help</li>
+                        <li>Forum</li>
+                        <li>Site Feedback</li>
+                    </ul>
+                </div>
+                <div class="social">
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Discord</li>
+                    </ul>
+                </div>
+            </div>
+            <p>Version 1.2.7 © 2024 μTorrent is a trademark of BitTorrent Limited.</p>
+            <div class="languages">
+                <ul>
+                    <li>Languages</li>
+                    <li>한국어</li>
+                    <li>Español</li>
+                    <li>Français</li>
+                    <li>Deutsch</li>
+                    <li>日本語</li>
+                    <li>Русский</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,517 @@
+<html><body><p>
+<!DOCTYPE html>
+
+<html>
+<head>
+<style>
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background-color: #f4f4f4;
+}
+.header {
+  background-color: #282828;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.logo {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+.logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.title {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+}
+.subtitle {
+  font-size: 16px;
+  color: #fff;
+}
+.button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #34b121;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+.button:hover {
+  background-color: #2b8a1a;
+}
+.features {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 8px;
+  margin-bottom: 40px;
+}
+.feature {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.feature-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 16px;
+  background-color: #34b121;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.feature-icon img {
+  width: 12px;
+  height: 12px;
+  object-fit: cover;
+}
+.feature-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+.feature-desc {
+  font-size: 14px;
+}
+.premium {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 8px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.premium-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.premium-subtitle {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.premium-plan {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.premium-plan-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.premium-plan-desc {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+.premium-plan-price {
+  font-size: 32px;
+  font-weight: bold;
+  color: #34b121;
+  margin-bottom: 10px;
+}
+.premium-plan-price-unit {
+  font-size: 14px;
+  color: #666;
+}
+.premium-plan-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #34b121;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+.premium-plan-button:hover {
+  background-color: #2b8a1a;
+}
+.mobile {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 8px;
+  margin-bottom: 40px;
+}
+.mobile-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.mobile-subtitle {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.mobile-app {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.mobile-app-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.mobile-app-desc {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+.mobile-app-features {
+  font-size: 14px;
+  margin-bottom: 20px;
+  list-style: disc;
+  padding-left: 20px;
+}
+.footer {
+  background-color: #282828;
+  color: #fff;
+  padding: 40px 0;
+  text-align: center;
+}
+.footer-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.footer-links-item {
+  margin: 0 20px;
+}
+.footer-links-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.footer-links-list {
+  list-style: none;
+  padding: 0;
+}
+.footer-links-list li {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+.footer-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-social-item {
+  margin: 0 10px;
+}
+.footer-social-link {
+  width: 32px;
+  height: 32px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+.footer-social-link:hover {
+  background-color: #ddd;
+}
+.footer-social-link img {
+  width: 16px;
+  height: 16px;
+  object-fit: cover;
+}
+.footer-copyright {
+  font-size: 12px;
+  color: #666;
+  margin-top: 20px;
+}
+</style>
+</head>
+<body>
+<div class="header">
+<div class="container">
+<div class="logo">
+<img alt="μTorrent logo" src="placeholder.png"/>
+</div>
+<div class="title">
+      μTorrent Web
+    </div>
+<div class="subtitle">
+      Play torrents while you download. Ideal for new users.
+    </div>
+<a class="button" href="#">FREE DOWNLOAD</a>
+</div>
+</div>
+<div class="container">
+<div class="features">
+<div class="feature">
+<div class="feature-icon">
+<img alt="icon" src="placeholder.png"/>
+</div>
+<div>
+<div class="feature-title">
+          Download torrents in bulk
+        </div>
+<div class="feature-desc">
+          μTorrent Classic enables simultaneous torrent downloads that you can manage in a single location.
+        </div>
+</div>
+</div>
+<div class="feature">
+<div class="feature-icon">
+<img alt="icon" src="placeholder.png"/>
+</div>
+<div>
+<div class="feature-title">
+          Schedule your downloads
+        </div>
+<div class="feature-desc">
+          Set the day and time for your torrent downloads to start, stop or seed.
+        </div>
+</div>
+</div>
+<div class="feature">
+<div class="feature-icon">
+<img alt="icon" src="placeholder.png"/>
+</div>
+<div>
+<div class="feature-title">
+          Optimize your bandwidth
+        </div>
+<div class="feature-desc">
+          μTorrent Classic auto-adjusts bandwidth usage, based on your network and internet connection, to ensure fast downloads.
+        </div>
+</div>
+</div>
+<div class="feature">
+<div class="feature-icon">
+<img alt="icon" src="placeholder.png"/>
+</div>
+<div>
+<div class="feature-title">
+          Remotely connect to μTorrent Classic
+        </div>
+<div class="feature-desc">
+          Add torrents to μTorrent Classic remotely from a web browser on any device.
+        </div>
+</div>
+</div>
+</div>
+<div class="premium">
+<div>
+<div class="premium-title">
+        Premium
+      </div>
+<div class="premium-subtitle">
+        Go Pro for Added Security and No Distractions.
+      </div>
+</div>
+<div class="premium-plans">
+<div class="premium-plan">
+<div class="premium-plan-title">
+          PRO+VPN
+        </div>
+<div class="premium-plan-desc">
+          Privacy Online
+        </div>
+<div class="premium-plan-price">
+          30% OFF
+        </div>
+<div class="premium-plan-price-unit">
+          List Price: $69.95
+        </div>
+<div class="premium-plan-price-unit">
+          per year
+        </div>
+<a class="premium-plan-button" href="#">WEB</a>
+<a class="premium-plan-button" href="#">CLASSIC</a>
+</div>
+<div class="premium-plan">
+<div class="premium-plan-title">
+          PRO
+        </div>
+<div class="premium-plan-desc">
+          Enhanced Security
+        </div>
+<div class="premium-plan-price">
+          30% OFF
+        </div>
+<div class="premium-plan-price-unit">
+          List Price: $19.95
+        </div>
+<div class="premium-plan-price-unit">
+          per year
+        </div>
+<a class="premium-plan-button" href="#">WEB</a>
+<a class="premium-plan-button" href="#">CLASSIC</a>
+</div>
+<div class="premium-plan">
+<div class="premium-plan-title">
+          AD-FREE
+        </div>
+<div class="premium-plan-desc">
+          No Distractions
+        </div>
+<div class="premium-plan-price">
+          $4.95
+        </div>
+<div class="premium-plan-price-unit">
+          per year
+        </div>
+<a class="premium-plan-button" href="#">WEB</a>
+<a class="premium-plan-button" href="#">CLASSIC</a>
+</div>
+</div>
+</div>
+<div class="mobile">
+<div class="mobile-title">
+      Mobile
+    </div>
+<div class="mobile-subtitle">
+      Learn more About our Mobile Torrent Application.
+    </div>
+<div class="mobile-app">
+<div class="mobile-app-title">
+        μTorrent Android
+      </div>
+<div class="mobile-app-desc">
+        Get the #1 torrent downloader on Google Play with over 100 million downloads. μTorrent Android helps you download torrent files or magnet links from your Android smartphone or tablet. Enjoy a simplified torrent download experience with no speed or size limits!
+      </div>
+<ul class="mobile-app-features">
+<li>Download torrents and magnet links</li>
+<li>Choose your file download location</li>
+<li>Fast, light and powerful</li>
+</ul>
+<a class="premium-plan-button" href="#">Get μTorrent Classic</a>
+</div>
+</div>
+</div>
+<div class="footer">
+<div class="container">
+<div class="footer-links">
+<div class="footer-links-item">
+<div class="footer-links-title">
+          Company
+        </div>
+<ul class="footer-links-list">
+<li><a href="#">About</a></li>
+<li><a href="#">Contact</a></li>
+<li><a href="#">Press</a></li>
+<li><a href="#">Jobs</a></li>
+<li><a href="#">Blog</a></li>
+</ul>
+</div>
+<div class="footer-links-item">
+<div class="footer-links-title">
+          Downloads
+        </div>
+<ul class="footer-links-list">
+<li><a href="#">Windows</a></li>
+<li><a href="#">Mac</a></li>
+<li><a href="#">Android</a></li>
+<li><a href="#">Linux</a></li>
+</ul>
+</div>
+<div class="footer-links-item">
+<div class="footer-links-title">
+          Support
+        </div>
+<ul class="footer-links-list">
+<li><a href="#">Help</a></li>
+<li><a href="#">Forum</a></li>
+<li><a href="#">Site Feedback</a></li>
+</ul>
+</div>
+<div class="footer-links-item">
+<div class="footer-links-title">
+          Social
+        </div>
+<div class="footer-social">
+<a class="footer-social-link" href="#">
+<img alt="Facebook logo" src="placeholder.png"/>
+</a>
+<a class="footer-social-link" href="#">
+<img alt="Twitter logo" src="placeholder.png"/>
+</a>
+<a class="footer-social-link" href="#">
+<img alt="Instagram logo" src="placeholder.png"/>
+</a>
+<a class="footer-social-link" href="#">
+<img alt="Discord logo" src="placeholder.png"/>
+</a>
+</div>
+</div>
+</div>
+<div class="footer-languages">
+<div class="footer-links-title">
+        Languages
+      </div>
+<p>μTorrent is global! Our website is fully translated in 17 languages.</p>
+<div class="footer-links">
+<div class="footer-links-item">
+<ul class="footer-links-list">
+<li><a href="#">μTorrent</a></li>
+<li><a href="#">μTorrent</a></li>
+<li><a href="#">μTorrent herunterladen</a></li>
+<li><a href="#">Descargar μTorrent</a></li>
+</ul>
+</div>
+<div class="footer-links-item">
+<ul class="footer-links-list">
+<li><a href="#">μTorrent ダウンロード</a></li>
+<li><a href="#">Download μTorrent</a></li>
+<li><a href="#">Pobierz μTorrent</a></li>
+<li><a href="#">Baixar μTorrent</a></li>
+</ul>
+</div>
+<div class="footer-links-item">
+<ul class="footer-links-list">
+<li><a href="#">Transferir μTorrent</a></li>
+<li><a href="#">Скачать μTorrent</a></li>
+<li><a href="#">l-download ang μTorrent</a></li>
+<li><a href="#">μTorrent'i indir</a></li>
+</ul>
+</div>
+<div class="footer-links-item">
+<ul class="footer-links-list">
+<li><a href="#">μTorrent</a></li>
+<li><a href="#">μTorrent</a></li>
+<li><a href="#">μTorrent 다운로드</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="footer-copyright">
+      Version 1.1.27 © 2024 μTorrent is a trademark of BitTorrent Limited.
+    </div>
+</div>
+</div>
+</body>
+</html>
+</p></body></html>

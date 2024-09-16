@@ -1,0 +1,257 @@
+<html><body><p>
+<!DOCTYPE html>
+
+<html>
+<head>
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 15px 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  height: 35px;
+  width: 100px;
+}
+
+.header-nav {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.header-nav li {
+  margin-right: 20px;
+}
+
+.header-nav li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+.header-nav li a:hover {
+  text-decoration: underline;
+}
+
+.header-language {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.header-language input {
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  font-weight: bold;
+  padding: 5px 10px;
+  margin-right: 10px;
+}
+
+.header-language input:focus {
+  outline: none;
+}
+
+.header-language select {
+  padding: 5px 10px;
+  border: none;
+  background-color: #fff;
+  color: #333;
+  font-weight: bold;
+}
+
+.header-language select:focus {
+  outline: none;
+}
+
+.main {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.notices-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.notice {
+  border: 1px solid #ddd;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+}
+
+.notice-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.notice-date {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.notice-content {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.notice-content ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.notice-content ul li {
+  margin-bottom: 5px;
+}
+
+.notice-content a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.notice-content a:hover {
+  text-decoration: underline;
+}
+
+.more-button {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.more-button:hover {
+  background-color: #0069d9;
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-content a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-content a:hover {
+  text-decoration: underline;
+}
+
+.footer-copyright {
+  font-size: 12px;
+}
+</style>
+</head>
+<body>
+<header>
+<div class="container">
+<div class="header-content">
+<img alt="Logo" class="header-logo" src="placeholder.png"/>
+<ul class="header-nav">
+<li><a href="#">Sign In</a></li>
+<li><a href="#">Sign Up Now</a></li>
+</ul>
+<div class="header-language">
+<input readonly="" type="text" value="ENGLISH"/>
+<select>
+<option value="en">English</option>
+<option value="ko">Korean</option>
+</select>
+</div>
+</div>
+</div>
+</header>
+<main>
+<div class="container">
+<h1 class="title">Notices</h1>
+<div class="notices-container">
+<div class="notice">
+<h2 class="notice-title">[Notice] Change of payment currencies in 5 countries an...</h2>
+<div class="notice-date">2024-05-20</div>
+<div class="notice-content">
+          Hello! This is the Galaxy Store Seller Portal. Thank you for always using the Seller Portal and for your continued interest. To reduce fluctuations in product prices due to some exchange rate changes and preserve the profits
+        </div>
+</div>
+<div class="notice">
+<h2 class="notice-title">[Notice] Galaxy Store Sales Tax Remittance</h2>
+<div class="notice-date">2024-03-28</div>
+<div class="notice-content">
+          Galaxy Store Sales Tax Remittance For any purchase made in Galaxy Store, Galaxy Store automatically collects the sales tax or value added tax (VAT) from the user according to the tax laws of each country. In this notice, "sales
+        </div>
+</div>
+<div class="notice">
+<h2 class="notice-title">[Notice] Notice on conversion to free store (6 countries includi...</h2>
+<div class="notice-date">2024-02-22</div>
+<div class="notice-content">
+          A message from the Galaxy Store Seller Portal. From March 4, 2024, sales of paid content (paid apps, IAP content, etc.) will be discontinued in the six countries below. Armenia • Ghana • Kenya • Kyrgyzstan •
+        </div>
+</div>
+</div>
+<a class="more-button" href="#">+ More</a>
+</div>
+</main>
+<footer>
+<div class="container">
+<div class="footer-content">
+<a href="#">Terms and Conditions</a>
+<a href="#">Privacy Policy</a>
+<a href="#">Seller Portal Policy</a>
+<a href="#">Guides</a>
+</div>
+<div class="footer-copyright">
+      Copyright© 2009-2024 SAMSUNG All Rights Reserved.
+    </div>
+</div>
+</footer>
+</body>
+</html>
+</p></body></html>

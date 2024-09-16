@@ -1,0 +1,526 @@
+<html><body><p>
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Credit Karma</title>
+<style>
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.header {
+  background-color: #002060;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .nav {
+  display: flex;
+  gap: 1rem;
+}
+
+.header .nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.header .nav a:hover {
+  text-decoration: underline;
+}
+
+.header .nav .dropdown {
+  position: relative;
+}
+
+.header .nav .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.header .nav .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.header .nav .dropdown-content a {
+  color: #002060;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.header .nav .dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.header .right {
+  display: flex;
+  gap: 1rem;
+}
+
+.header .right a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.header .right a:hover {
+  text-decoration: underline;
+}
+
+.section-1 {
+  background-color: #002060;
+  padding: 3rem;
+  color: #fff;
+  text-align: center;
+}
+
+.section-1 h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.section-1 p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.section-1 .buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.section-1 .buttons button {
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.section-1 .buttons button.sign-up {
+  background-color: #00b894;
+  color: #fff;
+}
+
+.section-1 .buttons button.log-in {
+  background-color: #fff;
+  color: #002060;
+}
+
+.section-2 {
+  background-color: #0080ff;
+  padding: 3rem;
+  color: #fff;
+  text-align: center;
+}
+
+.section-2 h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.section-2 p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.section-3 {
+  background-color: #fff;
+  padding: 3rem;
+  color: #002060;
+  text-align: center;
+}
+
+.section-3 h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.section-3 p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.section-4 {
+  background-color: #002060;
+  padding: 3rem;
+  color: #fff;
+  text-align: center;
+}
+
+.section-4 h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.section-4 .cards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.section-4 .cards .card {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 5px;
+  text-align: center;
+  width: 150px;
+}
+
+.section-4 .cards .card img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 1rem;
+}
+
+.section-5 {
+  background-color: #ffc107;
+  padding: 3rem;
+  color: #002060;
+  text-align: center;
+}
+
+.section-5 h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.section-5 p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.section-6 {
+  background-color: #0080ff;
+  padding: 3rem;
+  color: #fff;
+  text-align: center;
+}
+
+.section-6 h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.section-7 {
+  background-color: #fff;
+  padding: 3rem;
+  color: #002060;
+  text-align: center;
+}
+
+.section-7 p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.section-7 .security {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.section-7 .security .item {
+  background-color: #f2f2f2;
+  padding: 1rem;
+  border-radius: 5px;
+  text-align: center;
+  width: 300px;
+}
+
+.section-7 .security .item img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 1rem;
+}
+
+.section-8 {
+  background-color: #002060;
+  padding: 3rem;
+  color: #fff;
+  text-align: center;
+}
+
+.section-8 p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.section-8 .app-download {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.section-8 .app-download img {
+  width: 150px;
+  height: 150px;
+}
+
+.section-9 {
+  background-color: #fff;
+  padding: 3rem;
+  color: #002060;
+  text-align: center;
+}
+
+.section-9 .footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 3rem;
+}
+
+.section-9 .footer .column {
+  width: 20%;
+}
+
+.section-9 .footer .column h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.section-9 .footer .column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.section-9 .footer .column ul li {
+  margin-bottom: 0.5rem;
+}
+
+.section-9 .footer .column ul li a {
+  color: #002060;
+  text-decoration: none;
+}
+
+.section-9 .footer .column ul li a:hover {
+  text-decoration: underline;
+}
+
+.section-9 .footer .copyright {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.section-9 .footer .copyright p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.section-9 .footer .copyright p a {
+  color: #002060;
+  text-decoration: none;
+}
+
+.section-9 .footer .copyright p a:hover {
+  text-decoration: underline;
+}
+</style>
+</head>
+<body>
+<header class="header">
+<div class="nav">
+<a href="#">Credit Cards</a>
+<a href="#">Personal Loans</a>
+<a href="#">Auto</a>
+<div class="dropdown">
+<a href="#">Home</a>
+<div class="dropdown-content">
+<a href="#">Dropdown link 1</a>
+<a href="#">Dropdown link 2</a>
+<a href="#">Dropdown link 3</a>
+</div>
+</div>
+<a href="#">Money</a>
+<div class="dropdown">
+<a href="#">Net Worth</a>
+<div class="dropdown-content">
+<a href="#">Dropdown link 1</a>
+<a href="#">Dropdown link 2</a>
+<a href="#">Dropdown link 3</a>
+</div>
+</div>
+<a href="#">Tax</a>
+<div class="dropdown">
+<a href="#">Credit Scores</a>
+<div class="dropdown-content">
+<a href="#">Dropdown link 1</a>
+<a href="#">Dropdown link 2</a>
+<a href="#">Dropdown link 3</a>
+</div>
+</div>
+</div>
+<div class="right">
+<div class="dropdown">
+<a href="#">Resources</a>
+<div class="dropdown-content">
+<a href="#">Dropdown link 1</a>
+<a href="#">Dropdown link 2</a>
+<a href="#">Dropdown link 3</a>
+</div>
+</div>
+<a href="#">Help center</a>
+<a href="#">Log in</a>
+<a href="#">Sign up</a>
+</div>
+</header>
+<section class="section-1">
+<h2>More than free credit scores.</h2>
+<p>We may have started by offering free access to your credit scores, but now we're so much more. We've evolved into other areas of personal finance and added all new features to give you everything you need to outsmart the system.</p>
+<div class="buttons">
+<button class="sign-up">Sign up</button>
+<button class="log-in">Log in</button>
+</div>
+</section>
+<section class="section-2">
+<h2>Make better sense of your dollars and cents.</h2>
+<p>We analyze your accounts to find new, surprising ways you can take your money further. We've been told it feels like magic, but our engineers assure us it's not.</p>
+</section>
+<section class="section-3">
+<h2>Visibility unlike anywhere else.</h2>
+<p>Transparency is the key to confident money decisions. That's why we provide a detailed overview of your options, benefits, limits, and your Approval Odds* before you even apply.</p>
+</section>
+<section class="section-4">
+<h2>More than just free credit scores.</h2>
+<div class="cards">
+<div class="card">
+<img alt="Card" src="placeholder.png"/>
+<p>Cards</p>
+</div>
+<div class="card">
+<img alt="Loan" src="placeholder.png"/>
+<p>Loans</p>
+</div>
+<div class="card">
+<img alt="Home" src="placeholder.png"/>
+<p>Home</p>
+</div>
+<div class="card">
+<img alt="Auto" src="placeholder.png"/>
+<p>Auto</p>
+</div>
+<div class="card">
+<img alt="Insurance" src="placeholder.png"/>
+<p>Insurance</p>
+</div>
+<div class="card">
+<img alt="Checking" src="placeholder.png"/>
+<p>Checking</p>
+</div>
+<div class="card">
+<img alt="Savings" src="placeholder.png"/>
+<p>Savings</p>
+</div>
+</div>
+</section>
+<section class="section-5">
+<h2>Download the app today.</h2>
+<p>Join the other 130+ million members who chose Credit Karma as their go-to finance app.</p>
+<img alt="App Download" src="placeholder.png"/>
+</section>
+<section class="section-6">
+<h2>Protect your progress.</h2>
+<p>*Approval Odds are not a guarantee of approval. Credit Karma determines Approval Odds by comparing your credit profile to other Credit Karma members who were approved for the product shown, or whether you meet certain criteria to narrow down your choices. For example, you may not be approved because you don't meet the lenders' ability to pay standard* after they verify your income and employment, or you already have the maximum number of accounts with that specific lender.</p>
+</section>
+<section class="section-7">
+<p>We treat your data like it's our own.</p>
+<p>We don't share your personal information with unaffiliated third parties for their own advertising or marketing purposes.</p>
+<p>We take your security seriously.</p>
+<p>We use 128-bit or higher encryption to protect during the transmission of your data to our site.</p>
+<div class="security">
+<div class="item">
+<img alt="Security" src="placeholder.png"/>
+<p>Item 1</p>
+</div>
+<div class="item">
+<img alt="Security" src="placeholder.png"/>
+<p>Item 2</p>
+</div>
+</div>
+</section>
+<section class="section-8">
+<p>Scan the QR code to download the app</p>
+<div class="app-download">
+<img alt="QR Code" src="placeholder.png"/>
+</div>
+</section>
+<section class="section-9">
+<footer class="footer">
+<div class="column">
+<h3>COMPANY INFO</h3>
+<ul>
+<li><a href="#">About Credit Karma</a></li>
+<li><a href="#">Careers</a></li>
+<li><a href="#">In The News</a></li>
+<li><a href="#">Engineering Blog</a></li>
+<li><a href="#">Product Blog</a></li>
+</ul>
+</div>
+<div class="column">
+<h3>HELP</h3>
+<ul>
+<li><a href="#">Help Center</a></li>
+<li><a href="#">How Credit Karma Works?</a></li>
+<li><a href="#">Security Practices</a></li>
+<li><a href="#">Editorial Guidelines</a></li>
+</ul>
+</div>
+<div class="column">
+<h3>LEGAL</h3>
+<ul>
+<li><a href="#">Privacy Policy</a></li>
+<li><a href="#">CA Privacy Policy</a></li>
+<li><a href="#">Terms of Service</a></li>
+<li><a href="#">Data Preferences</a></li>
+</ul>
+</div>
+<div class="column">
+<h3>NO TABLE LINKS</h3>
+<ul>
+<li><a href="#">Credit Card Insights</a></li>
+<li><a href="#">7 ways to find Cheap Car Insurance</a></li>
+<li><a href="#">7 Auto Loans for Bad Credit</a></li>
+<li><a href="#">Best High - Limit Credit Cards</a></li>
+<li><a href="#">How to find a No Fee ATM Machine?</a></li>
+<li><a href="#">4 Best Quick Loans for Emergency Cash</a></li>
+<li><a href="#">Should I Refinance my Mortgage?</a></li>
+<li><a href="#">How to get a Mortgage Preapproval?</a></li>
+</ul>
+</div>
+<div class="column">
+<img alt="Credit Karma Logo" src="placeholder.png"/>
+<p>©2007-2024 Credit Karma, LLC. Credit Karma® is a registered trademark of Credit Karma, LLC. All Rights Reserved. Product name, logo, brands, and other trademarks featured or referred to within Credit Karma are the property of their respective trademark holders. This site may be compensated through third party advertisers.</p>
+<p>Credit Karma Offers, Inc. (NMLS ID# 1588822) | Licenses | (NMLS Consumer Access)</p>
+<p>Credit Karma Mortgage, Inc. (NMLS ID# 1626077) | Licenses | (NMLS Consumer Access)</p>
+<p>Credit Karma Builder (McBurburry Financial, Inc.) (NMLS ID# 2057952) | Licenses | (NMLS Consumer Access)</p>
+<p>California loans arranged pursuant to Dept. of Business Oversight Finance Lenders License #609080-7888.</p>
+<p>Auto, homeowners, and renters insurance services offered through Karma Insurance Services, LLC (CA resident license #0172748). Only mortgage activity by Credit Karma Mortgage, Inc., d/b/a Credit Karma is licensed by the State of New York. Credit Karma, LLC and Credit Karma Offers, Inc., are not registered by the NYS Department of Financial Services.</p>
+</div>
+</footer>
+<div class="copyright">
+<p>iPhone is a trademark of Apple Inc., registered in the U.S. and other countries. App Store is a service mark of Apple Inc.</p>
+<p>Android is a trademark of Google Inc.</p>
+<p>The Equifax logo is a registered trademark owned by Equifax in the United States and other countries.</p>
+<p>Credit Karma is committed to ensuring digital accessibility for people with disabilities. We are continually improving the user experience for everyone, applying the relevant accessibility guidelines.</p>
+</div>
+</section>
+</body>
+</html>
+</p></body></html>

@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>UNPKG</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 36px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #ccc;
+        }
+
+        .footer img {
+            max-width: 100px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>UNPKG</h1>
+        <p>unpkg is a fast, global content delivery network for everything on npm. Use it to quickly and easily load any file from any package using a URL.</p>
+        <p>unpkg.com/package@version/file</p>
+
+        <h2>Examples</h2>
+        <p>Using a fixed version:</p>
+        <ul>
+            <li>- unpkg.com/react@17.0.2/umd/react.production.min.js</li>
+            <li>- unpkg.com/react-dom@17.0.2/umd/react-dom.production.min.js</li>
+        </ul>
+        <p>You may also use a semver range or a tag instead of a fixed version number, or omit the version to get the latest version (but be careful, as the latest version may change over time):</p>
+        <ul>
+            <li>- unpkg.com/react@^17/umd/react.production.min.js</li>
+            <li>- unpkg.com/react/umd/react.production.min.js</li>
+        </ul>
+        <p>If you omit the file path (or use it blank), unpkg will serve the file specified by the unpkg field in the package.json, or the main file:</p>
+        <ul>
+            <li>- unpkg.com/jquery</li>
+            <li>- unpkg.com/jquery/</li>
+        </ul>
+        <p>Append a / at the end of a URL to view a listing of all the files in a package:</p>
+        <ul>
+            <li>- unpkg.com/react/</li>
+            <li>- unpkg.com/react-router/</li>
+        </ul>
+
+        <h2>Query Parameters</h2>
+        <p>?meta</p>
+        <p>Return metadata about any file in a package as JSON (eg. /any/file?meta).</p>
+        <p>?module</p>
+        <p>Expand all "bare" import specifiers to autoimport modules to unpkg URLs. This feature is very experimental.</p>
+
+        <h2>Cache Behavior</h2>
+        <p>The CDN caches files based on their permalink URL, which includes the npm package version. This works because npm does not allow package authors to overwrite a package that has already been published with a different one at the same version number.</p>
+        <p>Browsers are instructed via the Cache-Control header to cache assets indefinitely (1 year).</p>
+        <p>URLs that contain a version number will be cached indefinitely (unless the latest version where no version is specified, or the @next tag version where a next version is being developed). Headers are cached for 10 minutes at the CDN, 1 minute in browsers.</p>
+        <p>If you want users to be able to get the latest version when you cut a new release, the best policy is to let your application dynamically request the new distribution via unpkg.com/package@latest. This will also avoid more quickly because we won't have to reindex the latest version and redirect them.</p>
+
+        <h2>Workflow</h2>
+        <p>For npm package authors, unpkg offloads the burden of publishing your code to a CDN or addition to the npm registry. All you need to do is include your script, build at a particular path in your repo, and it's available via unpkg:</p>
+        <p>You can do this easily using the following setup:</p>
+        <ul>
+            <li>- Add the umd (or dist) directory to your .gitignore file</li>
+            <li>- Add the umd directory to your file: main in package.json</li>
+            <li>- Use a build script to generate your UMD build in the umd directory when you publish</li>
+        </ul>
+        <p>That's it! Now when you npm publish, you'll have a publicly-available URL to link to as well.</p>
+
+        <h2>About</h2>
+        <p>unpkg is an open source project built and maintained by <a href="#">Michael Jackson</a>. unpkg is not affiliated with or supported by npm, Inc. in any way. Please do not contact npm for help with unpkg. Instead, please reach out for issues with any questions or concerns.</p>
+        <p>The unpkg CDN is powered by <a href="#">Cloudflare</a>, one of the world's largest and fastest cloud network platforms.</p>
+
+        <div class="footer">
+            <img src="placeholder.png" alt="Cloudflare Logo">
+            <p>This open source app sits on infrastructure that's required by u.law. The app servers are in 17 cities around the world, and some are located on active volcanoes.</p>
+            <img src="placeholder.png" alt="Cloudflare Map">
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Built a CDNs.</p>
+        <p>&copy; 2014 UNPKG</p>
+    </div>
+</body>
+</html>

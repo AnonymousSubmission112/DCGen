@@ -1,0 +1,248 @@
+<html><body><p>
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Debian</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+            color: #000;
+        }
+        header {
+            background-color: #034358;
+            padding: 10px 20px;
+            color: white;
+            display: flex;
+            align-items: center;
+        }
+        .menu nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+        .search input[type="text"] {
+            padding: 5px;
+            border: none;
+        }
+        .search {
+            margin-left: auto;
+        }
+        main {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 10px;
+        }
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .hero-section {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+        .hero > div {
+            padding: 20px;
+            background-color: #f9f9f9;
+            text-align: center;
+            width: 45%;
+        }
+        .hero img {
+            max-width: 100%;
+            display: block;
+            margin: 0 auto 20px;
+        }
+        .hero h2 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        .hero p {
+            margin-bottom: 20px;
+        }
+        .community-info, .os-info {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            text-align: left;
+            padding: 20px;
+        }
+        .community-info a, .os-info a {
+            color: #0044cc;
+            text-decoration: none;
+            margin-bottom: 10px;
+        }
+        .community-info a:hover, .os-info a:hover {
+            text-decoration: underline;
+        }
+        .news-section {
+            text-align: center;
+            padding: 20px;
+        }
+        .news-section h2 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        .news-section p {
+            font-size: 1em;
+            margin-bottom: 20px;
+        }
+        .news-items {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .news-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .news-item .date {
+            text-align: center;
+            margin-right: 15px;
+        }
+        .news-item .date span {
+            display: block;
+        }
+        .news-item a {
+            text-decoration: none;
+            color: #0044cc;
+        }
+        .news-item a:hover {
+            text-decoration: underline;
+        }
+        .footer-wrapper {
+            padding: 20px;
+            border-top: 1px solid #d3d3d3;
+            font-size: 14px;
+            color: #666;
+            text-align: center;
+        }
+        .footer-wrapper a {
+            color: #3366cc;
+            text-decoration: none;
+            margin-right: 5px;
+        }
+        .footer-wrapper a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+<header>
+<div class="menu">
+<nav>
+<a href="#">Blog</a>
+<a href="#">Micronews</a>
+<a href="#">Planet</a>
+</nav>
+<div class="search">
+<input placeholder="Search" type="text"/>
+</div>
+</div>
+</header>
+<main>
+<section class="hero">
+<div class="hero-section">
+<div class="community">
+<img alt="Community Image" src="placeholder.png"/>
+<h2>THE COMMUNITY</h2>
+<p>Debian is a Community of People!</p>
+<div class="community-info">
+<a href="#">People</a>
+<a href="#">Our Philosophy</a>
+<a href="#">Get Involved, Contribute</a>
+<a href="#">More...</a>
+</div>
+</div>
+<div class="os">
+<img alt="Operating System Image" src="placeholder.png"/>
+<h2>THE OPERATING SYSTEM</h2>
+<p>Debian is a complete Free Operating System!</p>
+<button>Download</button>
+<a href="#">Other downloads</a>
+<div class="os-info">
+<a href="#">Why Debian</a>
+<a href="#">User Support</a>
+<a href="#">Security Updates</a>
+<a href="#">More...</a>
+</div>
+</div>
+</div>
+</section>
+<section class="news-section">
+<h2>PROJECT NEWS</h2>
+<p>News and Announcements about Debian</p>
+<div class="news-items">
+<div class="news-item">
+<div class="date">
+<span>FEBRUARY</span>
+<span>10</span>
+<span>2024</span>
+</div>
+<a href="#">Updated Debian 12.5 released</a>
+</div>
+<div class="news-item">
+<div class="date">
+<span>FEBRUARY</span>
+<span>01</span>
+<span>2024</span>
+</div>
+<a href="#">Updated Debian 11.9 released</a>
+</div>
+<div class="news-item">
+<div class="date">
+<span>JANUARY</span>
+<span>12</span>
+<span>2024</span>
+</div>
+<a href="#">Updated Debian 12.4 released</a>
+</div>
+<div class="news-item">
+<div class="date">
+<span>DECEMBER</span>
+<span>19</span>
+<span>2023</span>
+</div>
+<a href="#">Debian 12.4 to supersede Debian 12.3</a>
+</div>
+<div class="news-item">
+<div class="date">
+<span>DECEMBER</span>
+<span>09</span>
+<span>2023</span>
+</div>
+<a href="#">Debian 12.3 image releases delayed</a>
+</div>
+</div>
+<a href="#">All the news</a>
+<br/>
+<img alt="RSS icon" src="placeholder.png" style="width: 16px; height: 16px; vertical-align: middle;"/>
+</section>
+</main>
+<div class="footer-wrapper">
+<div>This page is also available in the following languages:</div>
+<div>
+<a href="#">العربية</a> <a href="#">Bosanski</a> <a href="#">български</a> <a href="#">Català</a>
+<a href="#">Čeština</a> <a href="#">Dansk</a> <a href="#">Deutsch</a> <a href="#">Ελληνικά</a>
+<a href="#">English</a> <a href="#">Español</a> <a href="#">Eesti</a> <a href="#">Suomi</a>
+<a href="#">Français (Fr)</a> <a href="#">Galego</a> <a href="#">Indonesian</a> <a href="#">Italiano</a>
+<a href="#">日本語 (Nihongo)</a> <a href="#">한국어</a> <a href="#">Nederlands</a>
+<a href="#">Norsk (nynorsk)</a> <a href="#">Polski</a> <a href="#">Português</a>
+<a href="#">Русский</a> <a href="#">Slovensky</a> <a href="#">Svenska</a> <a href="#">Türkçe</a>
+<a href="#">Tiếng Việt</a> <a href="#">简体中文</a> <a href="#">正體中文 (繁體)</a>
+</div>
+<div>See our <a href="#">contact</a> page for getting in touch with us. Web site source code is available.</div>
+<div>Last Modified: Sat, May 12 11:27:09 UTC 2024 | Last Built: Sat, May 12 11:27:09 UTC 2024</div>
+<div>Copyright © 2024 SPI and others; See license details.</div>
+<div>Debian is a registered trademark of Software in the Public Interest, Inc.</div>
+</div>
+</body>
+</html>
+</p></body></html>

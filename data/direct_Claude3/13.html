@@ -1,0 +1,287 @@
+<html><body><p>
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Documentation Simplified</title>
+<style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    
+    header {
+      background-color: #f2f2f2;
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    nav a {
+      color: #333;
+      text-decoration: none;
+      margin-right: 20px;
+    }
+    
+    main {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    
+    section {
+      margin-bottom: 40px;
+    }
+    
+    h1 {
+      font-size: 36px;
+      color: #333;
+      margin-bottom: 20px;
+    }
+    
+    .hero {
+      display: flex;
+      align-items: center;
+      margin-bottom: 40px;
+    }
+    
+    .hero-text {
+      flex: 1;
+    }
+    
+    .hero-image {
+      flex: 1;
+      text-align: center;
+    }
+    
+    .hero-image img {
+      max-width: 100%;
+    }
+    
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    
+    .feature {
+      background-color: #f2f2f2;
+      padding: 20px;
+      width: 30%;
+      margin-bottom: 20px;
+      box-sizing: border-box;
+    }
+    
+    .feature h3 {
+      color: #333;
+      margin-top: 0;
+    }
+    
+    .feature p {
+      color: #666;
+    }
+    
+    .dark {
+      background-color: #333;
+      color: #fff;
+    }
+    
+    .purple {
+      background-color: #8c51c4;
+      color: #fff;
+    }
+    
+    .demo {
+      background-color: #f2f2f2;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    .demo pre {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: left;
+      overflow: auto;
+    }
+    
+    .demo ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 20px 0;
+      display: flex;
+      justify-content: center;
+    }
+    
+    .demo li {
+      margin: 0 10px;
+    }
+    
+    .products {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 40px;
+    }
+    
+    .product {
+      width: 30%;
+      background-color: #f2f2f2;
+      padding: 20px;
+      box-sizing: border-box;
+      text-align: center;
+    }
+    
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    footer nav {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+    
+    footer nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+  </style>
+</head>
+<body>
+<header>
+<nav>
+<a href="#">Product</a>
+<a href="#">Pricing</a>
+<a href="#">Resources</a>
+</nav>
+<a href="#">Log in</a>
+<a href="#">Sign up</a>
+</header>
+<main>
+<section class="hero">
+<div class="hero-text">
+<h1>Documentation simplified</h1>
+<p>Build, host, and share documentation, all with a single platform.</p>
+<a href="#">Sign up now</a>
+</div>
+<div class="hero-image">
+<img alt="Hero Image" src="placeholder.png"/>
+</div>
+</section>
+<section class="features">
+<div class="feature">
+<h3>Easy previews and editors</h3>
+<p>Preview changes on every commit to pull and push into shared documentation in sync across teams.</p>
+</div>
+<div class="feature dark">
+<h3>Ideal developer experience</h3>
+<p>Write documentation without changing your workflow or your team's using a docs-as-code approach.</p>
+</div>
+<div class="feature purple">
+<h3>Work privately or publicly</h3>
+<p>Enable roles which give your team access to the work, while MongoDB automatically version controls your documentation.</p>
+</div>
+</section>
+<h2>Features</h2>
+<ul>
+<li>
+<h3>Supports any dev tool</h3>
+<p>Integrated support for Bitbuck, GitLab, GitHub, GitBucket, GitLab, GitBlit, Gogs to work with any documentation tool.</p>
+</li>
+<li>
+<h3>Integrated search</h3>
+<p>Can't seem to find what you're looking for? Get the best search experience search too up users 3.0x.</p>
+</li>
+<li>
+<h3>Pull request previews</h3>
+<p>Review each pull request before merging by changes for the collaboration across your organization.</p>
+</li>
+<li>
+<h3>Versioned docs</h3>
+<p>Match your product release cycle with multiple versions of your docs. Automatically build versions from any branch or tag.</p>
+</li>
+<li>
+<h3>Private repository support</h3>
+<p>Clone private repositories using a command (GitHub, GitLab or BitBucket account, or clone from any Git provider with an SSH key.</p>
+</li>
+<li>
+<h3>Single: Sign On</h3>
+<p>For large teams.</p>
+<p>Configure the login process to your documentation with integrated authentication. Comes $10k with GitHub or GSuite to unify identity provisioning in one place.</p>
+</li>
+</ul>
+<a href="#">Discover all our features</a>
+<section class="demo">
+<h2>Upgrade your documentation with Read the Docs</h2>
+<pre>
+import sys
+import os
+
+try:
+    import read_docs
+except ImportError:
+    for path in sys.path:
+        if os.path.isdir(path):
+            docs_path = os.path.join(path, 'read_docs')
+            if os.path.isdir(docs_path):
+                sys.path.append(docs_path)
+                try:
+                    import read_docs
+                except ImportError:
+                    pass
+                else:
+                    break
+
+docs_api = read_docs.DocsAPI(user/proj.py)
+
+install():
+    docs_api.install()
+      </pre>
+<ul>
+<li>Create an account</li>
+<li>Import your project</li>
+<li>Get a subdomain &amp; work.</li>
+<li>Add team, viewing permissions</li>
+<li>Third-party integrations</li>
+</ul>
+<p>Join thousands of happy users</p>
+</section>
+<section class="products">
+<div class="product">
+<img alt="Flask" src="placeholder.png"/>
+<h3>Flask</h3>
+<p>Flask is a Python web framework that runs a small server with websockets for client publishers.</p>
+</div>
+<div class="product">
+<img alt="Allegro" src="placeholder.png"/>
+<h3>Allegro</h3>
+<p>Allegro facilitates a web-based interactive computational environment by coupling a number of open-source libraries.</p>
+</div>
+<div class="product">
+<img alt="Quaid Engine" src="placeholder.png"/>
+<h3>Quaid Engine</h3>
+<p>Quaid Engine is a free and open source interatively-hosted 2D and 3D game engine.</p>
+</div>
+</section>
+<a href="#">Try it now</a>
+</main>
+<footer>
+<nav>
+<a href="#">Product</a>
+<a href="#">Pricing</a>
+<a href="#">Resources</a>
+<a href="#">Company</a>
+</nav>
+<p>© Copyright 2023, Read the Docs, Inc. All rights reserved.</p>
+</footer>
+</body>
+</html>
+</p></body></html>

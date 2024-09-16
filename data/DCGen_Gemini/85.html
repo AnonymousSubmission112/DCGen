@@ -1,0 +1,304 @@
+<html><body><p>
+<!DOCTYPE html>
+
+<html>
+<head>
+<style>
+body {
+  margin: 0;
+  background-color: white;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+}
+
+.header .login {
+  background-color: #f0f0f0;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+}
+
+.header .menu {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.header .menu .icon {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #eee;
+  margin-left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header .menu .icon::before {
+  content: "";
+  width: 10px;
+  height: 2px;
+  background-color: #333;
+  display: block;
+}
+
+.header .menu .icon::after {
+  content: "";
+  width: 10px;
+  height: 2px;
+  background-color: #333;
+  display: block;
+  margin-top: 4px;
+}
+
+.header .menu .icon::before,
+.header .menu .icon::after {
+  transform-origin: 50% 50%;
+}
+
+.search {
+  position: fixed;
+  top: 60px;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.search input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  padding: 10px;
+  font-size: 16px;
+  color: #333;
+  flex: 1;
+  border-bottom: 1px solid #eee;
+}
+
+.search .icon {
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.search .icon::before {
+  content: "";
+  width: 12px;
+  height: 2px;
+  background-color: #333;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.search .icon::after {
+  content: "";
+  width: 12px;
+  height: 2px;
+  background-color: #333;
+  display: block;
+}
+
+.search .icon:first-child::before,
+.search .icon:first-child::after {
+  transform: rotate(45deg);
+}
+
+.search .icon:last-child::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #eee;
+  display: block;
+}
+
+.search .icon:last-child::after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #333;
+  display: block;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+}
+
+.search .icon:last-child::before,
+.search .icon:last-child::after {
+  transform-origin: 50% 50%;
+}
+
+.search .label {
+  margin-left: 10px;
+  font-size: 14px;
+  color: #333;
+}
+
+.footer {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #eee;
+  padding: 10px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.footer .icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #6200ee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer .icon::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: white;
+  display: block;
+}
+
+.weather {
+  position: fixed;
+  top: 10px;
+  right: 20px;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.weather .title {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.weather .info {
+  font-size: 12px;
+  color: #666;
+}
+
+.weather .icon {
+  width: 30px;
+  height: 30px;
+  background-color: #eee;
+  border-radius: 5px;
+  margin-left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.weather .icon img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+.details {
+  position: fixed;
+  top: 100px;
+  left: 20px;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.details .title {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.details .info {
+  font-size: 12px;
+  color: #666;
+}
+
+.details .info span {
+  font-weight: bold;
+}
+
+.details .icon {
+  width: 20px;
+  height: 20px;
+  background-color: #eee;
+  border-radius: 5px;
+  margin-left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.details .icon img {
+  width: 15px;
+  height: 15px;
+  object-fit: contain;
+}
+</style>
+</head>
+<body>
+<div class="header">
+<div class="login">Войти</div>
+<div class="menu">
+<div class="icon"></div>
+</div>
+</div>
+<div class="search">
+<input placeholder="Найдется всё" type="text"/>
+<div class="icon"></div>
+<div class="icon"></div>
+<div class="label">Гонконг</div>
+</div>
+<div class="weather">
+<div class="title">Сегодня: сильный дождь</div>
+<div class="info">+24...+26° · слабый ветер 3 м/с</div>
+<div class="icon">
+<img alt="weather icon" src="placeholder.png"/>
+</div>
+</div>
+<div class="details">
+<div class="title">25°</div>
+<div class="info">USD 90.25 · EUR 97.88</div>
+<div class="icon">
+<img alt="currency icon" src="placeholder.png"/>
+</div>
+</div>
+<div class="footer">
+<div class="icon"></div>
+</div>
+</body>
+</html>
+</p></body></html>

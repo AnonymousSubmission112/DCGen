@@ -1,0 +1,331 @@
+<html><body><p>
+<!DOCTYPE html>
+
+<html>
+<head>
+<style>
+body {
+  background-color: #141414;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #141414;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #e50914;
+}
+
+.language {
+  display: flex;
+  align-items: center;
+}
+
+.language select {
+  background-color: #141414;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  margin-right: 10px;
+  border-radius: 3px;
+}
+
+.language select option {
+  background-color: #141414;
+  color: white;
+}
+
+.sign-in {
+  background-color: #e50914;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 0;
+  background-color: #141414;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 24px;
+}
+
+.hero input {
+  width: 300px;
+  padding: 12px;
+  border: none;
+  border-radius: 3px;
+  background-color: #333;
+  color: white;
+  margin-bottom: 16px;
+}
+
+.hero button {
+  background-color: #e50914;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.hero button:hover {
+  background-color: #b00000;
+}
+
+.section {
+  display: flex;
+  padding: 40px 0;
+  background-color: #141414;
+}
+
+.section-content {
+  flex: 1;
+  padding: 0 40px;
+}
+
+.section-content h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.section-content p {
+  font-size: 18px;
+  margin-bottom: 24px;
+}
+
+.section-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #222;
+  padding: 20px;
+}
+
+.section-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.faq {
+  padding: 40px 0;
+  background-color: #141414;
+  text-align: center;
+}
+
+.faq h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.faq-item {
+  background-color: #333;
+  color: white;
+  padding: 16px;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  position: relative;
+}
+
+.faq-item:hover {
+  background-color: #444;
+}
+
+.faq-item:hover .plus-icon {
+  transform: rotate(45deg);
+}
+
+.faq-item h3 {
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+.plus-icon {
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  transform: translateY(-50%);
+  font-size: 20px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.footer {
+  padding: 40px 0;
+  background-color: #141414;
+  text-align: center;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer .language {
+  margin-bottom: 16px;
+}
+
+.footer .language select {
+  background-color: #141414;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  margin-right: 10px;
+  border-radius: 3px;
+}
+
+.footer .language select option {
+  background-color: #141414;
+  color: white;
+}
+</style>
+</head>
+<body>
+<header class="header">
+<h1 class="logo">NETFLIX</h1>
+<div class="language">
+<select>
+<option value="en">English</option>
+</select>
+<button class="sign-in">Sign In</button>
+</div>
+</header>
+<section class="hero">
+<h1>Unlimited movies, TV shows, and more</h1>
+<p>Watch anywhere. Cancel anytime.</p>
+<p>Ready to watch? Enter your email to create or restart your membership.</p>
+<input placeholder="Email address" type="email"/>
+<button>Get Started</button>
+</section>
+<section class="section">
+<div class="section-content">
+<h2>Enjoy on your TV</h2>
+<p>Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</p>
+</div>
+<div class="section-image">
+<img alt="" src="placeholder.png"/>
+</div>
+</section>
+<section class="section">
+<div class="section-image">
+<img alt="" src="placeholder.png"/>
+</div>
+<div class="section-content">
+<h2>Download your shows to watch offline</h2>
+<p>Save your favorites easily and always have something to watch.</p>
+</div>
+</section>
+<section class="section">
+<div class="section-content">
+<h2>Watch everywhere</h2>
+<p>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
+</div>
+<div class="section-image">
+<img alt="" src="placeholder.png"/>
+</div>
+</section>
+<section class="section">
+<div class="section-image">
+<img alt="" src="placeholder.png"/>
+</div>
+<div class="section-content">
+<h2>Create profiles for kids</h2>
+<p>Send kids on adventures with their favorite characters in a space made just for them—free with your membership.</p>
+</div>
+</section>
+<section class="faq">
+<h2>Frequently Asked Questions</h2>
+<ul class="faq-list">
+<li class="faq-item">
+<h3>What is Netflix?</h3>
+<span class="plus-icon">+</span>
+</li>
+<li class="faq-item">
+<h3>How much does Netflix cost?</h3>
+<span class="plus-icon">+</span>
+</li>
+<li class="faq-item">
+<h3>Where can I watch?</h3>
+<span class="plus-icon">+</span>
+</li>
+<li class="faq-item">
+<h3>How do I cancel?</h3>
+<span class="plus-icon">+</span>
+</li>
+<li class="faq-item">
+<h3>What can I watch on Netflix?</h3>
+<span class="plus-icon">+</span>
+</li>
+<li class="faq-item">
+<h3>Is Netflix good for kids?</h3>
+<span class="plus-icon">+</span>
+</li>
+</ul>
+</section>
+<footer class="footer">
+<p>Questions? <a href="#">Contact us.</a></p>
+<div class="footer-links">
+<ul>
+<li><a href="#">FAQ</a></li>
+<li><a href="#">Investor Relations</a></li>
+<li><a href="#">Ways to Watch</a></li>
+<li><a href="#">Corporate Information</a></li>
+<li><a href="#">Only on Netflix</a></li>
+</ul>
+<ul>
+<li><a href="#">Help Center</a></li>
+<li><a href="#">Jobs</a></li>
+<li><a href="#">Terms of Use</a></li>
+<li><a href="#">Contact Us</a></li>
+</ul>
+</div>
+<div class="language">
+<select>
+<option value="en">English</option>
+</select>
+</div>
+<p>Netflix Hong Kong SAR China</p>
+</footer>
+</body>
+</html>
+</p></body></html>

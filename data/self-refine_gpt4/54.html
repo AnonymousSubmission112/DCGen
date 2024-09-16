@@ -1,0 +1,245 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Launchpad</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+            border-bottom: 1px solid #ddd;
+        }
+        .header img {
+            height: 50px;
+        }
+        .header .auth {
+            align-self: center;
+        }
+        .search-bar {
+            padding: 20px 0;
+            text-align: center;
+        }
+        .search-bar input[type="text"] {
+            width: 50%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .search-bar button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .stats {
+            text-align: center;
+            margin: 20px 0;
+            color: #666;
+        }
+        .main {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .main h1 {
+            font-size: 32px;
+            color: #333;
+        }
+        .main .intro {
+            color: #666;
+            margin-bottom: 20px;
+        }
+        .main .grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+        .main .grid .box {
+            flex: 1 0 45%;
+            border: 1px solid #ddd;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-radius: 4px;
+        }
+        .get-started {
+            text-align: center;
+            margin: 40px 0;
+        }
+        .get-started h2 {
+            color: #333;
+        }
+        .get-started a {
+            display: inline-block;
+            margin: 20px 10px;
+            padding: 10px 20px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            text-decoration: none;
+            color: #007bff;
+        }
+        .featured-projects, .recent-blogs {
+            margin: 40px 0;
+        }
+        .featured-projects h2, .recent-blogs h2 {
+            color: #333;
+        }
+        .featured-projects .project-list, .recent-blogs .blog-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .featured-projects .project-list .project, .recent-blogs .blog-list .blog {
+            flex: 1 0 30%;
+            border: 1px solid #ddd;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-radius: 4px;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px 0;
+            border-top: 1px solid #ddd;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <img src="placeholder.png" alt="Logo">
+        <div class="auth">
+            <a href="#">Log In / Register</a>
+        </div>
+    </header>
+    <div class="search-bar">
+        <input type="text" placeholder="Search">
+        <button>Search</button>
+    </div>
+    <div class="stats">
+        <!-- Add statistics text here -->
+        46,521 projects, 2,041,177 bugs, 1,009,569 branches, 78,692 Git repositories, 3,113,649 translations, 813,706 answers, 76,076 blueprints, and counting...
+    </div>
+    <div class="main">
+        <h1>Launchpad</h1>
+        <p class="intro">A software collaboration platform that provides</p>
+        <div class="grid">
+            <!-- Add grid box items here -->
+            <div class="box">
+                <h3>Bug tracking</h3>
+                <p>One place to track bugs across project boundaries and tools</p>
+            </div>
+			<div class="box">
+                <h3>Code hosting using Git and Bazaar</h3>
+                <p>Easy for anyone to get your project's code using Git & Bazaar</p>
+            </div>
+            <div class="box">
+                <h3>Code reviews</h3>
+                <p>Full control of who can land code in<br>your project remains with you</p>
+            </div>
+            <div class="box">
+                <h3>Ubuntu package building and hosting</h3>
+                <p>Publishing your software is simple with Personal Package Archives</p>
+            </div>
+			<div class="box">
+                <h3>Crowd source translations</h3>
+                <p>Build an open community to translate your software into almost any language</p>
+            </div>
+            <div class="box">
+                <h3>Mailing lists</h3>
+                <p>Find and work with the right people by building a social network of individuals and teams around projects</p>
+            </div>
+            <div class="box">
+                <h3>Answer tracking and FAQs</h3>
+                <p>Free software thrives on people helping each other when the unexpected happens</p>
+            </div>
+            <div class="box">
+                <h3>Specification tracking</h3>
+                <p>Track ideas and chunks of work as "blueprints"</p>
+            </div>
+        </div>
+        <div class="get-started">
+            <h2>Get started</h2>
+            <p>Learn more about Launchpad in the <a href="#">user guide</a> or try it for yourself in our <a href="#">sandbox environment</a>. If you're ready, you can:</p>
+            <div>
+                <a href="#">Create an account</a>
+                <a href="#">Take the tour</a>
+                <a href="#">Find answers</a>
+            </div>
+        </div>
+        <div class="featured-projects">
+            <h2>Featured projects</h2>
+            <div class="project-list">
+                <!-- Add projects here -->
+                <div class="project">
+                    <p>Beautiful Soup<br>A program designed for screen-scraping HTML. The discussion group is at...</p>
+                </div>
+                <div class="project">
+                    <p>Breezy<br>Breezy is a friendly powerful distributed version control system.</p>
+                </div>
+                <div class="project">
+                    <p>Inkscape<br>Inkscape is an SVG-based graphics editor featuring native object creation...</p>
+                </div>
+                <div class="project">
+                    <p>Landscape Server<br>Web-based tool for managing Ubuntu systems.</p>
+                </div>
+                <div class="project">
+                    <p>Launchpad itself<br>Launchpad is a set of web services to help software developers collaborate.</p>
+                </div>
+                <div class="project">
+                    <p>OpenMW<br>OpenMW is an attempt to reimplement the popular role-playing game Morrowind...</p>
+                </div>
+                <div class="project">
+                    <p>OpenShot Video Editor<br>OpenShot video editor is a free, open-source, non-linear video editor. It can create and edit...</p>
+                </div>
+                <div class="project">
+                    <p>OpenStack<br>The OpenStack Open Source Cloud Mission: To produce the ubiquitous Open Source Cloud Computing p...</p>
+                </div>
+                <div class="project">
+                    <p>Ubuntu<br>Ubuntu is a complete Linux-based operating system, freely available with both community and profe...</p>
+                </div>
+            </div>
+            <p><a href="#">Browse all 46521 projects</a></p>
+        </div>
+        <div class="recent-blogs">
+            <h2>Recent Launchpad blog posts</h2>
+            <div class="blog-list">
+                <!-- Add blog posts here -->
+                <div class="blog">
+                    <h3><a href="#">Launchpad's new homepage</a> - 04 Mar 2024</h3>
+                    <p>Launchpad has been around for a while, and its homepage has remained untouched for a few years now. If you...</p>
+                </div>
+                <div class="blog">
+                    <h3><a href="#">Launchpad role federated Heinlein accounts</a> - 23 Jan 2024</h3>
+                    <p>Users can now federate their profile on Launchpad, as requested by Canonical's Community Team. We also took the chance to...</p>
+                </div>
+                <div class="blog">
+                    <h3><a href="#">Self-service sync&#39;d beta tests</a> - 23 Nov 2023</h3>
+                    <p>Launchpad has supported sync&#39;d fatal since it was a requirement to get Ubuntu&#39;s refactor off going. We didn&#39;t actually have...</p>
+                </div>
+                <div class="blog">
+                    <h3><a href="#">Introducing PPA Scoped Access Tokens</a> - 15 Nov 2023</h3>
+                    <p>Access tokens can be used to access repositories on behalf of someone. They have scope limitations, optional expiry dates, and can be revoked at any time...</p>
+                </div>
+                <div class="blog">
+                    <h3><a href="#">New domain names for PPAs</a> - 18 Oct 2023</h3>
+                    <p>Today we introduced an update requiring Personal Package Archives (PPAs) have always been hosted on launchpad.net. This generally works well...</p>
+                </div>
+            </div>
+            <a href="#" class="read-blog">Read the blog</a>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>&copy; 2004 Canonical Ltd. &middot; <a href="#">Terms of use</a> &middot; <a href="#">Data privacy</a> &middot; <a href="#">Contact Launchpad Support</a> &middot; <a href="#">Blog</a> &middot; <a href="#">Careers</a> &middot; <a href="#">System status</a> &middot; <a href="#">0d1f61c (Get the code!)</a></p>
+    </footer>
+</body>
+</html>

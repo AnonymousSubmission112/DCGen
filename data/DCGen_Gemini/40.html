@@ -1,0 +1,392 @@
+<html><body><p>
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Gravatar</title>
+<style>
+        body {
+            margin: 0;
+            font-family: sans-serif;
+        }
+
+        header {
+            background-color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 32px;
+            height: 32px;
+            margin-right: 10px;
+        }
+
+        .logo h1 {
+            margin: 0;
+            font-size: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav li {
+            margin-left: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: blue;
+        }
+
+        .section-1 {
+            background-color: white;
+            padding: 50px;
+            text-align: center;
+        }
+
+        .section-1 h1 {
+            font-size: 48px;
+            font-weight: bold;
+            color: blue;
+        }
+
+        .section-1 p {
+            font-size: 16px;
+            color: blue;
+        }
+
+        .section-1 input {
+            background-color: lightgray;
+            border: none;
+            padding: 10px;
+            font-size: 16px;
+            color: blue;
+            width: 300px;
+            height: 40px;
+        }
+
+        .section-1 button {
+            background-color: blue;
+            border: none;
+            padding: 10px;
+            font-size: 16px;
+            color: white;
+            width: 150px;
+            height: 40px;
+            cursor: pointer;
+        }
+
+        .section-2, .section-3, .section-4 {
+            background-color: #007bff;
+            padding: 50px;
+            text-align: center;
+        }
+
+        .section-2 .icon, .section-3 .icon, .section-4 .icon {
+            width: 30px;
+            height: 30px;
+            margin: 0 10px;
+            display: inline-block;
+        }
+
+        .section-3 .title, .section-4 .title {
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        .section-3 p, .section-4 p {
+            font-size: 16px;
+            color: white;
+        }
+
+        .section-4 button {
+            background-color: blue;
+            border: none;
+            padding: 10px;
+            font-size: 16px;
+            color: white;
+            width: 200px;
+            height: 40px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        .section-5 {
+            background-color: #333;
+            padding: 50px;
+            text-align: left;
+        }
+
+        .section-5 code {
+            font-family: monospace;
+            font-size: 16px;
+            color: white;
+        }
+
+        .section-6 {
+            background-color: black;
+            padding: 50px;
+            text-align: center;
+        }
+
+        .section-6 h2 {
+            font-size: 32px;
+            font-weight: bold;
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        .section-6 p {
+            font-size: 16px;
+            color: white;
+        }
+
+        .section-6 button {
+            background-color: blue;
+            border: none;
+            padding: 10px;
+            font-size: 16px;
+            color: white;
+            width: 200px;
+            height: 40px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        .section-7 {
+            background-color: white;
+            padding: 50px;
+            text-align: center;
+        }
+
+        .section-7 .circle {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: gray;
+            margin: 20px auto;
+            display: block;
+        }
+
+        .section-7 h2 {
+            font-size: 32px;
+            font-weight: bold;
+            color: blue;
+            margin-bottom: 20px;
+        }
+
+        .section-7 p {
+            font-size: 16px;
+            color: blue;
+        }
+
+        .section-7 button {
+            background-color: blue;
+            border: none;
+            padding: 10px;
+            font-size: 16px;
+            color: white;
+            width: 200px;
+            height: 40px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        footer {
+            background-color: #007bff;
+            padding: 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        footer .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        footer .logo img {
+            width: 32px;
+            height: 32px;
+            margin-right: 10px;
+        }
+
+        footer .logo h1 {
+            margin: 0;
+            font-size: 20px;
+            color: white;
+        }
+
+        footer .languages {
+            display: flex;
+            align-items: center;
+        }
+
+        footer .languages img {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+        }
+
+        footer .languages h1 {
+            margin: 0;
+            font-size: 20px;
+            color: white;
+        }
+
+        footer ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        footer li {
+            margin-bottom: 10px;
+        }
+
+        footer a {
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+<header>
+<div class="logo">
+<img alt="Gravatar Logo" src="placeholder.png"/>
+<h1>Gravatar</h1>
+</div>
+<nav>
+<ul>
+<li><a href="#">Developers</a></li>
+<li><a href="#">Support</a></li>
+<li><a href="#">Blog</a></li>
+<li><a href="#">Log in</a></li>
+<li><a href="#">Sign up</a></li>
+</ul>
+</nav>
+</header>
+<section class="section-1">
+<h1>One profile for everything, everywhere.</h1>
+<p>Your email address becomes your passport to the digital world, empowering you with complete control over your personal data.</p>
+<input placeholder="Enter email address..." type="text"/>
+<button>View profile</button>
+<p>Gravatar profiles are free for everyone — forever.</p>
+</section>
+<section class="section-2">
+<div class="icon"><img alt="WordPress" src="placeholder.png"/></div>
+<div class="icon"><img alt="GitHub" src="placeholder.png"/></div>
+<div class="icon"><img alt="Slack" src="placeholder.png"/></div>
+<div class="icon"><img alt="OpenAI" src="placeholder.png"/></div>
+<div class="icon"><img alt="Atlassian" src="placeholder.png"/></div>
+<div class="icon"><img alt="Humane" src="placeholder.png"/></div>
+<div class="icon"><img alt="Mailchimp" src="placeholder.png"/></div>
+<div class="icon"><img alt="Stack Overflow" src="placeholder.png"/></div>
+<div class="icon"><img alt="Coinbase" src="placeholder.png"/></div>
+</section>
+<section class="section-3">
+<div class="icon"><img alt="Checkmark" src="placeholder.png"/></div>
+<div class="icon"><img alt="Globe" src="placeholder.png"/></div>
+<h2 class="title">Set once, seen everywhere.</h2>
+<p>Create and manage your profile from a single place, telling the web who you are and where people can find you. Skip filling out profile pages forever.</p>
+<div class="icon"><img alt="WordPress" src="placeholder.png"/></div>
+<div class="icon"><img alt="GitHub" src="placeholder.png"/></div>
+<div class="icon"><img alt="Slack" src="placeholder.png"/></div>
+<div class="icon"><img alt="Atlassian" src="placeholder.png"/></div>
+<h2 class="title">Trusted by big platforms.</h2>
+<p>Millions of websites like WordPress, Slack, and OpenAI use your Gravatar profile automatically, saving you time and improving your experience.</p>
+</section>
+<section class="section-4">
+<div class="icon"><img alt="Shield" src="placeholder.png"/></div>
+<div class="icon"><img alt="Globe" src="placeholder.png"/></div>
+<h2 class="title">It starts with an email.</h2>
+<p>Each Gravatar profile is connected to an email address. When you use this email around the web, your entire profile comes with you.</p>
+<h2 class="title">Public, open, and responsible.</h2>
+<p>Take control over the data that you share with the tools you use. You decide what is in your profile and how public or private it is. With Gravatar, your data is yours and yours only.</p>
+<button>Read our Privacy Policy</button>
+</section>
+<section class="section-5">
+<code>
+            example.js
+            <br/>
+            const sha256 = require('js-sha256');
+            <br/>
+            function getGravatarURL(email) {
+            <br/>
+            // Trim leading and trailing whitespace from
+            <br/>
+            // an email address and force all characters
+            <br/>
+            // to lower case
+            <br/>
+            const address = String(email).trim().toLowerCase();
+            <br/>
+            // Create a SHA256 hash of the final string
+            <br/>
+            const hash = sha256(address);
+            <br/>
+            // Grab the actual image URL
+            <br/>
+            return 'https://www.gravatar.com/avatar/${hash}';
+            <br/>
+            }
+            <br/>
+            //
+            <br/>
+            //
+        </code>
+<code>
+            example.php
+        </code>
+</section>
+<section class="section-6">
+<h2>FOR DEVELOPERS &amp; APP MAKERS</h2>
+<h2>Unlock personalized user experiences.</h2>
+<p>Gravatar helps developers create personal signup flows and tailored user journeys — in a privacy-forward way. Gravatar can be integrated with your app in mere minutes.</p>
+<button>Use the developer API</button>
+</section>
+<section class="section-7">
+<div class="circle"><img alt="Globe" src="placeholder.png"/></div>
+<h2>We are building the open web.</h2>
+<p>Gravatar, a service by Automattic, has powered avatars and profiles since 2004. We are passionate about open-source and making the web a more accessible place. We are the driving force behind WordPress.com, Tumblr, Woo, Jetpack, Day One, and more.</p>
+<button>Claim your free profile</button>
+</section>
+<footer>
+<div class="logo">
+<img alt="Gravatar Logo" src="placeholder.png"/>
+<h1>Gravatar</h1>
+</div>
+<div class="languages">
+<img alt="Globe Icon" src="placeholder.png"/>
+<h1>Languages</h1>
+</div>
+<ul>
+<li><a href="#">Developer Resources</a></li>
+<li><a href="#">Privacy Policy</a></li>
+<li><a href="#">Support</a></li>
+<li><a href="#">Blog</a></li>
+</ul>
+<p>Work With Us</p>
+<p>An Automattic venture</p>
+</footer>
+</body>
+</html>
+</p></body></html>

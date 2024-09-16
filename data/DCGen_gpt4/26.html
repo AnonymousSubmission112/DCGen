@@ -1,0 +1,362 @@
+<html><body><p>
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Recreated Webpage</title>
+<style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+        }
+        .header {
+            background-color: #1b2733;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+            height: 40px;
+        }
+        .header a {
+            color: #6eb8fa;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .header .left-section {
+            display: flex;
+            align-items: center;
+        }
+        .header .left-section img {
+            height: 24px;
+            margin-right: 10px;
+        }
+        .header .right-section a {
+            margin-left: 10px;
+        }
+        .container {
+            text-align: center;
+            margin: 40px 0;
+        }
+        .main-container {
+            background-color: #505050;
+            height: 600px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            position: relative;
+        }
+        .main-container .logo {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+        .main-container .main-content {
+            max-width: 600px;
+        }
+        .main-container .main-content .main-heading {
+            font-size: 48px;
+            font-weight: bold;
+        }
+        .main-container .main-content .sub-heading {
+            font-size: 24px;
+            margin-top: 10px;
+        }
+        .main-container .main-content .buttons {
+            margin-top: 20px;
+        }
+        .main-container .main-content .button {
+            background-color: #FFD700;
+            color: #000;
+            border: none;
+            padding: 15px 30px;
+            margin: 0 10px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        .main-container .main-content .button.learn-more {
+            background-color: transparent;
+            border: 2px solid white;
+            color: white;
+        }
+        .main-container .main-content .image-placeholder {
+            margin-top: 20px;
+        }
+        .main-container .main-content .image-placeholder img {
+            width: 150px;
+        }
+        .partners {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .partner-logo {
+            width: 80px;
+            height: 80px;
+            background: url('placeholder.png') no-repeat center;
+            background-size: cover;
+        }
+        .highlighted-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f8f8f8;
+            padding: 50px 0;
+        }
+        .highlighted-section .content {
+            display: flex;
+            max-width: 1200px;
+            padding: 20px;
+            background-color: #ffffff;
+        }
+        .highlighted-section .content img {
+            max-width: 100%;
+            height: auto;
+        }
+        .highlighted-section .content .text-content {
+            margin-left: 20px;
+        }
+        .highlighted-section .content .text-content h3 {
+            font-size: 1.5em;
+            color: #333;
+        }
+        .highlighted-section .content .text-content p {
+            font-size: 1em;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        .highlighted-section .content .text-content .learn-more-btn {
+            background-color: #f7b500;
+            color: #ffffff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            padding: 40px;
+            background-color: #f9f9f9;
+            border-top: 1px solid #eaeaea;
+        }
+        .footer-column {
+            width: 22%;
+        }
+        .footer-column h4 {
+            margin: 0 0 10px;
+            font-size: 16px;
+            color: #333333;
+        }
+        .footer-column ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .footer-column ul li {
+            margin: 5px 0;
+        }
+        .footer-column ul li a {
+            text-decoration: none;
+            color: #666666;
+            font-size: 14px;
+        }
+        .contact {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .contact button {
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #ffffff;
+            background-color: #004f8b;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .social-icons {
+            display: flex;
+            margin-top: 20px;
+        }
+        .social-icons a {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 5px;
+            background-color: #004f8b;
+            border-radius: 50%;
+            color: #ffffff;
+            text-decoration: none;
+        }
+        .social-icons a i {
+            font-size: 20px;
+        }
+        .footer-bottom {
+            background-color: white;
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 1px solid #ddd;
+            font-size: 12px;
+            color: #666;
+        }
+        .footer-bottom .footer-left, .footer-bottom .footer-right {
+            display: flex;
+            align-items: center;
+        }
+        .footer-bottom .footer-left {
+            flex-wrap: wrap;
+        }
+        .footer-bottom .footer-left div, .footer-bottom .footer-right div {
+            margin: 5px 10px;
+            white-space: nowrap;
+        }
+        .tiny-images img {
+            width: 16px;
+            height: 16px;
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+<div class="left-section">
+<img alt="Logo" src="placeholder.png"/>
+<a href="#">A New Way to Create High-Quality Ads Effortlessly</a>
+</div>
+<div class="right-section">
+<a href="#">Discover GenAI Ad Maker &gt;&gt;</a>
+</div>
+</div>
+<div class="main-container">
+<div class="logo">
+<img alt="Logo" src="placeholder.png"/>
+</div>
+<div class="main-content">
+<div class="main-heading">REACH YOUR CUSTOMERS ON WEBSITES THEY TRUST</div>
+<div class="sub-heading">Drive business results by reaching people genuinely, effectively and at the right moment.</div>
+<div class="buttons">
+<a class="button contact-us" href="#">Contact Us</a>
+<a class="button learn-more" href="#">Learn More</a>
+</div>
+<div class="image-placeholder">
+<img alt="Placeholder Image" src="placeholder.png"/>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="section-title">Exclusive Partnerships with Top Publishers Around the Globe</div>
+<div class="partners">
+<div class="partner-logo"></div>
+<div class="partner-logo"></div>
+<div class="partner-logo"></div>
+<div class="partner-logo"></div>
+<div class="partner-logo"></div>
+<div class="partner-logo"></div>
+</div>
+</div>
+<div class="highlighted-section">
+<div class="content">
+<img alt="Placeholder Image" src="placeholder.png"/>
+<div class="text-content">
+<h3>Reach your audience in new places</h3>
+<p>Find and engage over one billion monthly active users on premium publishers at massive scale on the world's leading native advertising platform.</p>
+<p>Create meaningful engagements</p>
+<p>Create unique and relevant ad experiences using Taboola's user behavior data and flexible creative formats.</p>
+<p>Drive marketing results</p>
+<p>Meet your marketing objectives C build awareness, generate high-value leads, and encourage customers to take action online.</p>
+<a class="learn-more-btn" href="#">Learn More</a>
+</div>
+</div>
+</div>
+<div class="footer">
+<div class="footer-column">
+<h4>Advertisers</h4>
+<ul>
+<li><a href="#">Advertise</a></li>
+<li><a href="#">Awareness</a></li>
+<li><a href="#">Consideration</a></li>
+<li><a href="#">Conversions</a></li>
+<li><a href="#">Native Advertising</a></li>
+<li><a href="#">GenAI Ad Maker</a></li>
+<li><a href="#">Creative Shop</a></li>
+<li><a href="#">Contextly</a></li>
+</ul>
+</div>
+<div class="footer-column">
+<h4>Digital Properties</h4>
+<ul>
+<li><a href="#">Publishers</a></li>
+<li><a href="#">Taboola Newsroom</a></li>
+<li><a href="#">Taboola News</a></li>
+<li><a href="#">Skiimzs</a></li>
+</ul>
+</div>
+<div class="footer-column">
+<h4>About</h4>
+<ul>
+<li><a href="#">Our Story</a></li>
+<li><a href="#">Social Responsibility</a></li>
+<li><a href="#">Careers</a></li>
+<li><a href="#">Offices</a></li>
+<li><a href="#">Press Center</a></li>
+<li><a href="#">Management</a></li>
+<li><a href="#">Board</a></li>
+</ul>
+</div>
+<div class="footer-column">
+<h4>Resources</h4>
+<ul>
+<li><a href="#">Taboola Blog</a></li>
+<li><a href="#">Engineering Blog</a></li>
+<li><a href="#">AI Resources</a></li>
+<li><a href="#">Brand Guidelines</a></li>
+<li><a href="#">Advertisers Help Center</a></li>
+<li><a href="#">Publishers Help Center</a></li>
+<li><a href="#">Dev Center</a></li>
+<li><a href="#">Content Policies</a></li>
+<li><a href="#">Trust Center</a></li>
+</ul>
+</div>
+<div class="contact">
+<button>Contact Us</button>
+<div class="social-icons">
+<a href="#"><i class="fa fa-facebook"></i></a>
+<a href="#"><i class="fa fa-twitter"></i></a>
+<a href="#"><i class="fa fa-linkedin"></i></a>
+<a href="#"><i class="fa fa-youtube"></i></a>
+</div>
+</div>
+</div>
+<div class="footer-bottom">
+<div class="footer-left">
+<div>Cookie Policy</div>
+<div>Terms of Use</div>
+<div>Opt out</div>
+<div>3rd Party Online Advertising</div>
+<div>Do Not Sell or Share My Personal Info</div>
+<div>OBA Attribution</div>
+<div>Privacy Policy</div>
+</div>
+<div class="footer-right">
+<div class="tiny-images">
+<img alt="" src="placeholder.png"/>
+<img alt="" src="placeholder.png"/>
+<img alt="" src="placeholder.png"/>
+</div>
+</div>
+</div>
+</body>
+</html>
+</p></body></html>

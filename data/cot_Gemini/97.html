@@ -1,0 +1,492 @@
+<html><body><p>
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Mediavine</title>
+<style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background-color: #f2f2f2;
+    }
+
+    header {
+      background-color: #fff;
+      padding: 15px 0;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 15px;
+    }
+
+    .logo {
+      display: inline-block;
+      font-size: 24px;
+      font-weight: bold;
+      color: #333;
+      margin-right: 20px;
+    }
+
+    .nav {
+      display: inline-block;
+      margin-left: auto;
+    }
+
+    .nav a {
+      display: inline-block;
+      margin-right: 20px;
+      text-decoration: none;
+      color: #333;
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    .nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      background-color: #fff;
+      padding: 60px 0;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      color: #666;
+      margin-bottom: 30px;
+    }
+
+    .hero .btn {
+      background-color: #008CBA;
+      color: #fff;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      font-weight: bold;
+      text-decoration: none;
+      display: inline-block;
+      margin: 0 10px;
+    }
+
+    .hero .btn:hover {
+      background-color: #0069D9;
+    }
+
+    .hero img {
+      width: 200px;
+      height: 150px;
+      margin-top: 20px;
+    }
+
+    .section {
+      padding: 60px 0;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .section-title h2 {
+      font-size: 36px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .section-title p {
+      font-size: 18px;
+      color: #666;
+      margin-bottom: 0;
+    }
+
+    .features {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+
+    .feature {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+      flex: 0 0 300px;
+      text-align: center;
+    }
+
+    .feature img {
+      width: 100px;
+      height: 100px;
+      margin-bottom: 20px;
+    }
+
+    .feature h3 {
+      font-size: 24px;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .feature p {
+      font-size: 16px;
+      color: #666;
+      margin-bottom: 0;
+    }
+
+    .cta {
+      background-color: #008CBA;
+      color: #fff;
+      padding: 15px 30px;
+      border: none;
+      border-radius: 4px;
+      font-size: 18px;
+      font-weight: bold;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 20px;
+    }
+
+    .cta:hover {
+      background-color: #0069D9;
+    }
+
+    footer {
+      background-color: #222;
+      color: #fff;
+      padding: 60px 0;
+    }
+
+    .footer-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    .footer-logo {
+      display: inline-block;
+      font-size: 24px;
+      font-weight: bold;
+      color: #fff;
+      margin-bottom: 20px;
+    }
+
+    .footer-nav {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .footer-nav a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      margin-bottom: 10px;
+    }
+
+    .footer-nav a:hover {
+      text-decoration: underline;
+    }
+
+    .footer-info {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .footer-info p {
+      margin-bottom: 5px;
+    }
+
+    .footer-info a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      margin-bottom: 10px;
+    }
+
+    .footer-info a:hover {
+      text-decoration: underline;
+    }
+
+    .social {
+      display: flex;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .social a {
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      background-color: #fff;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 30px;
+      color: #333;
+      text-decoration: none;
+    }
+
+    .social a:hover {
+      background-color: #eee;
+    }
+
+    .copyright {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 12px;
+    }
+
+    .copyright a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .copyright a:hover {
+      text-decoration: underline;
+    }
+
+    .hero-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .hero-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #fff;
+      text-align: center;
+    }
+
+    .hero-content h1 {
+      font-size: 48px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .hero-content p {
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+
+    .hero-content .btn {
+      background-color: #fff;
+      color: #333;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      font-weight: bold;
+      text-decoration: none;
+      display: inline-block;
+      margin: 0 10px;
+    }
+
+    .hero-content .btn:hover {
+      background-color: #eee;
+    }
+
+    .heart {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      background-color: #008CBA;
+      color: #fff;
+      padding: 5px 10px;
+      border-radius: 50%;
+      font-size: 12px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .share {
+      position: absolute;
+      top: 60px;
+      left: 20px;
+      background-color: #008CBA;
+      color: #fff;
+      padding: 5px 10px;
+      border-radius: 50%;
+      font-size: 12px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .play-button {
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+      background-color: #fff;
+      color: #333;
+      padding: 10px 15px;
+      border-radius: 50%;
+      font-size: 24px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .play-button:hover {
+      background-color: #eee;
+    }
+
+    .section-image {
+      width: 100%;
+      height: 300px;
+      background-color: #eee;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+
+    .programmatic-button {
+      background-color: #008CBA;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      font-size: 14px;
+      font-weight: bold;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 20px;
+    }
+
+    .programmatic-button:hover {
+      background-color: #0069D9;
+    }
+  </style>
+</head>
+<body>
+<header>
+<div class="container">
+<div class="logo">
+<img alt="Mediavine Logo" src="placeholder.png"/>
+</div>
+<nav class="nav">
+<a href="#">About</a>
+<a href="#">Ad Management</a>
+<a href="#">Products</a>
+<a href="#">Events</a>
+<a href="#">Dashboard</a>
+<a href="#">Help</a>
+<a href="#">Contact Us</a>
+</nav>
+</div>
+</header>
+<section class="hero">
+<div class="hero-overlay"></div>
+<div class="hero-content">
+<h1>Full-Service Ad Management</h1>
+<p>Building sustainable businesses for content creators.</p>
+<a class="btn" href="#">Apply Now</a>
+<img alt="Mediavine Image" src="placeholder.png"/>
+<div class="play-button">
+<i class="fas fa-play"></i>
+</div>
+</div>
+<div class="heart">
+<i class="fas fa-heart"></i>
+      13K
+    </div>
+<div class="share">
+<i class="fas fa-share-alt"></i>
+</div>
+</section>
+<section class="section">
+<div class="container">
+<div class="section-title">
+<h2>Welcome to Mediavine</h2>
+<p>As your exclusive, full-service ad management partner, Mediavine does the heavy lifting so you can focus on what you do best: Creating amazing content.</p>
+</div>
+<div class="features">
+<div class="feature">
+<img alt="Feature Image" src="placeholder.png"/>
+<h3>Who We Are</h3>
+<p>Mediavine was founded by content creators, for content creators. Our goal is to provide your readers with the best possible user experience and you with maximum earnings, all with full transparency.</p>
+</div>
+<div class="feature">
+<img alt="Feature Image" src="placeholder.png"/>
+<h3>Mediavine is for You</h3>
+<p>Whether you're a fashionista, world traveler, recipe developer or DIY guru, we've got you covered. We serve bloggers in every lifestyle niche, from finance to fitness.</p>
+</div>
+<div class="feature">
+<img alt="Feature Image" src="placeholder.png"/>
+<h3>Advertisers and Brands</h3>
+<p>Mediavine is a Top 20 Comscore property, exclusively reaching over 125 million monthly unique visitors. With best-in-class technology and a commitment to traffic quality and brand safety, we ensure optimal performance for your campaigns.</p>
+<a class="programmatic-button" href="#">Programmatic Advertising</a>
+</div>
+<div class="feature">
+<img alt="Feature Image" src="placeholder.png"/>
+<h3>Our Team is Your Team</h3>
+<p>When you join Mediavine, you gain a partner dedicated to your business success. Our support team provides help around the clock, every day of the week.</p>
+<p>If you're creating amazing and original content, whatever it may be, we're here to help you grow. Ads are just the beginning.</p>
+<a class="btn" href="#">Apply Now</a>
+</div>
+</div>
+</div>
+</section>
+<footer>
+<div class="container">
+<div class="footer-container">
+<div class="footer-logo">
+<img alt="Mediavine Logo" src="placeholder.png"/>
+</div>
+<div class="footer-nav">
+<a href="#">Dashboard</a>
+<a href="#">Help</a>
+<a href="#">Products</a>
+<a href="#">Newsroom</a>
+</div>
+<div class="footer-nav">
+<a href="#">SEO Like A CEO</a>
+<a href="#">On Air Podcast</a>
+<a href="#">Mediavine Live</a>
+<a href="#">COVID-19</a>
+</div>
+<div class="footer-nav">
+<a href="#">Careers</a>
+<a href="#">Recruiting</a>
+<a href="#">Publisher Advocacy</a>
+<a href="#">Status Page</a>
+</div>
+<div class="footer-info">
+<p>159 W 25th St, Suite #427</p>
+<p>NY, NY 10001</p>
+<p><a href="tel:888-705-1246">888-705-1246</a></p>
+</div>
+</div>
+<div class="social">
+<a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+<a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+<a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+<a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+<a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+</div>
+<div class="copyright">
+<p>BRAND SAFETY POLICY | <a href="#">PRIVACY POLICY</a> | <a href="#">US PRIVACY NOTICE</a> | <a href="#">TERMS AND CONDITIONS</a> | © 2024 MEDIAVINE</p>
+</div>
+</div>
+</footer>
+</body>
+</html>
+</p></body></html>

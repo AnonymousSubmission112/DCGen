@@ -1,0 +1,624 @@
+<html><body><p>
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>GOV.UK</title>
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.govuk-header {
+  background-color: #0070c0;
+  padding: 20px;
+}
+.govuk-header .govuk-header__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.govuk-header .govuk-header__logo {
+  display: flex;
+  align-items: center;
+}
+.govuk-header .govuk-header__logo img {
+  margin-right: 10px;
+}
+.govuk-header .govuk-header__navigation {
+  display: flex;
+  align-items: center;
+}
+.govuk-header .govuk-header__navigation .govuk-header__navigation-item {
+  margin-right: 20px;
+}
+.govuk-header .govuk-header__navigation-item a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+.govuk-header .govuk-header__navigation-item a:hover {
+  text-decoration: underline;
+}
+.govuk-banner {
+  background-color: #fff;
+  padding: 20px;
+}
+.govuk-banner .govuk-banner__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.govuk-banner .govuk-banner__heading {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.govuk-banner .govuk-banner__paragraph {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+.govuk-banner .govuk-banner__button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #0070c0;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 3px;
+  font-weight: bold;
+}
+.govuk-banner .govuk-banner__button:hover {
+  background-color: #0056a3;
+}
+.govuk-main-content {
+  padding: 20px;
+}
+.govuk-main-content .govuk-main-content__heading {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.govuk-main-content .govuk-main-content__paragraph {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+.govuk-main-content .govuk-main-content__list {
+  margin-left: 20px;
+}
+.govuk-main-content .govuk-main-content__list li {
+  margin-bottom: 5px;
+}
+.govuk-main-content .govuk-main-content__list a {
+  text-decoration: none;
+  color: #0070c0;
+  font-weight: bold;
+}
+.govuk-main-content .govuk-main-content__list a:hover {
+  text-decoration: underline;
+}
+.govuk-main-content .govuk-main-content__section {
+  margin-bottom: 20px;
+}
+.govuk-main-content .govuk-main-content__section .govuk-main-content__section-heading {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.govuk-main-content .govuk-main-content__section .govuk-main-content__section-paragraph {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+.govuk-footer {
+  background-color: #0070c0;
+  padding: 20px;
+  text-align: center;
+}
+.govuk-footer a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+.govuk-footer a:hover {
+  text-decoration: underline;
+}
+.govuk-footer .govuk-footer__links {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.govuk-footer .govuk-footer__links .govuk-footer__links-item {
+  margin-right: 20px;
+}
+.govuk-footer .govuk-footer__copyright {
+  font-size: 14px;
+  color: #fff;
+}
+.govuk-button {
+  background-color: #0070c0;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 3px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.govuk-button:hover {
+  background-color: #0056a3;
+}
+.govuk-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.govuk-form input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+.govuk-form input:focus {
+  outline: none;
+  border: 1px solid #0070c0;
+}
+.govuk-form button {
+  background-color: #0070c0;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 3px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 10px;
+}
+.govuk-form button:hover {
+  background-color: #0056a3;
+}
+.govuk-box {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-bottom: 10px;
+}
+.govuk-box .govuk-box__heading {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.govuk-box .govuk-box__paragraph {
+  font-size: 16px;
+  line-height: 1.5;
+}
+.govuk-box .govuk-box__list {
+  margin-left: 20px;
+}
+.govuk-box .govuk-box__list li {
+  margin-bottom: 5px;
+}
+.govuk-box .govuk-box__list a {
+  text-decoration: none;
+  color: #0070c0;
+  font-weight: bold;
+}
+.govuk-box .govuk-box__list a:hover {
+  text-decoration: underline;
+}
+.govuk-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.govuk-table th, .govuk-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+.govuk-table th {
+  background-color: #f0f0f0;
+  font-weight: bold;
+}
+.govuk-card {
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+.govuk-card .govuk-card__heading {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.govuk-card .govuk-card__paragraph {
+  font-size: 16px;
+  line-height: 1.5;
+}
+.govuk-card .govuk-card__link {
+  text-decoration: none;
+  color: #0070c0;
+  font-weight: bold;
+}
+.govuk-card .govuk-card__link:hover {
+  text-decoration: underline;
+}
+.govuk-image {
+  width: 100%;
+  height: auto;
+}
+.govuk-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+.govuk-section {
+  margin-bottom: 20px;
+}
+.govuk-section .govuk-section__heading {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.govuk-section .govuk-section__paragraph {
+  font-size: 16px;
+  line-height: 1.5;
+}
+.govuk-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+.govuk-grid .govuk-grid__item {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+.govuk-grid .govuk-grid__item .govuk-grid__item-heading {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.govuk-grid .govuk-grid__item .govuk-grid__item-paragraph {
+  font-size: 16px;
+  line-height: 1.5;
+}
+.govuk-grid .govuk-grid__item .govuk-grid__item-link {
+  text-decoration: none;
+  color: #0070c0;
+  font-weight: bold;
+}
+.govuk-grid .govuk-grid__item .govuk-grid__item-link:hover {
+  text-decoration: underline;
+}
+</style>
+</head>
+<body>
+<header class="govuk-header">
+<div class="govuk-header__content">
+<div class="govuk-header__logo">
+<img alt="GOV.UK logo" src="placeholder.png"/>
+<span>GOV.UK</span>
+</div>
+<nav class="govuk-header__navigation">
+<ul>
+<li class="govuk-header__navigation-item">
+<a href="#">Menu</a>
+</li>
+</ul>
+</nav>
+</div>
+</header>
+<main class="govuk-main-content">
+<div class="govuk-banner">
+<div class="govuk-banner__content">
+<div>
+<h1 class="govuk-banner__heading">The best place to find government services and information</h1>
+<p class="govuk-banner__paragraph">Search for the services you need, or explore what the government is doing.</p>
+<a class="govuk-banner__button" href="#">View cookies</a>
+</div>
+<div class="govuk-form">
+<input placeholder="Search" type="text"/>
+<button type="submit">Search</button>
+</div>
+</div>
+</div>
+<div class="govuk-section">
+<h2 class="govuk-section__heading">Popular on GOV.UK</h2>
+<div class="govuk-grid">
+<div class="govuk-grid__item">
+<h3 class="govuk-grid__item-heading">HMRC account: sign in or set up</h3>
+<p class="govuk-grid__item-paragraph">Includes PAYE, Self Assessment, tax credits and Universal Credit.</p>
+<a class="govuk-grid__item-link" href="#">Sign in</a>
+</div>
+<div class="govuk-grid__item">
+<h3 class="govuk-grid__item-heading">Universal Credit account: sign in</h3>
+<p class="govuk-grid__item-paragraph">Includes eligibility, appeals, tax credits and Universal Credit.</p>
+<a class="govuk-grid__item-link" href="#">Sign in</a>
+</div>
+<div class="govuk-grid__item">
+<h3 class="govuk-grid__item-heading">Personal tax account: sign in or set up</h3>
+<p class="govuk-grid__item-paragraph">Includes eligibility, appeals, tax credits and Universal Credit.</p>
+<a class="govuk-grid__item-link" href="#">Sign in</a>
+</div>
+<div class="govuk-grid__item">
+<h3 class="govuk-grid__item-heading">Self Assessment tax return: sign in</h3>
+<p class="govuk-grid__item-paragraph">Includes eligibility, appeals, tax credits and Universal Credit.</p>
+<a class="govuk-grid__item-link" href="#">Sign in</a>
+</div>
+<div class="govuk-grid__item">
+<h3 class="govuk-grid__item-heading">Childcare account: sign in</h3>
+<p class="govuk-grid__item-paragraph">Includes eligibility, appeals, tax credits and Universal Credit.</p>
+<a class="govuk-grid__item-link" href="#">Sign in</a>
+</div>
+<div class="govuk-grid__item">
+<h3 class="govuk-grid__item-heading">Visit the UK on a Standard Visitor visa</h3>
+<p class="govuk-grid__item-paragraph">Includes eligibility, appeals, tax credits and Universal Credit.</p>
+<a class="govuk-grid__item-link" href="#">Sign in</a>
+</div>
+</div>
+</div>
+<div class="govuk-section">
+<h2 class="govuk-section__heading">Services and information</h2>
+<div class="govuk-grid">
+<div class="govuk-grid__item">
+<h3 class="govuk-grid__item-heading">Benefits</h3>
+<p class="govuk-grid__item-paragraph">Includes eligibility, appeals, tax credits and Universal Credit.</p>
+</div>
+<div class="govuk-grid__item">
+<h3 class="govuk-grid__item-heading">Births, deaths, marriages and care</h3>
+<p class="govuk-grid__item-paragraph">Parenting, civil partnerships, divorce and Lasting Power of Attorney.</p>
+</div>
+<div class="govuk-grid__item">
+<h3 class="govuk-grid__item-heading">Business and self-employed</h3>
+<p class="govuk-grid__item-paragraph">Tools and guidance for businesses</p>
+</div>
+<div class="govuk-grid__item">
+<h3 class="govuk-grid__item-heading">Childcare and parenting</h3>
+<p class="govuk-grid__item-paragraph">Includes giving birth, fostering, adopting, benefits for childcare and schools.</p>
+</div>
+<div class="govuk-grid__item">
+<h3 class="govuk-grid__item-heading">Citizenship and living in the UK</h3>
+<p class="govuk-grid__item-paragraph">Voting, community participation, life in the UK, international projects</p>
+</div>
+<div class="govuk-grid__item">
+<h3 class="govuk-grid__item-heading">Crime, justice and the law</h3>
+<p class="govuk-grid__item-paragraph">Legal processes, courts and the police</p>
+</div>
+<div class="govuk-grid__item">
+<h3 class="govuk-grid__item-heading">Disabled people</h3>
+<p class="govuk-grid__item-paragraph">Includes carers, your rights, benefits and the Equality Act.</p>
+</div>
+<div class="govuk-grid__item">
+<h3 class="govuk-grid__item-heading">Driving and transport</h3>
+<p class="govuk-grid__item-paragraph">Includes vehicle tax, MOT and driving licences</p>
+</div>
+<div class="govuk-grid__item">
+<h3 class="govuk-grid__item-heading">Education and learning</h3>
+<p class="govuk-grid__item-paragraph">Includes student loans, admissions and apprenticeships</p>
+</div>
+<div class="govuk-grid__item">
+<h3 class="govuk-grid__item-heading">Employing people</h3>
+<p class="govuk-grid__item-paragraph">Includes pay, contracts, hiring and redundancies</p>
+</div>
+<div class="govuk-grid__item">
+<h3 class="govuk-grid__item-heading">Environment and countryside</h3>
+<p class="govuk-grid__item-paragraph">Includes flooding, recycling, farming and wildlife</p>
+</div>
+<div class="govuk-grid__item">
+<h3 class="govuk-grid__item-heading">Housing and local services</h3>
+<p class="govuk-grid__item-paragraph">Owning or renting and council services</p>
+</div>
+<div class="govuk-grid__item">
+<h3 class="govuk-grid__item-heading">Money and tax</h3>
+<p class="govuk-grid__item-paragraph">Includes debt and Self Assessment</p>
+</div>
+<div class="govuk-grid__item">
+<h3 class="govuk-grid__item-heading">Passports, travel and living abroad</h3>
+<p class="govuk-grid__item-paragraph">Includes renewing passports and travel advice by country.</p>
+</div>
+<div class="govuk-grid__item">
+<h3 class="govuk-grid__item-heading">Visas and immigration</h3>
+<p class="govuk-grid__item-paragraph">Apply to visit, work, study, settle or seek asylum in the UK.</p>
+</div>
+<div class="govuk-grid__item">
+<h3 class="govuk-grid__item-heading">Working, jobs and pensions</h3>
+<p class="govuk-grid__item-paragraph">Includes holidays, finding a job and redundancy.</p>
+</div>
+</div>
+</div>
+<div class="govuk-section">
+<h2 class="govuk-section__heading">Featured</h2>
+<div class="govuk-grid">
+<div class="govuk-grid__item">
+<h3 class="govuk-grid__item-heading">Find a job</h3>
+<p class="govuk-grid__item-paragraph">Search and apply for jobs in England, Scotland and Wales.</p>
+</div>
+<div class="govuk-grid__item">
+<h3 class="govuk-grid__item-heading">National Insurance</h3>
+<p class="govuk-grid__item-paragraph">Check your record to see if you can add more contributions.</p>
+</div>
+<div class="govuk-grid__item">
+<h3 class="govuk-grid__item-heading">Cost of living support</h3>
+<p class="govuk-grid__item-paragraph">Find out what support is available to help with the cost of living.</p>
+</div>
+</div>
+</div>
+<div class="govuk-section">
+<h2 class="govuk-section__heading">Government activity</h2>
+<div class="govuk-grid">
+<div class="govuk-grid__item">
+<h3 class="govuk-grid__item-heading">Departments</h3>
+<p class="govuk-grid__item-paragraph">Departments, agencies and public bodies</p>
+</div>
+<div class="govuk-grid__item">
+<h3 class="govuk-grid__item-heading">News</h3>
+<p class="govuk-grid__item-paragraph">News stories, speeches, letters and notices</p>
+</div>
+<div class="govuk-grid__item">
+<h3 class="govuk-grid__item-heading">Guidance and regulation</h3>
+<p class="govuk-grid__item-paragraph">Detailed guidance, regulations and rules</p>
+</div>
+<div class="govuk-grid__item">
+<h3 class="govuk-grid__item-heading">Research and statistics</h3>
+<p class="govuk-grid__item-paragraph">Reports, analysis and official statistics</p>
+</div>
+<div class="govuk-grid__item">
+<h3 class="govuk-grid__item-heading">Policy papers and consultations</h3>
+<p class="govuk-grid__item-paragraph">Consultations and strategy</p>
+</div>
+<div class="govuk-grid__item">
+<h3 class="govuk-grid__item-heading">Transparency documents</h3>
+<p class="govuk-grid__item-paragraph">Data, Freedom of Information releases and corporate reports</p>
+</div>
+<div class="govuk-grid__item">
+<h3 class="govuk-grid__item-heading">How government works</h3>
+<p class="govuk-grid__item-paragraph">Departments, agencies and public bodies</p>
+</div>
+<div class="govuk-grid__item">
+<h3 class="govuk-grid__item-heading">Get involved</h3>
+<p class="govuk-grid__item-paragraph">Departments, agencies and public bodies</p>
+</div>
+</div>
+</div>
+<div class="govuk-section">
+<h2 class="govuk-section__heading">More on GOV.UK</h2>
+<div class="govuk-grid">
+<div class="govuk-grid__item">
+<h3 class="govuk-grid__item-heading">HMRC services: sign in</h3>
+<p class="govuk-grid__item-paragraph">Includes PAYE, Self Assessment, tax credits and Universal Credit.</p>
+<a class="govuk-grid__item-link" href="#">Sign in</a>
+</div>
+<div class="govuk-grid__item">
+<h3 class="govuk-grid__item-heading">Check MOT history of a vehicle</h3>
+<p class="govuk-grid__item-paragraph">Includes eligibility, appeals, tax credits and Universal Credit.</p>
+<a class="govuk-grid__item-link" href="#">Sign in</a>
+</div>
+<div class="govuk-grid__item">
+<h3 class="govuk-grid__item-heading">Tax your vehicle</h3>
+<p class="govuk-grid__item-paragraph">Includes eligibility, appeals, tax credits and Universal Credit.</p>
+<a class="govuk-grid__item-link" href="#">Sign in</a>
+</div>
+<div class="govuk-grid__item">
+<h3 class="govuk-grid__item-heading">Universal Credit</h3>
+<p class="govuk-grid__item-paragraph">Includes eligibility, appeals, tax credits and Universal Credit.</p>
+<a class="govuk-grid__item-link" href="#">Sign in</a>
+</div>
+<div class="govuk-grid__item">
+<h3 class="govuk-grid__item-heading">Foreign travel advice</h3>
+<p class="govuk-grid__item-paragraph">Includes eligibility, appeals, tax credits and Universal Credit.</p>
+<a class="govuk-grid__item-link" href="#">Sign in</a>
+</div>
+<div class="govuk-grid__item">
+<h3 class="govuk-grid__item-heading">Check your State Pension age</h3>
+<p class="govuk-grid__item-paragraph">Includes eligibility, appeals, tax credits and Universal Credit.</p>
+<a class="govuk-grid__item-link" href="#">Sign in</a>
+</div>
+<div class="govuk-grid__item">
+<h3 class="govuk-grid__item-heading">Childcare account: sign in</h3>
+<p class="govuk-grid__item-paragraph">Includes eligibility, appeals, tax credits and Universal Credit.</p>
+<a class="govuk-grid__item-link" href="#">Sign in</a>
+</div>
+<div class="govuk-grid__item">
+<h3 class="govuk-grid__item-heading">Student finance: sign in</h3>
+<p class="govuk-grid__item-paragraph">Includes eligibility, appeals, tax credits and Universal Credit.</p>
+<a class="govuk-grid__item-link" href="#">Sign in</a>
+</div>
+<div class="govuk-grid__item">
+<h3 class="govuk-grid__item-heading">Self Assessment tax returns</h3>
+<p class="govuk-grid__item-paragraph">Includes eligibility, appeals, tax credits and Universal Credit.</p>
+<a class="govuk-grid__item-link" href="#">Sign in</a>
+</div>
+<div class="govuk-grid__item">
+<h3 class="govuk-grid__item-heading">Apply for a passport</h3>
+<p class="govuk-grid__item-paragraph">Includes eligibility, appeals, tax credits and Universal Credit.</p>
+<a class="govuk-grid__item-link" href="#">Sign in</a>
+</div>
+</div>
+</div>
+<div class="govuk-section">
+<h2 class="govuk-section__heading">Is this page useful?</h2>
+<button class="govuk-button">Yes</button>
+<button class="govuk-button">No</button>
+</div>
+<div class="govuk-section">
+<h2 class="govuk-section__heading">Services and information</h2>
+<div class="govuk-grid">
+<div class="govuk-grid__item">
+<ul>
+<li>Benefits</li>
+<li>Births, deaths, marriages and care</li>
+<li>Business and self-employed</li>
+<li>Childcare and parenting</li>
+<li>Citizenship and living in the UK</li>
+<li>Crime, justice and the law</li>
+<li>Disabled people</li>
+<li>Driving and transport</li>
+</ul>
+</div>
+<div class="govuk-grid__item">
+<ul>
+<li>Education and learning</li>
+<li>Employing people</li>
+<li>Environment and countryside</li>
+<li>Housing and local services</li>
+<li>Money and tax</li>
+<li>Passports, travel and living abroad</li>
+<li>Visas and immigration</li>
+<li>Working, jobs and pensions</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="govuk-section">
+<h2 class="govuk-section__heading">Government activity</h2>
+<div class="govuk-grid">
+<div class="govuk-grid__item">
+<ul>
+<li>Departments</li>
+<li>News</li>
+<li>Guidance and regulation</li>
+<li>Research and statistics</li>
+<li>Policy papers and consultations</li>
+<li>Transparency documents</li>
+<li>How government works</li>
+<li>Get involved</li>
+</ul>
+</div>
+</div>
+</div>
+</main>
+<footer class="govuk-footer">
+<div class="govuk-footer__links">
+<ul>
+<li class="govuk-footer__links-item">
+<a href="#">Help</a>
+</li>
+<li class="govuk-footer__links-item">
+<a href="#">Privacy</a>
+</li>
+<li class="govuk-footer__links-item">
+<a href="#">Cookies</a>
+</li>
+<li class="govuk-footer__links-item">
+<a href="#">Accessibility statement</a>
+</li>
+<li class="govuk-footer__links-item">
+<a href="#">Contact</a>
+</li>
+<li class="govuk-footer__links-item">
+<a href="#">Terms and conditions</a>
+</li>
+<li class="govuk-footer__links-item">
+<a href="#">Report a problem with this page</a>
+</li>
+</ul>
+</div>
+<div class="govuk-footer__copyright">
+<img alt="OGL logo" src="placeholder.png"/>
+<p>All content is available under the <a href="#">Open Government Licence v3.0</a>, except where otherwise stated</p>
+<p>© Crown copyright</p>
+</div>
+</footer>
+</body>
+</html>
+</p></body></html>

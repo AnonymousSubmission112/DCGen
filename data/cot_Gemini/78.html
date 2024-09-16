@@ -1,0 +1,398 @@
+<html><body><p>
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Disqus</title>
+<style>
+body {
+  margin: 0;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+header {
+  background-color: #fff;
+  padding: 20px 0;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo img {
+  height: 30px;
+  margin-right: 10px;
+}
+.nav-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.nav-links li {
+  margin-right: 20px;
+}
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+.nav-links a:hover {
+  text-decoration: underline;
+}
+.hero {
+  background-color: #fff;
+  padding: 80px 0;
+  text-align: center;
+}
+.hero h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.hero p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 40px;
+}
+.hero button {
+  background-color: #ff6347;
+  color: #fff;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.hero button:hover {
+  background-color: #ff5033;
+}
+.hero img {
+  width: 500px;
+  height: 300px;
+  margin: 0 auto;
+  display: block;
+}
+.features {
+  background-color: #f5f5f5;
+  padding: 80px 0;
+}
+.features h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.features p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 40px;
+}
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+.feature-card {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.feature-card h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.feature-card p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+.feature-card button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 20px;
+}
+.feature-card button:hover {
+  background-color: #0069d9;
+}
+.testimonial {
+  background-color: #fff;
+  padding: 80px 0;
+  text-align: center;
+}
+.testimonial p {
+  font-size: 24px;
+  line-height: 1.5;
+  margin-bottom: 40px;
+}
+.testimonial .author {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.testimonial .company {
+  font-style: italic;
+}
+.cta {
+  background-color: #fff;
+  padding: 80px 0;
+  text-align: center;
+}
+.cta h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.cta p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 40px;
+}
+.cta button {
+  background-color: #ff6347;
+  color: #fff;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.cta button:hover {
+  background-color: #ff5033;
+}
+.cta .images {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+.cta .images img {
+  width: 100px;
+  height: 100px;
+  margin: 0 10px;
+}
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 40px 0;
+  text-align: center;
+}
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.footer-col {
+  width: 25%;
+  margin-bottom: 20px;
+}
+.footer-col h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.footer-col ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.footer-col li {
+  margin-bottom: 5px;
+}
+.footer-col a {
+  text-decoration: none;
+  color: #fff;
+}
+.footer-col a:hover {
+  text-decoration: underline;
+}
+.footer-copyright {
+  margin-top: 20px;
+}
+.social-links {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.social-links a {
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 24px;
+  color: #fff;
+}
+.social-links a:hover {
+  color: #ff6347;
+}
+</style>
+</head>
+<body>
+<header>
+<div class="container">
+<nav class="nav">
+<div class="logo">
+<img alt="Disqus Logo" src="placeholder.png"/>
+<span>Disqus</span>
+</div>
+<ul class="nav-links">
+<li><a href="#">Platform</a></li>
+<li><a href="#">Pricing</a></li>
+<li><a href="#">Resources</a></li>
+<li><a href="#">About</a></li>
+<li><a href="#">Contact Us</a></li>
+<li><a class="btn btn-primary" href="#">Join the Fun »</a></li>
+</ul>
+</nav>
+</div>
+</header>
+<section class="hero">
+<div class="container">
+<h1>The future of the open internet depends on publisher independence.</h1>
+<p>Our audience engagement platform offers all the tools modern publishers need to reach and retain users and drive monetization at scale.</p>
+<button>Get Started</button>
+<img alt="Hero Image" src="placeholder.png"/>
+</div>
+</section>
+<section class="features">
+<div class="container">
+<h2>More publishers trust us than any other audience engagement platform.</h2>
+<p>With the deprecation of third-party cookies, the rise of the walled gardens, and the era of internet toxicity spurred by mis- and dis-information, it's a challenging time to be a publisher.</p>
+<p>All of these issues have potential impact on how publishers maintain a loyal, engaged community and generate revenue from quality content.</p>
+<p>Disqus is in business to preserve the future of audience engagement on the open internet. We are the largest audience engagement platform, used by hundreds of thousands of publishers that want to keep conversations and community on-site where they belong.</p>
+<p>Whether you're a small blog or large media hub, Disqus connects you to millions of global users in our web-wide community network. Our suite of customizable, easy-to-implement tools gives your website a feature-rich comments system, advanced administration and moderation options, and other extensive community functions, helping you turn readership into revenue without the manual work.</p>
+<div class="features-grid">
+<div class="feature-card">
+<h3>Transform your casual, anonymous readers into loyal, authenticated users.</h3>
+<p>Build engaged communities by artfully promoting your best content and carefully fueling the best conversations.</p>
+<button>Engage now »</button>
+</div>
+<div class="feature-card">
+<h3>Protect your brand and loyal users with our best-in-class moderation panel and tooling.</h3>
+<p>Maintain a brand-safe comments section with automatic, AI-powered capabilities that cut the need to manually read and approve each post.</p>
+<button>Moderate now »</button>
+</div>
+<div class="feature-card">
+<h3>Track and understand your audience engagement with robust insights.</h3>
+<p>Understand which articles are performing best with your audience, and then optimize your content strategy to increase traffic and engagement.</p>
+<button>Analyze now »</button>
+</div>
+<div class="feature-card">
+<h3>Harness the power of your direct user relationships to unlock new revenue streams.</h3>
+<p>Whether it's ramping up registrations using first-party data, setting up subscriptions, or activating advertising, our platform is built to support your growth.</p>
+<button>Monetize now »</button>
+</div>
+</div>
+</div>
+</section>
+<section class="testimonial">
+<div class="container">
+<p>"With Disqus, we've been able to boost our registered audiences by 155% in just six months."</p>
+<p class="author">Destructoid</p>
+</div>
+</section>
+<section class="cta">
+<div class="container">
+<h2>Flexible and optimized for your site's needs</h2>
+<p>Take control of community-building to rev up your revenue-generating potential.</p>
+<button>Get Started</button>
+<div class="images">
+<img alt="Image 1" src="placeholder.png"/>
+<img alt="Image 2" src="placeholder.png"/>
+<img alt="Image 3" src="placeholder.png"/>
+<img alt="Image 4" src="placeholder.png"/>
+<img alt="Image 5" src="placeholder.png"/>
+<img alt="Image 6" src="placeholder.png"/>
+<img alt="Image 7" src="placeholder.png"/>
+<img alt="Image 8" src="placeholder.png"/>
+</div>
+</div>
+</section>
+<section class="footer">
+<div class="container">
+<div class="footer-content">
+<div class="footer-col">
+<h3>Disqus</h3>
+<ul>
+<li><a href="#">Platform Overview</a></li>
+<li><a href="#">Engagement</a></li>
+<li><a href="#">Moderation &amp; Safety</a></li>
+<li><a href="#">Audience</a></li>
+<li><a href="#">Monetization</a></li>
+<li><a href="#">Pricing</a></li>
+<li><a href="#">Disqus Pro</a></li>
+<li><a href="#">Disqus for Business</a></li>
+<li><a href="#">Zela SSP</a></li>
+</ul>
+</div>
+<div class="footer-col">
+<h3>Resources</h3>
+<ul>
+<li><a href="#">Blog</a></li>
+<li><a href="#">Support</a></li>
+<li><a href="#">Knowledge Base</a></li>
+<li><a href="#">Disqus 101</a></li>
+<li><a href="#">Discuss Disqus</a></li>
+<li><a href="#">Case Studies</a></li>
+<li><a href="#">API</a></li>
+<li><a href="#">Logos</a></li>
+</ul>
+</div>
+<div class="footer-col">
+<h3>About Us</h3>
+<ul>
+<li><a href="#">History</a></li>
+<li><a href="#">Mission</a></li>
+<li><a href="#">Culture</a></li>
+</ul>
+</div>
+<div class="footer-col">
+<h3>Learn</h3>
+<ul>
+<li><a href="#">How Does Disqus Work?</a></li>
+<li><a href="#">Community Tips</a></li>
+<li><a href="#">Increase Engagement &amp; Retention</a></li>
+<li><a href="#">Moderating 101</a></li>
+<li><a href="#">Developers</a></li>
+<li><a href="#">Other Integrations</a></li>
+<li><a href="#">Channels</a></li>
+</ul>
+</div>
+</div>
+<div class="footer-copyright">
+<p>© 2024 Disqus</p>
+<ul>
+<li><a href="#">Terms</a></li>
+<li><a href="#">Privacy</a></li>
+<li><a href="#">Cookies</a></li>
+<li><a href="#">Do Not Sell or Share My Info</a></li>
+</ul>
+</div>
+<div class="social-links">
+<a href="#"><i class="fab fa-facebook-f"></i></a>
+<a href="#"><i class="fab fa-twitter"></i></a>
+<a href="#"><i class="fab fa-linkedin-in"></i></a>
+<a href="#"><i class="fab fa-instagram"></i></a>
+</div>
+</div>
+</section>
+</body>
+</html>
+</p></body></html>

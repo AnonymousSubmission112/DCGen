@@ -1,0 +1,256 @@
+<html><body><p>
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Telegram</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            color: #333;
+        }
+
+        header {
+            background-color: #fff;
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+        }
+
+        header nav a {
+            margin: 0 15px;
+            color: #333;
+            text-decoration: none;
+            position: relative;
+        }
+
+        header nav a:hover::after,
+        header nav a:focus::after {
+            content: '';
+            display: block;
+            height: 2px;
+            background: #0096ff;
+            position: absolute;
+            bottom: -5px;
+            width: 100%;
+            left: 0;
+        }
+
+        .main-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+
+        .hero,
+        .features {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 2rem;
+        }
+
+        .hero img {
+            width: 150px;
+            height: 150px;
+        }
+
+        .downloads,
+        .news,
+        .features-grid {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .downloads div,
+        .news div,
+        .features-grid div {
+            flex: 1 1 200px;
+            max-width: 300px;
+            text-align: center;
+        }
+
+        .downloads img,
+        .news img,
+        .features-grid img {
+            width: 100%;
+            height: auto;
+        }
+
+        .downloads p,
+        .news p,
+        .features-grid p {
+            margin-top: 0.5rem;
+        }
+
+        .sidebar {
+            text-align: right;
+            padding: 1rem;
+            margin-right: 2rem;
+        }
+
+        .downloads-title,
+        .news-title,
+        .features-title {
+            font-size: 1.25rem;
+            color: #0096ff;
+        }
+
+
+        footer {
+            background-color: #f9f9f9;
+            padding: 1rem 0;
+            border-top: 1px solid #eee;
+        }
+
+        footer .footer-links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            text-align: center;
+        }
+
+        footer .footer-links a {
+            margin: 0.5rem;
+            color: #0096ff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+<header>
+<nav>
+<a href="#">Home</a>
+<a href="#">FAQ</a>
+<a href="#">Apps</a>
+<a href="#">API</a>
+<a href="#">Protocol</a>
+</nav>
+</header>
+<div class="main-container">
+<div class="hero">
+<img alt="Telegram Logo" src="placeholder.png"/>
+<h1>Telegram</h1>
+<p>a new era of messaging</p>
+</div>
+<div class="downloads">
+<div>
+<img alt="Telegram for Android" src="placeholder.png"/>
+<p>Telegram for <span style="color: #0096ff;">Android</span></p>
+</div>
+<div>
+<img alt="Telegram for iPhone / iPad" src="placeholder.png"/>
+<p>Telegram for <span style="color: #0096ff;">iPhone / iPad</span></p>
+</div>
+<div style="flex-basis: 100%; height: 0;"></div>
+<div>
+<img alt="Telegram for PC / Linux" src="placeholder.png"/>
+<p>Telegram for <span style="color: #0096ff;">PC / Linux</span></p>
+</div>
+<div>
+<img alt="Telegram for macOS" src="placeholder.png"/>
+<p>Telegram for <span style="color: #0096ff;">macOS</span></p>
+</div>
+</div>
+<div class="sidebar">
+<h2 class="news-title">Recent News</h2>
+<p><strong>Apr 25</strong></p>
+<p>My Profile, Recommended Channels and 15 More Features</p>
+<p><strong>Apr 14</strong></p>
+<p>Sticker Editor – Create Your Own Stickers</p>
+<p><strong>Mar 31</strong></p>
+<p>Introducing Telegram Business</p>
+</div>
+<div class="news">
+<div>
+<img alt="News Image" src="placeholder.png"/>
+<h2 class="news-title">My Profile, Recommended Channels and 15 More Features</h2>
+<p>This month we've added more than 15 new features, including recommended channels, a way to view your own profile and display your channel...</p>
+<p><strong>Apr 25, 2024</strong></p>
+</div>
+<div>
+<img alt="News Image" src="placeholder.png"/>
+<h2 class="news-title">Sticker Editor – Create Your Own Stickers</h2>
+<p>Starting today, anyone can quickly create stickers and emoji sticker sets using a new powerful editor – without leaving Telegram.</p>
+<p><strong>Apr 14, 2024</strong></p>
+</div>
+</div>
+<div class="features">
+<h2>Why Telegram?</h2>
+<div class="features-grid">
+<div>
+<img alt="Simple" src="placeholder.png"/>
+<h2>Simple</h2>
+<p>Telegram is so simple you already know how to use it.</p>
+</div>
+<div>
+<img alt="Private" src="placeholder.png"/>
+<h2>Private</h2>
+<p>Telegram messages are heavily encrypted and can self-destruct.</p>
+</div>
+<div>
+<img alt="Synced" src="placeholder.png"/>
+<h2>Synced</h2>
+<p>Telegram lets you access your chats from multiple devices.</p>
+</div>
+<div>
+<img alt="Fast" src="placeholder.png"/>
+<h2>Fast</h2>
+<p>Telegram delivers messages faster than any other application.</p>
+</div>
+<div>
+<img alt="Powerful" src="placeholder.png"/>
+<h2>Powerful</h2>
+<p>Telegram has no limits on the size of your media and chats.</p>
+</div>
+<div>
+<img alt="Open" src="placeholder.png"/>
+<h2>Open</h2>
+<p>Telegram has an open API and source code for everyone.</p>
+</div>
+<div>
+<img alt="Secure" src="placeholder.png"/>
+<h2>Secure</h2>
+<p>Telegram keeps your messages safe from hacker attacks.</p>
+</div>
+<div>
+<img alt="Social" src="placeholder.png"/>
+<h2>Social</h2>
+<p>Telegram groups can hold up to 200,000 members.</p>
+</div>
+<div>
+<img alt="Expressive" src="placeholder.png"/>
+<h2>Expressive</h2>
+<p>Telegram lets you completely customize your messenger.</p>
+</div>
+</div>
+</div>
+</div>
+<footer>
+<div class="footer-links">
+<a href="#">Telegram</a>
+<a href="#">FAQ</a>
+<a href="#">Privacy</a>
+<a href="#">Press</a>
+<a href="#">iPhone/iPad</a>
+<a href="#">Android</a>
+<a href="#">Mobile Web</a>
+<a href="#">PC/MAC/Linux</a>
+<a href="#">macOS</a>
+<a href="#">Web-browser</a>
+<a href="#">Platform</a>
+<a href="#">API</a>
+<a href="#">Terms</a>
+</div>
+<p>Telegram is a cloud-based mobile and desktop messaging app with a focus on security and speed.</p>
+</footer>
+</body>
+</html>
+</p></body></html>

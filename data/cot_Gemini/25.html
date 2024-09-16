@@ -1,0 +1,409 @@
+<html><body><p>
+<!DOCTYPE html>
+
+<html>
+<head>
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 30px;
+  margin-right: 10px;
+}
+
+.header-nav {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header-nav li {
+  margin-right: 20px;
+}
+
+.header-nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.header-nav a:hover {
+  text-decoration: underline;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.left-content {
+  width: 60%;
+}
+
+.right-content {
+  width: 30%;
+}
+
+.main-content {
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.main-content h2 {
+  margin-top: 0;
+}
+
+.main-content p {
+  margin-bottom: 10px;
+}
+
+.main-content a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.main-content a:hover {
+  text-decoration: underline;
+}
+
+.main-content .date {
+  font-size: 14px;
+  color: #6c757d;
+}
+
+.main-content .read-more {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.main-content .read-more:hover {
+  background-color: #0069d9;
+}
+
+.right-content .buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.right-content .button {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.right-content .button:hover {
+  opacity: 0.8;
+}
+
+.right-content .button .icon {
+  margin-right: 10px;
+  font-size: 1.2em;
+}
+
+.right-content .button-search {
+  background-color: #007bff;
+}
+
+.right-content .button-register {
+  background-color: #8ac645;
+}
+
+.right-content .button-faq {
+  background-color: #ffc107;
+}
+
+.right-content .button-stats {
+  background-color: #dc3545;
+}
+
+.footer {
+  background-color: #007bff;
+  color: white;
+  padding: 20px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-nav {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-nav li {
+  margin-right: 20px;
+}
+
+.footer-nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-nav a:hover {
+  text-decoration: underline;
+}
+
+.copyright {
+  text-align: center;
+}
+
+.copyright a {
+  color: white;
+  text-decoration: none;
+}
+
+.copyright a:hover {
+  text-decoration: underline;
+}
+
+.institutions-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.institution {
+  width: 20%;
+  height: 100px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.institution img {
+  width: 80%;
+  max-height: 80%;
+}
+
+.language-selector {
+  display: flex;
+  align-items: center;
+}
+
+.language-selector select {
+  background-color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.language-selector select:focus {
+  outline: none;
+}
+
+.main-content .title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.main-content .description {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.header-nav .active {
+  text-decoration: underline;
+}
+</style>
+</head>
+<body>
+<header class="header">
+<div class="container">
+<div class="logo">
+<img alt="Logo" src="placeholder.png"/>
+<span>809 535-0111 ext. 2052, 2055</span>
+</div>
+<div class="header-nav">
+<ul>
+<li><a href="#">INICIO</a></li>
+<li><a href="#">DOMINIOS</a></li>
+<li><a href="#">DOMINIOS GUBERNAMENTALES</a></li>
+<li><a href="#">POLÍTICAS</a></li>
+<li><a href="#">ACERCA DE NIC.DO</a></li>
+<li><a href="#">NOTICIAS</a></li>
+<li><a href="#">AYUDA</a></li>
+</ul>
+<div class="language-selector">
+<span>Idioma</span>
+<select>
+<option value="es">Español</option>
+<option value="en">English</option>
+</select>
+</div>
+</div>
+</div>
+</header>
+<main class="content">
+<div class="left-content">
+<div class="main-content">
+<img alt="Image" src="placeholder.png"/>
+<h2>Conoce a MiDominio.Do</h2>
+<button class="read-more">Conoce más</button>
+</div>
+<div class="main-content">
+<h2>NOTICIAS <a href="#">ver más →</a></h2>
+<div class="news-item">
+<div class="title">Cambios a la Política de Solución de Controversias en materia de nombres de dominio para .do a partir del 24/05/2024</div>
+<div class="description">
+<p>
+<strong>CAMBIOS A LA POLÍTICA DE SOLUCIÓN DE CONTROVERSIAS EN MATERIA DE NOMBRES DE DOMINIO PARA .DO A PARTIR DEL 24/05/2024</strong>
+</p>
+<p class="date">24 de abril de 2024</p>
+</div>
+<a class="read-more" href="#">Leer Más</a>
+</div>
+<div class="news-item">
+<div class="title">Aviso de Mantenimiento 8:00 AM 29/02/2024</div>
+<div class="description">
+<p>
+<strong>AVISO DE MANTENIMIENTO 8:00 AM 29/02/2024</strong>
+</p>
+<p class="date">28 de febrero de 2024</p>
+</div>
+<a class="read-more" href="#">Leer Más</a>
+</div>
+<div class="news-item">
+<div class="title">Aviso de Mantenimiento 7:30 AM 18/12/2023</div>
+<div class="description">
+<p>
+<strong>AVISO DE MANTENIMIENTO 7:30 AM 18/12/2023</strong>
+</p>
+<p class="date">14 de diciembre de 2023</p>
+</div>
+<a class="read-more" href="#">Leer Más</a>
+</div>
+</div>
+</div>
+<div class="right-content">
+<div class="buttons">
+<a class="button button-search" href="#">
+<span class="icon">🔍</span>
+          Buscar Dominio
+        </a>
+<a class="button button-register" href="#">
+<span class="icon">🌐</span>
+          Registrar Dominios
+        </a>
+<a class="button button-faq" href="#">
+<span class="icon">💬</span>
+          Preguntas Frecuentes
+        </a>
+<a class="button button-stats" href="#">
+<span class="icon">📊</span>
+          Estadísticas
+        </a>
+</div>
+</div>
+</main>
+<section class="institutions-container">
+<div class="institution">
+<img alt="Institution Logo" src="placeholder.png"/>
+</div>
+<div class="institution">
+<img alt="Institution Logo" src="placeholder.png"/>
+</div>
+<div class="institution">
+<img alt="Institution Logo" src="placeholder.png"/>
+</div>
+<div class="institution">
+<img alt="Institution Logo" src="placeholder.png"/>
+</div>
+</section>
+<footer class="footer">
+<div class="footer-content">
+<div class="footer-nav">
+<ul>
+<li>
+<h3>Acerca De NIC .DO</h3>
+<ul>
+<li><a href="#">Historia</a></li>
+<li><a href="#">Nuestra Tecnología</a></li>
+<li><a href="#">Relacionamiento</a></li>
+<li><a href="#">25 Años de la Delegación del .do</a></li>
+</ul>
+</li>
+<li>
+<h3>¿Necesita Ayuda?</h3>
+<ul>
+<li><a href="#">Preguntas Frecuentes</a></li>
+<li><a href="#">Contáctenos</a></li>
+</ul>
+</li>
+<li>
+<h3>Contactos</h3>
+<h4>NIC .DO</h4>
+<p>
+              Pontificia Universidad Católica Madre y Maestra
+            </p>
+<p>
+              Edif. Administrativo 1, 4to Piso,
+            </p>
+<p>
+              Av. Simón Bolívar 87, La Julia,
+            </p>
+<p>
+              10109 Santo Domingo, R.D.
+            </p>
+<p>
+              Phone: 1 809 535-0111 ext. 2052, 2055
+            </p>
+<p>
+              Fax: 1 809 286-0012
+            </p>
+</li>
+</ul>
+</div>
+<div class="copyright">
+        Copyright © PUC.CMM - NIC .DO. All rights reserved
+        <a href="#">Privacy Policy</a>
+</div>
+</div>
+</footer>
+</body>
+</html>
+</p></body></html>

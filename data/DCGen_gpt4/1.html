@@ -1,0 +1,233 @@
+<html><body><p>
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Reproduced Section</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #F0F2F5;
+            margin: 0;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            height: 60px;
+            padding: 0 20px;
+            background-color: #ffffff;
+            border-bottom: 1px solid #e6e6e6;
+        }
+        .header img {
+            height: 40px;
+        }
+        .main-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 20px;
+        }
+        .container {
+            background-color: #ffffff;
+            border: 1px solid #d3d7db;
+            border-radius: 10px;
+            padding: 20px;
+            max-width: 800px;
+            width: 100%;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .container .header {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .container .subheader {
+            font-size: 16px;
+            color: #6A737D;
+            margin-bottom: 20px;
+        }
+        .images {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .images img {
+            width: 220px;
+            height: 160px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+        .login-box {
+            width: 400px;
+            padding: 20px;
+            background: #ffffff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            text-align: center;
+            font-size: 14px;
+        }
+        .login-box img {
+            height: 50px;
+            margin-bottom: 20px;
+        }
+        .login-box h2 {
+            margin: 0 0 20px;
+            color: #333;
+        }
+        .login-box input, .login-box button {
+            width: 100%;
+            margin: 10px 0;
+            padding: 10px;
+            font-size: 14px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+        .login-box button {
+            background-color: #1877F2;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .login-box button:hover {
+            background-color: #1673E1;
+        }
+        .login-box .qr-code {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .login-box .qr-code img {
+            height: 70px;
+            width: 70px;
+        }
+        .login-box .qr-code div {
+            text-align: left;
+            flex-grow: 1;
+            margin-left: 10px;
+        }
+        .login-box .qr-code a {
+            color: #1877F2;
+            text-decoration: none;
+        }
+        .login-box .qr-code a:hover {
+            text-decoration: underline;
+        }
+        .sign-up {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .sign-up button {
+            width: 100%;
+            padding: 10px;
+            font-size: 14px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            background-color: #28A745;
+            color: white;
+            cursor: pointer;
+        }
+        .sign-up button:hover {
+            background-color: #259937;
+        }
+        .sign-up p {
+            color: #666;
+            font-size: 14px;
+            margin: 10px 0 0;
+        }
+        .sign-up a {
+            color: #1877F2;
+            text-decoration: none;
+            display: block;
+            margin-top: 5px;
+        }
+        .sign-up a:hover {
+            text-decoration: underline;
+        }
+        .small-icons {
+            margin-top: 20px;
+        }
+        .small-icons a {
+            margin: 0 10px;
+            color: #3f8ae0;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .footer {
+            margin-top: 20px;
+            font-size: 12px;
+            color: #9294a0;
+        }
+        .footer a {
+            margin-right: 10px;
+            color: #595b6d;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+<img alt="Logo" src="placeholder.png"/>
+</div>
+<div class="main-content">
+<div class="container">
+<div class="header">VK for mobile devices</div>
+<div class="subheader">Install our official mobile app and stay in touch with your friends anytime and anywhere.</div>
+<div class="images">
+<img alt="Image 1" src="placeholder.png"/>
+<img alt="Image 2" src="placeholder.png"/>
+</div>
+</div>
+<div class="login-box">
+<img alt="Logo" src="placeholder.png"/>
+<h2>Sign in to VK</h2>
+<input placeholder="Phone or email" type="text"/>
+<div>
+<input id="save-user" type="checkbox"/> <label for="save-user">Save user</label>
+</div>
+<button>Sign in</button>
+<div class="qr-code">
+<img alt="QR Code" src="placeholder.png"/>
+<div>
+<p>Quick login with QR code</p>
+<span>Use your phone's camera</span>
+</div>
+<a href="#">Learn more</a>
+</div>
+<div class="sign-up">
+<button>Sign up</button>
+<p>After signing up, you'll get access to all of VK ID's features</p>
+<a href="#">Learn more</a>
+</div>
+</div>
+<div class="small-icons">
+<a href="#"><span>📱</span> Google Play</a>
+<a href="#"><span>📱</span> RuStore</a>
+<a href="#"><span>📱</span> App Store</a>
+</div>
+<div class="footer">
+<div>VK © 2006-2024</div>
+<div>
+<a href="#">About VK</a>
+<a href="#">Terms</a>
+<a href="#">Developers</a>
+</div>
+<div>
+<a href="#">Русский</a>
+<a href="#">English</a>
+<a href="#">All languages</a>
+</div>
+</div>
+</div>
+</body>
+</html>
+</p></body></html>

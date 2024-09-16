@@ -1,0 +1,453 @@
+<html><body><p>
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>PubMatic</title>
+<style>
+        body {
+            margin: 0;
+            font-family: sans-serif;
+        }
+        .header {
+            background-color: #f5f5f5;
+            padding: 20px 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .header-left {
+            float: left;
+        }
+        .header-right {
+            float: right;
+        }
+        .header-logo {
+            height: 30px;
+        }
+        .header-nav a {
+            color: #333;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .header-nav a:hover {
+            text-decoration: underline;
+        }
+        .header-button {
+            background-color: #008CBA;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .hero {
+            background-color: #f5f5f5;
+            padding: 80px 0;
+        }
+        .hero-left {
+            float: left;
+            width: 50%;
+            padding-right: 20px;
+        }
+        .hero-right {
+            float: right;
+            width: 50%;
+        }
+        .hero-title {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .hero-button {
+            background-color: #008CBA;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .about {
+            background-color: #fff;
+            padding: 40px 0;
+        }
+        .about-left {
+            float: left;
+            width: 50%;
+            padding-right: 20px;
+        }
+        .about-right {
+            float: right;
+            width: 50%;
+        }
+        .about-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .about-text {
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .about-button {
+            background-color: #008CBA;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .testimonial {
+            background-color: #008CBA;
+            color: white;
+            padding: 40px;
+        }
+        .testimonial-quote {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .testimonial-author {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .testimonial-title {
+            font-size: 16px;
+        }
+        .testimonial-link {
+            color: white;
+            text-decoration: none;
+        }
+        .testimonial-link:hover {
+            text-decoration: underline;
+        }
+        .services {
+            background-color: #f5f5f5;
+            padding: 40px 0;
+        }
+        .services-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .services-items {
+            display: flex;
+            justify-content: space-between;
+        }
+        .services-item {
+            width: 30%;
+            text-align: center;
+            padding: 20px;
+        }
+        .services-item-icon {
+            font-size: 48px;
+            color: #008CBA;
+            margin-bottom: 10px;
+        }
+        .services-item-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .services-item-text {
+            line-height: 1.6;
+        }
+        .cta {
+            background-color: #fff;
+            padding: 40px 0;
+        }
+        .cta-title {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .cta-text {
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .cta-button {
+            background-color: #008CBA;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 40px 0;
+        }
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+        }
+        .footer-column {
+            width: 25%;
+        }
+        .footer-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .footer-link {
+            color: white;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 10px;
+        }
+        .footer-link:hover {
+            text-decoration: underline;
+        }
+        .footer-copyright {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .clear {
+            clear: both;
+        }
+        .cookie-banner {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+        }
+        .cookie-banner-text {
+            float: left;
+        }
+        .cookie-banner-button {
+            background-color: #008CBA;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            float: right;
+        }
+        .cookie-banner-link {
+            color: white;
+            text-decoration: none;
+        }
+        .cookie-banner-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+<div class="container">
+<div class="header-left">
+<img alt="PubMatic Logo" class="header-logo" src="placeholder.png"/>
+</div>
+<div class="header-right">
+<div class="header-nav">
+<a href="#">Solutions</a>
+<a href="#">Products</a>
+<a href="#">Resources</a>
+<a href="#">About</a>
+<a href="#">Careers</a>
+<a href="#">Login</a>
+</div>
+<button class="header-button">Contact Us</button>
+</div>
+<div class="clear"></div>
+</div>
+</div>
+<div class="hero">
+<div class="container">
+<div class="hero-left">
+<div class="hero-title">WHO WILL WIN THEIR FAIR SHARE OF COMMERCE MEDIA?</div>
+<button class="hero-button">Read The Report</button>
+</div>
+<div class="hero-right">
+<img alt="Hero Image" src="placeholder.png"/>
+</div>
+<div class="clear"></div>
+</div>
+</div>
+<div class="about">
+<div class="container">
+<div class="about-left">
+<div class="about-title">PubMatic maximizes customer value by delivering the programmatic digital marketing supply chain of the future.</div>
+<div class="about-text">Our omnichannel sell-side platform leverages a specialized infrastructure built to deliver scalable and flexible innovation, helping our clients realize the full potential of their digital advertising strategies.</div>
+</div>
+<div class="about-right">
+<div class="about-title">About Cookies On This Site</div>
+<div class="about-text">We use cookies to personalize and enhance your experience on our site. Visit our <a class="cookie-banner-link" href="#">Privacy Policy</a> to learn more or manage your personal preferences in our <a class="cookie-banner-link" href="#">Cookie Consent Tool</a>. By using our site, you agree to our use of cookies.</div>
+<button class="about-button">Our Solutions</button>
+</div>
+<div class="clear"></div>
+</div>
+</div>
+<div class="testimonial">
+<div class="container">
+<div class="testimonial-quote">“PubMatic's unique demand and marketing of SPO deals with their key buy-side relationships really pushed our partnership forward, helping maximize our revenue. PubMatic’s team was there every step of the way to support us and our advertisers to ensure deals were accepted and spend flowed quickly.”</div>
+<div class="testimonial-author">Scott Kelliher</div>
+<div class="testimonial-title">Head of Revenue</div>
+<div class="testimonial-title">Newsbreak</div>
+<a class="testimonial-link" href="#">Learn How NewsBreak Sees 107% Increase in Revenue Across PubMatic-Monetized Inventory</a>
+</div>
+</div>
+<div class="services">
+<div class="container">
+<div class="services-title">WE HELP YOU STAY AHEAD OF INDUSTRY TRENDS</div>
+<div class="services-items">
+<div class="services-item">
+<div class="services-item-icon">📖</div>
+<div class="services-item-title">Reports</div>
+<div class="services-item-text">
+<img alt="Report Image" src="placeholder.png"/>
+<a href="#">Publisher's Playbook: Unlock the Full Revenue Potential of Political Advertising</a>
+<p>Political ad spending is projected to ex...</p>
+</div>
+</div>
+<div class="services-item">
+<div class="services-item-icon">📘</div>
+<div class="services-item-title">Blog</div>
+<div class="services-item-text">
+<img alt="Blog Image" src="placeholder.png"/>
+<a href="#">Elevating Monetization: Publishers' Path to Programmatic Progress</a>
+<p>As the world's most mobile-centric regio...</p>
+</div>
+</div>
+<div class="services-item">
+<div class="services-item-icon">🕔</div>
+<div class="services-item-title">Events</div>
+<div class="services-item-text">
+<img alt="Event Image" src="placeholder.png"/>
+<a href="#">La Nuit Des Rois</a>
+<p>May 29, 2024</p>
+</div>
+</div>
+</div>
+<div class="services-items">
+<div class="services-item">
+<div class="services-item-text">
+<img alt="Report Image" src="placeholder.png"/>
+<a href="#">Quarterly Global Advertising Spend Trends: Q1 2024</a>
+<p>PubMatic's Quarterly Ad Spend report was...</p>
+</div>
+<button class="services-item-button">More Reports</button>
+</div>
+<div class="services-item">
+<div class="services-item-text">
+<img alt="Blog Image" src="placeholder.png"/>
+<a href="#">Supercharging Data Processing: The Spark 3 Upgrade</a>
+<p>Introduction With over 600 billion ad r...</p>
+</div>
+<button class="services-item-button">More Blog Posts</button>
+</div>
+<div class="services-item">
+<div class="services-item-text">
+<img alt="Event Image" src="placeholder.png"/>
+<a href="#">Programmatic Morning CTV &amp; VIDEO 2024</a>
+<p>May 30, 2024</p>
+</div>
+<button class="services-item-button">More Events</button>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+</div>
+<div class="cta">
+<div class="container">
+<div class="cta-title">SCALE THAT DELIVERS VALUE</div>
+<div class="cta-text">PubMatic has created a global infrastructure to maximize customer value and put our customers in control of their digital advertising business.</div>
+<button class="cta-button">About Us</button>
+</div>
+</div>
+<div class="footer">
+<div class="container">
+<div class="footer-container">
+<div class="footer-column">
+<div class="footer-title">Solutions</div>
+<a class="footer-link" href="#">Solutions Link 1</a>
+<a class="footer-link" href="#">Solutions Link 2</a>
+<a class="footer-link" href="#">Solutions Link 3</a>
+</div>
+<div class="footer-column">
+<div class="footer-title">Products</div>
+<a class="footer-link" href="#">Products Link 1</a>
+<a class="footer-link" href="#">Products Link 2</a>
+<a class="footer-link" href="#">Products Link 3</a>
+</div>
+<div class="footer-column">
+<div class="footer-title">Resources</div>
+<a class="footer-link" href="#">Resources Link 1</a>
+<a class="footer-link" href="#">Resources Link 2</a>
+<a class="footer-link" href="#">Resources Link 3</a>
+</div>
+<div class="footer-column">
+<div class="footer-title">About Us</div>
+<a class="footer-link" href="#">About Us Link 1</a>
+<a class="footer-link" href="#">About Us Link 2</a>
+<a class="footer-link" href="#">About Us Link 3</a>
+</div>
+</div>
+<div class="footer-copyright">
+<div class="footer-text">PubMatic maximizes customer value by delivering digital advertising's supply chain of the future.</div>
+<a class="footer-link" href="#">Privacy</a>
+<a class="footer-link" href="#">Opt-Out</a>
+<a class="footer-link" href="#">Your Privacy Choices</a>
+<a class="footer-link" href="#">Legal</a>
+<a class="footer-link" href="#">Cookie Preferences</a>
+<div class="footer-text">PubMatic is a registered data broker in the state of Texas</div>
+<div class="footer-text">Copyright © 2024 PubMatic, Inc. All Rights Reserved</div>
+</div>
+</div>
+</div>
+<div class="footer">
+<div class="container">
+<div class="footer-container">
+<div class="footer-column">
+<div class="footer-title">Careers</div>
+<a class="footer-link" href="#">Careers Link 1</a>
+<a class="footer-link" href="#">Careers Link 2</a>
+<a class="footer-link" href="#">Careers Link 3</a>
+</div>
+<div class="footer-column">
+<div class="footer-title">Investor Relations</div>
+<a class="footer-link" href="#">Investor Relations Link 1</a>
+<a class="footer-link" href="#">Investor Relations Link 2</a>
+<a class="footer-link" href="#">Investor Relations Link 3</a>
+</div>
+<div class="footer-column">
+<div class="footer-title">Community</div>
+<a class="footer-link" href="#">Community Link 1</a>
+<a class="footer-link" href="#">Community Link 2</a>
+<a class="footer-link" href="#">Community Link 3</a>
+</div>
+<div class="footer-column">
+<div class="footer-text">Supporting Members</div>
+<img alt="Supporting Member Image" src="placeholder.png"/>
+<img alt="Supporting Member Image" src="placeholder.png"/>
+<img alt="Supporting Member Image" src="placeholder.png"/>
+<img alt="Supporting Member Image" src="placeholder.png"/>
+<img alt="Supporting Member Image" src="placeholder.png"/>
+<img alt="Supporting Member Image" src="placeholder.png"/>
+<img alt="Supporting Member Image" src="placeholder.png"/>
+<img alt="Supporting Member Image" src="placeholder.png"/>
+<img alt="Supporting Member Image" src="placeholder.png"/>
+<img alt="Supporting Member Image" src="placeholder.png"/>
+<img alt="Supporting Member Image" src="placeholder.png"/>
+<img alt="Supporting Member Image" src="placeholder.png"/>
+<img alt="Supporting Member Image" src="placeholder.png"/>
+<img alt="Supporting Member Image" src="placeholder.png"/>
+</div>
+</div>
+</div>
+</div>
+<div class="cookie-banner">
+<div class="cookie-banner-text">We use cookies to personalize and enhance your experience on our site. Visit our <a class="cookie-banner-link" href="#">Privacy Policy</a> to learn more or manage your personal preferences in our <a class="cookie-banner-link" href="#">Cookie Consent Tool</a>. By using our site, you agree to our use of cookies.</div>
+<button class="cookie-banner-button">Accept</button>
+</div>
+</body>
+</html>
+</p></body></html>

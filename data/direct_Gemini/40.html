@@ -1,0 +1,534 @@
+<html><body><p>```html
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Gravatar</title>
+<style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+      margin: 0;
+      color: #222;
+      background-color: #fff;
+    }
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 30px 0;
+      padding: 0 30px;
+    }
+    .header-logo {
+      display: flex;
+      align-items: center;
+    }
+    .header-logo svg {
+      width: 40px;
+      height: 40px;
+    }
+    .header-logo h1 {
+      margin: 0 0 0 10px;
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .header-nav {
+      display: flex;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .header-nav li {
+      margin: 0 10px;
+    }
+    .header-nav a {
+      text-decoration: none;
+      color: #222;
+      font-weight: 500;
+    }
+    .header-nav a:hover {
+      text-decoration: underline;
+    }
+    .header-buttons {
+      display: flex;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .header-buttons li {
+      margin: 0 10px;
+    }
+    .header-buttons button {
+      background-color: #222;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .header-buttons button:hover {
+      background-color: #333;
+    }
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 30px;
+    }
+    .hero h2 {
+      font-size: 48px;
+      font-weight: bold;
+      margin: 0 0 20px 0;
+    }
+    .hero p {
+      font-size: 18px;
+      line-height: 1.5;
+      margin: 0 0 30px 0;
+    }
+    .hero input {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      width: 300px;
+      font-size: 16px;
+      margin: 0 10px 10px 0;
+    }
+    .hero button {
+      background-color: #222;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .hero button:hover {
+      background-color: #333;
+    }
+    .hero span {
+      font-size: 14px;
+      color: #777;
+    }
+    .gallery {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 30px;
+    }
+    .gallery-item {
+      width: 200px;
+      height: 200px;
+      margin: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      overflow: hidden;
+      position: relative;
+    }
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .gallery-item::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.2);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+    .gallery-item:hover::before {
+      opacity: 1;
+    }
+    .gallery-item svg {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 40px;
+      height: 40px;
+      color: #fff;
+    }
+    .gallery-item:hover svg {
+      opacity: 1;
+    }
+    .gallery-item svg {
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+    .gallery-title {
+      margin: 0;
+      font-size: 18px;
+      font-weight: bold;
+      text-align: center;
+    }
+    .gallery-text {
+      font-size: 14px;
+      line-height: 1.5;
+      text-align: center;
+      margin: 10px 0;
+    }
+    .gallery-link {
+      display: inline-block;
+      background-color: #222;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 14px;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    .gallery-link:hover {
+      background-color: #333;
+    }
+    .section-title {
+      font-size: 32px;
+      font-weight: bold;
+      margin: 0 0 20px 0;
+      text-align: center;
+    }
+    .section-subtitle {
+      font-size: 16px;
+      line-height: 1.5;
+      margin: 0 0 30px 0;
+      text-align: center;
+    }
+    .section-content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 30px;
+    }
+    .section-item {
+      width: 300px;
+      margin: 10px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      text-align: center;
+    }
+    .section-item svg {
+      width: 60px;
+      height: 60px;
+      margin: 0 0 20px 0;
+    }
+    .section-item p {
+      font-size: 14px;
+      line-height: 1.5;
+    }
+    .section-button {
+      display: inline-block;
+      background-color: #222;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 14px;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    .section-button:hover {
+      background-color: #333;
+    }
+    .code-block {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 30px;
+    }
+    .code-item {
+      width: 400px;
+      margin: 10px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #222;
+      color: #fff;
+      overflow: auto;
+    }
+    .code-item h3 {
+      margin: 0 0 10px 0;
+      font-size: 18px;
+      font-weight: bold;
+    }
+    .code-item pre {
+      font-size: 14px;
+      line-height: 1.5;
+      margin: 0;
+    }
+    .code-item code {
+      font-family: monospace;
+      font-size: 14px;
+      line-height: 1.5;
+      color: #eee;
+    }
+    .code-item code span {
+      color: #ff0;
+    }
+    .footer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 30px;
+      background-color: #222;
+      color: #fff;
+    }
+    .footer-logo {
+      display: flex;
+      align-items: center;
+      margin: 0 20px 0 0;
+    }
+    .footer-logo svg {
+      width: 30px;
+      height: 30px;
+    }
+    .footer-logo h3 {
+      margin: 0 0 0 10px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+    .footer-nav {
+      display: flex;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .footer-nav li {
+      margin: 0 20px;
+    }
+    .footer-nav a {
+      text-decoration: none;
+      color: #fff;
+    }
+    .footer-nav a:hover {
+      text-decoration: underline;
+    }
+    .footer-copyright {
+      text-align: center;
+      width: 100%;
+      margin-top: 20px;
+    }
+    .footer-copyright a {
+      text-decoration: none;
+      color: #fff;
+    }
+    .footer-copyright a:hover {
+      text-decoration: underline;
+    }
+    .footer-copyright span {
+      font-size: 14px;
+    }
+    .developer-section {
+      background-color: #222;
+      color: #fff;
+      padding: 30px;
+      text-align: center;
+    }
+    .developer-section h2 {
+      margin: 0 0 20px 0;
+      font-size: 32px;
+      font-weight: bold;
+    }
+    .developer-section p {
+      font-size: 16px;
+      line-height: 1.5;
+      margin: 0 0 30px 0;
+    }
+    .developer-section button {
+      background-color: #fff;
+      color: #222;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .developer-section button:hover {
+      background-color: #eee;
+    }
+    .bottom-section {
+      background-color: #fff;
+      padding: 30px;
+      text-align: center;
+    }
+    .bottom-section h2 {
+      margin: 0 0 20px 0;
+      font-size: 32px;
+      font-weight: bold;
+    }
+    .bottom-section p {
+      font-size: 16px;
+      line-height: 1.5;
+      margin: 0 0 30px 0;
+    }
+    .bottom-section button {
+      background-color: #222;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .bottom-section button:hover {
+      background-color: #333;
+    }
+    .bottom-section img {
+      width: 100px;
+      height: 100px;
+      margin: 0 0 20px 0;
+      border-radius: 50%;
+    }
+  </style>
+</head>
+<body>
+<header class="header">
+<div class="header-logo">
+<svg height="40" viewbox="0 0 40 40" width="40" xmlns="http://www.w3.org/2000/svg"><path d="M10.8 37.1h18.4c2.7 0 4.9-2.2 4.9-4.9v-18.4c0-2.7-2.2-4.9-4.9-4.9h-18.4c-2.7 0-4.9 2.2-4.9 4.9v18.4c0 2.7 2.2 4.9 4.9 4.9z" fill="#007bff"></path><path d="M30.1 13.2h-16.8v-13.4h20.1v13.4z" fill="#fff"></path></svg>
+<h1>Gravatar</h1>
+</div>
+<nav class="header-nav">
+<ul>
+<li><a href="#">Developers</a></li>
+<li><a href="#">Support</a></li>
+<li><a href="#">Blog</a></li>
+</ul>
+</nav>
+<ul class="header-buttons">
+<li><button>Log in</button></li>
+<li><button>Sign up</button></li>
+</ul>
+</header>
+<section class="hero">
+<h2>One profile for everything, everywhere.</h2>
+<p>Your email address becomes your passport to the digital world, empowering you with complete control over your personal data.</p>
+<input placeholder="Enter email address..." type="email"/>
+<button>View profile</button>
+<span>Gravatar profiles are free for everyone — forever.</span>
+</section>
+<section class="gallery">
+<div class="gallery-item">
+<img alt="" src="placeholder.png"/>
+<svg height="40" viewbox="0 0 40 40" width="40" xmlns="http://www.w3.org/2000/svg"><path d="M20 37.1c2.7 0 4.9-2.2 4.9-4.9v-18.4c0-2.7-2.2-4.9-4.9-4.9h-18.4c-2.7 0-4.9 2.2-4.9 4.9v18.4c0 2.7 2.2 4.9 4.9 4.9h18.4z" fill="#fff"></path><path d="M20.1 13.2h-16.8v-13.4h20.1v13.4z" fill="#007bff"></path></svg>
+</div>
+<div class="gallery-item">
+<img alt="" src="placeholder.png"/>
+<svg height="40" viewbox="0 0 40 40" width="40" xmlns="http://www.w3.org/2000/svg"><path d="M20 37.1c2.7 0 4.9-2.2 4.9-4.9v-18.4c0-2.7-2.2-4.9-4.9-4.9h-18.4c-2.7 0-4.9 2.2-4.9 4.9v18.4c0 2.7 2.2 4.9 4.9 4.9h18.4z" fill="#fff"></path><path d="M20.1 13.2h-16.8v-13.4h20.1v13.4z" fill="#007bff"></path></svg>
+</div>
+<div class="gallery-item">
+<img alt="" src="placeholder.png"/>
+<svg height="40" viewbox="0 0 40 40" width="40" xmlns="http://www.w3.org/2000/svg"><path d="M20 37.1c2.7 0 4.9-2.2 4.9-4.9v-18.4c0-2.7-2.2-4.9-4.9-4.9h-18.4c-2.7 0-4.9 2.2-4.9 4.9v18.4c0 2.7 2.2 4.9 4.9 4.9h18.4z" fill="#fff"></path><path d="M20.1 13.2h-16.8v-13.4h20.1v13.4z" fill="#007bff"></path></svg>
+</div>
+</section>
+<section class="section-title">
+<h2 class="section-title">GRAVATAR IS USED BY</h2>
+<div class="section-content">
+<div class="section-item">
+<svg height="60" viewbox="0 0 60 60" width="60" xmlns="http://www.w3.org/2000/svg"><path d="M30 57.1c2.7 0 4.9-2.2 4.9-4.9v-18.4c0-2.7-2.2-4.9-4.9-4.9h-18.4c-2.7 0-4.9 2.2-4.9 4.9v18.4c0 2.7 2.2 4.9 4.9 4.9h18.4z" fill="#fff"></path><path d="M30.1 13.2h-16.8v-13.4h20.1v13.4z" fill="#007bff"></path></svg>
+<p>WordPress</p>
+</div>
+<div class="section-item">
+<svg height="60" viewbox="0 0 60 60" width="60" xmlns="http://www.w3.org/2000/svg"><path d="M30 57.1c2.7 0 4.9-2.2 4.9-4.9v-18.4c0-2.7-2.2-4.9-4.9-4.9h-18.4c-2.7 0-4.9 2.2-4.9 4.9v18.4c0 2.7 2.2 4.9 4.9 4.9h18.4z" fill="#fff"></path><path d="M30.1 13.2h-16.8v-13.4h20.1v13.4z" fill="#007bff"></path></svg>
+<p>GitHub</p>
+</div>
+<div class="section-item">
+<svg height="60" viewbox="0 0 60 60" width="60" xmlns="http://www.w3.org/2000/svg"><path d="M30 57.1c2.7 0 4.9-2.2 4.9-4.9v-18.4c0-2.7-2.2-4.9-4.9-4.9h-18.4c-2.7 0-4.9 2.2-4.9 4.9v18.4c0 2.7 2.2 4.9 4.9 4.9h18.4z" fill="#fff"></path><path d="M30.1 13.2h-16.8v-13.4h20.1v13.4z" fill="#007bff"></path></svg>
+<p>Slack</p>
+</div>
+<div class="section-item">
+<svg height="60" viewbox="0 0 60 60" width="60" xmlns="http://www.w3.org/2000/svg"><path d="M30 57.1c2.7 0 4.9-2.2 4.9-4.9v-18.4c0-2.7-2.2-4.9-4.9-4.9h-18.4c-2.7 0-4.9 2.2-4.9 4.9v18.4c0 2.7 2.2 4.9 4.9 4.9h18.4z" fill="#fff"></path><path d="M30.1 13.2h-16.8v-13.4h20.1v13.4z" fill="#007bff"></path></svg>
+<p>OpenAI</p>
+</div>
+<div class="section-item">
+<svg height="60" viewbox="0 0 60 60" width="60" xmlns="http://www.w3.org/2000/svg"><path d="M30 57.1c2.7 0 4.9-2.2 4.9-4.9v-18.4c0-2.7-2.2-4.9-4.9-4.9h-18.4c-2.7 0-4.9 2.2-4.9 4.9v18.4c0 2.7 2.2 4.9 4.9 4.9h18.4z" fill="#fff"></path><path d="M30.1 13.2h-16.8v-13.4h20.1v13.4z" fill="#007bff"></path></svg>
+<p>Atlassian</p>
+</div>
+<div class="section-item">
+<svg height="60" viewbox="0 0 60 60" width="60" xmlns="http://www.w3.org/2000/svg"><path d="M30 57.1c2.7 0 4.9-2.2 4.9-4.9v-18.4c0-2.7-2.2-4.9-4.9-4.9h-18.4c-2.7 0-4.9 2.2-4.9 4.9v18.4c0 2.7 2.2 4.9 4.9 4.9h18.4z" fill="#fff"></path><path d="M30.1 13.2h-16.8v-13.4h20.1v13.4z" fill="#007bff"></path></svg>
+<p>Humane</p>
+</div>
+<div class="section-item">
+<svg height="60" viewbox="0 0 60 60" width="60" xmlns="http://www.w3.org/2000/svg"><path d="M30 57.1c2.7 0 4.9-2.2 4.9-4.9v-18.4c0-2.7-2.2-4.9-4.9-4.9h-18.4c-2.7 0-4.9 2.2-4.9 4.9v18.4c0 2.7 2.2 4.9 4.9 4.9h18.4z" fill="#fff"></path><path d="M30.1 13.2h-16.8v-13.4h20.1v13.4z" fill="#007bff"></path></svg>
+<p>Mailchimp</p>
+</div>
+<div class="section-item">
+<svg height="60" viewbox="0 0 60 60" width="60" xmlns="http://www.w3.org/2000/svg"><path d="M30 57.1c2.7 0 4.9-2.2 4.9-4.9v-18.4c0-2.7-2.2-4.9-4.9-4.9h-18.4c-2.7 0-4.9 2.2-4.9 4.9v18.4c0 2.7 2.2 4.9 4.9 4.9h18.4z" fill="#fff"></path><path d="M30.1 13.2h-16.8v-13.4h20.1v13.4z" fill="#007bff"></path></svg>
+<p>Stack Overflow</p>
+</div>
+<div class="section-item">
+<svg height="60" viewbox="0 0 60 60" width="60" xmlns="http://www.w3.org/2000/svg"><path d="M30 57.1c2.7 0 4.9-2.2 4.9-4.9v-18.4c0-2.7-2.2-4.9-4.9-4.9h-18.4c-2.7 0-4.9 2.2-4.9 4.9v18.4c0 2.7 2.2 4.9 4.9 4.9h18.4z" fill="#fff"></path><path d="M30.1 13.2h-16.8v-13.4h20.1v13.4z" fill="#007bff"></path></svg>
+<p>Coinbase</p>
+</div>
+</div>
+</section>
+<section class="section-content">
+<div class="section-item">
+<svg height="60" viewbox="0 0 60 60" width="60" xmlns="http://www.w3.org/2000/svg"><path d="M30 57.1c2.7 0 4.9-2.2 4.9-4.9v-18.4c0-2.7-2.2-4.9-4.9-4.9h-18.4c-2.7 0-4.9 2.2-4.9 4.9v18.4c0 2.7 2.2 4.9 4.9 4.9h18.4z" fill="#fff"></path><path d="M30.1 13.2h-16.8v-13.4h20.1v13.4z" fill="#007bff"></path></svg>
+<h3>Set once, seen everywhere.</h3>
+<p>Create and manage your profile from a single place, telling the web who you are and where people can find you. Skip filling out profile pages forever.</p>
+</div>
+<div class="section-item">
+<svg height="60" viewbox="0 0 60 60" width="60" xmlns="http://www.w3.org/2000/svg"><path d="M20 37.1c2.7 0 4.9-2.2 4.9-4.9v-18.4c0-2.7-2.2-4.9-4.9-4.9h-18.4c-2.7 0-4.9 2.2-4.9 4.9v18.4c0 2.7 2.2 4.9 4.9 4.9h18.4z" fill="#fff"></path><path d="M20.1 13.2h-16.8v-13.4h20.1v13.4z" fill="#007bff"></path></svg>
+<h3>It starts with an email.</h3>
+<p>Each Gravatar profile is connected to an email address. When you use this email around the web, your entire profile comes with you.</p>
+</div>
+</section>
+<section class="section-content">
+<div class="section-item">
+<svg height="60" viewbox="0 0 60 60" width="60" xmlns="http://www.w3.org/2000/svg"><path d="M30 57.1c2.7 0 4.9-2.2 4.9-4.9v-18.4c0-2.7-2.2-4.9-4.9-4.9h-18.4c-2.7 0-4.9 2.2-4.9 4.9v18.4c0 2.7 2.2 4.9 4.9 4.9h18.4z" fill="#fff"></path><path d="M30.1 13.2h-16.8v-13.4h20.1v13.4z" fill="#007bff"></path></svg>
+<h3>Trusted by big platforms.</h3>
+<p>Millions of websites like WordPress, Slack, and OpenAI use your Gravatar profile automatically, saving you time and improving your experience.</p>
+</div>
+<div class="section-item">
+<svg height="60" viewbox="0 0 60 60" width="60" xmlns="http://www.w3.org/2000/svg"><path d="M20 37.1c2.7 0 4.9-2.2 4.9-4.9v-18.4c0-2.7-2.2-4.9-4.9-4.9h-18.4c-2.7 0-4.9 2.2-4.9 4.9v18.4c0 2.7 2.2 4.9 4.9 4.9h18.4z" fill="#fff"></path><path d="M20.1 13.2h-16.8v-13.4h20.1v13.4z" fill="#007bff"></path></svg>
+<h3>Public, open, and responsible.</h3>
+<p>Take control over the data that you share with the tools you use. You decide what is in your profile and how public or private it is. With Gravatar, your data is yours and yours only.</p>
+<button>Read our Privacy Policy</button>
+</div>
+</section>
+<section class="code-block">
+<div class="code-item">
+<h3>example.js</h3>
+<pre><code>const sha256 = require('js-sha256');
+<span>// Trim leading and trailing whitespace from</span>
+<span>// an email address and force all characters</span>
+<span>// to lower case</span>
+const address = String(email).trim().toLowerCase();
+<span>// Create a SHA256 hash of the final string</span>
+const hash = sha256(address);
+<span>// Grab the actual image URL</span>
+return 'https://www.gravatar.com/avatar/$1{hash}';
+</code></pre>
+</div>
+<div class="code-item">
+<h3>example.php</h3>
+<pre><code><span>// Trim leading and trailing whitespace from</span>
+<span>// an email address and force all characters</span>
+<span>// to lower case</span>
+const address = String(email).trim().toLowerCase();
+<span>// Create a SHA256 hash of the final string</span>
+const hash = sha256(address);
+<span>// Grab the actual image URL</span>
+return 'https://www.gravatar.com/avatar/$1{hash}';
+</code></pre>
+</div>
+</section>
+<section class="developer-section">
+<h2>FOR DEVELOPERS &amp; APP MAKERS</h2>
+<h2>Unlock personalized user experiences.</h2>
+<p>Gravatar helps developers create personal signup flows and tailored user journeys — in a privacy forward way. Gravatar can be integrated with your app in mere minutes.</p>
+<button>Use the developer API<!--</p--></button></section></body></html></p></body></html>

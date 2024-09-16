@@ -1,0 +1,555 @@
+<html><body><p>
+<!DOCTYPE html>
+
+<html>
+<head>
+<style>
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: #f0f0f0;
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.header-left a {
+  color: black;
+  text-decoration: none;
+  margin-right: 10px;
+  font-size: 12px;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.header-right input {
+  border: 1px solid #ccc;
+  padding: 5px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.header-right .search-icon {
+  width: 20px;
+  height: 20px;
+  background-color: #ccc;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.content {
+  display: flex;
+  padding: 20px;
+}
+
+.content-left {
+  width: 50%;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-right: 1px solid #ccc;
+}
+
+.content-right {
+  width: 50%;
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+.section-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.section-subtitle {
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.image-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.image-container img {
+  width: 50px;
+  height: 50px;
+  background-color: #ccc;
+  border: 1px solid white;
+  margin-right: 10px;
+}
+
+.section-list {
+  margin-bottom: 20px;
+}
+
+.section-list li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.section-list li .icon {
+  width: 27px;
+  height: 27px;
+  background-color: #ccc;
+  margin-right: 10px;
+}
+
+.section-list li a {
+  color: blue;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.section-list li .description {
+  color: black;
+  font-size: 12px;
+}
+
+.project-news {
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.project-news .header {
+  font-size: 24px;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.project-news .subheader {
+  color: black;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.project-news .news-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.project-news .news-item .calendar {
+  width: 50px;
+  height: 50px;
+  background-color: #ccc;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.project-news .news-item .description {
+  color: black;
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+.project-news .news-item .date {
+  color: black;
+  font-size: 14px;
+}
+
+.project-news .news-item a {
+  color: blue;
+  text-decoration: none;
+}
+
+.project-news .button {
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.project-news .rss {
+  color: orange;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.languages {
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.languages .title {
+  color: black;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.languages .list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.languages .list a {
+  color: blue;
+  text-decoration: none;
+  font-size: 12px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.footer {
+  background-color: white;
+  padding: 20px;
+}
+
+.footer .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer .content .info {
+  color: black;
+  font-size: 12px;
+}
+
+.footer .content .links {
+  display: flex;
+  align-items: center;
+}
+
+.footer .content .links a {
+  color: blue;
+  text-decoration: none;
+  font-size: 12px;
+  margin-right: 10px;
+}
+
+.footer .content .links .last-modified {
+  color: gray;
+  font-size: 10px;
+  margin-right: 10px;
+}
+
+.footer .content .links .last-built {
+  color: gray;
+  font-size: 10px;
+}
+
+.teal-bar {
+  background-color: #008080;
+  height: 15px;
+}
+
+.carousel {
+  position: relative;
+  width: 960px;
+  height: 166px;
+  background-color: #f0f0f0;
+  margin-bottom: 20px;
+}
+
+.carousel img {
+  width: 916px;
+  height: 130px;
+  background-color: #f0f0f0;
+}
+
+.carousel .navigation {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.carousel .navigation li {
+  list-style: none;
+  width: 10px;
+  height: 10px;
+  background-color: #ccc;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+
+.carousel .navigation li.active {
+  background-color: white;
+}
+
+.carousel .arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 36px;
+  height: 36px;
+  background-color: #ccc;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  cursor: pointer;
+}
+
+.carousel .arrow.left {
+  left: 10px;
+}
+
+.carousel .arrow.right {
+  right: 10px;
+}
+
+.button {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.download-link {
+  color: blue;
+  text-decoration: none;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.play-button {
+  width: 30px;
+  height: 30px;
+  background-color: black;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.play-button::before {
+  content: "\e000";
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  font-size: 16px;
+}
+</style>
+</head>
+<body>
+<div class="header">
+<div class="header-left">
+<a href="#">Blog</a>
+<a href="#">Micronews</a>
+<a href="#">Planet</a>
+</div>
+<div class="header-right">
+<input placeholder="Search" type="text"/>
+<div class="search-icon">
+<i class="fas fa-search"></i>
+</div>
+</div>
+</div>
+<div class="teal-bar"></div>
+<div class="content">
+<div class="content-left">
+<div class="section-title">THE COMMUNITY</div>
+<div class="section-subtitle">Debian is a Community of People!</div>
+<div class="image-container">
+<img alt="Image" src="placeholder.png"/>
+<div class="section-title">THE COMMUNITY</div>
+</div>
+<div class="section-subtitle">Debian is a Community of People!</div>
+<div class="image-container">
+<img alt="Image" src="placeholder.png"/>
+<div>
+<div class="section-title">DC23 Group Photo</div>
+<ul class="navigation">
+<li class="active"></li>
+<li></li>
+<li></li>
+</ul>
+<div class="arrow left"><i class="fas fa-angle-left"></i></div>
+<div class="arrow right"><i class="fas fa-angle-right"></i></div>
+</div>
+</div>
+<div class="section-list">
+<li>
+<div class="icon"></div>
+<a href="#">People</a>
+<div class="description">Who we are and what we do</div>
+</li>
+<li>
+<div class="icon"></div>
+<a href="#">Our Philosophy</a>
+<div class="description">Why we do it, and how we do it</div>
+</li>
+<li>
+<div class="icon"></div>
+<a href="#">Get Involved, Contribute</a>
+<div class="description">How you can join us!</div>
+</li>
+<li>
+<div class="icon"></div>
+<a href="#">More...</a>
+<div class="description">Additional information about the Debian community</div>
+</li>
+</div>
+<div class="project-news">
+<div class="header">PROJECT NEWS</div>
+<div class="subheader">News and Announcements about Debian</div>
+<div class="news-item">
+<div class="calendar">
+<div class="date">FEBRUARY 10 2024</div>
+</div>
+<div class="description">Updated Debian 12.5 released</div>
+<a href="#">Read more</a>
+</div>
+<div class="news-item">
+<div class="calendar">
+<div class="date">FEBRUARY 10 2024</div>
+</div>
+<div class="description">Updated Debian 11.11.9 released</div>
+<a href="#">Read more</a>
+</div>
+<div class="news-item">
+<div class="calendar">
+<div class="date">DECEMBER 10 2023</div>
+</div>
+<div class="description">Updated Debian 12.12.4 released</div>
+<a href="#">Read more</a>
+</div>
+<div class="news-item">
+<div class="calendar">
+<div class="date">DECEMBER 10 2023</div>
+</div>
+<div class="description">Debian 12.4 to supersede Debian 12.3</div>
+<a href="#">Read more</a>
+</div>
+<div class="news-item">
+<div class="calendar">
+<div class="date">DECEMBER 09 2023</div>
+</div>
+<div class="description">Debian 12.3 image release delayed</div>
+<a href="#">Read more</a>
+</div>
+<div class="news-item">
+<div class="play-button"></div>
+<div class="description">All the news</div>
+<a class="rss" href="#">RSS</a>
+</div>
+</div>
+</div>
+<div class="content-right">
+<div class="section-title">THE OPERATING SYSTEM</div>
+<div class="section-subtitle">Debian is a complete Free Operating System!</div>
+<div class="image-container">
+<img alt="Image" src="placeholder.png"/>
+<div class="section-title">THE OPERATING SYSTEM</div>
+</div>
+<div class="section-subtitle">Debian is a complete Free Operating System!</div>
+<div class="image-container">
+<img alt="Image" src="placeholder.png"/>
+<div>
+<button class="button">Download</button>
+<a class="download-link" href="#">Other downloads</a>
+</div>
+</div>
+<div class="section-list">
+<li>
+<div class="icon"></div>
+<a href="#">Why Debian</a>
+<div class="description">What makes Debian special</div>
+</li>
+<li>
+<div class="icon"></div>
+<a href="#">User Support</a>
+<div class="description">Getting help and documentation</div>
+</li>
+<li>
+<div class="icon"></div>
+<a href="#">Security Updates</a>
+<div class="description">Debian Security Advisories (DSA)</div>
+</li>
+<li>
+<div class="icon"></div>
+<a href="#">More...</a>
+<div class="description">Further links to downloads and software</div>
+</li>
+</div>
+</div>
+</div>
+<div class="languages">
+<div class="title">This page is also available in the following languages:</div>
+<div class="list">
+<a href="#">العربية (Arabiya)</a>
+<a href="#">Беларуская (Belaruskaya)</a>
+<a href="#">català</a>
+<a href="#">dansk</a>
+<a href="#">Deutsch</a>
+<a href="#">Ελληνικά (Ellinika)</a>
+<a href="#">español</a>
+<a href="#">فارسی (Farsi)</a>
+<a href="#">français</a>
+<a href="#">Galego</a>
+<a href="#">Indonesia</a>
+<a href="#">Italiano</a>
+<a href="#">한국어 (Korean)</a>
+<a href="#">magyar</a>
+<a href="#">Nederlands</a>
+<a href="#">norsk (bokmål)</a>
+<a href="#">polski</a>
+<a href="#">Português</a>
+<a href="#">Русский (Russkij)</a>
+<a href="#">suomi</a>
+<a href="#">svenska</a>
+<a href="#">Tiếng Việt</a>
+<a href="#">українська (ukrainska)</a>
+<a href="#">中文(简体)</a>
+</div>
+</div>
+<div class="footer">
+<div class="content">
+<div class="info">
+<a href="#">See our contact page to get in touch. Web site source code is available.</a><br/>
+<a href="#">How to set the default document language.</a><br/>
+<div class="last-modified">Last Modified: Sat, Sep 16 13:09:56 UTC 2023</div>
+<div class="last-built">Last Built: Sun, May 12 22:07:29 UTC 2024</div>
+<div>Copyright © 1997-2024 SPI and others. See license terms</div>
+<div>Debian is a registered trademark of Software in the Public Interest, Inc.</div>
+</div>
+<div class="links">
+</div>
+</div>
+</div>
+<script crossorigin="anonymous" src="https://kit.fontawesome.com/your-font-awesome-kit-id.js"></script>
+</body>
+</html>
+</p></body></html>

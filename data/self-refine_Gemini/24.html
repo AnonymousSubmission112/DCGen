@@ -1,0 +1,412 @@
+<html><body><p>
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Website Screenshot</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            background-color: #ffffff;
+            text-align: center;
+            padding: 10px 0;
+            border-bottom: 1px solid #e6e6e6;
+        }
+        .header a {
+            color: #333;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .header img {
+            height: 60px;
+        }
+        .search-bar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 15px 0;
+        }
+        .search-bar input {
+            width: 50%;
+            padding: 8px;
+            font-size: 16px;
+            border: 1px solid #e6e6e6;
+            border-radius: 4px 0 0 4px;
+        }
+        .search-bar button {
+            padding: 8px 20px;
+            font-size: 16px;
+            border: none;
+            background-color: #f9a825;
+            color: white;
+            cursor: pointer;
+            border-radius: 0 4px 4px 0;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+            background-color: #ffffff;
+            padding: 10px 0;
+            border-bottom: 1px solid #e6e6e6;
+        }
+        .navbar a {
+            margin: 0 15px;
+            color: #333;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .content {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            margin: 0 10px;
+        }
+        .sidebar, .main-content, .rightbar {
+            background-color: #ffffff;
+            border: 1px solid #e6e6e6;
+            padding: 20px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        }
+        .sidebar {
+            width: 20%;
+        }
+        .main-content {
+            width: 50%;
+        }
+        .rightbar {
+            width: 20%;
+        }
+        .sidebar img, .main-content img, .rightbar img {
+            width: 100%;
+        }
+        .sidebar h3, .main-content h3, .rightbar h3 {
+            margin-top: 0;
+        }
+        .footer {
+            background-color: #ffffff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+            border-top: 1px solid #e6e6e6;
+        }
+        .footer .columns {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .footer .column {
+            width: 30%;
+            margin-bottom: 20px;
+        }
+        .footer a {
+            color: blue;
+            text-decoration: none;
+            display: block;
+            margin: 5px 0;
+        }
+        .footer .contacts {
+            margin-top: 20px;
+        }
+        .footer .soc-networks {
+            margin-top: 20px;
+        }
+        .footer .soc-networks a {
+            color: #333;
+        }
+        .footer .soc-networks a:not(:last-child)::after {
+            content: " | ";
+        }
+        .sidebar .inner-box {
+            border: 1px solid #e6e6e6;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+        .sidebar .inner-box h3 {
+            margin-top: 0;
+            font-size: 16px;
+        }
+        .sidebar .inner-box ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .sidebar .inner-box li {
+            margin-bottom: 5px;
+        }
+        .sidebar .inner-box li a {
+            color: #333;
+            text-decoration: none;
+        }
+        .sidebar .inner-box p {
+            margin-top: 5px;
+            font-size: 14px;
+        }
+        .main-content .news {
+            border: 1px solid #e6e6e6;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+        .main-content .news h3, .main-content .news h4 {
+            margin-top: 0;
+        }
+        .main-content .news h4 {
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+        .main-content .news p {
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+        .main-content .news a {
+            color: blue;
+            text-decoration: none;
+        }
+        .rightbar .inner-box {
+            border: 1px solid #e6e6e6;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+        .rightbar .inner-box h3 {
+            margin-top: 0;
+            font-size: 16px;
+        }
+        .rightbar .inner-box ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .rightbar .inner-box li {
+            margin-bottom: 5px;
+        }
+        .rightbar .inner-box li a {
+            color: #333;
+            text-decoration: none;
+        }
+        .rightbar .inner-box p {
+            margin-top: 5px;
+            font-size: 14px;
+        }
+        .footer .contacts h3, .footer .soc-networks h3 {
+            margin-top: 0;
+        }
+        .footer .contacts p {
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+        .header .inner-box {
+            padding: 10px;
+            border: 1px solid #e6e6e6;
+            background-color: #f9f9f9;
+        }
+        .header .inner-box h3 {
+            margin: 0;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+<img alt="Logo" src="placeholder.png"/>
+<div>
+<a href="#">Некоммерческие интернет-версии</a>
+<a href="#">О компании и продуктах</a>
+<a href="#">Купить КонсультантПлюс</a>
+<a href="#">Новости и акции</a>
+<a href="#">Пробный доступ</a>
+<a href="#">Вакансии</a>
+</div>
+</div>
+<div class="search-bar">
+<input placeholder="Поиск: Кодексы, законы и другие материалы" type="text"/>
+<button>НАЙТИ</button>
+</div>
+<div class="navbar">
+<a href="#">Вход для клиентов</a>
+<a href="#">Президент определил национальные цели развития России</a>
+<a href="#">Новости</a>
+<a href="#">«Горячие» документы</a>
+<a href="#">Новый профиль «Специалист по охране труда» в КонсультантПлюс</a>
+<a href="#">Продукты</a>
+<a href="#">Справочная информация</a>
+<a href="#">Кодексы</a>
+<a href="#">Законы</a>
+</div>
+<div class="content">
+<div class="sidebar">
+<div class="inner-box">
+<h3>Вход в систему</h3>
+<ul>
+<li><a href="#">КонсультантПлюс для клиентов</a></li>
+</ul>
+</div>
+<div class="inner-box">
+<h3>Пробный доступ</h3>
+<ul>
+<li><a href="#">Пробный доступ к системе КонсультантПлюс бесплатно</a></li>
+</ul>
+</div>
+<div class="inner-box">
+<h3>Купить систему</h3>
+<ul>
+<li><a href="#">Получите специальное предложение на покупку системы КонсультантПлюс</a></li>
+</ul>
+</div>
+<p style="text-align:center; font-size: 30px; margin-top: 15px;">310 744 893</p>
+<p style="text-align:center; font-size: 14px; margin-top: 5px;">документы в системе КонсультантПлюс</p>
+<div class="inner-box">
+<h3>Обзоры законодательства</h3>
+<ul>
+<li><a href="#">Подписка на рассылки</a></li>
+<li><a href="#">Интернет-интервью</a></li>
+<li><a href="#">Студенты и преподаватели</a></li>
+</ul>
+</div>
+<div class="inner-box">
+<h3>Кодексы</h3>
+<ul>
+<li><a href="#">Гражданский кодекс (ГК РФ)</a></li>
+<li><a href="#">Жилищный кодекс (ЖК РФ)</a></li>
+<li><a href="#">Налоговый кодекс (НК РФ)</a></li>
+<li><a href="#">Трудовой кодекс (ТК РФ)</a></li>
+<li><a href="#">Уголовный кодекс (УК РФ)</a></li>
+<li><a href="#">Кодекс об административных правонарушениях (КоАП РФ)</a></li>
+<li><a href="#">Бюджетный кодекс (БК РФ)</a></li>
+<li><a href="#">Таможенный кодекс ЕАЭС</a></li>
+<li><a href="#">Арбитражный процессуальный кодекс (АПК РФ)</a></li>
+<li><a href="#">Земельный кодекс (ЗК РФ)</a></li>
+</ul>
+<ul>
+<li><a href="#">Популярные документы для бухгалтеров</a></li>
+<li><a href="#">Все документы</a></li>
+</ul>
+</div>
+<div class="inner-box">
+<h3>Законы</h3>
+<ul>
+<li><a href="#">О защите прав потребителей</a></li>
+<li><a href="#">Об банкротстве</a></li>
+<li><a href="#">Об исполнительном производстве</a></li>
+<li><a href="#">О персональных данных</a></li>
+<li><a href="#">О налогах на имущество физических лиц,  ОКНД</a></li>
+<li><a href="#">Расходы организации ПБУ 10/99</a></li>
+<li><a href="#">О судебных приставах</a></li>
+<li><a href="#">О государственной регистрации недвижимости</a></li>
+<li><a href="#">Конституция РФ</a></li>
+</ul>
+</div>
+<div class="inner-box">
+<h3>Контакная информация</h3>
+<ul>
+<li>117292, Москва, ул. Кривоколенного, 6 (Центральный офис)</li>
+<li>+7 (495) 956-82-83</li>
+<li>+7 (495) 787-92-92</li>
+<li>contact@consultant.ru</li>
+</ul>
+</div>
+<p style="text-align:center; font-size: 14px; margin-top: 5px;">Все права защищены © 1997-2024 КонсультантПлюс</p>
+</div>
+<div class="main-content">
+<div class="header inner-box">
+<h3>Президент определил национальные цели развития России</h3>
+</div>
+<div class="news">
+<h3>Новости</h3>
+<img alt="News Image" src="placeholder.png"/>
+<h4>Сегодня</h4>
+<p>Изменение налоговой системы: Минфин сообщил, какие новшества готов поддержать</p>
+<h4>Сегодня</h4>
+<p>ФАС планирует выявлять антиконкурентные соглашения с помощью новой информасистемы</p>
+<p style="font-size: 12px; margin-bottom: 0; color: #f9a825;">Не пропустите</p>
+<h4>Сегодня</h4>
+<p>Договоры с самозанятыми: яркие споры о переквалификации их в трудовые за январь – май 2024 года</p>
+<h4>Сегодня</h4>
+<p>Отзыв ПБО в 2024 году: Казначейство подготовило план-график мероприятий</p>
+<h4>Сегодня</h4>
+<p>Медосмотры работников: интересные примеры споров за 2022 - 2024 годы</p>
+<h4>Сегодня</h4>
+<p>Президент установил порядок приобретения исключительных прав у лиц недружественных стран</p>
+<a href="#">Все новости</a>
+</div>
+</div>
+<div class="rightbar">
+<div class="inner-box">
+<h3>«Горячие» документы</h3>
+<p>Новые законы РФ, указы Президента, постановления Правительства и другие нормативные акты. Новые документы поступают несколько раз в день.</p>
+</div>
+<div class="inner-box">
+<h3>Новый профиль «Специалист по охране труда» в КонсультантПлюс</h3>
+</div>
+<div class="inner-box">
+<h3>Продукты</h3>
+<ul>
+<li><a href="#">Юристу</a></li>
+<li><a href="#">Бухгалтеру</a></li>
+<li><a href="#">Бюджетной организации</a></li>
+<li><a href="#">Другим специалистам</a></li>
+</ul>
+</div>
+<div class="inner-box">
+<h3>Справочная информация</h3>
+<ul>
+<li><a href="#">Правовой календарь на II квартал 2024 г.</a></li>
+<li><a href="#">Календарь бухгалтера на 2024 г.</a></li>
+<li><a href="#">Производственный календарь на 2024 г.</a></li>
+<li><a href="#">Производственный календарь на 2023 г.</a></li>
+<li><a href="#">Таможенный календарь на 2024 г.</a></li>
+<li><a href="#">Калькуляторы</a></li>
+<li><a href="#">Государственная регистрация юридических лиц</a></li>
+<li><a href="#">Государственная регистрация индивидуальных предпринимателей</a></li>
+<li><a href="#">Налоговая декларация по НДС</a></li>
+<li><a href="#">Формы бухгалтерской отчетности</a></li>
+<li><a href="#">Процентная ставка рефинансирования (учетная ставка), установленная ЦБ РФ</a></li>
+<li><a href="#">Ключевая ставка ЦБ РФ на сегодня</a></li>
+<li><a href="#">Должностные инструкции</a></li>
+<li><a href="#">Пособия и их расчетные данные на 2024 г.</a></li>
+<li><a href="#">МРОТ 2024</a></li>
+<li><a href="#">Подборки материалов: акты, образцы, формы, договоры</a></li>
+<li><a href="#">Частичная мобилизация: обзор новостей</a></li>
+<li><a href="#">Вся справочная информация</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="footer">
+<div class="columns">
+<div class="column">
+<h3>Юристу</h3>
+<a href="#">Законодательство, судебная практика и ее анализ. Комментарии и разъяснения. Конструктор договоров.</a>
+</div>
+<div class="column">
+<h3>Бухгалтеру</h3>
+<a href="#">Готовые решения, разъяснения ведомств, образцы заполнения. Видеосеминары. Конструкторы, калькуляторы.</a>
+</div>
+<div class="column">
+<h3>Бюджетной организации</h3>
+<a href="#">Законодательство и разъяснения. Образцы заполнения, видеосеминары, новости. Конструкторы.</a>
+</div>
+</div>
+<div class="contacts">
+<h3>Контакная информация</h3>
+<p>117792, Москва, ул. Кривоколенного, 6 (Центральный офис)</p>
+<p>+7 (495) 956-82-43</p>
+<p>+7 (495) 987-92-92</p>
+<p>contact@consultant.ru</p>
+</div>
+<div class="soc-networks">
+<h3>Мы в социальных сетях</h3>
+<a href="#">ВКонтакте</a>
+<a href="#">Дзен</a>
+<a href="#">Telegram</a>
+<a href="#">Одноклассники</a>
+</div>
+</div>
+</body>
+</html>
+</p></body></html>

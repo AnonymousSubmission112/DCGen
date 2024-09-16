@@ -1,0 +1,254 @@
+<html><body><p>
+<!DOCTYPE html>
+
+<html>
+<head>
+<style>
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #f5f5f5;
+}
+
+.header {
+  background-color: #00a6d6;
+  color: #fff;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo {
+  height: 30px;
+}
+
+.header-search {
+  margin-left: 20px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  padding: 5px 10px;
+  background-color: #fff;
+  color: #000;
+  font-size: 14px;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.header-link {
+  margin-left: 20px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.content {
+  padding: 20px 0;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.grid-item {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.grid-item img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.grid-item h3 {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.grid-item p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.grid-item a {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #00a6d6;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.grid-item .price {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.grid-item .old-price {
+  font-size: 14px;
+  color: #666;
+  text-decoration: line-through;
+  margin-bottom: 5px;
+}
+
+.footer {
+  background-color: #00a6d6;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-link {
+  margin: 0 10px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-copyright {
+  font-size: 12px;
+}
+</style>
+</head>
+<body>
+<header class="header">
+<div class="header-container">
+<div class="header-left">
+<img alt="Walmart Logo" class="header-logo" src="placeholder.png"/>
+<h2 class="header-title">How do you want your items?</h2>
+</div>
+<div class="header-right">
+<input class="header-search" placeholder="Search everything at Walmart online and in store" type="text"/>
+<a class="header-link" href="#">Reorder</a>
+<a class="header-link" href="#">My Items</a>
+<a class="header-link" href="#">Sign In</a>
+<a class="header-link" href="#">Account</a>
+</div>
+</div>
+</header>
+<main class="content">
+<div class="grid-container">
+<div class="grid-item">
+<img alt="Image 1" src="placeholder.png"/>
+<h3>More splash for your buck</h3>
+<p>Shop now</p>
+</div>
+<div class="grid-item">
+<img alt="Image 2" src="placeholder.png"/>
+<h3>Up to $500 off fridges &amp; beyond</h3>
+<p>Shop appliances</p>
+</div>
+<div class="grid-item">
+<img alt="Image 3" src="placeholder.png"/>
+<h3>Better rest, for way less</h3>
+<p>Shop mattresses</p>
+</div>
+<div class="grid-item">
+<img alt="Image 4" src="placeholder.png"/>
+<h3>Up to 30% off</h3>
+<p>Shop now</p>
+</div>
+<div class="grid-item">
+<img alt="Image 5" src="placeholder.png"/>
+<h3>Summer party musts</h3>
+<p>Shop now</p>
+</div>
+<div class="grid-item">
+<span class="old-price">$399.99</span>
+<span class="price">$129<sup>99</sup></span>
+<h3>Walmart+ members save big with free delivery from stores</h3>
+<p>Terms apply. <a href="#">Join Walmart+</a></p>
+</div>
+<div class="grid-item">
+<img alt="Image 6" src="placeholder.png"/>
+<h3>Pedal, scoot &amp; save big</h3>
+<p>Shop now</p>
+</div>
+<div class="grid-item">
+<span class="price">$198</span>
+<span class="old-price">$298</span>
+</div>
+</div>
+</main>
+<footer class="footer">
+<div class="footer-container">
+<div class="footer-links">
+<a class="footer-link" href="#">All Departments</a>
+<a class="footer-link" href="#">Store Directory</a>
+<a class="footer-link" href="#">Careers</a>
+<a class="footer-link" href="#">Our Company</a>
+<a class="footer-link" href="#">Sell on Walmart.com</a>
+<a class="footer-link" href="#">Help</a>
+<a class="footer-link" href="#">Product Recalls</a>
+<a class="footer-link" href="#">Accessibility</a>
+<a class="footer-link" href="#">Tax Exempt Program</a>
+<a class="footer-link" href="#">Get the Walmart App</a>
+<a class="footer-link" href="#">Sign-up for Email</a>
+<a class="footer-link" href="#">Safety Data Sheet</a>
+<a class="footer-link" href="#">Terms of Use</a>
+<a class="footer-link" href="#">Privacy &amp; Security</a>
+<a class="footer-link" href="#">California Supply Chain Act</a>
+<a class="footer-link" href="#">Your Privacy Choices</a>
+<a class="footer-link" href="#">Notice at Collection</a>
+<a class="footer-link" href="#">NV Privacy Notice</a>
+<a class="footer-link" href="#">WA Privacy Notice</a>
+<a class="footer-link" href="#">Request My Personal Information</a>
+<a class="footer-link" href="#">Brand Shop Directory</a>
+<a class="footer-link" href="#">Pharmacy</a>
+<a class="footer-link" href="#">Walmart Business</a>
+<a class="footer-link" href="#">#WYYWK</a>
+<a class="footer-link" href="#">Delete Account</a>
+</div>
+<div class="footer-copyright">
+        © 2024 Walmart. All Rights Reserved.
+      </div>
+</div>
+</footer>
+</body>
+</html>
+</p></body></html>

@@ -1,0 +1,458 @@
+<html><body><p>
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Document</title>
+<style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            background-color: #fff;
+            padding: 20px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .header-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header-nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .header-nav li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        .header-nav a {
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .header-nav a:hover {
+            text-decoration: underline;
+        }
+
+        .header-nav .btn {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .header-nav .btn:hover {
+            background-color: #0069d9;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header-content .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .header-content .search {
+            display: flex;
+            align-items: center;
+        }
+
+        .header-content .search input {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+
+        .header-content .search button {
+            padding: 8px 15px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .header-content .search button:hover {
+            background-color: #0069d9;
+        }
+
+        .main-section {
+            margin-top: 30px;
+        }
+
+        .main-section h2 {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .main-section .card {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+            width: 30%;
+            float: left;
+        }
+
+        .main-section .card .img-container {
+            width: 100%;
+            height: 200px;
+            background-color: #eee;
+            border-radius: 5px;
+            overflow: hidden;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .main-section .card img {
+            width: 80%;
+            height: auto;
+        }
+
+        .main-section .card h3 {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .main-section .card p {
+            margin-bottom: 10px;
+            line-height: 1.5;
+        }
+
+        .main-section .card a {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+        }
+
+        .main-section .card a:hover {
+            background-color: #0069d9;
+        }
+
+        .main-section .clear {
+            clear: both;
+        }
+
+        .work-section {
+            margin-top: 30px;
+        }
+
+        .work-section h2 {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .work-section .grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .work-section .grid-item {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            height: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .work-section .grid-item img {
+            width: 80%;
+            height: auto;
+        }
+
+        .footer {
+            background-color: #fff;
+            padding: 30px;
+            margin-top: 30px;
+            border-top: 1px solid #eee;
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .footer-column {
+            width: 30%;
+        }
+
+        .footer-column h3 {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .footer-column ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-column li {
+            margin-bottom: 5px;
+        }
+
+        .footer-column a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        .footer-column a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-social {
+            text-align: right;
+        }
+
+        .footer-social a {
+            display: inline-block;
+            margin-left: 10px;
+        }
+
+        .footer-social i {
+            font-size: 20px;
+            color: #333;
+        }
+
+        .footer-social i:hover {
+            color: #007bff;
+        }
+
+        .work-section .text {
+            font-size: 20px;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+    </style>
+</head>
+<body>
+<div class="container">
+<header class="header">
+<div class="header-nav">
+<ul>
+<li><a href="#">Анонсы</a></li>
+<li><a href="#">Реклама</a></li>
+<li><a href="#">DMP</a></li>
+<li><a href="#">Справка и FAQ</a></li>
+<li><a href="#">Новости</a></li>
+<li><a href="#">Партнеры</a></li>
+</ul>
+<div>
+<a class="btn" href="#">Вход</a>
+<a class="btn" href="#">Поиск</a>
+</div>
+</div>
+<div class="header-content">
+<div class="logo">AdRiver</div>
+<div class="search">
+<input placeholder="Поиск" type="text"/>
+<button>Искать</button>
+</div>
+</div>
+</header>
+<main>
+<section class="main-section">
+<h2>Наши решения</h2>
+<div class="card">
+<div class="img-container">
+<img alt="" src="placeholder.png"/>
+</div>
+<h3>Управление рекламными кампаниями, оценке их эффективности и последующей работе с собранной медиаданной</h3>
+<p>
+                        управление рекламой на сайте, любые форматы интернет-рекламы, монетизация трафика в AdRiver SSP
+                    </p>
+<a href="#">Узнать подробно</a>
+</div>
+<div class="card">
+<div class="img-container">
+<img alt="" src="placeholder.png"/>
+</div>
+<h3>DMP</h3>
+<p>
+                        Полный цикл работы с клиентскими медиаданными, DSP/DMP, анализ аудитории и готовым сегментам
+                    </p>
+<a href="#">Узнать подробно</a>
+</div>
+<div class="card">
+<div class="img-container">
+<img alt="" src="placeholder.png"/>
+</div>
+<h3>bi</h3>
+<p>
+                        bi
+                    </p>
+<a href="#">Узнать подробно</a>
+</div>
+<div class="clear"></div>
+</section>
+<section class="work-section">
+<h2>С нами работают</h2>
+<h3>Агентства</h3>
+<div class="grid">
+<div class="grid-item">
+<img alt="" src="placeholder.png"/>
+</div>
+<div class="grid-item">
+<img alt="" src="placeholder.png"/>
+</div>
+<div class="grid-item">
+<img alt="" src="placeholder.png"/>
+</div>
+<div class="grid-item">
+<img alt="" src="placeholder.png"/>
+</div>
+<div class="grid-item">
+<img alt="" src="placeholder.png"/>
+</div>
+<div class="grid-item">
+<img alt="" src="placeholder.png"/>
+</div>
+<div class="grid-item">
+<img alt="" src="placeholder.png"/>
+</div>
+<div class="grid-item">
+<img alt="" src="placeholder.png"/>
+</div>
+<div class="grid-item">
+<img alt="" src="placeholder.png"/>
+</div>
+<div class="grid-item">
+<img alt="" src="placeholder.png"/>
+</div>
+<div class="grid-item">
+<img alt="" src="placeholder.png"/>
+</div>
+<div class="grid-item">
+<img alt="" src="placeholder.png"/>
+</div>
+</div>
+<h3>Издатели</h3>
+<div class="grid">
+<div class="grid-item">
+<img alt="" src="placeholder.png"/>
+</div>
+<div class="grid-item">
+<img alt="" src="placeholder.png"/>
+</div>
+<div class="grid-item">
+<img alt="" src="placeholder.png"/>
+</div>
+<div class="grid-item">
+<img alt="" src="placeholder.png"/>
+</div>
+<div class="grid-item">
+<img alt="" src="placeholder.png"/>
+</div>
+<div class="grid-item">
+<img alt="" src="placeholder.png"/>
+</div>
+<div class="grid-item">
+<img alt="" src="placeholder.png"/>
+</div>
+<div class="grid-item">
+<img alt="" src="placeholder.png"/>
+</div>
+<div class="grid-item">
+<img alt="" src="placeholder.png"/>
+</div>
+<div class="grid-item">
+<img alt="" src="placeholder.png"/>
+</div>
+<div class="grid-item">
+<img alt="" src="placeholder.png"/>
+</div>
+<div class="grid-item">
+<img alt="" src="placeholder.png"/>
+</div>
+</div>
+<div class="text">AdRiver является членом профессиональных сообществ</div>
+<div class="grid">
+<div class="grid-item">
+<img alt="" src="placeholder.png"/>
+</div>
+</div>
+</section>
+</main>
+<footer class="footer">
+<div class="footer-container">
+<div class="footer-column">
+<h3>AdRiver</h3>
+<ul>
+<li><a href="#">О компании</a></li>
+<li><a href="#">About</a></li>
+<li><a href="#">Новости</a></li>
+<li><a href="#">Презентации</a></li>
+<li><a href="#">Политика конфиденциальности</a></li>
+<li><a href="#">Privacy policy</a></li>
+<li><a href="#">Карта сайта</a></li>
+<li><a href="#">Контакты</a></li>
+</ul>
+</div>
+<div class="footer-column">
+<h3>Технологии</h3>
+<ul>
+<li><a href="#">Технические требования к баннерам</a></li>
+<li><a href="#">Справка и FAQ</a></li>
+</ul>
+</div>
+<div class="footer-column">
+<h3>Помощь</h3>
+<ul>
+<li><a href="#">Диагностика</a></li>
+<li><a href="#">Техподдержка</a></li>
+<li><a href="#">Регламент предоставления технической консультации</a></li>
+<li><a href="#">Глоссарий</a></li>
+</ul>
+</div>
+<div class="footer-social">
+<a href="#"><i class="fab fa-twitter"></i></a>
+</div>
+</div>
+</footer>
+</div>
+</body>
+</html>
+</p></body></html>

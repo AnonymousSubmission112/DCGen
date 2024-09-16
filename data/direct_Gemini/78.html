@@ -1,0 +1,476 @@
+<html><body><p>
+<!DOCTYPE html>
+
+<html>
+<head>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  background-color: #f2f2f2;
+  padding: 40px;
+}
+
+.header {
+  background-color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  margin-right: 10px;
+}
+
+.nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav li {
+  margin-right: 20px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #333;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+  padding: 40px;
+  background-color: #fff;
+}
+
+.hero-text {
+  width: 50%;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.hero-image {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-image img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.get-started {
+  background-color: #ff6600;
+  color: #fff;
+  padding: 15px 30px;
+  border-radius: 5px;
+  font-size: 18px;
+  text-decoration: none;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.section {
+  background-color: #fff;
+  padding: 40px;
+  margin-top: 40px;
+}
+
+.section h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.section p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.features {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.feature {
+  width: 25%;
+  text-align: center;
+}
+
+.feature h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.feature p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.feature a {
+  text-decoration: none;
+  color: #ff6600;
+  font-weight: bold;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.stat {
+  text-align: center;
+  width: 25%;
+}
+
+.stat h3 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.stat p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.testimonial {
+  background-color: #f2f2f2;
+  padding: 40px;
+  margin-top: 40px;
+}
+
+.testimonial p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.testimonial-author {
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.cta {
+  background-color: #fff;
+  padding: 40px;
+  margin-top: 40px;
+}
+
+.cta h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.cta p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.cta-button {
+  background-color: #ff6600;
+  color: #fff;
+  padding: 15px 30px;
+  border-radius: 5px;
+  font-size: 18px;
+  text-decoration: none;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 40px;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.footer li {
+  margin-right: 20px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.social {
+  margin-top: 20px;
+}
+
+.social a {
+  margin-right: 10px;
+  color: #fff;
+}
+
+.social a:hover {
+  opacity: 0.8;
+}
+
+.copyright {
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.copyright a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.copyright a:hover {
+  text-decoration: underline;
+}
+
+.logo-small {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+.site-links {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  margin: 0 auto;
+}
+
+.site-links ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.site-links li {
+  margin-bottom: 10px;
+}
+
+.site-links a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.site-links a:hover {
+  text-decoration: underline;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="header">
+<div class="logo">
+<img alt="Logo" class="logo-small" src="placeholder.png"/>
+<p>New Science &amp; Nature Channel</p>
+</div>
+<div class="nav">
+<ul>
+<li><a href="#">Platform</a></li>
+<li><a href="#">Pricing</a></li>
+<li><a href="#">Resources</a></li>
+<li><a href="#">About</a></li>
+<li><a href="#">Contact Us</a></li>
+<li><a class="get-started" href="#">Join the Fun</a></li>
+</ul>
+</div>
+</div>
+<div class="hero">
+<div class="hero-text">
+<h1>The future of the open internet depends on publisher independence.</h1>
+<p>Our audience engagement platform offers all the tools modern publishers need to reach and retain users and drive monetization at scale.</p>
+<a class="get-started" href="#">Get Started</a>
+</div>
+<div class="hero-image">
+<img alt="Hero Image" src="placeholder.png"/>
+</div>
+</div>
+<div class="section">
+<h2>More publishers trust us than any other audience engagement platform.</h2>
+<p>With the deprecation of third-party cookies, the rise of the walled gardens, and the era of internet toxicity spurred by mis- and dis-information, it's a challenging time to be a publisher.</p>
+<p>All of these issues have potential impact on how publishers maintain a loyal, engaged community and generate revenue from quality content.</p>
+<p>Disqus is in business to preserve the future of audience engagement on the open internet. We are the largest audience engagement platform, used by hundreds of thousands of publishers that want to keep conversations and community on-site where they belong.</p>
+<p>Whether you're a small blog or large media hub, Disqus connects you to millions of global users in our web-wide community network. Our suite of customizable, easy-to-implement tools gives your website a feature-rich comments system, advanced administration and moderation options, and other extensive community functions, helping you turn readership into revenue without the manual work.</p>
+</div>
+<div class="section">
+<h2>The web's largest conversation platform</h2>
+<div class="stats">
+<div class="stat">
+<h3>50M+</h3>
+<p>Monthly Comments</p>
+</div>
+<div class="stat">
+<h3>2.5B+</h3>
+<p>Monthly Impressions</p>
+</div>
+<div class="stat">
+<h3>20M+</h3>
+<p>Monthly Logged-in Commenters</p>
+</div>
+<div class="stat">
+<h3>200+</h3>
+<p>Countries Using Disqus</p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="features">
+<div class="feature">
+<h3>Transform your casual, anonymous readers into loyal, authenticated users.</h3>
+<p>Build engaged communities by artfully promoting your best content and carefully fueling the best conversations.</p>
+<a class="feature-link" href="#">Engage now</a>
+</div>
+<div class="feature">
+<h3>Protect your brand and loyal users with our best-in-class moderation panel and tooling.</h3>
+<p>Maintain a brand-safe comments section with automatic, AI-powered capabilities that cut the need to manually read and approve each post.</p>
+<a class="feature-link" href="#">Moderate now</a>
+</div>
+<div class="feature">
+<h3>Track and understand your audience engagement with robust insights.</h3>
+<p>Understand which articles are performing best with your audience, and then optimize your content strategy to increase traffic and engagement.</p>
+<a class="feature-link" href="#">Analyze now</a>
+</div>
+<div class="feature">
+<h3>Harness the power of your direct user relationships to unlock it's ramping up registrations using first-party data, setting up subscriptions, or activating advertising, our platform is built to support your growth.</h3>
+<p>Whether it's ramping up registrations using first-party data, setting up subscriptions, or activating advertising, our platform is built to support your growth.</p>
+<a class="feature-link" href="#">Monetize now</a>
+</div>
+</div>
+</div>
+<div class="testimonial">
+<p>"With Disqus, we've been able to boost our registered audiences by 155% in just six months."</p>
+<p class="testimonial-author">Destructoid</p>
+</div>
+<div class="cta">
+<h2>Flexible and optimized for your site's needs</h2>
+<div class="features">
+<div class="feature">
+<img alt="Feature Image" src="placeholder.png"/>
+</div>
+<div class="feature">
+<img alt="Feature Image" src="placeholder.png"/>
+</div>
+<div class="feature">
+<img alt="Feature Image" src="placeholder.png"/>
+</div>
+<div class="feature">
+<img alt="Feature Image" src="placeholder.png"/>
+</div>
+<div class="feature">
+<img alt="Feature Image" src="placeholder.png"/>
+</div>
+<div class="feature">
+<img alt="Feature Image" src="placeholder.png"/>
+</div>
+<div class="feature">
+<img alt="Feature Image" src="placeholder.png"/>
+</div>
+<div class="feature">
+<img alt="Feature Image" src="placeholder.png"/>
+</div>
+</div>
+<h2>Turbocharge audience engagement with Disqus.</h2>
+<p>Take control of community-building to rev up your revenue-generating potential.</p>
+<a class="cta-button" href="#">Get Started</a>
+</div>
+<div class="footer">
+<div class="site-links">
+<h3>Disqus</h3>
+<ul>
+<li><a href="#">Platform Overview</a></li>
+<li><a href="#">Engagement</a></li>
+<li><a href="#">Moderation &amp; Safety</a></li>
+<li><a href="#">Audience</a></li>
+<li><a href="#">Monetization</a></li>
+<li><a href="#">Pricing</a></li>
+<li><a href="#">Disqus Pro</a></li>
+<li><a href="#">Disqus for Business</a></li>
+<li><a href="#">Zela SSP</a></li>
+</ul>
+</div>
+<div class="site-links">
+<h3>Resources</h3>
+<ul>
+<li><a href="#">Blog</a></li>
+<li><a href="#">Support</a></li>
+<li><a href="#">Knowledge Base</a></li>
+<li><a href="#">Disqus 101</a></li>
+<li><a href="#">Discuss Disqus</a></li>
+<li><a href="#">Case Studies</a></li>
+<li><a href="#">API</a></li>
+<li><a href="#">Logos</a></li>
+</ul>
+</div>
+<div class="site-links">
+<h3>About Us</h3>
+<ul>
+<li><a href="#">History</a></li>
+<li><a href="#">Mission</a></li>
+<li><a href="#">Culture</a></li>
+</ul>
+</div>
+<div class="site-links">
+<h3>Learn</h3>
+<ul>
+<li><a href="#">How Does Disqus Work?</a></li>
+<li><a href="#">Community Tips</a></li>
+<li><a href="#">Increase Engagement &amp; Retention</a></li>
+<li><a href="#">Moderating 101</a></li>
+<li><a href="#">Developers</a></li>
+<li><a href="#">Other Integrations</a></li>
+<li><a href="#">Channels</a></li>
+</ul>
+</div>
+<div class="social">
+<a href="#"><img alt="Facebook" class="social-icon" src="placeholder.png"/></a>
+<a href="#"><img alt="Twitter" class="social-icon" src="placeholder.png"/></a>
+<a href="#"><img alt="LinkedIn" class="social-icon" src="placeholder.png"/></a>
+</div>
+<div class="copyright">
+<p>© 2024 Disqus. <a href="#">Terms</a> <a href="#">Privacy</a> <a href="#">Cookies</a> <a href="#">Do Not Sell or Share My Info</a></p>
+</div>
+</div>
+</div>
+</body>
+</html>
+</p></body></html>

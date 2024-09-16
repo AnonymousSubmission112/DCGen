@@ -1,0 +1,389 @@
+<html><body><p>
+<!DOCTYPE html>
+
+<html>
+<head>
+<style>
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: #f8f8f8;
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-left {
+  display: flex;
+  gap: 20px;
+}
+
+.header-right {
+  display: flex;
+  gap: 20px;
+}
+
+.header-right a {
+  color: #337ab7;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.header-right a:hover {
+  text-decoration: underline;
+}
+
+.header-right .twitter {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.header-right .twitter img {
+  width: 16px;
+  height: 16px;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  width: 100%;
+}
+
+.main-content .telegram-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 50px;
+}
+
+.main-content .telegram-logo h1 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #337ab7;
+}
+
+.main-content .telegram-logo p {
+  font-size: 16px;
+  color: #555;
+}
+
+.apps {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  width: 800px;
+  margin-bottom: 50px;
+}
+
+.apps .app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.apps .app img {
+  width: 150px;
+  height: 150px;
+  background-color: #eee;
+}
+
+.apps .app p {
+  font-size: 14px;
+  color: #555;
+}
+
+.recent-news {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  width: 350px;
+}
+
+.recent-news h2 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #337ab7;
+}
+
+.recent-news .news-item {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.recent-news .news-item .date {
+  font-weight: bold;
+  color: #337ab7;
+}
+
+.recent-news .news-item .title {
+  font-size: 14px;
+  color: #555;
+}
+
+.why-telegram {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin-top: 50px;
+  width: 100%;
+}
+
+.why-telegram h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #337ab7;
+}
+
+.why-telegram .features {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  width: 800px;
+}
+
+.why-telegram .features .feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.why-telegram .features .feature img {
+  width: 100px;
+  height: 100px;
+  background-color: #eee;
+}
+
+.why-telegram .features .feature h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #337ab7;
+}
+
+.why-telegram .features .feature p {
+  font-size: 14px;
+  color: #555;
+  text-align: center;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: #f8f8f8;
+  width: 100%;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-section h4 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #337ab7;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section li {
+  font-size: 14px;
+  color: #555;
+}
+
+.footer-section a {
+  color: #337ab7;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="header">
+<div class="header-left">
+<a href="#">Home</a>
+<a href="#">FAQ</a>
+<a href="#">Apps</a>
+<a href="#">API</a>
+<a href="#">Protocol</a>
+</div>
+<div class="header-right">
+<a href="#">Twitter</a>
+<div class="twitter">
+<img alt="Twitter logo" src="placeholder.png"/>
+</div>
+</div>
+</div>
+<div class="main-content">
+<div class="telegram-logo">
+<img alt="Telegram logo" src="placeholder.png"/>
+<h1>Telegram</h1>
+<p>a new era of messaging</p>
+</div>
+<div class="apps">
+<div class="app">
+<img alt="Telegram for Android" src="placeholder.png"/>
+<p>Telegram for <b>Android</b></p>
+</div>
+<div class="app">
+<img alt="Telegram for iPhone / iPad" src="placeholder.png"/>
+<p>Telegram for <b>iPhone / iPad</b></p>
+</div>
+</div>
+<div class="apps">
+<div class="app">
+<img alt="Telegram for PC / Linux" src="placeholder.png"/>
+<p>Telegram for <b>PC / Linux</b></p>
+</div>
+<div class="app">
+<img alt="Telegram for macOS" src="placeholder.png"/>
+<p>Telegram for <b>macOS</b></p>
+</div>
+</div>
+<div class="recent-news">
+<h2>Recent News</h2>
+<div class="news-item">
+<div class="date">Apr 25</div>
+<div class="title">My Profile, Recommended Channels and 15 More Features</div>
+</div>
+<div class="news-item">
+<div class="date">Apr 14</div>
+<div class="title">Sticker Editor – Create Your Own Stickers</div>
+</div>
+<div class="news-item">
+<div class="date">Mar 31</div>
+<div class="title">Introducing Telegram Business</div>
+</div>
+</div>
+</div>
+<div class="why-telegram">
+<h2>Why Telegram?</h2>
+<div class="features">
+<div class="feature">
+<img alt="Simple" src="placeholder.png"/>
+<h3>Simple</h3>
+<p>Telegram is so simple you already know how to use it.</p>
+</div>
+<div class="feature">
+<img alt="Private" src="placeholder.png"/>
+<h3>Private</h3>
+<p>Telegram messages are heavily encrypted and can self-destruct.</p>
+</div>
+<div class="feature">
+<img alt="Synced" src="placeholder.png"/>
+<h3>Synced</h3>
+<p>Telegram lets you access your chats from multiple devices.</p>
+</div>
+</div>
+<div class="features">
+<div class="feature">
+<img alt="Fast" src="placeholder.png"/>
+<h3>Fast</h3>
+<p>Telegram delivers messages faster than any other application.</p>
+</div>
+<div class="feature">
+<img alt="Powerful" src="placeholder.png"/>
+<h3>Powerful</h3>
+<p>Telegram has no limits on the size of your media and chats.</p>
+</div>
+<div class="feature">
+<img alt="Open" src="placeholder.png"/>
+<h3>Open</h3>
+<p>Telegram has an open API and source code free for everyone.</p>
+</div>
+</div>
+<div class="features">
+<div class="feature">
+<img alt="Secure" src="placeholder.png"/>
+<h3>Secure</h3>
+<p>Telegram keeps your messages safe from hacker attacks.</p>
+</div>
+<div class="feature">
+<img alt="Social" src="placeholder.png"/>
+<h3>Social</h3>
+<p>Telegram groups can hold up to 200,000 members.</p>
+</div>
+<div class="feature">
+<img alt="Expressive" src="placeholder.png"/>
+<h3>Expressive</h3>
+<p>Telegram lets you completely customize your messenger.</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<div class="footer-section">
+<h4>Telegram</h4>
+<p>Telegram is a cloud-based mobile and desktop messaging app with a focus on security and speed.</p>
+</div>
+<div class="footer-section">
+<h4>About</h4>
+<ul>
+<li><a href="#">FAQ</a></li>
+<li><a href="#">Privacy</a></li>
+<li><a href="#">Press</a></li>
+</ul>
+</div>
+<div class="footer-section">
+<h4>Mobile Apps</h4>
+<ul>
+<li><a href="#">iPhone/iPad</a></li>
+<li><a href="#">Android</a></li>
+<li><a href="#">Mobile Web</a></li>
+</ul>
+</div>
+<div class="footer-section">
+<h4>Desktop Apps</h4>
+<ul>
+<li><a href="#">PC/Mac/Linux</a></li>
+<li><a href="#">macOS</a></li>
+<li><a href="#">Web-browser</a></li>
+</ul>
+</div>
+<div class="footer-section">
+<h4>Platform</h4>
+<ul>
+<li><a href="#">API</a></li>
+<li><a href="#">Translations</a></li>
+<li><a href="#">Instant View</a></li>
+</ul>
+</div>
+</div>
+</div>
+</body>
+</html>
+</p></body></html>

@@ -1,0 +1,420 @@
+<html><body><p>
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>California Open Data Portal</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+nav {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.search-bar input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    width: 250px;
+}
+
+.search-bar button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.services-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+
+.service-card {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    width: 250px;
+}
+
+.service-card img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.service-card h3 {
+    margin-top: 0;
+}
+
+.more-services {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.more-services h2 {
+    margin-top: 0;
+}
+
+.governor-card {
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    width: 250px;
+    margin-bottom: 20px;
+}
+
+.governor-card img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.governor-card h3 {
+    margin-top: 0;
+}
+
+.governor-card a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.stats-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+
+.stat-card {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    width: 200px;
+}
+
+.stat-card h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.stat-card p {
+    margin-bottom: 0;
+}
+
+.disaster-resources {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 40px;
+}
+
+.disaster-resources h2 {
+    margin-top: 0;
+}
+
+.disaster-resources p {
+    margin-bottom: 10px;
+}
+
+.disaster-resources button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.data-sets {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.data-sets h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.data-sets p {
+    margin-bottom: 0;
+}
+
+.data-sets button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.footer {
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.footer-links ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.copyright {
+    margin-bottom: 0;
+}
+
+.accessibility-certification {
+    margin-top: 10px;
+}
+
+.accessibility-certification a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.button-container {
+    margin-top: 20px;
+}
+
+.button-container button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+</style>
+</head>
+<body>
+<header>
+<div class="container">
+<h1>California Open Data Portal</h1>
+</div>
+</header>
+<nav>
+<div class="container">
+<ul>
+<li><a href="#">State Agencies</a></li>
+<li><a href="#"><img alt="Set Location Icon" src="placeholder.png"/></a></li>
+<li><a href="#">Contact Us</a></li>
+<li><a href="#"><img alt="Translate Icon" src="placeholder.png"/></a></li>
+<li><a href="#"><img alt="Settings Icon" src="placeholder.png"/></a></li>
+</ul>
+</div>
+</nav>
+<div class="container">
+<nav>
+<ul>
+<li><a href="#">Getting Services</a></li>
+<li><a href="#">Doing Business</a></li>
+<li><a href="#">Working</a></li>
+<li><a href="#">Learning</a></li>
+<li><a href="#">Living</a></li>
+<li><a href="#">Visiting</a></li>
+<li><a href="#">Government</a></li>
+<li><a href="#">Search</a></li>
+</ul>
+</nav>
+<div class="search-bar">
+<input placeholder="Search this website" type="text"/>
+<button><img alt="Search Icon" src="placeholder.png"/></button>
+</div>
+<div class="services-container">
+<div class="service-card">
+<img alt="Find State Agencies Icon" src="placeholder.png"/>
+<h3>Find State Agencies</h3>
+</div>
+<div class="service-card">
+<img alt="Find State Services Icon" src="placeholder.png"/>
+<h3>Find State Services</h3>
+</div>
+<div class="service-card">
+<img alt="Common Questions Icon" src="placeholder.png"/>
+<h3>Common Questions</h3>
+</div>
+</div>
+<div class="services-container">
+<div class="service-card">
+<img alt="CalFile Icon" src="placeholder.png"/>
+<h3>CalFile - File return for free</h3>
+</div>
+<div class="service-card">
+<img alt="Get COVID-19 Information and Help Icon" src="placeholder.png"/>
+<h3>Get COVID-19 Information and Help</h3>
+</div>
+<div class="service-card">
+<img alt="Get Digital Vaccine Record Icon" src="placeholder.png"/>
+<h3>Get Digital Vaccine Record</h3>
+</div>
+<div class="service-card">
+<img alt="Get Disaster Relief Assistance Icon" src="placeholder.png"/>
+<h3>Get Disaster Relief Assistance</h3>
+</div>
+</div>
+<div class="more-services">
+<h2>More Services</h2>
+</div>
+<div class="governor-card">
+<img alt="Gavin Newsom" src="placeholder.png"/>
+<h3>Gavin Newsom</h3>
+<p>California Governor</p>
+<a href="#">Visit Governor's Website</a>
+</div>
+<div class="governor-card">
+<img alt="Eleni Kounalakis" src="placeholder.png"/>
+<h3>Eleni Kounalakis</h3>
+<p>California Lt. Governor</p>
+<a href="#">Visit Lieutenant Governor's Website</a>
+</div>
+<div class="stats-container">
+<div class="stat-card">
+<h2>39+</h2>
+<p>Million people as of July 2015</p>
+</div>
+<div class="stat-card">
+<h2>5th</h2>
+<p>Largest Economy in the World</p>
+</div>
+<div class="stat-card">
+<h2>65+</h2>
+<p>Million annual visitors</p>
+</div>
+<div class="stat-card">
+<h2>19+</h2>
+<p>Million civilians in Labor Force</p>
+</div>
+</div>
+<div class="disaster-resources">
+<h2>Disaster Resources</h2>
+<p>California has been hit with devastating wildfires and other natural disasters in both the northern and southern parts of the state. If you need more information about recovery or resources visit the following resources:</p>
+<div class="button-container">
+<button>Emergency Services</button>
+<button>Wild Fire Recovery</button>
+<button>Disaster Assistance</button>
+</div>
+</div>
+<div class="data-sets">
+<h2>1500+</h2>
+<p>Data Sets</p>
+<p>California believes in the power of unlocking government data.</p>
+<button>Visit Open Data Portal</button>
+</div>
+<div class="button-container">
+<button>Yes</button>
+<button>No</button>
+</div>
+<div class="footer-links">
+<ul>
+<li><h3>Campaigns</h3></li>
+<li><a href="#">Register to Vote</a></li>
+<li><a href="#">Save Our Water</a></li>
+<li><a href="#">Flex Alert</a></li>
+</ul>
+<ul>
+<li><h3>Alerts</h3></li>
+<li><a href="#">Amber Alert</a></li>
+<li><a href="#">Cal Alerts</a></li>
+<li><a href="#">My Hazards</a></li>
+</ul>
+<ul>
+<li><h3>About</h3></li>
+<li><a href="#">Governor</a></li>
+<li><a href="#">Lt. Governor</a></li>
+<li><a href="#">California Data</a></li>
+</ul>
+<ul>
+<li><h3>Support</h3></li>
+<li><a href="#">State Directory</a></li>
+<li><a href="#">Technical Issues</a></li>
+</ul>
+</div>
+</div>
+<footer>
+<div class="container">
+<p class="copyright">Copyright © 2024 State of California</p>
+<a class="accessibility-certification" href="#"><img alt="Website Accessibility Certification Icon" src="placeholder.png"/> Website Accessibility Certification</a>
+</div>
+</footer>
+</body>
+</html>
+</p></body></html>

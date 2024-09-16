@@ -1,0 +1,473 @@
+<html><body><p>
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Gravatar</title>
+<style>
+        body {
+            margin: 0;
+            font-family: 'Helvetica Neue', sans-serif;
+            background-color: #fff;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 40px;
+            margin-right: 10px;
+        }
+
+        .logo h1 {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        .header .nav {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header .nav li {
+            margin-left: 20px;
+        }
+
+        .header .nav a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 80px 0;
+        }
+
+        .hero .text {
+            flex: 1;
+            margin-right: 40px;
+        }
+
+        .hero .text h2 {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .hero .text p {
+            font-size: 1.2rem;
+            line-height: 1.5;
+            margin-bottom: 30px;
+        }
+
+        .hero .form {
+            display: flex;
+            align-items: center;
+        }
+
+        .hero .form input[type="email"] {
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1rem;
+            margin-right: 20px;
+            width: 250px;
+        }
+
+        .hero .form button {
+            padding: 12px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        .hero .form p {
+            font-size: 0.9rem;
+            margin-top: 20px;
+        }
+
+        .hero .images {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+
+        .hero .images .image {
+            width: 300px;
+            height: 200px;
+            background-color: #f0f0f0;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero .images .image img {
+            width: 50px;
+        }
+
+        .features {
+            background-color: #007bff;
+            color: #fff;
+            padding: 80px 0;
+        }
+
+        .features .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .features .col {
+            flex: 1;
+            margin-right: 40px;
+        }
+
+        .features .col:last-child {
+            margin-right: 0;
+        }
+
+        .features .col h3 {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .features .col p {
+            font-size: 1.1rem;
+            line-height: 1.5;
+            margin-bottom: 30px;
+        }
+
+        .features .col .icons {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .features .col .icons svg {
+            width: 40px;
+            height: 40px;
+        }
+
+        .features .col .button {
+            padding: 12px 20px;
+            background-color: #fff;
+            color: #007bff;
+            border: none;
+            border-radius: 4px;
+            font-size: 1rem;
+            cursor: pointer;
+            display: inline-block;
+        }
+
+        .code {
+            background-color: #222;
+            color: #fff;
+            padding: 40px;
+        }
+
+        .code .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .code .col {
+            flex: 1;
+            margin-right: 40px;
+        }
+
+        .code .col:last-child {
+            margin-right: 0;
+        }
+
+        .code pre {
+            background-color: #333;
+            padding: 20px;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            font-size: 1rem;
+        }
+
+        .code pre code {
+            display: block;
+            background-color: transparent;
+            padding: 0;
+            font-family: inherit;
+            font-size: inherit;
+            line-height: inherit;
+        }
+
+        .code pre code span.hljs-keyword {
+            color: #f05031;
+        }
+
+        .code pre code span.hljs-string {
+            color: #60a0b0;
+        }
+
+        .code pre code span.hljs-comment {
+            color: #808080;
+        }
+
+        .developer {
+            background-color: #222;
+            color: #fff;
+            padding: 80px 0;
+        }
+
+        .developer .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .developer .text {
+            flex: 1;
+            margin-right: 40px;
+        }
+
+        .developer .text h3 {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .developer .text p {
+            font-size: 1.1rem;
+            line-height: 1.5;
+            margin-bottom: 30px;
+        }
+
+        .developer .button {
+            padding: 12px 20px;
+            background-color: #fff;
+            color: #007bff;
+            border: none;
+            border-radius: 4px;
+            font-size: 1rem;
+            cursor: pointer;
+            display: inline-block;
+        }
+
+        .footer {
+            background-color: #007bff;
+            color: #fff;
+            padding: 40px 0;
+        }
+
+        .footer .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .footer .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .footer .logo img {
+            width: 40px;
+            margin-right: 10px;
+        }
+
+        .footer .logo h1 {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        .footer .links {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .footer .links li {
+            margin-left: 20px;
+        }
+
+        .footer .links a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .footer .copyright {
+            font-size: 0.9rem;
+        }
+
+        .footer .copyright a {
+            color: #fff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+<header class="header">
+<div class="container">
+<div class="logo">
+<img alt="Gravatar Logo" src="placeholder.png"/>
+<h1>Gravatar</h1>
+</div>
+<nav class="nav">
+<ul>
+<li><a href="#">Developers</a></li>
+<li><a href="#">Support</a></li>
+<li><a href="#">Blog</a></li>
+</ul>
+</nav>
+<div>
+<button class="button">Log in</button>
+<button class="button">Sign up</button>
+</div>
+</div>
+</header>
+<section class="hero">
+<div class="container">
+<div class="text">
+<h2>One profile for everything, everywhere.</h2>
+<p>Your email address becomes your passport to the digital world, empowering you with complete control over your personal data.</p>
+<form class="form">
+<input placeholder="Enter email address..." type="email"/>
+<button type="submit">View profile &gt;</button>
+</form>
+<p>Gravatar profiles are free for everyone — forever.</p>
+</div>
+<div class="images">
+<div class="image">
+<img alt="" src="placeholder.png"/>
+</div>
+<div class="image">
+<img alt="" src="placeholder.png"/>
+</div>
+<div class="image">
+<img alt="" src="placeholder.png"/>
+</div>
+</div>
+</div>
+</section>
+<section class="features">
+<div class="container">
+<div class="col">
+<h3>Set once, seen everywhere.</h3>
+<p>Create and manage your profile from a single place, telling the web who you are and where people can find you. Skip filling out profile pages forever.</p>
+<div class="icons">
+<svg fill="#fff" height="40px" viewbox="0 0 24 24" width="40px" xmlns="http://www.w3.org/2000/svg"><path d="M17.65 16.35l-1.5-1.5c-.32-.32-.75-.32-1.07 0l-1.5 1.5c-.32.32-.32.75 0 1.07l1.5 1.5c.32.32.75.32 1.07 0l1.5-1.5c.32-.32.32-.75 0-1.07zM18.5 11.5a7.5 7.5 0 1 0-15 0 7.5 7.5 0 0 0 15 0zM12 17a5 5 0 1 1 0-10 5 5 0 0 1 0 10zm0-11a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm-2 16l-3.5-3.5c-.25-.25-.25-.65 0-.9l3.5-3.5c.25-.25.65-.25.9 0l3.5 3.5c.25.25.25.65 0 .9l-3.5 3.5z"></path></svg>
+<svg fill="#fff" height="40px" viewbox="0 0 24 24" width="40px" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm0-14c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm0 10c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"></path></svg>
+<svg fill="#fff" height="40px" viewbox="0 0 24 24" width="40px" xmlns="http://www.w3.org/2000/svg"><path d="M19.3 12.7l-6.6 6.6-1.4-1.4 4.2-4.2-4.2-4.2 1.4-1.4 6.6 6.6 2.6-2.6 1.4 1.4-4.2 4.2 4.2 4.2-1.4 1.4-2.6-2.6z"></path></svg>
+<svg fill="#fff" height="40px" viewbox="0 0 24 24" width="40px" xmlns="http://www.w3.org/2000/svg"><path d="M11.5 2a7.5 7.5 0 1 0 15 0 7.5 7.5 0 0 0-15 0zM12 17a5 5 0 1 1 0-10 5 5 0 0 1 0 10zm0-11a3 3 0 1 0 0 6 3 3 0 0 0 0-6z"></path></svg>
+</div>
+<p>Millions of websites like WordPress, Slack, and OpenAI use your Gravatar profile automatically, saving you time and improving your experience.</p>
+</div>
+<div class="col">
+<h3>It starts with an email.</h3>
+<p>Each Gravatar profile is connected to an email address. When you use this email around the web, your entire profile comes with you.</p>
+<div class="icons">
+<svg fill="#fff" height="40px" viewbox="0 0 24 24" width="40px" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm0-14c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm0 10c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"></path></svg>
+<svg fill="#fff" height="40px" viewbox="0 0 24 24" width="40px" xmlns="http://www.w3.org/2000/svg"><path d="M19.3 12.7l-6.6 6.6-1.4-1.4 4.2-4.2-4.2-4.2 1.4-1.4 6.6 6.6 2.6-2.6 1.4 1.4-4.2 4.2 4.2 4.2-1.4 1.4-2.6-2.6z"></path></svg>
+</div>
+<p>Public, open, and responsible. Take control over the data that you share with the tools you use. You decide what is in your profile and how public or private it is. With Gravatar, your data is yours and yours only.</p>
+<button class="button">Read our Privacy Policy</button>
+</div>
+</div>
+</section>
+<section class="code">
+<div class="container">
+<div class="col">
+<pre><code><span class="hljs-keyword">const</span> sha256 = <span class="hljs-keyword">require</span>(<span class="hljs-string">'js-sha256'</span>);
+
+<span class="hljs-keyword">function</span> getGravatarURL(<span class="hljs-keyword">email</span>) {
+    <span class="hljs-comment">// Trim leading and trailing whitespace from</span>
+    <span class="hljs-comment">// an email address and force all characters</span>
+    <span class="hljs-comment">// to lower case</span>
+    <span class="hljs-keyword">const</span> address = <span class="hljs-built_in">String</span>(<span class="hljs-keyword">email</span>).trim().toLowerCase();
+    <span class="hljs-comment">// Create a SHA256 hash of the final string</span>
+    <span class="hljs-keyword">const</span> hash = sha256.create(<span class="hljs-keyword">address</span>);
+    <span class="hljs-comment">// Grab the actual image URL</span>
+    <span class="hljs-keyword">return</span> <span class="hljs-string">'https://www.gravatar.com/avatar/' </span>+ hash;
+}</code></pre>
+</div>
+<div class="col">
+<pre><code>&lt;?php
+
+<span class="hljs-keyword">function</span> getGravatarURL(<span class="hljs-variable">$email</span>) {
+    <span class="hljs-comment">// Trim leading and trailing whitespace from</span>
+    <span class="hljs-comment">// an email address and force all characters</span>
+    <span class="hljs-comment">// to lower case</span>
+    <span class="hljs-variable">$address</span> = <span class="hljs-built_in">trim</span>(<span class="hljs-built_in">strtolower</span>(<span class="hljs-variable">$email</span>));
+    <span class="hljs-comment">// Create a SHA256 hash of the final string</span>
+    <span class="hljs-variable">$hash</span> = <span class="hljs-built_in">hash</span>(<span class="hljs-string">'sha256'</span>, <span class="hljs-variable">$address</span>);
+    <span class="hljs-comment">// Grab the actual image URL</span>
+    <span class="hljs-keyword">return</span> <span class="hljs-string">'https://www.gravatar.com/avatar/'</span> . <span class="hljs-variable">$hash</span>;
+}</code></pre>
+</div>
+</div>
+</section>
+<section class="developer">
+<div class="container">
+<div class="text">
+<h3>Unlock personalized user experiences.</h3>
+<p>Gravatar helps developers create personal signup flows and tailored user journeys — in a privacy forward way. Gravatar can be integrated with your app in mere minutes.</p>
+<button class="button">Use the developer API &gt;</button>
+</div>
+<div class="image">
+<img alt="" src="placeholder.png"/>
+</div>
+</div>
+</section>
+<section class="footer">
+<div class="container">
+<div class="logo">
+<img alt="Gravatar Logo" src="placeholder.png"/>
+<h1>Gravatar</h1>
+</div>
+<div class="links">
+<ul>
+<li><a href="#">Languages</a></li>
+<li><a href="#">Developer Resources</a></li>
+<li><a href="#">Privacy Policy</a></li>
+<li><a href="#">Support</a></li>
+<li><a href="#">Blog</a></li>
+<li><a href="#">Work With Us</a></li>
+</ul>
+</div>
+<div>
+<p class="copyright">An <a href="#">AUTOMATTIC</a> venture</p>
+</div>
+</div>
+</section>
+</body>
+</html>
+</p></body></html>

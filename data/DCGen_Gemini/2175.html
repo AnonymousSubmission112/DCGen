@@ -1,0 +1,539 @@
+<html><body><p>
+<!DOCTYPE html>
+
+<html>
+<head>
+<style>
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #f2f2f2;
+}
+
+.header {
+  background-color: #ff0000;
+  color: #000000;
+  padding: 10px 0;
+}
+
+.header-left {
+  float: left;
+  margin-left: 26px;
+}
+
+.header-right {
+  float: right;
+  margin-right: 20px;
+}
+
+.header-logo {
+  width: 24px;
+  height: 22px;
+  background-color: #ffffff;
+  margin-top: 54px;
+}
+
+.header-links {
+  margin-top: 50px;
+  font-size: 12px;
+}
+
+.header-links a {
+  text-decoration: none;
+  color: #000000;
+  margin-left: 15px;
+}
+
+.header-buttons {
+  margin-top: 50px;
+  font-size: 12px;
+}
+
+.header-buttons a {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #cccccc;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-left: 15px;
+}
+
+.nav {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 10px 0;
+}
+
+.nav-item {
+  display: inline-block;
+  margin-left: 20px;
+  font-size: 16px;
+}
+
+.nav-item img {
+  width: 30px;
+  height: 30px;
+  background-color: #cccccc;
+  margin-top: 5px;
+}
+
+.nav-item-search {
+  width: 14px;
+  height: 14px;
+  background-color: #cccccc;
+  margin-top: 5px;
+}
+
+.section {
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.column {
+  width: 25%;
+  background-color: #cccccc;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.column-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.column-description {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.column-image {
+  width: 100%;
+  height: 120px;
+  background-color: #cccccc;
+  margin-bottom: 10px;
+}
+
+.column-buttons {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+}
+
+.column-buttons a {
+  text-decoration: none;
+  color: #000000;
+  background-color: #cccccc;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.column-links {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.column-links a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.social-media {
+  background-color: #cccccc;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.social-media-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.social-media-button {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+.social-media-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+
+.grid-item {
+  background-color: #cccccc;
+  padding: 10px;
+}
+
+.grid-item-image {
+  width: 100%;
+  height: 120px;
+  background-color: #cccccc;
+  margin-bottom: 10px;
+}
+
+.grid-item-text {
+  font-size: 12px;
+}
+
+.quote {
+  background-color: #cccccc;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.quote-text {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.quote-author {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.cta {
+  background-color: #cccccc;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.cta-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.cta-button {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+.footer {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 20px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.footer-social-media {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-social-media a {
+  text-decoration: none;
+  color: #ffffff;
+  margin-left: 10px;
+}
+
+.footer-copyright {
+  text-align: center;
+  font-size: 12px;
+}
+</style>
+</head>
+<body>
+<div class="header">
+<div class="header-left">
+<img class="header-logo" src="placeholder.png"/>
+</div>
+<div class="header-right">
+<div class="header-links">
+<a href="#">About Cornell</a>
+<a href="#">Admissions</a>
+<a href="#">Academics</a>
+<a href="#">Research</a>
+<a href="#">Public Engagement</a>
+<a href="#">Life at Cornell</a>
+</div>
+<div class="header-buttons">
+<a href="#">Apply</a>
+<a href="#">Visit</a>
+</div>
+</div>
+</div>
+<div class="nav">
+<div class="nav-item">
+<img src="placeholder.png"/>
+<span>About Cornell</span>
+</div>
+<div class="nav-item">
+<span>Admissions</span>
+</div>
+<div class="nav-item">
+<span>Academics</span>
+</div>
+<div class="nav-item">
+<span>Research</span>
+</div>
+<div class="nav-item">
+<span>Public Engagement</span>
+</div>
+<div class="nav-item">
+<span>Life at Cornell</span>
+</div>
+<div class="nav-item">
+<span>Give</span>
+</div>
+<div class="nav-item">
+<span>Students</span>
+</div>
+<div class="nav-item">
+<span>Families</span>
+</div>
+<div class="nav-item">
+<span>Faculty &amp; Staff</span>
+</div>
+<div class="nav-item">
+<span>Alumni</span>
+</div>
+<div class="nav-item">
+<span>Search</span>
+</div>
+<div class="nav-item">
+<img class="nav-item-search" src="placeholder.png"/>
+</div>
+<div class="nav-item">
+<span>Apply</span>
+</div>
+<div class="nav-item">
+<span>Visit</span>
+</div>
+</div>
+<div class="section">
+<div class="content">
+<div class="column">
+<img class="column-image" src="placeholder.png"/>
+<div class="column-title">High stakes: Could rhubarb be New York State's next big crop?</div>
+<div class="column-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nibh non ultricies aliquam, enim felis pharetra ligula, non facilisis urna leo sed lacus. Maecenas sit amet mauris ut augue laoreet dignissim.</div>
+<div class="column-buttons">
+<a href="#">More news</a>
+<a href="#">For media</a>
+</div>
+</div>
+<div class="column">
+<img class="column-image" src="placeholder.png"/>
+<div class="column-title">Cornell gets ready for Commencement, Convocation</div>
+<div class="column-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nibh non ultricies aliquam, enim felis pharetra ligula, non facilisis urna leo sed lacus. Maecenas sit amet mauris ut augue laoreet dignissim.</div>
+<div class="column-buttons">
+<a href="#">More news</a>
+<a href="#">For media</a>
+</div>
+</div>
+<div class="column">
+<img class="column-image" src="placeholder.png"/>
+<div class="column-title">Community college transfers flourish at Cornell</div>
+<div class="column-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nibh non ultricies aliquam, enim felis pharetra ligula, non facilisis urna leo sed lacus. Maecenas sit amet mauris ut augue laoreet dignissim.</div>
+<div class="column-buttons">
+<a href="#">More news</a>
+<a href="#">For media</a>
+</div>
+</div>
+<div class="column">
+<img class="column-image" src="placeholder.png"/>
+<div class="column-title">Cornell Chronicle</div>
+<div class="column-description">
+<div class="column-links">
+<span>ENGAGEMENT</span>
+<a href="#">Students transmit health care data without cell service, internet.</a>
+</div>
+<div class="column-links">
+<span>RESEARCH</span>
+<a href="#">Kenyan fishers face increased drowning risk from climate change.</a>
+</div>
+<div class="column-links">
+<span>SUSTAINABILITY</span>
+<a href="#">Houlton to Vatican climate summit: 'Ag is'most powerful weapon'.</a>
+</div>
+</div>
+<div class="column-buttons">
+<a href="#">More news</a>
+<a href="#">For media</a>
+</div>
+</div>
+</div>
+</div>
+<div class="social-media">
+<div class="social-media-title">Explore #Cornell on Social Media</div>
+<button class="social-media-button">SOCIAL MEDIA DIRECTORY</button>
+<div class="social-media-grid">
+<div class="grid-item">
+<img class="grid-item-image" src="placeholder.png"/>
+<div class="grid-item-text">Class of 2024 celebrated at Carnegie Hall Commencement</div>
+</div>
+<div class="grid-item">
+<img class="grid-item-image" src="placeholder.png"/>
+<div class="grid-item-text">Hard work, personal stories bring speech team big wins</div>
+</div>
+<div class="grid-item">
+<img class="grid-item-image" src="placeholder.png"/>
+<div class="grid-item-text">New method produces fresher, tastier cold-pressed Concord grape juice</div>
+</div>
+<div class="grid-item">
+<img class="grid-item-image" src="placeholder.png"/>
+<div class="grid-item-text">Renovations to revitalize Sibley Dome as vibrant hub for AAP</div>
+</div>
+<div class="grid-item">
+<img class="grid-item-image" src="placeholder.png"/>
+</div>
+<div class="grid-item">
+<img class="grid-item-image" src="placeholder.png"/>
+</div>
+<div class="grid-item">
+<img class="grid-item-image" src="placeholder.png"/>
+</div>
+<div class="grid-item">
+<img class="grid-item-image" src="placeholder.png"/>
+</div>
+<div class="grid-item">
+<img class="grid-item-image" src="placeholder.png"/>
+</div>
+<div class="grid-item">
+<img class="grid-item-image" src="placeholder.png"/>
+</div>
+<div class="grid-item">
+<img class="grid-item-image" src="placeholder.png"/>
+</div>
+<div class="grid-item">
+<img class="grid-item-image" src="placeholder.png"/>
+</div>
+</div>
+</div>
+<div class="cta">
+<div class="cta-title">Cornellians are united by a shared purpose.</div>
+<button class="cta-button">EXPLORE</button>
+</div>
+<div class="quote">
+<div class="quote-text">“I would found an institution where any person can find instruction in any study.”</div>
+<div class="quote-author">EZRA CORNELL, 1868</div>
+</div>
+<div class="section">
+<div class="content">
+<div class="column">
+<img class="column-image" src="placeholder.png"/>
+<div class="column-title">Class of 2024 celebrated at Carnegie Hall Commencement</div>
+<div class="column-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nibh non ultricies aliquam, enim felis pharetra ligula, non facilisis urna leo sed lacus. Maecenas sit amet mauris ut augue laoreet dignissim.</div>
+</div>
+<div class="column">
+<div class="column-title">Explore #Cornell on Social Media</div>
+<button class="column-buttons">SOCIAL MEDIA DIRECTORY</button>
+<img class="column-image" src="placeholder.png"/>
+<img class="column-image" src="placeholder.png"/>
+<img class="column-image" src="placeholder.png"/>
+<img class="column-image" src="placeholder.png"/>
+<img class="column-image" src="placeholder.png"/>
+<img class="column-image" src="placeholder.png"/>
+</div>
+<div class="column">
+<img class="column-image" src="placeholder.png"/>
+<div class="column-title">New method produces fresher, tastier cold-pressed Concord grape juice</div>
+<div class="column-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nibh non ultricies aliquam, enim felis pharetra ligula, non facilisis urna leo sed lacus. Maecenas sit amet mauris ut augue laoreet dignissim.</div>
+</div>
+</div>
+</div>
+<div class="cta">
+<img class="column-image" src="placeholder.png"/>
+<div class="cta-title">Cornellians are united by a shared purpose.</div>
+<button class="cta-button">EXPLORE</button>
+</div>
+<div class="section">
+<div class="content">
+<div class="column">
+<img class="column-image" src="placeholder.png"/>
+</div>
+<div class="column">
+<div class="column-title">Cornell Chronicle</div>
+<div class="column-description">
+<div class="column-links">
+<span>ENGAGEMENT</span>
+<a href="#">Students transmit health care data without cell service, internet.</a>
+</div>
+<div class="column-links">
+<span>RESEARCH</span>
+<a href="#">Kenyan fishers face increased drowning risk from climate change.</a>
+</div>
+<div class="column-links">
+<span>SUSTAINABILITY</span>
+<a href="#">Houlton to Vatican climate summit: 'Ag is'most powerful weapon'.</a>
+</div>
+</div>
+<div class="column-buttons">
+<a href="#">More news</a>
+<a href="#">For media</a>
+</div>
+</div>
+<div class="column">
+<img class="column-image" src="placeholder.png"/>
+</div>
+</div>
+</div>
+<div class="cta">
+<div class="cta-title">“I would found an institution where any person can find instruction in any study.”</div>
+<div class="cta-author">EZRA CORNELL, 1868</div>
+<img class="column-image" src="placeholder.png"/>
+<button class="cta-button">LEARN MORE</button>
+</div>
+<div class="footer">
+<div class="footer-links">
+<div>
+<span>HELFPUL LINKS</span>
+<a href="#">Academic Calendar</a>
+<a href="#">Leadership</a>
+<a href="#">Careers</a>
+<a href="#">Events</a>
+<a href="#">News</a>
+<a href="#">Title IX</a>
+<a href="#">Emergency Preparedness</a>
+<a href="#">University Statements</a>
+</div>
+<div>
+<span>VISITING CORNELL</span>
+<a href="#">Campus and Virtual Tours</a>
+<a href="#">Maps &amp; Directions</a>
+<a href="#">Ithaca-NYC Travel</a>
+<a href="#">Johnson Museum</a>
+<a href="#">Botanic Gardens</a>
+<a href="#">Ithaca</a>
+</div>
+<div>
+<a href="#">LIVE VIEW</a>
+<a href="#">WEATHER</a>
+<span>74°F / 23°C</span>
+<img class="column-image" src="placeholder.png"/>
+</div>
+</div>
+<div class="footer-copyright">
+<span>Ithaca, New York</span>
+<span>University Relations</span>
+<span>University Privacy</span>
+<span>Web Accessibility</span>
+<span>Copyright</span>
+<span>Site Information</span>
+<span>Contact</span>
+</div>
+</div>
+</body>
+</html>
+</p></body></html>

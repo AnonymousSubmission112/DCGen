@@ -1,0 +1,121 @@
+<html><body><p>
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Reproduced Area</title>
+<style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column; /* Added property */
+            justify-content: flex-start; /* Changed property */
+            align-items: center;
+            height: 100vh;
+        }
+
+        .cookie-banner {
+            background-color: #19222d;
+            color: white;
+            padding: 15px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+
+        .cookie-message {
+            font-size: 14px;
+        }
+
+        .cookie-button {
+            background-color: #00b096;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .cookie-link {
+            color: #00b096;
+            text-decoration: none;
+        }
+
+        .container {
+            background-color: white;
+            text-align: center;
+            padding: 50px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 80px; /* Adjust this to position below the cookie banner */
+            width: 80%; /* Added width property to simplify scaling */
+            max-width: 600px; /* Ensures it doesn't stretch too wide */
+        }
+
+        .title {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .input-container {
+            margin-bottom: 20px;
+        }
+
+        .input-container input {
+            width: 100%;
+            padding: 10px;
+            font-size: 1em;
+            border: none;
+            border-bottom: 2px solid #007bff;
+            outline: none;
+        }
+
+        .button-container {
+            margin-top: 20px;
+        }
+
+        .button-container button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 25px;
+        }
+
+        .button-container button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+<div class="cookie-banner">
+<div class="cookie-message">
+            Synology uses cookies and Google Analytics to personalize your use of our site. No personal data will be extracted. For more information, please refer to our <a class="cookie-link" href="#">Cookie Policy</a>.
+        </div>
+<button class="cookie-button">OK</button>
+</div>
+<div class="container">
+<div class="title">
+            Enter your QuickConnect ID to access your Synology NAS
+        </div>
+<div class="input-container">
+<input placeholder="QuickConnect ID" type="text"/>
+</div>
+<div class="button-container">
+<button>Connect</button>
+</div>
+</div>
+</body>
+</html>
+</p></body></html>

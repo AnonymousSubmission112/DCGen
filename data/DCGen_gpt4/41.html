@@ -1,0 +1,90 @@
+<html><body><p>
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #fff;
+            color: #000;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .title {
+            font-size: 20px;
+            color: #4285f4;
+        }
+
+        .dns-image {
+            width: 400px;
+            height: 150px;
+            background: url('placeholder.png') no-repeat center center;
+            background-size: cover;
+            margin-bottom: 20px;
+        }
+
+        .input-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .input-container input {
+            width: 300px;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px 0 0 4px;
+            outline: none;
+        }
+
+        .input-container button {
+            padding: 10px 24px;
+            font-size: 16px;
+            border: none;
+            border-radius: 0 4px 4px 0;
+            cursor: pointer;
+            background-color: #4285f4;
+            color: #fff;
+        }
+
+        .input-container button:hover {
+            background-color: #357ae8;
+        }
+
+        .description {
+            margin-top: 8px;
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+<title>Public DNS</title>
+</head>
+<body>
+<div class="container">
+<div class="dns-image"></div>
+<div class="title">Public DNS</div>
+<div class="input-container">
+<input placeholder="DNS Name" type="text"/>
+<button>Resolve</button>
+</div>
+<div class="description">
+            Enter a domain (like example.com) or IP address (like 8.8.8.8 or 2001:4860:4860::8844) here.
+        </div>
+</div>
+</body>
+</html>
+</p></body></html>

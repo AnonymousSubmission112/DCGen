@@ -1,0 +1,607 @@
+<html><body><p>
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>КонсультантПлюс</title>
+<style>
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.nav {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav li {
+  margin-left: 20px;
+}
+
+.nav a {
+  color: #333;
+  text-decoration: none;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.search-button {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.content {
+  display: flex;
+  gap: 20px;
+}
+
+.sidebar {
+  width: 250px;
+}
+
+.main {
+  flex: 1;
+}
+
+.section {
+  margin-bottom: 20px;
+}
+
+.section-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.section-content {
+  background-color: #f8f8f8;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.section-content ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.section-content li {
+  margin-bottom: 5px;
+}
+
+.section-content a {
+  color: #333;
+  text-decoration: none;
+}
+
+.section-content a:hover {
+  text-decoration: underline;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.footer a {
+  color: #333;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.social-links a {
+  margin: 0 5px;
+}
+
+.social-links img {
+  width: 20px;
+}
+
+.highlight {
+  color: #007bff;
+}
+
+.sidebar-item {
+  margin-bottom: 10px;
+}
+
+.sidebar-item a {
+  display: block;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: #333;
+  text-decoration: none;
+}
+
+.sidebar-item a:hover {
+  background-color: #e9ecef;
+}
+
+.sidebar-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.sidebar-item-title {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.sidebar-item-description {
+  font-size: 14px;
+  color: #555;
+}
+
+.news-item {
+  margin-bottom: 15px;
+}
+
+.news-item-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.news-item-date {
+  font-size: 12px;
+  color: #555;
+}
+
+.news-item-content {
+  margin-bottom: 10px;
+}
+
+.news-item-link {
+  display: block;
+  padding: 8px 12px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.news-item-link:hover {
+  background-color: #0069d9;
+}
+
+.news-item-image {
+  width: 100%;
+  height: auto;
+}
+
+.products-item {
+  margin-bottom: 15px;
+}
+
+.products-item-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.products-item-description {
+  font-size: 14px;
+  color: #555;
+}
+
+.products-item-link {
+  display: block;
+  padding: 8px 12px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.products-item-link:hover {
+  background-color: #0069d9;
+}
+
+.main-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: #0069d9;
+}
+
+.sidebar-item-content {
+  margin-bottom: 5px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+<div class="logo">КонсультантПлюс</div>
+<nav class="nav">
+<li><a href="#">Некоммерческие интернет-версии</a></li>
+<li><a href="#">О компании и продуктах</a></li>
+<li><a href="#">Купить КонсультантПлюс</a></li>
+<li><a href="#">Новости и акции</a></li>
+<li><a href="#">Пробный доступ</a></li>
+<li><a href="#">Вакансии</a></li>
+</nav>
+<div class="search-form">
+<input class="search-input" placeholder="Поиск Кодексов, законов и других материалов" type="text"/>
+<button class="search-button">НАЙТИ</button>
+</div>
+</header>
+<div class="content">
+<div class="sidebar">
+<div class="sidebar-item">
+<div class="sidebar-item-title">Вход для клиентов</div>
+<div class="sidebar-item-content"><a href="#">Вход в систему</a></div>
+<div class="sidebar-item-content"><a href="#">КонсультантПлюс для клиентов</a></div>
+</div>
+<div class="sidebar-item">
+<div class="sidebar-item-title">Пробный доступ</div>
+<div class="sidebar-item-content"><a href="#">Пробный доступ к системе КонсультантПлюс бесплатно</a></div>
+</div>
+<div class="sidebar-item">
+<div class="sidebar-item-title">Купить систему</div>
+<div class="sidebar-item-content"><a href="#">Получите специальное предложение на покупку системы КонсультантПлюс</a></div>
+<div class="sidebar-item-content">
+<div style="display: flex; justify-content: center; align-items: center; height: 40px;">
+<span style="font-size: 24px; font-weight: bold;">310 744 893</span>
+</div>
+</div>
+<div class="sidebar-item-content"><a href="#">Документы в системе КонсультантПлюс</a></div>
+<div class="sidebar-item-content"><a href="#">Обзоры законодательства</a></div>
+<div class="sidebar-item-content"><a href="#">Подписка на рассылки</a></div>
+<div class="sidebar-item-content"><a href="#">Интернет-интервью</a></div>
+<div class="sidebar-item-content"><a href="#">Студенты и преподаватели</a></div>
+</div>
+</div>
+<div class="main">
+<div class="section">
+<div class="section-title">
+<div style="display: flex; justify-content: space-between; align-items: center;">
+<span>Новости</span>
+<div style="display: flex; justify-content: center; align-items: center; background-color: #f8f8f8; padding: 5px 10px; border-radius: 5px;">
+<img alt="placeholder" src="placeholder.png" style="width: 16px; height: 16px;"/>
+<span style="font-size: 14px; font-weight: bold; margin-left: 5px;">Горячие документы</span>
+</div>
+</div>
+</div>
+<div class="section-content">
+<div class="news-item">
+<div class="news-item-title">
+<div style="display: flex; justify-content: space-between; align-items: center;">
+<span>Президент определил национальные цели развития России</span>
+<div style="display: flex; justify-content: center; align-items: center; background-color: #f8f8f8; padding: 5px 10px; border-radius: 5px;">
+<img alt="placeholder" src="placeholder.png" style="width: 16px; height: 16px;"/>
+<span style="font-size: 14px; font-weight: bold; margin-left: 5px;">Горячие документы</span>
+</div>
+</div>
+</div>
+<div class="news-item-date">сегодня</div>
+<div class="news-item-content">
+              Новые законы РФ, указы Президента, постановления Правительства и другие нормативные акты. Новые документы поступают несколько раз в день.
+            </div>
+</div>
+<div class="news-item">
+<div class="news-item-title">
+<div style="display: flex; justify-content: space-between; align-items: center;">
+<span>Изменение налоговой системы: Минфин сообщил, какие новшества готов поддержать</span>
+<div style="display: flex; justify-content: center; align-items: center; background-color: #f8f8f8; padding: 5px 10px; border-radius: 5px;">
+<img alt="placeholder" src="placeholder.png" style="width: 16px; height: 16px;"/>
+<span style="font-size: 14px; font-weight: bold; margin-left: 5px;">Горячие документы</span>
+</div>
+</div>
+</div>
+<div class="news-item-date">сегодня</div>
+<div class="news-item-content">
+<img alt="placeholder" class="news-item-image" src="placeholder.png"/>
+</div>
+</div>
+<div class="news-item">
+<div class="news-item-title">
+<div style="display: flex; justify-content: space-between; align-items: center;">
+<span>ФАС планирует выявлять антиконкурентные соглашения с помощью новой информасистемы</span>
+<div style="display: flex; justify-content: center; align-items: center; background-color: #f8f8f8; padding: 5px 10px; border-radius: 5px;">
+<img alt="placeholder" src="placeholder.png" style="width: 16px; height: 16px;"/>
+<span style="font-size: 14px; font-weight: bold; margin-left: 5px;">Горячие документы</span>
+</div>
+</div>
+</div>
+<div class="news-item-date">сегодня</div>
+<div class="news-item-content">
+<span class="highlight">Не пропустите</span>
+</div>
+</div>
+<div class="news-item">
+<div class="news-item-title">
+<div style="display: flex; justify-content: space-between; align-items: center;">
+<span>Договоры с самозанятыми: яркие споры о переквалификации их в трудовые за январь — май 2024 года</span>
+<div style="display: flex; justify-content: center; align-items: center; background-color: #f8f8f8; padding: 5px 10px; border-radius: 5px;">
+<img alt="placeholder" src="placeholder.png" style="width: 16px; height: 16px;"/>
+<span style="font-size: 14px; font-weight: bold; margin-left: 5px;">Горячие документы</span>
+</div>
+</div>
+</div>
+<div class="news-item-date">сегодня</div>
+<div class="news-item-content">
+</div>
+</div>
+<div class="news-item">
+<div class="news-item-title">
+<div style="display: flex; justify-content: space-between; align-items: center;">
+<span>Отзыв ПБО в 2024 году: Казначейство подготовило план-график мероприятий</span>
+<div style="display: flex; justify-content: center; align-items: center; background-color: #f8f8f8; padding: 5px 10px; border-radius: 5px;">
+<img alt="placeholder" src="placeholder.png" style="width: 16px; height: 16px;"/>
+<span style="font-size: 14px; font-weight: bold; margin-left: 5px;">Горячие документы</span>
+</div>
+</div>
+</div>
+<div class="news-item-date">сегодня</div>
+<div class="news-item-content">
+</div>
+</div>
+<div class="news-item">
+<div class="news-item-title">
+<div style="display: flex; justify-content: space-between; align-items: center;">
+<span>Медосмотры работников: интересные примеры споров за 2022 — 2024 годы</span>
+<div style="display: flex; justify-content: center; align-items: center; background-color: #f8f8f8; padding: 5px 10px; border-radius: 5px;">
+<img alt="placeholder" src="placeholder.png" style="width: 16px; height: 16px;"/>
+<span style="font-size: 14px; font-weight: bold; margin-left: 5px;">Горячие документы</span>
+</div>
+</div>
+</div>
+<div class="news-item-date">сегодня</div>
+<div class="news-item-content">
+</div>
+</div>
+<div class="news-item">
+<div class="news-item-title">
+<div style="display: flex; justify-content: space-between; align-items: center;">
+<span>Президент установил порядок приобретения исключительных прав у лиц недружественных стран</span>
+<div style="display: flex; justify-content: center; align-items: center; background-color: #f8f8f8; padding: 5px 10px; border-radius: 5px;">
+<img alt="placeholder" src="placeholder.png" style="width: 16px; height: 16px;"/>
+<span style="font-size: 14px; font-weight: bold; margin-left: 5px;">Горячие документы</span>
+</div>
+</div>
+</div>
+<div class="news-item-date">сегодня</div>
+<div class="news-item-content">
+</div>
+</div>
+<a class="button" href="#">Все новости</a>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<div style="display: flex; justify-content: space-between; align-items: center;">
+<span>Продукты</span>
+<div style="display: flex; justify-content: center; align-items: center; background-color: #f8f8f8; padding: 5px 10px; border-radius: 5px;">
+<img alt="placeholder" src="placeholder.png" style="width: 16px; height: 16px;"/>
+<span style="font-size: 14px; font-weight: bold; margin-left: 5px;">Горячие документы</span>
+</div>
+</div>
+</div>
+<div class="section-content">
+<div class="products-item">
+<div class="products-item-title">
+<div style="display: flex; justify-content: space-between; align-items: center;">
+<span>Юристу</span>
+<div style="display: flex; justify-content: center; align-items: center; background-color: #f8f8f8; padding: 5px 10px; border-radius: 5px;">
+<img alt="placeholder" src="placeholder.png" style="width: 16px; height: 16px;"/>
+<span style="font-size: 14px; font-weight: bold; margin-left: 5px;">Горячие документы</span>
+</div>
+</div>
+</div>
+<div class="products-item-description">
+              Законодательство, судебная практика и ее анализ. Комментарии и разъяснения. Конструктор договоров.
+            </div>
+</div>
+<div class="products-item">
+<div class="products-item-title">
+<div style="display: flex; justify-content: space-between; align-items: center;">
+<span>Бухгалтеру</span>
+<div style="display: flex; justify-content: center; align-items: center; background-color: #f8f8f8; padding: 5px 10px; border-radius: 5px;">
+<img alt="placeholder" src="placeholder.png" style="width: 16px; height: 16px;"/>
+<span style="font-size: 14px; font-weight: bold; margin-left: 5px;">Горячие документы</span>
+</div>
+</div>
+</div>
+<div class="products-item-description">
+              Готовые решения, разъяснения ведомств, образцы заполнения. Видеосеминары. Конструкторы, калькуляторы.
+            </div>
+</div>
+<div class="products-item">
+<div class="products-item-title">
+<div style="display: flex; justify-content: space-between; align-items: center;">
+<span>Бюджетной организации</span>
+<div style="display: flex; justify-content: center; align-items: center; background-color: #f8f8f8; padding: 5px 10px; border-radius: 5px;">
+<img alt="placeholder" src="placeholder.png" style="width: 16px; height: 16px;"/>
+<span style="font-size: 14px; font-weight: bold; margin-left: 5px;">Горячие документы</span>
+</div>
+</div>
+</div>
+<div class="products-item-description">
+              Законодательство и разъяснения. Образцы заполнения, видеосеминары, новости. Конструкторы.
+            </div>
+</div>
+<div class="products-item">
+<div class="products-item-title">
+<div style="display: flex; justify-content: space-between; align-items: center;">
+<span>Другим специалистам</span>
+<div style="display: flex; justify-content: center; align-items: center; background-color: #f8f8f8; padding: 5px 10px; border-radius: 5px;">
+<img alt="placeholder" src="placeholder.png" style="width: 16px; height: 16px;"/>
+<span style="font-size: 14px; font-weight: bold; margin-left: 5px;">Горячие документы</span>
+</div>
+</div>
+</div>
+<div class="products-item-description">
+</div>
+</div>
+<a class="button" href="#">Все новости</a>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span>Кодексы</span>
+</div>
+<div class="section-content">
+<ul>
+<li><a href="#">Гражданский кодекс (ГК РФ)</a></li>
+<li><a href="#">Жилищный кодекс (ЖК РФ)</a></li>
+<li><a href="#">Налоговый кодекс (НК РФ)</a></li>
+<li><a href="#">Трудовой кодекс (ТК РФ)</a></li>
+<li><a href="#">Уголовный кодекс (УК РФ)</a></li>
+<li><a href="#">Кодекс об административных правонарушениях (КоАП РФ)</a></li>
+<li><a href="#">Бюджетный кодекс (БК РФ)</a></li>
+<li><a href="#">Таможенный кодекс ЕАЭС</a></li>
+<li><a href="#">Арбитражный процессуальный кодекс (АПК РФ)</a></li>
+<li><a href="#">Земельный кодекс (ЗК РФ)</a></li>
+</ul>
+<a class="button" href="#">Популярные документы для бухгалтеров</a>
+<a class="button" href="#">Все документы</a>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span>Законы</span>
+</div>
+<div class="section-content">
+<ul>
+<li><a href="#">О защите прав потребителей</a></li>
+<li><a href="#">О банкротстве</a></li>
+<li><a href="#">Об исполнительном производстве</a></li>
+<li><a href="#">О персональных данных</a></li>
+<li><a href="#">О налогах на имущество физических лиц, ОКБЗД</a></li>
+<li><a href="#">Расходы организации ПБУ 10/99</a></li>
+<li><a href="#">О судебных приставах</a></li>
+<li><a href="#">О государственной регистрации недвижимости</a></li>
+<li><a href="#">Конституция РФ</a></li>
+</ul>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span>Справочная информация</span>
+</div>
+<div class="section-content">
+<ul>
+<li><a href="#">Правовой календарь на II квартал 2024 г.</a></li>
+<li><a href="#">Календарь бухгалтера на 2024 г.</a></li>
+<li><a href="#">Производственный календарь на 2024 г.</a></li>
+<li><a href="#">Производственный календарь на 2023 г.</a></li>
+<li><a href="#">Таможенный календарь на 2024 г.</a></li>
+<li><a href="#">Калькуляторы</a></li>
+<li><a href="#">Государственная регистрация юридических лиц</a></li>
+<li><a href="#">Государственная регистрация индивидуальных предпринимателей</a></li>
+<li><a href="#">Налоговая декларация по НДС</a></li>
+<li><a href="#">Формы бухгалтерской отчетности</a></li>
+<li><a href="#">Процентная ставка рефинансирования (учетная ставка), установленная ЦБ РФ</a></li>
+<li><a href="#">Ключевая ставка ЦБ РФ на сегодня</a></li>
+<li><a href="#">Должностные инструкции</a></li>
+<li><a href="#">Пособия и их расчетные данные на 2024 г.</a></li>
+<li><a href="#">МРОТ 2024</a></li>
+<li><a href="#">Подборки материалов, акты, образцы, формы, договоры</a></li>
+<li><a href="#">Частичная мобилизация: обзор новостей</a></li>
+</ul>
+<a class="button" href="#">Вся справочная информация</a>
+</div>
+</div>
+</div>
+</div>
+<footer>
+<div class="footer-content">
+<div class="contact-info">
+<div class="contact-info-title">Контактная информация</div>
+<div class="contact-info-address">117292, Москва, ул. Кржижановского, 6 (центральный офис)</div>
+<div class="contact-info-phone">+7 (495) 956-82-83</div>
+<div class="contact-info-phone">+7 (495) 787-92-92</div>
+<div class="contact-info-email">contact@consultant.ru</div>
+<div class="footer-copyright">Все права защищены © 1997–2024 КонсультантПлюс</div>
+<img alt="placeholder" src="placeholder.png"/>
+</div>
+<div class="social-links">
+<a href="#" target="_blank"><img alt="placeholder" src="placeholder.png"/></a>
+<a href="#" target="_blank"><img alt="placeholder" src="placeholder.png"/></a>
+<a href="#" target="_blank"><img alt="placeholder" src="placeholder.png"/></a>
+<a href="#" target="_blank"><img alt="placeholder" src="placeholder.png"/></a>
+</div>
+<div class="legal-info">
+<div class="legal-info-text">Свидетельство МПТР России Зн №77-6731</div>
+<div class="legal-info-text">Политика обработки персональных данных</div>
+<div class="legal-info-text">Условия доступа к сайту</div>
+</div>
+</div>
+</footer>
+</div>
+</body>
+</html>
+</p></body></html>

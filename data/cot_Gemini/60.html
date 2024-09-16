@@ -1,0 +1,371 @@
+<html><body><p>
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>SHEIN</title>
+<style>
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.header-logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+}
+
+.header-nav {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header-nav li {
+  margin-left: 20px;
+}
+
+.header-nav a {
+  text-decoration: none;
+  color: #333;
+}
+
+.header-search {
+  display: flex;
+  align-items: center;
+  background-color: #f0f0f0;
+  border-radius: 20px;
+  padding: 8px 15px;
+}
+
+.header-search input {
+  border: none;
+  outline: none;
+  padding: 0 10px;
+  font-size: 16px;
+  background-color: transparent;
+  color: #333;
+}
+
+.header-search button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+.header-search button img {
+  width: 15px;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+
+.product-banner {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.product-banner img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.product-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.product-categories {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.product-category {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+
+.product-category img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.product-category span {
+  font-size: 16px;
+}
+
+.footer {
+  background-color: #fff;
+  padding: 30px 50px;
+  margin-top: 50px;
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+.footer-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-nav li {
+  margin-bottom: 10px;
+}
+
+.footer-nav a {
+  text-decoration: none;
+  color: #666;
+}
+
+.footer-copyright {
+  margin-top: 20px;
+}
+
+.footer-copyright a {
+  text-decoration: none;
+  color: #666;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #666;
+}
+
+.footer-social {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+.footer-social a {
+  text-decoration: none;
+  color: #666;
+}
+
+.footer-social img {
+  width: 20px;
+  height: 20px;
+}
+</style>
+</head>
+<body>
+<header class="header">
+<a class="header-logo" href="#">SHEIN</a>
+<nav class="header-nav">
+<li><a href="#">全部分类</a></li>
+<li><a href="#">新款上架</a></li>
+<li><a href="#">超大码上衣</a></li>
+<li><a href="#">男士时尚</a></li>
+<li><a href="#">母婴</a></li>
+<li><a href="#">母婴用品</a></li>
+<li><a href="#">女式外衣&amp;裙装</a></li>
+<li><a href="#">女式服装&amp;饰品</a></li>
+<li><a href="#">鞋</a></li>
+<li><a href="#">女式鞋</a></li>
+<li><a href="#">运动&amp;户外</a></li>
+<li><a href="#">家居&amp;睡裙</a></li>
+<li><a href="#">家居服饰</a></li>
+<li><a href="#">工具&amp;零碎</a></li>
+<li><a href="#">宠物用品</a></li>
+<li><a href="#">手表</a></li>
+<li><a href="#">饰品</a></li>
+<li><a href="#">美妆&amp;美容</a></li>
+<li><a href="#">箱包&amp;腰带</a></li>
+<li><a href="#">家居用品</a></li>
+<li><a href="#">系统</a></li>
+<li><a href="#">用户帮助</a></li>
+</nav>
+<div class="header-search">
+<input placeholder="搜索" type="text"/>
+<button>
+<img alt="Search Icon" src="placeholder.png"/>
+</button>
+</div>
+</header>
+<main class="container">
+<section class="product-banner">
+<img alt="Product Banner Image" src="placeholder.png"/>
+<h2 class="product-title">居家秀</h2>
+<div class="product-categories">
+<div class="product-category">
+<img alt="Category Icon" src="placeholder.png"/>
+<span>Fall Style</span>
+</div>
+<div class="product-category">
+<img alt="Category Icon" src="placeholder.png"/>
+<span>Cozy Comforts</span>
+</div>
+<div class="product-category">
+<img alt="Category Icon" src="placeholder.png"/>
+<span>Casual Lookbook</span>
+</div>
+<div class="product-category">
+<img alt="Category Icon" src="placeholder.png"/>
+<span>Electric Nights</span>
+</div>
+<div class="product-category">
+<img alt="Category Icon" src="placeholder.png"/>
+<span>Time To Shine</span>
+</div>
+<div class="product-category">
+<img alt="Category Icon" src="placeholder.png"/>
+<span>Urban Chic</span>
+</div>
+<div class="product-category">
+<img alt="Category Icon" src="placeholder.png"/>
+<span>Chic &amp; Chill</span>
+</div>
+<div class="product-category">
+<img alt="Category Icon" src="placeholder.png"/>
+<span>Denim Guide</span>
+</div>
+<div class="product-category">
+<img alt="Category Icon" src="placeholder.png"/>
+<span>Highstreet Fashion</span>
+</div>
+<div class="product-category">
+<img alt="Category Icon" src="placeholder.png"/>
+<span>Date Wear</span>
+</div>
+<button>
+<img alt="Arrow Icon" src="placeholder.png"/>
+</button>
+</div>
+</section>
+</main>
+<footer class="footer">
+<div class="footer-nav">
+<ul>
+<li><strong>公司信息</strong></li>
+<li><a href="#">关于SHEIN</a></li>
+<li><a href="#">媒体联系</a></li>
+<li><a href="#">社会责任</a></li>
+</ul>
+<ul>
+<li><strong>客户问题</strong></li>
+<li><a href="#">常见问题</a></li>
+<li><a href="#">退货指南</a></li>
+<li><a href="#">付款</a></li>
+<li><a href="#">如何订购</a></li>
+<li><a href="#">送货信息</a></li>
+<li><a href="#">尺码指南</a></li>
+</ul>
+<ul>
+<li><strong>客户服务</strong></li>
+<li><a href="#">联系我们</a></li>
+<li><a href="#">支付方式</a></li>
+<li><a href="#">隐私政策</a></li>
+</ul>
+<ul>
+<li><strong>追蹤訂單</strong></li>
+<li>
+<div>
+<input id="checkbox1" type="checkbox"/>
+<label for="checkbox1">訂購電子郵件，提供7天物流追蹤，最新資訊絕不漏掉!</label>
+</div>
+</li>
+<li>
+<input placeholder="您的電子郵件地址" type="text"/>
+</li>
+<li>
+<div>
+<input id="checkbox2" type="checkbox"/>
+<label for="checkbox2">儲存方式以接收時尚更新</label>
+</div>
+</li>
+</ul>
+<ul>
+<li><strong>APP</strong></li>
+<li>
+<div>
+<img alt="App Icon" src="placeholder.png"/>
+<img alt="App Icon" src="placeholder.png"/>
+</div>
+</li>
+<li>
+<input placeholder="訂購電子郵件，提供7天物流追蹤，最新資訊絕不漏掉!" type="text"/>
+</li>
+<li>
+<button>訂閱</button>
+</li>
+<li>
+<div>
+<img alt="Social Media Icon" src="placeholder.png"/>
+</div>
+</li>
+</ul>
+</div>
+<div class="footer-copyright">
+    ©2009-2024 SHEIN 版權所有
+  </div>
+<div class="footer-links">
+<a href="#">私隱政策</a>
+<a href="#">關於Cookie政策</a>
+<a href="#">條款條件</a>
+<a href="#">版權聲明</a>
+<a href="#">回饋</a>
+<a href="#">Ad Choice</a>
+</div>
+</footer>
+</body>
+</html>
+</p></body></html>

@@ -1,0 +1,80 @@
+<html><body><p>
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>UNPKG</title>
+<link href="styles.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="container">
+<header class="header">
+<h1>UNPKG</h1>
+<p>unpkg is a fast, global content delivery network for everything on <a href="#">npm</a>. Use it to quickly and easily load any file from any package using a URL like:</p>
+<p class="highlighted">unpkg.com/package@<span>version</span>/file</p>
+</header>
+<section class="examples">
+<h2>Examples</h2>
+<p>Using a fixed version:</p>
+<ul>
+<li><a href="#">unpkg.com/react@16.7.0/umd/react.production.min.js</a></li>
+<li><a href="#">unpkg.com/react-dom@16.7.0/umd/react-dom.production.min.js</a></li>
+</ul>
+<p>You may also use a semver range or a tag instead of a fixed version number, or omit the version/tag entirely to use the latest:</p>
+<ul>
+<li><a href="#">unpkg.com/react@16/umd/react.production.min.js</a></li>
+<li><a href="#">unpkg.com/react/umd/react.production.min.js</a></li>
+</ul>
+<p>If you omit the file path (i.e. use a "bare" URL), unpkg will serve the file specified by the unpkg field in package.json, or fall back to main:</p>
+<ul>
+<li><a href="#">unpkg.com/three</a></li>
+<li><a href="#">unpkg.com/react</a></li>
+<li><a href="#">unpkg.com/react-router</a></li>
+</ul>
+<p>Append a / at the end of a URL to view a listing of all the files in a package.</p>
+</section>
+<section class="query-params">
+<h2>Query Parameters</h2>
+<p><strong>?meta</strong><br/>Returns metadata about any file in a package as JSON (e.g.,/array/1/file?meta)</p>
+<p><strong>?module</strong><br/>Expands all <a href="#">"bare" import specifiers</a> in JavaScript modules to unpkg URLs. This feature is very experimental!</p>
+</section>
+<section class="cache-behavior">
+<h2>Cache Behavior</h2>
+<p>The CDN caches files based on their permanent URL, which includes the npm package version. This works because npm does not allow package authors to overwrite a package that has already been published with a different one at the same version number.</p>
+<p>Browsers are instructed (via the <code>Cache-Control</code> header) to cache assets indefinitely (1 year).</p>
+<p>URLs that do not specify a package version number redirect to one that does. This is the latest version when no version is specified, or the maximum satisfying version when a semver version is given. Redirects are cached for 10 minutes at the CDN, 1 minute in browsers.</p>
+<p>If you want users to be able to use the latest version when you cut a new release, the best policy is to put the version number in the URL directly in your installation instructions. This will also load more quickly because we won't have to resolve the latest version and redirect them.</p>
+</section>
+<section class="workflow">
+<h2>Workflow</h2>
+<p>For npm package authors, unpkg relieves the burden of publishing your code to a CDN in addition to the npm registry. All you need to do is include your <strong>UMD build</strong> in your npm package (not your repo, that's different).</p>
+<p>You can do this easily using the following setup:</p>
+<ul>
+<li>Add the umd (or dist) directory to your .gitignore file</li>
+<li>Add the umd directory to your files array in package.json</li>
+<li>Use a build script to generate your UMD build in the umd directory when you publish</li>
+</ul>
+<p>That's it! Now when you npm publish you'll have a version available on unpkg as well.</p>
+</section>
+<section class="about">
+<h2>About</h2>
+<p>unpkg is an open source project built and maintained by <a href="#">Michael Jackson</a>. unpkg is not affiliated with or supported by npm, Inc. in any way. Please do not contact npm for help with unpkg. Instead, please reach out to <a href="#">@unpkg</a> with any questions or concerns.</p>
+<p>The unpkg CDN is powered by <a href="#">Cloudflare</a>, one of the world's largest and fastest cloud network platforms.</p>
+</section>
+<section>
+<img alt="Example image" src="placeholder.png"/>
+</section>
+<footer class="footer">
+<p>Built <a href="#">x/yella</a></p>
+<p>© 2024 UNPKG</p>
+<p>
+<a href="#"><i class="icon-github"></i></a>
+<a href="#"><i class="icon-twitter"></i></a>
+</p>
+</footer>
+</div>
+</body>
+</html>
+</p></body></html>

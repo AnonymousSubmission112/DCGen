@@ -1,0 +1,144 @@
+<html><body><p>
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>UNPKG</title>
+<style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            margin: 0;
+            padding: 0;
+            line-height: 1.5;
+            color: #24292e;
+            background-color: #fff;
+        }
+        .container {
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 45px;
+        }
+        h1 {
+            font-size: 32px;
+            font-weight: 600;
+            text-align: center;
+            margin-bottom: 16px;
+        }
+        p {
+            font-size: 16px;
+            margin-bottom: 16px;
+            text-align: center;
+        }
+        code {
+            font-family: SFMono-Regular, Consolas, "Liberation Mono", Menlo, Courier, monospace;
+            font-size: 14px;
+            padding: 0.2em 0.4em;
+            margin: 0;
+            background-color: rgba(27, 31, 35, 0.05);
+            border-radius: 3px;
+        }
+        a {
+            color: #0366d6;
+            text-decoration: none;
+        }
+        .section h2 {
+            font-size: 24px;
+            font-weight: 600;
+            margin-top: 24px;
+            margin-bottom: 16px;
+        }
+        .section p, .section ul {
+            margin-bottom: 16px;
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        ul li {
+            margin-bottom: 8px;
+        }
+        ul li a {
+            display: inline-block;
+        }
+        img {
+            display: block;
+            margin: 24px auto;
+            max-width: 420px;
+            height: auto;
+        }
+        footer {
+            text-align: center;
+            margin-top: 24px;
+            color: #586069;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+<h1>UNPKG</h1>
+<p>unpkg is a fast, global content delivery network for everything on <a href="https://www.npmjs.com/">npm</a>. Use it to quickly and easily load any file from any package using a URL like:</p>
+<code>unpkg.com/[package]@[version/[file]</code>
+<div class="section">
+<h2>Examples</h2>
+<p>Using a fixed version:</p>
+<ul>
+<li><a href="https://unpkg.com/react@16.7.0/umd/react.production.min.js">unpkg.com/react@16.7.0/umd/react.production.min.js</a></li>
+<li><a href="https://unpkg.com/react-dom@16.7.0/umd/react-dom.production.min.js">unpkg.com/react-dom@16.7.0/umd/react-dom.production.min.js</a></li>
+</ul>
+<p>You may also use a semver range or a tag instead of a fixed version number, or omit the version to get the <code>latest</code> tag:</p>
+<ul>
+<li><a href="https://unpkg.com/react@16/umd/react.production.min.js">unpkg.com/react@16/umd/react.production.min.js</a></li>
+<li><a href="https://unpkg.com/react/umd/react.production.min.js">unpkg.com/react/umd/react.production.min.js</a></li>
+</ul>
+<p>If you omit the file path, you'll be served the file specified by the <code>unpkg</code> field in a package's <code>package.json</code> file:</p>
+<ul>
+<li><a href="https://unpkg.com/jquery">unpkg.com/jquery</a></li>
+<li><a href="https://unpkg.com/three">unpkg.com/three</a></li>
+</ul>
+<p>Append a <code>/</code> at the end of a URL to view a listing of all the files in a package:</p>
+<ul>
+<li><a href="https://unpkg.com/react/">unpkg.com/react/</a></li>
+<li><a href="https://unpkg.com/react-router/">unpkg.com/react-router/</a></li>
+</ul>
+</div>
+<div class="section">
+<h2>Query Parameters</h2>
+<p><code>?meta</code></p>
+<p>Returns metadata about any file in a package as JSON (e.g., <code>/array?file=/meta</code>)</p>
+<p><code>?module</code></p>
+<p>Expands all <code>import</code> specifiers in JavaScript modules to unpkg URLs. This feature is very experimental!</p>
+</div>
+<div class="section">
+<h2>Cache Behavior</h2>
+<p>The CDN caches files based on their permanent URL, which includes the npm package version. This works because npm does not allow package authors to overwrite a package that has already been published with a different one at the same version number.</p>
+<p>Browsers are instructed (via the <code>Cache-Control</code> header) to cache assets indefinitely (1 year).</p>
+<p>URLs that do not specify a package version number redirect to one that does. This is the <code>latest</code> version when no version is specified, or the <code>next</code> tag when a <code>semver</code> version is given. Redirects are cached for 10 minutes at the CDN, 1 minute in browsers.</p>
+<p>If you want users to be able to use the latest version when you cut a new release, the best policy is to put the version number in the URL directly in your installation instructions. This will also load more quickly because we won't have to resolve the latest version and redirect them.</p>
+</div>
+<div class="section">
+<h2>Workflow</h2>
+<p>For npm package authors, unpkg relieves the burden of publishing your code to a CDN in addition to the npm registry. All you need to do is include your UMD build in your npm package (not your repo, that's different).</p>
+<p>You can do this easily using the following setup:</p>
+<ul>
+<li>Add the <code>umd</code> (or <code>dist</code>) directory to your <code>.gitignore</code> file</li>
+<li>Add the <code>umd</code> directory to your <code>files</code> array in <code>package.json</code></li>
+<li>Use a build script to generate your UMD build in the <code>umd</code> directory when you publish</li>
+</ul>
+<p>That's it! Now when you <code>npm publish</code>, you'll have a version available on unpkg as well.</p>
+</div>
+<div class="section">
+<h2>About</h2>
+<p>unpkg is an <a href="https://github.com/unpkg/unpkg">open source</a> project built and maintained by <a href="https://github.com/mjackson">Michael Jackson</a>. unpkg is not affiliated with or supported by npm, Inc. in any way. Please do not contact npm for help with unpkg. Instead, please reach out to <a href="https://twitter.com/unpkg">@unpkg</a> or <a href="https://twitter.com/unpkg">Twitter</a> with any questions or concerns.</p>
+<p>The unpkg CDN is powered by <a href="https://www.cloudflare.com/">Cloudflare</a>, one of the world's largest and fastest cloud network platforms.</p>
+<img alt="Placeholder Image" src="placeholder.png"/>
+<p>The origin server runs on auto-scaling infrastructure provided by <a href="https://fly.io/">Fly.io</a>. The app servers run in 17 cities around the world, and come and go based on active requests.</p>
+<img alt="Placeholder Image" src="placeholder.png"/>
+</div>
+<footer>Built with <a href="#">❤️</a> by <a href="https://zefir.rocks">Zefir</a> © 2024 UNPKG <a href="https://twitter.com/unpkg">@unpkg</a></footer>
+</div>
+</body>
+</html>
+</p></body></html>

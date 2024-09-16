@@ -1,0 +1,424 @@
+<html><body><p>
+<!DOCTYPE html>
+
+<html>
+<head>
+<style>
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+.header {
+  background-color: #f5f5f5;
+  padding: 10px;
+}
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: #007bff;
+}
+.header .nav {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.header .nav li {
+  margin-right: 15px;
+}
+.header .nav li a {
+  color: #333;
+  text-decoration: none;
+}
+.header .nav li a:hover {
+  text-decoration: underline;
+}
+.header .actions {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.header .actions li {
+  margin-left: 15px;
+}
+.header .actions li a {
+  color: #333;
+  text-decoration: none;
+}
+.header .actions li a:hover {
+  text-decoration: underline;
+}
+.content {
+  padding: 20px;
+}
+.content .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.content .sidebar {
+  width: 300px;
+  margin-right: 20px;
+}
+.content .sidebar .card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+.content .sidebar .card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+.content .sidebar .card h3 {
+  font-size: 18px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+.content .sidebar .card p {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+.content .main {
+  flex: 1;
+}
+.content .main .card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+.content .main .card h2 {
+  font-size: 24px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.content .main .card p {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+.content .main .card button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+.content .main .card button:hover {
+  opacity: 0.8;
+}
+.footer {
+  background-color: #333;
+  padding: 20px;
+  color: #fff;
+  text-align: center;
+}
+.footer a {
+  color: #fff;
+  text-decoration: none;
+}
+.footer a:hover {
+  text-decoration: underline;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.text-center {
+  text-align: center;
+}
+.btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.btn:hover {
+  opacity: 0.8;
+}
+.bg-light {
+  background-color: #f5f5f5;
+}
+.bg-primary {
+  background-color: #007bff;
+}
+.bg-secondary {
+  background-color: #6c757d;
+}
+.text-primary {
+  color: #007bff;
+}
+.text-secondary {
+  color: #6c757d;
+}
+.text-light {
+  color: #f5f5f5;
+}
+.text-dark {
+  color: #333;
+}
+.text-bold {
+  font-weight: bold;
+}
+.mt-1 {
+  margin-top: 10px;
+}
+.mb-1 {
+  margin-bottom: 10px;
+}
+.mr-1 {
+  margin-right: 10px;
+}
+.ml-1 {
+  margin-left: 10px;
+}
+.p-1 {
+  padding: 10px;
+}
+.rounded {
+  border-radius: 5px;
+}
+.text-lg {
+  font-size: 18px;
+}
+.text-xl {
+  font-size: 24px;
+}
+.text-2xl {
+  font-size: 32px;
+}
+.text-3xl {
+  font-size: 48px;
+}
+.text-4xl {
+  font-size: 64px;
+}
+.text-5xl {
+  font-size: 96px;
+}
+</style>
+</head>
+<body>
+<header class="header bg-light">
+<div class="container">
+<h1 class="logo">California.gov</h1>
+<nav class="nav">
+<li><a href="#">Getting Services</a></li>
+<li><a href="#">Doing Business</a></li>
+<li><a href="#">Working</a></li>
+<li><a href="#">Learning</a></li>
+<li><a href="#">Living</a></li>
+<li><a href="#">Visiting</a></li>
+<li><a href="#">Government</a></li>
+<li><a href="#">Search</a></li>
+</nav>
+<ul class="actions">
+<li><a href="#">State Agencies</a></li>
+<li><a href="#"><i class="fa fa-map-marker"></i> Set Location</a></li>
+<li><a href="#">Contact Us</a></li>
+<li><a href="#"><i class="fa fa-language"></i> Translate</a></li>
+<li><a href="#"><i class="fa fa-cog"></i> Settings</a></li>
+</ul>
+</div>
+</header>
+<div class="content">
+<div class="container">
+<div class="sidebar">
+<div class="card">
+<img alt="Image 1" src="placeholder.png"/>
+<h3>CalFile - File return for free</h3>
+<p><a class="btn btn-primary" href="#">Learn More</a></p>
+</div>
+<div class="card">
+<img alt="Image 2" src="placeholder.png"/>
+<h3>Get COVID-19 Information and Help</h3>
+<p><a class="btn btn-primary" href="#">Learn More</a></p>
+</div>
+<div class="card">
+<img alt="Image 3" src="placeholder.png"/>
+<h3>Get Digital Vaccine Record</h3>
+<p><a class="btn btn-primary" href="#">Learn More</a></p>
+</div>
+<div class="card">
+<img alt="Image 4" src="placeholder.png"/>
+<h3>Get Disaster Relief Assistance</h3>
+<p><a class="btn btn-primary" href="#">Learn More</a></p>
+</div>
+</div>
+<div class="main">
+<h2 class="text-center">More Services</h2>
+<div class="card">
+<div class="container">
+<div class="sidebar">
+<div class="card">
+<div class="text-center">
+<img alt="Image 5" src="placeholder.png"/>
+<h3>Gavin Newsom</h3>
+<p>California Governor</p>
+<p><a class="btn btn-secondary" href="#">Visit Governor's Website</a></p>
+</div>
+</div>
+</div>
+<div class="main">
+<h3 class="text-center text-primary text-bold">39+</h3>
+<p class="text-center">Million people as of July 2015</p>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="container">
+<div class="sidebar">
+<div class="card">
+<div class="text-center">
+<img alt="Image 6" src="placeholder.png"/>
+<h3>Eleni Kounalakis</h3>
+<p>California Lt. Governor</p>
+<p><a class="btn btn-secondary" href="#">Visit Lieutenant Governor's Website</a></p>
+</div>
+</div>
+</div>
+<div class="main">
+<h3 class="text-center text-primary text-bold">65+</h3>
+<p class="text-center">Million annual visitors</p>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="container">
+<div class="sidebar">
+<div class="card">
+<img alt="Image 7" src="placeholder.png"/>
+</div>
+</div>
+<div class="main">
+<h3 class="text-center text-primary text-bold">5th</h3>
+<p class="text-center">Largest Economy in the World</p>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="container">
+<div class="sidebar">
+<div class="card">
+<img alt="Image 8" src="placeholder.png"/>
+</div>
+</div>
+<div class="main">
+<h3 class="text-center text-primary text-bold">19+</h3>
+<p class="text-center">Million civilians in Labor Force</p>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="container">
+<div class="sidebar">
+<div class="card">
+<img alt="Image 9" src="placeholder.png"/>
+</div>
+</div>
+<div class="main">
+<h2>Disaster Resources</h2>
+<p>California has been hit with devastating wildfires and other natural disasters in both the northern and southern parts of the state. If you need more information about recovery or resources visit the following resources:</p>
+<div class="container">
+<button class="btn btn-primary mr-1">Emergency Services</button>
+<button class="btn btn-primary mr-1">Wild Fire Recovery</button>
+<button class="btn btn-primary">Disaster Assistance</button>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="container">
+<div class="sidebar">
+<div class="card">
+<img alt="Image 10" src="placeholder.png"/>
+</div>
+</div>
+<div class="main">
+<h2 class="text-3xl text-primary text-bold">1500+</h2>
+<p class="text-center">Data Sets</p>
+</div>
+</div>
+</div>
+<div class="card">
+<h2>California believes in the power of unlocking government data.</h2>
+<p class="text-center"><a class="btn btn-primary" href="#">Visit Open Data Portal</a></p>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-primary p-1">
+<div class="container">
+<p class="text-center">Did you find what you were looking for?</p>
+<div class="container">
+<button class="btn btn-secondary mr-1">Yes</button>
+<button class="btn btn-secondary">No</button>
+</div>
+</div>
+</div>
+<footer class="footer">
+<div class="container">
+<div class="container">
+<div class="sidebar">
+<div class="card">
+<h3>Campaigns</h3>
+<ul>
+<li><a href="#">Register to Vote</a></li>
+<li><a href="#">Save Our Water</a></li>
+<li><a href="#">Flex Alert</a></li>
+</ul>
+</div>
+</div>
+<div class="sidebar">
+<div class="card">
+<h3>Alerts</h3>
+<ul>
+<li><a href="#">Amber Alert</a></li>
+<li><a href="#">Cal Alerts</a></li>
+<li><a href="#">My Hazards</a></li>
+</ul>
+</div>
+</div>
+<div class="sidebar">
+<div class="card">
+<h3>About</h3>
+<ul>
+<li><a href="#">Governor</a></li>
+<li><a href="#">Lt. Governor</a></li>
+<li><a href="#">California Data</a></li>
+</ul>
+</div>
+</div>
+<div class="sidebar">
+<div class="card">
+<h3>Support</h3>
+<ul>
+<li><a href="#">State Directory</a></li>
+<li><a href="#">Technical Issues</a></li>
+</ul>
+</div>
+</div>
+</div>
+<p>© 2024 State of California</p>
+<p><a href="#">Back to Top</a> | <a href="#">Sitemap</a> | <a href="#">Accessibility</a> | <a href="#">Conditions of Use</a> | <a href="#">Privacy Policy</a> | <a href="#">Contact Us</a></p>
+<p><a href="#">Website Accessibility Certification</a></p>
+</div>
+</footer>
+</body>
+</html>
+</p></body></html>

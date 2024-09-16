@@ -1,0 +1,338 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+        }
+        
+        header, footer {
+            background-color: #1f1f2e;
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        .content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .section.dark {
+            background-color: #1f1f2e;
+            color: white;
+        }
+
+        .section.dark h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .section.dark p {
+            margin-bottom: 20px;
+        }
+
+        .section.dark img {
+            max-width: 100%;
+        }
+
+        .button {
+            background-color: #02b673;
+            color: white;
+            padding: 15px 25px;
+            border: none;
+            text-align: center;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 15px;
+            text-decoration: none;
+        }
+
+        .features {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 40px;
+        }
+
+        .features .feature {
+            flex-basis: 24%;
+            text-align: left;
+        }
+
+        .features .feature h3 {
+            font-size: 18px;
+        }
+
+        .pricing {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            margin-top: 40px;
+            gap: 20px;
+        }
+
+        .pricing .plan {
+            border: 1px solid #ccc;
+            padding: 20px;
+            text-align: center;
+            flex-basis: 30%;
+            position: relative;
+        }
+
+        .pricing .plan.popular {
+            border-color: #02b673;
+            background-color: #e6f9f2;
+        }
+
+        .pricing .plan h3 {
+            margin-bottom: 10px;
+        }
+
+        .pricing .plan .price {
+            font-size: 32px;
+            color: #02b673;
+            margin-bottom: 20px;
+        }
+
+        .pricing .plan p {
+            margin-bottom: 20px;
+        }
+        
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            text-align: left;
+            background-color: #1f1f2e;
+            color: white;
+        }
+
+        .footer .column {
+            width: 20%;
+        }
+
+        .footer .column ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .footer .column ul li {
+            margin-bottom: 8px;
+        }
+
+        .footer .social {
+            text-align: right;
+        }
+
+        .footer .social ul {
+            display: inline-block;
+            padding: 0;
+        }
+
+        .footer .social ul li {
+            display: inline;
+            margin-left: 15px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <div>μTorrent</div>
+        <nav>
+            <div>Products</div>
+            <div>Forum</div>
+            <div>Languages</div>
+        </nav>
+    </header>
+
+    <div class="section dark">
+        <div class="content">
+            <h2>μTorrent Web</h2>
+            <p>Play torrents while you download. Ideal for new users.</p>
+            <a href="#" class="button">FREE DOWNLOAD</a>
+            <img src="placeholder.png" alt="Image">
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="content">
+            <h2>μTorrent Classic</h2>
+            <p>A very tiny desktop torrent client for experienced users.</p>
+            <a href="#" class="button">FREE DOWNLOAD</a>
+            <img src="placeholder.png" alt="Image">
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="content">
+            <h2>Features</h2>
+            <p>μTorrent Classic Torrent Client Features</p>
+            <div class="features">
+                <div class="feature">
+                    <h3>Download torrents in bulk</h3>
+                    <p>μTorrent Classic enables simultaneous torrent downloads that you can manage in a single location.</p>
+                </div>
+                <div class="feature">
+                    <h3>Optimize your bandwidth</h3>
+                    <p>μTorrent Classic auto-adjusts bandwidth usage, based on your network and internet connection, to ensure fast downloads.</p>
+                </div>
+                <div class="feature">
+                    <h3>Schedule your downloads</h3>
+                    <p>Set the day and time for your torrent downloads to start, stop or seed.</p>
+                </div>
+                <div class="feature">
+                    <h3>Remotely connect to μTorrent Classic</h3>
+                    <p>Add torrents to μTorrent Classic remotely from a web browser on any device.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="content">
+            <h2>Premium</h2>
+            <p>Go Pro for Added Security and No Distractions.</p>
+            <div class="pricing">
+                <div class="plan">
+                    <h3>PRO+VPN</h3>
+                    <p>Privacy Online</p>
+                    <div class="price">LIMITED TIME ONLY<br>30% OFF<br>List Price: $69.95</div>
+                    <p>per year</p>
+                    <a href="#" class="button">WEB</a>
+                    <a href="#" class="button">CLASSIC</a>
+                </div>
+                <div class="plan popular">
+                    <h3>PRO</h3>
+                    <p>Enhanced Security</p>
+                    <div class="price">LIMITED TIME ONLY<br>30% OFF<br>List Price: $19.95</div>
+                    <p>per year</p>
+                    <a href="#" class="button">WEB</a>
+                    <a href="#" class="button">CLASSIC</a>
+                </div>
+                <div class="plan">
+                    <h3>AD-FREE</h3>
+                    <p>No Distractions</p>
+                    <div class="price">$4.95</div>
+                    <p>per year</p>
+                    <a href="#" class="button">WEB</a>
+                    <a href="#" class="button">CLASSIC</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section dark">
+        <div class="content">
+            <h2>Mobile</h2>
+            <p>Learn more About our Mobile Torrent Application.</p>
+            <img src="placeholder.png" alt="Image">
+            <h2>μTorrent Android</h2>
+            <p>Get the #1 torrent downloader on Google Play with over 100 million installs! With μTorrent Android you can download torrent files or magnet links from your Android smartphone or tablet. Here's a snapshot of torrent downloader with no ads:<br><br>• Download torrents and magnet links<br>• Choose your file download location<br>• Files auto-imported</p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer">
+            <div class="column">
+                <h3>Company</h3>
+                <ul>
+                    <li>About</li>
+                    <li>Contact</li>
+                    <li>Press</li>
+                    <li>Jobs</li>
+                    <li>Blog</li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>Downloads</h3>
+                <ul>
+                    <li>Windows</li>
+                    <li>Mac</li>
+                    <li>Android</li>
+                    <li>Linux</li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>Support</h3>
+                <ul>
+                    <li>Help</li>
+                    <li>Forum</li>
+                    <li>Site Feedback</li>
+                </ul>
+            </div>
+            <div class="social">
+                <h3>Social</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>Discord</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="column">
+                <h3>Languages</h3>
+                <ul>
+                    <li>Español (ES) / Español (LA)</li>
+                    <li>Français (FR)</li>
+                    <li>Italiano (IT)</li>
+                    <li>Deutsch (DE)</li>
+                    <li>Português (Brasileiro)</li>
+                    <li>Русский (RU)</li>
+                    <li>한국어 (KO)</li>
+                    <li>中文(简体)</li>
+                    <li>日本語 (JA)</li>
+                    <li>中文(繁體)</li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>Torrents</h3>
+                <ul>
+                    <li>Télécharger μTorrent</li>
+                    <li>μTorrent Pro</li>
+                    <li>Pobierz μTorrent</li>
+                    <li>μTorrent Android APK</li>
+                    <li>Torrent Downloaden</li>
+                    <li>Torrent Download</li>
+                    <li>Baixar Torrent</li>
+                    <li>Программа для скачивания торрентов</li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>Web Partner</h3>
+                <ul>
+                    <li>CNET Download</li>
+                </ul>
+            </div>
+        </div>
+        <p>Version 1.1.2 © 2024 μTorrent is a trademark of BitTorrent Limited.</p>
+        <p>Privacy Policy | Terms of Use</p>
+    </footer>
+
+</body>
+</html>

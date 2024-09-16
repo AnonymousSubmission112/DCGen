@@ -1,0 +1,434 @@
+<html><body><p>
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Replicated Webpage</title>
+<style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+      background-color: white;
+      border-bottom: 1px solid #ccc;
+    }
+    .header img {
+      height: 30px;
+      vertical-align: middle;
+    }
+    .menu {
+      display: flex;
+      align-items: center;
+    }
+    .menu a {
+      color: #444;
+      text-decoration: none;
+      margin: 0 10px;
+      font-size: 14px;
+    }
+    .get-started {
+      background-color: #0073aa;
+      color: white;
+      padding: 6px 14px;
+      border-radius: 4px;
+      text-decoration: none;
+      font-size: 14px;
+    }
+    .container {
+      width: 100%;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+    .title {
+      font-size: 2.5rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+    .image {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 2rem auto;
+    }
+    .link {
+      color: #0073aa;
+      text-decoration: none;
+      font-size: 1rem;
+      margin-top: 1rem;
+      display: inline-block;
+      text-align: center;
+      display: block;
+    }
+    .link:hover {
+      text-decoration: underline;
+    }
+    .section-container {
+      background-color: #f5f5f5;
+      padding: 50px 20px;
+    }
+    .grid-container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+    .grid-item {
+      background-color: white;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      width: 30%;
+      box-sizing: border-box;
+      text-align: center;
+    }
+    .grid-item img {
+      width: 100%;
+      height: auto;
+    }
+    .grid-item h3 {
+      font-size: 18px;
+      margin: 20px 0 10px;
+    }
+    .grid-item p {
+      font-size: 14px;
+      color: #666;
+    }
+    .button-link {
+      color: blue;
+      text-decoration: none;
+      margin-top: 10px;
+      display: inline-block;
+      text-align: center;
+      display: block;
+    }
+    .highlight-section {
+      text-align: center;
+      padding: 20px 40px;
+    }
+    .highlight-section h3 {
+      font-size: 20px;
+      margin: 20px 0;
+    }
+    .highlight-section img {
+      width: 50%;
+      height: auto;
+    }
+    .highlight-section .cta-button {
+      display: inline-block;
+      margin: 20px 0;
+      padding: 10px 20px;
+      background-color: #007cba;
+      color: #fff;
+      text-decoration: none;
+    }
+    .section {
+      background-color: #1E1E1E;
+      color: white;
+      padding: 50px 20px;
+      text-align: center;
+    }
+    .section h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+    .icons img {
+      margin: 0 10px;
+    }
+    .image-preview {
+      width: 90%;
+      max-width: 300px;
+      margin: 30px auto;
+    }
+    .button {
+      background-color: #0073AA;
+      color: white;
+      padding: 15px 25px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 10px;
+      font-size: 16px;
+      border-radius: 4px;
+    }
+    .content-section {
+      display: flex;
+      justify-content: space-between;
+      margin: 40px 0;
+    }
+    .content-box {
+      width: 32%;
+      text-align: center;
+    }
+    .content-box img {
+      width: 100%;
+      height: auto;
+    }
+    .content-box h2 {
+      font-size: 16px;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+    .content-box p {
+      font-size: 14px;
+      color: #666;
+    }
+    .container {
+      padding: 20px;
+    }
+    .content {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+    .text-section h2 {
+      font-size: 2.5rem;
+      margin: 0 0 20px;
+      font-weight: 300;
+    }
+    .text-section p {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #666;
+      margin: 0 0 20px;
+    }
+    .text-section a {
+      font-size: 1rem;
+      color: #0073aa;
+      text-decoration: none;
+    }
+    .text-section a:hover {
+      text-decoration: underline;
+    }
+    .image-section img {
+      max-width: 300px;
+      height: auto;
+    }
+    .news-section {
+      background-color: #f4f5f7;
+      padding: 40px 20px;
+    }
+    .news-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .news-header h2 {
+      font-size: 24px;
+      margin: 0;
+    }
+    .news-header a {
+      color: #0073aa;
+      text-decoration: none;
+    }
+    .news-grid {
+      display: flex;
+      margin-top: 20px;
+    }
+    .news-item {
+      flex: 1;
+      margin-right: 20px;
+    }
+    .news-item:last-child {
+      margin-right: 0;
+    }
+    .news-item h3 {
+      font-size: 16px;
+    }
+    .news-item p {
+      color: #777;
+      margin: 5px 0;
+    }
+    .footer-container {
+      background-color: #1C1E1E;
+      color: #FFFFFF;
+      padding: 50px;
+      text-align: center;
+    }
+    .footer-container .title {
+      font-size: 3em;
+      font-weight: bold;
+      margin: 0;
+    }
+    .footer-container .subtitle {
+      margin-top: 20px;
+      font-size: 1em;
+      max-width: 600px;
+    }
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 50px;
+    }
+    .links,
+    .social {
+      list-style: none;
+      padding: 0;
+    }
+    .links li,
+    .social li {
+      margin-bottom: 10px;
+    }
+    .links a,
+    .social a {
+      color: #FFFFFF;
+      text-decoration: none;
+    }
+    .links a:hover,
+    .social a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+<div class="header">
+<div class="logo">
+<img alt="Logo" src="placeholder.png"/>
+</div>
+<div class="menu">
+<a href="#">Showcase</a>
+<a href="#">Hosting</a>
+<a href="#">Themes</a>
+<a href="#">Learn</a>
+<a href="#">Community</a>
+<a href="#">About</a>
+</div>
+<a class="get-started" href="#">Get WordPress</a>
+</div>
+<div class="container">
+<h1 class="title">Meet WordPress</h1>
+<img alt="Placeholder Image" class="image" src="placeholder.png">
+<a class="link" href="#">Powerful yet simple. We hope you enjoy using it.</a>
+</img></div>
+<div class="section-container">
+<div class="grid-container">
+<div class="grid-item">
+<img alt="Placeholder Image" src="placeholder.png"/>
+<h3>Design</h3>
+<p>Create a beautiful, modern website with customizable themes and APIs.</p>
+</div>
+<div class="grid-item">
+<img alt="Placeholder Image" src="placeholder.png"/>
+<h3>Build</h3>
+<p>Launch your site on a fast, reliable network with a scalable infrastructure.</p>
+</div>
+<div class="grid-item">
+<img alt="Placeholder Image" src="placeholder.png"/>
+<h3>Extend</h3>
+<p>Add on extra functionalities to your site with plugins and APIs.</p>
+</div>
+</div>
+</div>
+<div class="highlight-section">
+<h3>See what's new</h3>
+<p>Discover the building experience made easier with blocks.</p>
+<img alt="placeholder" src="placeholder.png"/>
+<div>
+<a class="cta-button" href="#">Discover WordPress 6.3</a>
+</div>
+</div>
+<div class="section">
+<h2>One platform, a universe of possibilities</h2>
+<div class="icons">
+<img alt="Icon 1" src="placeholder.png">
+<img alt="Icon 2" src="placeholder.png">
+<img alt="Icon 3" src="placeholder.png">
+<img alt="Icon 4" src="placeholder.png">
+<img alt="Icon 5" src="placeholder.png"/>
+</img></img></img></img></div>
+<img alt="Preview Image" class="image-preview" src="placeholder.png"/>
+<br/>
+<a class="button" href="#">Explore the Showcase</a>
+</div>
+<div class="container">
+<div class="content-section">
+<div class="content-box">
+<img alt="placeholder" src="placeholder.png"/>
+<h2>Design</h2>
+<p>Create any website with blocks. Design with a grid system, custom typography, percentage-based dimensions, and dynamic styling.</p>
+</div>
+<div class="content-box">
+<img alt="placeholder" src="placeholder.png"/>
+<h2>Build</h2>
+<p>Take back your site with just a few blocks to start building your pages. Personalize headers and footers and edit all areas of your site.</p>
+</div>
+<div class="content-box">
+<img alt="placeholder" src="placeholder.png"/>
+<h2>Extend</h2>
+<p>Build upon an extensive open-source tool. Add flexibility with block patterns and interactivity with native scripting libraries.</p>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="content">
+<div class="text-section">
+<h2>Meet the WordPress community</h2>
+<p>Explore the vibrant, global community of users dedicated to helping each other out. There are numerous groups of like-minded users who will happily offer support and share their custom solutions for anything you can imagine.</p>
+<p>Attend a <a href="#">Meetup</a> or a <a href="#">WordCamp</a> event and get to know your fellow WordPress enthusiasts.</p>
+<a href="#">Find out more »</a>
+</div>
+<div class="image-section">
+<img alt="Community Image" src="placeholder.png"/>
+</div>
+</div>
+<div class="content">
+<div class="text-section">
+<h2>Meet the WordPress community</h2>
+<p>Bring the best talent to deliver best-in-class solutions and unparalleled support for your site. Our global community of whimsical thinkers and creatives is what makes our platform so powered.</p>
+<p><a href="#">Find out how to get involved</a></p>
+<h2>Build for yourself, not by yourself</h2>
+<p>Relish in various individual developers to design your suite. Pick independent developers, professional agencies, or help from different partners to get the site you envision.</p>
+<p><a href="#">See different ways you can help yourself</a></p>
+</div>
+<div class="image-section">
+<img alt="Placeholder Image" src="placeholder.png"/>
+</div>
+</div>
+</div>
+<div class="news-section">
+<div class="news-header">
+<h2>Latest WordPress news</h2>
+<a href="#">More news</a>
+</div>
+<div class="news-grid">
+<div class="news-item">
+<h3>WordPress 6.2.2 Maintenance Release</h3>
+<p>MAY 20, 2023</p>
+</div>
+<div class="news-item">
+<h3>New WordPress is Creating a Faster Web</h3>
+<p>MAY 14, 2023</p>
+</div>
+<div class="news-item">
+<h3>WordPress 6.2.1 Maintenance and...</h3>
+<p>APR 19, 2023</p>
+</div>
+</div>
+</div>
+<div class="footer-container">
+<h1 class="title">Get started</h1>
+<p class="subtitle">
+        Find everything you need to get started, download the platform, find hosting, and make a move with your big or small ideas today.
+    </p>
+<div class="footer">
+<ul class="links">
+<li><a href="#">Get Started</a></li>
+<li><a href="#">Download</a></li>
+<li><a href="#">Hosting</a></li>
+<li><a href="#">Create a Site</a></li>
+</ul>
+<ul class="social">
+<li><a href="#">Facebook</a></li>
+<li><a href="#">Twitter</a></li>
+<li><a href="#">Instagram</a></li>
+</ul>
+</div>
+</div>
+</body>
+</html>
+</p></body></html>

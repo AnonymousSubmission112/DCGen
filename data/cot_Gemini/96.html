@@ -1,0 +1,299 @@
+<html><body><p>
+<!DOCTYPE html>
+
+<html>
+<head>
+<style>
+body {
+  background-color: #f2f2f2;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .logo {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.header .search {
+  display: flex;
+  align-items: center;
+}
+
+.header .search input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.header .search button {
+  padding: 8px 15px;
+  background-color: #fff;
+  color: #007bff;
+  border: 1px solid #007bff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.header .account {
+  display: flex;
+  align-items: center;
+}
+
+.header .account a {
+  color: #fff;
+  margin-right: 15px;
+  text-decoration: none;
+}
+
+.header .account a:hover {
+  text-decoration: underline;
+}
+
+.header .account .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.header .account .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.header .account .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.header .account .dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.header .account .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.nav a {
+  color: #333;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.item {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+}
+
+.item img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.item .title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.item .price {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.item .price span {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.item .button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.footer {
+  background-color: #007bff;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer .copyright {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.centered {
+  text-align: center;
+}
+
+.terms {
+  font-size: 12px;
+  color: #fff;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="header">
+<div class="logo">
+<img alt="Walmart Logo" height="20" src="placeholder.png"/>
+</div>
+<div class="search">
+<input placeholder="Search everything at Walmart online and in store" type="text"/>
+<button>Search</button>
+</div>
+<div class="account">
+<a href="#">Reorder</a>
+<a href="#">My Items</a>
+<a href="#">Sign In</a>
+<div class="dropdown">
+<a href="#">Account</a>
+<div class="dropdown-content">
+<a href="#">My Account</a>
+<a href="#">Order History</a>
+<a href="#">Sign Out</a>
+</div>
+</div>
+</div>
+</div>
+<div class="nav">
+<a href="#">Departments</a>
+<a href="#">Services</a>
+</div>
+<div class="content">
+<div class="item">
+<img alt="Product Image" src="placeholder.png"/>
+<div class="title">More splash for your buck</div>
+<a class="button" href="#">Shop now</a>
+</div>
+<div class="item">
+<img alt="Product Image" src="placeholder.png"/>
+<div class="title">Up to $500 off fridges &amp; beyond</div>
+<a class="button" href="#">Shop appliances</a>
+</div>
+<div class="item">
+<img alt="Product Image" src="placeholder.png"/>
+<div class="title">Pedal, scoot &amp; save big</div>
+<a class="button" href="#">Shop now</a>
+</div>
+<div class="item">
+<img alt="Product Image" src="placeholder.png"/>
+<div class="title">Summer party musts</div>
+<a class="button" href="#">Shop now</a>
+</div>
+<div class="item">
+<div class="price">$499<br/><sup>$359</sup></div>
+<img alt="Product Image" src="placeholder.png"/>
+<div class="title">Better rest, for way less</div>
+<a class="button" href="#">Shop mattresses</a>
+</div>
+<div class="item">
+<img alt="Product Image" src="placeholder.png"/>
+<div class="title">Up to 30% off</div>
+<a class="button" href="#">Shop now</a>
+</div>
+<div class="item">
+<div class="price">$399.99<br/><sup>$129<sup>99</sup></sup></div>
+<div class="title">Walmart+ members save big with free delivery from stores</div>
+<div class="terms">Terms apply.<br/><a href="#">Join Walmart+</a></div>
+</div>
+<div class="item">
+<div class="price">$298<br/><sup>$198</sup></div>
+</div>
+</div>
+<div class="centered">
+    We'd love to hear what you think!
+    <button class="button">Give feedback</button>
+</div>
+<div class="footer">
+<a href="#">All Departments</a>
+<a href="#">Store Directory</a>
+<a href="#">Careers</a>
+<a href="#">Our Company</a>
+<a href="#">Sell on Walmart.com</a>
+<a href="#">Help</a>
+<a href="#">Product Recalls</a>
+<a href="#">Accessibility</a>
+<a href="#">Tax Exempt Program</a>
+<a href="#">Get the Walmart App</a>
+<a href="#">Sign-up for Email</a>
+<a href="#">Safety Data Sheet</a>
+<a href="#">Terms of Use</a>
+<a href="#">Privacy &amp; Security</a>
+<a href="#">California Supply Chain Act</a>
+<a href="#">Your Privacy Choices</a>
+<a href="#">Notice at Collection</a>
+<a href="#">NV Privacy Notice</a>
+<a href="#">WA Privacy Notice</a>
+<a href="#">Request My Personal Information</a>
+<a href="#">Brand Shop Directory</a>
+<a href="#">Pharmacy</a>
+<a href="#">Walmart Business</a>
+<a href="#">#WYWYK</a>
+<a href="#">Delete Account</a>
+<div class="copyright">© 2024 Walmart. All Rights Reserved.</div>
+</div>
+</div>
+</body>
+</html>
+</p></body></html>

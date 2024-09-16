@@ -1,0 +1,476 @@
+<html><body><p>
+<!DOCTYPE html>
+
+<html>
+<head>
+<style>
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background-color: #fff;
+}
+header {
+  background-color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo img {
+  width: 100px;
+  height: 100px;
+}
+.logo h1 {
+  margin: 0 0 0 10px;
+  font-size: 24px;
+}
+nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+nav a {
+  text-decoration: none;
+  color: #000;
+}
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px;
+}
+.hero .text {
+  max-width: 500px;
+}
+.hero .text h2 {
+  font-size: 48px;
+  margin: 0 0 20px 0;
+}
+.hero .text p {
+  font-size: 18px;
+}
+.hero .text button {
+  padding: 10px 20px;
+  background-color: #00b09b;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+}
+.features {
+  padding: 100px;
+}
+.features h2 {
+  text-align: center;
+  font-size: 36px;
+  margin: 0 0 50px 0;
+}
+.features .container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.features .container .card {
+  width: calc(33.33% - 20px);
+  padding: 20px;
+  border-radius: 10px;
+}
+.features .container .card:nth-child(1) {
+  background-color: #717579;
+}
+.features .container .card:nth-child(2) {
+  background-color: #000;
+}
+.features .container .card:nth-child(3) {
+  background-color: #8967e9;
+}
+.features .container .card .icon {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 20px 0;
+}
+.features .container .card .icon img {
+  width: 40px;
+  height: 40px;
+}
+.features .container .card h3 {
+  font-size: 24px;
+  margin: 0 0 10px 0;
+}
+.features .container .card p {
+  font-size: 16px;
+}
+.features .container .card .button {
+  padding: 10px 20px;
+  background-color: #00b09b;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  margin: 20px 0 0 0;
+}
+.features .container .list {
+  margin: 50px 0 0 0;
+}
+.features .container .list h3 {
+  font-size: 24px;
+  margin: 0 0 10px 0;
+}
+.features .container .list .item {
+  display: flex;
+  align-items: center;
+  margin: 10px 0 0 0;
+}
+.features .container .list .item img {
+  width: 40px;
+  height: 40px;
+  margin: 0 10px 0 0;
+}
+.features .container .list .item p {
+  font-size: 16px;
+  margin: 0;
+}
+.features .container .list .item .paid {
+  font-size: 12px;
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+  border-radius: 5px;
+  padding: 2px 5px;
+  margin: 0 0 0 5px;
+}
+.try-it-out {
+  background-color: #f0f2f5;
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+.try-it-out .code {
+  width: calc(50% - 70px);
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #111;
+  color: #fff;
+  font-family: monospace;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.try-it-out .code pre {
+  margin: 0;
+  background-color: #222;
+  padding: 10px;
+}
+.try-it-out .code .comment {
+  color: #999;
+}
+.try-it-out .info {
+  max-width: 400px;
+}
+.try-it-out .info h3 {
+  font-size: 36px;
+  margin: 0 0 20px 0;
+}
+.try-it-out .info .item {
+  display: flex;
+  align-items: center;
+  margin: 10px 0 0 0;
+}
+.try-it-out .info .item img {
+  width: 40px;
+  height: 40px;
+  margin: 0 10px 0 0;
+}
+.try-it-out .info .item p {
+  font-size: 16px;
+  margin: 0;
+}
+.try-it-out .info .item .button {
+  padding: 10px 20px;
+  background-color: #00b09b;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+}
+.happy-users {
+  padding: 100px;
+}
+.happy-users h2 {
+  text-align: center;
+  font-size: 36px;
+  margin: 0 0 50px 0;
+}
+.happy-users .container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.happy-users .container .card {
+  width: calc(33.33% - 20px);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+.happy-users .container .card img {
+  width: 100px;
+  height: 100px;
+  margin: 0 0 20px 0;
+}
+.happy-users .container .card h3 {
+  font-size: 24px;
+  margin: 0 0 10px 0;
+}
+.happy-users .container .card p {
+  font-size: 16px;
+}
+.cta {
+  background-color: #f0f2f5;
+  padding: 100px;
+  text-align: center;
+}
+.cta h2 {
+  font-size: 36px;
+  margin: 0 0 20px 0;
+}
+.cta button {
+  padding: 10px 20px;
+  background-color: #00b09b;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+}
+footer {
+  background-color: #111;
+  color: #fff;
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .col {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+footer a {
+  text-decoration: none;
+  color: #fff;
+}
+footer .copyright {
+  font-size: 12px;
+}
+</style>
+</head>
+<body>
+<header>
+<div class="logo">
+<img alt="Logo" src="placeholder.png"/>
+<h1>Documentation simplified</h1>
+</div>
+<nav>
+<a href="#">Product</a>
+<a href="#">Pricing</a>
+<a href="#">Resources</a>
+<a href="#">Log in</a>
+<a class="button" href="#">Sign up</a>
+</nav>
+</header>
+<div class="hero">
+<div class="text">
+<h2>Documentation simplified</h2>
+<p>Build, host, and share documentation, all with a single platform.</p>
+<button>Sign up now</button>
+</div>
+<img alt="Hero Image" src="placeholder.png"/>
+</div>
+<div class="features">
+<h2>Features</h2>
+<div class="container">
+<div class="card">
+<div class="icon">
+<img alt="Icon" src="placeholder.png"/>
+</div>
+<h3>Easy previews and deploys</h3>
+<p>Preview changes on every commit to your pull requests. Release documentation to your users on each merge.</p>
+</div>
+<div class="card">
+<div class="icon">
+<img alt="Icon" src="placeholder.png"/>
+</div>
+<h3>Ideal developer experience</h3>
+<p>Write documentation without changing your workflow or your docs as code approach.</p>
+</div>
+<div class="card">
+<div class="icon">
+<img alt="Icon" src="placeholder.png"/>
+</div>
+<h3>Work privately or publicly</h3>
+<p>Easily share within your team or with the whole world. Manage permissions yourself or automatically with GitHub.</p>
+</div>
+</div>
+<div class="list">
+<h3>Supports any doc tool</h3>
+<p>Integrated support for <a href="#">Sphinx</a>, <a href="#">MkDocs</a>, <a href="#">Jupyter Book</a>. Flexible enough to work with any documentation tool.</p>
+</div>
+<div class="list">
+<h3>Integrated search</h3>
+<p>Easily search all your docs via our dashboard, and offer your users a more powerful search with our search API.</p>
+</div>
+<div class="list">
+<h3>Pull request previews</h3>
+<p>Preview each pull request before releasing any changes, allowing for fast collaboration across your organization.</p>
+</div>
+<div class="list">
+<h3>Versioned docs</h3>
+<p>Match your product release cycle with multiple versions of your docs. Automatically build versions from any branch or tag.</p>
+</div>
+<div class="list">
+<h3>Private repository support</h3>
+<p><span class="paid">Paid plan feature</span>Clone private repositories using a connected GitHub, GitLab, or Bitbucket account, or clone from any Git provider with an SSH key.</p>
+</div>
+<div class="list">
+<h3>Single-Sign On</h3>
+<p>Control who has access to your documentation and easily manage permissions in one place. Enable SSO with GitHub or GitLab to connect two sections of your site with integrated authentication. </p>
+</div>
+<button class="button">Discover all our features</button>
+</div>
+<div class="try-it-out">
+<h3>Upgrade your documentation with Read the Docs</h3>
+<div class="code">
+<pre>
+      <span class="comment"># .readthedocs.yaml</span>
+      <br/>
+      <span class="comment">version: 2</span>
+      <br/>
+      <span class="comment">build:</span>
+      <br/>
+      <span class="comment">os: ubuntu-22.04</span>
+      <br/>
+      <span class="comment">tools:</span>
+      <br/>
+      <span class="comment">python: "3.10"</span>
+      <br/>
+      <span class="comment"># YOU can also specify other tool versions:</span>
+      <br/>
+      <span class="comment"># nodejs: "16"</span>
+      <br/>
+      <span class="comment"># Build documentation in the docs/ directory with Sphinx</span>
+      <br/>
+      <span class="comment">sphinx:</span>
+      <br/>
+      <span class="comment">configuration: docs/conf.py</span>
+      <br/>
+      <span class="comment"># Dependencies required to build your docs</span>
+      <br/>
+      <span class="comment">python:</span>
+      <br/>
+      <span class="comment">- install:</span>
+      <br/>
+      <span class="comment">requirements: docs/requirements.txt</span>
+      <br/>
+    </pre>
+</div>
+<div class="info">
+<div class="item">
+<img alt="Icon" src="placeholder.png"/>
+<p>Create an account</p>
+<a class="button" href="#">Sign up with GitHub or your email</a>
+</div>
+<div class="item">
+<img alt="Icon" src="placeholder.png"/>
+<p>Import your project</p>
+<p>Select your existing Git repositories with a 1-click interface.</p>
+</div>
+<div class="item">
+<img alt="Icon" src="placeholder.png"/>
+<p>Add YAML config</p>
+<p>Copy this example, it probably does what you want 😉</p>
+</div>
+<div class="item">
+<img alt="Icon" src="placeholder.png"/>
+<p>Your docs build on every commit</p>
+<p>Like magic.</p>
+</div>
+</div>
+</div>
+<div class="happy-users">
+<h2>Join thousands of happy users</h2>
+<div class="container">
+<div class="card">
+<img alt="Flask" src="placeholder.png"/>
+<h3>Flask</h3>
+<p>Web Framework</p>
+<p>Flask is a Python web framework built with a small core and easy-to-extend philosophy.</p>
+</div>
+<div class="card">
+<img alt="Jupyter" src="placeholder.png"/>
+<h3>Jupyter</h3>
+<p>Data Science Environment</p>
+<p>Jupyter Notebook is a web-based interactive computational environment for creating notebook documents.</p>
+</div>
+<div class="card">
+<img alt="Godot Engine" src="placeholder.png"/>
+<h3>Godot Engine</h3>
+<p>Game Engine</p>
+<p>Godot Engine is a free and open source community-driven 2D and 3D game engine.</p>
+</div>
+</div>
+</div>
+<div class="cta">
+<h2>Get your docs online in 5 minutes.</h2>
+<button>Create an account</button>
+</div>
+<footer>
+<div class="col">
+<h3>Stay Updated</h3>
+<a href="#">Blog</a>
+<a href="#">Newsletter</a>
+<a href="#">Status</a>
+<div class="social">
+<a href="#"><img alt="Twitter" src="placeholder.png"/></a>
+<a href="#"><img alt="Discord" src="placeholder.png"/></a>
+<a href="#"><img alt="GitHub" src="placeholder.png"/></a>
+</div>
+</div>
+<div class="col">
+<h3>Learn More</h3>
+<a href="#">Documentation</a>
+<a href="#">Getting started guide</a>
+<a href="#">Configure your project</a>
+<a href="#">Comparison to GitHub Pages</a>
+<a href="#">Comparison to GitBook</a>
+<a href="#">Comparison to Cloudflare Pages</a>
+</div>
+<div class="col">
+<h3>Product</h3>
+<a href="#">Features</a>
+<a href="#">Pricing</a>
+<a href="#">Privacy Policy</a>
+<a href="#">Terms of Service</a>
+</div>
+<div class="col">
+<h3>Company</h3>
+<a href="#">About us</a>
+<a href="#">Support</a>
+<a href="#">Advertise with Us</a>
+<a href="#">Contribute</a>
+</div>
+<div class="copyright">
+<img alt="Read the Docs Logo" src="placeholder.png"/>
+<p>Copyright 2022, Read the Docs, Inc. &amp; contributors</p>
+</div>
+</footer>
+</body>
+</html>
+</p></body></html>

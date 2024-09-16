@@ -1,0 +1,221 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>jQuery</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f1f1f1;
+    }
+
+    header {
+      background-color: #0769ad;
+      color: white;
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav {
+      background-color: #0884d3;
+      padding: 10px;
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 10px;
+    }
+
+    main {
+      max-width: 960px;
+      margin: 20px auto;
+      background-color: white;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .hero {
+      background-color: #f9f9f9;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .hero-content {
+      flex: 1;
+    }
+
+    .hero-content h2 {
+      margin-top: 0;
+    }
+
+    .hero-image {
+      max-width: 200px;
+      margin-left: 20px;
+    }
+
+    .features {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+
+    .feature {
+      background-color: #f1f1f1;
+      padding: 10px;
+      text-align: center;
+      flex: 1;
+      margin: 0 10px;
+    }
+
+    .content {
+      margin-top: 20px;
+    }
+
+    .resources {
+      margin-top: 20px;
+    }
+
+    .resources h3 {
+      margin-top: 0;
+    }
+
+    .resources ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .resources li {
+      margin-bottom: 5px;
+    }
+
+    .related-projects {
+      margin-top: 20px;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    footer div {
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <img src="placeholder.png" alt="Logo">
+    </div>
+    <nav>
+      <a href="#">Programs</a>
+      <a href="#">Contribute</a>
+      <a href="#">Events</a>
+      <a href="#">Support</a>
+      <a href="#">Donate</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="hero">
+      <div class="hero-content">
+        <h2>Download jQuery</h2>
+        <p>The 1.6 and 2.x branches no longer receive patches.</p>
+        <div class="features">
+          <div class="feature">
+            <img src="placeholder.png" alt="Lightweight Footprint">
+            <h3>Lightweight Footprint</h3>
+          </div>
+          <div class="feature">
+            <img src="placeholder.png" alt="CSS3 Compliant">
+            <h3>CSS3 Compliant</h3>
+          </div>
+          <div class="feature">
+            <img src="placeholder.png" alt="Cross-Browser">
+            <h3>Cross-Browser</h3>
+          </div>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="placeholder.png" alt="jQuery Logo">
+      </div>
+    </div>
+
+    <div class="content">
+      <h2>What is jQuery?</h2>
+      <p>jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers. With a combination of versatility and extensibility, jQuery has changed the way that millions of people write JavaScript.</p>
+
+      <h3>A Brief Look</h3>
+      <h4>DOM Traversal and Manipulation</h4>
+      <p>Get the <code>&lt;button&gt;</code> element with the class 'continue' and change its HTML to 'Next Step...'</p>
+      <pre>$("button.continue").html("Next Step...");</pre>
+
+      <h4>Event Handling</h4>
+      <p>Show the #banner-message element that is hidden with <code>show()</code> when clicking the button with id 'activate'.</p>
+      <pre>
+var hiddenBox = $("#banner-message");
+$("#activate-button").on('click', function( event ) {
+  hiddenBox.show();
+});</pre>
+
+      <h4>Ajax</h4>
+      <p>Call a local server with the /api/getWeather with the query parameter <code>zipcode=97201</code> and replace the element <code>#weather-temp</code> with the returned text.</p>
+      <pre>
+$.ajax({
+  url: "/api/getWeather",
+  data: {
+    zipcode: 97201
+  },
+  success: function( result ) {
+    $("#weather-temp").html("Temperature: " + result + "&deg;F");
+  }
+});</pre>
+    </div>
+
+    <div class="resources">
+      <h3>Resources</h3>
+      <ul>
+        <li>jQuery API Documentation</li>
+        <li>jQuery Learning Center</li>
+        <li>jQuery Blog</li>
+        <li>Contribute to jQuery</li>
+        <li>Browser and Release News</li>
+      </ul>
+    </div>
+
+    <div class="related-projects">
+      <h3>Related Projects</h3>
+      <p>jQuery UI</p>
+      <p>This project is in maintenance-only mode. Learn more</p>
+      <p>jQuery Mobile</p>
+      <p>This project is deprecated. Learn more</p>
+    </div>
+  </main>
+
+  <footer>
+    <div>
+      <p>Copyright &copy; jQuery Foundation and other contributors, All rights reserved.</p>
+      <p>Code licensed under the <a href="#">MIT License</a>. Documentation licensed under <a href="#">CC BY 3.0</a>.</p>
+    </div>
+    <div>
+      <img src="placeholder.png" alt="jQuery Learning Center">
+      <img src="placeholder.png" alt="jQuery in Action">
+      <img src="placeholder.png" alt="jQuery Succinctly">
+      <img src="placeholder.png" alt="Develop by Dr. Venkat Balakrish">
+    </div>
+  </footer>
+</body>
+</html>

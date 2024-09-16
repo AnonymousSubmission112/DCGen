@@ -1,0 +1,309 @@
+<html><body><p>
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sample Webpage</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #0056a6;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center; 
+        }
+        header span {
+            font-size: 0.9em;
+        }
+        header a {
+            color: white;
+            text-decoration: none;
+        }
+        header a:hover {
+            text-decoration: underline;
+        }
+        nav {
+            background-color: white;
+            padding: 10px 0;
+            margin: 0;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: inline-block; /* changed from the initial 'flex' implementation */
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+        .main-banner {
+            background-image: url('placeholder.png');
+            background-size: cover;
+            background-position: center;
+            padding: 150px 0;
+            text-align: center;
+            color: white;
+        }
+        .main-banner h1 {
+            margin: 0;
+            font-size: 2.5em;
+            font-weight: bold;
+        }
+        .main-banner button {
+            margin-top: 20px;
+            padding: 10px 30px;
+            background-color: #0056a6;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+        .service-container {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            margin-top: -50px;
+        }
+        .services {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 200px;
+        }
+        .service-box {
+            padding: 20px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: left;
+            background-color: white;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 10px;
+            border-radius: 5px;
+            width: 100%;
+        }
+        .service-box img {
+            width: 30px;
+            height: 30px;
+        }
+        .service-box h2 {
+            font-size: 1em;
+            margin: 0;
+            color: white;
+        }
+        .service-box button {
+            background-color: #0056a6;
+            color: white;
+            padding: 5px 10px;
+            border: none;
+            cursor: pointer;
+            font-size: 0.9em;
+        }
+        .news {
+            padding: 20px;
+            text-align: center;
+        }
+        .news h2 {
+            margin-top: 0;
+            font-size: 1.5em;
+        }
+        .news-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .news-box {
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+            width: 200px;
+        }
+        .news-box h3 {
+            font-size: 1.2em;
+        }
+        .news-box p {
+            font-size: 0.9em;
+            color: #555;
+        }
+        .news-box a {
+            text-decoration: none;
+            color: #0056a6;
+            font-size: 0.9em;
+        }
+        .related-institutions {
+            background-color: #e1e1e1;
+            padding: 50px 0;
+            text-align: center;
+        }
+        .related-institutions h2 {
+            margin: 0;
+            font-size: 1.5em;
+        }
+        .institution-logos {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            gap: 20px;
+        }
+        .institution-logos img {
+            margin: 0 15px;
+            width: 100px;
+            height: auto;
+        }
+        footer {
+            background-color: #0056a6;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        footer .footer-container {
+            display: flex;
+            justify-content: space-around;
+            max-width: 1200px;
+            margin: 0 auto;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        footer div {
+            width: 30%;
+            min-width: 200px;
+        }
+        footer h3 {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+        footer p {
+            font-size: 0.9em;
+        }
+        footer a {
+            color: white;
+            text-decoration: none;
+            font-size: 0.9em;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+<header>
+<span>Idioma: <select><option>Español</option><option>English</option></select></span>
+<div>
+<span>Tel: 809-555-5111 ext. 2035, 2031</span>
+<a href="mailto:info@nic.do">info@nic.do</a>
+<a href="#">Login</a>
+</div>
+</header>
+<nav>
+<ul>
+<li><a href="#">INICIO</a></li>
+<li><a href="#">DOMINIOS</a></li>
+<li><a href="#">DOMINIOS GUBERNAMENTALES</a></li>
+<li><a href="#">POLÍTICAS</a></li>
+<li><a href="#">ACERCA DE NIC.DO</a></li>
+<li><a href="#">NOTICIAS</a></li>
+<li><a href="#">AYUDA</a></li>
+</ul>
+</nav>
+<section class="main-banner">
+<h1>Conoce a MiDominio.Do</h1>
+<button>Conoce más</button>
+</section>
+<div class="service-container">
+<div class="services">
+<div class="service-box" style="background-color: #0070ff;">
+<img alt="Buscar Dominio" src="placeholder.png"/>
+<h2>Buscar Dominio</h2>
+</div>
+<div class="service-box" style="background-color: #69be28;">
+<img alt="Registrar Dominio" src="placeholder.png"/>
+<h2>Registrar Dominio</h2>
+</div>
+<div class="service-box" style="background-color: #eb5e00;">
+<img alt="Preguntas Frecuentes" src="placeholder.png"/>
+<h2>Preguntas Frecuentes</h2>
+</div>
+<div class="service-box" style="background-color: #d91b1b;">
+<img alt="Estadísticas" src="placeholder.png"/>
+<h2>Estadísticas</h2>
+</div>
+</div>
+</div>
+<section class="news">
+<h2>NOTICIAS <a href="#">ver más</a></h2>
+<div class="news-container">
+<div class="news-box">
+<h3>Cambio a la Política de Selección de Categorías</h3>
+<p>28/04/2024</p>
+<a href="#">Leer Más</a>
+</div>
+<div class="news-box">
+<h3>Aviso de Mantenimiento 8:00 AM</h3>
+<p>28/02/2024</p>
+<a href="#">Leer Más</a>
+</div>
+<div class="news-box">
+<h3>Aviso de Mantenimiento 7:30 AM</h3>
+<p>18/12/2023</p>
+<a href="#">Leer Más</a>
+</div>
+</div>
+</section>
+<section class="related-institutions">
+<h2>INSTITUCIONES RELACIONADAS</h2>
+<div class="institution-logos">
+<img alt="Institution 1" src="placeholder.png"/>
+<img alt="Institution 2" src="placeholder.png"/>
+<img alt="Institution 3" src="placeholder.png"/>
+<img alt="Institution 4" src="placeholder.png"/>
+</div>
+</section>
+<footer>
+<div class="footer-container">
+<div>
+<h3>Acerca De NIC.DO</h3>
+<p>Historia</p>
+<p>Nuestra Tecnología</p>
+<p>Certificaciones</p>
+<p>25 Años de Delegación del .do</p>
+</div>
+<div>
+<h3>¿Necesita Ayuda?</h3>
+<p>Preguntas Frecuentes</p>
+<p>Contactenos</p>
+</div>
+<div>
+<h3>Contactos</h3>
+<p>NIC.DO</p>
+<p>PUCMM</p>
+<p>Tel: 809-555-5111 ext. 2035, 2031</p>
+<p>Fax: 1-809-555-5112</p>
+<p>Email: info@nic.do</p>
+</div>
+</div>
+<p>Copyright © PUCMM - NIC.DO. All rights reserved</p>
+<p><a href="#">Privacy Policy</a></p>
+</footer>
+</body>
+</html>
+</p></body></html>

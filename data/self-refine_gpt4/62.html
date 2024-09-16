@@ -1,0 +1,266 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>iCloud for Developers</title>
+<link href="https://fonts.googleapis.com/css2?family=Arial:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  .header {
+    background-color: #000;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  .nav-bar {
+    background-color: #f8f8f8;
+    padding: 15px 0;
+    text-align: center;
+  }
+  
+  .nav-bar a {
+    color: #000;
+    text-decoration: none;
+    margin: 0 15px;
+  }
+
+  .blue-banner {
+    background-color: #0070c9;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  .main-content {
+    text-align: center;
+    padding: 50px 20px;
+  }
+
+  .main-content h1 {
+    font-size: 2.5em;
+    margin: 20px 0;
+  }
+
+  .main-content p {
+    font-size: 1.2em;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .image-placeholder {
+    width: 80%;
+    max-width: 800px;
+    margin: 30px auto;
+    background-color: #e0e0e0;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .image-placeholder img {
+    max-width: 100px;
+  }
+
+  .content-section {
+    width: 80%;
+    max-width: 800px;
+    margin: 40px auto;
+    text-align: left;
+  }
+
+  .content-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 40px;
+  }
+
+  .content-item img {
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+  }
+
+  .content-item h2 {
+    font-size: 1.5em;
+    margin: 0;
+  }
+
+  .content-item p {
+    margin: 10px 0;
+  }
+
+  .content-item a {
+    color: #0070c9;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  .footer {
+    background-color: #f8f8f8;
+    padding: 30px 20px;
+    text-align: center;
+  }
+
+  .footer .sections {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+
+  .footer .sections ul {
+    list-style-type: none;
+    margin: 10px;
+    padding: 0;
+  }
+
+  .footer .sections ul li {
+    margin: 5px 0;
+  }
+
+  .footer .sections ul li a {
+    color: #000;
+    text-decoration: none;
+  }
+
+  .footer-bottom {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #666;
+  }
+
+  .footer-bottom a {
+    color: #0070c9;
+    text-decoration: none;
+  }
+</style>
+</head>
+<body>
+
+<header class="header">
+  Header Content
+</header>
+
+<nav class="nav-bar">
+  <a href="#">News</a>
+  <a href="#">Discover</a>
+  <a href="#">Design</a>
+  <a href="#">Develop</a>
+  <a href="#">Distribute</a>
+  <a href="#">Support</a>
+  <a href="#">Account</a>
+</nav>
+
+<div class="blue-banner">
+  <p>Watch the latest videos about iCloud and CloudKit</p>
+</div>
+
+<main class="main-content">
+  <div class="image-placeholder">
+    <img src="placeholder.png" alt="Placeholder">
+  </div>
+  <h1>iCloud for Developers</h1>
+  <p>iCloud securely stores your users' data and seamlessly keeps it up to date across their devices, so they'll have a great experience no matter which device they use. And with powerful and intuitive tools, such as CloudKit Console, you can focus on delivering great apps while iCloud handles the details of scaling, consistency, and security.</p>
+</main>
+
+<div class="content-section">
+  <div class="content-item">
+    <img src="placeholder.png" alt="icon">
+    <div>
+      <h2>Build apps using CloudKit</h2>
+      <p>Develop apps with world-class authentication, privacy, security, and syncing using the same technologies used by Apple in its most popular cloud offerings. CloudKit provides a robust framework and a comprehensive set of tools that make it easy for you to develop powerful apps that seamlessly sync across iOS, iPadOS, macOS, tvOS, watchOS, and the web.</p>
+      <a href="#">Learn about CloudKit.</a>
+    </div>
+  </div>
+  
+  <div class="content-item">
+    <img src="placeholder.png" alt="icon">
+    <div>
+      <h2>Gain insights with Telemetry</h2>
+      <p>Tailor your apps for responsiveness and relevance to your users by measuring user activity. CloudKit database usage, and trends over time. With Telemetry’s monitoring and analytics features, you can visualize aggregate behavior across all of your users’ devices for all of the data coming into your container.</p>
+      <a href="#">Learn about Telemetry.</a>
+    </div>
+  </div>
+
+  <div class="content-item">
+    <img src="placeholder.png" alt="icon">
+    <div>
+      <h2>Access logs that respect user privacy</h2>
+      <p>Easily collect, process, and analyze data while keeping your users' data private. CloudKit provides detailed real-time and historical logs of server activity. Log events don’t contain any personal or private data, so you’ll have everything you need to debug and analyze your app while ensuring sensitive user data stays safe and secure.</p>
+      <a href="#">Learn about logs.</a>
+    </div>
+  </div>
+
+  <div class="content-item">
+    <img src="placeholder.png" alt="icon">
+    <div>
+      <h2>Send, validate, and monitor push notifications</h2>
+      <p>Use the interactive web interface to send test push notifications to Apple devices through the Apple Push Notifications service (APNs). You can access logs that provide insights into the delivery process and leverage tools to generate and validate tokens. Aggregated insights give you insights into various statistics for notifications, including a detailed breakdown based on push type and priority.</p>
+      <a href="#">Learn about Push Notifications.</a>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="image-placeholder">
+    <img src="placeholder.png" alt="Placeholder">
+  </div>
+  <h2>Resources</h2>
+  <p>Find the tools and documentation you need to build apps that use CloudKit.</p>
+  <a href="#">View resources.</a>
+
+  <div class="sections">
+    <ul>
+      <li><strong>Platforms</strong></li>
+      <li><a href="#">iOS</a></li>
+      <li><a href="#">iPadOS</a></li>
+      <li><a href="#">macOS</a></li>
+      <li><a href="#">tvOS</a></li>
+      <li><a href="#">watchOS</a></li>
+      <li><a href="#">Safari & Web</a></li>
+    </ul>
+    <ul>
+      <li><strong>Topics & Technologies</strong></li>
+      <li><a href="#">Accessibility</a></li>
+      <li><a href="#">Account</a></li>
+      <li><a href="#">App Store</a></li>
+      <li><a href="#">Business</a></li>
+      <li><a href="#">Design</a></li>
+      <li><a href="#">Marketing</a></li>
+      <li><a href="#">Security</a></li>
+    </ul>
+    <ul>
+      <li><strong>Resources</strong></li>
+      <li><a href="#">Documentation</a></li>
+      <li><a href="#">Forums</a></li>
+      <li><a href="#">Videos</a></li>
+      <li><a href="#">Downloads</a></li>
+      <li><a href="#">Support</a></li>
+    </ul>
+    <ul>
+      <li><strong>Programs</strong></li>
+      <li><a href="#">Apple Developer Program</a></li>
+      <li><a href="#">App Store Connect</a></li>
+      <li><a href="#">TestFlight</a></li>
+      <li><a href="#">Swift Student Challenge</a></li>
+      <li><a href="#">WWDC</a></li>
+    </ul>
+  </div>
+  <div class="footer-bottom">
+    <p><a href="#">Get the Apple Developer app</a></p>
+    <p>Copyright © 2023 Apple Inc. All rights reserved.</p>
+    <p><a href="#">Terms of Use</a> | <a href="#">Privacy Policy</a> | <a href="#">Agreements and Guidelines</a></p>
+  </div>
+</footer>
+
+</body>
+</html>

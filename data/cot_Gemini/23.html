@@ -1,0 +1,609 @@
+<html><body><p>
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>MikroTik</title>
+<style>
+        body {
+            font-family: sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #fff;
+            padding: 15px 30px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .header-logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .header-nav {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header-nav li {
+            margin-left: 20px;
+        }
+
+        .header-nav a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        .header-nav a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            background-color: #eee;
+            padding: 50px 0;
+            position: relative;
+        }
+
+        .hero-content {
+            max-width: 700px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .hero-title {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .hero-text {
+            font-size: 18px;
+            line-height: 1.5;
+            margin-bottom: 30px;
+        }
+
+        .hero-button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        .hero-button:hover {
+            background-color: #0069d9;
+        }
+
+        .hero-image {
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+            width: 300px;
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-image: url("placeholder.png");
+        }
+
+        .section-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .section-content {
+            padding: 30px 0;
+        }
+
+        .video-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .video-item {
+            margin: 15px;
+            width: 250px;
+        }
+
+        .video-image {
+            width: 100%;
+            height: 150px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-image: url("placeholder.png");
+        }
+
+        .video-title {
+            font-size: 16px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .video-text {
+            font-size: 14px;
+            margin-top: 5px;
+        }
+
+        .training-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .training-item {
+            width: 32%;
+            margin-bottom: 30px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .training-image {
+            width: 100%;
+            height: 150px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-image: url("placeholder.png");
+            margin-bottom: 15px;
+        }
+
+        .training-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .training-text {
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .training-button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 14px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+
+        .training-button:hover {
+            background-color: #0069d9;
+        }
+
+        .classes-container {
+            padding: 30px 0;
+        }
+
+        .classes-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .classes-title {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .classes-button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .classes-button:hover {
+            background-color: #0069d9;
+        }
+
+        .classes-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .classes-item {
+            width: 24%;
+            margin-bottom: 15px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .classes-date {
+            font-weight: bold;
+        }
+
+        .classes-location {
+            margin-top: 5px;
+        }
+
+        .hardware-container {
+            padding: 30px 0;
+        }
+
+        .hardware-item {
+            width: 32%;
+            margin-bottom: 30px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .hardware-image {
+            width: 100%;
+            height: 150px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-image: url("placeholder.png");
+            margin-bottom: 15px;
+        }
+
+        .hardware-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .hardware-text {
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .hardware-button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 14px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+
+        .hardware-button:hover {
+            background-color: #0069d9;
+        }
+
+        .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .footer-nav {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+
+        .footer-nav li {
+            margin: 0 20px;
+            list-style: none;
+        }
+
+        .footer-nav a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .footer-nav a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-social {
+            display: flex;
+            justify-content: center;
+        }
+
+        .footer-social li {
+            margin: 0 10px;
+            list-style: none;
+        }
+
+        .footer-social a {
+            color: #fff;
+        }
+
+        .footer-social a:hover {
+            text-decoration: underline;
+        }
+
+        .newsletter-container {
+            background-color: #333;
+            color: #fff;
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .newsletter-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .newsletter-text {
+            font-size: 18px;
+            line-height: 1.5;
+            margin-bottom: 30px;
+        }
+
+        .newsletter-button {
+            background-color: #dc3545;
+            color: #fff;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        .newsletter-button:hover {
+            background-color: #c82333;
+        }
+
+        .app-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        .app-item {
+            margin: 0 15px;
+            width: 100px;
+            height: 100px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-image: url("placeholder.png");
+        }
+    </style>
+</head>
+<body>
+<header class="header">
+<div class="header-logo">MikroTik</div>
+<nav class="header-nav">
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">About</a></li>
+<li><a href="#">Jobs</a></li>
+<li><a href="#">Hardware</a></li>
+<li><a href="#">Software</a></li>
+<li><a href="#">Support</a></li>
+<li><a href="#">Training</a></li>
+<li><a href="#">Account</a></li>
+</ul>
+</nav>
+</header>
+<section class="hero">
+<div class="hero-content">
+<h1 class="hero-title">hAP ac<sup>3</sup></h1>
+<p class="hero-text">Our bestselling home router is back - and it is faster than ever! The hAP ac<sup>3</sup> is the Swiss army knife of home networking with Gigabit Ethernet, handy iOS/Android app for easy configuration, PoE, 128 NAND and powerful external high-gain antennas.</p>
+<button class="hero-button">More details</button>
+</div>
+<div class="hero-image"></div>
+</section>
+<section class="section-content">
+<h2 class="section-title">Latest videos</h2>
+<div class="video-container">
+<div class="video-item">
+<div class="video-image"></div>
+<h3 class="video-title">MikroTik Product News: The D.I.Y. L23 Routerboard</h3>
+<p class="video-text">Build your own custom outdoor Wi-Fi 6 access point or CPE! This tiny wireless router comes with handy MMCX connectors,... </p>
+</div>
+<div class="video-item">
+<div class="video-image"></div>
+<h3 class="video-title">Netinstall CLI - Linux версія - покроково</h3>
+<p class="video-text">Serhii teaches you how to use netinstall-cli in Ukrainian.</p>
+</div>
+<div class="video-item">
+<div class="video-image"></div>
+<h3 class="video-title">Merch is here!</h3>
+<p class="video-text">Buy the merch! Or at least, <a href="#">watch our video about it</a>.</p>
+</div>
+</div>
+</section>
+<section class="section-content">
+<h2 class="section-title">What's new in MikroTik?</h2>
+<p>You can also follow us and get the latest updates on <a href="#">Mastodon</a> and <a href="#">Facebook</a>!</p>
+</section>
+<section class="section-content">
+<h2 class="section-title">MikroTik Training</h2>
+<div class="training-container">
+<div class="training-item">
+<div class="training-image"></div>
+<h3 class="training-title">Training</h3>
+<p class="training-text">MikroTik training sessions are organized and provided by MikroTik Training Centers at various locations around the World. They are attended by network engineers, integrators and managers, who would like to learn about routing and managing wired and wireless networks using MikroTik RouterOS.</p>
+<button class="training-button">Find out more</button>
+</div>
+<div class="training-item">
+<div class="training-image"></div>
+<h3 class="training-title">Trainers &amp; Academies</h3>
+<p class="training-text">MikroTik Academies are at universities such as universities, colleges, vocational schools, and other educational institutions offering Semester time based Internet networking courses for their academic students using MikroTik RouterOS as a learning tool.</p>
+<button class="training-button">Open map</button>
+</div>
+<div class="training-item">
+<div class="training-image"></div>
+<h3 class="training-title">Graduation</h3>
+<p class="training-text">Every year there are around 2000 - 3000 graduates who have successfully completed a MikroTik courses. Our certificates are recognized world wide and stand for good knowledge about network administration, using RouterBOARD and RouterOS.</p>
+<button class="training-button">Training history</button>
+</div>
+</div>
+</section>
+<section class="classes-container">
+<h2 class="section-title">Upcoming training classes</h2>
+<div class="classes-header">
+<h3 class="classes-title"></h3>
+<button class="classes-button">Full training list</button>
+</div>
+<ul class="classes-list">
+<li class="classes-item">
+<p class="classes-date">May 25 - 29</p>
+<p class="classes-location">Canada, Markham, Hani Ratib, wireless4wireles.ca (intro/introduction, MTCNA, The Dude), English</p>
+</li>
+<li class="classes-item">
+<p class="classes-date">May 27 - 29</p>
+<p class="classes-location">Canada, Sainte-Thérèse, CSPPE, IPv4/IPv6 in RouterOS (ignite), English</p>
+</li>
+<li class="classes-item">
+<p class="classes-date">May 30 - 31</p>
+<p class="classes-location">Canada, Markham, Hani Ratib, wireless4wireles.ca (intro/introduction, MTCNA, The Dude), English</p>
+</li>
+<li class="classes-item">
+<p class="classes-date">June 03 - 07</p>
+<p class="classes-location">USA, Dallas, Rick Frey Consulting, MTCNA (MTCRE), English</p>
+</li>
+<li class="classes-item">
+<p class="classes-date">June 03 - 07</p>
+<p class="classes-location">USA, Alabama, McCharles Technologies (CSPPE), English</p>
+</li>
+<li class="classes-item">
+<p class="classes-date">June 10 - 14</p>
+<p class="classes-location">USA, Alabama, McCharles Technologies (MTCNA), English</p>
+</li>
+<li class="classes-item">
+<p class="classes-date">June 17 - 21</p>
+<p class="classes-location">USA, Alabama, McCharles Technologies (MTCRE), English</p>
+</li>
+<li class="classes-item">
+<p class="classes-date">June 24 - 28</p>
+<p class="classes-location">USA, Alabama, McCharles Technologies (CSPPE), English</p>
+</li>
+<li class="classes-item">
+<p class="classes-date">July 01 - 05</p>
+<p class="classes-location">USA, Alabama, McCharles Technologies (MTCNA), English</p>
+</li>
+<li class="classes-item">
+<p class="classes-date">July 08 - 12</p>
+<p class="classes-location">USA, Alabama, McCharles Technologies (MTCRE), English</p>
+</li>
+<li class="classes-item">
+<p class="classes-date">July 15 - 19</p>
+<p class="classes-location">USA, Alabama, McCharles Technologies (CSPPE), English</p>
+</li>
+<li class="classes-item">
+<p class="classes-date">July 22 - 26</p>
+<p class="classes-location">USA, Alabama, McCharles Technologies (MTCNA), English</p>
+</li>
+<li class="classes-item">
+<p class="classes-date">July 29 - 03</p>
+<p class="classes-location">USA, Alabama, McCharles Technologies (MTCRE), English</p>
+</li>
+<li class="classes-item">
+<p class="classes-date">August 05 - 09</p>
+<p class="classes-location">USA, Alabama, McCharles Technologies (CSPPE), English</p>
+</li>
+<li class="classes-item">
+<p class="classes-date">August 12 - 16</p>
+<p class="classes-location">USA, Alabama, McCharles Technologies (MTCNA), English</p>
+</li>
+<li class="classes-item">
+<p class="classes-date">August 19 - 23</p>
+<p class="classes-location">USA, Alabama, McCharles Technologies (MTCRE), English</p>
+</li>
+<li class="classes-item">
+<p class="classes-date">August 26 - 30</p>
+<p class="classes-location">USA, Alabama, McCharles Technologies (CSPPE), English</p>
+</li>
+</ul>
+</section>
+<section class="hardware-container">
+<h2 class="section-title">Hardware &amp; Software</h2>
+<div class="hardware-container">
+<div class="hardware-item">
+<div class="hardware-image"></div>
+<h3 class="hardware-title">Routers</h3>
+<p class="hardware-text">RouterOS is the operating system of RouterBOARD hardware. It has all the necessary features for an ISP - routing, firewall, bandwidth management, wireless access point, backhaul link, hotspot gateway, VPN server and more. Quick and simple installation and an easy to use interface!</p>
+<button class="hardware-button">Find out more</button>
+</div>
+<div class="hardware-item">
+<div class="hardware-image"></div>
+<h3 class="hardware-title">Product Catalog</h3>
+<p class="hardware-text">MikroTik manufactures routers, switches and other products, from small office or home, to carry purpose ISP networks. There is a device for every purpose. See our product catalog for a complete list of our products and their features.</p>
+<button class="hardware-button">Open catalog</button>
+</div>
+<div class="hardware-item">
+<div class="hardware-image"></div>
+<h3 class="hardware-title">Distribution</h3>
+<p class="hardware-text">To purchase our RouterBOARD, CCR, CRS and other products, and also to receive technical support and pre-sales consultation, please contact our wide network of distributors. See the map to find the nearest one.</p>
+<button class="hardware-button">Find out more</button>
+</div>
+</div>
+</section>
+<footer class="footer">
+<nav class="footer-nav">
+<ul>
+<li>
+<h3>MikroTik</h3>
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">About</a></li>
+<li><a href="#">Darbs MikroTik</a></li>
+</ul>
+</li>
+<li>
+<h3>Support</h3>
+<ul>
+<li><a href="#">Get support</a></li>
+<li><a href="#">Forum</a></li>
+<li><a href="#">Documentation</a></li>
+</ul>
+</li>
+<li>
+<h3>Other</h3>
+<ul>
+<li><a href="#">Newsletters</a></li>
+<li><a href="#">Our logo</a></li>
+<li><a href="#">Privacy policy</a></li>
+</ul>
+</li>
+</ul>
+</nav>
+<ul class="footer-social">
+<li><a href="#"><img alt="Mastodon" src="placeholder.png"/></a></li>
+<li><a href="#"><img alt="Facebook" src="placeholder.png"/></a></li>
+<li><a href="#"><img alt="Twitter" src="placeholder.png"/></a></li>
+</ul>
+</footer>
+<section class="newsletter-container">
+<h2 class="newsletter-title">Sign up for the newsletter</h2>
+<p class="newsletter-text">Please sign up to get notified about new RouterOS version releases and other useful information!</p>
+<button class="newsletter-button">Subscribe!</button>
+<div class="app-container">
+<div class="app-item"></div>
+<div class="app-item"></div>
+<div class="app-item"></div>
+<p>MikroTik app</p>
+</div>
+</section>
+</body>
+</html>
+</p></body></html>

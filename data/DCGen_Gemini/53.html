@@ -1,0 +1,365 @@
+<html><body><p>
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Crashlytics</title>
+<style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      background-color: #f2f2f2;
+    }
+
+    header {
+      background-color: #2c3e50;
+      color: white;
+      padding: 15px;
+    }
+
+    header .container {
+      display: flex;
+      align-items: center;
+    }
+
+    header .container a {
+      color: white;
+      text-decoration: none;
+      margin-right: 20px;
+    }
+
+    header .container .button {
+      background-color: #3498db;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .section {
+      background-color: white;
+      padding: 30px;
+      margin: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .section h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    .section p {
+      line-height: 1.6;
+    }
+
+    .section .button {
+      background-color: #3498db;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      display: block;
+      margin: 20px auto;
+      text-align: center;
+    }
+
+    .section .icon {
+      width: 50px;
+      height: 50px;
+      background-color: #e0e0e0;
+      border-radius: 5px;
+      margin-right: 20px;
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    .section .icon img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    .section .content {
+      display: flex;
+      align-items: center;
+    }
+
+    .section .content .details {
+      margin-left: 20px;
+    }
+
+    .section .content .details h3 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+
+    .section .content .details p {
+      line-height: 1.5;
+    }
+
+    .section .content .details .button {
+      display: inline-block;
+      margin-top: 10px;
+    }
+
+    .footer {
+      background-color: #2c3e50;
+      color: white;
+      padding: 30px;
+      text-align: center;
+    }
+
+    .footer .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .footer .container .column {
+      text-align: left;
+    }
+
+    .footer .container .column h3 {
+      font-size: 1.2rem;
+      margin-bottom: 15px;
+    }
+
+    .footer .container .column ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .footer .container .column li {
+      margin-bottom: 5px;
+    }
+
+    .footer .container .column a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .footer .container .column a:hover {
+      text-decoration: underline;
+    }
+
+    .footer .container .button {
+      background-color: #3498db;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .footer .container .button:hover {
+      background-color: #2980b9;
+    }
+
+    .footer .copyright {
+      text-align: center;
+      font-size: 0.8rem;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+<header>
+<div class="container">
+<a href="#">search.ch</a>
+<a href="#">ht.mo</a>
+<button class="button">Language</button>
+<a class="button" href="#">Go to console</a>
+<a class="button" href="#">Sign in</a>
+</div>
+</header>
+<section class="section">
+<h2>Track, prioritize, and fix app crashes faster</h2>
+<p>Real time crash and error reporting and analysis to help keep your apps running flawlessly. Easily integrates with Android, Apple, Flutter and Unity apps.</p>
+<button class="button">Get Started</button>
+<button class="button">View Docs</button>
+</section>
+<section class="section">
+<h2>Spend less time troubleshooting crashes and ANRs</h2>
+<p>Crashlytics starts capturing crashes right out of the box and groups them into manageable issues based on the impact on real users - to help you prioritize what to fix first.</p>
+<button class="button">Get Started</button>
+</section>
+<section class="section">
+<h2>Get AI-powered insights and troubleshooting tips with Gemini in Firebase</h2>
+<p>Speed up the time it takes for you to understand why a crash happened and Crashlytics leverages Gemini to provide actionable insights to help you get to the root cause faster.</p>
+<div class="icon">
+<img alt="Phone icon" src="placeholder.png"/>
+</div>
+</section>
+<section class="section">
+<h2>Get contextual information about crashes to make debugging easier</h2>
+<p>Understand the timeline of events leading up to app crashes and visualizations of metadata that surface common characteristics of crashes so you can quickly reproduce bugs and uncover the root cause.</p>
+<button class="button">Add our SDK</button>
+</section>
+<section class="section">
+<h2>Easy integration into your existing workflow</h2>
+<p>Firebase Crashlytics works seamlessly with industry-standard tools including Jira, Slack, BigQuery, and more. And, with integrations for Android Studio, you can view Crashlytics data directly within the App Quality Insights window, making it easy to debug crashes without leaving the IDE.</p>
+<div class="icon">
+<img alt="Phone icon" src="placeholder.png"/>
+</div>
+</section>
+<section class="section">
+<div class="content">
+<div class="icon">
+<img alt="Icon 1" src="placeholder.png"/>
+</div>
+<div class="details">
+<h3>Real-time release monitoring</h3>
+<p>Track your new release adoption and stability in real-time, so you can catch errors and address emerging problems before they impact a large number of users.</p>
+</div>
+</div>
+<div class="content">
+<div class="icon">
+<img alt="Icon 2" src="placeholder.png"/>
+</div>
+<div class="details">
+<h3>Custom logging &amp; breadcrumbs</h3>
+<p>Instrument logs, keys, non-fatal statements, and custom event information so you can log what happened leading up to a crash. You can log your own contextual data or use events to understand the user behavior and paths leading up to a crash.</p>
+</div>
+</div>
+<div class="content">
+<div class="icon">
+<img alt="Icon 3" src="placeholder.png"/>
+</div>
+<div class="details">
+<h3>Alerts</h3>
+<p>Receive real time alerts for new errors, regressed errors, and errors that are starting to happen at higher rates, no matter where you are so you never miss a critical crash.</p>
+</div>
+</div>
+</section>
+<section class="section">
+<h2>Documentation</h2>
+<p>Review our technical documentation to get started.</p>
+<button class="button">View Docs</button>
+</section>
+<section class="section">
+<h2>Pricing</h2>
+<p>There's no cost to using Crashlytics</p>
+</section>
+<section class="section">
+<h2>Learn how Crashlytics helps teams across the world improve app quality</h2>
+<div class="content">
+<div class="icon">
+<img alt="Icon 4" src="placeholder.png"/>
+</div>
+<div class="details">
+<h3>STAGE uses Firebase and Flutter to cut release time in half</h3>
+<p>STAGE paired Flutter's front-end tools with Firebase's back-end services to build a multi-platform app, with infrastructure that securely stores and delivers content to almost 2 million users in real time for a smooth viewing experience - helping them stand out on a fiercely competitive streaming market.</p>
+<button class="button">Read more</button>
+</div>
+</div>
+<div class="content">
+<div class="icon">
+<img alt="Icon 5" src="placeholder.png"/>
+</div>
+<div class="details">
+<h3>Gameloft uses Crashlytics to lower crash rates and increase player session duration by 16%</h3>
+<p>Gameloft, an award-winning global game studio needed a robust crash reporting tool to monitor game stability across their vast portfolio in a holistic way. They turned to Crashlytics to reduce crash rates, improve player engagement, and improve their Play Store rating.</p>
+<button class="button">Read more</button>
+</div>
+</div>
+<div class="content">
+<div class="icon">
+<img alt="Icon 6" src="placeholder.png"/>
+</div>
+<div class="details">
+<h3>Pomelo Games used Firebase to increase revenue by up to 35% without losing players</h3>
+<p>Pomelo Games, one of the top game studios in Uruguay, used Remote Config, A/B Testing, Google Analytics, and Crashlytics to test interstitial ads in their game. This led to an increase in both ad revenue and in-app purchases with no decline in retention or stability.</p>
+<button class="button">Read more</button>
+</div>
+</div>
+</section>
+<section class="section">
+<h2>Try Firebase today</h2>
+<p>Integrating Firebase into your app is easy.</p>
+<button class="button">Get started</button>
+</section>
+<section class="section">
+<h2>All Firebase products</h2>
+<div class="container">
+<div class="column">
+<h3>BUILD</h3>
+<ul>
+<li>App Check</li>
+<li>App Hosting</li>
+<li>Authentication</li>
+<li>Cloud Functions</li>
+<li>Cloud Storage</li>
+<li>Data Connect</li>
+<li>Generative AI</li>
+</ul>
+</div>
+<div class="column">
+<h3>RUN</h3>
+<ul>
+<li>A/B Testing</li>
+<li>App Distribution</li>
+<li>Cloud Messaging</li>
+<li>Crashlytics</li>
+<li>Google Analytics</li>
+<li>In-App Messaging</li>
+</ul>
+</div>
+</div>
+</section>
+<footer class="footer">
+<div class="container">
+<div class="column">
+<h3>Learn</h3>
+<ul>
+<li><a href="#">Guides</a></li>
+<li><a href="#">Reference</a></li>
+<li><a href="#">Samples</a></li>
+<li><a href="#">Libraries</a></li>
+<li><a href="#">GitHub</a></li>
+</ul>
+</div>
+<div class="column">
+<h3>Stay connected</h3>
+<ul>
+<li><a href="#">Blog</a></li>
+<li><a href="#">Firebase Summit</a></li>
+<li><a href="#">Twitter</a></li>
+<li><a href="#">YouTube</a></li>
+</ul>
+</div>
+<div class="column">
+<h3>Support</h3>
+<ul>
+<li><a href="#">Contact support</a></li>
+<li><a href="#">Stack Overflow</a></li>
+<li><a href="#">Slack community</a></li>
+<li><a href="#">Google group</a></li>
+<li><a href="#">Release notes</a></li>
+<li><a href="#">FAQs</a></li>
+</ul>
+</div>
+<div>
+<button class="button">Language</button>
+</div>
+</div>
+<div class="copyright">
+<a href="#">Terms</a>
+<a href="#">Privacy</a>
+<a href="#">Android</a>
+<a href="#">Chrome</a>
+<a href="#">Firebase</a>
+<a href="#">Google Cloud Platform</a>
+<a href="#">All products</a>
+</div>
+</footer>
+</body>
+</html>
+</p></body></html>

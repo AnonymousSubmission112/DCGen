@@ -1,0 +1,638 @@
+
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>为每个人提供线上隐私</title>
+<style>
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #f2f2f2;
+}
+
+header {
+  background-color: #fff;
+  padding: 20px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 30px;
+  margin-right: 10px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin-left: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #007bff;
+}
+
+.hero {
+  background-color: #fff;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.hero img {
+  width: 200px;
+}
+
+.hero h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.btn {
+  background-color: #007bff;
+  color: #fff;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #0069d9;
+}
+
+.features {
+  padding: 50px 0;
+}
+
+.features .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.feature {
+  width: calc(33.33% - 30px);
+  margin-bottom: 30px;
+}
+
+.feature img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.feature h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.feature p {
+  font-size: 1em;
+  line-height: 1.6;
+}
+
+.why-mega {
+  background-color: #f8f9fa;
+  padding: 50px 0;
+}
+
+.why-mega .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.why-mega-item {
+  width: calc(50% - 30px);
+}
+
+.why-mega-item h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.why-mega-item p {
+  font-size: 1em;
+  line-height: 1.6;
+}
+
+.pricing {
+  padding: 50px 0;
+}
+
+.pricing .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pricing-item {
+  width: calc(33.33% - 30px);
+  border: 1px solid #ddd;
+  padding: 20px;
+  text-align: center;
+}
+
+.pricing-item h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.pricing-item p {
+  font-size: 1em;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.pricing-item .price {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.pricing-item .price sup {
+  font-size: 0.7em;
+  vertical-align: super;
+}
+
+.pricing-item .btn {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 0.8em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.pricing-item .btn:hover {
+  background-color: #0069d9;
+}
+
+.new-feature {
+  background-color: #fff;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.new-feature h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.new-feature p {
+  font-size: 1em;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.new-feature .btn {
+  background-color: #007bff;
+  color: #fff;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.new-feature .btn:hover {
+  background-color: #0069d9;
+}
+
+.about {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.about p {
+  font-size: 1em;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.about .btn {
+  background-color: #007bff;
+  color: #fff;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.about .btn:hover {
+  background-color: #0069d9;
+}
+
+.stats {
+  background-color: #f8f9fa;
+  padding: 50px 0;
+}
+
+.stats .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.stats-item {
+  width: calc(33.33% - 30px);
+  text-align: center;
+}
+
+.stats-item h3 {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.stats-item p {
+  font-size: 1em;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.stats-item .btn {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 0.8em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.stats-item .btn:hover {
+  background-color: #0069d9;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 50px 0;
+}
+
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .logo {
+  display: flex;
+  align-items: center;
+}
+
+footer .logo img {
+  height: 30px;
+  margin-right: 10px;
+}
+
+footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+footer li {
+  margin-left: 20px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+footer a:hover {
+  color: #007bff;
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+}
+
+.social-links a {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-links img {
+  height: 20px;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.cookie-banner {
+  background-color: #fff;
+  padding: 15px;
+  border-top: 1px solid #ddd;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.cookie-banner p {
+  font-size: 0.9em;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.cookie-banner a {
+  text-decoration: none;
+  color: #007bff;
+  transition: color 0.3s;
+}
+
+.cookie-banner a:hover {
+  color: #0069d9;
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="container">
+    <nav>
+      <div class="logo">
+        <img src="placeholder.png" alt="MEGA">
+        <span>MEGA</span>
+      </div>
+      <ul>
+        <li><a href="#">产品</a></li>
+        <li><a href="#">新兴方案</a></li>
+        <li><a href="#">企业</a></li>
+        <li><a href="#">定价</a></li>
+        <li><a href="#">帮助</a></li>
+      </ul>
+      <div>
+        <button>登录</button>
+        <button>注册</button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <img src="placeholder.png" alt="MEGA">
+    <h1>为每个人提供线上隐私</h1>
+    <p>在MEGA，隐私不是一种选择，而是一种承诺。这是一种保护您数据安全的承诺。</p>
+    <button class="btn">试用MEGA</button>
+  </div>
+</section>
+
+<section class="features">
+  <div class="container">
+    <div class="feature">
+      <img src="placeholder.png" alt="云存储空间">
+      <h3>云存储空间</h3>
+      <p>安全地将您的数据存储在云端。借助大型云存储空间，您可以保护您的所有文件和文件夹。</p>
+    </div>
+    <div class="feature">
+      <img src="placeholder.png" alt="聊天">
+      <h3>聊天</h3>
+      <p>MEGA上的聊天服务是为个人和小型团队设计，并有许多功能来保护您的通话。</p>
+    </div>
+    <div class="feature">
+      <img src="placeholder.png" alt="加密和会议">
+      <h3>加密和会议</h3>
+      <p>与任何人都进行活泼和安全的视频会议。您可以加入会议或创建会议，而无需使用MEGA。</p>
+    </div>
+  </div>
+</section>
+
+<section class="features">
+  <div class="container">
+    <div class="feature">
+      <img src="placeholder.png" alt="始终开启的安全">
+      <h3>始终开启的安全</h3>
+      <p>我们提供加密功能来保护您的数据。它覆盖您设备上的全部信息，以及您的文件和文件夹。这确保您所有的信息都存储在MEGA的云存储中，并在需要时提供给您。</p>
+      <p>对于任何人的数据，包括您自己的，我们都竭尽全力，无法控制或删除。</p>
+      <button class="btn">更多关于安全的信息</button>
+    </div>
+  </div>
+</section>
+
+<section class="why-mega">
+  <div class="container">
+    <div class="why-mega-item">
+      <h3>为什么选择MEGA?</h3>
+      <p>您想获得最好的加密功能吗？我们为您提供各种安全功能。您可以获得 16 TB，如果您需要更多容量，还可以选择Pro Flexi计划，您只需为使用的实际容量付费。</p>
+      <button class="btn">查看我们的方案</button>
+    </div>
+    <div class="why-mega-item">
+      <h3>永远不会丢失存储空间</h3>
+      <p>通过我们的加密网络，您可以使用我们的网络访问您的文件，然后，即使您使用的是从我们手中获得的MEGA，所有新的加密密钥都将自动更新，所以您可以在任何智能设备和网络文件上安全地存储。</p>
+      <button class="btn">了解更多</button>
+    </div>
+  </div>
+</section>
+
+<section class="features">
+  <div class="container">
+    <div class="feature">
+      <img src="placeholder.png" alt="与任何人共享文件和文件夹">
+      <h3>与任何人共享文件和文件夹</h3>
+      <p>轻松地与您的朋友和同事，甚至MEGA用户共享您存储的任何文件和文件夹。共享文件既快捷又简单。您可以选择与他人共享文件夹，也可以限制其权限，并可以随意添加或删除链接。</p>
+      <button class="btn">更多关于共享的信息</button>
+    </div>
+  </div>
+</section>
+
+<section class="features">
+  <div class="container">
+    <div class="feature">
+      <img src="placeholder.png" alt="在所有设备上无缝工作">
+      <h3>在所有设备上无缝工作</h3>
+      <p>通过我们100%的加密网络，您可以使用您喜欢的任何设备访问文件，而且，即使您使用的是从我们手中获得的MEGA，所有新的加密密钥都将自动更新，所以您可以在任何智能设备和网络文件上安全地存储。</p>
+    </div>
+  </div>
+</section>
+
+<section class="pricing">
+  <div class="container">
+    <h2>MEGA与其它同类产品的比较如何？</h2>
+    <div class="pricing-item">
+      <h3>MEGA</h3>
+      <p>1 TB/月</p>
+      <div class="price">€1.56<sup>*</sup></div>
+      <button class="btn">立刻购买订阅</button>
+      <p>* 基于Pro Flexi方案的实际价格</p>
+    </div>
+    <div class="pricing-item">
+      <h3>Dropbox</h3>
+      <p>1 TB/月</p>
+      <div class="price">€5.50<sup>*</sup></div>
+      <button class="btn">立刻购买订阅</button>
+      <p>* 基于Professional方案的实际价格</p>
+    </div>
+    <div class="pricing-item">
+      <h3>Google Drive</h3>
+      <p>1 TB/月</p>
+      <div class="price">€3.70<sup>*</sup></div>
+      <button class="btn">立刻购买订阅</button>
+      <p>* 基于30 TB的年度方案的实际价格</p>
+    </div>
+  </div>
+</section>
+
+<section class="new-feature">
+  <h2>新MEGA VPN - 保护您的在线隐私</h2>
+  <p>使用快速、可靠的顶级网络来保护您的Android设备，确保您在任何地方的安全。</p>
+  <p>仅适用于MEGA Pro方案订阅者。</p>
+  <button class="btn">关于MEGA VPN的更多信息</button>
+</section>
+
+<section class="about">
+  <h2>在MEGA发展您的企业</h2>
+  <p>通过MEGA，您可以将您的团队联系在一起，从自由职业者到初创公司，再到大型企业。</p>
+  <button class="btn">了解MEGA</button>
+</section>
+
+<section class="stats">
+  <div class="container">
+    <div class="stats-item">
+      <h3>已注册用户</h3>
+      <p>306,688,309</p>
+    </div>
+    <div class="stats-item">
+      <h3>已上传文件</h3>
+      <p>165,074,915,666</p>
+    </div>
+    <div class="stats-item">
+      <img src="placeholder.png" alt="MEGA">
+      <p>MEGA是一个被数百万用户信任的企业。在全球范围内保护客户的隐私。</p>
+      <button class="btn">免费注册</button>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="logo">
+      <img src="placeholder.png" alt="MEGA">
+      <span>The Privacy Company.</span>
+    </div>
+    <ul>
+      <li><a href="#">产品</a></li>
+      <li><a href="#">云存储空间</a></li>
+      <li><a href="#">加密存储</a></li>
+      <li><a href="#">VPN</a></li>
+      <li><a href="#">聊天</a></li>
+      <li><a href="#">邮件</a></li>
+      <li><a href="#">聊天</a></li>
+      <li><a href="#">桌面客户端</a></li>
+      <li><a href="#">移动设备</a></li>
+    </ul>
+    <ul>
+      <li><a href="#">解决方案</a></li>
+      <li><a href="#">个人</a></li>
+      <li><a href="#">小型企业</a></li>
+      <li><a href="#">大型企业</a></li>
+    </ul>
+    <ul>
+      <li><a href="#">公司</a></li>
+      <li><a href="#">关于我们</a></li>
+      <li><a href="#">工作</a></li>
+      <li><a href="#">博客</a></li>
+    </ul>
+    <ul>
+      <li><a href="#">法律</a></li>
+      <li><a href="#">隐私政策</a></li>
+      <li><a href="#">服务条款</a></li>
+      <li><a href="#">欧盟GDPR</a></li>
+      <li><a href="#">信息披露</a></li>
+      <li><a href="#">版权和版权</a></li>
+      <li><a href="#">Cookie政策</a></li>
+      <li><a href="#">联系我们</a></li>
+    </ul>
+    <ul>
+      <li><a href="#">平台</a></li>
+      <li><a href="#">手机应用程序</a></li>
+      <li><a href="#">桌面应用程序</a></li>
+      <li><a href="#">MEGA CMD</a></li>
+      <li><a href="#">网络存储软件</a></li>
+      <li><a href="#">NAS存储软件</a></li>
+    </ul>
+    <ul>
+      <li><a href="#">资源</a></li>
+      <li><a href="#">博客</a></li>
+      <li><a href="#">安全和隐私</a></li>
+      <li><a href="#">可视化</a></li>
+      <li><a href="#">营销人员</a></li>
+      <li><a href="#">合作伙伴</a></li>
+    </ul>
+    <div class="social-links">
+      <a href="#"><img src="placeholder.png" alt="Facebook"></a>
+      <a href="#"><img src="placeholder.png" alt="Twitter"></a>
+      <a href="#"><img src="placeholder.png" alt="Instagram"></a>
+      <a href="#"><img src="placeholder.png" alt="YouTube"></a>
+    </div>
+  </div>
+  <div class="copyright">
+    <p>© 2023 MEGA Limited。保留所有权利。所有商标和徽标均为其各自所有者的财产。</p>
+  </div>
+</footer>
+
+<div class="cookie-banner">
+  <p>我们使用Cookies来保证您在使用我们网站的最佳体验。请阅读我们的<a href="#">Cookie政策</a>.</p>
+</div>
+
+</body>
+</html>

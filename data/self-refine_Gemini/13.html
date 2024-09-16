@@ -1,0 +1,578 @@
+<html><body><p>
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Webpage Layout</title>
+<style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f6f6f6;
+            color: #333;
+        }
+
+        header {
+            background: #fff;
+            padding: 15px 0;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 5%;
+        }
+
+        header img {
+            height: 30px;
+        }
+
+        .navbar {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar li {
+            margin: 0 15px;
+        }
+
+        .navbar li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            font-size: 14px;
+        }
+
+        .auth-buttons {
+            display: flex;
+            align-items: center;
+        }
+
+        .auth-buttons a {
+            text-decoration: none;
+            margin-left: 10px;
+            color: #333;
+            padding: 8px 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-weight: 500;
+        }
+
+        .auth-buttons a.sign-up {
+            background: #007bff;
+            color: #fff;
+            border: none;
+        }
+
+        .hero {
+            padding: 50px 5%;
+            text-align: center;
+        }
+
+        .hero img {
+            width: 300px;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            color: #666;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        .hero .btn {
+            background: #007bff;
+            color: #fff;
+            padding: 12px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .features {
+            display: flex;
+            justify-content: space-around;
+            padding: 50px 5%;
+            margin-bottom: 50px;
+        }
+
+        .features .box {
+            width: 30%;
+            background: #eee;
+            padding: 20px;
+            border-radius: 5px;
+            text-align: left;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .features .box:nth-child(2) {
+            background: #444;
+            color: #fff;
+        }
+
+        .features .box:nth-child(3) {
+            background: #8e44ad;
+            color: #fff;
+        }
+
+        .features h3 {
+            margin-top: 15px;
+            font-size: 1.2em;
+            font-weight: 600;
+        }
+
+        .features p {
+            color: #777;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .features .box p {
+            color: inherit;
+        }
+
+        .detailed-features {
+            padding: 50px 5%;
+        }
+
+        .detailed-features h2 {
+            font-size: 1.5em;
+            margin-bottom: 40px;
+            text-align: center;
+            font-weight: 600;
+        }
+
+        .detailed-features ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .detailed-features li {
+            margin-bottom: 10px;
+            width: 48%;
+            text-align: left;
+        }
+
+        .detailed-features li img {
+            margin-right: 10px;
+        }
+
+        .call-to-action {
+            background: #f8f8f8;
+            padding: 20px 5%;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .call-to-action .btn {
+            background: #007bff;
+            color: #fff;
+            padding: 12px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .code-section {
+            padding: 50px 5%;
+            text-align: center;
+        }
+
+        .code-section img {
+            max-width: 100%;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .code-section h2 {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .footer {
+            background: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 0;
+            padding: 20px 5%;
+        }
+
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: 500;
+        }
+
+        .footer p {
+            margin: 5px 0;
+            font-size: 14px;
+            font-weight: 300;
+        }
+
+        .footer ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+
+        .footer li {
+            margin-bottom: 10px;
+            width: 23%;
+            text-align: left;
+        }
+
+        .footer li a {
+            color: #fff;
+        }
+
+        .footer li img {
+            margin-right: 10px;
+        }
+
+        .footer .btn {
+            background: #007bff;
+            color: #fff;
+            padding: 12px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 20px;
+            display: inline-block;
+        }
+
+        .join-users {
+            padding: 50px 5%;
+            text-align: center;
+        }
+
+        .join-users h2 {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .join-users ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .join-users li {
+            margin-bottom: 10px;
+            width: 30%;
+            text-align: center;
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .join-users li img {
+            margin-bottom: 10px;
+            width: 60px;
+            height: 60px;
+        }
+
+        .join-users li p {
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .join-users li p span {
+            font-weight: 400;
+            font-size: 14px;
+        }
+
+        .code-section .btn {
+            background: #007bff;
+            color: #fff;
+            padding: 12px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 20px;
+            display: inline-block;
+        }
+
+        .code-section .code-example {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .code-section .code-example img {
+            max-width: 600px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .code-section .code-steps {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .code-section .code-steps h3 {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .code-section .code-steps p {
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        .code-section .code-steps ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .code-section .code-steps li {
+            margin-bottom: 5px;
+        }
+
+        .code-section .code-steps li img {
+            margin-right: 10px;
+        }
+
+        .code-section .code-steps a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .code-section .code-steps a:hover {
+            text-decoration: underline;
+        }
+
+        .code-section .code-steps .btn {
+            background: #007bff;
+            color: #fff;
+            padding: 12px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 20px;
+            display: inline-block;
+        }
+
+        .code-section .code-steps .btn:hover {
+            background: #0069d9;
+        }
+
+        @media (max-width: 768px) {
+            .features {
+                flex-direction: column;
+            }
+
+            .features .box {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            .detailed-features ul {
+                flex-direction: column;
+            }
+
+            .detailed-features li {
+                width: 100%;
+            }
+
+            .join-users ul {
+                flex-direction: column;
+            }
+
+            .join-users li {
+                width: 100%;
+            }
+
+            .footer ul {
+                flex-direction: column;
+            }
+
+            .footer li {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+<header>
+<img alt="Logo" src="placeholder.png"/>
+<ul class="navbar">
+<li><a href="#">Product</a></li>
+<li><a href="#">Pricing</a></li>
+<li><a href="#">Resources</a></li>
+</ul>
+<div class="auth-buttons">
+<a href="#">Log In</a>
+<a class="sign-up" href="#">Sign Up</a>
+</div>
+</header>
+<section class="hero">
+<img alt="Hero Image" src="placeholder.png"/>
+<h1>Documentation simplified</h1>
+<p>Build, host, and share documentation, all with a single platform.</p>
+<a class="btn" href="#">Sign up now</a>
+</section>
+<section class="features">
+<div class="box">
+<h3>Easy previews and deploys</h3>
+<p>Preview changes on every commit to your pull requests. Release documentation to your users on each merge.</p>
+</div>
+<div class="box">
+<h3>Ideal developer experience</h3>
+<p>Write documentation without changing your workflow or your tools using a docs as code approach.</p>
+</div>
+<div class="box">
+<h3>Work privately or publicly</h3>
+<p>Easily share within your team or with the whole world. Manage permissions yourself or automatically with GitHub.</p>
+</div>
+</section>
+<section class="detailed-features">
+<h2>Features</h2>
+<ul>
+<li><img alt="Icon" src="placeholder.png"/> Supports any doc tool
+            <p>Integrated support for <a href="#">Sphinx</a>, <a href="#">MkDocs</a>, <a href="#">Jupyter Book</a>. Flexible enough to work with any documentation tool.</p>
+</li>
+<li><img alt="Icon" src="placeholder.png"/> Integrated search
+            <p>Easily search all your docs via our dashboard, and offer your users a more powerful search with our search API.</p>
+</li>
+<li><img alt="Icon" src="placeholder.png"/> Pull request previews
+            <p>Preview each pull request before releasing any changes, allowing for fast collaboration across your organization.</p>
+</li>
+<li><img alt="Icon" src="placeholder.png"/> Versioned docs
+            <p>Match your product release cycle with multiple versions of your docs. Automatically build versions from any branch or tag.</p>
+</li>
+<li><img alt="Icon" src="placeholder.png"/> Private repository support
+            <p><span class="paid-plan-feature">Paid plan feature</span> Clone private repositories using a connected GitHub, GitLab, or Bitbucket account, or clone from any Git provider with an SSH key. Control who has access to your documentation and easily manage permissions in one place.</p>
+</li>
+<li><img alt="Icon" src="placeholder.png"/> Single-Sign On
+            <p>Control access to sections of your documentation with integrated authentication. Enable SSO with GitHub or GitLab to connect with your users.</p>
+</li>
+</ul>
+<a class="btn" href="#">Discover all our features</a>
+</section>
+<section class="code-section">
+<h2>TRY IT OUT</h2>
+<div class="code-example">
+<img alt="Code Example" src="placeholder.png"/>
+</div>
+<div class="code-steps">
+<h3>Create an account</h3>
+<p>Sign up with GitHub or your email.</p>
+<h3>Import your project</h3>
+<p>Select your existing Git repositories with a 1-click interface.</p>
+<h3>Add YAML config</h3>
+<p>Copy this example, it probably does what you want 😄</p>
+<ul>
+<li><img alt="Icon" src="placeholder.png"/> .readthedocs.yaml</li>
+<li>version: 2</li>
+<li>build: </li>
+<li>os: ubuntu-22.04</li>
+<li>python: "3.10"</li>
+<li>tools: </li>
+<li># YOU can also specify other tool versions:</li>
+<li># Build documentation in the docs/ directory with Sphinx</li>
+<li>sphinx: </li>
+<li>configuration: docs/conf.py</li>
+<li># Dependencies required to build your docs</li>
+<li>python: </li>
+<li>- install: </li>
+<li>requirements: docs/requirements.txt</li>
+</ul>
+<h3>Your docs build on every commit</h3>
+<p>Like magic.</p>
+<a class="btn" href="#">Create an account</a>
+</div>
+</section>
+<section class="join-users">
+<h2>Join thousands of happy users</h2>
+<ul>
+<li>
+<img alt="flask" src="placeholder.png"/>
+<p>Flask <span>Web Framework</span></p>
+<p>Flask is a Python web framework built with a small core and easy-to-extend philosophy.</p>
+</li>
+<li>
+<img alt="Jupyter" src="placeholder.png"/>
+<p>Jupyter <span>Data Science Environment</span></p>
+<p>Jupyter Notebook is a web-based interactive computational environment for creating notebook documents.</p>
+</li>
+<li>
+<img alt="Godot" src="placeholder.png"/>
+<p>Godot Engine <span>Game Engine</span></p>
+<p>Godot Engine is a free and open source community-driven 2D and 3D game engine.</p>
+</li>
+</ul>
+</section>
+<section class="call-to-action">
+<a class="btn" href="#">Create an account</a>
+</section>
+<footer class="footer">
+<ul>
+<li>
+<h3>STAY UPDATED</h3>
+<a href="#">Blog</a>
+<a href="#">Newsletter</a>
+<a href="#">Status</a>
+<img alt="Icon" src="placeholder.png"/>
+<img alt="Icon" src="placeholder.png"/>
+<img alt="Icon" src="placeholder.png"/>
+</li>
+<li>
+<h3>LEARN MORE</h3>
+<a href="#">Documentation</a>
+<a href="#">Getting started guide</a>
+<a href="#">Configure your project</a>
+<a href="#">Comparison to GitHub Pages</a>
+<a href="#">Comparison to GitBook</a>
+<a href="#">Comparison to Cloudflare Pages</a>
+</li>
+<li>
+<h3>PRODUCT</h3>
+<a href="#">Features</a>
+<a href="#">Pricing</a>
+<a href="#">Privacy Policy</a>
+<a href="#">Terms of Service</a>
+</li>
+<li>
+<h3>COMPANY</h3>
+<a href="#">About us</a>
+<a href="#">Support</a>
+<a href="#">Advertise with Us</a>
+<a href="#">Contribute</a>
+</li>
+</ul>
+<p>© Copyright 2022, Read the Docs, Inc. &amp; contributors</p>
+</footer>
+</body>
+</html>
+</p></body></html>

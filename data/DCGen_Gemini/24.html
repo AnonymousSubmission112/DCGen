@@ -1,0 +1,289 @@
+<html><body><p>
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Document</title>
+<style>
+        body {
+            margin: 0;
+            font-family: sans-serif;
+        }
+        .header {
+            display: flex;
+            background-color: lightgray;
+            height: 32px;
+        }
+        .left-section {
+            background-color: red;
+            height: 31px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+        .right-section {
+            display: flex;
+            height: 32px;
+            align-items: center;
+            color: white;
+        }
+        .right-section > div {
+            margin-left: 10px;
+        }
+        .right-section > div:last-child {
+            margin-left: 20px;
+        }
+        .search-bar {
+            display: flex;
+            align-items: center;
+            background-color: #f0f0f0;
+            height: 33px;
+            padding: 0 10px;
+            border-radius: 4px;
+            margin-left: 10px;
+        }
+        .search-bar > input {
+            border: none;
+            outline: none;
+            height: 28px;
+            font-size: 14px;
+            color: #333;
+            padding: 0 5px;
+            flex-grow: 1;
+        }
+        .button {
+            background-color: #0080ff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            padding: 5px 10px;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+        .menu-container {
+            display: flex;
+            padding: 20px 0;
+        }
+        .menu-section {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin-right: 20px;
+            flex-grow: 1;
+        }
+        .menu-section h3 {
+            color: #0080ff;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+        .menu-section h3 > i {
+            margin-right: 5px;
+            font-size: 12px;
+        }
+        .menu-section .item {
+            margin-bottom: 5px;
+            display: flex;
+            align-items: center;
+        }
+        .menu-section .item > i {
+            margin-right: 5px;
+            font-size: 10px;
+        }
+        .menu-section .item a {
+            color: black;
+            text-decoration: none;
+        }
+        .content-container {
+            display: flex;
+            padding: 20px 0;
+        }
+        .content-column {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin-right: 20px;
+            flex-grow: 1;
+        }
+        .content-column h4 {
+            color: black;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .content-column .item {
+            margin-bottom: 5px;
+        }
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        .footer-left {
+            display: flex;
+            flex-direction: column;
+        }
+        .footer-right {
+            display: flex;
+            flex-direction: column;
+        }
+        .footer-right .social-icons {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .footer-right .social-icon {
+            margin-right: 10px;
+        }
+        .footer-right .social-icon > i {
+            font-size: 16px;
+        }
+        .footer-right .social-icon > span {
+            font-size: 12px;
+        }
+        .footer-right .copyright {
+            font-size: 10px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+<div class="left-section">
+<span>Некоммерческие интернет-версии</span>
+</div>
+<div class="right-section">
+<div><span>О компании и продуктах</span></div>
+<div><span>Купить КонсультантПлюс</span></div>
+<div><span>Новости и акции</span></div>
+<div><span>Пробный доступ</span></div>
+<div><span>Новости</span></div>
+<div><span>Вакансии</span></div>
+<div class="search-bar">
+<input placeholder="Поиск: Кодексы, законы и другие материалы" type="text"/>
+<button class="button">НАЙТИ</button>
+</div>
+</div>
+</div>
+<div class="menu-container">
+<div class="menu-section">
+<h3><i></i> Вход для клиентов</h3>
+<div class="item"><a href="#">Вход в систему</a></div>
+<div class="item"><a href="#">КонсультантПлюс для клиентов</a></div>
+<div class="item"><a href="#">Пробный доступ</a></div>
+<div class="item"><a href="#">Купить систему</a></div>
+<div class="item"><a href="#">Получите специальное предложение на покупку системы КонсультантПлюс</a></div>
+<div class="item"><a href="#">310 744 893</a></div>
+<div class="item"><a href="#">документы в системе КонсультантПлюс</a></div>
+<div class="item"><a href="#">Обзоры законодательства</a></div>
+<div class="item"><a href="#">Подписка на рассылки</a></div>
+<div class="item"><a href="#">Интернет-интервью</a></div>
+<div class="item"><a href="#">Студенты и преподавателю</a></div>
+</div>
+<div class="menu-section">
+<h3><i></i> Новости</h3>
+<div class="item"><span>сегодня</span> <a href="#">Изменения налоговой системы: Минфин сообщил, какие новшества готов поддержать</a></div>
+<div class="item"><span>сегодня</span> <a href="#">ФАС планирует выявлять антиконкурентные соглашения с помощью новой информсистемы</a></div>
+<div class="item"><span>Не пропустите</span> <a href="#">Договоры с самозанятыми: яркие споры о переквалификации их в трудовые за январь – май 2024 года</a></div>
+<div class="item"><span>сегодня</span> <a href="#">Отзыв ПБО в 2024 году: Казначейство подготовило план-график мероприятий</a></div>
+<div class="item"><span>сегодня</span> <a href="#">Медосмотры работников: интересные примеры споров за 2022 – 2024 годы</a></div>
+<div class="item"><span>сегодня</span> <a href="#">Президент установил порядок приобретения исключительных прав у лиц недружественных стран</a></div>
+<div class="item"><a href="#">Все новости</a></div>
+</div>
+<div class="menu-section">
+<h3><i></i> Продукты</h3>
+<div class="item"><i></i> <a href="#">Юристу</a></div>
+<div class="item"><a href="#">Законодательство, судебная практика и ее анализ. Комментарии и разъяснения. Конструктор договоров.</a></div>
+<div class="item"><i></i> <a href="#">Бухгалтеру</a></div>
+<div class="item"><a href="#">Готовые решения, разъяснения ведомств, образцы заполнения. Видеосеминары. Конструкторы, калькуляторы.</a></div>
+<div class="item"><i></i> <a href="#">Бюджетной организации</a></div>
+<div class="item"><a href="#">Законодательство и разъяснения. Образцы заполнения, видеосеминары, новости. Конструкторы.</a></div>
+<div class="item"><i></i> <a href="#">Другим специалистам</a></div>
+</div>
+<div class="menu-section">
+<h3><i></i> «Горячие» документы</h3>
+<div class="item"><a href="#">Новые законы РФ, указы Президента, постановления Правительства и другие нормативные акты. Новые документы поступают несколько раз в день.</a></div>
+<div class="item"><a href="#">Новый профиль «Специалист по охране труда» в КонсультантПлюс</a></div>
+</div>
+</div>
+<div class="content-container">
+<div class="content-column">
+<h4>Кодексы</h4>
+<div class="item">Гражданский кодекс (ГК РФ)</div>
+<div class="item">Жилищный кодекс (ЖК РФ)</div>
+<div class="item">Налоговый кодекс (НК РФ)</div>
+<div class="item">Трудовой кодекс (ТК РФ)</div>
+<div class="item">Уголовный кодекс (УК РФ)</div>
+<div class="item">Кодекс об административных правонарушениях (КоАП РФ)</div>
+<div class="item">Бюджетный кодекс (БК РФ)</div>
+<div class="item">Таможенный кодекс ЕАЭС</div>
+<div class="item">Арбитражный процессуальный кодекс (АПК РФ)</div>
+<div class="item">Земельный кодекс (ЗК РФ)</div>
+<div class="item">Популярные документы для бухгалтеров</div>
+<div class="item">Все документы</div>
+</div>
+<div class="content-column">
+<h4>Законы</h4>
+<div class="item">О защите прав потребителей</div>
+<div class="item">Об банкротстве</div>
+<div class="item">Об исполнительном производстве</div>
+<div class="item">О персональных данных</div>
+<div class="item">О налогах на имущество физических лиц,  ОКНД</div>
+<div class="item">Расходы организаций ПБУ 10/99</div>
+<div class="item">О судебных приставах</div>
+<div class="item">О государственной регистрации недвижимости</div>
+<div class="item">Конституция РФ</div>
+</div>
+<div class="content-column">
+<h4>Справочная информация</h4>
+<div class="item">Правовой календарь на II квартал 2024 г.</div>
+<div class="item">Календарь бухгалтера на 2024 г.</div>
+<div class="item">Производственный календарь на 2024 г.</div>
+<div class="item">Производственный календарь на 2023 г.</div>
+<div class="item">Таможенный календарь на 2024 г.</div>
+<div class="item">Калькуляторы</div>
+<div class="item">Государственная регистрация юридических лиц</div>
+<div class="item">Государственная регистрация индивидуальных предпринимателей</div>
+<div class="item">Налоговая декларация по НДС</div>
+<div class="item">Формы бухгалтерской отчетности</div>
+<div class="item">Процентная ставка рефинансирования (учетная ставка), установленная ЦБ РФ</div>
+<div class="item">Ключевая ставка ЦБ РФ на сегодня</div>
+<div class="item">Должностные инструкции</div>
+<div class="item">Пособия и их расчетные данные на 2024 г.</div>
+<div class="item">МРОТ 2024</div>
+<div class="item">Подборки материалов, акты, образцы, формы, договоры</div>
+<div class="item">Частичная мобилизация: обзор новостей</div>
+<div class="item">Вся справочная информация</div>
+</div>
+</div>
+<div class="footer">
+<div class="footer-left">
+<h4>Контактная информация</h4>
+<div>117292, Москва, ул. Крылатковская, 6 (центральный офис)</div>
+<div>+7 (495) 956-82-83</div>
+<div>+7 (495) 787-92-92</div>
+<div>contact@consultant.ru</div>
+<div>Все права защищены © 1997 – 2024 КонсультантПлюс</div>
+<img alt="Logo" height="20" src="placeholder.png" width="20"/>
+</div>
+<div class="footer-right">
+<h4>Мы в социальных сетях</h4>
+<div class="social-icons">
+<div class="social-icon"><i></i> <span>ВКонтакте</span></div>
+<div class="social-icon"><i></i> <span>Telegram</span></div>
+<div class="social-icon"><i></i> <span>Дзен</span></div>
+<div class="social-icon"><i></i> <span>Одноклассники</span></div>
+</div>
+<div class="copyright">Свидетельство МПТР России Зн №77-6731</div>
+<div class="copyright">Политика обработки персональных данных</div>
+<div class="copyright">Условия доступа к сайту</div>
+<img alt="Logo" height="20" src="placeholder.png" width="20"/>
+</div>
+</div>
+</body>
+</html>
+</p></body></html>

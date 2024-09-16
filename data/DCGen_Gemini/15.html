@@ -1,0 +1,233 @@
+<html><body><p>
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Document</title>
+<style>
+body {
+    background-color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+}
+
+.header .login {
+    font-size: 16px;
+    color: #333;
+    margin-right: 20px;
+}
+
+.header .menu {
+    width: 30px;
+    height: 30px;
+    background-color: #333;
+    border-radius: 50%;
+}
+
+.header .weather {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header .weather .icon {
+    width: 40px;
+    height: 40px;
+    background-color: #ddd;
+    border-radius: 50%;
+}
+
+.header .weather .info {
+    font-size: 14px;
+    color: #333;
+}
+
+.header .weather .info .temp {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.search input {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.search input::placeholder {
+    font-size: 16px;
+    color: #333;
+}
+
+.search .icons {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.search .icons .icon {
+    width: 30px;
+    height: 30px;
+    background-color: #ddd;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.search .icons .icon svg {
+    width: 16px;
+    height: 16px;
+    fill: #333;
+}
+
+.currency {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.currency .currency-icon {
+    width: 30px;
+    height: 30px;
+    background-color: #ddd;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.currency .info {
+    display: flex;
+    align-items: center;
+}
+
+.currency .info .temp {
+    font-size: 16px;
+    color: #333;
+    margin-right: 10px;
+}
+
+.currency .info .price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+.currency .location {
+    font-size: 16px;
+    color: #333;
+}
+
+.footer {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.footer .icon {
+    width: 40px;
+    height: 40px;
+    background-color: #6a5acd;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .icon svg {
+    width: 20px;
+    height: 20px;
+    fill: white;
+}
+
+.search input, .search input::placeholder {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header .login, .header .weather .info, .header .weather .info .temp, .currency .info .temp, .currency .info .price, .currency .location {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.search input {
+    background: white;
+    border: 1px solid #ffc107;
+}
+
+.search {
+    background: #fff2e0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+</style>
+</head>
+<body>
+<header class="header">
+<div class="login">Войти</div>
+<div class="menu"></div>
+<div class="weather">
+<div class="icon"></div>
+<div class="info">
+<div class="temp">Сегодня: дождь</div>
+<div class="temp">+25...+28° • слабый ветер</div>
+<div class="temp">1-2 м/с</div>
+</div>
+</div>
+</header>
+<div class="search">
+<input placeholder="Найдется всё" type="text"/>
+<div class="icons">
+<div class="icon"><svg class="bi bi-mic-fill" fill="currentColor" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+<path d="M5 3a3 3 0 0 1 6 0v5.586l-.214.242a.5.5 0 0 1-.708 0l-.242-.214V3zm1 11.5a.5.5 0 0 1-.5-.5h-5a.5.5 0 0 1 0-1h5a.5.5 0 0 1 .5.5v-1a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5z"></path>
+</svg></div>
+<div class="icon"><svg class="bi bi-camera-fill" fill="currentColor" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+<path d="M10.88 9.12a1 1 0 0 0-1.76 0l-6.25 4.75-1.2-1.2a1 1 0 0 0-1.414 1.414l1.2 1.2 6.25-4.75a1 1 0 0 0 1.414-1.414l-1.2-1.2zm.34 6.34a3 3 0 0 1-4.24 0l-1.2-1.2a1 1 0 0 0-1.414 1.414l1.2 1.2 2.08 2.08a1 1 0 0 0 1.414 0l2.08-2.08a1 1 0 0 0 1.414-1.414l-1.2-1.2zm.82-3.25a1 1 0 0 0-1.414-1.414l1.2-1.2 2.08 2.08a1 1 0 0 0 1.414 0l2.08-2.08a1 1 0 0 0-1.414-1.414l-1.2 1.2z"></path>
+<path d="M2 13.5v-11a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v11c0 .552-.448 1-1 1h-12a1 1 0 0 1-1-1z"></path>
+</svg></div>
+</div>
+</div>
+<div class="currency">
+<div class="currency-icon"></div>
+<div class="info">
+<div class="temp">25°</div>
+<div class="price">USD 90.19</div>
+</div>
+<div class="location">Гонконг</div>
+</div>
+<div class="currency">
+<div class="currency-icon"></div>
+<div class="info">
+<div class="temp"></div>
+<div class="price">EUR 97.90</div>
+</div>
+<div class="location"></div>
+</div>
+<div class="footer">
+<div class="icon"><svg class="bi bi-arrow-up-circle-fill" fill="currentColor" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+<path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"></path>
+</svg></div>
+</div>
+</body>
+</html>
+</p></body></html>

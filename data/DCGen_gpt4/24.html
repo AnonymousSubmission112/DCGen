@@ -1,0 +1,304 @@
+<html><body><p>
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Replicated Webpage</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #fff;
+            padding: 10px 20px;
+        }
+        .navbar img {
+            height: 50px;
+        }
+        .navbar input[type="text"] {
+            width: 60%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .navbar button {
+            background-color: #ffa500;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .navbar .login-button {
+            background-color: #563d7c;
+            padding: 10px;
+        }
+        .navbar a {
+            text-decoration: none;
+            color: #000;
+            font-size: 14px;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        .sidebar {
+            width: 25%;
+            padding: 10px;
+            background-color: #f1f1f1;
+            border: 1px solid #d6d6d6;
+        }
+        .main-content {
+            width: 73%;
+            padding: 10px;
+        }
+        .sidebar .card {
+            background-color: #fff;
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #d6d6d6;
+        }
+        .sidebar .card h3, .main-content h2 {
+            color: #034fbc;
+            font-size: 14px;
+        }
+        .sidebar .card p, .main-content p {
+            font-size: 12px;
+        }
+        .sidebar .card p strong, .main-content p strong {
+            font-weight: bold;
+        }
+        .main-content .item {
+            display: flex;
+            margin-bottom: 20px;
+        }
+        .main-content .item img {
+            width: 120px;
+            height: 100px;
+            margin-right: 10px;
+        }
+        .main-content .item .info {
+            display: flex;
+            flex-direction: column;
+        }
+        .main-content .item .info span {
+            font-size: 10px;
+            color: gray;
+        }
+        .main-content .item .info p {
+            font-size: 12px;
+        }
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: #f8f8f8;
+        }
+        .column {
+            flex: 1;
+            margin: 0 10px;
+        }
+        .column h3 {
+            color: #1e50a5;
+        }
+        .column a {
+            color: #1e50a5;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 10px;
+        }
+        .column a:hover {
+            text-decoration: underline;
+        }
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: #f8f8f8;
+        }
+        .footer-legal, .footer-contact {
+            width: 48%;
+        }
+        .footer-legal a {
+            display: block;
+            margin-bottom: 10px;
+            color: #000;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .footer-social a {
+            display: block;
+            margin-top: 5px;
+            color: #000;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+<div class="navbar">
+<img alt="Logo" src="placeholder.png"/>
+<input placeholder="Поиск: Кодексы, законы и другие материалы" type="text"/>
+<button type="button">НАЙТИ</button>
+<button class="login-button" type="button">Вход в систему</button>
+</div>
+<nav>
+<a href="#">Некоммерческая интернет-версия</a>
+<a href="#">О компании и продукте</a>
+<a href="#">Купить КонсультантПлюс</a>
+<a href="#">Новости и видео</a>
+<a href="#">Пробный доступ</a>
+<a href="#">Кабинет</a>
+<a href="#">Вакансии</a>
+</nav>
+<div class="container">
+<div class="sidebar">
+<div class="card">
+<h3>Вход для клиентов</h3>
+<p>Вход в систему КонсультантПлюс личный кабинет</p>
+</div>
+<div class="card">
+<h3>Пробный доступ</h3>
+<p>Пробный доступ к системе КонсультантПлюс бесплатно</p>
+</div>
+<div class="card">
+<h3>Купить систему</h3>
+<p>Получите специальное предложение</p>
+</div>
+<div class="card">
+<p><strong>310 744 893</strong><br/>Единый центр консультаций</p>
+</div>
+<div class="card">
+<p><strong>Обслуживание клиентов</strong><br/>Поможем вам круглосуточно!</p>
+</div>
+</div>
+<div class="main-content">
+<h2>Президент определил национальные цели развития России</h2>
+<h2>Новости</h2>
+<div class="item">
+<img alt="News Image" src="placeholder.png"/>
+<div class="info">
+<span>сегодня</span>
+<p><strong>СМИ сообщили, что налоговая реформа может быть продлена</strong><br/>Минфин сообщает о возможных изменениях в программе.</p>
+</div>
+</div>
+<div class="item">
+<img alt="News Image" src="placeholder.png"/>
+<div class="info">
+<span>сегодня</span>
+<p><strong>Минэкономики разрабатывает антикризисные меры</strong><br/>Новая информационная система для обмена антикризисными соглашениями.</p>
+</div>
+</div>
+<div class="item">
+<img alt="News Image" src="placeholder.png"/>
+<div class="info">
+<p><strong>Делаем лучшую программу для некоммерческих организаций</strong><br/>Рассматриваем самые популярные программные решения на рынке.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="sidebar">
+<div class="card">
+<h3>Горячие документы</h3>
+<p>Пример документа системы КонсультантПлюс</p>
+<p><a href="#">Ещё примеры</a></p>
+</div>
+</div>
+<div class="main-content">
+<h2>Продукты</h2>
+<div class="item">
+<img alt="Product Image" src="placeholder.png"/>
+<div class="info">
+<p><strong>Юристу</strong><br/>Информация для юриста.</p>
+</div>
+</div>
+<div class="item">
+<img alt="Product Image" src="placeholder.png"/>
+<div class="info">
+<p><strong>Бухгалтеру</strong><br/>Информация для бухгалтера.</p>
+</div>
+</div>
+<div class="item">
+<img alt="Product Image" src="placeholder.png"/>
+<div class="info">
+<p><strong>Специалистам по кадровому учету</strong><br/>Полезная информация для кадровых специалистов.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="footer">
+<div class="column">
+<h3>Кодексы</h3>
+<a href="#">Гражданский кодекс (ГК РФ)</a>
+<a href="#">Жилищный кодекс (ЖК РФ)</a>
+<a href="#">Налоговый кодекс (НК РФ)</a>
+<a href="#">Трудовой кодекс (ТК РФ)</a>
+<a href="#">Уголовный кодекс (УК РФ)</a>
+<a href="#">КоАП РФ</a>
+<a href="#">Бюджетный кодекс (БК РФ)</a>
+<a href="#">Таможенный кодекс ЕАЭС</a>
+<a href="#">Арбитражный процессуальный кодекс (АПК РФ)</a>
+<a href="#">Земельный кодекс (ЗК РФ)</a>
+<a href="#">Новые документы для бухгалтеров</a>
+<a href="#">Все документы</a>
+</div>
+<div class="column">
+<h3>Законы</h3>
+<a href="#">О защите прав потребителей</a>
+<a href="#">Об акционерных обществах</a>
+<a href="#">Об исполнительном производстве</a>
+<a href="#">О налогах на имущество физических лиц</a>
+<a href="#">ОКВЭД 2</a>
+<a href="#">Постановление Правительства РФ № 1090</a>
+<a href="#">О государственной регистрации недвижимости</a>
+<a href="#">Конституция РФ</a>
+</div>
+<div class="column">
+<h3>Справочная информация</h3>
+<a href="#">Правовой календарь на 1 квартал 2024 г.</a>
+<a href="#">Календарь бухгалтера на 2024 г.</a>
+<a href="#">Производственный календарь на 2023 г.</a>
+<a href="#">Табличный календарь на 2023 г.</a>
+<a href="#">Калькуляторы</a>
+<a href="#">Государственная регистрация юридических лиц</a>
+<a href="#">Государственная регистрация недвижимости</a>
+<a href="#">Налоговики рекомендуют физлицам</a>
+<a href="#">Справочник коэффициентов</a>
+<a href="#">Сценарии звонков по продажам</a>
+<a href="#">МСФО 2024</a>
+<a href="#">Правила деловой этики на 2024 г.</a>
+<a href="#">Подборка материалов: адреса, форма, факты</a>
+<a href="#">Частые вопросы: обзор новостей</a>
+<a href="#">Все справочные документы</a>
+</div>
+</div>
+<div class="footer-content">
+<div class="footer-legal">
+<a href="#"><img alt="Company Logo" src="placeholder.png"/></a>
+<p>Все права защищены © 1997—2024 КонсультантПлюс</p>
+<p>Свидетельство МПТР России ЭЛ №ФС77-61731</p>
+<a href="#">Политика обработки персональных данных</a>
+<a href="#">Условия доступа к сайту</a>
+</div>
+<div class="footer-contact">
+<address>119772, Москва, ул. Казацкого, 6 (оперативный офис)</address>
+<p><a href="tel:+74959568383">+7 (495) 956-83-83</a>, <a href="tel:+74999729292">+7 (499) 972-92-92</a></p>
+<p><a href="mailto:contact@consultant.ru">contact@consultant.ru</a></p>
+<div class="footer-social">
+<a href="#">Мы в социальных сетях:</a>
+<a href="#">ВКонтакте</a>
+<a href="#">Telegram</a>
+<a href="#">Дзен</a>
+<a href="#">Одноклассники</a>
+</div>
+</div>
+</div>
+</body>
+</html>
+</p></body></html>

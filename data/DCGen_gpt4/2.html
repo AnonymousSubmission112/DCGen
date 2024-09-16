@@ -1,0 +1,285 @@
+<html><body><p>
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Chess Website</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1f1f1f;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .header {
+            width: 100%;
+        }
+        .container {
+            width: 100%;
+            max-width: 1200px;
+        }
+        .nav {
+            width: 100px;
+            padding: 15px;
+            background-color: #333333;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .nav a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .image-container {
+            display: flex;
+            justify-content: center;
+            padding: 20px 0;
+        }
+        .image-container img {
+            width: 400px;
+            height: 300px;
+            background-color: #e0e0e0;
+        }
+        .main {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 0;
+        }
+        .main-text h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        .main-text p {
+            color: #999;
+        }
+        .buttons {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .btn {
+            padding: 10px 20px;
+            font-size: 1em;
+            border: none;
+            cursor: pointer;
+        }
+        .btn-green {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .btn-gray {
+            background-color: #444;
+            color: white;
+        }
+        .content-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 40px 20px;
+            border-top: 2px solid #333;
+        }
+        .content-section:nth-child(odd) {
+            background-color: #1d1d1d;
+        }
+        .content-section img {
+            width: 280px;
+            height: 200px;
+            background-color: #e4e4e4;
+        }
+        .content-text {
+            max-width: 500px;
+        }
+        .content-text h2 {
+            font-size: 32px;
+            margin: 0 0 20px 0;
+            color: white;
+        }
+        .content-text p {
+            font-size: 16px;
+            margin: 10px 0;
+            color: #cccccc;
+        }
+        .content-text .gm {
+            font-size: 14px;
+        }
+        .solve-puzzles-button, .start-lessons-button, .chess-today-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: #4caf50;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+        .cards-container {
+            display: flex;
+            justify-content: center;
+            padding: 20px 0;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .card {
+            background-color: #2b2b2b;
+            width: 300px;
+            margin: 10px;
+            padding: 20px;
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+            background-color: #e4e4e4;
+        }
+        .card .caption {
+            text-align: center;
+            margin-top: 10px;
+        }
+        .footer {
+            width: 100%;
+            background-color: #1a1a1a;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 1100px;
+            margin-bottom: 20px;
+        }
+        .footer-content div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .footer img {
+            width: 120px;
+            height: 90px;
+            background-size: cover;
+            margin-bottom: 10px;
+            background-color: #e4e4e4;
+        }
+        .footer-content h3 {
+            margin: 0;
+            font-size: 16px;
+            text-align: center;
+        }
+        .footer-content p {
+            margin: 0;
+        }
+        .footer-button {
+            background-color: #5cb85c;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .footer-info {
+            text-align: center;
+            width: 100%;
+            max-width: 1100px;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+<div class="nav">
+<a href="#">Play</a>
+<a href="#">Puzzles</a>
+<a href="#">Learn</a>
+<a href="#">Watch</a>
+<a href="#">News</a>
+<a href="#">Social</a>
+<a href="#">More</a>
+</div>
+</div>
+<div class="container">
+<div class="image-container">
+<img alt="Placeholder Image" src="placeholder.png"/>
+</div>
+<div class="main">
+<div class="main-text">
+<h1>Play Chess Online <br/> on the #1 Site!</h1>
+<p>14,600,565 <span>Games Today</span></p>
+<p>108,658 <span>Playing Now</span></p>
+<div class="buttons">
+<button class="btn btn-green">Play Online</button>
+<button class="btn btn-gray">Play Computer</button>
+</div>
+</div>
+</div>
+<div class="content-section">
+<div class="content-text">
+<h2>Solve Chess Puzzles</h2>
+<a class="solve-puzzles-button" href="#">Solve Puzzles</a>
+<p>“Puzzles are the best way to improve pattern recognition, and no site does it better.”</p>
+<p class="gm">GM Hikaru Nakamura</p>
+</div>
+<img alt="Puzzle Image" src="placeholder.png"/>
+</div>
+<div class="content-section">
+<img alt="Lesson Image" src="placeholder.png"/>
+<div class="content-text">
+<h2>Take Chess Lessons</h2>
+<a class="start-lessons-button" href="#">Start Lessons</a>
+<p>“Chess.com lessons make it easy to learn to play, then challenge you to continue growing.”</p>
+<p class="gm">GM Anna Rudolf</p>
+</div>
+</div>
+<div class="cards-container">
+<div class="card">
+<img alt="Placeholder" src="placeholder.png"/>
+<div class="caption">How To Get Better At Chess Using Chess.com? Coaches Share Tips</div>
+</div>
+<div class="card">
+<img alt="Placeholder" src="placeholder.png"/>
+<div class="caption">Reid Emerges As NFL's Top Chess Player</div>
+</div>
+<div class="card">
+<img alt="Placeholder" src="placeholder.png"/>
+<div class="caption">11 Classic Chess Sayings</div>
+</div>
+<div class="card">
+<img alt="Placeholder" src="placeholder.png"/>
+<div class="caption">Max Lange Attack: Morphy vs Schrufer</div>
+</div>
+</div>
+<div class="footer">
+<div class="footer-content">
+<div>
+<img alt="Chess Image 1" src="placeholder.png"/>
+<h3>11 Classic Chess Sayings</h3>
+<p>NathanielGreen</p>
+</div>
+<div>
+<a class="footer-button" href="#">Chess Today</a>
+</div>
+<div>
+<img alt="Chess Image 2" src="placeholder.png"/>
+<h3>Max Lange Attack: Morphy vs Schrufer</h3>
+<p>Ginger_GM</p>
+</div>
+</div>
+<div class="footer-info">
+<p>Help | Chess Terms | About | Jobs | Developers | User Agreement | Privacy Policy | Fair Play | Partners | Compliance | Chess.com © 2024</p>
+</div>
+</div>
+</div>
+</body>
+</html>
+</p></body></html>

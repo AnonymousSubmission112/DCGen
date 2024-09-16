@@ -1,0 +1,331 @@
+<html><body><p>
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>IP Geolocation API</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+}
+
+.header {
+  background-color: #f2f2f2;
+  padding: 20px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.nav {
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.nav a {
+  color: #000;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 10px;
+}
+
+.nav .logo {
+  font-size: 12px;
+}
+
+.title {
+  text-align: center;
+}
+
+.title h1 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #000;
+}
+
+.title h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;
+  margin-top: 10px;
+}
+
+.title p {
+  font-size: 14px;
+  color: #666;
+  margin-top: 10px;
+}
+
+.button {
+  display: block;
+  margin: 20px auto;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.demo {
+  background-color: #007bff;
+  color: #fff;
+  padding: 20px;
+  border: 1px solid #fff;
+  margin-top: 20px;
+}
+
+.demo h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.demo p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.demo input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.demo button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.error {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.error .message {
+  color: red;
+  font-size: 14px;
+}
+
+.error .details {
+  font-size: 12px;
+  color: #666;
+}
+
+.faq {
+  margin-top: 20px;
+}
+
+.faq h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.faq .questions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.faq .question {
+  width: 25%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.faq .question h3 {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.faq .question p {
+  font-size: 12px;
+  color: #666;
+}
+
+.faq .footer {
+  text-align: center;
+  margin-top: 20px;
+  padding-bottom: 20px;
+}
+
+.faq .footer p {
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.faq .footer a {
+  color: #666;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.faq .footer a:hover {
+  text-decoration: underline;
+}
+
+.go-pro {
+  width: 25%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.go-pro h3 {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.go-pro p {
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.go-pro .button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+
+.go-pro .button-contact {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+<div class="header">
+<div class="container">
+<div class="nav">
+<a href="#">Documentation</a>
+<a href="#">Sign Up</a>
+<a href="#">Contact</a>
+<div class="logo">logo</div>
+</div>
+<div class="title">
+<h1>IP Geolocation API</h1>
+<h2>Fast, accurate, reliable</h2>
+<p>Free for non-commercial use, no API key required</p>
+<p>Easy to integrate, available in JSON, XML, CSV, Newline, PHP</p>
+<p>Serving more than 1 billion requests per day, trusted by thousands of businesses</p>
+<a class="button" href="#">API DOCUMENTATION</a>
+</div>
+<img alt="Image" src="placeholder.png" style="position: absolute; top: 100px; right: 100px;"/>
+</div>
+</div>
+<div class="demo">
+<div class="container">
+<h2>API Demo</h2>
+<p>Search any IP address/domain</p>
+<input placeholder="Query IP/domain" type="text"/>
+<button>SEARCH</button>
+<div class="error">
+<p class="message">error, HTTP code 403 Forbidden</p>
+<p class="details">{"status":"fail", "message":"SSL unavailable for this endpoint, order a key"</p>
+</div>
+</div>
+</div>
+<div class="faq">
+<div class="container">
+<h2>Frequently Asked Questions</h2>
+<div class="questions">
+<div class="question">
+<h3>How often do you update your database?</h3>
+<p>We update our database as soon as we have new information about an IP block. For each API request, you will always have the most accurate location data, without having to worry about updating a local database.</p>
+</div>
+<div class="question">
+<h3>Are you still going to be here next year? Can I use your API in production?</h3>
+<p>IP-API has been running since 2012 and we are now providing one of the most popular and reliable IP Geolocation API.</p>
+</div>
+<div class="question">
+<h3>Do I need an API key for the free endpoint?</h3>
+<p>We will never require an API key or registration and the API schema will not change.</p>
+</div>
+<div class="question">
+<h3>How many requests can I do?</h3>
+<p>Our endpoints are limited to 45 HTTP requests per minute from an IP address. If you go over this limit your requests will be throttled (HTTP 429) until your rate limit window is reset. If you need unlimited queries, please see our pro service.</p>
+</div>
+<div class="question">
+<h3>What is the average response time of the API?</h3>
+<p>With dedicated servers in US, EU and APAC, a network based on Anycast technology, and highly optimized software we achieve real response times of under 50 milliseconds in most parts of the world.</p>
+</div>
+<div class="question">
+<h3>Can I use your API on my commercial website?</h3>
+<p>We do not allow commercial use of the free endpoint. Please see our pro service for SSL access, unlimited queries, usage statistics and commercial support.</p>
+</div>
+<div class="question">
+<h3>Response Formats</h3>
+<p>JSON</p>
+<p>XML</p>
+<p>CSV</p>
+<p>Newline</p>
+<p>PHP</p>
+</div>
+<div class="question">
+<h3>API</h3>
+<p>Batch API</p>
+<p>DNS API</p>
+<p>Data Correction</p>
+</div>
+<div class="go-pro">
+<h3>Go pro</h3>
+<p>Get unlimited queries, SSL and commercial use</p>
+<a class="button" href="#">SIGN UP</a>
+<a class="button-contact" href="#">CONTACT</a>
+</div>
+</div>
+<div class="footer">
+<p>© 2022 ip-api.com. All rights reserved.</p>
+<a href="#">Terms and Policies</a>
+<a href="#">Service status</a>
+<p>logo</p>
+</div>
+</div>
+</div>
+</body>
+</html>
+</p></body></html>

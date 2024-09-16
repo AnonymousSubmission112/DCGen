@@ -1,0 +1,452 @@
+<html><body><p>
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Webpage</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        .top-bar {
+            background-color: #f5f7fa;
+            padding: 10px;
+            text-align: center;
+            font-size: 14px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .top-bar a {
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 5px 10px;
+            border: 1px solid #333;
+            border-radius: 5px;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+            background-color: #1a1a1a;
+            padding: 10px;
+        }
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            padding: 8px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .hero {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        .hero h1 {
+            background-color: #e74c3c;
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 36px;
+            font-weight: bold;
+        }
+        .hero p {
+            font-size: 24px;
+            margin-top: 20px;
+        }
+        .hero .buttons {
+            margin-top: 20px;
+        }
+        .hero .buttons a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            border: 1px solid #fff;
+            margin: 10px;
+            border-radius: 5px;
+            font-weight: bold;
+            text-transform: uppercase;
+            display: inline-block;
+            background-color: #e74c3c;
+        }
+        .hero .buttons a:hover {
+            background-color: #333;
+        }
+        .cookie-banner {
+            background-color: #fff3cd;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .cookie-banner span {
+            margin-right: 10px;
+        }
+        .cookie-banner a {
+            color: #d9534f;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 5px 10px;
+            border: 1px solid #d9534f;
+            border-radius: 5px;
+        }
+        .sections {
+            text-align: center;
+            padding: 40px 20px;
+        }
+        .sections h2 {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .image-grid {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            padding: 20px 0;
+        }
+        .image-grid img {
+            width: 150px;
+            height: 150px;
+        }
+        .call-out {
+            text-align: left;
+            padding: 20px;
+            margin: 20px 0;
+            border-left: 8px solid #e74c3c;
+            background-color: #f5f5f5;
+        }
+        .call-out h2 {
+            color: #e74c3c;
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .call-out p {
+            margin-bottom: 10px;
+        }
+        .call-out a {
+            color: #e74c3c;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .footer {
+            background-color: #2f2f2f;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .footer a {
+            color: #81d4fa;
+            text-decoration: none;
+            padding: 5px 10px;
+            border: 1px solid #81d4fa;
+            border-radius: 5px;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        .footer-content {
+            display: flex;
+            gap: 10px;
+        }
+        .sections a {
+            color: #e74c3c;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .sections p {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        .image-grid-2 {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            padding: 20px 0;
+            flex-wrap: wrap;
+        }
+        .image-grid-2 img {
+            width: 150px;
+            height: 150px;
+            margin-bottom: 10px;
+        }
+        .image-grid-2 .item {
+            text-align: center;
+        }
+        .image-grid-2 .item h3 {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .image-grid-2 .item p {
+            font-size: 12px;
+            margin-bottom: 5px;
+        }
+        .footer-links {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            width: 100%;
+            text-align: left;
+            font-size: 12px;
+        }
+        .footer-links a {
+            color: #81d4fa;
+            text-decoration: none;
+        }
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+        .call-out p {
+            font-size: 14px;
+        }
+        .footer-social {
+            display: flex;
+            gap: 10px;
+        }
+        .footer-social img {
+            width: 25px;
+            height: 25px;
+        }
+        .sections a {
+            color: #e74c3c;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 5px 10px;
+            border: 1px solid #e74c3c;
+            border-radius: 5px;
+        }
+        .sections a:hover {
+            background-color: #333;
+        }
+        .sections .buttons {
+            margin-top: 20px;
+        }
+        .sections .buttons a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            border: 1px solid #fff;
+            margin: 10px;
+            border-radius: 5px;
+            font-weight: bold;
+            text-transform: uppercase;
+            display: inline-block;
+            background-color: #e74c3c;
+        }
+        .sections .buttons a:hover {
+            background-color: #333;
+        }
+        .hero .buttons a:hover {
+            background-color: #333;
+        }
+    </style>
+</head>
+<body>
+<div class="top-bar">
+<span>Get a 14-month look at attacker behaviors and vulnerabilities</span>
+<a href="#">THE 2024 ATTACK INTELLIGENCE REPORT - READ NOW</a>
+</div>
+<div class="navbar">
+<a href="#">PRODUCTS</a>
+<a href="#">SERVICES</a>
+<a href="#">SUPPORT &amp; RESOURCES</a>
+<a href="#">COMPANY</a>
+<a href="#">RESEARCH</a>
+<a href="#">EN</a>
+<a href="#">SIGN IN</a>
+<a href="#">TRY NOW</a>
+</div>
+<div class="hero">
+<h1>Command Your Attack Surface</h1>
+<p>Anticipate, Pinpoint, Act</p>
+<div class="buttons">
+<a href="#">EXPLORE OUR MDR SOLUTION</a>
+<a href="#">ACCESS NEW RESEARCH</a>
+</div>
+</div>
+<div class="cookie-banner">
+<span>We use cookies on our site to enhance site navigation, analyze site usage, and assist in our marketing efforts.</span>
+<a href="#">Cookies Settings</a>
+</div>
+<div class="sections">
+<h2>Helping 11,000+ global companies take the gloves off - <a href="#">View Customer Stories</a></h2>
+<div class="image-grid">
+<img alt="Placeholder Image" src="placeholder.png"/>
+<img alt="Placeholder Image" src="placeholder.png"/>
+<img alt="Placeholder Image" src="placeholder.png"/>
+<img alt="Placeholder Image" src="placeholder.png"/>
+</div>
+</div>
+<div class="sections">
+<h2>Level up SecOps. With the only endpoint to cloud, unified cybersecurity platform.</h2>
+<p>Analyze attack vectors distinct to your organization, link them to exposures, and confidently act to prevent breaches with leading MDR.</p>
+<div class="image-grid-2">
+<div class="item">
+<img alt="MDR with Unlimited Incident Response" src="placeholder.png"/>
+<h3>MDR with Unlimited Incident Response</h3>
+<p>Gain 24/7 XDR, monitoring, remediation, and DFIR from SOC experts.</p>
+</div>
+<div class="item">
+<img alt="Next-gen SIEM" src="placeholder.png"/>
+<h3>Next-gen SIEM</h3>
+<p>Pinpoint threats wherever they start with cloud-first detection and response.</p>
+</div>
+<div class="item">
+<img alt="Cloud Security" src="placeholder.png"/>
+<h3>Cloud Security</h3>
+<p>Secure multi-cloud environments with complete visibility.</p>
+</div>
+<div class="item">
+<img alt="Vulnerability Management" src="placeholder.png"/>
+<h3>Vulnerability Management</h3>
+<p>Understand risk across hybrid environments.</p>
+</div>
+<div class="item">
+<img alt="Threat Intelligence" src="placeholder.png"/>
+<h3>Threat Intelligence</h3>
+<p>Discover and remediate external threats.</p>
+</div>
+<div class="item">
+<img alt="Exposure Management" src="placeholder.png"/>
+<h3>Exposure Management</h3>
+<p>Get continuous assessment and validation of your attack surface.</p>
+</div>
+</div>
+</div>
+<div class="sections">
+<div class="call-out">
+<h2>Get unparalleled insights from Rapid7 Labs</h2>
+<p>Our industry-leading attack experts analyze vulnerabilities, misconfigurations and threat data to deliver guidance and intelligence that organizations can use to proactively inform, build, and improve their security programs.</p>
+<p>#1 open-source communities fueling purple teams and DFIR</p>
+<p>Join the world's largest open-source communities, Velociraptor and Metasploit, and leverage world class vulnerability research from the AttackerKB.</p>
+<p>Embedded intelligence</p>
+<p>Gain clarity across your evolving environment with solutions and services that have Rapid7 Labs intelligence baked in.</p>
+<p>Emergent threat response</p>
+<p>Expert analysis delivers valuable context on attack trends, emergent threats, and high-priority vulnerabilities correlated to your specific environment.</p>
+<p>Internet exposure projects</p>
+<p>Better understand your exposure to the public internet with insights from Project Sonar and Project Lorelei.</p>
+<a href="#">LEARN MORE ABOUT RAPID7 LABS</a>
+</div>
+<div class="call-out">
+<h2>Analyze this: our difference is real</h2>
+<p>Bringing a unique practitioner focus to security operations means we're ranked as a "Leader", with a "Visionary" model that puts your success at the center of all we do.</p>
+<a href="#">Gartner's MDR Research</a>
+</div>
+</div>
+<div class="sections">
+<h2>One stop for security news, research and real-time analysis.</h2>
+<p>Subscribe to our blog, and stay ahead of trending topics, emergent threats and real-time, expert analysis.</p>
+<div class="image-grid-2">
+<div class="item">
+<img alt="Events" src="placeholder.png"/>
+<h3>EVENTS</h3>
+<p>The Take Command Summit: A Day of Resilience and Preparation</p>
+<a href="#">READ FULL POST</a>
+</div>
+<div class="item">
+<img alt="Managed Detection and Response" src="placeholder.png"/>
+<h3>MANAGED DETECTION AND RESPONSE</h3>
+<p>CVE-2024-4978: Backdoored Justice AV Solutions Viewer Software Used in Apparent Supply Chain Attack</p>
+<a href="#">READ FULL POST</a>
+</div>
+<div class="item">
+<img alt="Research" src="placeholder.png"/>
+<h3>RESEARCH</h3>
+<p>Rapid7 Releases the 2024 Attack Intelligence Report</p>
+<a href="#">READ FULL POST</a>
+</div>
+<div class="item">
+<img alt="Metasploit" src="placeholder.png"/>
+<h3>METASPLOIT</h3>
+<p>Metasploit Wrap-Up 05/17/2024</p>
+<a href="#">READ FULL POST</a>
+</div>
+</div>
+<a href="#">VIEW ALL POSTS</a>
+</div>
+<div class="sections">
+<h2>Confidently anticipate, pinpoint, and act to secure your organization.</h2>
+<div class="buttons">
+<a href="#">Let's Talk</a>
+<a href="#">Follow Us</a>
+</div>
+</div>
+<div class="footer">
+<div class="footer-content">
+<p>© Rapid7</p>
+<div class="footer-links">
+<a href="#">Privacy Policy</a> | 
+                <a href="#">Legal Terms</a> | 
+                <a href="#">Export Notice</a> | 
+                <a href="#">Do Not Sell or Share My Personal Information</a>
+</div>
+</div>
+<div class="footer-links">
+<div>
+<h3>SOLUTIONS</h3>
+<a href="#">Insight Platform</a>
+<a href="#">Managed Threat Complete</a>
+<a href="#">Cloud Risk Complete</a>
+</div>
+<div>
+<h3>SUPPORT &amp; RESOURCES</h3>
+<a href="#">Product Support</a>
+<a href="#">Resource Library</a>
+<a href="#">Our Customers</a>
+<a href="#">Events &amp; Webcasts</a>
+<a href="#">Training &amp; Certification</a>
+<a href="#">Cybersecurity Fundamentals</a>
+<a href="#">Vulnerability &amp; Exploit Database</a>
+</div>
+<div>
+<h3>ABOUT US</h3>
+<a href="#">Company</a>
+<a href="#">Diversity, Equity, and Inclusion</a>
+<a href="#">Leadership</a>
+<a href="#">News &amp; Press Releases</a>
+<a href="#">Public Policy</a>
+<a href="#">Open Source</a>
+<a href="#">Investors</a>
+</div>
+<div>
+<h3>CONNECT WITH US</h3>
+<a href="#">Contact</a>
+<a href="#">Blog</a>
+<a href="#">Support Login</a>
+<a href="#">Careers</a>
+<div class="footer-social">
+<img alt="Social Media Icon" src="placeholder.png"/>
+<img alt="Social Media Icon" src="placeholder.png"/>
+<img alt="Social Media Icon" src="placeholder.png"/>
+<img alt="Social Media Icon" src="placeholder.png"/>
+</div>
+</div>
+<div>
+<h3>CUSTOMER SUPPORT</h3>
+<p>+1-866-390-8113 (Toll Free)</p>
+<h3>SALES SUPPORT</h3>
+<p>+1-866-772-7437 (Toll Free)</p>
+<p>Need to report an Escalation or a Breach?</p>
+<a href="#">GET HELP</a>
+</div>
+</div>
+<a href="#">BACK TO TOP</a>
+</div>
+</body>
+</html>
+</p></body></html>

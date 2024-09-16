@@ -1,0 +1,232 @@
+<html><body><p>
+<!DOCTYPE html>
+
+<html>
+<head>
+<style>
+body {
+  background-color: white;
+  margin: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: white;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.header-left-logo {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.header-left-text {
+  font-size: 20px;
+  color: black;
+  margin-right: 20px;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.header-right-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.header-right-button {
+  background-color: blue;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.search-bar-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.search-bar-input {
+  width: 300px;
+  height: 30px;
+  border-radius: 5px;
+  padding: 5px;
+  margin-right: 10px;
+}
+
+.search-bar-button {
+  background-color: blue;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.search-bar-microphone {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.search-bar-circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #f2f2f2;
+}
+
+.footer-left {
+  display: flex;
+  align-items: center;
+}
+
+.footer-left-text {
+  font-size: 14px;
+  color: gray;
+  margin-right: 10px;
+}
+
+.footer-left-link {
+  font-size: 14px;
+  color: blue;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+.footer-right {
+  display: flex;
+  align-items: center;
+}
+
+.footer-right-text {
+  font-size: 14px;
+  color: gray;
+  margin-right: 10px;
+}
+
+.popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+
+.popup-text {
+  font-size: 14px;
+  color: black;
+}
+
+.popup-button {
+  background-color: #e0e0e0;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.popup-button-blue {
+  background-color: blue;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-right: 10px;
+}
+</style>
+</head>
+<body>
+<div class="header">
+<div class="header-left">
+<img alt="Camera icon" class="header-left-logo" src="placeholder.png"/>
+<span class="header-left-text">Gmail</span>
+<span class="header-left-text">图片</span>
+<img alt="Grid icon" class="header-right-icon" src="placeholder.png"/>
+</div>
+<div class="header-right">
+<button class="header-right-button">登录</button>
+</div>
+</div>
+<div class="search-bar">
+<img alt="Magnifying glass icon" class="search-bar-icon" src="placeholder.png"/>
+<input class="search-bar-input" placeholder="搜索" type="text"/>
+<img alt="Microphone icon" class="search-bar-microphone" src="placeholder.png"/>
+<div class="search-bar-circle"></div>
+<button class="search-bar-button">Google 搜索</button>
+<button class="search-bar-button">好手氣</button>
+</div>
+<div class="footer">
+<div class="footer-left">
+<span class="footer-left-text">Google 透過以下語言提供服務</span>
+<a class="footer-left-link" href="#">中文(简体)</a>
+<a class="footer-left-link" href="#">English</a>
+</div>
+<div class="footer-right">
+<span class="footer-right-text">香港</span>
+<span class="footer-right-text">廣告</span>
+<span class="footer-right-text">企業</span>
+<span class="footer-right-text">隱私權與條款</span>
+<span class="footer-right-text">設定</span>
+<span class="footer-right-text">關於</span>
+</div>
+</div>
+<div class="popup">
+<div class="popup-text">Google 建議使用 Chrome 瀏覽器</div>
+<img alt="Camera icon" class="header-left-logo" src="placeholder.png"/>
+<div class="popup-text">專為 Windows 設計. 使用效果最佳的瀏覽器在 Google 上輕鬆搜尋</div>
+<button class="popup-button">不要切換</button>
+<button class="popup-button-blue">是</button>
+</div>
+<div style="display: flex; justify-content: space-between; align-items: center; padding: 20px;">
+<div style="display: flex; flex-direction: column;">
+<span style="font-size: 14px; color: black;">廣告</span>
+<span style="font-size: 14px; color: black;">關於</span>
+</div>
+<div style="display: flex; flex-direction: column;">
+<span style="font-size: 14px; color: black;">廣告</span>
+<span style="font-size: 14px; color: black;">企業</span>
+<span style="font-size: 14px; color: black;">隱私權和條款</span>
+</div>
+<div style="display: flex; flex-direction: column;">
+<span style="font-size: 14px; color: black;">條款</span>
+<span style="font-size: 14px; color: black;">設定</span>
+</div>
+</div>
+</body>
+</html>
+</p></body></html>

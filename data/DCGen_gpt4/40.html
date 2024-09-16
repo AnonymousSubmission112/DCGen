@@ -1,0 +1,371 @@
+<html><body><p>
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Reproduction of Website Area</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+        }
+        .container {
+            width: 100%;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+            background-color: #fff;
+        }
+        .header .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+        .header nav a {
+            margin-left: 15px;
+            text-decoration: none;
+            color: #333;
+        }
+        .header .buttons button {
+            padding: 5px 10px;
+            margin-left: 10px;
+            border: none;
+            cursor: pointer;
+        }
+        .header .buttons .login {
+            background-color: white;
+            color: #333;
+            border: 1px solid #333;
+        }
+        .header .buttons .signup {
+            background-color: #0073e6;
+            color: white;
+        }
+        .content {
+            text-align: center;
+            padding: 50px 0;
+            background-color: #fff;
+        }
+        .content h1 {
+            font-size: 36px;
+            color: #0073e6;
+        }
+        .content p {
+            font-size: 16px;
+            color: #333;
+            margin: 10px 0;
+        }
+        .content .email-input {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .content input {
+            padding: 10px;
+            width: 250px;
+            margin-right: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .content button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #0073e6;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .images {
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        }
+        .images img {
+            width: 150px;
+            height: 150px;
+            margin: 0 10px;
+            background-color: #f0f0f0;
+        }
+        .features-section {
+            background-color: #002EFF;
+            padding: 50px 0;
+            color: white;
+        }
+        .features-section .container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .feature {
+            max-width: 220px;
+            text-align: center;
+        }
+        .feature img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 15px;
+        }
+        .feature h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .feature p {
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+        .feature button {
+            padding: 10px;
+            border: none;
+            background-color: white;
+            color: #002EFF;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .developer-section {
+            background-color: #181818;
+            color: white;
+            padding: 50px 0;
+        }
+        .developer-section .container {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+        }
+        .code-container img,
+        .text-container img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        .text-container {
+            max-width: 500px;
+        }
+        .code-block,
+        .text-block {
+            margin-bottom: 20px;
+        }
+        .code-block {
+            background-color: #2d2d2d;
+            padding: 20px;
+            border-radius: 5px;
+            overflow-x: auto;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .code-block pre {
+            margin: 0;
+            color: #d4d4d4;
+        }
+        .title {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .text-block p {
+            margin: 10px 0;
+            line-height: 1.6;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #0073aa;
+            color: white;
+            text-decoration: none;
+            border-radius: 3px;
+            font-weight: bold;
+        }
+        .open-web-section {
+            text-align: center;
+            padding: 100px 20px;
+            background-color: #fff;
+        }
+        .image-placeholder {
+            display: block;
+            margin: 0 auto 20px auto;
+            width: 120px;
+            height: 120px;
+            background: url('placeholder.png') no-repeat center center;
+            background-size: contain;
+            border-radius: 50%;
+        }
+        .open-web-section .title {
+            font-size: 24px;
+            font-weight: 500;
+            color: #0044cc;
+            margin-bottom: 20px;
+        }
+        .open-web-section .description {
+            font-size: 14px;
+            line-height: 1.5;
+            color: #666;
+            max-width: 600px;
+            margin: 0 auto 30px auto;
+        }
+        .open-web-section .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 14px;
+            color: white;
+            background-color: #0044cc;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+        .open-web-section .button:hover {
+            background-color: #003399;
+        }
+        .footer {
+            background-color: #002EFF;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .footer img {
+            width: 100px;
+            height: auto;
+            display: block;
+            margin: 0 auto 10px auto;
+        }
+        .footer a {
+            color: white;
+            text-decoration: none;
+            margin: 5px 0;
+            display: block;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        .footer-bottom {
+            background-color: #e3e3e3;
+            padding: 10px;
+            text-align: center;
+        }
+        .footer-bottom p {
+            margin: 0;
+        }
+        .footer-bottom .left,
+        .footer-bottom .right {
+            display: inline-block;
+            vertical-align: middle;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+<header class="header">
+<div class="logo">Gravatar</div>
+<nav>
+<a href="#">Developers</a>
+<a href="#">Support</a>
+<a href="#">Blog</a>
+</nav>
+<div class="buttons">
+<button class="login">Log in</button>
+<button class="signup">Sign up</button>
+</div>
+</header>
+<div class="content">
+<p>MORE THAN 200 MILLION USERS AND GROWING</p>
+<h1>One profile for everything, everywhere.</h1>
+<p>Your email address becomes your passport to the digital world, empowering you with complete control over your personal data.</p>
+<div class="email-input">
+<input placeholder="Enter email address" type="email"/>
+<button>View profile</button>
+</div>
+<p>Gravatar profiles are free for everyone — forever.</p>
+</div>
+<div class="images">
+<img alt="Placeholder Image 1" src="placeholder.png"/>
+<img alt="Placeholder Image 2" src="placeholder.png"/>
+<img alt="Placeholder Image 3" src="placeholder.png"/>
+</div>
+<section class="features-section">
+<div class="container">
+<div class="feature">
+<img alt="Icon" src="placeholder.png"/>
+<h3>Set once, seen everywhere.</h3>
+<p>Create and manage your profile from a single place, telling the web who you are and where people can find you. Skip filling out profile pages forever.</p>
+</div>
+<div class="feature">
+<img alt="Icon" src="placeholder.png"/>
+<h3>It starts with an email.</h3>
+<p>Each Gravatar profile is connected to an email address. When you use that email around the web, your entire profile comes with you.</p>
+</div>
+<div class="feature">
+<img alt="Icon" src="placeholder.png"/>
+<h3>Trusted by big platforms.</h3>
+<p>Millions of websites like WordPress, Slack, and OpenAI use your Gravatar profile automatically, saving you time and improving your experience.</p>
+</div>
+<div class="feature">
+<img alt="Icon" src="placeholder.png"/>
+<h3>Public, open, and responsible.</h3>
+<p>Take control over the data that you share with the tools you use. You decide what is in your profile and how public or private it is. With Gravatar, your data is yours and yours only.</p>
+<button>Read our Privacy Policy</button>
+</div>
+</div>
+</section>
+<section class="developer-section">
+<div class="container">
+<div class="code-container">
+<div class="code-block">
+<pre>
+const md5 = require('md5');
+                        </pre>
+<pre>
+        // Simple authentication handling
+        api.use(async (req, res, next) =&gt; {
+            let apiKey = req.headers['Authorization'];
+            if (apiKey !== VALID_API_KEY) {
+                res.status(401);
+                return res.json({ error: 'Unauthorized' });
+            }
+            next();
+        });
+                        </pre>
+<pre>
+        const address = String(req.email).trim().toLowerCase();
+        return "https://www.gravatar.com/avatar/" + md5(address);
+                        </pre>
+</div>
+</div>
+<div class="text-container">
+<div class="text-block">
+<h3 class="title">For Developers &amp; App Makers</h3>
+<p>Unlock personalized user experiences.</p>
+<p>Gravatar helps developers create personal signup flows and tailored user journeys—all in a privacy-forward way. Gravatar can be integrated with your app in mere minutes.</p>
+<a class="button" href="#">Use the developer API &gt;</a>
+</div>
+</div>
+</div>
+</section>
+<section class="open-web-section">
+<div class="image-placeholder"></div>
+<h2 class="title">We are building the open web.</h2>
+<p class="description">Gravatar, a service by Automattic, has powered avatars and profiles since 2004. We are passionate about open-source and making the web a more accessible place. We are the driving force behind WordPress.com, Tumblr, Woo, Jetpack, Day One, Pocket Casts, and more.</p>
+<a class="button" href="#">Claim your free profile</a>
+</section>
+<div class="footer">
+<img alt="Gravatar Logo" src="placeholder.png"/>
+<a href="#">Languages</a>
+</div>
+<div class="footer-bottom">
+<div class="left">
+<p>An <strong>AUTOMATTIC</strong> venture</p>
+</div>
+<div class="right">
+<p><a href="#">Work With Us</a></p>
+</div>
+</div>
+</div>
+</body>
+</html>
+</p></body></html>

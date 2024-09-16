@@ -1,0 +1,154 @@
+<html><body><p>
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>UNPKG</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        line-height: 1.6;
+        background-color: #fff;
+        color: #333;
+    }
+    .container {
+        width: 60%;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    h1 {
+        text-align: center;
+        font-size: 3em;
+        margin-top: 20px;
+        font-weight: bold;
+    }
+    p {
+        text-align: center;
+        font-size: 1em;
+        color: gray;
+    }
+    code {
+        display: block;
+        text-align: center;
+        background-color: #f9f9f9;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        margin: 20px auto;
+        width: fit-content;
+        font-size: 1em;
+        white-space: nowrap;
+    }
+    a {
+        color: #007bff;
+        text-decoration: none;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+    .section h2 {
+        font-size: 1.5em;
+        margin-top: 30px;
+        color: #333;
+    }
+    .section p, .section ul {
+        margin: 10px 0;
+        text-align: left;
+        color: #333;
+    }
+    ul {
+        list-style-type: none;
+        padding-left: 0;
+    }
+    ul li {
+        margin: 5px 0;
+    }
+    ul li a {
+        display: block;
+    }
+    img {
+        display: block;
+        margin: 20px auto;
+        width: 150px;
+        height: 150px;
+        background-image: url('placeholder.png');
+        background-size: cover;
+    }
+    footer {
+        text-align: center;
+        margin-top: 50px;
+        color: gray;
+        font-size: 0.8em;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+<h1>UNPKG</h1>
+<p>unpkg is a fast, global content delivery network for everything on <a href="#">npm</a>. Use it to quickly and easily load any file from any package using a URL like:</p>
+<code>unpkg.com/[package]@[version][/file]</code>
+<div class="section">
+<h2>Examples</h2>
+<p>Using a fixed version:</p>
+<ul>
+<li><a href="#">unpkg.com/react@16.7.0/umd/react.production.min.js</a></li>
+<li><a href="#">unpkg.com/react-dom@16.7.0/umd/react-dom.production.min.js</a></li>
+</ul>
+<p>You may also use a semver range or a tag instead of a fixed version number, or omit the version/tag entirely to use the latest tag:</p>
+<ul>
+<li><a href="#">unpkg.com/react@16/umd/react.production.min.js</a></li>
+<li><a href="#">unpkg.com/react/umd/react.production.min.js</a></li>
+</ul>
+<p>If you omit the file path (i.e. use a "bare" URL), unpkg will serve the file specified by the unpkg field in package.json, or fall back to main:</p>
+<ul>
+<li><a href="#">unpkg.com/query</a></li>
+<li><a href="#">unpkg.com/three</a></li>
+</ul>
+<p>Append a / at the end of a URL to view a listing of all the files in a package:</p>
+<ul>
+<li><a href="#">unpkg.com/react/</a></li>
+<li><a href="#">unpkg.com/react-router/</a></li>
+</ul>
+</div>
+<div class="section">
+<h2>Query Parameters</h2>
+<p><code>?meta</code></p>
+<p>Returns metadata about any file in a package as JSON (e.g., /array?file=/meta)</p>
+<p><code>?module</code></p>
+<p>Expands all <code>import</code> specifiers in JavaScript modules to unpkg URLs. This feature is very experimental!</p>
+</div>
+<div class="section">
+<h2>Cache Behavior</h2>
+<p>The CDN caches files based on their permanent URL, which includes the npm package version. This works because npm does not allow package authors to overwrite a package that has already been published with a different one at the same version number.</p>
+<p>Browsers are instructed (via the <code>Cache-Control</code> header) to cache assets indefinitely (1 year).</p>
+<p>URLs that do not specify a package version number redirect to one that does. This is the <a href="#">latest</a> version when no version is specified, or the <code>next</code> tag when a <code>semver</code> version is given. Redirects are cached for 10 minutes at the CDN, 1 minute in browsers.</p>
+<p>If you want users to be able to use the latest version when you cut a new release, the best policy is to put the version number in the URL directly in your installation instructions. This will also load more quickly because we won't have to resolve the latest version and redirect them.</p>
+</div>
+<div class="section">
+<h2>Workflow</h2>
+<p>For npm package authors, unpkg relieves the burden of publishing your code to a CDN in addition to the npm registry. All you need to do is include your UMD build in your npm package (not your repo, that's different).</p>
+<p>You can do this easily using the following setup:</p>
+<ul>
+<li>Add the umd (or dist) directory to your <code>.gitignore</code> file</li>
+<li>Add the umd directory to your files array in <code>package.json</code></li>
+<li>Use a build script to generate your UMD build in the umd directory when you publish</li>
+</ul>
+<p>That's it! Now when you <code>npm publish</code> you'll have a version available on unpkg as well.</p>
+</div>
+<div class="section">
+<h2>About</h2>
+<p>unpkg is an <a href="#">open source</a> project built and maintained by <a href="#">Michael Jackson</a>, unpkg is not affiliated with or supported by npm, Inc. in any way. Please do not contact npm for help with unpkg. Instead, please reach out to <a href="#">@unpkg</a> or <a href="#">Twitter</a> with any questions or concerns.</p>
+<p>The unpkg CDN is powered by <a href="#">Cloudflare</a>, one of the world's largest and fastest cloud network platforms.</p>
+<img alt="Cloudflare" src="placeholder.png"/>
+<p>The origin server runs on auto-scaling infrastructure provided by <a href="#">Fly.io</a>. The app servers run in 17 cities around the world, and come and go based on active requests.</p>
+<img alt="Fly.io" src="placeholder.png"/>
+</div>
+<footer>Built with <a href="#">❤️</a> by <a href="#">Zefir</a> © 2024 UNPKG</footer>
+</div>
+</body>
+</html>
+</p></body></html>

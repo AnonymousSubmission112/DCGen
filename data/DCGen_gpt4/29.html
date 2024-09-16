@@ -1,0 +1,499 @@
+<html><body><p>
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>GOV.UK</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .cookie-banner {
+            background-color: #f3f2f1;
+            padding: 20px;
+            border-bottom: 1px solid #d6d4d2;
+        }
+
+        .cookie-banner h2 {
+            font-size: 20px;
+            margin-top: 0;
+        }
+
+        .cookie-banner p {
+            margin: 10px 0;
+        }
+
+        .cookie-banner .button-group {
+            margin-top: 20px;
+        }
+
+        .cookie-banner button {
+            padding: 10px 20px;
+            margin-right: 10px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .accept-button {
+            background-color: #00703c;
+            color: white;
+        }
+
+        .reject-button {
+            background-color: #d4351c;
+            color: white;
+        }
+
+        .view-cookies {
+            text-decoration: underline;
+            color: #1d70b8;
+            background: none;
+            padding: 0;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .hero {
+            background-color: #1D70B8;
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .hero img {
+            width: 50px;
+            height: auto;
+        }
+
+        .hero h1 {
+            font-size: 2.5em;
+            margin: 20px 0 10px;
+        }
+
+        .hero p {
+            font-size: 1.5em;
+            margin: 0 0 30px;
+        }
+
+        .hero .search-container {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .hero .search-box {
+            width: 300px;
+            padding: 10px;
+            font-size: 1em;
+        }
+
+        .hero .search-button {
+            background-color: #004B93;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+        }
+
+        .container {
+            padding: 20px;
+            background-color: white;
+        }
+
+        .heading {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .link-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .link-group div {
+            flex: 1;
+            min-width: 220px;
+        }
+
+        .link-group a {
+            display: block;
+            color: #1d70b8;
+            text-decoration: none;
+            margin-bottom: 10px;
+        }
+
+        @media (max-width: 600px) {
+            .link-group {
+                flex-direction: column;
+            }
+        }
+
+        .services-featured {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        .services,
+        .featured {
+            width: 48%;
+        }
+
+        .services ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .services li {
+            margin-bottom: 10px;
+        }
+
+        .services a {
+            text-decoration: none;
+            color: #005ea5;
+            font-weight: bold;
+        }
+
+        .services p {
+            margin: 0;
+            color: #6f777b;
+            font-size: 14px;
+        }
+
+        .featured a {
+            display: block;
+            text-decoration: none;
+            color: #005ea5;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .gov-activity {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            border-top: 1px solid #e5e5e5;
+            border-bottom: 1px solid #e5e5e5;
+        }
+
+        .left-column,
+        .right-column {
+            width: 48%;
+        }
+
+        .left-column h2,
+        .right-column h2 {
+            font-size: 20px;
+            margin-top: 0;
+        }
+
+        .left-column ul,
+        .right-column ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .left-column li,
+        .right-column li {
+            margin: 8px 0;
+        }
+
+        .left-column a,
+        .right-column a {
+            text-decoration: none;
+            color: #005ea5;
+        }
+
+        .useful {
+            background-color: #f3f2f1;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 2px solid #005ea5;
+        }
+
+        .useful-text {
+            font-size: 1.2em;
+        }
+
+        .buttons {
+            display: flex;
+            align-items: center;
+        }
+
+        .buttons button,
+        .buttons a {
+            background-color: #fff;
+            border: 1px solid #b1b4b6;
+            color: #0b0c0c;
+            padding: 5px 15px;
+            margin: 0 5px;
+            text-decoration: none;
+        }
+
+        .buttons button:hover,
+        .buttons a:hover {
+            background-color: #e8e8e8;
+        }
+
+        footer {
+            background-color: #f8f8f8;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 14px;
+            color: #6a6a6a;
+        }
+
+        footer a {
+            color: #005ea5;
+            text-decoration: none;
+        }
+
+        footer img {
+            width: 50px;
+            margin-top: 10px;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            padding: 20px 0;
+        }
+
+        .footer-links a {
+            font-size: 12px;
+            color: #1d70b8;
+            text-decoration: none;
+        }
+
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+<div class="cookie-banner">
+<h2>Cookies on GOV.UK</h2>
+<p>We use some essential cookies to make this website work.</p>
+<p>We’d like to set additional cookies to understand how you use GOV.UK, remember your settings and improve government services.</p>
+<p>We also use cookies set by other sites to help us deliver content from their services.</p>
+<div class="button-group">
+<button class="accept-button">Accept additional cookies</button>
+<button class="reject-button">Reject additional cookies</button>
+<button class="view-cookies">View cookies</button>
+</div>
+</div>
+<section class="hero">
+<img alt="Crown image" src="placeholder.png"/>
+<h1>GOV.UK</h1>
+<p>The best place to find<br/>government services<br/>and information</p>
+<div class="search-container">
+<input class="search-box" placeholder="Search" type="text"/>
+<button class="search-button">🔍</button>
+</div>
+</section>
+<div class="container">
+<div class="heading">Popular on GOV.UK</div>
+<div class="link-group">
+<div>
+<a href="#">HMRC account: sign in or set up</a>
+<a href="#">Self Assessment tax return: sign in</a>
+</div>
+<div>
+<a href="#">Universal Credit account: sign in</a>
+<a href="#">Childcare account: sign in</a>
+</div>
+<div>
+<a href="#">Personal tax account: sign in or set up</a>
+<a href="#">Visit the UK on a Standard Visitor visa</a>
+</div>
+</div>
+</div>
+<div class="services-featured">
+<div class="services">
+<h2>Services and information</h2>
+<ul>
+<li>
+<a href="#">Benefits</a>
+<p>Includes eligibility, appeals, tax credits and Universal Credit</p>
+</li>
+<li>
+<a href="#">Births, deaths, marriages and care</a>
+<p>Parenting, civil partnerships, divorce and Lasting Power of Attorney</p>
+</li>
+<li>
+<a href="#">Business and self-employed</a>
+<p>Tools and guidance for businesses</p>
+</li>
+<li>
+<a href="#">Childcare and parenting</a>
+<p>Includes giving birth, fostering, adopting, benefits for children, childcare and schools</p>
+</li>
+<li>
+<a href="#">Citizenship and living in the UK</a>
+<p>Voting, community participation, life in the UK, international projects</p>
+</li>
+<li>
+<a href="#">Crime, justice and the law</a>
+<p>Legal processes, courts and the police</p>
+</li>
+<li>
+<a href="#">Disabled people</a>
+<p>Includes carers, your rights, benefits and the Equality Act</p>
+</li>
+<li>
+<a href="#">Driving and transport</a>
+<p>Includes vehicle tax, MOT and driving licenses</p>
+</li>
+<li>
+<a href="#">Education and learning</a>
+<p>Includes student loans, admissions and apprenticeships</p>
+</li>
+<li>
+<a href="#">Employing people</a>
+<p>Includes pay, contracts, hiring and redundancies</p>
+</li>
+<li>
+<a href="#">Environment and countryside</a>
+<p>Includes flooding, recycling, farming and wildlife</p>
+</li>
+<li>
+<a href="#">Housing and local services</a>
+<p>Owning or renting and council services</p>
+</li>
+<li>
+<a href="#">Money and tax</a>
+<p>Includes debt and Self Assessment</p>
+</li>
+<li>
+<a href="#">Passports, travel and living abroad</a>
+<p>Includes renewing passports and travel advice by country</p>
+</li>
+<li>
+<a href="#">Visas and immigration</a>
+<p>Apply to visit, work, study, settle or seek asylum in the UK</p>
+</li>
+<li>
+<a href="#">Working, jobs and pensions</a>
+<p>Includes holidays, finding a job and redundancy</p>
+</li>
+</ul>
+</div>
+<div class="featured">
+<h2>Featured</h2>
+<a href="#">Find a job</a>
+<p>Search and apply for jobs in England, Scotland and Wales.</p>
+<a href="#">National Insurance</a>
+<p>Check your record to see if you can add more contributions.</p>
+<a href="#">Cost of living support</a>
+<p>Find out what support is available to help with the cost of living.</p>
+</div>
+</div>
+<div class="gov-activity">
+<div class="left-column">
+<h2>Government activity</h2>
+<p>Find out what the government is doing</p>
+<ul>
+<li><a href="#">Departments</a></li>
+<li><a href="#">News</a></li>
+<li><a href="#">Guidance and regulation</a></li>
+<li><a href="#">Research and statistics</a></li>
+<li><a href="#">Policy papers and consultations</a></li>
+<li><a href="#">Transparency documents</a></li>
+</ul>
+</div>
+<div class="right-column">
+<h2>More on GOV.UK</h2>
+<ul>
+<li><a href="#">HMRC services: sign in</a></li>
+<li><a href="#">Check MOT history of a vehicle</a></li>
+<li><a href="#">Tax your vehicle</a></li>
+<li><a href="#">Universal Credit</a></li>
+<li><a href="#">Foreign travel advice</a></li>
+<li><a href="#">Check your State Pension age</a></li>
+<li><a href="#">Childcare account: sign in</a></li>
+<li><a href="#">Student finance: sign in</a></li>
+<li><a href="#">Self Assessment tax returns</a></li>
+<li><a href="#">Apply for a passport</a></li>
+</ul>
+</div>
+</div>
+<div class="useful">
+<div class="useful-text">Is this page useful?</div>
+<div class="buttons">
+<button>Yes</button>
+<button>No</button>
+<a href="#">Report a problem with this page</a>
+</div>
+</div>
+<div class="services-featured">
+<div class="services">
+<h2>Services and information</h2>
+<ul>
+<li><a href="#">Benefits</a></li>
+<li><a href="#">Births, deaths, marriages and care</a></li>
+<li><a href="#">Business and self-employed</a></li>
+<li><a href="#">Childcare and parenting</a></li>
+<li><a href="#">Citizenship and living in the UK</a></li>
+<li><a href="#">Crime, justice and the law</a></li>
+<li><a href="#">Disabled people</a></li>
+<li><a href="#">Driving and transport</a></li>
+<li><a href="#">Education and learning</a></li>
+<li><a href="#">Employing people</a></li>
+<li><a href="#">Environment and countryside</a></li>
+<li><a href="#">Housing and local services</a></li>
+<li><a href="#">Money and tax</a></li>
+<li><a href="#">Passports, travel and living abroad</a></li>
+<li><a href="#">Visas and immigration</a></li>
+<li><a href="#">Working, jobs and pensions</a></li>
+</ul>
+</div>
+<div class="featured">
+<h2>Government Activity</h2>
+<ul>
+<li><a href="#">Departments</a></li>
+<li><a href="#">News</a></li>
+<li><a href="#">Guidance and regulation</a></li>
+<li><a href="#">Research and statistics</a></li>
+<li><a href="#">Policy papers and consultations</a></li>
+<li><a href="#">Transparency</a></li>
+<li><a href="#">How government works</a></li>
+<li><a href="#">Get involved</a></li>
+</ul>
+</div>
+</div>
+<footer>
+<p>Help  •  Privacy  •  Cookies  •  Accessibility statement  •  Contact  •  Terms and conditions</p>
+<p>All content is available under the <a href="#">Open Government Licence v3.0</a>, except where otherwise stated</p>
+<footer class="footer-links">
+<a href="#">Help</a>
+<a href="#">Privacy</a>
+<a href="#">Cookies</a>
+<a href="#">Accessibility statement</a>
+<a href="#">Contact</a>
+<a href="#">Terms and conditions</a>
+<a href="#">Rhestr o Wasanaethau Cymraeg</a>
+<a href="#">Government Digital Service</a>
+</footer>
+<img alt="Crown copyright logo" src="placeholder.png"/>
+</footer>
+</body>
+</html>
+</p></body></html>

@@ -1,0 +1,84 @@
+Based on the webpage screenshot, here are the modifications needed for the HTML and CSS to match the provided layout:
+
+1. Adjust the overall layout to fit the size of the actual page.
+2. Use different font sizes and margins to match the original text styling.
+3. Correct the styling of the "powered by" text at the bottom.
+
+Here’s the revised HTML and CSS code:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Security Check</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f7f7f7;
+    }
+    .container {
+        width: 700px;
+        text-align: center;
+        background: white;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        border-radius: 5px;
+        overflow: hidden;
+    }
+    .header {
+        background-color: #0066ff;
+        color: white;
+        padding: 10px;
+        font-size: 18px;
+    }
+    .content {
+        padding: 40px 20px;
+    }
+    .captcha {
+        background: #f0f0f0;
+        padding: 20px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .captcha img {
+        display: block;
+        margin: 10px auto;
+    }
+    h2 {
+        font-size: 24px;
+        color: #333;
+        margin-bottom: 10px;
+    }
+    p {
+        color: #666;
+        margin: 10px 0;
+        line-height: 1.6;
+    }
+    .powered-by {
+        margin-top: 20px;
+        font-size: 12px;
+        color: #999;
+        text-align: right;
+        padding-right: 10px;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        www.apa.org - Additional security check is required
+    </div>
+    <div class="content">
+        <div class="captcha">
+            <img src="placeholder.png" alt="captcha" width="300">
+        </div>
+        <h2>Why am I seeing this page?</h2>
+        <p>The website you are

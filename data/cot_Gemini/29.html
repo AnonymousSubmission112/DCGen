@@ -1,0 +1,576 @@
+<html><body><p>
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>GOV.UK</title>
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.cookie-banner {
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.cookie-banner p {
+  margin-bottom: 10px;
+}
+
+.cookie-banner button {
+  padding: 10px 20px;
+  background-color: #0075a0;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.cookie-banner button:hover {
+  background-color: #005ea8;
+}
+
+.header {
+  background-color: #0075a0;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.header img {
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+.header h1 {
+  font-size: 2em;
+  margin: 0;
+}
+
+.header p {
+  font-size: 1.2em;
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.nav .menu-toggle {
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.nav .search {
+  position: relative;
+  margin-left: 20px;
+}
+
+.nav input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 150px;
+}
+
+.nav .search-icon {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  cursor: pointer;
+}
+
+.content {
+  padding: 20px;
+}
+
+.section-title {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.popular-services {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+.popular-services .service {
+  width: 32%;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.service h3 {
+  margin-bottom: 10px;
+}
+
+.service p {
+  margin-bottom: 5px;
+}
+
+.service a {
+  color: #0075a0;
+  text-decoration: none;
+}
+
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.services-list .service-item {
+  width: 48%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.service-item h3 {
+  margin-bottom: 5px;
+}
+
+.service-item p {
+  margin-bottom: 0;
+}
+
+.service-item a {
+  color: #0075a0;
+  text-decoration: none;
+}
+
+.featured-services {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+.featured-services .service {
+  width: 48%;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.service h3 {
+  margin-bottom: 10px;
+}
+
+.service p {
+  margin-bottom: 5px;
+}
+
+.service a {
+  color: #0075a0;
+  text-decoration: none;
+}
+
+.footer {
+  background-color: #f5f5f5;
+  padding: 20px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.footer li {
+  margin: 0 10px;
+}
+
+.footer a {
+  color: #0075a0;
+  text-decoration: none;
+}
+
+.footer p {
+  margin-top: 20px;
+  font-size: 0.8em;
+}
+
+.footer img {
+  height: 20px;
+}
+
+.footer .copyright {
+  font-size: 0.8em;
+  margin-top: 10px;
+}
+
+.page-feedback {
+  background-color: #f5f5f5;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.page-feedback button {
+  padding: 10px 20px;
+  background-color: #0075a0;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.page-feedback button:hover {
+  background-color: #005ea8;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.services-grid .service-item {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.services-grid .service-item h3 {
+  margin-bottom: 5px;
+}
+
+.services-grid .service-item p {
+  margin-bottom: 0;
+}
+
+.services-grid .service-item a {
+  color: #0075a0;
+  text-decoration: none;
+}
+</style>
+</head>
+<body>
+<div class="cookie-banner">
+<p>We use some essential cookies to make this website work.</p>
+<p>We'd like to set additional cookies to understand how you use GOV.UK, remember your settings and improve government services.</p>
+<p>We also use cookies set by other sites to help us deliver services.</p>
+<button>Accept additional cookies</button>
+<button>Reject additional cookies</button>
+<a href="#">View cookies</a>
+</div>
+<div class="header">
+<img alt="GOV.UK logo" src="placeholder.png"/>
+<h1>GOV.UK</h1>
+<p>The best place to find government services and information</p>
+</div>
+<div class="nav">
+<div class="menu-toggle">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</div>
+<div class="search">
+<input placeholder="Search" type="text"/>
+<span class="search-icon">
+<svg height="16" viewbox="0 0 1024 1024" width="16" xmlns="http://www.w3.org/2000/svg"><path d="M909.6 854.5l-61.9-61.9c38.1-66.9 62.5-148.3 62.5-238.6C972.1 256.5 767.6 0 512 0S48 256.5 48 512c0 238.6 189.7 427.3 427.3 427.3s427.3-189.7 427.3-427.3c0-90.3-24.4-171.7-62.5-238.6l61.9-61.9c20-20 45.7-29.3 71.4-29.3s51.4 9.3 71.4 29.3zM512 828c-232.1 0-421.5-189.4-421.5-421.5S279.9 0 512 0s421.5 189.4 421.5 421.5-189.4 421.5-421.5 421.5z"></path></svg>
+</span>
+</div>
+</div>
+<div class="content">
+<div class="section-title">Popular on GOV.UK</div>
+<div class="popular-services">
+<div class="service">
+<h3>HMRC account: sign in or set up</h3>
+<p>Includes tax returns, benefits and payments, and Self Assessment</p>
+<a href="#">Sign in</a>
+</div>
+<div class="service">
+<h3>Universal Credit account: sign in</h3>
+<p>Includes eligibility, appeals, tax credits and Universal Credit</p>
+<a href="#">Sign in</a>
+</div>
+<div class="service">
+<h3>Personal tax account: sign in or set up</h3>
+<p>Includes tax returns, benefits and payments, and Self Assessment</p>
+<a href="#">Sign in</a>
+</div>
+<div class="service">
+<h3>Self Assessment tax return: sign in</h3>
+<p>Includes eligibility, appeals, tax credits and Universal Credit</p>
+<a href="#">Sign in</a>
+</div>
+<div class="service">
+<h3>Childcare account: sign in</h3>
+<p>Includes eligibility, appeals, tax credits and Universal Credit</p>
+<a href="#">Sign in</a>
+</div>
+<div class="service">
+<h3>Visit the UK on a Standard Visitor visa</h3>
+<p>Includes eligibility, appeals, tax credits and Universal Credit</p>
+<a href="#">Sign in</a>
+</div>
+</div>
+<div class="section-title">Services and information</div>
+<div class="services-list">
+<div class="service-item">
+<h3><a href="#">Benefits</a></h3>
+<p>Includes eligibility, appeals, tax credits and Universal Credit</p>
+</div>
+<div class="service-item">
+<h3><a href="#">Births, deaths, marriages and care</a></h3>
+<p>Parenting, civil partnerships, divorce and Lasting Power of Attorney</p>
+</div>
+<div class="service-item">
+<h3><a href="#">Business and self-employed</a></h3>
+<p>Tools and guidance for businesses</p>
+</div>
+<div class="service-item">
+<h3><a href="#">Childcare and parenting</a></h3>
+<p>Includes giving birth, fostering, adopting, benefits for childcare and schools</p>
+</div>
+<div class="service-item">
+<h3><a href="#">Citizenship and living in the UK</a></h3>
+<p>Voting, community participation, life in the UK, international projects</p>
+</div>
+<div class="service-item">
+<h3><a href="#">Crime, justice and the law</a></h3>
+<p>Legal processes, courts and the police</p>
+</div>
+<div class="service-item">
+<h3><a href="#">Disabled people</a></h3>
+<p>Includes carers, your rights, benefits and the Equality Act</p>
+</div>
+<div class="service-item">
+<h3><a href="#">Driving and transport</a></h3>
+<p>Includes vehicle tax, MOT and driving licences</p>
+</div>
+<div class="service-item">
+<h3><a href="#">Education and learning</a></h3>
+<p>Includes student loans, admissions and apprenticeships</p>
+</div>
+<div class="service-item">
+<h3><a href="#">Employing people</a></h3>
+<p>Includes pay, contracts, hiring and redundancies</p>
+</div>
+<div class="service-item">
+<h3><a href="#">Environment and countryside</a></h3>
+<p>Includes flooding, recycling, farming and wildlife</p>
+</div>
+<div class="service-item">
+<h3><a href="#">Housing and local services</a></h3>
+<p>Owning or renting and council services</p>
+</div>
+<div class="service-item">
+<h3><a href="#">Money and tax</a></h3>
+<p>Includes debt and Self Assessment</p>
+</div>
+<div class="service-item">
+<h3><a href="#">Passports, travel and living abroad</a></h3>
+<p>Includes renewing passports and travel advice by country</p>
+</div>
+<div class="service-item">
+<h3><a href="#">Visas and immigration</a></h3>
+<p>Apply to visit, work, study, settle or seek asylum in the UK</p>
+</div>
+<div class="service-item">
+<h3><a href="#">Working, jobs and pensions</a></h3>
+<p>Includes holidays, finding a job and redundancy</p>
+</div>
+</div>
+<div class="section-title">Featured</div>
+<div class="featured-services">
+<div class="service">
+<h3><a href="#">Find a job</a></h3>
+<p>Search and apply for jobs in England, Scotland and Wales.</p>
+</div>
+<div class="service">
+<h3><a href="#">National Insurance</a></h3>
+<p>Check your record to see if you can add more contributions.</p>
+</div>
+<div class="service">
+<h3><a href="#">Cost of living support</a></h3>
+<p>Find out what support is available to help with the cost of living.</p>
+</div>
+</div>
+<div class="section-title">Government activity</div>
+<div class="services-list">
+<div class="service-item">
+<h3><a href="#">Departments</a></h3>
+<p>Departments, agencies and public bodies</p>
+</div>
+<div class="service-item">
+<h3><a href="#">News</a></h3>
+<p>News stories, speeches, letters and notices</p>
+</div>
+<div class="service-item">
+<h3><a href="#">Guidance and regulation</a></h3>
+<p>Detailed guidance, regulations and rules</p>
+</div>
+<div class="service-item">
+<h3><a href="#">Research and statistics</a></h3>
+<p>Reports, analysis and official statistics</p>
+</div>
+<div class="service-item">
+<h3><a href="#">Policy papers and consultations</a></h3>
+<p>Consultations and strategy</p>
+</div>
+<div class="service-item">
+<h3><a href="#">Transparency documents</a></h3>
+<p>Data, Freedom of Information releases and corporate reports</p>
+</div>
+<div class="service-item">
+<h3><a href="#">How government works</a></h3>
+<p>How the government is organised and how it makes decisions</p>
+</div>
+<div class="service-item">
+<h3><a href="#">Get involved</a></h3>
+<p>Have your say and find out how to get involved</p>
+</div>
+</div>
+<div class="section-title">More on GOV.UK</div>
+<div class="services-list">
+<div class="service-item">
+<h3><a href="#">HMRC services: sign in</a></h3>
+<p>Includes tax returns, benefits and payments, and Self Assessment</p>
+</div>
+<div class="service-item">
+<h3><a href="#">Check MOT history of a vehicle</a></h3>
+<p>Includes eligibility, appeals, tax credits and Universal Credit</p>
+</div>
+<div class="service-item">
+<h3><a href="#">Tax your vehicle</a></h3>
+<p>Includes eligibility, appeals, tax credits and Universal Credit</p>
+</div>
+<div class="service-item">
+<h3><a href="#">Universal Credit</a></h3>
+<p>Includes eligibility, appeals, tax credits and Universal Credit</p>
+</div>
+<div class="service-item">
+<h3><a href="#">Foreign travel advice</a></h3>
+<p>Includes eligibility, appeals, tax credits and Universal Credit</p>
+</div>
+<div class="service-item">
+<h3><a href="#">Check your State Pension age</a></h3>
+<p>Includes eligibility, appeals, tax credits and Universal Credit</p>
+</div>
+<div class="service-item">
+<h3><a href="#">Childcare account: sign in</a></h3>
+<p>Includes eligibility, appeals, tax credits and Universal Credit</p>
+</div>
+<div class="service-item">
+<h3><a href="#">Student finance: sign in</a></h3>
+<p>Includes eligibility, appeals, tax credits and Universal Credit</p>
+</div>
+<div class="service-item">
+<h3><a href="#">Self Assessment tax returns</a></h3>
+<p>Includes eligibility, appeals, tax credits and Universal Credit</p>
+</div>
+<div class="service-item">
+<h3><a href="#">Apply for a passport</a></h3>
+<p>Includes eligibility, appeals, tax credits and Universal Credit</p>
+</div>
+</div>
+<div class="page-feedback">
+<p>Is this page useful?</p>
+<button>Yes</button>
+<button>No</button>
+</div>
+<div class="section-title">Services and information</div>
+<div class="services-grid">
+<div class="service-item">
+<h3><a href="#">Benefits</a></h3>
+<p>Includes eligibility, appeals, tax credits and Universal Credit</p>
+</div>
+<div class="service-item">
+<h3><a href="#">Education and learning</a></h3>
+<p>Includes student loans, admissions and apprenticeships</p>
+</div>
+<div class="service-item">
+<h3><a href="#">Births, deaths, marriages and care</a></h3>
+<p>Parenting, civil partnerships, divorce and Lasting Power of Attorney</p>
+</div>
+<div class="service-item">
+<h3><a href="#">Employing people</a></h3>
+<p>Includes pay, contracts, hiring and redundancies</p>
+</div>
+<div class="service-item">
+<h3><a href="#">Business and self-employed</a></h3>
+<p>Tools and guidance for businesses</p>
+</div>
+<div class="service-item">
+<h3><a href="#">Environment and countryside</a></h3>
+<p>Includes flooding, recycling, farming and wildlife</p>
+</div>
+<div class="service-item">
+<h3><a href="#">Childcare and parenting</a></h3>
+<p>Includes giving birth, fostering, adopting, benefits for childcare and schools</p>
+</div>
+<div class="service-item">
+<h3><a href="#">Housing and local services</a></h3>
+<p>Owning or renting and council services</p>
+</div>
+<div class="service-item">
+<h3><a href="#">Citizenship and living in the UK</a></h3>
+<p>Voting, community participation, life in the UK, international projects</p>
+</div>
+<div class="service-item">
+<h3><a href="#">Money and tax</a></h3>
+<p>Includes debt and Self Assessment</p>
+</div>
+<div class="service-item">
+<h3><a href="#">Crime, justice and the law</a></h3>
+<p>Legal processes, courts and the police</p>
+</div>
+<div class="service-item">
+<h3><a href="#">Passports, travel and living abroad</a></h3>
+<p>Includes renewing passports and travel advice by country</p>
+</div>
+<div class="service-item">
+<h3><a href="#">Disabled people</a></h3>
+<p>Includes carers, your rights, benefits and the Equality Act</p>
+</div>
+<div class="service-item">
+<h3><a href="#">Visas and immigration</a></h3>
+<p>Apply to visit, work, study, settle or seek asylum in the UK</p>
+</div>
+<div class="service-item">
+<h3><a href="#">Driving and transport</a></h3>
+<p>Includes vehicle tax, MOT and driving licences</p>
+</div>
+<div class="service-item">
+<h3><a href="#">Working, jobs and pensions</a></h3>
+<p>Includes holidays, finding a job and redundancy</p>
+</div>
+</div>
+<div class="footer">
+<ul>
+<li><a href="#">Help</a></li>
+<li><a href="#">Privacy</a></li>
+<li><a href="#">Cookies</a></li>
+<li><a href="#">Accessibility statement</a></li>
+<li><a href="#">Contact</a></li>
+<li><a href="#">Terms and conditions</a></li>
+<li><a href="#">Rhestr o Wasanaethau Cymraeg</a></li>
+<li><a href="#">Government Digital Service</a></li>
+</ul>
+<p>All content is available under the <a href="#">Open Government Licence v3.0</a>, except where otherwise stated</p>
+<img alt="OGL logo" src="placeholder.png"/>
+<p class="copyright">© Crown copyright</p>
+</div>
+</div>
+</body>
+</html>
+</p></body></html>

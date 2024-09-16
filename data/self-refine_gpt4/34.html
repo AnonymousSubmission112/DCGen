@@ -1,0 +1,252 @@
+<html><body><p>
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>CDC Website</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(to right, #b099d6, #30a2cc);
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .logo {
+            margin-bottom: 10px;
+        }
+        nav {
+            text-align: right;
+            background: none;
+            padding: 10px;
+        }
+        nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+        }
+        .hero {
+            padding: 100px 20px;
+            text-align: center;
+            background: linear-gradient(to right, #b099d6, #30a2cc);
+            color: white;
+            position: relative;
+        }
+        .hero h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+        .hero button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #ffffff;
+            color: #1b6ebb;
+            border: 1px solid #1b6ebb;
+            cursor: pointer;
+        }
+        .tabs {
+            display: flex;
+            justify-content: center;
+            background-color: #1b6ebb;
+            padding: 10px 0;
+        }
+        .tabs a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+        }
+        .content {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            padding-bottom: 40px;
+        }
+        .section-title {
+            font-size: 1.5em;
+            color: #90a3b0;
+            margin-top: 20px;
+        }
+        .badge-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 20px 0;
+        }
+        .badge-container .badge {
+            flex: 1 1 calc(33.333% - 20px);
+            padding: 10px;
+            background-color: #f5fafd;
+            border: 1px solid #e5edef;
+            text-align: center;
+        }
+        .a-to-z {
+            margin: 20px 0;
+            text-align: center;
+        }
+        .a-to-z span {
+            margin: 0 5px;
+            cursor: pointer;
+            color: #666;
+        }
+        .feature-topic {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 20px 0;
+            border-top: 1px solid #e5e5e5;
+            border-bottom: 1px solid #e5e5e5;
+        }
+        .feature-topic img {
+            width: 100%;
+            max-width: 350px;
+        }
+        .news-list, .bottom-section {
+            margin: 20px 0;
+        }
+        .news-list ul {
+            list-style: none;
+            padding: 0;
+            margin-left: -40px;
+        }
+        .news-list li {
+            margin: 10px 0;
+        }
+        .news-list li span {
+            color: #777;
+            font-size: 0.85em;
+            margin-right: 10px;
+        }
+        .footer {
+            background: linear-gradient(to right, #1b6ebb, #2881b1);
+            color: white;
+            padding: 50px 0;
+        }
+        .footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .footer .social-icons img {
+            width: 30px;
+            margin: 0 10px;
+        }
+        .footer .about, .footer .footer-links, .footer .social-icons {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .footer .footer-links a {
+            display: block;
+        }
+        .footer .about p {
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+<header>
+<div class="logo">
+<img alt="CDC.gov" height="50" src="placeholder.png"/>
+</div>
+<nav>
+<a href="#">HEALTH TOPICS</a>
+<a href="#">OUTBREAKS</a>
+<a href="#">ABOUT CDC</a>
+<a href="#">SEARCH</a>
+</nav>
+</header>
+<div class="hero">
+<h1>Bird Flu</h1>
+<button>Learn More </button>
+</div>
+<div class="tabs">
+<a href="#">Bird Flu</a>
+<a href="#">High Blood Pressure</a>
+<a href="#">A New CDC.gov</a>
+</div>
+<div class="content">
+<div class="featured-topics">
+<h2 class="section-title">Featured Topics</h2>
+<div class="badge-container">
+<div class="badge">Essentials for Parenting</div>
+<div class="badge">Asthma Awareness</div>
+<div class="badge">Tornado Safety</div>
+<div class="badge">Quit Smoking</div>
+<div class="badge">Mental Health Awareness</div>
+<div class="badge">Protect Your Eyes</div>
+<div class="badge">Physical Activity Benefits</div>
+<div class="badge">Prepare for Wildfires</div>
+</div>
+</div>
+<div class="a-to-z">
+            A to Z: 
+            <span>A</span> <span>B</span> <span>C</span> <span>D</span> <!-- More letters... -->
+</div>
+<div class="feature-topic">
+<div>
+<p>Find diseases and conditions, healthy living, workplace safety, environmental health, injury, violence and safety, global health, travelers' health and more.</p>
+<p>Some more content here explaining the section in detail.</p>
+</div>
+<img alt="Featured Topic" src="placeholder.png"/>
+</div>
+<div class="news-list">
+<h2 class="section-title">News</h2>
+<ul>
+<li><span>MAY 22</span> <a href="#">CDC Reports Second Human Case...</a></li>
+<li><span>MAY 21</span> <a href="#">Readout of CDC Call with State...</a></li>
+<li><span>MAY 17</span> <a href="#">CDC Releases Guidance for...</a></li>
+<li><span>MAY 16</span> <a href="#">CDC unveils newly revamped...</a></li>
+<li><span>MAY 15</span> <a href="#">Statement from CDC Chief...</a></li>
+</ul>
+</div>
+<div class="bottom-section">
+<div class="journals">
+<h2 class="section-title">Scientific Journals</h2>
+<div style="display: flex; flex-wrap: wrap;">
+<div style="flex: 1; text-align: center; padding: 10px;">
+<img alt="Journal" src="placeholder.png"/>
+<p>MMWR is a weekly epidemiological digest that provides timely...</p>
+<button>Learn More</button>
+</div>
+<div style="flex: 1; text-align: center; padding: 10px;">
+<img alt="Journal" src="placeholder.png"/>
+<p>EID is a monthly peer-reviewed journal covering infectious diseases...</p>
+<button>Learn More</button>
+</div>
+<!-- More journals... -->
+</div>
+</div>
+</div>
+<div class="footer">
+<div class="about">
+<h2>About CDC</h2>
+<p>CDC is the nation's leading science-based, data-driven, service organization that protects the public's health...</p>
+</div>
+<div class="footer-links">
+<a href="#">Contact Us</a><br/>
+<a href="#">About CDC</a><br/>
+<a href="#">Policies</a><br/>
+<a href="#">Languages</a><br/>
+<a href="#">Archive</a>
+</div>
+<div class="social-icons">
+<img alt="Social icon" src="placeholder.png"/>
+<img alt="Social icon" src="placeholder.png"/>
+<img alt="Social icon" src="placeholder.png"/>
+</div>
+</div>
+</div>
+</body>
+</html>
+</p></body></html>

@@ -1,0 +1,567 @@
+<html><body><p>
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>TP-Link</title>
+<style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            background-color: #f5f5f5;
+        }
+
+        .header {
+            background-color: #333;
+            color: #fff;
+            padding: 15px 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .header .logo {
+            float: left;
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            margin-right: 20px;
+        }
+
+        .header .menu {
+            float: left;
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        .header .menu li {
+            display: inline-block;
+            margin-right: 30px;
+        }
+
+        .header .menu a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .header .right-side {
+            float: right;
+            display: inline-block;
+        }
+
+        .header .right-side .language {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        .header .right-side .language a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .header .right-side .icon {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+        }
+
+        .main-content {
+            padding: 30px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .section-title h2 {
+            font-size: 24px;
+            color: #333;
+        }
+
+        .section-title p {
+            font-size: 16px;
+            color: #666;
+        }
+
+        .featured-products {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+        }
+
+        .featured-product {
+            width: 32%;
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .featured-product .image {
+            width: 100%;
+            height: 200px;
+            margin-bottom: 20px;
+            overflow: hidden;
+            border-radius: 5px;
+        }
+
+        .featured-product .image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .featured-product .title {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .featured-product .description {
+            font-size: 14px;
+            color: #666;
+        }
+
+        .pagination {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .pagination ul {
+            list-style: none;
+            padding: 0;
+            display: inline-block;
+        }
+
+        .pagination ul li {
+            display: inline-block;
+            margin: 0 5px;
+            background-color: #eee;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        .pagination ul li.active {
+            background-color: #333;
+            color: #fff;
+        }
+
+        .recommended-products {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+        }
+
+        .recommended-product {
+            width: 24%;
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .recommended-product .image {
+            width: 100%;
+            height: 150px;
+            margin-bottom: 20px;
+            overflow: hidden;
+            border-radius: 5px;
+        }
+
+        .recommended-product .image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .recommended-product .title {
+            font-size: 16px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .recommended-product .description {
+            font-size: 12px;
+            color: #666;
+        }
+
+        .latest-products {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+        }
+
+        .latest-product {
+            width: 24%;
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .latest-product .image {
+            width: 100%;
+            height: 150px;
+            margin-bottom: 20px;
+            overflow: hidden;
+            border-radius: 5px;
+        }
+
+        .latest-product .image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .latest-product .title {
+            font-size: 16px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .latest-product .description {
+            font-size: 12px;
+            color: #666;
+        }
+
+        .stay-updated {
+            padding: 30px 0;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .stay-updated .title {
+            font-size: 20px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .stay-updated .content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+        }
+
+        .stay-updated .news-item {
+            width: 32%;
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .stay-updated .news-item .image {
+            width: 100%;
+            height: 150px;
+            margin-bottom: 20px;
+            overflow: hidden;
+            border-radius: 5px;
+        }
+
+        .stay-updated .news-item .image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .stay-updated .news-item .title {
+            font-size: 16px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .stay-updated .news-item .description {
+            font-size: 12px;
+            color: #666;
+        }
+
+        .stay-updated .news-item .date {
+            font-size: 12px;
+            color: #666;
+        }
+
+        .subscription {
+            padding: 30px 0;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .subscription .title {
+            font-size: 20px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .subscription .input-group {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .subscription .input-group input {
+            width: 60%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .subscription .input-group button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 30px 0;
+            text-align: center;
+        }
+
+        .footer .links {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+
+        .footer .links ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer .links li {
+            margin-bottom: 10px;
+        }
+
+        .footer .links a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .footer .copyright {
+            font-size: 12px;
+            color: #fff;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .social-icons .icon {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            margin: 0 10px;
+            background-color: #fff;
+            border-radius: 50%;
+            color: #333;
+            text-align: center;
+            line-height: 30px;
+        }
+    </style>
+</head>
+<body>
+<header class="header">
+<div class="container">
+<a class="logo" href="#"><img alt="TP-Link Logo" src="placeholder.png"/></a>
+<ul class="menu">
+<li><a href="#">HOME</a></li>
+<li><a href="#">SMART HOME</a></li>
+<li><a href="#">BUSINESS</a></li>
+<li><a href="#">SERVICE PROVIDER</a></li>
+<li><a href="#">HOT DEALS</a></li>
+</ul>
+<div class="right-side">
+<div class="language">
+<a href="#">Hong Kong, China / English | 简体中文</a>
+</div>
+<a class="icon" href="#"><img alt="Support Icon" src="placeholder.png"/></a>
+</div>
+</div>
+</header>
+<main class="main-content">
+<div class="container">
+<div class="section-title">
+<h2>What's New at TP-Link</h2>
+<p>Add connectivity and smartness to your home.</p>
+</div>
+<div class="featured-products">
+<div class="featured-product">
+<div class="image"><img alt="Featured Product Image" src="placeholder.png"/></div>
+<div class="title">Take a 2-min survey and help us improve!</div>
+<div class="description">Survey</div>
+</div>
+<div class="featured-product">
+<div class="image"><img alt="Featured Product Image" src="placeholder.png"/></div>
+<div class="title">Wi-Fi Like Never Before</div>
+<div class="description">Technology</div>
+</div>
+<div class="featured-product">
+<div class="image"><img alt="Featured Product Image" src="placeholder.png"/></div>
+<div class="title">What's WiFi 6E? Explore the New Frontier WiFi with TP-Link</div>
+<div class="description">Technology</div>
+</div>
+</div>
+<div class="pagination">
+<ul>
+<li class="active">1</li>
+<li>2</li>
+<li>3</li>
+<li>4</li>
+<li>5</li>
+</ul>
+</div>
+<div class="section-title">
+<h2>Recommended</h2>
+</div>
+<div class="recommended-products">
+<div class="recommended-product">
+<div class="image"><img alt="Recommended Product Image" src="placeholder.png"/></div>
+<div class="title">Deco XE75</div>
+<div class="description">AXE5400 Tri-Band Mesh Wi-Fi 6E System</div>
+</div>
+<div class="recommended-product">
+<div class="image"><img alt="Recommended Product Image" src="placeholder.png"/></div>
+<div class="title">Archer AXE75</div>
+<div class="description">AXE5400 Tri-Band Gigabit Wi-Fi 6E Router</div>
+</div>
+<div class="recommended-product">
+<div class="image"><img alt="Recommended Product Image" src="placeholder.png"/></div>
+<div class="title">Archer T9UH</div>
+<div class="description">AC1900 High Gain Wireless Dual Band USB Adapter</div>
+</div>
+<div class="recommended-product">
+<div class="image"><img alt="Recommended Product Image" src="placeholder.png"/></div>
+<div class="title">Archer MR600</div>
+<div class="description">4G+ Cat6 AC1200 Wireless Dual Band Gigabit Router</div>
+</div>
+</div>
+<div class="section-title">
+<h2>Latest</h2>
+</div>
+<div class="latest-products">
+<div class="latest-product">
+<div class="image"><img alt="Latest Product Image" src="placeholder.png"/></div>
+<div class="title">Tapo Cameras Come Out on Top in PCMag Review: Best Outdoor Home Security Cameras for 2024</div>
+<div class="description">News | 04-25-2024</div>
+</div>
+<div class="latest-product">
+<div class="image"><img alt="Latest Product Image" src="placeholder.png"/></div>
+<div class="title">Tapo Champions Sustainability with The Great Cleanup</div>
+<div class="description">News | 04-22-2024</div>
+</div>
+<div class="latest-product">
+<div class="image"><img alt="Latest Product Image" src="placeholder.png"/></div>
+<div class="title">VIGI by TP-Link Unveils New Professional Business Surveillance Solutions at ISC West 2024</div>
+<div class="description">News | 04-10-2024</div>
+</div>
+<div class="latest-product">
+<div class="image"><img alt="Latest Product Image" src="placeholder.png"/></div>
+<div class="title">TP-Link Introduces Festa – An Easy, Effective, Reliable Cloud-based Solution</div>
+<div class="description">News | 05-11-2024</div>
+</div>
+</div>
+<div class="stay-updated">
+<div class="title">Stay Updated</div>
+<div class="content">
+<div class="news-item">
+<div class="image"><img alt="News Item Image" src="placeholder.png"/></div>
+<div class="title">TP-Link Corporation Group Announces Completion of Corporate Restructuring, Marking a New Era in its Future Evolution</div>
+<div class="description">News | 05-11-2024</div>
+</div>
+<a class="news-item" href="#">
+<div class="image"><img alt="News Item Image" src="placeholder.png"/></div>
+<div class="title">Blog</div>
+<div class="description">Blog</div>
+</a>
+<a class="news-item" href="#">
+<div class="image"><img alt="News Item Image" src="placeholder.png"/></div>
+<div class="title">News</div>
+<div class="description">News</div>
+</a>
+</div>
+</div>
+<div class="subscription">
+<div class="title">Subscription</div>
+<div class="input-group">
+<input placeholder="Email Address" type="email"/>
+<button>Sign Up</button>
+</div>
+</div>
+</div>
+</main>
+<footer class="footer">
+<div class="container">
+<div class="links">
+<ul>
+<li>
+<h3>About</h3>
+<a href="#">Corporate Profile</a>
+<a href="#">About Us</a>
+<a href="#">Contact Us</a>
+<a href="#">Privacy Policy</a>
+</li>
+<li>
+<h3>Press</h3>
+<a href="#">News</a>
+<a href="#">Awards</a>
+<a href="#">Security Advisory</a>
+</li>
+<li>
+<h3>Where to Buy</h3>
+<a href="#">Distributor</a>
+<a href="#">Reseller</a>
+<a href="#">TP-Link/Chain Store</a>
+</li>
+<li>
+<h3>Learning Center</h3>
+<a href="#">Technology Library</a>
+</li>
+<li>
+<h3>Promotions</h3>
+</li>
+</ul>
+</div>
+<div class="language">
+<a href="#">Hong Kong, China / English | 简体中文</a>
+</div>
+<div class="copyright">
+                © 2024 TP-LINK CORPORATION PTE. LTD. All rights reserved.
+            </div>
+<div class="social-icons">
+<a class="icon" href="#"><i class="fab fa-facebook-f"></i></a>
+<a class="icon" href="#"><i class="fab fa-twitter"></i></a>
+<a class="icon" href="#"><i class="fab fa-linkedin-in"></i></a>
+<a class="icon" href="#"><i class="fab fa-youtube"></i></a>
+</div>
+</div>
+</footer>
+<script crossorigin="anonymous" src="https://kit.fontawesome.com/your-fontawesome-kit-id.js"></script>
+</body>
+</html>
+</p></body></html>

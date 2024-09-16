@@ -1,0 +1,523 @@
+<html><body><p>
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Webpage in Bounding Box</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            padding: 10px 20px;
+            color: white;
+        }
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        .navbar li {
+            margin-right: 20px;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .navbar-right {
+            display: flex;
+            align-items: center;
+        }
+        .navbar-right select,
+        .navbar-right a {
+            color: white;
+            margin-left: 20px;
+            text-decoration: none;
+        }
+        .menu-icon {
+            width: 20px;
+            height: 20px;
+            background-image: url('placeholder.png');
+            background-size: cover;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: #ffffff;
+        }
+        .left-column {
+            flex: 1;
+            padding-right: 10px;
+        }
+        .left-column h2 {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .left-column p {
+            font-size: 16px;
+            color: #666;
+            margin-top: 10px;
+        }
+        .right-column {
+            display: flex;
+            flex: 3;
+            justify-content: space-between;
+        }
+        .card {
+            width: 30%;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 10px;
+        }
+        .card img {
+            width: 100%;
+            border-radius: 5px;
+        }
+        .card p {
+            font-size: 14px;
+            margin: 10px 0;
+        }
+        .card .category {
+            font-size: 12px;
+            color: #999;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+        }
+        .tabs {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .tabs div {
+            margin: 0 10px;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .tabs .active {
+            border-bottom: 3px solid #007bff;
+            color: #007bff;
+        }
+
+        .recommended-section {
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            background-color: #ffffff;
+        }
+        .recommended-section .card {
+            flex: 0 0 220px;
+            margin: 0 10px;
+            padding: 20px;
+            border: 1px solid #e6e6e6;
+            border-radius: 10px;
+            text-align: center;
+            background-color: #f7f7f7;
+        }
+        .recommended-section .card img {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 10px;
+        }
+        .recommended-section .card-title {
+            font-size: 16px;
+            color: #333333;
+            font-weight: bold;
+        }
+        .recommended-section .card-subtitle {
+            font-size: 14px;
+            color: #666666;
+        }
+
+        .stay-updated {
+            background-color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .stay-updated h2 {
+            font-size: 24px;
+            color: #333;
+        }
+        .news-links {
+            margin-top: 10px;
+        }
+        .news-links a {
+            text-decoration: none;
+            color: #0073e6;
+            margin: 0 10px;
+            font-size: 16px;
+        }
+
+        .stay-updated-section {
+            text-align: center;
+            background-color: #ffffff;
+            padding: 20px 0;
+        }
+        .updates {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .update-card {
+            width: 220px;
+            background-color: #f7f7f7;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .update-card img {
+            width: 100%;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+        .update-info {
+            text-align: left;
+            margin-top: 10px;
+        }
+        .update-info h3 {
+            font-size: 16px;
+            color: #333;
+            margin: 0 0 5px 0;
+        }
+        .update-info p {
+            font-size: 14px;
+            color: #666;
+            margin: 0;
+        }
+
+        .news-item {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 20px;
+            height: 200px;
+            border: 1px solid #e0e0e0;
+            background-color: #ffffff;
+            margin-bottom: 20px;
+        }
+        .news-item .news-title {
+            font-weight: bold;
+            font-size: 1rem;
+            color: #333333;
+            margin-bottom: 10px;
+        }
+        .news-item .news-info {
+            font-size: 0.85rem;
+            color: #999999;
+        }
+
+        .subscription {
+            background-color: #ffffff;
+            padding: 20px;
+            text-align: center;
+            width: 100%;
+        }
+        .subscription h2 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .email-subscription {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .email-subscription input {
+            width: 70%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .email-subscription button {
+            width: 20%;
+            padding: 10px;
+            background-color: #0073e6;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+        .follow-us {
+            background-color: #ffffff;
+            padding: 20px;
+            text-align: center;
+            width: 100%;
+        }
+        .follow-us h2 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .social-icons {
+            display: flex;
+            justify-content: center;
+        }
+        .social-icons img {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+        }
+        .footer .container {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            flex-wrap: wrap;
+        }
+        .footer .column {
+            flex: 1;
+            min-width: 200px;
+            margin: 10px 0;
+        }
+        .footer .column h3 {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .footer .column ul {
+            list-style: none;
+            padding: 0;
+        }
+        .footer .column ul li {
+            margin-bottom: 8px;
+        }
+        .footer .column ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .footer .column ul li a:hover {
+            text-decoration: underline;
+        }
+        .footer .bottom-bar {
+            text-align: center;
+            margin-top: 20px;
+            border-top: 1px solid #555;
+            padding-top: 10px;
+            font-size: 0.9em;
+        }
+        .footer .bottom-bar img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+<div class="navbar">
+<ul>
+<li><a href="#">HOME</a></li>
+<li><a href="#">SMART HOME</a></li>
+<li><a href="#">BUSINESS</a></li>
+<li><a href="#">SERVICE PROVIDER</a></li>
+<li><a href="#">HOT DEALS</a></li>
+</ul>
+<div class="navbar-right">
+<a href="#">Support</a>
+<select>
+<option>Hong Kong, China / English</option>
+</select>
+<a href="#">简体中文</a>
+<div class="menu-icon"></div>
+</div>
+</div>
+<div class="container">
+<div class="left-column">
+<h2>What's New at TP-Link</h2>
+<p>Add connectivity and smartness to your home.</p>
+</div>
+<div class="right-column">
+<div class="card">
+<img alt="Placeholder" src="placeholder.png"/>
+<p class="category">Survey</p>
+<p>Take a 2-min survey and help us improve!</p>
+</div>
+<div class="card">
+<img alt="Placeholder" src="placeholder.png"/>
+<p class="category">Technology</p>
+<p>Wi-Fi Like Never Before</p>
+</div>
+<div class="card">
+<img alt="Placeholder" src="placeholder.png"/>
+<p class="category">Technology</p>
+<p>What's WiFi 6E? Explore the New Frontier WiFi with TP-Link</p>
+</div>
+</div>
+</div>
+<div class="tabs">
+<div class="active">Recommended</div>
+<div>Latest</div>
+</div>
+<div class="recommended-section">
+<div class="card">
+<img alt="product image" src="placeholder.png"/>
+<div class="card-title">Deco XE75</div>
+<div class="card-subtitle">AXE5400 Tri-Band Mesh Wi-Fi 6E System</div>
+</div>
+<div class="card">
+<img alt="product image" src="placeholder.png"/>
+<div class="card-title">Archer AXE75</div>
+<div class="card-subtitle">AXE5400 Tri-Band Gigabit Wi-Fi 6E Router</div>
+</div>
+<div class="card">
+<img alt="product image" src="placeholder.png"/>
+<div class="card-title">Archer T9UH</div>
+<div class="card-subtitle">AC1900 High Gain Wireless Dual Band USB Adapter</div>
+</div>
+<div class="card">
+<img alt="product image" src="placeholder.png"/>
+<div class="card-title">Archer MR600</div>
+<div class="card-subtitle">4G+ Cat6 AC1200 Wireless Dual Band Gigabit Router</div>
+</div>
+</div>
+<div class="stay-updated">
+<h2>Stay Updated</h2>
+<div class="news-links">
+<a href="#">News &gt;</a>
+<a href="#">Blog &gt;</a>
+</div>
+</div>
+<div class="stay-updated-section">
+<h2>Stay Updated</h2>
+<div class="updates">
+<div class="update-card">
+<img alt="Update Image" src="placeholder.png"/>
+<div class="update-info">
+<h3>TP-Link Corporation Group Announces Completion of Corporate Restructuring, Marking a New Era in its Future Evolution</h3>
+<p>News | 05-11-2024</p>
+</div>
+</div>
+<div class="update-card">
+<img alt="Update Image" src="placeholder.png"/>
+<div class="update-info">
+<h3>Tapo Cameras Come Out on Top in PCMag Review: Best Outdoor Home Security Cameras for 2024</h3>
+<p>News | 04-25-2024</p>
+</div>
+</div>
+<div class="update-card">
+<img alt="Update Image" src="placeholder.png"/>
+<div class="update-info">
+<h3>Tapo Champions Sustainability with The Great Global Cleanup</h3>
+<p>News | 04-22-2024</p>
+</div>
+</div>
+<div class="update-card">
+<img alt="Update Image" src="placeholder.png"/>
+<div class="update-info">
+<h3>VIGI by TP-Link Unveils New Professional Business Surveillance Solutions at ISC West</h3>
+<p>News | 04-10-2024</p>
+</div>
+</div>
+</div>
+</div>
+<div class="news-item">
+<div class="news-title">TP-Link Corporation Group Announces Completion of Corporate Restructuring, Marking a New Era in its Future Evolution</div>
+<div class="news-info">
+<span>News | 05.11.2024</span>
+</div>
+</div>
+<div class="news-item">
+<div class="news-title">Tapo Cameras Come Out on Top in PCMag Review: Best Outdoor Home Security Cameras for 2024</div>
+<div class="news-info">
+<span>News | 04.25.2024</span>
+</div>
+</div>
+<div class="news-item">
+<div class="news-title">TP-Link Introduces Festo — An Easy, Effective, and Reliable Cloud-based Solution</div>
+<div class="news-info">
+<span>News | 04.09.2024</span>
+</div>
+</div>
+<div class="container">
+<div class="subscription">
+<h2>Subscription</h2>
+<div class="email-subscription">
+<input placeholder="Email Address" type="email"/>
+<button>Sign Up</button>
+</div>
+</div>
+<div class="follow-us">
+<h2>Follow Us</h2>
+<div class="social-icons">
+<img alt="Social Icon" src="placeholder.png"/>
+<img alt="Social Icon" src="placeholder.png"/>
+<img alt="Social Icon" src="placeholder.png"/>
+<img alt="Social Icon" src="placeholder.png"/>
+</div>
+</div>
+</div>
+<div class="footer">
+<div class="container">
+<div class="column">
+<h3>About</h3>
+<ul>
+<li><a href="#">Corporate Profile</a></li>
+<li><a href="#">Contact Us</a></li>
+<li><a href="#">Privacy Policy</a></li>
+</ul>
+</div>
+<div class="column">
+<h3>Press</h3>
+<ul>
+<li><a href="#">News</a></li>
+<li><a href="#">Awards</a></li>
+<li><a href="#">Security Advisory</a></li>
+</ul>
+</div>
+<div class="column">
+<h3>Where to Buy</h3>
+<ul>
+<li><a href="#">Distributor</a></li>
+<li><a href="#">Reseller/Chain Store</a></li>
+</ul>
+</div>
+<div class="column">
+<h3>Learning Center</h3>
+<ul>
+<li><a href="#">Technology Library</a></li>
+</ul>
+</div>
+<div class="column">
+<h3>Promotions</h3>
+</div>
+<div class="column">
+<img alt="Placeholder Image" src="placeholder.png"/>
+</div>
+</div>
+<div class="bottom-bar">
+<p>Hong Kong, China / English | 简体中文</p>
+<p>Copyright © 2024 TP-Link CORPORATION LIMITED. All rights reserved</p>
+</div>
+</div>
+</body>
+</html>
+</p></body></html>

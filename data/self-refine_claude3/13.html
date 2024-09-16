@@ -1,0 +1,339 @@
+<html><body><p>
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Webpage Layout</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: #ffffff;
+            padding: 10px 20px;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        header img {
+            height: 50px;
+        }
+
+        .navbar {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar li {
+            margin: 0 15px;
+        }
+
+        .navbar li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .auth-buttons {
+            display: flex;
+        }
+
+        .auth-buttons a {
+            text-decoration: none;
+            margin-left: 10px;
+            color: #333;
+            padding: 8px 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+
+        .auth-buttons a.sign-up {
+            background: #0c67b3;
+            color: #fff;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .hero img {
+            width: 300px;
+        }
+
+        .hero h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            color: #666;
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+
+        .hero .btn {
+            background: #0c67b3;
+            color: #fff;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .features {
+            display: flex;
+            justify-content: center;
+            margin: 50px 0;
+        }
+
+        .features .box {
+            width: 30%;
+            background: #eee;
+            padding: 20px;
+            border-radius: 4px;
+            text-align: center;
+            margin: 0 10px;
+        }
+
+        .features .box:nth-child(2) {
+            background: #333;
+            color: #fff;
+        }
+
+        .features .box:nth-child(3) {
+            background: #8e44ad;
+            color: #fff;
+        }
+        
+        .features h3 {
+            margin-top: 15px;
+            font-size: 20px;
+        }
+
+        .features p {
+            color: #777;
+            font-size: 14px;
+        }
+
+        .features .box p {
+            color: inherit;
+        }
+
+        .detailed-features {
+            background: #f5f5f5;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .detailed-features h2 {
+            font-size: 28px;
+            margin-bottom: 40px;
+            color: #333;
+        }
+
+        .detailed-features ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .detailed-features li {
+            margin: 10px 20px;
+            text-align: left;
+            width: 30%;
+            font-size: 16px;
+            color: #555;
+        }
+
+        .call-to-action {
+            background: #f8f8f8;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .call-to-action .btn {
+            background: #8e44ad;
+            color: #fff;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .code-section {
+            text-align: center;
+            margin: 50px 0;
+        }
+
+        .code-section img {
+            max-width: 100%;
+            border-radius: 4px;
+        }
+
+        .code-section h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .user-logos {
+            display: flex;
+            justify-content: center;
+            margin: 50px 0;
+        }
+
+        .user-logos li {
+            list-style: none;
+            margin: 0 20px;
+            text-align: center;
+        }
+
+        .user-logos img {
+            width: 100px;
+            height: 100px;
+            object-fit: contain;
+        }
+
+        .user-logos p {
+            margin-top: 10px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .footer {
+            background: #333;
+            color: #fff;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .footer .navbar {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .footer .navbar li a {
+            color: #fff;
+            font-weight: normal;
+        }
+
+        .footer p {
+            margin: 5px 0;
+            font-size: 14px;
+        }
+
+    </style>
+</head>
+<body>
+<header>
+<img alt="Logo" src="placeholder.png"/>
+<ul class="navbar">
+<li><a href="#">Product</a></li>
+<li><a href="#">Pricing</a></li>
+<li><a href="#">Resources</a></li>
+</ul>
+<div class="auth-buttons">
+<a href="#">Log in</a>
+<a class="sign-up" href="#">Sign up</a>
+</div>
+</header>
+<section class="hero">
+<img alt="Hero Image" src="placeholder.png"/>
+<h1>Documentation simplified</h1>
+<p>Build, host, and share documentation, all with a single platform.</p>
+<a class="btn" href="#">Sign up now</a>
+</section>
+<section class="features">
+<div class="box">
+<h3>Easy previews and deploys</h3>
+<p>Preview changes on every commit to your pull requests. Release documentation to your users on each merge.</p>
+</div>
+<div class="box">
+<h3>Ideal developer experience</h3>
+<p>Write documentation without changing your workflow or your tools using a docs as code approach.</p>
+</div>
+<div class="box">
+<h3>Work privately or publicly</h3>
+<p>Easily share within your team or with the whole world. Manage permissions yourself or automatically with GitHub.</p>
+</div>
+</section>
+<section class="detailed-features">
+<h2>Features</h2>
+<ul>
+<li>Supports any doc tool <br/>Integrated support for Sphinx, MkDocs, Jupyter Book. Flexible enough to work with any documentation tool.</li>
+<li>Integrated search <br/>Easily search all your docs and other databases. And you'll get a free simple search with no need to set up.</li>
+<li>Pull request previews <br/>Review each pull request before merging any changes, allowing for real collaboration across your organization.</li>
+<li>Versioned docs <br/>Match your project release cycle with multiple versions of your docs. Automatically build versions from any branch or tag.</li>
+<li>Private repository support <br/>Clone private repositories using a connected GitHub, GitLab, or Bitbucket account. Or clone from any Git provider with a HTTPS URL.</li>
+<li>Single-Sign On <br/>For your whole team. <br/>Integrate with systems to your documentation with integrated authentication. Enable SSO with GitHub or Google to easily provision access for your team.</li>
+</ul>
+</section>
+<div class="call-to-action">
+<a class="btn" href="#">Discover all our features</a>
+</div>
+<section class="code-section">
+<h2>TRY IT OUT</h2>
+<img alt="Code Example" src="placeholder.png"/>
+</section>
+<section class="code-section">
+<h2>Upgrade your documentation with Read the Docs</h2>
+<ul class="user-logos">
+<li>
+<img alt="Flask" src="placeholder.png"/>
+<p>Flask</p>
+</li>
+<li>
+<img alt="Jupyter" src="placeholder.png"/>
+<p>Jupyter</p>
+</li>
+<li>
+<img alt="Godot" src="placeholder.png"/>
+<p>Godot Engine</p>
+</li>
+</ul>
+</section>
+<div class="call-to-action">
+<a class="btn" href="#">Get your docs online in 5 minutes.</a>
+</div>
+<footer class="footer">
+<ul class="navbar">
+<li><a href="#">Blog</a></li>
+<li><a href="#">Newsletter</a></li>
+<li><a href="#">Status</a></li>
+</ul>
+<ul class="navbar">
+<li><a href="#">Documentation</a></li>
+<li><a href="#">Getting started guide</a></li>
+<li><a href="#">Configure your project</a></li>
+</ul>
+<ul class="navbar">
+<li><a href="#">Features</a></li>
+<li><a href="#">Pricing</a></li>
+<li><a href="#">Privacy Policy</a></li>
+</ul>
+<ul class="navbar">
+<li><a href="#">About us</a></li>
+<li><a href="#">Support</a></li>
+<li><a href="#">Advertise with Us</a></li>
+</ul>
+<p>© Copyright 2022, Read the Docs, Inc &amp; contributors</p>
+</footer>
+</body>
+</html>
+</p></body></html>

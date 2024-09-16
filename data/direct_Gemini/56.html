@@ -1,0 +1,513 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>cPanel</title>
+<style>
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.header {
+  background-color: #22272c;
+  color: #f59842;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header .logo {
+  margin-left: 20px;
+}
+
+.header .logo img {
+  width: 50px;
+  height: 50px;
+}
+
+.header .nav {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header .nav li {
+  margin-right: 20px;
+}
+
+.header .nav li a {
+  color: #f59842;
+  text-decoration: none;
+}
+
+.header .nav li a:hover {
+  text-decoration: underline;
+}
+
+.header .auth {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-right: 20px;
+}
+
+.header .auth li {
+  margin-right: 10px;
+}
+
+.header .auth li a {
+  color: #f59842;
+  text-decoration: none;
+}
+
+.header .auth li a:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  background-color: #f59842;
+  padding: 100px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.hero .title {
+  font-size: 36px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.hero .subtitle {
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.hero .buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.hero .button {
+  background-color: #fff;
+  color: #f59842;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.hero .button:hover {
+  opacity: 0.8;
+}
+
+.hero .image {
+  width: 500px;
+  height: 300px;
+  background-color: #ddd;
+  margin-left: 40px;
+  border-radius: 5px;
+}
+
+.content {
+  padding: 50px;
+}
+
+.content .section {
+  margin-bottom: 50px;
+}
+
+.content .section .title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.content .section .subtitle {
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.content .section .features {
+  display: flex;
+  gap: 30px;
+}
+
+.content .section .feature {
+  width: 300px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.content .section .feature .icon {
+  width: 50px;
+  height: 50px;
+  background-color: #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.content .section .feature .title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.content .section .feature .description {
+  font-size: 14px;
+}
+
+.content .section .button {
+  background-color: #f59842;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.content .section .button:hover {
+  opacity: 0.8;
+}
+
+.content .section .cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.content .section .cta .title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.content .section .cta .button {
+  background-color: #f59842;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.content .section .cta .button:hover {
+  opacity: 0.8;
+}
+
+.footer {
+  background-color: #22272c;
+  color: #fff;
+  padding: 50px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.footer .copyright {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.footer .social {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.footer .social li {
+  width: 40px;
+  height: 40px;
+  background-color: #ddd;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer .social li img {
+  width: 20px;
+  height: 20px;
+}
+
+.footer .links {
+  display: flex;
+  gap: 50px;
+}
+
+.footer .links .column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer .links .column .title {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.footer .links .column a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer .links .column a:hover {
+  text-decoration: underline;
+}
+
+.cookie-banner {
+  background-color: #fff;
+  padding: 20px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.cookie-banner .message {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.cookie-banner .buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.cookie-banner .button {
+  background-color: #f59842;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.cookie-banner .button:hover {
+  opacity: 0.8;
+}
+
+.cookie-banner .image {
+  width: 50px;
+  height: 50px;
+  background-color: #ddd;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+
+.footer .legal-notice {
+  font-size: 12px;
+  margin-top: 20px;
+}
+</style>
+</head>
+<body>
+<header class="header">
+  <div class="logo">
+    <img src="placeholder.png" alt="cPanel Logo">
+  </div>
+  <nav class="nav">
+    <ul>
+      <li><a href="#">Shop our Products</a></li>
+      <li><a href="#">Solutions</a></li>
+      <li><a href="#">Roadmap</a></li>
+      <li><a href="#">Support</a></li>
+      <li><a href="#">About</a></li>
+    </ul>
+  </nav>
+  <ul class="auth">
+    <li><a href="#">Partners</a></li>
+    <li><a href="#">Developers</a></li>
+    <li><a href="#">Account Login</a></li>
+  </ul>
+</header>
+<section class="hero">
+  <div class="title">Simplify website & server management</div>
+  <div class="subtitle">Easily configure, monitor, and protect servers and sites in minutes.</div>
+  <div class="buttons">
+    <button class="button">Free Trial</button>
+    <button class="button">Buy cPanel</button>
+  </div>
+  <div class="image"></div>
+</section>
+<section class="content">
+  <div class="section">
+    <div class="title">cPanel</div>
+    <div class="subtitle">cPanel provides the most reliable and intuitive server site management platform. With a rich feature set and customer-first support, cPanel's automated and configurable platform enables customers to focus on growing their businesses.</div>
+    <button class="button">Learn more about cPanel</button>
+  </div>
+  <div class="section">
+    <div class="title">Control and flexibility at your fingertips</div>
+    <div class="features">
+      <div class="feature">
+        <div class="icon"></div>
+        <div class="title">Go Live</div>
+        <div class="description">With cPanel, it's easy to get started. We provide you with the tools needed to create and automate all server management tasks; making it easy to build every part of your website and get it ready to share.</div>
+      </div>
+      <div class="feature">
+        <div class="icon"></div>
+        <div class="title">Fuel your business</div>
+        <div class="description">Are you ready to grow? With revenue generating capabilities, we give you access to add-ons, third-party plugins, white-label allowing you to focus on empowering your customers and build every facet of their website experience.</div>
+      </div>
+    </div>
+    <div class="cta">
+      <div class="title">What else can cPanel do for you?</div>
+      <button class="button">See for yourself</button>
+    </div>
+  </div>
+  <div class="section">
+    <div class="title">Who is cPanel for?</div>
+    <div class="features">
+      <div class="feature">
+        <div class="icon"></div>
+        <div class="title">Developers & IT</div>
+      </div>
+      <div class="feature">
+        <div class="icon"></div>
+        <div class="title">Small to Medium Businesses</div>
+      </div>
+      <div class="feature">
+        <div class="icon"></div>
+        <div class="title">Digital Agencies</div>
+      </div>
+      <div class="feature">
+        <div class="icon"></div>
+        <div class="title">Hosting Providers</div>
+      </div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="title">Become a cPanel Partner</div>
+    <div class="features">
+      <div class="feature">
+        <div class="icon"></div>
+        <div class="title">Exclusive Discounts</div>
+      </div>
+      <div class="feature">
+        <div class="icon"></div>
+        <div class="title">Enterprise Support</div>
+      </div>
+      <div class="feature">
+        <div class="icon"></div>
+        <div class="title">Education and Training</div>
+      </div>
+    </div>
+    <button class="button">Learn more about our Partner Program</button>
+  </div>
+  <div class="section">
+    <div class="title">For all the latest cPanel news and updates</div>
+    <input type="text" placeholder="Subscribe">
+  </div>
+</section>
+<footer class="footer">
+  <div class="copyright">&copy; 2024 cPanel, L.L.C.</div>
+  <ul class="social">
+    <li><img src="placeholder.png" alt="Social Icon"></li>
+    <li><img src="placeholder.png" alt="Social Icon"></li>
+    <li><img src="placeholder.png" alt="Social Icon"></li>
+    <li><img src="placeholder.png" alt="Social Icon"></li>
+    <li><img src="placeholder.png" alt="Social Icon"></li>
+    <li><img src="placeholder.png" alt="Social Icon"></li>
+  </ul>
+  <div class="links">
+    <div class="column">
+      <div class="title">Products & Pricing</div>
+      <a href="#">cPanel & WHM Overview</a>
+      <a href="#">cPanel & WHM Features</a>
+      <a href="#">Extensions</a>
+      <a href="#">Customize Products</a>
+      <a href="#">cPanel & WHM Trial</a>
+      <a href="#">cPanel & WHM Releases</a>
+      <a href="#">Pricing</a>
+      <a href="#">Store Sign in</a>
+    </div>
+    <div class="column">
+      <div class="title">Support</div>
+      <a href="#">Need Help?</a>
+      <a href="#">Documentation</a>
+      <a href="#">Migrations Services</a>
+      <a href="#">Support Portal</a>
+      <a href="#">License Verification</a>
+      <a href="#">Security TSRS & CVEs</a>
+    </div>
+    <div class="column">
+      <div class="title">About Us</div>
+      <a href="#">Giving Back</a>
+      <a href="#">Non-Profit License</a>
+      <a href="#">EDU License</a>
+      <a href="#">Brand Guide</a>
+      <a href="#">Careers</a>
+      <a href="#">Contact</a>
+    </div>
+    <div class="column">
+      <div class="title">Partners</div>
+      <a href="#">Become a Partner</a>
+      <a href="#">Partner Directory</a>
+      <a href="#">Partner Sign in</a>
+    </div>
+    <div class="column">
+      <div class="title">Developers</div>
+      <a href="#">Build for cPanel</a>
+      <a href="#">Developer Docs</a>
+      <a href="#">Developer License</a>
+      <a href="#">Knowledge Base</a>
+      <a href="#">Forums</a>
+    </div>
+    <div class="column">
+      <div class="title">Extras</div>
+      <a href="#">News</a>
+      <a href="#">Blog</a>
+      <a href="#">WebPros NEXT</a>
+      <a href="#">CPU Certification</a>
+      <a href="#">Feature Request</a>
+    </div>
+  </div>
+  <div class="legal-notice">
+    <a href="#">Privacy Policy</a>
+    <a href="#">Transparency Policy</a>
+    <a href="#">Legal Notice</a>
+  </div>
+  <div class="image"></div>
+  <div class="legal-notice">
+    cPanel, WebHost Manager and WHM are registered trademarks of cPanel, L.L.C., for providing its computer software that facilitates the management and configuration of Internet web servers. 
+  </div>
+</footer>
+<div class="cookie-banner">
+  <div class="image"></div>
+  <div class="message">This website uses cookies</div>
+  <div class="buttons">
+    <button class="button">Necessary</button>
+    <button class="button">Preferences</button>
+    <button class="button">Statistics</button>
+    <button class="button">Marketing</button>
+    <button class="button">Allow selection</button>
+    <button class="button">Allow all</button>
+    <button class="button">Show details</button>
+  </div>
+</div>
+</body>
+</html>

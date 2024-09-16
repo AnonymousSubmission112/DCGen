@@ -1,0 +1,371 @@
+<html><body><p>
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>BootstrapCDN Clone</title>
+<style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+
+        .header {
+            background-color: #e9ecef;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .header img {
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        .header nav {
+            margin-left: auto;
+        }
+
+        .header nav a {
+            color: #000;
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .content {
+            display: flex;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+
+        .main {
+            max-width: 800px;
+            width: 60%;
+            padding-right: 20px;
+        }
+
+        .sidebar {
+            width: 30%;
+            padding-left: 20px;
+        }
+
+        .main h1 {
+            font-size: 3rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .main p {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        .main p a {
+            color: #0d6efd;
+        }
+
+        .main button {
+            background-color: #212529;
+            color: white;
+            border: none;
+            padding: 8px 20px;
+            border-radius: 5px;
+            margin-top: 10px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 600;
+            margin-right: 10px;
+        }
+
+        .quick-start-section h2 {
+            font-size: 2rem;
+            font-weight: 600;
+            margin: 40px 0 20px 0;
+        }
+
+        .versions {
+            margin-bottom: 30px;
+        }
+
+        .version-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin: 20px 0;
+        }
+
+        .code-section {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        .code-text {
+            color: #495057;
+            font-family: monospace;
+            word-break: break-all;
+            flex: 1;
+            font-size: 14px;
+        }
+
+        .copy-button {
+            background-color: #e9ecef;
+            border: none;
+            cursor: pointer;
+            padding: 5px;
+            border-radius: 3px;
+            font-size: 14px;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+
+        .copy-button:hover {
+            background-color: #d1d5da;
+        }
+
+        .sidebar img {
+            width: 100%;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: white;
+            border-top: 1px solid #ddd;
+        }
+
+        .footer img {
+            height: 30px;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+
+        .footer p {
+            margin: 0;
+            display: inline;
+        }
+
+        .footer p a {
+            color: black;
+            text-decoration: none;
+        }
+
+        .header .search {
+            display: flex;
+            align-items: center;
+        }
+
+        .header .search input {
+            border: 1px solid #ddd;
+            padding: 8px;
+            border-radius: 5px;
+            margin-right: 10px;
+            font-size: 14px;
+        }
+
+        .header .search button {
+            background-color: #e9ecef;
+            border: none;
+            padding: 8px;
+            border-radius: 5px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        .sidebar .learn-more {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .sidebar .learn-more-text {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 10px;
+        }
+
+        .header .links {
+            display: flex;
+            align-items: center;
+        }
+
+        .header .links .project-link {
+            color: #000;
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .header .links .project-link:hover {
+            text-decoration: underline;
+        }
+
+        .sidebar .learn-more-box {
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .sidebar .learn-more-box p {
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .main .follow-button {
+            background-color: #667eea;
+            color: white;
+            border: none;
+            padding: 8px 20px;
+            border-radius: 5px;
+            margin-top: 10px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 600;
+            margin-right: 10px;
+        }
+
+        .main .sponsor-button {
+            background-color: #f4829f;
+            color: white;
+            border: none;
+            padding: 8px 20px;
+            border-radius: 5px;
+            margin-top: 10px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 600;
+            margin-right: 10px;
+        }
+
+        .main .quick-start-text {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        .sidebar .learn-more-box .icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #e9ecef;
+            margin-bottom: 10px;
+        }
+
+        .sidebar .learn-more-box .icon i {
+            font-size: 20px;
+            color: #667eea;
+        }
+
+        .sidebar .learn-more-box .icon.email i {
+            color: #f4829f;
+        }
+
+        .sidebar .learn-more-box .icon.github i {
+            color: #6e5494;
+        }
+
+        .sidebar .learn-more-box .icon.youtube i {
+            color: #bb0000;
+        }
+
+        .sidebar .learn-more-box .icon.discord i {
+            color: #5865f2;
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+<img alt="Logo" src="placeholder.png"/>
+<nav>
+<a href="#">BootstrapCDN</a>
+<a href="#">Font Awesome CDN</a>
+<a href="#">Bootswatch CDN</a>
+<a href="#">Bootstrap Icons</a>
+<a href="#">Bootlint CDN</a>
+</nav>
+<div class="links">
+<a class="project-link" href="#">GitHub Project</a>
+<a class="project-link" href="#">Resources</a>
+</div>
+</div>
+<div class="content">
+<div class="main">
+<h1>BootstrapCDN</h1>
+<p>The recommended CDN for <a href="#">Bootstrap</a>, <a href="#">Font Awesome</a>, <a href="#">Bootswatch</a> and <a href="#">Bootstrap Icons</a></p>
+<button class="follow-button">Follow @jsdelivr</button>
+<button class="sponsor-button">Sponsor</button>
+<div class="quick-start-section">
+<h2>Quick Start</h2>
+<p class="quick-start-text">Get your production ready CDN links below. You can also automate your upgrades by pulling the latest versions from our API.</p>
+<div class="versions">
+<div class="version-title">v5.3.2</div>
+<div class="code-section">
+<span class="code-text">https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css</span>
+<button class="copy-button">🔽</button>
+</div>
+<div class="code-section">
+<span class="code-text">https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js</span>
+<button class="copy-button">🔽</button>
+</div>
+<div class="code-section">
+<span class="code-text">https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js</span>
+<button class="copy-button">🔽</button>
+</div>
+</div>
+<div class="versions">
+<div class="version-title">v4.6.2</div>
+<div class="code-section">
+<span class="code-text">https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css</span>
+<button class="copy-button">🔽</button>
+</div>
+<div class="code-section">
+<span class="code-text">https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js</span>
+<button class="copy-button">🔽</button>
+</div>
+<div class="code-section">
+<span class="code-text">https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js</span>
+<button class="copy-button">🔽</button>
+</div>
+</div>
+</div>
+</div>
+<div class="sidebar">
+<div class="learn-more-box">
+<p class="learn-more">LEARN MORE</p>
+<p class="learn-more-text">Check what makes us production ready.</p>
+<div class="icon email"><i class="fa-solid fa-envelope"></i></div>
+<div class="icon github"><i class="fa-brands fa-github"></i></div>
+<div class="icon youtube"><i class="fa-brands fa-youtube"></i></div>
+<div class="icon discord"><i class="fa-brands fa-discord"></i></div>
+<img alt="Production Ready Image" src="placeholder.png"/>
+</div>
+</div>
+</div>
+<div class="footer">
+<p>jsDelivr powered by <a href="#">Cloudflare</a>, <a href="#">Fastly</a>, <a href="#">N3</a>, <a href="#">BunnyCDN</a> &amp; <a href="#">Dmitriy Akulov</a></p>
+<a href="#">About</a> | <a href="#">Privacy Policy</a>
+</div>
+<script crossorigin="anonymous" src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+</html>
+</p></body></html>

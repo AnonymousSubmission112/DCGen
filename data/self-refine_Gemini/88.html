@@ -1,0 +1,158 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            background-color: #000;
+            color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .navbar .left,
+        .navbar .right {
+            display: flex;
+            align-items: center;
+        }
+        .navbar .left a,
+        .navbar .right button,
+        .navbar .right a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 14px;
+        }
+        .navbar .left a.active {
+            color: #007bff; /* Blue color */
+        }
+        .navbar .right a.store {
+            background-color: #007bff; /* Blue color */
+            padding: 5px 10px;
+            border-radius: 3px;
+        }
+        .header {
+            height: 400px;
+            background: linear-gradient(to bottom, black, #1c3146); /* Dark blue gradient */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            text-align: center;
+        }
+        .header h1 {
+            font-size: 36px;
+        }
+        .content {
+            display: flex;
+            justify-content: center;
+            padding: 50px 0;
+        }
+        .content .image-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .content img {
+            width: 300px;
+            height: 300px;
+            border: 1px solid #ccc;
+            margin-bottom: 10px;
+        }
+        .content .image-container .text {
+            font-size: 16px;
+            text-align: center;
+            margin-top: 10px;
+        }
+        .navbar .left a {
+            font-size: 14px;
+        }
+        .navbar .left {
+            display: flex;
+        }
+        .navbar .left a {
+            display: block;
+            padding: 5px 10px;
+            margin: 5px 5px;
+            text-align: center;
+        }
+        .navbar .left a:hover {
+            background-color: #ccc;
+            border-radius: 3px;
+        }
+        .navbar .right button {
+            background-color: #007bff; /* Blue color */
+            padding: 5px 10px;
+            border-radius: 3px;
+            border: none;
+            cursor: pointer;
+            color: #fff;
+        }
+        .navbar .right a {
+            background-color: #007bff; /* Blue color */
+            padding: 5px 10px;
+            border-radius: 3px;
+            border: none;
+            cursor: pointer;
+            color: #fff;
+        }
+        .navbar .right button:hover {
+            background-color: #0056b3; /* Darker blue */
+        }
+        .navbar .right a:hover {
+            background-color: #0056b3; /* Darker blue */
+        }
+        .navbar .left a.active {
+            background-color: #007bff; /* Blue color */
+            color: #fff;
+        }
+        .navbar .left a.active:hover {
+            background-color: #0056b3; /* Darker blue */
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="left">
+            <a href="#">Introduction</a>
+            <a href="#">How it Works</a>
+            <a href="#" class="active">What's New</a>
+            <a href="#">Links</a>
+            <a href="#">Design Center</a>
+            <a href="#">Professional Support</a>
+            <a href="#">Large Project Assistance</a>
+            <a href="#">UISP Carrier Platform</a>
+        </div>
+        <div class="right">
+            <button>Support</button>
+            <a href="#" class="store">Store</a>
+        </div>
+    </div>
+    <div class="header">
+        <h1>Building the Future of IT</h1>
+    </div>
+    <div class="content">
+        <div class="image-container">
+            <img src="placeholder.png" alt="Placeholder image">
+            <div class="text">Placeholder Image</div>
+        </div>
+        <div class="image-container">
+            <img src="placeholder.png" alt="Placeholder image">
+            <div class="text">Placeholder Image</div>
+        </div>
+        <div class="image-container">
+            <img src="placeholder.png" alt="Placeholder image">
+            <div class="text">Placeholder Image</div>
+        </div>
+    </div>
+</body>
+</html>
+

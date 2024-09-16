@@ -1,0 +1,382 @@
+<html><body><p>
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Document</title>
+<style>
+        body {
+            margin: 0;
+        }
+        .top-section {
+            background-color: #f5f5f5;
+            padding: 10px 0;
+        }
+        .top-section .top-area {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .top-section .top-area a {
+            color: #000;
+            text-decoration: none;
+            font-size: 15px;
+            margin-right: 20px;
+        }
+        .top-section .middle-area {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+        }
+        .top-section .middle-area .search-box {
+            width: 360px;
+            height: 165px;
+            background-color: #f5f5f5;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .top-section .middle-area .search-box img {
+            width: 80px;
+            height: 80px;
+            background-color: #e0e0e0;
+            border: 2px solid #fff;
+            border-radius: 10px;
+        }
+        .top-section .middle-area .search-input {
+            width: 64px;
+            height: 25px;
+            background-color: #f5f5f5;
+            border: 1px solid #000;
+            border-radius: 10px;
+            margin-left: 10px;
+        }
+        .top-section .middle-area .search-button {
+            background-color: #4285f4;
+            color: #fff;
+            padding: 8px 15px;
+            border-radius: 10px;
+            font-size: 15px;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+        .top-section .bottom-area {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 10px;
+        }
+        .top-section .bottom-area .news-list {
+            display: flex;
+            flex-direction: column;
+        }
+        .top-section .bottom-area .news-list a {
+            color: #000;
+            text-decoration: none;
+            font-size: 15px;
+            margin-bottom: 5px;
+        }
+        .top-section .bottom-area .news-list li {
+            display: flex;
+            align-items: center;
+        }
+        .top-section .bottom-area .news-list li span {
+            margin-right: 10px;
+        }
+        .top-section .bottom-area .news-list li .news-content {
+            color: #000;
+            font-size: 15px;
+        }
+        .top-section .bottom-area .change-button {
+            background-color: #4285f4;
+            color: #fff;
+            padding: 8px 15px;
+            border-radius: 10px;
+            font-size: 15px;
+            cursor: pointer;
+        }
+        .bottom-section {
+            background-color: #fff;
+            padding: 20px;
+        }
+        .bottom-section .footer {
+            background-color: #f5f5f5;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .bottom-section .footer .footer-links {
+            display: flex;
+        }
+        .bottom-section .footer .footer-links a {
+            color: #000;
+            text-decoration: none;
+            font-size: 12px;
+            margin-right: 20px;
+        }
+        .bottom-section .footer .footer-icons {
+            display: flex;
+            align-items: center;
+        }
+        .bottom-section .footer .footer-icons .icon {
+            width: 25px;
+            height: 25px;
+            background-color: #fff;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 10px;
+        }
+        .bottom-section .footer .footer-icons .icon .circle {
+            width: 15px;
+            height: 15px;
+            background-color: #000;
+            border-radius: 50%;
+        }
+        .bottom-section .footer .footer-icons .copyright {
+            width: 110px;
+            height: 15px;
+            background-color: #fff;
+            margin-right: 10px;
+        }
+        .bottom-section .footer .footer-icons .copyright .text {
+            color: #000;
+            font-size: 12px;
+        }
+        .bottom-section .footer .footer-icons .login-button {
+            background-color: #4285f4;
+            color: #fff;
+            padding: 8px 15px;
+            border-radius: 10px;
+            font-size: 12px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+        .bottom-section .footer .footer-icons .settings-button {
+            background-color: #4285f4;
+            color: #fff;
+            padding: 8px 15px;
+            border-radius: 10px;
+            font-size: 12px;
+            cursor: pointer;
+        }
+        .bottom-section .footer .footer-icons .grey-rectangle {
+            width: 30px;
+            height: 25px;
+            background-color: #f5f5f5;
+            margin-right: 10px;
+        }
+        .content {
+            display: flex;
+        }
+        .content .left {
+            width: 50%;
+            padding-right: 20px;
+        }
+        .content .right {
+            width: 50%;
+            padding-left: 20px;
+        }
+        .content .left .news {
+            color: #f00;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        .content .right .news {
+            color: #f00;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        .content .left ul {
+            list-style: none;
+            padding: 0;
+        }
+        .content .right ul {
+            list-style: none;
+            padding: 0;
+        }
+        .content .left li {
+            color: #f00;
+            font-size: 15px;
+            margin-bottom: 10px;
+        }
+        .content .right li {
+            color: #f00;
+            font-size: 15px;
+            margin-bottom: 10px;
+        }
+        .content .left .about-baidu {
+            color: #999;
+            font-size: 12px;
+            margin-top: 20px;
+        }
+        .content .right .about-baidu {
+            color: #999;
+            font-size: 12px;
+            margin-top: 20px;
+        }
+        .content .right .help {
+            color: #999;
+            font-size: 12px;
+        }
+        .content .right .mobile-version {
+            color: #999;
+            font-size: 12px;
+        }
+        .content .right .business-cooperation {
+            color: #999;
+            font-size: 12px;
+        }
+        .content .right .feedback {
+            color: #999;
+            font-size: 12px;
+        }
+        .content .right .beijing-icp {
+            color: #999;
+            font-size: 12px;
+        }
+        .content .right .internet-news {
+            color: #999;
+            font-size: 12px;
+        }
+        .content .right .copyright {
+            color: #999;
+            font-size: 12px;
+        }
+        .content .right .baidu-it {
+            background-color: #999;
+            color: #fff;
+            padding: 8px 15px;
+            border-radius: 10px;
+            font-size: 15px;
+            cursor: pointer;
+        }
+        .content .right .search {
+            background-color: #999;
+            color: #fff;
+            padding: 8px 15px;
+            border-radius: 10px;
+            font-size: 15px;
+            cursor: pointer;
+        }
+        .content .right .baidu-it {
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="top-section">
+<div class="top-area">
+<a href="#">新闻</a>
+<a href="#">hao123</a>
+<a href="#">地图</a>
+<a href="#">视频</a>
+<a href="#">图像</a>
+<a href="#">网盘</a>
+<a href="#">文库</a>
+<a href="#">更多</a>
+<div class="footer-icons">
+<div class="grey-rectangle"></div>
+<button class="settings-button">设置</button>
+<button class="login-button">登录</button>
+</div>
+</div>
+<div class="middle-area">
+<div class="search-box">
+<img alt="" src="placeholder.png"/>
+</div>
+<input class="search-input" type="text"/>
+<button class="search-button">百度一下</button>
+</div>
+<div class="bottom-area">
+<div class="news-list">
+<a href="#">新闻</a>
+<ul>
+<li>
+<span>1.</span>
+<span class="news-content">习近平主持召开企业家座谈会</span>
+</li>
+<li>
+<span>2.</span>
+<span class="news-content">各台各艺人才投身中国电影市场</span>
+</li>
+<li>
+<span>3.</span>
+<span class="news-content">第七届数字中国建设峰会即将召开</span>
+</li>
+<li>
+<span>4.</span>
+<span class="news-content">王岐山致信为今年的峰会发来贺电</span>
+</li>
+<li>
+<span>5.</span>
+<span class="news-content">五位大佬都可如何可</span>
+</li>
+</ul>
+</div>
+<button class="change-button">换一换</button>
+</div>
+</div>
+<div class="bottom-section">
+<div class="content">
+<div class="left">
+<p class="news">新闻</p>
+<ul>
+<li>1. 习近平主持召开企业家座谈会</li>
+<li>2. 各台各艺人才投身中国电影市场</li>
+<li>3. 第七届数字中国建设峰会即将召开</li>
+<li>4. 王岐山致信为今年的峰会发来贺电</li>
+<li>5. 五位大佬都可如何可</li>
+</ul>
+<p class="about-baidu">关于百度</p>
+<p class="about-baidu">About Baidu</p>
+</div>
+<div class="right">
+<p class="news">新闻</p>
+<ul>
+<li>1. 习近平主持召开企业家座谈会</li>
+<li>2. 各台各艺人才投身中国电影市场</li>
+<li>3. 第七届数字中国建设峰会即将召开</li>
+<li>4. 王岐山致信为今年的峰会发来贺电</li>
+<li>5. 五位大佬都可如何可</li>
+</ul>
+<button class="baidu-it">百度一下</button>
+<button class="search">搜索</button>
+<p class="news">新闻</p>
+<p class="about-baidu">关于百度</p>
+<p class="about-baidu">About Baidu</p>
+<p class="help">使用帮助</p>
+<p class="mobile-version">移动版</p>
+<p class="business-cooperation">企业合作</p>
+<p class="feedback">意见反馈</p>
+<p class="beijing-icp">京ICP证030173号</p>
+<p class="internet-news">互联网新闻信息服务许可证编号:11220180008</p>
+<p class="copyright">版权所有</p>
+</div>
+</div>
+<div class="footer">
+<div class="footer-links">
+<a href="#">关于百度</a>
+<a href="#">About Baidu</a>
+<a href="#">使用帮助</a>
+</div>
+<div class="footer-icons">
+<div class="icon">
+<div class="circle"></div>
+</div>
+<div class="copyright">
+<span class="text">版权所有</span>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
+</p></body></html>

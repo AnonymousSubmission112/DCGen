@@ -1,0 +1,300 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage Screenshot Recreation</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #F7F7F7;
+            color: #666666;
+        }
+        .nav {
+            background-color: #FFFFFF;
+            padding: 15px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+        }
+        .nav a {
+            color: #666666;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+            font-size: 14px;
+        }
+        .nav .brand {
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .nav .right {
+            display: flex;
+            align-items: center;
+        }
+        .nav .login, .nav .signup {
+            background: none;
+            border: none;
+            cursor: pointer;
+            margin: 0 5px;
+            font-weight: bold;
+            font-size: 14px;
+        }
+        .nav .signup {
+            border: 1px solid #007BFF;
+            color: #007BFF;
+            padding: 5px 10px;
+            border-radius: 3px;
+        }
+        .content {
+            margin-top: 80px;
+            padding: 20px;
+        }
+        .content img {
+            width: 100%;
+            height: auto;
+        }
+        .paragraph {
+            text-align: center;
+            margin: 40px 0;
+        }
+        .paragraph h2 {
+            font-size: 24px;
+            color: #333333;
+            margin-bottom: 10px;
+        }
+        .paragraph p {
+            font-size: 16px;
+            color: #666666;
+        }
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .btn {
+            background-color: #007BFF;
+            color: #FFFFFF;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 3px;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .grid {
+            display: flex;
+            justify-content: space-around;
+            margin: 40px 0;
+        }
+        .grid-item {
+            text-align: center;
+            flex: 1 1 0;
+            padding: 20px;
+        }
+        .grid-item img {
+            max-width: 80px;
+        }
+        .grid-item h3 {
+            font-size: 18px;
+            color: #333333;
+            margin-top: 20px;
+        }
+        .grid-item p {
+            font-size: 14px;
+            color: #666666;
+            margin-top: 10px;
+        }
+        .footer {
+            background-color: #F7F7F7;
+            padding: 20px 0;
+            text-align: center;
+            color: #666666;
+            font-size: 14px;
+            margin-top: 40px;
+        }
+        .footer .columns {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+        .footer .column {
+            flex: 1 1 200px;
+            margin: 10px;
+        }
+        .footer .column a {
+            color: #666666;
+            text-decoration: none;
+            display: block;
+            margin: 5px 0;
+            font-weight: bold;
+            font-size: 14px;
+        }
+        .footer .column h3 {
+            color: #333333;
+            margin-bottom: 10px;
+        }
+        .footer .social-media {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin: 20px 0;
+        }
+        .footer .social-media img {
+            width: 30px;
+            height: 30px;
+        }
+        .grid .grid-item a {
+            color: #007BFF;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="brand">Get Started</div>
+        <div class="links">
+            <a href="#">Websites</a>
+            <a href="#">Online Stores</a>
+            <a href="#">Pricing</a>
+        </div>
+        <div class="right">
+            <button class="login">Log In</button>
+            <button class="signup">Sign Up</button>
+        </div>
+    </div>
+    <div class="content">
+        <img src="placeholder.png" alt="Placeholder Image">
+
+        <div class="paragraph">
+            <h2>Build a free website that grows with your business.</h2>
+            <p>Get access to customizable webpage designs and useful tools to build your website and grow your customer base in style. Start today with our powerful free website builder.</p>
+            <div class="button-container">
+                <a href="#" class="btn">Get Started</a>
+                <a href="#" class="btn">More Designs ></a>
+            </div>
+        </div>
+        
+        <img src="placeholder.png" alt="Placeholder Image">
+
+        <div class="grid">
+            <div class="grid-item">
+                <img src="placeholder.png" alt="Get Going">
+                <h3>Get Going</h3>
+                <p>Get step-by-step guidance on how to build and launch a website with expert starter guides and planning tools.</p>
+                <a href="#">Get Started ></a>
+            </div>
+            <div class="grid-item">
+                <img src="placeholder.png" alt="Get Online">
+                <h3>Get Online</h3>
+                <p>Get discovered with a professional website. Easily customize with our free website builder.</p>
+                <a href="#">Learn More ></a>
+            </div>
+            <div class="grid-item">
+                <img src="placeholder.png" alt="Get Selling">
+                <h3>Get Selling</h3>
+                <p>All-in-one powerful eCommerce tools to simplify order management, shipping, and payments.</p>
+                <a href="#">Learn More ></a>
+            </div>
+            <div class="grid-item">
+                <img src="placeholder.png" alt="Get Growing">
+                <h3>Get Growing</h3>
+                <p>Find new customers with integrated marketing tools, from Facebook ads to automated email campaigns.</p>
+                <a href="#">Learn More ></a>
+            </div>
+        </div>
+
+        <div class="paragraph">
+            <h2>Freedom to sell anytime, anywhere with Weebly + Square.</h2>
+            <p>Weebly is now a part of the Square product suite, so you can focus on your business. This means never missing a sale and letting your customers pay how they want to. Whether it's a pop-up shop or your own online store, Square takes care of your payments for you.</p>
+            <div class="button-container">
+                <button class="btn">Sign Up</button>
+            </div>
+        </div>
+
+        <img src="placeholder.png" alt="Placeholder Image">
+
+        <div class="paragraph">
+            <h2>Your Business, You've Got This</h2>
+            <p>We’re here to guide you through common hurdles when you need it.</p>
+        </div>
+        
+        <div class="grid">
+            <div class="grid-item">
+                <img src="placeholder.png" alt="Placeholder Image">
+                <p>Join our in-person events with a community of like-minded entrepreneurs to share, learn, and connect.</p>
+            </div>
+            <div class="grid-item">
+                <img src="placeholder.png" alt="Placeholder Image">
+                <p>Check out our helpful blog and inspiration center for ideas you can use right away.</p>
+                <a href="#">Learn More ></a>
+            </div>
+        </div>
+
+        <img src="placeholder.png" alt="Placeholder Image">
+        
+        <div class="paragraph">
+            <h2>Grow your business, anytime, anywhere.</h2>
+            <div class="button-container">
+                <button class="btn">Get Started</button>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="columns">
+                <div class="column">
+                    <h3>Product</h3>
+                    <a href="#">Websites</a>
+                    <a href="#">Online Stores</a>
+                    <a href="#">Photo Studio</a>
+                    <a href="#">Features</a>
+                    <a href="#">Themes</a>
+                    <a href="#">Pricing</a>
+                    <a href="#">App Center</a>
+                    <a href="#">Mobile Apps</a>
+                </div>
+                <div class="column">
+                    <h3>Resources</h3>
+                    <a href="#">Blog</a>
+                    <a href="#">Success Stories</a>
+                    <a href="#">Developer Docs</a>
+                    <a href="#">Affiliates</a>
+                </div>
+                <div class="column">
+                    <h3>Support</h3>
+                    <a href="#">Support Center</a>
+                    <a href="#">Community</a>
+                </div>
+                <div class="column">
+                    <h3>Company</h3>
+                    <a href="#">About</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Press</a>
+                    <a href="#">Contact</a>
+                    <a href="#">Terms</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Additional California Privacy Disclosure</a>
+                </div>
+            </div>
+            <div class="social-media">
+                <a href="#"><img src="placeholder.png" alt="Facebook"></a>
+                <a href="#"><img src="placeholder.png" alt="Twitter"></a>
+                <a href="#"><img src="placeholder.png" alt="Instagram"></a>
+                <a href="#"><img src="placeholder.png" alt="LinkedIn"></a>
+            </div>
+            <p>© 2023 Square, Inc. All Rights Reserved.</p>
+            <p>English</p>
+            <p>uparrowsmall</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,486 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Meet WordPress</title>
+<style>
+body {
+  font-family: sans-serif;
+  margin: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  background-color: #f7f7f7;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .logo {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.header li {
+  margin-right: 20px;
+}
+
+.header a {
+  text-decoration: none;
+  color: #333;
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #666;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.feature {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.feature img {
+  display: block;
+  margin: 0 auto 20px;
+  max-width: 100%;
+}
+
+.feature h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.feature p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #666;
+}
+
+.feature a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.feature a:hover {
+  background-color: #222;
+}
+
+.new-release {
+  background-color: #f7f7f7;
+  padding: 20px;
+  margin-bottom: 40px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.new-release h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.new-release p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #666;
+}
+
+.new-release a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.new-release a:hover {
+  background-color: #222;
+}
+
+.showcase {
+  background-color: #000;
+  color: #fff;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.showcase h2 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.showcase p {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #fff;
+}
+
+.showcase .examples {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.showcase .example {
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  margin: 0 10px;
+  border-radius: 5px;
+}
+
+.showcase a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #000;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+.showcase a:hover {
+  background-color: #eee;
+}
+
+.community {
+  background-color: #f7f7f7;
+  padding: 20px;
+  margin-bottom: 40px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.community h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.community p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #666;
+}
+
+.community a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.community a:hover {
+  background-color: #222;
+}
+
+.news {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 40px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.news h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.news .articles {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+
+.news .article {
+  padding: 20px;
+  background-color: #f7f7f7;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.news .article h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.news .article p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #666;
+}
+
+.news .article .category {
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.news .article .date {
+  font-size: 12px;
+  color: #666;
+}
+
+.news .article a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.news .article a:hover {
+  background-color: #222;
+}
+
+.cta {
+  background-color: #000;
+  color: #fff;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.cta h2 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.cta p {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #fff;
+}
+
+.footer {
+  background-color: #f7f7f7;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer .logo {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.footer ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.footer li {
+  margin-right: 20px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #333;
+}
+
+.footer .social {
+  display: flex;
+}
+
+.footer .social li {
+  margin-right: 10px;
+}
+
+.footer .social a {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  line-height: 32px;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.footer .social a:hover {
+  background-color: #222;
+}
+</style>
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="logo">
+        <img src="placeholder.png" alt="WordPress logo">
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Showcase</a></li>
+          <li><a href="#">Hosting</a></li>
+          <li><a href="#">Extend</a></li>
+          <li><a href="#">Learn</a></li>
+          <li><a href="#">Community</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </nav>
+      <a href="#" class="button">Get WordPress</a>
+    </header>
+
+    <section class="hero">
+      <h1>Meet WordPress</h1>
+      <p>The open source publishing platform of choice for millions of websites worldwide—from creators and small businesses to enterprises.</p>
+    </section>
+
+    <section class="features">
+      <div class="feature">
+        <img src="placeholder.png" alt="Design">
+        <h2>Design</h2>
+        <p>Create any website with flexible design tools and the power of Blocks. Start with a blank canvas or choose a theme. Customize every detail—no code needed.</p>
+        <a href="#">Try the Block Editor</a>
+      </div>
+      <div class="feature">
+        <img src="placeholder.png" alt="Build">
+        <h2>Build</h2>
+        <p>See how your site will look as you add, edit, and rearrange content with intuitive editing and integrated features to manage content—with a new way to manage fonts, exciting new foundational APIs for developers, and an impressive performance boost.</p>
+        <a href="#">Try the Block Editor</a>
+      </div>
+      <div class="feature">
+        <img src="placeholder.png" alt="Extend">
+        <h2>Extend</h2>
+        <p>Make your site do whatever you need it to. Add a store, analytics, newsletter, social media integration, you’re in control with an extensive library of plugins. </p>
+        <a href="#">Discover WordPress 6.5</a>
+      </div>
+    </section>
+
+    <section class="new-release">
+      <h2>See what’s new</h2>
+      <p>Elevate your site-building experience with WordPress 6.5. This release includes a new way to manage fonts, exciting new foundational APIs for developers, and an impressive performance boost. </p>
+      <a href="#">Discover WordPress 6.5</a>
+    </section>
+
+    <section class="showcase">
+      <h2>One platform, a universe of possibilities</h2>
+      <p>Discover a collection of website examples from around the world, curated to spotlight design, technical innovation, and the limitless power of WordPress.</p>
+      <div class="examples">
+        <div class="example"></div>
+        <div class="example"></div>
+        <div class="example"></div>
+      </div>
+      <a href="#">Explore the Showcase</a>
+    </section>
+
+    <section class="community">
+      <h2>Meet the WordPress community</h2>
+      <p>Behind the technology is a diverse collective of people collaborating and gathering from around the world. We hold regular events with opportunities to learn more about WordPress and the latest tech trends, connect with fellow industry experts, and foster your professional growth.</p>
+      <p>We’re united by the spirit of open source, and the freedom to build, transform, and share without barriers. Everyone is welcome.</p>
+      <a href="#">Find an event near you</a>
+    </section>
+
+    <section class="news">
+      <h2>Latest WordPress news</h2>
+      <div class="articles">
+        <div class="article">
+          <h3>WordPress 6.5.3 Maintenance Release</h3>
+          <p class="category">RELEASES</p>
+          <p class="date">May 7, 2024</p>
+          <a href="#">More news</a>
+        </div>
+        <div class="article">
+          <h3>How WordPress is Creating a Faster Web</h3>
+          <p class="category">GENERAL</p>
+          <p class="date">April 15, 2024</p>
+          <a href="#">More news</a>
+        </div>
+        <div class="article">
+          <h3>WordPress 6.5.2 Maintenance and Security Release</h3>
+          <p class="category">RELEASES</p>
+          <p class="date">April 9, 2024</p>
+          <a href="#">More news</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <h2>Get started</h2>
+      <p>Find everything you need to get started, download the platform, find hosting, and more—whether it’s your first site or your ninetieth site.</p>
+    </section>
+
+    <footer class="footer">
+      <div class="logo">
+        <img src="placeholder.png" alt="WordPress logo">
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Hosting</a></li>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Showcase</a></li>
+          <li><a href="#">Themes</a></li>
+          <li><a href="#">Plugins</a></li>
+          <li><a href="#">Patterns</a></li>
+          <li><a href="#">Learn</a></li>
+          <li><a href="#">Documentation</a></li>
+          <li><a href="#">Developers</a></li>
+          <li><a href="#">WordPress.tv</a></li>
+        </ul>
+      </nav>
+      <ul class="social">
+        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+      </ul>
+    </footer>
+  </div>
+</body>
+</html>

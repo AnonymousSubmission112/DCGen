@@ -1,0 +1,469 @@
+<html><body><p>
+<!DOCTYPE html>
+
+<html>
+<head>
+<style>
+body {
+  margin: 0;
+  background-color: #f2f2f2;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #592f7f;
+  padding: 15px 50px;
+  color: #fff;
+}
+
+.header ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header li {
+  margin-left: 20px;
+}
+
+.header a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.header a:hover {
+  text-decoration: underline;
+}
+
+.header .search {
+  display: flex;
+  align-items: center;
+}
+
+.header .search input {
+  border: none;
+  background-color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #592f7f;
+  margin-right: 10px;
+}
+
+.header .search input:focus {
+  outline: none;
+}
+
+.header .search button {
+  border: none;
+  background-color: transparent;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.header .search button:hover {
+  background-color: #fff;
+  color: #592f7f;
+}
+
+.banner {
+  background-color: #fff;
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.banner .content {
+  width: 50%;
+}
+
+.banner h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.banner p {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #592f7f;
+}
+
+.banner .button {
+  background-color: #592f7f;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.banner .button:hover {
+  background-color: #73489a;
+}
+
+.banner .image {
+  width: 40%;
+}
+
+.banner .image img {
+  width: 100%;
+  height: auto;
+}
+
+.content-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+}
+
+.content-container .content {
+  width: 30%;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.content-container .content h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.content-container .content p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #592f7f;
+}
+
+.content-container .content .button {
+  background-color: #592f7f;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.content-container .content .button:hover {
+  background-color: #73489a;
+}
+
+.content-container .content .image {
+  width: 100%;
+  height: 200px;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.content-container .content .image img {
+  width: 50%;
+  height: auto;
+}
+
+.footer {
+  background-color: #fff;
+  padding: 50px;
+  text-align: center;
+}
+
+.footer p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #592f7f;
+}
+
+.footer .social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.footer .social li {
+  margin-left: 20px;
+}
+
+.footer .social a {
+  text-decoration: none;
+  color: #592f7f;
+}
+
+.footer .social a:hover {
+  text-decoration: underline;
+}
+
+.menu-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.menu-items ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-items li {
+  margin-left: 30px;
+}
+
+.menu-items a {
+  text-decoration: none;
+  color: #592f7f;
+  font-weight: bold;
+}
+
+.menu-items a:hover {
+  text-decoration: underline;
+}
+
+.menu-items .icon {
+  margin-right: 10px;
+  font-size: 24px;
+}
+
+.menu-items .icon:hover {
+  color: #592f7f;
+}
+
+.fast-facts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+}
+
+.fast-facts .content {
+  width: 30%;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.fast-facts .content h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.fast-facts .content p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #592f7f;
+}
+
+.fast-facts .content .image {
+  width: 100%;
+  height: 200px;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.fast-facts .content .image img {
+  width: 50%;
+  height: auto;
+}
+
+.fast-facts .content .button {
+  background-color: #592f7f;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.fast-facts .content .button:hover {
+  background-color: #73489a;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.title h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+</style>
+</head>
+<body>
+<div class="header">
+<ul>
+<li><a href="#">ABOUT</a></li>
+<li><a href="#">ACADEMICS</a></li>
+<li><a href="#">APPLY</a></li>
+<li><a href="#">NEWS &amp; EVENTS</a></li>
+<li><a href="#">RESEARCH</a></li>
+<li><a href="#">CAMPUSES</a></li>
+<li><a href="#">GIVE</a></li>
+</ul>
+<div class="search">
+<ul>
+<li><a href="#">Students</a></li>
+<li><a href="#">Parents</a></li>
+<li><a href="#">Faculty &amp; Staff</a></li>
+<li><a href="#">Alumni</a></li>
+</ul>
+<input placeholder="Search" type="text"/>
+<button>
+<img alt="search icon" src="placeholder.png"/>
+</button>
+<a href="#">Quick Links</a>
+</div>
+</div>
+<div class="banner">
+<div class="content">
+<p style="font-size: 24px; font-weight: bold; color: #592f7f; margin-bottom: 10px;">#UWinnovates</p>
+<h1>ENERGIZED FOR CHANGE</h1>
+<div style="width: 60px; height: 4px; background-color: #c89e4f; margin-bottom: 20px;"></div>
+<p>After living through the devastation of hurricanes in Puerto Rico, grad student Miguel Gonzalez-Montijo is working on clean energy innovations for the future.</p>
+<button class="button">READ STORY</button>
+</div>
+<div class="image">
+<img alt="banner image" src="placeholder.png"/>
+</div>
+</div>
+<div class="menu-items">
+<ul>
+<li>
+<a href="#">
+<img alt="ArtsUW icon" class="icon" src="placeholder.png"/>
+        ARTSUW
+      </a>
+</li>
+<li>
+<a href="#">
+<img alt="Maps icon" class="icon" src="placeholder.png"/>
+        MAPS
+      </a>
+</li>
+<li>
+<a href="#">
+<img alt="MyUW icon" class="icon" src="placeholder.png"/>
+        MYUW
+      </a>
+</li>
+<li>
+<a href="#">
+<img alt="Athletics icon" class="icon" src="placeholder.png"/>
+        ATHLETICS
+      </a>
+</li>
+<li>
+<a href="#">
+<img alt="Social icon" class="icon" src="placeholder.png"/>
+        SOCIAL
+      </a>
+</li>
+<li>
+<a href="#">
+<img alt="Libraries icon" class="icon" src="placeholder.png"/>
+        LIBRARIES
+      </a>
+</li>
+<li>
+<a href="#">
+<img alt="UW Medicine icon" class="icon" src="placeholder.png"/>
+        UW MEDICINE
+      </a>
+</li>
+</ul>
+</div>
+<div class="title">
+<h2>News &amp; Events</h2>
+</div>
+<div class="content-container">
+<div class="content">
+<div class="image">
+<img alt="UW announces 2024 Awards of Excellence recipients image" src="placeholder.png"/>
+</div>
+<h2>UW announces 2024 Awards of Excellence recipients</h2>
+<p>The recipients of the 54th annual UW Awards of Excellence will be honored at a ceremony in Meany Hall on June 6. The awards honor outstanding alumni, faculty, staff, students and retirees who contribute to the richness and diversity of the university community.</p>
+<button class="button">VIEW AWARDEES</button>
+</div>
+<div class="content">
+<div class="image">
+<img alt="Announcing the 2024 Husky Sustainability Award recipients image" src="placeholder.png"/>
+</div>
+<h2>Announcing the 2024 Husky Sustainability Award recipients</h2>
+<p>The Husky Sustainability Awards recognize students, faculty and staff from the Seattle, Bothell and Tacoma campuses who show impact, initiative, leadership and dedication around sustainability.</p>
+<button class="button">VIEW LIST</button>
+</div>
+<div class="content">
+<div class="image">
+<img alt="New center opens to address behavioral health care needs image" src="placeholder.png"/>
+</div>
+<h2>New center opens to address behavioral health care needs</h2>
+<p>Gov. Jay Inslee, UW President Ana Mari Cauce and UW Medicine leaders gathered to celebrate the opening of UW Medicine's Center for Behavioral Health and Learning. The six-story facility will help address the state's need for increased patient care and workforce training in behavioral health care.</p>
+<button class="button">READ STORY</button>
+</div>
+</div>
+<div class="fast-facts">
+<div class="content">
+<h2>Undergrad research</h2>
+<div class="image">
+<img alt="Undergrad research image" src="placeholder.png"/>
+</div>
+</div>
+<div class="content">
+<h2 style="text-align: center;">FAST FACTS</h2>
+<h2 style="text-align: center;">Did you know?</h2>
+<div class="image">
+<img alt="Did you know? image" src="placeholder.png"/>
+</div>
+</div>
+<div class="content">
+<h2>Honors &amp; Awards</h2>
+<div class="image">
+<img alt="Honors &amp; Awards image" src="placeholder.png"/>
+</div>
+</div>
+</div>
+<div class="footer">
+<p>Connect with us:</p>
+<ul class="social">
+<li><a href="#">Accessibility</a></li>
+<li><a href="#">Contact Us</a></li>
+<li><a href="#">Jobs</a></li>
+<li><a href="#">Campus Safety</a></li>
+<li><a href="#">My UW</a></li>
+<li><a href="#">Rules Docket</a></li>
+<li><a href="#">Privacy</a></li>
+<li><a href="#">Terms</a></li>
+<li><a href="#">Newsletter</a></li>
+</ul>
+<p>© 2024 University of Washington | Seattle, WA</p>
+</div>
+</body>
+</html>
+</p></body></html>

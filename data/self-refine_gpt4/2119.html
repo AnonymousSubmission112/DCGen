@@ -1,0 +1,228 @@
+<html><body><p>
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>OpenStreetMap</title>
+<style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            background-color: #f7f7f7;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: white;
+            padding: 10px 20px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .header-left {
+            display: flex;
+            align-items: center;
+        }
+
+        .header-left img {
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        .header-left span {
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .header-right button {
+            margin-left: 10px;
+            padding: 5px 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f7f7f7;
+            cursor: pointer;
+        }
+
+        .header-right button:nth-child(1) {
+            background-color: #ebf7eb;
+            border: 1px solid #8fc98f;
+        }
+
+        .header-right button:nth-child(2) {
+            background-color: #f7f7f7;
+            border: 1px solid #5ec7ff;
+        }
+
+        .header-right button:nth-child(3) {
+            background-color: #f2f7e5;
+            border: 1px solid #8fc986;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+            background-color: white;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .nav div:nth-child(1) {
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav div:nth-child(1) a {
+            text-decoration: none;
+            color: #777;
+        }
+
+        .nav div:nth-child(2) button {
+            padding: 5px 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f7f7f7;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+
+        .nav div:nth-child(2) button:nth-child(1) {
+            background-color: white;
+        }
+
+        .nav div:nth-child(2) button:nth-child(2) {
+            background-color: #e6f3ff;
+            border: 1px solid #5ec7ff;
+        }
+
+        .search-bar {
+            display: flex;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            position: absolute;
+            top: 100px;
+            left: 100px;
+            width: 500px;
+        }
+
+        .search-bar input[type="text"] {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+
+        .search-bar a {
+            margin-right: 10px;
+            text-decoration: none;
+            color: #1e90ff;
+        }
+
+        .search-bar button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #1e90ff;
+            color: white;
+            cursor: pointer;
+        }
+
+        .main-content {
+            display: flex;
+            margin: 20px;
+            margin-top: 80px;
+        }
+
+        .main-content .info {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 500px;
+        }
+
+        .main-content .info h1 {
+            margin: 0;
+            font-size: 28px;
+            line-height: 1.2;
+        }
+
+        .main-content .info p {
+            margin: 20px 0;
+            font-size: 16px;
+            color: #666;
+            line-height: 1.5;
+        }
+
+        .main-content .info a {
+            display: inline-block;
+            margin-right: 10px;
+            padding: 10px 20px;
+            background-color: #1e90ff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .map-container {
+            flex: 1;
+            background: url('placeholder.png') repeat;
+            border: 1px solid #ccc;
+            height: 100vh;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+<div class="header-left">
+<img alt="Logo" src="placeholder.png"/>
+<span>OpenStreetMap</span>
+</div>
+<div class="header-right">
+<button>Edit</button>
+<button>History</button>
+<button>Export</button>
+</div>
+</div>
+<div class="nav">
+<div>
+<a href="#">GPS Traces</a>
+<a href="#">User Diaries</a>
+<a href="#">Communities</a>
+<a href="#">Copyright</a>
+<a href="#">Help</a>
+<a href="#">About</a>
+</div>
+<div>
+<button>Log In</button>
+<button>Sign Up</button>
+</div>
+</div>
+<div class="search-bar">
+<input placeholder="Search" type="text"/>
+<a href="#">Where is this?</a>
+<button>Go</button>
+</div>
+<div class="main-content">
+<div class="info">
+<h1>Welcome to OpenStreetMap!</h1>
+<p>OpenStreetMap is a map of the world, created by people like you and free to use under an open license.</p>
+<p>Hosting is supported by <a href="#">Fastly</a>, <a href="#">OSMF corporate members</a>, and other <a href="#">partners</a>.</p>
+<a href="#">Learn More</a>
+<a href="#">Start Mapping</a>
+</div>
+</div>
+<div class="map-container"></div>
+<footer style="text-align: center; padding: 10px; font-size: 12px; color: #666;">
+        © OpenStreetMap contributors ♥ Make a Donation. Website and API terms
+    </footer>
+</body>
+</html>
+</p></body></html>

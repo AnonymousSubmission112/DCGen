@@ -1,0 +1,258 @@
+<html><body><p>
+<!DOCTYPE html>
+
+<html>
+<head>
+<style>
+body {
+  margin: 0;
+  background-color: #f2f2f2;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-right a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+
+.header-right a:hover {
+  text-decoration: underline;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.search-bar input {
+  width: 500px;
+  height: 40px;
+  border: 1px solid #ccc;
+  padding: 0 10px;
+  border-radius: 5px;
+}
+
+.search-bar button {
+  background-color: #f2f2f2;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search-bar img {
+  width: 24px;
+  height: 24px;
+}
+
+.search-bar img:hover {
+  opacity: 0.8;
+}
+
+.google-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.google-logo img {
+  width: 100px;
+  height: 30px;
+}
+
+.google-logo button {
+  background-color: #f2f2f2;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.language {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.language a {
+  text-decoration: none;
+  color: #000;
+  font-size: 14px;
+}
+
+.language a:hover {
+  text-decoration: underline;
+}
+
+.footer {
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  margin-top: 20px;
+}
+
+.footer-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #000;
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  z-index: 10;
+}
+
+.popup-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.popup-content {
+  margin-bottom: 10px;
+}
+
+.popup-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.popup-buttons button {
+  background-color: #4285f4;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.popup-buttons button:hover {
+  opacity: 0.8;
+}
+
+.popup-buttons button:first-child {
+  background-color: #f2f2f2;
+  color: #000;
+}
+
+.popup-buttons button:first-child:hover {
+  background-color: #ddd;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="header">
+<div class="header-left">
+<a href="#">Gmail</a>
+<a href="#">图片</a>
+</div>
+<div class="header-right">
+<a href="#">
+<img alt="Menu Icon" src="placeholder.png"/>
+</a>
+<a href="#">登录</a>
+</div>
+</div>
+<div class="search-bar">
+<input placeholder="Google 搜索" type="text"/>
+<button><img alt="Microphone Icon" src="placeholder.png"/></button>
+<button><img alt="Google Lens Icon" src="placeholder.png"/></button>
+</div>
+<div class="google-logo">
+<img alt="Google Logo" src="placeholder.png"/>
+<button>搜索</button>
+<button>好手感</button>
+</div>
+<div class="language">
+<a href="#">Google 语言以下语言提供</a>
+<a href="#">中文(简体)</a>
+<a href="#">English</a>
+</div>
+</div>
+<div class="popup">
+<div class="popup-title">
+      Google 建議使用 Chrome 瀏覽器
+    </div>
+<div class="popup-content">
+      要為 Windows 設計。使用我們的安全瀏覽器在 Google 上輕鬆搜尋
+    </div>
+<div class="popup-buttons">
+<button>不要切換</button>
+<button>是</button>
+</div>
+</div>
+<div class="footer">
+<div class="footer-title">
+      香港
+    </div>
+<div class="footer-links">
+<a href="#">關於</a>
+<a href="#">廣告</a>
+<a href="#">企業</a>
+<a href="#">隱私權和條款</a>
+<a href="#">設定</a>
+</div>
+</div>
+</body>
+</html>
+</p></body></html>

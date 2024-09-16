@@ -1,0 +1,522 @@
+<html><body><p>
+<!DOCTYPE html>
+
+<html>
+<head>
+<style>
+body {
+  background-color: #f7f7f7;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #fff;
+  padding: 15px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-left ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav-left li {
+  margin-right: 20px;
+}
+
+.nav-left a {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.nav-right {
+  display: flex;
+}
+
+.nav-right a {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+  font-weight: 500;
+  margin-right: 20px;
+}
+
+.nav-right a:last-child {
+  background-color: #008CBA;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.hero {
+  background-color: #f7f7f7;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.hero a {
+  background-color: #008CBA;
+  color: #fff;
+  padding: 15px 30px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.about {
+  background-color: #fff;
+  padding: 50px 0;
+}
+
+.about .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about-left {
+  width: 45%;
+}
+
+.about-left h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.about-left p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.about-right {
+  width: 45%;
+}
+
+.about-right .box {
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  margin-bottom: 20px;
+}
+
+.about-right h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.about-right p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.about-right .btn {
+  background-color: #008CBA;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.testimonial {
+  background-color: #008CBA;
+  color: #fff;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.testimonial p {
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.testimonial .author {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.testimonial .title {
+  font-size: 14px;
+  color: #fff;
+}
+
+.testimonial a {
+  background-color: #fff;
+  color: #008CBA;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.services {
+  background-color: #f7f7f7;
+  padding: 50px 0;
+}
+
+.services h2 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.services .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.services .card {
+  width: 30%;
+  margin-bottom: 30px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.services .card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.services .card h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.services .card p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.cta {
+  background-color: #fff;
+  padding: 50px 0;
+}
+
+.cta .container {
+  text-align: center;
+}
+
+.cta h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.cta p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.cta a {
+  background-color: #008CBA;
+  color: #fff;
+  padding: 15px 30px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 50px 0;
+}
+
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+footer .col {
+  width: 25%;
+  margin-bottom: 30px;
+}
+
+footer h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer li {
+  margin-bottom: 10px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+}
+
+footer .social {
+  display: flex;
+  justify-content: center;
+}
+
+footer .social a {
+  margin: 0 10px;
+  color: #fff;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 12px;
+  margin-top: 20px;
+}
+</style>
+</head>
+<body>
+<header>
+<div class="container">
+<nav>
+<div class="nav-left">
+<ul>
+<li><a href="#">SOLUTIONS</a></li>
+<li><a href="#">PRODUCTS</a></li>
+<li><a href="#">RESOURCES</a></li>
+<li><a href="#">ABOUT</a></li>
+<li><a href="#">CAREERS</a></li>
+<li><a href="#">LOGIN</a></li>
+</ul>
+</div>
+<div class="nav-right">
+<a href="#">CONTACT US</a>
+</div>
+</nav>
+</div>
+</header>
+<section class="hero">
+<div class="container">
+<img alt="Hero Image" height="100" src="placeholder.png" width="100"/>
+<h1>WHO WILL WIN THEIR FAIR SHARE OF COMMERCE MEDIA?</h1>
+<p>PubMatic maximizes customer value by delivering the programmatic digital marketing supply chain of the future.</p>
+<a href="#">READ THE REPORT -&gt;</a>
+</div>
+</section>
+<section class="about">
+<div class="container">
+<div class="about-left">
+<h2>About Cookies On This Site</h2>
+<p>We use cookies to personalize and enhance your experience on our site. Visit our <a href="#">Privacy Policy</a> to learn more or manage your personal preferences in our Cookie Consent Tool. By using our site, you agree to our use of cookies. </p>
+<button>Accept</button>
+</div>
+<div class="about-right">
+<div class="box">
+<h3>Our Omnichannel Self-Side Platform</h3>
+<p>Our omnichannel self-side platform leverages a specialized infrastructure built to deliver scalable and flexible innovation, helping our clients realize the full potential of their digital advertising strategies. </p>
+</div>
+<div class="box">
+<h3>As an Independent Technology</h3>
+<p>As an independent technology company, we provide data and insights our clients need to drive results and give them control of the levers that drive success for their business.</p>
+</div>
+<div class="box">
+<h3>We Have Had A Dual Focus On</h3>
+<p>We have had a dual focus on transparency and building solutions that solve the industry’s most pressing problems, substantiated by customers and third-party verification companies, while serving as a champion of the open internet since 2006.</p>
+</div>
+<button class="btn">OUR SOLUTIONS</button>
+</div>
+</div>
+</section>
+<section class="testimonial">
+<div class="container">
+<blockquote>
+<p>PubMatic’s unique demand and marketing of SPO deals with their key buy-side relationships really pushed our partnership forward, helping maximize our revenue. PubMatic’s team was there every step of the way to support us and our advertisers to ensure deals were accepted and spend flowed quickly.</p>
+<footer>
+<cite class="author">Scott Kelliher</cite>
+<span class="title">Head of Revenue, NewsBreak</span>
+</footer>
+</blockquote>
+<a href="#">Learn How NewsBreak Sees 107% Increase In Revenue Across PubMatic-Monetized Inventory -&gt;</a>
+</div>
+</section>
+<section class="services">
+<h2>WE HELP YOU STAY AHEAD OF INDUSTRY TRENDS</h2>
+<div class="container">
+<div class="card">
+<h3>REPORTS</h3>
+<img alt="Report Image" src="placeholder.png"/>
+<h4>Publisher's Playbook: Unlock the Full Revenue Potential of Political Advertising</h4>
+<p>Political ad spending is projected to ex...</p>
+</div>
+<div class="card">
+<h3>BLOG</h3>
+<img alt="Blog Image" src="placeholder.png"/>
+<h4>Elevating Monetization: A Path to Progress</h4>
+<p>As the world's most mobile regio...</p>
+</div>
+<div class="card">
+<h3>EVENTS</h3>
+<img alt="Event Image" src="placeholder.png"/>
+<h4>La Nuit des Rois</h4>
+<p>May 29, 2024</p>
+</div>
+<div class="card">
+<img alt="Report Image" src="placeholder.png"/>
+<h4>Quarterly Global Advertising Spend Trends: Q1 2024</h4>
+<p>PubMatic's Quarterly Ad Spend report was...</p>
+<button>MORE REPORTS</button>
+</div>
+<div class="card">
+<img alt="Blog Image" src="placeholder.png"/>
+<h4>Supercharging Data Processing: The Spark 3 Upgrade</h4>
+<p>Introduction With over 600 billion ad r...</p>
+<button>MORE BLOG POSTS</button>
+</div>
+<div class="card">
+<img alt="Event Image" src="placeholder.png"/>
+<h4>Programmatic Morning CTV &amp; VIDEO 2024</h4>
+<p>May 30, 2024</p>
+<button>MORE EVENTS</button>
+</div>
+</div>
+</section>
+<section class="cta">
+<div class="container">
+<h2>SCALE THAT DELIVERS VALUE</h2>
+<p>PubMatic has created a global infrastructure to maximize customer value and put our customers in control of their digital advertising business.</p>
+<div class="stats">
+<div class="stat">
+<h3>971</h3>
+<p>GLOBAL EMPLOYEES</p>
+</div>
+<div class="stat">
+<h3>1.7T</h3>
+<p>ADVERTISER BIDS PER DAY</p>
+</div>
+<div class="stat">
+<h3>18.2</h3>
+<p>PETABYTES OF NEW DATA PROCESSED DAILY</p>
+</div>
+</div>
+<a href="#">ABOUT US</a>
+</div>
+</section>
+<footer>
+<div class="container">
+<div class="col">
+<h3>SOLUTIONS</h3>
+<ul>
+<li><a href="#">Publisher Solutions</a></li>
+<li><a href="#">Buyer Solutions</a></li>
+<li><a href="#">Data Solutions</a></li>
+</ul>
+</div>
+<div class="col">
+<h3>PRODUCTS</h3>
+<ul>
+<li><a href="#">OpenWrap</a></li>
+<li><a href="#">Header Bidding</a></li>
+<li><a href="#">Programmatic Direct</a></li>
+</ul>
+</div>
+<div class="col">
+<h3>RESOURCES</h3>
+<ul>
+<li><a href="#">Blog</a></li>
+<li><a href="#">Case Studies</a></li>
+<li><a href="#">White Papers</a></li>
+</ul>
+</div>
+<div class="col">
+<h3>ABOUT US</h3>
+<ul>
+<li><a href="#">Company</a></li>
+<li><a href="#">Careers</a></li>
+<li><a href="#">News</a></li>
+</ul>
+</div>
+<div class="col">
+<h3>CAREERS</h3>
+<p>PubMatic maximizes customer value by delivering digital advertising's supply chain of the future.</p>
+<ul>
+<li><a href="#">Privacy</a></li>
+<li><a href="#">Opt-Out</a></li>
+<li><a href="#">Your Privacy Choices</a></li>
+<li><a href="#">Legal</a></li>
+<li><a href="#">Cookie Preferences</a></li>
+</ul>
+<p>PubMatic is a registered data broker in the state of Texas</p>
+</div>
+<div class="col">
+<h3>INVESTOR RELATIONS</h3>
+<p>PubMatic maximizes customer value by delivering digital advertising's supply chain of the future.</p>
+<ul>
+<li><a href="#">Supporting Members</a></li>
+<li><a href="#">English</a></li>
+</ul>
+</div>
+<div class="col">
+<h3>COMMUNITY</h3>
+<p>PubMatic maximizes customer value by delivering digital advertising's supply chain of the future.</p>
+<ul>
+<li><a href="#">Supporting Members</a></li>
+</ul>
+</div>
+</div>
+<div class="copyright">
+<p>Copyright © 2024 PubMatic, Inc. All Rights Reserved.</p>
+</div>
+</footer>
+</body>
+</html>
+</p></body></html>

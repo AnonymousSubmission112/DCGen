@@ -1,0 +1,243 @@
+<html><body><p>
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>阿里公共DNS</title>
+<style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            background-color: #0c1234;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            color: white;
+        }
+        .header-left {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .header-right {
+            display: flex;
+        }
+        .header-right a {
+            color: white;
+            text-decoration: none;
+            padding: 5px 10px;
+            margin-left: 10px;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        .header-right a:hover {
+            background-color: #3c4859;
+        }
+        .main {
+            background-color: #f5f5f5;
+            padding: 40px 0;
+            text-align: center;
+        }
+        .main-content {
+            display: inline-block;
+            text-align: left;
+        }
+        .dns-info {
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+        .dns-info h2 {
+            margin: 0;
+            font-size: 48px;
+            color: #888;
+        }
+        .dns-info p {
+            margin: 10px 0;
+            color: #aaa;
+        }
+        .dns-info .btn {
+            display: inline-block;
+            margin: 15px 10px 0;
+            padding: 10px 20px;
+            color: white;
+            background-color: #ff6a00;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        .dns-info img {
+            max-width: 100%;
+            height: auto;
+        }
+        .footer {
+            background-color: #0c1234;
+            padding: 20px;
+            color: white;
+            text-align: center;
+        }
+        .section {
+            padding: 40px 0;
+            background-color: white;
+            text-align: center;
+        }
+        .section img {
+            max-width: 80%;
+            height: auto;
+            margin: 20px 0;
+        }
+        .section h3 {
+            color: #ff6a00;
+        }
+        .cards {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .cards .card {
+            background-color: #f5f5f5;
+            margin: 10px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            width: 250px;
+        }
+        .card img {
+            max-width: 100%;
+            height: auto;
+        }
+        .card h4 {
+            margin: 10px 0;
+        }
+        .card p {
+            color: #888;
+        }
+        .use-dns {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 0;
+            background-color: #f5f5f5;
+        }
+        .use-dns-content {
+            display: flex;
+            align-items: center;
+        }
+        .use-dns-left, .use-dns-right {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin: 0 20px;
+        }
+        .use-dns-left h4, .use-dns-right h4 {
+            color: #ff6a00;
+            margin: 0 0 10px;
+        }
+        .use-dns-left ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        .use-dns-left li {
+            margin: 5px 0;
+        }
+        .use-dns-right p {
+            margin: 0 0 10px;
+        }
+        .bottom-section {
+            background-color: #0c1234;
+            padding: 40px 0;
+            color: white;
+            text-align: center;
+        }
+        .bottom-section img {
+            max-width: 80%;
+            height: auto;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+<div class="header-left">阿里公共DNS</div>
+<div class="header-right">
+<a href="#">公有云</a>
+<a href="#">帮助文档</a>
+</div>
+</div>
+<div class="main">
+<div class="main-content">
+<img alt="Main Image" src="placeholder.png"/>
+<div class="dns-info">
+<h2>223.5.5.5</h2>
+<p>阿里公共DNS</p>
+<a class="btn" href="#">使用指南</a>
+<a class="btn" href="#">查看文档</a>
+</div>
+</div>
+</div>
+<div class="footer">
+<div>IPv4地址 223.5.5.5, 223.6.6.6</div>
+<div>IPv6地址 2400:3200::1, 2400:3200:baba::1</div>
+<div>DoH(IPv4地址)dns.alidns.com</div>
+</div>
+<div class="section">
+<h3>你是否也有这样的困扰?</h3>
+<img alt="Section Image" src="placeholder.png"/>
+</div>
+<div class="section">
+<h3>阿里云公共DNS 为您如何解决</h3>
+<div class="cards">
+<div class="card">
+<img alt="Card Image" src="placeholder.png"/>
+<h4>快速</h4>
+<p>采用Anycast网络架构,可确保低延迟无拥塞服务体验</p>
+</div>
+<div class="card">
+<img alt="Card Image" src="placeholder.png"/>
+<h4>可靠</h4>
+<p>采用多机房热备,网络路径智能调度</p>
+</div>
+<div class="card">
+<img alt="Card Image" src="placeholder.png"/>
+<h4>安全</h4>
+<p>支持DoH/DoT安全传输隧道,阻断DNS污染攻击</p>
+</div>
+</div>
+</div>
+<div class="use-dns">
+<div class="use-dns-content">
+<div class="use-dns-left">
+<h4>企业用户</h4>
+<p>适用于: 企业、IDC、运营商、教育机构、金融等</p>
+<ul>
+<li>SDK</li>
+<li>DoH SDK API</li>
+<li>DoH Client服务</li>
+</ul>
+</div>
+<div class="use-dns-right">
+<h4>普通用户</h4>
+<p>适用于: 家庭、个人等</p>
+<p>参考以下教程</p>
+<ul>
+<li>How</li>
+<li>Chrome</li>
+<li>Firefox</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="bottom-section">
+<h3>更多详情</h3>
+<img alt="Bottom Section Image" src="placeholder.png"/>
+</div>
+</body>
+</html>
+</p></body></html>

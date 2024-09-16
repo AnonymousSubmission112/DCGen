@@ -1,0 +1,190 @@
+<html><body><p>
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>jQuery</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f8f8f8;
+        }
+        .header {
+            background-color: #131313;
+            padding: 10px 0;
+            color: #fff;
+        }
+        .header .menu {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+        }
+        .header .menu a {
+            color: white;
+            text-decoration: none;
+            margin-right: 15px;
+        }
+        .header .nav-right a {
+            margin-right: 0;
+        }
+        .main {
+            background-color: #0074a2;
+            padding-top: 20px;
+        }
+        .main-content {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 4px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .download-button {
+            display: inline-block;
+            background-color: #f5b400;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 3px;
+            float: right;
+            margin: 10px 0;
+        }
+        .search {
+            float: right;
+            margin-bottom: 20px;
+        }
+        .search input {
+            padding: 5px 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        .content {
+            float: left;
+            width: 69%;
+        }
+        .sidebar {
+            float: right;
+            width: 29%;
+            padding-left: 2%;
+        }
+        .sidebar h3 {
+            font-size: 1.2em;
+            margin-top: 0;
+        }
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        .footer {
+            background-color: #3e3e3e;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            font-size: 14px;
+        }
+        .footer p {
+            margin: 5px 0;
+        }
+        img {
+            width: 100%;
+            height: auto;
+        }
+        code {
+            display: block;
+            background: #f8f8f8;
+            padding: 10px;
+            border-left: 4px solid #ddd;
+            margin: 10px 0;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+<div class="menu">
+<div class="nav-left">
+<a href="#">Download</a> |
+                <a href="#">API Documentation</a> |
+                <a href="#">Blog</a> |
+                <a href="#">Plugins</a> |
+                <a href="#">Browser Support</a>
+</div>
+<div class="nav-right">
+<a href="#">Plugins</a>
+<a href="#">Contribute</a>
+<a href="#">Events</a>
+<a href="#">Support</a>
+<a href="#">OpenJS Foundation</a>
+<a href="#">Github</a>
+</div>
+</div>
+</div>
+<div class="main">
+<div class="main-content clearfix">
+<a class="download-button" href="#">Download jQuery v3.7.0</a>
+<div class="search">
+<input placeholder="Search" type="text"/>
+</div>
+<div class="content">
+<h2>What is jQuery?</h2>
+<p>jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers. With a combination of versatility and extensibility, jQuery has changed the way that millions of people write JavaScript.</p>
+<h2>A Brief Look</h2>
+<h3>DOM Traversal and Manipulation</h3>
+<p>Get the <code>button</code> element with the class <code>continue</code> and change its HTML to "Next Step...".</p>
+<code>
+                    $('button.continue').html('Next Step...');
+                </code>
+<h3>Event Handling</h3>
+<p>Show the #banner-message element that is hidden with <code>display:none</code> in its CSS when any button in #button-container is clicked.</p>
+<code>
+                    $('#button-container button').on('click', function (event) {
+                        $('#banner-message').show();
+                </code>
+<h3>Ajax</h3>
+<p>Call a local script on the server /api/getWeather with the query parameter zipcode=97201 and replace the element <code>#weather-temp</code>'s HTML with the returned text.</p>
+<code>
+                    $.ajax({
+                        url: "/api/getWeather",
+                        data: {
+                            zipcode: 97201
+                        },
+                        success: function (result) {
+                            $("#weather-temp").html(
+                            "<strong>" + result + "</strong> degrees");
+                        }
+                    });
+                </code>
+<h2>Related Projects</h2>
+<p><a href="#">jQuery UI</a> This project is in maintenance-only mode. <a href="#">Learn more</a></p>
+<p><a href="#">jQuery Mobile</a> This project is deprecated. Learn more</p>
+</div>
+<div class="sidebar">
+<h3>Resources</h3>
+<ul>
+<li><a href="#">jQuery Core API Documentation</a></li>
+<li><a href="#">jQuery Learning Center</a></li>
+<li><a href="#">jQuery Blog</a></li>
+<li><a href="#">Contribute to jQuery</a></li>
+<li><a href="#">Browse &amp; Submit jQuery Bugs</a></li>
+</ul>
+<img alt="Image" src="placeholder.png"/>
+</div>
+</div>
+</div>
+<div class="footer">
+<div class="footer-content">
+<p>Copyright The jQuery Foundation. All rights reserved.</p>
+<p>Terms of Service | Privacy Policy | Code of Conduct</p>
+<p>Learning Center | Chat | Twitter | GitHub</p>
+</div>
+<img alt="Image" src="placeholder.png"/>
+</div>
+</body>
+</html>
+</p></body></html>

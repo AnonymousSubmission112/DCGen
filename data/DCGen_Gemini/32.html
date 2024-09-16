@@ -1,0 +1,448 @@
+<html><body><p>
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Temu</title>
+<style>
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.header-left {
+  display: flex;
+  align-items: center;
+}
+.header-left img {
+  width: 42px;
+  height: 42px;
+  margin-right: 10px;
+}
+.header-right {
+  display: flex;
+  align-items: center;
+}
+.header-right a {
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+}
+.header-right a:last-child {
+  margin-right: 0;
+}
+.header-left h2 {
+  font-size: 16px;
+  margin: 0;
+}
+.header-right h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+.section {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 10px;
+  width: 150px;
+}
+.section-item h2 {
+  margin: 0;
+  font-size: 14px;
+}
+.section-item p {
+  margin: 0;
+  font-size: 12px;
+}
+.section-item-small {
+  background-color: #fff;
+  padding: 5px 10px;
+  margin-bottom: 5px;
+}
+.section-item-small h2 {
+  margin: 0;
+  font-size: 12px;
+}
+.form-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+.form-container h1 {
+  font-size: 28pt;
+  color: black;
+  text-align: center;
+}
+.form-container p {
+  font-size: 14pt;
+  color: black;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.form-container .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.form-container .icon img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+.form-container .icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.form-container .icons .icon {
+  width: 150px;
+  height: 60px;
+  border-radius: 10px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 50px;
+  padding: 10px;
+  color: black;
+}
+.form-container .icons .icon p {
+  font-size: 12px;
+}
+.form-container input[type="text"] {
+  width: 480px;
+  height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+.form-container button {
+  background-color: #FFA500;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16pt;
+  cursor: pointer;
+}
+.form-container p.trouble {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.form-container .other-ways {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.form-container .other-ways .icon {
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form-container .other-ways .icon i {
+  font-size: 18px;
+}
+.form-container .other-ways .arrow {
+  margin-left: 10px;
+}
+.form-container .agreement {
+  text-align: center;
+  font-size: 12pt;
+  color: black;
+}
+.form-container .agreement a {
+  color: blue;
+  text-decoration: none;
+}
+footer {
+  background-color: #333;
+  color: white;
+  padding: 30px 0;
+}
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.footer-column h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.footer-column a {
+  color: white;
+  text-decoration: none;
+  margin-bottom: 5px;
+}
+.footer-column .icons {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.footer-column .icons .icon {
+  width: 24px;
+  height: 24px;
+  background-color: #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+.footer-column .icons .icon:last-child {
+  margin-right: 0;
+}
+.footer-column .app-store {
+  width: 150px;
+  height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+.footer-column .app-store span {
+  color: white;
+  font-weight: bold;
+}
+.footer-column .app-store:hover {
+  background-color: #fff;
+  color: black;
+}
+.footer-copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+.footer-copyright p {
+  margin: 0;
+}
+.footer-copyright a {
+  color: white;
+  text-decoration: none;
+  margin-left: 10px;
+}
+.footer-copyright .ad-choices {
+  display: flex;
+  align-items: center;
+}
+.footer-copyright .ad-choices .icon {
+  width: 24px;
+  height: 24px;
+  background-color: #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+.footer-copyright .ad-choices .icon:last-child {
+  margin-right: 0;
+}
+.footer-copyright .subscribe {
+  background-color: #FFA500;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16pt;
+  cursor: pointer;
+  margin-left: 20px;
+}
+</style>
+</head>
+<body>
+<header>
+<div class="header-container">
+<div class="header-left">
+<img alt="Temu logo" src="placeholder.png"/>
+<img alt="Lock icon" src="placeholder.png"/>
+<h2>All data will be encrypted</h2>
+</div>
+<div class="header-right">
+<h2>Sign in / Register</h2>
+<h2>All data will be encrypted</h2>
+</div>
+</div>
+</header>
+<section>
+<div class="section-item">
+<div class="section-item-small">
+<h2>Special</h2>
+</div>
+<h2>Free shipping</h2>
+</div>
+<div class="section-item">
+<h2>Free returns</h2>
+<div class="section-item-small">
+<h2>Within 90 days</h2>
+</div>
+</div>
+<div class="section-item">
+<h2>Get the Temu App</h2>
+</div>
+</section>
+<div class="form-container">
+<h1>Sign in / Register</h1>
+<p>All data will be encrypted</p>
+<div class="icon">
+<img alt="Lock icon" src="placeholder.png"/>
+<p>All data will be encrypted</p>
+</div>
+<div class="icons">
+<div class="icon">
+<h2>Free shipping</h2>
+<p>Special for you</p>
+</div>
+<div class="icon">
+<h2>Free returns</h2>
+<p>Within 90 days</p>
+</div>
+</div>
+<p>Email or phone number</p>
+<input placeholder="Email or phone number" type="text"/>
+<button>Continue</button>
+<p class="trouble">Trouble signing in?</p>
+<p>Or continue with other ways</p>
+<div class="other-ways">
+<div class="icon">
+<i class="fa fa-facebook"></i>
+</div>
+<div class="icon">
+<i class="fa fa-google"></i>
+</div>
+<div class="icon">
+<i class="fa fa-apple"></i>
+</div>
+<div class="arrow">
+<i class="fa fa-arrow-right"></i>
+</div>
+</div>
+<p class="agreement">By continuing, you agree to our <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>.</p>
+</div>
+<footer>
+<div class="footer-container">
+<div class="footer-column">
+<h2>Company info</h2>
+<a href="#">About Temu</a>
+<a href="#">Temu - Team Up, Price Down!</a>
+<a href="#">Affiliate - Click for cash</a>
+<a href="#">Contact us</a>
+<a href="#">Careers</a>
+<a href="#">Press</a>
+<a href="#">Sustainability at Temu</a>
+</div>
+<div class="footer-column">
+<h2>Customer service</h2>
+<a href="#">Return and refund policy</a>
+<a href="#">Intellectual property policy</a>
+<a href="#">Shipping info</a>
+<a href="#">Student discount</a>
+<a href="#">Your Recalls and Product Safety Alerts</a>
+<a href="#">Report suspicious activity</a>
+</div>
+<div class="footer-column">
+<h2>Help</h2>
+<a href="#">Support center &amp; FAQ</a>
+<a href="#">Temu purchase protection</a>
+<a href="#">Sitemap</a>
+<a href="#">How to order</a>
+<a href="#">How to track</a>
+<a href="#">Partner with Temu</a>
+</div>
+<div class="footer-column">
+<h2>Download the Temu App</h2>
+<a href="#">Track orders anytime</a>
+<a href="#">Low stock items alerts</a>
+<a href="#">Coupons &amp; offers alerts</a>
+<div class="app-store">
+<span>Download on the App Store</span>
+</div>
+<div class="app-store">
+<span>Get it on Google Play</span>
+</div>
+<div class="icons">
+<div class="icon"></div>
+<div class="icon"></div>
+<div class="icon"></div>
+<div class="icon"></div>
+<div class="icon"></div>
+</div>
+</div>
+<div class="footer-column">
+<h2>Connect with Temu</h2>
+<div class="icons">
+<div class="icon"></div>
+<div class="icon"></div>
+<div class="icon"></div>
+</div>
+<div class="icons">
+<div class="icon"></div>
+<div class="icon"></div>
+<div class="icon"></div>
+</div>
+<div class="icons">
+<div class="icon"></div>
+<div class="icon"></div>
+<div class="icon"></div>
+</div>
+<div class="icons">
+<div class="icon"></div>
+<div class="icon"></div>
+<div class="icon"></div>
+</div>
+</div>
+<button class="subscribe">Subscribe</button>
+</div>
+<div class="footer-copyright">
+<p>© 2024 Whale Co Inc.</p>
+<a href="#">Terms of use</a>
+<a href="#">Privacy policy</a>
+<a href="#">Your privacy choices</a>
+<div class="ad-choices">
+<div class="icon"></div>
+<p>Ad Choices</p>
+</div>
+</div>
+</footer>
+</body>
+</html>
+</p></body></html>

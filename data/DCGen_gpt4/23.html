@@ -1,0 +1,395 @@
+<html><body><p>
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Webpage Replication</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #ffffff;
+        }
+        .navbar ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 20px;
+        }
+        .navbar ul li {
+            display: inline;
+        }
+        .navbar ul li a {
+            text-decoration: none;
+            color: #000000;
+            font-weight: bold;
+        }
+        .navbar ul li a:hover {
+            color: #007BFF;
+        }
+        .navbar .logo img {
+            height: 30px;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+            background-color: #ffffff;
+        }
+        .content {
+            padding: 50px 15px 15px 15px;
+            background-color: #f5f5f5;
+        }
+        .section-title {
+            font-size: 26px;
+            font-weight: 300;
+            color: #333;
+            margin-bottom: 30px;
+        }
+        .videos, .video-grid, .training-cards {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .video, .video-item, .training-card, .item {
+            width: 200px;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            text-align: left;
+        }
+        .video img, .video-item img, .training-card img, .item img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .video h4, .video-title, .item-title {
+            font-size: 16px;
+            font-weight: bold;
+            color: #333;
+            margin: 10px 0;
+        }
+        .video p, .video-description, .item-description {
+            font-size: 14px;
+            color: #666;
+        }
+        .news-section {
+            margin: 50px 0;
+        }
+        .news-item {
+            text-align: center;
+        }
+        .news-img {
+            width: 250px;
+            height: 250px;
+            background-image: url('placeholder.png');
+            background-size: cover;
+            background-position: center;
+            margin: 0 auto 20px auto;
+        }
+        .news-title {
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .news-description {
+            font-size: 14px;
+            color: #777;
+        }
+        .news-description a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .follow-section {
+            margin: 30px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+        .follow-text {
+            font-size: 15px;
+            color: #333;
+        }
+        .follow-text a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        .follow-text a:hover {
+            text-decoration: underline;
+        }
+        .social-icons img {
+            width: 22px;
+            height: 22px;
+            margin-left: 10px;
+        }
+        .section-title-center {
+            font-size: 30px;
+            margin: 50px 0;
+        }
+        .training-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .training-button, .btn {
+            padding: 10px 20px;
+            background-color: #00a1e4;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        .training-classes {
+            background-color: #f3f3f3;
+            padding: 20px;
+            text-align: center;
+        }
+        .categories {
+            margin-bottom: 20px;
+            font-size: 14px;
+        }
+        .categories span {
+            margin: 0 10px;
+            color: #ff3333;
+            font-weight: bold;
+        }
+        .categories a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #333;
+            font-weight: normal;
+        }
+        .training-list {
+            font-size: 12px;
+            color: #666;
+        }
+        .full-training-list {
+            display: inline-block;
+            background-color: #ff5c33;
+            color: white;
+            padding: 10px 20px;
+            margin-top: 20px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            display: flex;
+            justify-content: space-around;
+        }
+        .footer-column {
+            width: 20%;
+        }
+        .footer-column h3 {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        .footer-column ul {
+            list-style: none;
+            padding: 0;
+        }
+        .footer-column ul li {
+            margin-bottom: 5px;
+        }
+        .footer-column ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .newsletter {
+            display: flex;
+            flex-direction: column;
+        }
+        .newsletter input {
+            padding: 5px;
+            margin-bottom: 10px;
+            border: none;
+        }
+        .newsletter button {
+            padding: 10px;
+            background-color: #781d24;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .footer-images {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .footer-images img {
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+<div class="navbar">
+<div class="logo">
+<img alt="Logo" src="placeholder.png"/>
+</div>
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">About</a></li>
+<li><a href="#">Buy</a></li>
+<li><a href="#">Jobs</a></li>
+<li><a href="#">Hardware</a></li>
+<li><a href="#">Software</a></li>
+<li><a href="#">Support</a></li>
+<li><a href="#">Training</a></li>
+<li><a href="#">Account</a></li>
+</ul>
+</div>
+<div class="container">
+<div class="content">
+<div class="section-title">Latest videos</div>
+<div class="videos">
+<div class="video">
+<img alt="Video Thumbnail" src="placeholder.png"/>
+<h4>MIKROTIK PRODUCT NEWS: THE D.I.Y. L23 ROUTERBOARD</h4>
+<p>Build your own custom outdoor M16/16 access point or CPE! This tiny wireless router comes with handy MMCX connectors...</p>
+</div>
+<div class="video">
+<img alt="Video Thumbnail" src="placeholder.png"/>
+<h4>NETINSTALL CLI - LINUX ВЕРСІЯ - ПОКРОКОВО</h4>
+<p>Serhil teaches you how to use netinstall-cli in Ukranian.</p>
+</div>
+</div>
+</div>
+<div class="news-section">
+<div class="section-title-center">WHAT'S NEW IN MIKROTIK?</div>
+<div class="news-item">
+<div class="news-img"></div>
+<div class="news-title">MERCH IS HERE!</div>
+<div class="news-description">Buy the merch! Or at least, <a href="#">watch our video about it.</a></div>
+</div>
+</div>
+<div class="follow-section">
+<div class="follow-text">
+            You can also follow us and get the latest updates on <a href="#">X</a>, <a href="#">Mastodon</a> and <a href="#">Facebook</a>!
+        </div>
+<div class="social-icons">
+<img alt="X" src="placeholder.png"/>
+<img alt="Mastodon" src="placeholder.png"/>
+<img alt="Facebook" src="placeholder.png"/>
+</div>
+</div>
+<div class="section-title-center">MIKROTIK TRAINING</div>
+<div class="training-cards">
+<div class="training-card">
+<img alt="Training Image" src="placeholder.png"/>
+<h3>TRAINING</h3>
+<p>MikroTik training sessions are organized and provided by MikroTik Training Centers at various locations around the world.</p>
+</div>
+<div class="training-card">
+<img alt="Trainers &amp; Academies" src="placeholder.png"/>
+<h3>TRAINERS &amp; ACADEMIES</h3>
+<p>MikroTik Academies are educational institutions such as universities. Providing training for students and other interested persons.</p>
+</div>
+<div class="training-card">
+<img alt="Graduation" src="placeholder.png"/>
+<h3>GRADUATION</h3>
+<p>Every year there are about 2000 - 3000 graduates who have successfully completed a MikroTik training course.</p>
+</div>
+</div>
+<div class="training-buttons">
+<a class="training-button" href="#">Find out more</a>
+<a class="training-button" href="#">Open the map</a>
+<a class="training-button" href="#">Training history</a>
+</div>
+</div>
+<div class="training-classes">
+<h2>UPCOMING TRAINING CLASSES</h2>
+<div class="categories">
+<span>North America</span>
+<a href="#">Latin America</a>
+<a href="#">Africa</a>
+<a href="#">Asia</a>
+<a href="#">Oceania</a>
+<a href="#">Europe</a>
+</div>
+<div class="training-list">
+        May 16-25, Canada, Basic Training; CISSP, PMP, Find a Class in English introduction, French introduction. <br/>
+        May 30-June 2, European MUM, MIKROTIK, The Dude, Czech Republic; UK; World, MIKROTIK, The Dude, Europe <br/>
+        August 15-19, USA, Dallas, SSH, Firewall, Find a Class in English introduction, World <br/>
+</div>
+<a class="full-training-list" href="#">Full training list</a>
+</div>
+<div class="container">
+<div class="section-title">HARDWARE &amp; SOFTWARE</div>
+<div class="videos">
+<div class="item">
+<img alt="RouterOS" src="placeholder.png"/>
+<div class="item-title">ROUTEROS</div>
+<div class="item-description">RouterOS is the operating system of RouterBOARD hardware. It has all the necessary features for a network... </div>
+<a class="btn" href="#">Find out more</a>
+</div>
+<div class="item">
+<img alt="Product Catalog" src="placeholder.png"/>
+<div class="item-title">PRODUCT CATALOG</div>
+<div class="item-description">MikroTik manufactures routers, switches and wireless device for any purpose. From a small office or...</div>
+<a class="btn" href="#">Open catalog</a>
+</div>
+<div class="item">
+<img alt="Distribution" src="placeholder.png"/>
+<div class="item-title">DISTRIBUTION</div>
+<div class="item-description">To purchase our RouterBOARD, CCR, CRS and other products, and also to receive technical support and...</div>
+<a class="btn" href="#">Find out more</a>
+</div>
+</div>
+</div>
+<footer class="footer">
+<div class="footer-column">
+<h3>MIKROTIK</h3>
+<ul>
+<li><a href="#">About</a></li>
+<li><a href="#">Jobs</a></li>
+</ul>
+</div>
+<div class="footer-column">
+<h3>SUPPORT</h3>
+<ul>
+<li><a href="#">Forum</a></li>
+<li><a href="#">Documentation</a></li>
+</ul>
+</div>
+<div class="footer-column">
+<h3>OTHER</h3>
+<ul>
+<li><a href="#">Newsletters</a></li>
+<li><a href="#">Our logo</a></li>
+<li><a href="#">Privacy policy</a></li>
+</ul>
+</div>
+<div class="footer-column newsletter">
+<h3>SIGN UP FOR THE NEWSLETTER</h3>
+<input placeholder="Enter your email" type="email"/>
+<button>Subscribe!</button>
+</div>
+</footer>
+<div class="footer-images">
+<img alt="Image 1" src="placeholder.png"/>
+<img alt="Image 2" src="placeholder.png"/>
+<img alt="Image 3" src="placeholder.png"/>
+<img alt="Image 4" src="placeholder.png"/>
+</div>
+</body>
+</html>
+</p></body></html>

@@ -1,0 +1,509 @@
+<html><body><p>
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>MikroTik</title>
+<style>
+body {
+  background-color: #f2f2f2;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #f2f2f2;
+  padding: 15px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 30px;
+}
+
+.nav {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav li {
+  margin-right: 20px;
+}
+
+.nav a {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav a:hover {
+  color: #007bff;
+}
+
+.hero {
+  background-color: #fff;
+  padding: 40px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero .container {
+  display: flex;
+  align-items: center;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-text h2 {
+  font-size: 36px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.hero-text p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #666;
+}
+
+.hero-image {
+  flex: 1;
+  position: relative;
+  width: 500px;
+  height: 300px;
+  background-color: #eee;
+  margin-left: 30px;
+  overflow: hidden;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-image::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.hero-image::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.hero-image::after:before {
+  content: '\f054';
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  font-size: 20px;
+  color: #333;
+}
+
+.hero-button {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.hero-button:hover {
+  background-color: #0056b3;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.pagination .page {
+  width: 10px;
+  height: 10px;
+  background-color: #ccc;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.pagination .page.active {
+  background-color: #007bff;
+}
+
+.section {
+  padding: 40px 0;
+}
+
+.section-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.section-content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 10px;
+  width: 300px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.card p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #666;
+}
+
+.card .button {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.card .button:hover {
+  background-color: #0056b3;
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 40px 0;
+}
+
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-col {
+  flex: 1;
+  margin-right: 30px;
+}
+
+.footer-col h4 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.footer-col ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-col li {
+  margin-bottom: 10px;
+}
+
+.footer-col a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-col a:hover {
+  color: #007bff;
+}
+
+.footer-social {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.footer-social a {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.footer-social img {
+  width: 25px;
+  height: 25px;
+}
+
+.subscribe-form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.subscribe-form h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.subscribe-form p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #666;
+}
+
+.subscribe-form input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.subscribe-form button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.subscribe-form button:hover {
+  background-color: #0056b3;
+}
+</style>
+</head>
+<body>
+<header>
+<div class="container">
+<div class="logo">
+<img alt="MikroTik Logo" src="placeholder.png"/>
+</div>
+<nav class="nav">
+<li><a href="#">Home</a></li>
+<li><a href="#">About</a></li>
+<li><a href="#">Buy</a></li>
+<li><a href="#">Hardware</a></li>
+<li><a href="#">Software</a></li>
+<li><a href="#">Support</a></li>
+<li><a href="#">Training</a></li>
+<li><a href="#">Account</a></li>
+</nav>
+</div>
+</header>
+<section class="hero">
+<div class="container">
+<div class="hero-text">
+<h2>hAP ac<sup>3</sup></h2>
+<p>Our bestselling home router is back - and it is faster than ever! The hAP ac<sup>3</sup> is the Swiss army knife of home networking with Gigabit Ethernet, handy iOS/Android app for easy configuration, PoE, 128 NAND and powerful external high-gain antennas.</p>
+<a class="hero-button" href="#">More details</a>
+</div>
+<div class="hero-image">
+<img alt="hAP ac3 Router" src="placeholder.png"/>
+</div>
+</div>
+<div class="pagination">
+<div class="page active"></div>
+<div class="page"></div>
+<div class="page"></div>
+</div>
+</section>
+<section class="section">
+<div class="container">
+<h2 class="section-title">Latest videos</h2>
+<div class="section-content">
+<div class="card">
+<h3>MikroTik Product News: The D.I.Y. L23 RouterBoard</h3>
+<p>Build your own custom outdoor Wi-Fi 6 access point or CPE! This tiny wireless router comes with handy MMCX connectors,…</p>
+<img alt="Video Thumbnail" src="placeholder.png"/>
+</div>
+<div class="card">
+<h3>NetInstall CLI - Linux Версия - Покроково</h3>
+<p>Serhii teaches you how to use netinstall-cli in Ukrainian.</p>
+<img alt="Video Thumbnail" src="placeholder.png"/>
+</div>
+<div class="card">
+<h3>Merch is here!</h3>
+<p>Buy the merch! Or at least, watch our video about it.</p>
+<img alt="Video Thumbnail" src="placeholder.png"/>
+</div>
+</div>
+</div>
+</section>
+<section class="section">
+<div class="container">
+<h2 class="section-title">What's new in MikroTik?</h2>
+<p>You can also follow us and get the latest updates on <a href="#">Mastodon</a> and <a href="#">Facebook</a>!</p>
+</div>
+</section>
+<section class="section">
+<div class="container">
+<h2 class="section-title">MikroTik Training</h2>
+<div class="section-content">
+<div class="card">
+<h3>Training</h3>
+<p>MikroTik training sessions are organized and provided by MikroTik Training Centers at various locations around the World. They are attended by network engineers, integrators and managers, who would like to learn about routing and managing wired and wireless networks, using MikroTik RouterOS.</p>
+<a class="button" href="#">Find out more</a>
+</div>
+<div class="card">
+<h3>Trainers &amp; Academies</h3>
+<p>MikroTik Academies are at universities such as universities, colleges, vocational schools, and other educational institutions offering Semester time based Internet networking courses for their academic students using MikroTik RouterOS as learning tool.</p>
+<a class="button" href="#">Open map</a>
+</div>
+<div class="card">
+<h3>Graduation</h3>
+<p>Every year there are around <strong>2000 - 3000</strong> graduates who have successfully completed a MikroTik courses. Our certificates are recognized world wide and stand for good knowledge about network administration, using RouterBOARD and RouterOS.</p>
+<a class="button" href="#">Training history</a>
+</div>
+</div>
+</div>
+</section>
+<section class="section">
+<div class="container">
+<h2 class="section-title">Upcoming Training Classes</h2>
+<div class="section-content">
+<div class="card">
+<h3>North America</h3>
+<p>May 25 - 29, Canada, Markham, Hanı Rauh, <a href="#">wirelessware.ca</a> (introduction, MTCNA, French)
+          <br/>May 27 - 29, Canada, Sainte-Thérèse, CSPPE (intro+PVA) Cours en <a href="#">ignite.production</a>, The Dude), English
+          <br/>June 03 - 07, USA, Dallas,  <a href="#">Frick Consulting</a> (MTCNA, MTCRE), English</p>
+</div>
+<div class="card">
+<h3>Latin America/Africa</h3>
+</div>
+<div class="card">
+<h3>Asia/Oceania</h3>
+</div>
+<div class="card">
+<h3>Europe</h3>
+<p>May 30 - 31, Canada, Markham, Hanı Rauh, <a href="#">wirelessware.ca</a> (introduction, MTCNA, French)
+          <br/>May 27 - 29, Canada, Sainte-Thérèse, CSPPE (intro+PVA) Cours en <a href="#">ignite.production</a>, The Dude), English
+          <br/>June 03 - 07, USA, Dallas,  <a href="#">Frick Consulting</a> (MTCNA, MTCRE), English</p>
+<a class="button" href="#">Full training list</a>
+</div>
+</div>
+</div>
+</section>
+<section class="section">
+<div class="container">
+<h2 class="section-title">Hardware &amp; Software</h2>
+<div class="section-content">
+<div class="card">
+<h3>Routers</h3>
+<p>RouterOS is the operating system of RouterBOARD hardware. It has all the necessary features for an ISP - routing, firewall, bandwidth management, wireless access point, backhaul link, hotspot gateway, VPN server and more. Quick and simple installation and an easy to use interface!</p>
+<a class="button" href="#">Find out more</a>
+</div>
+<div class="card">
+<h3>Product Catalog</h3>
+<p>MikroTik manufactures routers, switches and other products, from small office or home, to carrier purpose. So see our product catalog for a complete list of our products and their features.</p>
+<a class="button" href="#">Open catalog</a>
+</div>
+<div class="card">
+<h3>Distribution</h3>
+<p>To purchase our RouterBOARD, CCR, CRS and other products, and also to receive technical support and pre-sales consultation, please contact our wide network of distributors. See the map to find the nearest one.</p>
+<a class="button" href="#">Find out more</a>
+</div>
+</div>
+</div>
+</section>
+<footer class="footer">
+<div class="container">
+<div class="footer-col">
+<h4>MikroTik</h4>
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">About</a></li>
+<li><a href="#">Darbs MikroTik</a></li>
+</ul>
+</div>
+<div class="footer-col">
+<h4>Support</h4>
+<ul>
+<li><a href="#">Get support</a></li>
+<li><a href="#">Forum</a></li>
+<li><a href="#">Documentation</a></li>
+</ul>
+</div>
+<div class="footer-col">
+<h4>Other</h4>
+<ul>
+<li><a href="#">Newsletters</a></li>
+<li><a href="#">Our logo</a></li>
+<li><a href="#">Privacy policy</a></li>
+</ul>
+</div>
+<div class="footer-social">
+<a href="#"><img alt="Facebook Icon" src="placeholder.png"/></a>
+<a href="#"><img alt="Twitter Icon" src="placeholder.png"/></a>
+<a href="#"><img alt="Instagram Icon" src="placeholder.png"/></a>
+</div>
+</div>
+<div class="container subscribe-form">
+<h3>Sign up for the newsletter</h3>
+<p>Please sign up to get notified about new RouterOS version releases and other useful information!</p>
+<input placeholder="Enter your email address" type="email"/>
+<button>Subscribe!</button>
+<div>
+<p>MikroTik app</p>
+<a href="#"><img alt="App Store Icon" src="placeholder.png"/></a>
+<a href="#"><img alt="Google Play Icon" src="placeholder.png"/></a>
+</div>
+</div>
+</footer>
+</body>
+</html>
+</p></body></html>

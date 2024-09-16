@@ -1,0 +1,460 @@
+<html><body><p>
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Reproduced Area</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: white;
+        }
+        .header img {
+            height: 40px;
+        }
+        .header .nav {
+            display: flex;
+            gap: 15px;
+        }
+        .header .nav a {
+            text-decoration: none;
+            color: grey;
+            font-weight: bold;
+        }
+        .header .contact {
+            background-color: #49B3FF;
+            color: white;
+            padding: 8px 14px;
+            border-radius: 18px;
+            text-decoration: none;
+        }
+        .banner-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-color: #f8f8f8;
+            padding: 50px 0;
+        }
+        .banner-text {
+            font-size: 1.5em;
+            font-weight: 300;
+            color: #333;
+            max-width: 800px;
+        }
+        .cookie-banner {
+            background-color: black;
+            color: white;
+            padding: 15px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .cookie-banner p {
+            margin: 0;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+        .cookie-banner a {
+            color: #007bff;
+            text-decoration: underline;
+        }
+        .cookie-banner .button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+        .content-wrapper {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+            gap: 20px;
+        }
+        .content-block {
+            width: 30%;
+            border: 1px solid #ddd;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .content-block img {
+            width: 100%;
+            height: auto;
+        }
+        .content-block h3 {
+            color: #0074ad;
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        .content-block p {
+            color: #333;
+            font-size: 14px;
+        }
+        .solutions-section {
+            text-align: center;
+            padding: 40px 0;
+            background-color: #f9f9f9;
+        }
+        .solutions-button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 18px;
+            color: #000;
+            border: 2px solid #000;
+            text-decoration: none;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .solutions-button:hover {
+            background-color: #000;
+            color: #fff;
+        }
+        .quote-section {
+            background-color: #003049;
+            color: #fff;
+            padding: 40px 20px;
+            text-align: center;
+            position: relative;
+        }
+        .quote-text {
+            font-size: 1.25em;
+            margin-bottom: 20px;
+        }
+        .author {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .author-title {
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+        .call-to-action {
+            color: #08C;
+            text-decoration: none;
+        }
+        .pagination {
+            margin-top: 30px;
+            text-align: center;
+        }
+        .pagination span {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            margin: 0 5px;
+            background-color: #08C;
+            border-radius: 50%;
+        }
+        .heading-section {
+            text-align: center;
+            margin: 50px 0 20px;
+        }
+        .heading-section h2 {
+            font-size: 2rem;
+            margin: 0;
+        }
+        .heading-section button {
+            background-color: #3aaaea;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 1rem;
+            margin-top: 20px;
+        }
+        .content-wrapper-2 {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 30px;
+        }
+        .content-section {
+            text-align: center;
+            width: 30%;
+            background: #f7f7f7;
+            padding: 15px;
+            border: 1px solid #ddd;
+        }
+        .content-section img {
+            width: 100%;
+            height: 200px;
+            background: url('placeholder.png') no-repeat center center;
+            background-size: cover;
+        }
+        .content-section p {
+            padding: 10px 0;
+            margin: 0;
+            font-size: 0.9rem;
+            color: #333;
+        }
+        .content-section h3 {
+            font-size: 1.1rem;
+            margin: 10px 0;
+        }
+        .content-section button {
+            border: 1px solid #3aaaea;
+            color: #3aaaea;
+            background: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+        .info-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+            background-color: #fff;
+        }
+        .text {
+            font-size: 24px;
+            font-weight: bold;
+            margin-right: 20px;
+        }
+        .stats {
+            display: flex;
+            gap: 40px;
+        }
+        .stat {
+            text-align: center;
+        }
+        .stat span {
+            display: block;
+            font-size: 24px;
+            font-weight: bold;
+            color: #1cbcf6;
+        }
+        .button {
+            margin-top: 30px;
+            padding: 10px 20px;
+            background-color: #1cbcf6;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .footer {
+            background-color: #000000;
+            color: #ffffff;
+            padding: 20px 0;
+        }
+        .footer .container {
+            width: 85%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        .footer .column {
+            width: 20%;
+        }
+        .footer .column img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+        .footer .links {
+            list-style: none;
+            padding: 0;
+        }
+        .footer .links li {
+            margin: 10px 0;
+        }
+        .footer .links a {
+            text-decoration: none;
+            color: #ffffff;
+        }
+        .footer .privacy {
+            margin-top: 20px;
+            border-top: 1px solid #666;
+            padding-top: 20px;
+        }
+        .footer .privacy a {
+            display: block;
+            color: #aaaaaa;
+            text-decoration: none;
+            margin: 5px 0;
+        }
+        .footer .copyright {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+<img alt="Logo" src="placeholder.png"/>
+<div class="nav">
+<a href="#">SOLUTIONS</a>
+<a href="#">PRODUCTS</a>
+<a href="#">RESOURCES</a>
+<a href="#">ABOUT</a>
+<a href="#">CAREERS</a>
+<a href="#">LOGIN</a>
+</div>
+<a class="contact" href="#">CONTACT US</a>
+</div>
+<div class="banner-container">
+<p class="banner-text">PubMatic maximizes customer value by delivering the programmatic digital marketing supply chain of the future</p>
+</div>
+<div class="content-wrapper">
+<div class="content-block">
+<img alt="Placeholder Image" src="placeholder.png"/>
+<h3>Our omnichannel sell-side platform</h3>
+<p>Our omnichannel sell-side platform leverages a specialized infrastructure build to deliver scalable and flexible innovation...</p>
+</div>
+<div class="content-block">
+<img alt="Placeholder Image" src="placeholder.png"/>
+<h3>As an independent technology company</h3>
+<p>As an independent technology company, we provide the inventory, data and insights our clients need to drive results and give them control...</p>
+</div>
+<div class="content-block">
+<img alt="Placeholder Image" src="placeholder.png"/>
+<h3>We maintain a laser focus on transparency</h3>
+<p>We maintain a laser focus on transparency and building solutions that solve the industry's most pressing problems, substantiated by outcomes...</p>
+</div>
+</div>
+<section class="solutions-section">
+<a class="solutions-button" href="#">OUR SOLUTIONS</a>
+</section>
+<div class="quote-section">
+<p class="quote-text">
+            “PubMatic's unique demand and marketing of SPO deals with their key buy-side relationships really pushed our partnership forward, helping maximize our revenue. PubMatic's team was there every step of the way to support us and our advertisers to ensure deals were accepted and spend flowed quickly.”
+        </p>
+<p class="author">SCOTT KELLNER</p>
+<p class="author-title">HEAD OF REVENUE NEWSBREAK</p>
+<p>
+<a class="call-to-action" href="#">Learn How NewsBreak Sees 107% Increase In Revenue Across PubMatic-Monetized Inventory →</a>
+</p>
+<div class="pagination">
+<span></span>
+<span></span>
+<span></span>
+</div>
+</div>
+<div class="heading-section">
+<h2>WE HELP YOU STAY AHEAD OF INDUSTRY TRENDS</h2>
+<button>SUBSCRIBE TO UPDATES</button>
+</div>
+<div class="content-wrapper-2">
+<div class="content-section">
+<img alt="Report Image" src="placeholder.png"/>
+<h3>REPORTS</h3>
+<p>Publisher's Playbook: Unlock the Full Revenue Potential of Political Advertising</p>
+<p>Political ad spending is projected to ex...</p>
+<button>MORE REPORTS</button>
+</div>
+<div class="content-section">
+<img alt="Blog Image" src="placeholder.png"/>
+<h3>BLOG</h3>
+<p>Elevating Monetization: APAC Mobile Publishers' Path to Progress</p>
+<p>As the world's most mobile-centric regio...</p>
+<button>MORE BLOG POSTS</button>
+</div>
+<div class="content-section">
+<img alt="Event Image" src="placeholder.png"/>
+<h3>EVENTS</h3>
+<p>LA NUIT DES ROIS</p>
+<p>May 29, 2024</p>
+<button>MORE EVENTS</button>
+</div>
+</div>
+<div class="info-section">
+<img alt="placeholder" src="placeholder.png" width="150"/>
+<div class="text">SCALE THAT DELIVERS VALUE</div>
+</div>
+<div class="stats">
+<div class="stat">
+<span>971</span>
+            GLOBAL EMPLOYEES
+        </div>
+<div class="stat">
+<span>1.7T</span>
+            ADVERTISER BIDS PER DAY
+        </div>
+<div class="stat">
+<span>18.2</span>
+            PETABYTES OF NEW DATA PROCESSED PER DAY
+        </div>
+</div>
+<a class="button" href="#">ABOUT US</a>
+<footer class="footer">
+<div class="container">
+<div class="column">
+<h4>SOLUTIONS</h4>
+<ul class="links">
+<li><a href="#">Product 1</a></li>
+<li><a href="#">Product 2</a></li>
+<li><a href="#">Product 3</a></li>
+<li><a href="#">Product 4</a></li>
+</ul>
+</div>
+<div class="column">
+<h4>RESOURCES</h4>
+<ul class="links">
+<li><a href="#">Resource 1</a></li>
+<li><a href="#">Resource 2</a></li>
+<li><a href="#">Resource 3</a></li>
+<li><a href="#">Resource 4</a></li>
+</ul>
+</div>
+<div class="column">
+<h4>ABOUT US</h4>
+<ul class="links">
+<li><a href="#">About</a></li>
+<li><a href="#">Careers</a></li>
+<li><a href="#">Investors</a></li>
+</ul>
+</div>
+<div class="column">
+<h4>COMMUNITY</h4>
+<ul class="links">
+<li><a href="#">Event 1</a></li>
+<li><a href="#">Event 2</a></li>
+</ul>
+</div>
+<div class="column">
+<h4>SUPPORT</h4>
+<ul class="links">
+<li><a href="#">FAQ</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+</div>
+</div>
+<div class="privacy container">
+<a href="#">PRIVACY</a>
+<a href="#">COPYRIGHT</a>
+<a href="#">YOUR PRIVACY CHOICES</a>
+<a href="#">COOKIE PREFERENCES</a>
+</div>
+<div class="copyright">
+            © 2024 Company, Inc. All Rights Reserved
+        </div>
+</footer>
+<div class="cookie-banner">
+<div>
+<p>We use cookies to personalize and enhance your experience on our site. Visit our <a href="#">Privacy Policy</a> to learn more or manage your personal preferences in our <a href="#">Cookie Consent Tool.</a> By using our site, you agree to our use of cookies.</p>
+</div>
+<div>
+<button class="button">Options</button>
+<button class="button">Accept</button>
+</div>
+</div>
+</body>
+</html>
+</p></body></html>

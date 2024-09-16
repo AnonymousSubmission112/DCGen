@@ -1,0 +1,726 @@
+<html><body><p>
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>MediaFire</title>
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+.header {
+  background-color: #007bff;
+  color: white;
+  padding: 15px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.header .logo {
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 30px;
+}
+
+.header .nav {
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+}
+
+.header .nav a {
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.header .nav a:hover {
+  background-color: #0056b3;
+}
+
+.header .upload-button {
+  background-color: white;
+  color: #007bff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.header .upload-button:hover {
+  background-color: #e9ecef;
+}
+
+.header .upload-button .icon {
+  margin-right: 5px;
+}
+
+.header .upload-button .icon::before {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background-image: url("placeholder.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 5px;
+}
+
+.header .language-selector {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.header .language-selector .language-option {
+  background-color: #fff;
+  color: #007bff;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.header .language-selector .language-option:hover {
+  background-color: #e9ecef;
+}
+
+.hero {
+  background-color: white;
+  padding: 60px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero .content {
+  margin-left: 30px;
+  width: 50%;
+}
+
+.hero .content h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.hero .content p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.hero .content .button {
+  background-color: #007bff;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.hero .content .button:hover {
+  background-color: #0056b3;
+}
+
+.hero .images {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero .images .image {
+  width: 150px;
+  height: 150px;
+  background-image: url("placeholder.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.features {
+  background-color: #f5f5f5;
+  padding: 60px 0;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.features .feature {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 250px;
+}
+
+.features .feature h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.features .feature p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.features .feature .icon::before {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-image: url("placeholder.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-bottom: 10px;
+}
+
+.testimonials {
+  background-color: #212529;
+  color: white;
+  padding: 60px 0;
+}
+
+.testimonials h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.testimonials .testimonials-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.testimonials .testimonial {
+  background-color: #282c34;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+
+.testimonials .testimonial h4 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.testimonials .testimonial p {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.testimonials .testimonial .author {
+  font-style: italic;
+  font-size: 12px;
+  color: #888;
+}
+
+.cta {
+  background-color: #f5f5f5;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.cta h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.cta p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.cta .button {
+  background-color: #007bff;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.cta .button:hover {
+  background-color: #0056b3;
+}
+
+.top-features {
+  background-color: #f5f5f5;
+  padding: 60px 0;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.top-features h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.top-features .feature {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+
+.top-features .feature h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.top-features .feature p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.top-features .feature .icon::before {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-image: url("placeholder.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-bottom: 10px;
+}
+
+.devices {
+  background-color: #f5f5f5;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.devices h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.devices p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.devices .image {
+  width: 150px;
+  height: 150px;
+  background-image: url("placeholder.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto 20px;
+}
+
+.devices .button {
+  background-color: #007bff;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.devices .button:hover {
+  background-color: #0056b3;
+}
+
+.pro-features {
+  background-color: #f5f5f5;
+  padding: 60px 0;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.pro-features h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.pro-features .feature {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+
+.pro-features .feature h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.pro-features .feature p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.pro-features .feature .icon::before {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-image: url("placeholder.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-bottom: 10px;
+}
+
+.footer {
+  background-color: #212529;
+  color: white;
+  padding: 60px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer .company {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer .company h4 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer .company a {
+  color: white;
+  text-decoration: none;
+  margin-bottom: 5px;
+}
+
+.footer .company a:hover {
+  text-decoration: underline;
+}
+
+.footer .tools {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer .tools h4 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer .tools a {
+  color: white;
+  text-decoration: none;
+  margin-bottom: 5px;
+}
+
+.footer .tools a:hover {
+  text-decoration: underline;
+}
+
+.footer .copyright {
+  text-align: right;
+}
+
+.footer .copyright p {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.footer .copyright a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer .copyright a:hover {
+  text-decoration: underline;
+}
+
+.footer .copyright .icons {
+  display: flex;
+  margin-top: 10px;
+}
+
+.footer .copyright .icons a {
+  margin-right: 10px;
+}
+
+.footer .copyright .icons a::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url("placeholder.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.cookie-banner {
+  background-color: #212529;
+  color: white;
+  padding: 15px 30px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+}
+
+.cookie-banner p {
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.cookie-banner .close-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.cookie-banner .close-button::before {
+  content: "\f00d"; /* Font Awesome close icon */
+  font-family: FontAwesome;
+  font-size: 18px;
+}
+
+.cookie-banner .accept-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cookie-banner .accept-button:hover {
+  background-color: #0056b3;
+}
+</style>
+</head>
+<body>
+<header class="header">
+<div class="logo">MediaFire</div>
+<nav class="nav">
+<a href="#">Upgrade</a>
+<a href="#">Sign Up</a>
+<a href="#">Log In</a>
+</nav>
+<button class="upload-button">
+<span class="icon"></span>
+    Upload Files Now
+  </button>
+<div class="language-selector">
+<button class="language-option">EN</button>
+</div>
+</header>
+<section class="hero">
+<div class="content">
+<h1>File storage and sharing made simple</h1>
+<p>File storage made easy — including powerful features you won't find anywhere else. Whether you're sharing photos, videos, audio, or docs, MediaFire can simplify your workflow.</p>
+<a class="button" href="#">Sign Up for FREE</a>
+</div>
+<div class="images">
+<div class="image"></div>
+<div class="image"></div>
+</div>
+</section>
+<section class="features">
+<div class="feature">
+<h3 class="icon">Share</h3>
+<p>Share through email, link, or social network. Unlimited ad-supported downloads with no wait times.</p>
+</div>
+<div class="feature">
+<h3 class="icon">Collaborate</h3>
+<p>Store and share any file type. Share folders of project files. Easily email large files.</p>
+</div>
+<div class="feature">
+<h3 class="icon">Store</h3>
+<p>10GB for free. Up to 50GB free with bonuses. Store all your photos, audio, and videos.</p>
+</div>
+<div class="feature">
+<h3 class="icon">Access</h3>
+<p>Always have your important files with you. Never forget your work at home. View, manage, and share from anywhere.</p>
+</div>
+</section>
+<section class="testimonials">
+<h2>Over 150 million people trust MediaFire every month</h2>
+<div class="testimonials-container">
+<div class="testimonial">
+<h4>Great for our group</h4>
+<p>We use MediaFire to share the sheet music and audio practice files for our choir. I can practice all the sheet music using my desktop, etc. Easy to print to audio from the case I am using, etc.</p>
+<p class="author">- Choral member</p>
+</div>
+<div class="testimonial">
+<h4>One of my favorite apps!</h4>
+<p>This daily for storing all music for this year, videos, past years, photos, documents have lots of storage. Happy happy. Love it!</p>
+<p class="author">- TheNewYorkTimeFan</p>
+</div>
+<div class="testimonial">
+<h4>Great app!</h4>
+<p>I like this service a lot since I work in TV and Film and use it for sending off effects shots or just collaborating with friends or coworkers. I was buying the same thing for less as a plugin, but MediaFire, Thank you, it has really helped me time and again.</p>
+<p class="author">- Frostbite Films</p>
+</div>
+</div>
+</section>
+<section class="cta">
+<h2>Get started for FREE</h2>
+<p>MediaFire is more than just sharing and storage. Take a look at the top features to make your life simple, and easy.</p>
+<a class="button" href="#">Sign Up for FREE</a>
+</section>
+<section class="top-features">
+<h2>Top features</h2>
+<div class="feature">
+<h3 class="icon">10GB Free/Up to 4GB per file</h3>
+<p>With up to 50GB of free space, you can use MediaFire to back up all your important files — even your not-so-important ones too.</p>
+</div>
+<div class="feature">
+<h3 class="icon">Unlimited bandwidth &amp; downloads</h3>
+<p>Make sure your downloads are always available and fast. You'll never hit a download limit with ad-supported downloads, no matter how popular your file is.</p>
+</div>
+<div class="feature">
+<h3 class="icon">Easily share after uploading</h3>
+<p>Share folders and files immediately after they upload. MediaFire makes it easy to share through email, on your website, social media, messenger, or anywhere with a link.</p>
+</div>
+<div class="feature">
+<h3 class="icon">Multiple uploads at once</h3>
+<p>Upload hundreds or even thousands of files at once through any web browser or with our handy apps for Android, BlackBerry, Windows, iPhone, or iPad.</p>
+</div>
+<div class="feature">
+<h3 class="icon">Organize with ease</h3>
+<p>Make it easy to find your documents and files by using MediaFire's powerful manager. Upload, copy, move, and control access to your files from desktop or phone.</p>
+</div>
+<div class="feature">
+<h3 class="icon">One-Time Links</h3>
+<p>Keep control of your downloads. Share a file using a free One-Time Link and your recipient won't be able to share the link with anyone else. It's perfect for sensitive personal or work documents!</p>
+</div>
+</section>
+<section class="devices">
+<h2>No matter where you go — take your files with you.</h2>
+<p>Upload, download, view, and organize your files with ease and simplicity using MediaFire for Android, BlackBerry, Windows, iPhone, or iPad. Whether it's your music collection, home videos, your resume, or your important work docs, have them in your pocket whenever you need them.</p>
+<div class="image"></div>
+<a class="button" href="#">Download now in your favorite app store &gt;&gt; </a>
+</section>
+<section class="pro-features">
+<h2>Looking for more? Go Pro!</h2>
+<p>You demand a service as professional as you are. Whether you're an avid collector, independent professional photographer, or a large Fortune 500 company, MediaFire Pro brings you the business-class features you need to get an edge on the competition.</p>
+<div class="feature">
+<h3 class="icon">1 TB of storage</h3>
+<p>More space for big files like video, PDF's, and audio. All the space you need for your mission-critical business files.</p>
+</div>
+<div class="feature">
+<h3 class="icon">No ads</h3>
+<p>A more professional, ad-free experience for your employees and clients.</p>
+</div>
+<div class="feature">
+<h3 class="icon">Upload from any website</h3>
+<p>Save hours of time: skip the download and transfer files directly from any website into your MediaFire storage! Just paste in any link to a file and MediaFire will automatically upload it to your account.</p>
+</div>
+<div class="feature">
+<h3 class="icon">Direct download link to files</h3>
+<p>Skip MediaFire.com when sharing files. Download directly from your own website, email, or social network. Stream media files and high-resolution images in your own media players.</p>
+</div>
+<div class="feature">
+<h3 class="icon">Bulk Download</h3>
+<p>With a single click, you can download your entire photo collection, project files, or work documents in one convenient ZIP file.</p>
+</div>
+<div class="feature">
+<h3 class="icon">One-Time Links (100/day)</h3>
+<p>Control access to your downloads and make sure people don't share your download links. One-Time Links only let one computer download your file.</p>
+</div>
+<a class="button" href="#">View Pro Pricing</a>
+</section>
+<footer class="footer">
+<div class="company">
+<h4>Company</h4>
+<a href="#">About Us</a>
+<a href="#">Careers</a>
+<a href="#">Press</a>
+</div>
+<div class="tools">
+<h4>Tools</h4>
+<a href="#">MediaFire Mobile</a>
+<a href="#">Team File Sharing</a>
+</div>
+<div class="copyright">
+<p>©2024 MediaFire Build 121930 <a href="#">Advertising</a> <a href="#">Terms</a> <a href="#">Privacy Policy</a> <a href="#">Copyright</a> <a href="#">Abuse</a> <a href="#">Credits</a> <a href="#">More...</a></p>
+<p>This site is protected by reCAPTCHA and the Google <a href="#">Privacy Policy</a> and <a href="#">Terms of Service</a> apply.</p>
+<div class="icons">
+<a href="#"></a>
+<a href="#"></a>
+<a href="#"></a>
+<a href="#"></a>
+</div>
+</div>
+</footer>
+<div class="cookie-banner">
+<p>MediaFire uses cookies to provide you with a personalized browsing experience. By continuing to use this site, you agree to our <a href="#">Privacy Policy</a>.</p>
+<button class="close-button"></button>
+<button class="accept-button">I Accept</button>
+</div>
+<script>
+  const cookieBanner = document.querySelector('.cookie-banner');
+  const closeButton = document.querySelector('.close-button');
+  const acceptButton = document.querySelector('.accept-button');
+
+  closeButton.addEventListener('click', () => {
+    cookieBanner.style.display = 'none';
+  });
+
+  acceptButton.addEventListener('click', () => {
+    cookieBanner.style.display = 'none';
+  });
+</script>
+</body>
+</html>
+</p></body></html>

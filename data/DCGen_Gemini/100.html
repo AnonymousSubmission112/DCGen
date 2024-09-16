@@ -1,0 +1,1037 @@
+<html><body><p>```html
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Document</title>
+<style>
+body {
+  background-color: #222222;
+  color: white;
+  font-family: sans-serif;
+}
+
+.header {
+  background-color: #222222;
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.header-left a {
+  color: white;
+  text-decoration: none;
+  font-size: 12pt;
+  margin-right: 15px;
+}
+
+.header-left button {
+  background-color: #FF8C00;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.header-right .lang {
+  margin-right: 15px;
+}
+
+.header-right .lang .dropdown-icon {
+  margin-left: 5px;
+}
+
+.header-right a {
+  color: white;
+  text-decoration: none;
+  font-size: 12pt;
+  margin-right: 15px;
+}
+
+.header-right button {
+  background-color: #222222;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.header-right button.try-now {
+  background-color: #007bff;
+  color: white;
+  font-size: 11pt;
+}
+
+.header-line {
+  background-color: #ccc;
+  height: 1px;
+  margin: 10px 0;
+}
+
+.main-section {
+  padding: 20px;
+}
+
+.main-section h1 {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.main-section h1.orange {
+  color: #FF8C00;
+}
+
+.main-section h2 {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.main-section p {
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.main-section button {
+  background-color: #FF8C00;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+.main-section .cookie-container {
+  background-color: #ccc;
+  padding: 15px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.main-section .cookie-container p {
+  font-size: 14px;
+  margin: 0;
+}
+
+.main-section .cookie-container button {
+  background-color: #FF8C00;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.main-section .close-button {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.nav-menu {
+  background-color: #222222;
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.nav-menu .header-left {
+  display: flex;
+  align-items: center;
+}
+
+.nav-menu .header-left a {
+  color: white;
+  text-decoration: none;
+  font-size: 12pt;
+  margin-right: 15px;
+}
+
+.nav-menu .header-left button {
+  background-color: #FF8C00;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.nav-menu .header-right {
+  display: flex;
+  align-items: center;
+}
+
+.nav-menu .header-right .close-button {
+  background-color: white;
+  color: #222222;
+  border: none;
+  padding: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.nav-menu .nav-items {
+  display: flex;
+  align-items: center;
+  font-size: 10pt;
+  margin-right: 20px;
+}
+
+.nav-menu .nav-items a {
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.nav-menu .nav-items a:last-child {
+  margin-right: 0;
+}
+
+.nav-menu .header-right button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.secondary-nav {
+  background-color: #222222;
+  color: white;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.secondary-nav .nav-items {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.secondary-nav .nav-items a {
+  color: white;
+  text-decoration: none;
+  font-size: 12px;
+  margin-right: 20px;
+}
+
+.secondary-nav .nav-items a:last-child {
+  margin-right: 0;
+}
+
+.secondary-nav .nav-items .dropdown-icon {
+  margin-left: 5px;
+}
+
+.secondary-nav .nav-items button {
+  background-color: #FF8C00;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.content-section {
+  padding: 20px;
+}
+
+.content-section .call-to-action {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.content-section .call-to-action p {
+  font-size: 16px;
+}
+
+.content-section .call-to-action button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.content-section .company-description {
+  background-color: #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.content-section .company-description h2 {
+  font-weight: bold;
+}
+
+.content-section .company-description p {
+  font-size: 14px;
+}
+
+.content-section .blog-posts {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.content-section .blog-posts h2 {
+  font-weight: bold;
+}
+
+.content-section .blog-posts p {
+  font-size: 14px;
+}
+
+.content-section .blog-posts .post-cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.content-section .blog-posts .post-card {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 15px;
+  width: 48%;
+  margin-bottom: 10px;
+}
+
+.content-section .blog-posts .post-card h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.content-section .blog-posts .post-card p {
+  font-size: 14px;
+}
+
+.content-section .blog-posts .post-card button {
+  background-color: #FF8C00;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.content-section .call-to-action.second {
+  background-color: #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.content-section .call-to-action.second h2 {
+  font-weight: bold;
+}
+
+.content-section .call-to-action.second button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.content-section .call-to-action.second button.follow-us {
+  background-color: #ccc;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.footer {
+  background-color: #222222;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer .footer-section {
+  width: 20%;
+  margin-bottom: 20px;
+}
+
+.footer .footer-section h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.footer .footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer .footer-section ul li {
+  margin-bottom: 5px;
+}
+
+.footer .footer-section a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer .footer-section button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.footer .footer-section .social-media {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.footer .footer-section .social-media a {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-size: cover;
+  margin-right: 5px;
+}
+
+.footer .footer-section .social-media a:last-child {
+  margin-right: 0;
+}
+
+.footer .footer-section .back-to-top {
+  background-color: white;
+  color: #007bff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.footer .footer-section .back-to-top .icon {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-image: url("placeholder.png");
+  background-size: cover;
+  margin-left: 5px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.card {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 15px;
+  width: 32%;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.card p {
+  font-size: 14px;
+}
+
+.card .icon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-image: url("placeholder.png");
+  background-size: cover;
+  margin-right: 5px;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.section-header h2 {
+  font-size: 36px;
+  margin: 0;
+}
+
+.section-header button {
+  background-color: #FF8C00;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.section-content {
+  background-color: #ccc;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.section-content h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.section-content p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.section-content .card-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.section-content .card {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 15px;
+  width: 48%;
+  margin-bottom: 10px;
+}
+
+.section-content .card h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.section-content .card p {
+  font-size: 14px;
+}
+
+.section-content .card .icon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-image: url("placeholder.png");
+  background-size: cover;
+  margin-right: 5px;
+}
+
+.section-content button {
+  background-color: #FF8C00;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.section-content .view-all-posts {
+  background-color: #FF8C00;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-left: auto;
+}
+
+.section-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.section-footer button {
+  background-color: #FF8C00;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.footer-content {
+  background-color: #222222;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.footer-content .footer-section {
+  display: flex;
+  flex-direction: column;
+  width: 33.33%;
+  margin-bottom: 20px;
+}
+
+.footer-content .footer-section h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.footer-content .footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-content .footer-section ul li {
+  margin-bottom: 5px;
+}
+
+.footer-content .footer-section a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-content .footer-section button {
+  background-color: #FF8C00;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.footer-content .footer-section .social-media {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.footer-content .footer-section .social-media a {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-image: url("placeholder.png");
+  background-size: cover;
+  margin-right: 5px;
+}
+
+.footer-content .footer-section .social-media a:last-child {
+  margin-right: 0;
+}
+
+.footer-content .footer-section .back-to-top {
+  background-color: white;
+  color: #007bff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.footer-content .footer-section .back-to-top .icon {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-image: url("placeholder.png");
+  background-size: cover;
+  margin-left: 5px;
+}
+</style>
+</head>
+<body>
+<div class="header">
+<div class="header-left">
+<a href="#">THE 2024 ATTACK INTELLIGENCE REPORT</a>
+<button>READ NOW</button>
+</div>
+<div class="header-right">
+<div class="lang">
+        EN
+        <span class="dropdown-icon"></span>
+</div>
+<a href="#">SIGN IN</a>
+<button class="try-now">TRY NOW</button>
+<button class="close-button">X</button>
+</div>
+</div>
+<div class="header-line"></div>
+<div class="main-section">
+<h1 class="orange">Command Your Attack Surface</h1>
+<h2 class="orange">Anticipate, Pinpoint, Act</h2>
+<button>EXPLORE OUR MDR SOLUTION</button>
+<button>ACCESS NEW RESEARCH</button>
+<div class="cookie-container">
+<p>We use cookies on our site to enhance site navigation, analyze site usage, and assist in our marketing efforts. <a href="#">Privacy Policy</a>.</p>
+<button>Cookies Settings</button>
+</div>
+</div>
+<div class="nav-menu">
+<div class="header-left">
+<a href="#">THE 2024 ATTACK INTELLIGENCE REPORT</a>
+<button>READ NOW</button>
+</div>
+<div class="header-right">
+<div class="nav-items">
+<a href="#">PRODUCTS</a>
+<a href="#">SERVICES</a>
+<a href="#">SUPPORT &amp; RESOURCES</a>
+<a href="#">COMPANY</a>
+<a href="#">RESEARCH</a>
+<a href="#">EN</a>
+<a href="#">SIGN IN</a>
+</div>
+<button class="try-now">TRY NOW</button>
+<button class="close-button">X</button>
+</div>
+</div>
+<div class="secondary-nav">
+<div class="nav-items">
+<a href="#">Products</a>
+<a href="#">Services</a>
+<a href="#">Support &amp; Resources</a>
+<a href="#">Company</a>
+<a href="#">Research</a>
+<a href="#">EN</a>
+<span class="dropdown-icon"></span>
+<a href="#">Sign In</a>
+<button>Try Now</button>
+</div>
+</div>
+<div class="content-section">
+<div class="call-to-action">
+<p>Helping 11,000+ global companies take the gloves off - <a href="#">View Customer Stories</a></p>
+<button>Contact Us</button>
+</div>
+<div class="company-description">
+<h2>Level up SecOps. With the only endpoint to cloud, unified cybersecurity platform.</h2>
+<p>Analyze attack vectors distinct to your organization, link them to exposures, and confidently act to prevent breaches with leading MDR.</p>
+</div>
+<div class="card-container">
+<div class="card">
+<span class="icon"></span>
+<h3>MDR with Unlimited Incident Response</h3>
+<p>Gain 24/7 XDR, monitoring, remediation, and DFIR from SOC experts.</p>
+</div>
+<div class="card">
+<span class="icon"></span>
+<h3>Next-Gen SIEM</h3>
+<p>Pinpoint threats wherever they start with cloud-first detection and response.</p>
+</div>
+<div class="card">
+<span class="icon"></span>
+<h3>Cloud Security</h3>
+<p>Secure multi-cloud environments with complete visibility.</p>
+</div>
+<div class="card">
+<span class="icon"></span>
+<h3>Vulnerability Management</h3>
+<p>Understand risk across hybrid environments.</p>
+</div>
+<div class="card">
+<span class="icon"></span>
+<h3>Threat Intelligence</h3>
+<p>Discover and remediate external threats.</p>
+</div>
+<div class="card">
+<span class="icon"></span>
+<h3>Exposure Management</h3>
+<p>Get continuous assessment and validation of your attack surface.</p>
+</div>
+</div>
+<div class="section-header">
+<h2>Get unparalleled insights from Rapid7 Labs</h2>
+<button>LEARN MORE ABOUT RAPID7 LABS</button>
+</div>
+<div class="section-content">
+<h3>#1 open-source communities fueling purple teams and DFIR</h3>
+<p>Join the world's largest open-source communities, Velocraptor and Metasploit, and leverage world class vulnerability research from the AttackerKB.</p>
+<h3>Embedded intelligence</h3>
+<p>Gain clarity across your evolving environment with solutions and services that have Rapid7 Labs intelligence baked in.</p>
+<h3>Emergent threat response</h3>
+<p>Expert analysis delivers valuable context on attack trends, emergent threats, and high-priority vulnerabilities correlated to your specific environment.</p>
+<h3>Internet exposure projects</h3>
+<p>Better understand your exposure to the public internet with insights from Project Sonar and Project Lorelei.</p>
+</div>
+<div class="section-header">
+<h2>Analyze this: our difference is real</h2>
+<button>GARTNER® MDR RESEARCH</button>
+</div>
+<div class="section-content">
+<p>Bringing a unique practitioner focus to security operations means we're ranked as a "Leader," with a "Visionary" model that puts your success at the center of all we do.</p>
+</div>
+<div class="section-header">
+<h2>One stop for security news, research and real-time analysis.</h2>
+<p>Subscribe to our blog, and stay ahead of trending topics, emergent threats and real-time, expert analysis.</p>
+</div>
+<div class="section-content">
+<div class="card-container">
+<div class="card">
+<h3>EVENTS</h3>
+<p>The Take Command Summit: A Day of Resilience and Preparation</p>
+<button>READ FULL POST</button>
+</div>
+<div class="card">
+<h3>MANAGED DETECTION AND RESPONSE</h3>
+<p>CVE-2024-4978: Backdoored Justice AV Solutions Viewer Software Used in Apparent Supply Chain Attack</p>
+<button>READ FULL POST</button>
+</div>
+<div class="card">
+<h3>RESEARCH</h3>
+<p>Rapid7 Releases the 2024 Attack Intelligence Report</p>
+<button>READ FULL POST</button>
+</div>
+<div class="card">
+<h3>METASPLOIT</h3>
+<p>Metasploit Wrap-Up 05/17/2024</p>
+<button>READ FULL POST</button>
+</div>
+</div>
+<button class="view-all-posts">VIEW ALL POSTS</button>
+</div>
+<div class="section-footer">
+<h2>Confidently anticipate, pinpoint, and act to secure your organization.</h2>
+<button>LET'S TALK</button>
+<button class="follow-us">FOLLOW US</button>
+</div>
+<div class="footer-content">
+<div class="footer-section">
+<h3>Search all the things</h3>
+<div class="search-bar">
+<span class="icon"></span>
+</div>
+</div>
+<div class="footer-section">
+<h3>SOLUTIONS</h3>
+<ul>
+<li>Insight Platform</li>
+<li>Managed Threat Complete</li>
+<li>Cloud Risk Complete</li>
+</ul>
+</div>
+<div class="footer-section">
+<h3>CUSTOMER SUPPORT</h3>
+<ul>
+<li>+1-866-930-8113 (Toll Free)</li>
+</ul>
+<h3>SALES SUPPORT</h3>
+<ul>
+<li>+1-866-772-7437 (Toll Free)</li>
+</ul>
+<p>Need to report an Escalation or a Breach?</p>
+<button>GET HELP</button>
+</div>
+<div class="footer-section">
+<h3>SUPPORT &amp; RESOURCES</h3>
+<ul>
+<li>Product Support</li>
+<li>Resource Library</li>
+<li>Our Customers</li>
+<li>Events &amp; Webcasts</li>
+<li>Training &amp; Certification</li>
+<li>Cybersecurity Fundamentals</li>
+<li>Vulnerability &amp; Exploit Database</li>
+</ul>
+</div>
+<div class="footer-section">
+<h3>ABOUT US</h3>
+<ul>
+<li>Company</li>
+<li>Diversity, Equity, and Inclusion</li>
+<li>Leadership</li>
+<li>News &amp; Press Releases</li>
+<li>Public Policy</li>
+<li>Open Source</li>
+<li>Investors</li>
+</ul>
+</div>
+<div class="footer-section">
+<h3>CONNECT WITH US</h3>
+<ul>
+<li>Contact</li>
+<li>Blog</li>
+<li>Support Login</li>
+<li>Careers</li>
+</ul>
+<div class="social-media">
+<a class="icon" href="#"></a>
+<a class="icon" href="#"></a>
+<a class="icon" href="#"></a>
+<a class="icon" href="#"></a>
+</div>
+</div>
+<div class="footer-section">
+<h3>RESOURCES</h3>
+<ul>
+<li>Company</li>
+<li>Diversity, Equity, and Inclusion</li>
+<li>Leadership</li>
+<li>News &amp; Press Releases</li>
+<li>Public Policy</li>
+<li>Open Source</li>
+<li>Investors</li>
+</ul>
+</div>
+<div class="footer-section">
+<p>© Rapid7</p>
+<p>Legal Terms</p>
+<p>Privacy Policy</p>
+<p>Export Notice</p>
+<p>Trust</p>
+<p>Do Not Sell or Share My Personal Information</p>
+</div>
+<div class="footer-section">
+<p>BACK TO TOP</p>
+<span class="icon"></span>
+</div>
+</div>
+<div class="footer-content">
+<div class="footer-section">
+<div class="search-bar">
+<span class="icon"></span>
+</div>
+<p>Search all the things</p>
+</div>
+<div class="footer-section">
+<h3>SOLUTIONS</h3>
+<ul>
+<li>Insight Platform</li>
+<li>Managed Threat Complete</li>
+<li>Cloud Risk Complete</li>
+</ul>
+</div>
+<div class="footer-section">
+<h3>CUSTOMER SUPPORT</h3>
+<ul>
+<li>+1-866-390-8113 (Toll Free)</li>
+</ul>
+<h3>SALES SUPPORT</h3>
+<ul>
+<li>+1-866-772-7437 (Toll Free)</li>
+</ul>
+<p>Need to report an Escalation or a Breach?</p>
+<button>GET HELP</button>
+</div>
+<div class="footer-section">
+<h3>SUPPORT &amp; RESOURCES</h3>
+<ul>
+<li>Product Support</li>
+<li>Resource Library</li>
+<li>Our Customers</li>
+<li>Events &amp; Webcasts</li>
+<li>Training &amp; Certification</li>
+<li>Cybersecurity Fundamentals</li>
+<li>Vulnerability &amp; Exploit Database</li>
+</ul>
+</div>
+<div class="footer-section">
+<h3>ABOUT US</h3>
+<ul>
+<li>Company</li>
+<li>Diversity, Equity, and Inclusion</li>
+<li>Leadership</li>
+<li>News &amp; Press Releases</li>
+<li>Public Policy</li>
+<li>Open Source</li>
+<li>Investors</li>
+</ul>
+</div>
+<div class="footer-section">
+<h3>CONNECT WITH US</h3>
+<ul>
+<li>Contact</li>
+<li>Blog</li>
+<li>Support Login</li>
+<li>Careers</li>
+</ul>
+<div class="social-media">
+<a class="icon" href="#"></a>
+<a class="icon" href="#"></a>
+<a class="icon" href="#"></a>
+<a class="icon" href="#"></a>
+</div>
+</div>
+<div class="footer-section">
+<h3>RESOURCES</h3>
+<ul>
+<li>Company</li>
+<li>Diversity, Equity, and Inclusion</li>
+<li>Leadership</li>
+<li>News &amp; Press Releases</li>
+<li>Public Policy</li>
+<li>Open Source</li>
+<li>Investors</li>
+</ul>
+</div>
+<div class="footer-section">
+<p>© Rapid7</p>
+<p>Legal Terms</p>
+<p>Privacy Policy</p>
+<p>Export Notice</p>
+</div></div></div></body></html></p></body></html>

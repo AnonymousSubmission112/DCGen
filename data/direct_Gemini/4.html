@@ -1,0 +1,257 @@
+<html><body><p>
+<!DOCTYPE html>
+
+<html>
+<head>
+<style>
+body {
+  margin: 0;
+  background-color: #f2f2f2;
+  font-family: sans-serif;
+}
+
+.header {
+  background-color: #fff;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.header ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.header li {
+  margin-right: 20px;
+}
+
+.header a {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.image {
+  width: 300px;
+  height: 200px;
+  background-color: #eee;
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
+}
+
+.image::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: url("placeholder.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.search {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.search input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.search button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.news {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.news-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 48%;
+}
+
+.news-list li {
+  margin-bottom: 10px;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.news-list li h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.news-list li p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.news-list li span {
+  display: block;
+  font-size: 12px;
+  color: #888;
+  margin-top: 10px;
+}
+
+.footer {
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
+  border-top: 1px solid #ddd;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #333;
+  font-size: 12px;
+  margin-right: 10px;
+}
+
+.footer span {
+  font-size: 12px;
+  color: #888;
+}
+
+.header button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.news-list li .news-content {
+  display: flex;
+}
+
+.news-list li .news-content span {
+  display: inline-block;
+  margin-right: 5px;
+  color: #ff0000;
+}
+
+.news-list li .news-content span:first-child {
+  color: #ff7800;
+}
+</style>
+</head>
+<body>
+<header class="header">
+<ul>
+<li><a href="#">新闻</a></li>
+<li><a href="#">hao123</a></li>
+<li><a href="#">地图</a></li>
+<li><a href="#">视频</a></li>
+<li><a href="#">图像</a></li>
+<li><a href="#">网盘</a></li>
+<li><a href="#">文库</a></li>
+<li><a href="#">更多</a></li>
+</ul>
+<button>登录</button>
+</header>
+<div class="container">
+<div class="image"></div>
+<div class="search">
+<input placeholder="百度一下" type="text"/>
+<button>搜索</button>
+</div>
+<div class="news">
+<ul class="news-list">
+<li>
+<h3>习近平主持召开企业家座谈会</h3>
+<p>多位知名人士分享了中国经济新一...</p>
+<span>
+<div class="news-content">
+<span>1</span>
+<span>2</span>
+</div>
+</span>
+</li>
+<li>
+<h3>解放军战备状态不断为“实战”备战</h3>
+<p>解放军战备状态不断为“实战”备战...</p>
+<span>
+<div class="news-content">
+<span>1</span>
+<span>2</span>
+</div>
+</span>
+</li>
+</ul>
+<ul class="news-list">
+<li>
+<h3>第七届数字中国建设峰会亮点纷呈</h3>
+<p>第七届数字中国建设峰会亮点纷呈...</p>
+<span>
+<div class="news-content">
+<span>3</span>
+<span>4</span>
+</div>
+</span>
+</li>
+<li>
+<h3>王毅谈及未来中国将如何发展</h3>
+<p>王毅谈及未来中国将如何发展...</p>
+<span>
+<div class="news-content">
+<span>5</span>
+</div>
+</span>
+</li>
+</ul>
+</div>
+</div>
+<footer class="footer">
+<a href="#">关于百度</a>
+<a href="#">About Baidu</a>
+<span>使用百度前必读</span>
+<span>  |  </span>
+<a href="#">帮助</a>
+<span>  |  </span>
+<a href="#">意见反馈</a>
+<span>  |  </span>
+<a href="#">举报中心</a>
+<span>  |  </span>
+<a href="#">企业合作</a>
+<span>  |  </span>
+<span>京ICP证030173号</span>
+<span>  |  </span>
+<span>互联网新闻信息服务许可证11220180008</span>
+<span>  |  </span>
+<span>京公网安备11000002000001号</span>
+</footer>
+</body>
+</html>
+</p></body></html>

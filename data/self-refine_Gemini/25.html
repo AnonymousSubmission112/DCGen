@@ -1,0 +1,470 @@
+<html><body><p>
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sample Webpage</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #0056a6;
+            color: white;
+            padding: 10px 0;
+            text-align: right;
+            font-size: 0.9em;
+            padding-right: 20px;
+        }
+        header a {
+            color: white;
+            text-decoration: none;
+            margin-right: 15px;
+        }
+        header span {
+            margin-right: 15px;
+        }
+        nav {
+            background-color: white;
+            padding: 10px 0;
+            margin: 0;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+        .main-banner {
+            background-image: url('placeholder.png');
+            background-size: cover;
+            padding: 100px 0;
+            text-align: center;
+            color: white;
+        }
+        .main-banner h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .main-banner button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #0056a6;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .main-banner .pagination {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .main-banner .pagination span {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: #ccc;
+            margin: 0 5px;
+        }
+        .main-banner .pagination span.active {
+            background-color: #0056a6;
+        }
+        .services {
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        }
+        .service-box {
+            width: 180px;
+            margin: 0 20px;
+            padding: 20px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            background-color: white;
+        }
+        .service-box img {
+            width: 40px;
+            margin-bottom: 10px;
+        }
+        .service-box h2 {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+        .service-box button {
+            background-color: #0056a6;
+            color: white;
+            padding: 5px 10px;
+            border: none;
+            cursor: pointer;
+            font-size: 0.9em;
+        }
+        .news {
+            padding: 20px;
+            text-align: center;
+        }
+        .news h2 {
+            margin-top: 0;
+        }
+        .news h2 a {
+            text-decoration: none;
+            color: #0056a6;
+            font-weight: bold;
+        }
+        .news-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .news-box {
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+            width: 280px;
+        }
+        .news-box h3 {
+            font-size: 1em;
+            margin: 10px 0;
+        }
+        .news-box p {
+            font-size: 0.9em;
+            color: #666;
+        }
+        .news-box a {
+            text-decoration: none;
+            color: #0056a6;
+            font-weight: bold;
+        }
+        .related-institutions {
+            background-color: #f4f4f4;
+            padding: 50px 0;
+            text-align: center;
+        }
+        .related-institutions h2 {
+            margin: 0;
+        }
+        .institution-logos {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .institution-logos img {
+            margin: 0 15px;
+        }
+        footer {
+            background-color: #0056a6;
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+        }
+        footer .footer-container {
+            display: flex;
+            justify-content: space-around;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        footer div {
+            width: 30%;
+        }
+        footer h3 {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+        footer p {
+            font-size: 0.9em;
+            line-height: 1.5;
+        }
+        footer a {
+            text-decoration: none;
+            color: white;
+        }
+        .main-banner-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .main-banner-content .text {
+            text-align: left;
+        }
+        .main-banner-content .text h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .main-banner-content .text button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #0056a6;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .main-banner-content .services-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 20px;
+        }
+        .services-container .service-box {
+            width: 180px;
+            padding: 20px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            background-color: white;
+        }
+        .services-container .service-box img {
+            width: 40px;
+            margin-bottom: 10px;
+        }
+        .services-container .service-box h2 {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+        .services-container .service-box button {
+            background-color: #0056a6;
+            color: white;
+            padding: 5px 10px;
+            border: none;
+            cursor: pointer;
+            font-size: 0.9em;
+        }
+        .news-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .news-box {
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+            width: 280px;
+        }
+        .news-box h3 {
+            font-size: 1em;
+            margin: 10px 0;
+        }
+        .news-box p {
+            font-size: 0.9em;
+            color: #666;
+        }
+        .news-box a {
+            text-decoration: none;
+            color: #0056a6;
+            font-weight: bold;
+        }
+        .news-box .date {
+            font-size: 0.9em;
+            color: #666;
+            margin-top: 10px;
+        }
+        .institution-logos {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .institution-logos img {
+            margin: 0 15px;
+        }
+        .footer-container {
+            display: flex;
+            justify-content: space-around;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .footer-container div {
+            width: 30%;
+        }
+        .footer-container h3 {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+        .footer-container p {
+            font-size: 0.9em;
+            line-height: 1.5;
+        }
+        .footer-container a {
+            text-decoration: none;
+            color: white;
+        }
+        .copyright {
+            text-align: center;
+            padding: 10px 0;
+            font-size: 0.9em;
+            color: white;
+        }
+        .privacy-policy {
+            text-align: center;
+            padding: 10px 0;
+            font-size: 0.9em;
+            color: white;
+        }
+        .privacy-policy a {
+            text-decoration: none;
+            color: white;
+        }
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 5px;
+        }
+        .contact-info p {
+            font-size: 0.9em;
+            color: white;
+        }
+        .contact-info p span {
+            font-weight: bold;
+        }
+        .contact-info p a {
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+<header>
+<a href="#">
+<img alt="Home" src="placeholder.png" width="20"/>
+</a>
+<span>809 535-0111 ext. 2052, 2055</span>
+<a href="mailto:info@nic.do">info@nic.do</a>
+<span>Idioma: <select>
+<option value="Español">Español</option>
+</select></span>
+</header>
+<nav>
+<ul>
+<li><a href="#">INICIO</a></li>
+<li><a href="#">DOMINIOS</a></li>
+<li><a href="#">DOMINIOS GUBERNAMENTALES</a></li>
+<li><a href="#">POLÍTICAS</a></li>
+<li><a href="#">ACERCA DE NIC.DO</a></li>
+<li><a href="#">NOTICIAS</a></li>
+<li><a href="#">AYUDA</a></li>
+</ul>
+</nav>
+<section class="main-banner">
+<div class="main-banner-content">
+<div class="text">
+<h1>Conoce a MiDominio.Do</h1>
+<button>Conoce más</button>
+</div>
+<div class="services-container">
+<div class="service-box">
+<img alt="Buscar Dominio" src="placeholder.png"/>
+<h2>Buscar Dominio</h2>
+<button>Más información</button>
+</div>
+<div class="service-box">
+<img alt="Registrar Dominio" src="placeholder.png"/>
+<h2>Registrar Dominios</h2>
+<button>Más información</button>
+</div>
+<div class="service-box">
+<img alt="Preguntas Frecuentes" src="placeholder.png"/>
+<h2>Preguntas Frecuentes</h2>
+<button>Más información</button>
+</div>
+<div class="service-box">
+<img alt="Estadísticas" src="placeholder.png"/>
+<h2>Estadísticas</h2>
+<button>Más información</button>
+</div>
+</div>
+</div>
+<div class="pagination">
+<span class="active"></span>
+<span></span>
+<span></span>
+</div>
+</section>
+<section class="news">
+<h2>NOTICIAS <a href="#">ver más</a></h2>
+<div class="news-container">
+<div class="news-box">
+<h3>CAMBIOS A LA POLÍTICA DE SOLUCIÓN DE CONTROVERSIAS EN MATERIA DE NOMBRES DE DOMINIO PARA .DO A PARTIR DEL 24/05/2024</h3>
+<p>24 de abril de 2024</p>
+<a href="#">Leer Más</a>
+</div>
+<div class="news-box">
+<h3>Aviso de Mantenimiento 8:00 AM</h3>
+<p class="date">29/02/2024</p>
+<a href="#">Leer Más</a>
+<h3>AVISO DE MANTENIMIENTO 8:00 AM</h3>
+<p class="date">28 de febrero de 2024</p>
+<a href="#">Leer Más</a>
+</div>
+<div class="news-box">
+<h3>Aviso de Mantenimiento 7:30 AM</h3>
+<p class="date">18/12/2023</p>
+<a href="#">Leer Más</a>
+<h3>AVISO DE MANTENIMIENTO 7:30 AM</h3>
+<p class="date">14 de diciembre de 2023</p>
+<a href="#">Leer Más</a>
+</div>
+</div>
+</section>
+<section class="related-institutions">
+<h2>INSTITUCIONES RELACIONADAS</h2>
+<div class="institution-logos">
+<img alt="Institution 1" src="placeholder.png"/>
+<img alt="Institution 2" src="placeholder.png"/>
+<img alt="Institution 3" src="placeholder.png"/>
+<img alt="Institution 4" src="placeholder.png"/>
+</div>
+</section>
+<footer>
+<div class="footer-container">
+<div>
+<h3>Acerca De NIC.DO</h3>
+<p><a href="#">Historia</a></p>
+<p><a href="#">Nuestra Tecnología</a></p>
+<p><a href="#">Relacionamiento</a></p>
+<p><a href="#">25 Años de la Delegación del .do</a></p>
+</div>
+<div>
+<h3>¿Necesita Ayuda?</h3>
+<p><a href="#">Preguntas Frecuentes</a></p>
+<p><a href="#">Contáctenos</a></p>
+</div>
+<div>
+<h3>Contactos</h3>
+<p>NIC.DO</p>
+<p>Pontificia Universidad Católica Madre y Maestra</p>
+<p>Edif. Administrativo 1, 4to Piso,</p>
+<p>Av. Simón Bolívar 87, La Julia,</p>
+<p>10109 Santo Domingo, R.D.</p>
+<div class="contact-info">
+<p>Phone: <a href="tel:18095350111">1 809 535-0111 ext. 2052, 2055</a></p>
+<p>Fax: <a href="tel:18092860012">1 809 286-0012</a></p>
+<p>Email: <a href="mailto:info@nic.do">info@nic.do</a></p>
+</div>
+</div>
+</div>
+<div class="copyright">
+<p>Copyright © PUCMM - NIC.DO. All rights reserved</p>
+</div>
+<div class="privacy-policy">
+<p><a href="#">Privacy Policy</a></p>
+</div>
+</footer>
+</body>
+</html>
+</p></body></html>

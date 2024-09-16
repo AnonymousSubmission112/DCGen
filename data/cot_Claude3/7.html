@@ -1,0 +1,168 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery</title>
+	<style>
+		/* Header */
+		header {
+			background-color: #0769ad;
+			color: white;
+			padding: 10px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+		header input {
+			border: none;
+			padding: 5px;
+		}
+		header nav {
+			display: flex;
+			gap: 20px;
+		}
+
+		/* Main Content */
+		main {
+			display: flex;
+			gap: 20px;
+			padding: 20px;
+		}
+		aside {
+			background-color: #f2f2f2;
+			padding: 20px;
+			width: 200px;
+		}
+		aside h3 {
+			margin-top: 0;
+		}
+		.feature {
+			background-color: #e7e7e7;
+			padding: 10px;
+			margin-bottom: 10px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+		section {
+			flex: 1;
+		}
+		section h2 {
+			color: #0769ad;
+		}
+		pre {
+			background-color: #f2f2f2;
+			padding: 10px;
+		}
+		.related {
+			margin-top: 20px;
+		}
+
+		/* Footer */
+		footer {
+			background-color: #333;
+			color: white;
+			padding: 20px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+		footer nav {
+			display: flex;
+			gap: 20px;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<img src="placeholder.png" alt="Logo">
+		<nav>
+			<a href="#">Programs</a>
+			<a href="#">Contribute</a>
+			<a href="#">Events</a>
+			<a href="#">Support</a>
+			<a href="#">OpenJS Foundation</a>
+		</nav>
+		<input type="text" placeholder="Search">
+	</header>
+
+	<main>
+		<aside>
+			<h3>Download jQuery</h3>
+			<div class="feature">
+				<img src="placeholder.png" alt="Lightweight Footprint">
+				<span>Lightweight Footprint</span>
+			</div>
+			<div class="feature">
+				<img src="placeholder.png" alt="CSS3 Compliant">
+				<span>CSS3 Compliant</span>
+			</div>
+			<div class="feature">
+				<img src="placeholder.png" alt="Cross-Browser">
+				<span>Cross-Browser</span>
+			</div>
+		</aside>
+
+		<section>
+			<h2>What is jQuery?</h2>
+			<p>jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers. With a combination of versatility and extensibility, jQuery has changed the way that millions of people write JavaScript.</p>
+
+			<h2>A Brief Look</h2>
+			<h3>DOM Traversal and Manipulation</h3>
+			<pre>Get the &lt;button&gt; element with the class 'continue' and change its HTML to 'Next Step...'
+
+$( "button.continue" ).html( "Next Step..." )
+			</pre>
+
+			<h3>Event Handling</h3>
+			<pre>Show the #banner-message element that is hidden with  display:none in its CSS when any button in #banner-integration is clicked
+
+var $bannerMessage = $( "#banner-message" );
+$( "button", "#banner-integration" ).on( "click", function( event ) {
+    $bannerMessage.show();
+} );
+			</pre>
+
+			<h3>Ajax</h3>
+			<pre>Call a local script on the server /api/getfeedster with the query parameter update=latest, and replace the element &lt;div id="feedster-update"&gt; with the returned text
+
+$.ajax( {
+    url: "/api/getfeedster",
+    data: {
+        update: "latest"
+    },
+    success: function( result ) {
+        $( "#feedster-update" ).html( result + "<strong>" + " &reg; " + "</strong>" );
+    }
+} );
+			</pre>
+
+			<div class="related">
+				<h3>Related Projects</h3>
+				<p>jQuery UI</p>
+				<p>The project for a maintainable-only mode. Learn more</p>
+				<p>jQuery Mobile</p>
+				<p>This project is depreciated. Learn more</p>
+			</div>
+		</section>
+	</main>
+
+	<footer>
+		<nav>
+			<a href="#">BOOKS</a>
+			<a href="#">Learning jQuery</a>
+			<a href="#">jQuery in Action</a>
+			<a href="#">jQuery Recipes</a>
+			<a href="#">jQuery and Form</a>
+			<a href="#">jQuery UI in Action</a>
+		</nav>
+		<p>Copyright &copy; OpenJS Foundation and other contributors, MIT Rights Reserved. jQuery, jQuery UI, jQuery Mobile, jQuery Project, and logos are registered trademarks of the OpenJS Foundation in the U.S. and other countries. Trademark Policy, Patents, Privacy, and Terms of Use.</p>
+		<nav>
+			<a href="#">Learning Center</a>
+			<a href="#">Chat</a>
+			<a href="#">Twitter</a>
+			<a href="#">GitHub</a>
+		</nav>
+	</footer>
+</body>
+</html>

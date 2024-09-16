@@ -1,0 +1,1034 @@
+<html><body><p>```html
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Rapid7</title>
+<style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            width: 100%;
+            background-color: #121212;
+            color: #fff;
+            padding: 20px 0;
+        }
+
+        .container .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .container .nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        .container .nav ul li {
+            margin-right: 20px;
+        }
+
+        .container .nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 14px;
+        }
+
+        .container .nav .right {
+            display: flex;
+            align-items: center;
+        }
+
+        .container .nav .right .btn {
+            background-color: #ff7938;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-left: 20px;
+            transition: background-color 0.3s;
+        }
+
+        .container .nav .right .btn:hover {
+            background-color: #ff631f;
+        }
+
+        .container .nav .right .lang {
+            display: flex;
+            align-items: center;
+        }
+
+        .container .nav .right .lang .selected {
+            background-color: #ff7938;
+            padding: 5px 10px;
+            border-radius: 5px;
+            color: #fff;
+            margin-right: 10px;
+        }
+
+        .container .nav .right .lang .dropdown {
+            display: none;
+            position: absolute;
+            background-color: #121212;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .container .nav .right .lang .dropdown ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .container .nav .right .lang .dropdown ul li {
+            padding: 5px 0;
+        }
+
+        .container .nav .right .lang .dropdown ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 14px;
+        }
+
+        .container .nav .right .lang:hover .dropdown {
+            display: block;
+        }
+
+        .hero {
+            background-color: #121212;
+            color: #fff;
+            text-align: center;
+            padding: 100px 0;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .hero h2 {
+            font-size: 24px;
+            margin-bottom: 40px;
+        }
+
+        .hero .buttons {
+            display: flex;
+            justify-content: center;
+        }
+
+        .hero .buttons .btn {
+            background-color: #ff7938;
+            color: #fff;
+            padding: 15px 30px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 10px;
+            transition: background-color 0.3s;
+        }
+
+        .hero .buttons .btn:hover {
+            background-color: #ff631f;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .section-title h2 {
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        .section-title p {
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+        .section {
+            padding: 50px 0;
+            background-color: #f8f8f8;
+        }
+
+        .section .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section .container .left {
+            width: 45%;
+        }
+
+        .section .container .right {
+            width: 45%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .section .container .left h3 {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .section .container .left p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        .section .container .right .item {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .section .container .right .item h4 {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .section .container .right .item p {
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .section .container .right .item img {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 10px;
+        }
+
+        .section .container .right .item:last-child {
+            margin-bottom: 0;
+        }
+
+        .section .container .right .item .line {
+            width: 100%;
+            height: 2px;
+            background-color: #ff7938;
+            margin-bottom: 10px;
+        }
+
+        .section-cta {
+            background-color: #121212;
+            color: #fff;
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        .section-cta h2 {
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .section-cta p {
+            font-size: 16px;
+            margin-bottom: 30px;
+        }
+
+        .section-cta .btn {
+            background-color: #ff7938;
+            color: #fff;
+            padding: 15px 30px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .section-cta .btn:hover {
+            background-color: #ff631f;
+        }
+
+        .blog {
+            padding: 50px 0;
+            background-color: #f8f8f8;
+        }
+
+        .blog .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .blog .container .items {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .blog .container .items .item {
+            width: 30%;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .blog .container .items .item h4 {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .blog .container .items .item p {
+            font-size: 14px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        .blog .container .items .item .btn {
+            background-color: #ff7938;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .blog .container .items .item .btn:hover {
+            background-color: #ff631f;
+        }
+
+        .blog .container .items .item:nth-child(3n) {
+            margin-right: 0;
+        }
+
+        .blog .container .items .item:last-child {
+            margin-bottom: 0;
+        }
+
+        .footer {
+            background-color: #121212;
+            color: #fff;
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .footer .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .footer .container .left {
+            width: 30%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .footer .container .left .logo {
+            width: 100px;
+            height: 20px;
+        }
+
+        .footer .container .left .links {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .footer .container .left .links ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer .container .left .links ul li {
+            margin-right: 20px;
+        }
+
+        .footer .container .left .links ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 14px;
+        }
+
+        .footer .container .right {
+            width: 60%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .footer .container .right .column {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .footer .container .right .column h4 {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .footer .container .right .column ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer .container .right .column ul li {
+            padding: 5px 0;
+        }
+
+        .footer .container .right .column ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 14px;
+        }
+
+        .footer .container .right .column .btn {
+            background-color: #ff7938;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .footer .container .right .column .btn:hover {
+            background-color: #ff631f;
+        }
+
+        .copyright {
+            background-color: #121212;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        .copyright p {
+            font-size: 14px;
+            margin: 0;
+        }
+
+        .copyright .links {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .copyright .links ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .copyright .links ul li {
+            margin-right: 20px;
+        }
+
+        .copyright .links ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 14px;
+        }
+
+        .back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #ff7938;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .back-to-top:hover {
+            background-color: #ff631f;
+        }
+
+        .section-title .line {
+            width: 100px;
+            height: 2px;
+            background-color: #ff7938;
+            margin: 0 auto 20px;
+        }
+
+        .section-cta .line {
+            width: 100px;
+            height: 2px;
+            background-color: #ff7938;
+            margin: 0 auto 20px;
+        }
+
+        .section-cta .btn {
+            padding: 15px 30px;
+        }
+
+        .blog .container .items .item .btn {
+            padding: 10px 20px;
+            margin-top: 15px;
+        }
+
+        .section .container .right .item img {
+            width: 100%;
+            height: auto;
+        }
+
+        .section .container .right .item h4 {
+            margin-bottom: 10px;
+        }
+
+        .section-cta p {
+            margin-bottom: 30px;
+        }
+
+        .section-cta h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .footer .container .left .links ul li a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .footer .container .right .column .btn {
+            padding: 10px 20px;
+            margin-top: 15px;
+        }
+
+        .footer .container .right .column h4 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .footer .container .left .links ul li {
+            padding: 5px 0;
+        }
+
+        .footer .container .right .column ul li a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .footer .container .left .links ul {
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer .container .right .column ul {
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer .container .right {
+            width: 60%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .footer .container .left {
+            width: 30%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .footer .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .blog .container .items .item {
+            width: 30%;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .blog .container .items {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .blog .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .blog {
+            padding: 50px 0;
+            background-color: #f8f8f8;
+        }
+
+        .section-cta .btn {
+            background-color: #ff7938;
+            color: #fff;
+            padding: 15px 30px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .section-cta p {
+            font-size: 16px;
+            margin-bottom: 30px;
+        }
+
+        .section-cta h2 {
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .section-cta {
+            background-color: #121212;
+            color: #fff;
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        .section .container .right .item .line {
+            width: 100%;
+            height: 2px;
+            background-color: #ff7938;
+            margin-bottom: 10px;
+        }
+
+        .section .container .right .item:last-child {
+            margin-bottom: 0;
+        }
+
+        .section .container .right .item p {
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .section .container .right .item h4 {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .section .container .right .item {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .section .container .right {
+            width: 45%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .section .container .left p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        .section .container .left h3 {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .section .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section {
+            padding: 50px 0;
+            background-color: #f8f8f8;
+        }
+
+        .section-title p {
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+        .section-title h2 {
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .hero .buttons .btn:hover {
+            background-color: #ff631f;
+        }
+
+        .hero .buttons .btn {
+            background-color: #ff7938;
+            color: #fff;
+            padding: 15px 30px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 10px;
+            transition: background-color 0.3s;
+        }
+
+        .hero .buttons {
+            display: flex;
+            justify-content: center;
+        }
+
+        .hero h2 {
+            font-size: 24px;
+            margin-bottom: 40px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .hero {
+            background-color: #121212;
+            color: #fff;
+            text-align: center;
+            padding: 100px 0;
+        }
+
+        .container .nav .right .lang:hover .dropdown {
+            display: block;
+        }
+
+        .container .nav .right .lang .dropdown ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 14px;
+        }
+
+        .container .nav .right .lang .dropdown ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .container .nav .right .lang .dropdown {
+            display: none;
+            position: absolute;
+            background-color: #121212;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .container .nav .right .lang .selected {
+            background-color: #ff7938;
+            padding: 5px 10px;
+            border-radius: 5px;
+            color: #fff;
+            margin-right: 10px;
+        }
+
+        .container .nav .right .lang {
+            display: flex;
+            align-items: center;
+        }
+
+        .container .nav .right .btn:hover {
+            background-color: #ff631f;
+        }
+
+        .container .nav .right .btn {
+            background-color: #ff7938;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-left: 20px;
+            transition: background-color 0.3s;
+        }
+
+        .container .nav .right {
+            display: flex;
+            align-items: center;
+        }
+
+        .container .nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 14px;
+        }
+
+        .container .nav ul li {
+            margin-right: 20px;
+        }
+
+        .container .nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        .container .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .container {
+            width: 100%;
+            background-color: #121212;
+            color: #fff;
+            padding: 20px 0;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+<div class="nav">
+<div>
+<a href="#">THE 2024 ATTACK INTELLIGENCE REPORT</a>
+<a href="#">READ NOW</a>
+</div>
+<ul>
+<li><a href="#">PRODUCTS</a></li>
+<li><a href="#">SERVICES</a></li>
+<li><a href="#">SUPPORT &amp; RESOURCES</a></li>
+<li><a href="#">COMPANY</a></li>
+<li><a href="#">RESEARCH</a></li>
+</ul>
+<div class="right">
+<div class="lang">
+<div class="selected">EN</div>
+<div class="dropdown">
+<ul>
+<li><a href="#">EN</a></li>
+<li><a href="#">FR</a></li>
+<li><a href="#">DE</a></li>
+</ul>
+</div>
+</div>
+<div><a class="btn" href="#">SIGN IN</a></div>
+<div><a class="btn" href="#">TRY NOW</a></div>
+</div>
+</div>
+</div>
+<div class="hero">
+<h1>Command Your Attack Surface</h1>
+<h2>Anticipate, Pinpoint, Act</h2>
+<div class="buttons">
+<a class="btn" href="#">EXPLORE OUR MDR SOLUTION</a>
+<a class="btn" href="#">ACCESS NEW RESEARCH</a>
+</div>
+</div>
+<div class="section">
+<div class="container">
+<div class="left">
+<h3>Helping 11,000+ global companies take the gloves off - <a href="#">View Customer Stories</a></h3>
+<h2>Level up SecOps. With the only endpoint to cloud, unified cybersecurity platform.</h2>
+<p>Analyze attack vectors distinct to your organization, link them to exposures, and confidently act to prevent breaches with leading MDR.</p>
+</div>
+<div class="right">
+<div class="item">
+<img alt="" src="placeholder.png"/>
+<h4>MDR with Unlimited Incident Response</h4>
+<p>Gain 24/7 XDR, monitoring, remediation, and DFIR from SOC experts.</p>
+</div>
+<div class="item">
+<img alt="" src="placeholder.png"/>
+<h4>Next-Gen SIEM</h4>
+<p>Pinpoint threats wherever they start with cloud-first detection and response.</p>
+</div>
+<div class="item">
+<img alt="" src="placeholder.png"/>
+<h4>Cloud Security</h4>
+<p>Secure multi-cloud environments with complete visibility.</p>
+</div>
+<div class="item">
+<img alt="" src="placeholder.png"/>
+<h4>Vulnerability Management</h4>
+<p>Understand risk across hybrid environments.</p>
+</div>
+<div class="item">
+<img alt="" src="placeholder.png"/>
+<h4>Threat Intelligence</h4>
+<p>Discover and remediate external threats.</p>
+</div>
+<div class="item">
+<img alt="" src="placeholder.png"/>
+<h4>Exposure Management</h4>
+<p>Get continuous assessment and validation of your attack surface.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="section-title">
+<div class="line"></div>
+<h2>Get unparalleled insights from Rapid7 Labs</h2>
+<p>Our industry-leading attack experts analyze vulnerabilities, misconfigurations and threat data to deliver guidance and intelligence that organizations can use to proactively inform, build, and improve their security programs.</p>
+</div>
+<div class="section">
+<div class="container">
+<div class="left">
+<h3>Get a 14-month look at attacker behaviors and vulnerabilities </h3>
+<div class="item">
+<div class="line"></div>
+<h4>#1 open-source communities fueling purple teams and DFIR</h4>
+<p>Join the world's largest open-source communities, Velociraptor and Metasploit, and leverage world-class vulnerability research from the AttackerKB.</p>
+</div>
+<div class="item">
+<div class="line"></div>
+<h4>Embedded intelligence</h4>
+<p>Gain clarity across your evolving environment with solutions and services that have Rapid7 Labs intelligence baked in.</p>
+</div>
+<div class="item">
+<div class="line"></div>
+<h4>Emergent threat response</h4>
+<p>Expert analysis delivers valuable context on attack trends, emergent threats, and high-priority vulnerabilities correlated to your specific environment.</p>
+</div>
+<div class="item">
+<div class="line"></div>
+<h4>Internet exposure projects</h4>
+<p>Better understand your exposure to the public internet with insights from Project Sonar and Project Lorelei.</p>
+</div>
+<a class="btn" href="#">LEARN MORE ABOUT RAPID7 LABS</a>
+</div>
+<div class="right">
+<img alt="" src="placeholder.png"/>
+</div>
+</div>
+</div>
+<div class="section-cta">
+<div class="line"></div>
+<h2>Analyze this: our difference is real</h2>
+<p>Bringing a unique practitioner focus to security operations means we're ranked as a "Leader", with a "Visionary" model that puts your success at the center of all we do.</p>
+<a class="btn" href="#">GARTNER® MDR RESEARCH</a>
+</div>
+<div class="blog">
+<div class="container">
+<div class="items">
+<div class="item">
+<h4>EVENTS</h4>
+<p>The Take Command Summit: A Day of Resilience and Preparation</p>
+<a class="btn" href="#">READ FULL POST</a>
+</div>
+<div class="item">
+<h4>MANAGED DETECTION AND RESPONSE</h4>
+<p>CVE-2024-4978: Backdoored Justice AV Solutions Viewer Software Used in Apparent Supply Chain Attack</p>
+<a class="btn" href="#">READ FULL POST</a>
+</div>
+<div class="item">
+<h4>RESEARCH</h4>
+<p>Rapid7 Releases the 2024 Attack Intelligence Report</p>
+<a class="btn" href="#">READ FULL POST</a>
+</div>
+<div class="item">
+<h4>METASPLOIT</h4>
+<p>Metasploit Wrap-Up 05/17/2024</p>
+<a class="btn" href="#">READ FULL POST</a>
+</div>
+</div>
+<a class="btn" href="#">VIEW ALL POSTS</a>
+</div>
+</div>
+<div class="section-title">
+<div class="line"></div>
+<h2>Confidently anticipate, pinpoint, and act to secure your organization.</h2>
+<a class="btn" href="#">LET'S TALK</a>
+<a class="btn" href="#">FOLLOW US</a>
+</div>
+<div class="footer">
+<div class="container">
+<div class="left">
+<img alt="Rapid7 Logo" class="logo" src="placeholder.png"/>
+<div class="links">
+<ul>
+<li><a href="#">Support &amp; Resources</a></li>
+<li><a href="#">Company</a></li>
+<li><a href="#">About Us</a></li>
+<li><a href="#">Connect with Us</a></li>
+</ul>
+</div>
+</div>
+<div class="right">
+<div class="column">
+<h4>SOLUTIONS</h4>
+<ul>
+<li><a href="#">Insight Platform</a></li>
+<li><a href="#">Managed Threat Complete</a></li>
+<li><a href="#">Cloud Risk Complete</a></li>
+</ul>
+</div>
+<div class="column">
+<h4>SUPPORT &amp; RESOURCES</h4>
+<ul>
+<li><a href="#">Product Support</a></li>
+<li><a href="#">Resource Library</a></li>
+<li><a href="#">Our Customers</a></li>
+<li><a href="#">Events &amp; Webcasts</a></li>
+<li><a href="#">Training &amp; Certification</a></li>
+<li><a href="#">Cybersecurity Fundamentals</a></li>
+<li><a href="#">Vulnerability &amp; Exploit Database</a></li>
+</ul>
+</div>
+<div class="column">
+<h4>CUSTOMER SUPPORT</h4>
+<p>+1-866-930-8113 (Toll Free)</p>
+<h4>SALES SUPPORT</h4>
+<p>+1-866-772-7437 (Toll Free)</p>
+<p>Need to report an Escalation or a Breach?</p>
+<a class="btn" href="#">GET HELP</a>
+</div>
+<div class="column">
+<h4>ABOUT US</h4>
+<ul>
+<li><a href="#">Company</a></li>
+<li><a href="#">Diversity, Equity, and Inclusion</a></li>
+<li><a href="#">Leadership</a></li>
+<li><a href="#">News &amp; Press Releases</a><!--</p--></li></ul></div></div></div></div></body></html></p></body></html>

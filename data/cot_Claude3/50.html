@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>lencr.org</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+        
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+        
+        section {
+            margin-bottom: 30px;
+        }
+        
+        h1 {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        
+        p {
+            line-height: 1.5;
+        }
+        
+        footer {
+            background-color: #f2f2f2;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="placeholder.png" alt="Logo">
+        <nav>
+            <a href="#">Documentation</a>
+            <a href="#">Get Help</a>
+            <a href="#">Donate</a>
+            <a href="#">About Us</a>
+            <a href="#">Languages</a>
+        </nav>
+    </header>
+    
+    <main>
+        <section>
+            <h1>lencr.org</h1>
+            <p>伪根证书允许渗透测试</p>
+            <p>Last updated: Sep 30, 2022 | See all Documentation</p>
+        </section>
+        
+        <section>
+            <h1>What's lencr.org?</h1>
+            <p>lencr.org is a domain name owned by Let's Encrypt. We use it to host data that is referenced inside the certificates we issue.</p>
+        </section>
+        
+        <section>
+            <h1>Why is my computer fetching this data? Is it malicious?</h1>
+            <p>No, the data on lencr.org is never malicious. When a device connects to lencr.org, it's because client software on that device (like a web browser or an app) connected to another site, saw a Let's Encrypt certificate, and is trying to verify that it's valid. This is routine for many clients.</p>
+            <p>We can't speak to whether the other site being connected to is malicious. If you're investigating network activity that seems unusual, then you may want to focus on the connection that started just before the connection to lencr.org.</p>
+            <p>The pattern of clients' connections to lencr.org might look unusual or intermittent. Clients might never retrieve this data, only retrieve subsets of it, or "cache" some data for efficiency, so they'll only access it sometimes (the first time they need it, and when the data may have expired).</p>
+        </section>
+        
+        <!-- Other sections omitted for brevity -->
+    </main>
+    
+    <footer>
+        <img src="placeholder.png" alt="Logo">
+        <p>Let's Encrypt is a free, automated, and open certificate authority brought to you by the nonprofit Internet Security Research Group (ISRG).</p>
+        <p>Read all about our nonprofit work this year in our 2022 Annual Report.</p>
+        <p>View our privacy policy</p>
+        <p>View our trademark policy</p>
+        <p>548 Market St, PMB 77519, San Francisco, CA 94104-5401, USA</p>
+        <p>Send all mail or inquiries to:</p>
+        <p>P.O.Box 19606, Minneapolis, MN 55418-0606, USA</p>
+    </footer>
+</body>
+</html>

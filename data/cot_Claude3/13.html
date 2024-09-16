@@ -1,0 +1,303 @@
+<html><body><p>
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Documentation Simplified</title>
+<style>
+    /* CSS Reset */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.5;
+      color: #333;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: #f2f2f2;
+    }
+
+    nav a {
+      color: #333;
+      text-decoration: none;
+      margin-right: 20px;
+    }
+
+    nav a:last-child {
+      margin-right: 0;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 80px 20px;
+      background-color: #f9f9f9;
+    }
+
+    .hero h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      padding: 40px 20px;
+    }
+
+    .feature {
+      background-color: #f2f2f2;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .feature.dark {
+      background-color: #333;
+      color: #fff;
+    }
+
+    .feature.purple {
+      background-color: #8a2be2;
+      color: #fff;
+    }
+
+    .features-list {
+      padding: 40px 20px;
+    }
+
+    .features-list h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .features-list ul {
+      list-style-type: none;
+    }
+
+    .features-list li {
+      margin-bottom: 10px;
+    }
+
+    .cta {
+      text-align: center;
+      padding: 40px 20px;
+      background-color: #f9f9f9;
+    }
+
+    .code-example {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      padding: 40px 20px;
+    }
+
+    .product {
+      text-align: center;
+    }
+
+    .product img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    footer nav {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 10px;
+    }
+
+    footer nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-right: 20px;
+    }
+
+    footer nav a:last-child {
+      margin-right: 0;
+    }
+  </style>
+</head>
+<body>
+<header>
+<img alt="Logo" src="placeholder.png"/>
+<nav>
+<a href="#">Product</a>
+<a href="#">Pricing</a>
+<a href="#">Resources</a>
+<a href="#">Log in</a>
+<a href="#">Sign up</a>
+</nav>
+</header>
+<main>
+<section class="hero">
+<h1>Documentation simplified</h1>
+<p>Build, host, and share documentation, all with a single platform.</p>
+<button>Sign up now</button>
+<img alt="Screenshot" src="placeholder.png"/>
+</section>
+<section class="features-grid">
+<div class="feature">
+<h3>Easy previews and edits</h3>
+<p>Preview changes on every commit to see your documents live before merging.</p>
+</div>
+<div class="feature dark">
+<h3>Ideal developer experience</h3>
+<p>Write documentation without cloning your codebase or your build tools &amp; steps as a side approach.</p>
+</div>
+<div class="feature purple">
+<h3>Work privately or publicly</h3>
+<p>Easily share which your team or with the world, giving you total control and privacy or automatically with GitBook.</p>
+</div>
+</section>
+<section class="features-list">
+<h2>Features</h2>
+<ul>
+<li>
+<h3>Supports any dev tool</h3>
+<p>Integrated support for Bitbuck, GitLab, GitHub, GitBook, Heroku enough to work with any dev process/toolstack tool.</p>
+</li>
+<li>
+<h3>Integrated search</h3>
+<p>Catch words and phrases that other databases can't run your users a more powerful search with up-to-date 100.</p>
+</li>
+<li>
+<h3>Pull request previews</h3>
+<p>Review each pull request before changes are merged, allowing for real collaboration across your organization.</p>
+</li>
+<li>
+<h3>Versioned docs</h3>
+<p>Match your product release cycle with multiple versions of your docs. Automatically build versions from any branch or tag.</p>
+</li>
+<li>
+<h3>Private repository support</h3>
+<p>Clone private repositories using a command (GitHub, GitLab, or Bitbucket account, or clone from any Git provider with an SSH key.</p>
+</li>
+<li>
+<h3>Single Sign-On</h3>
+<p>Sign up for Read the Docs with your organization's integrated authentication. Enable SSO with GitLab or GitHub to using identity providers for your users.</p>
+</li>
+</ul>
+<button>Discover all our features →</button>
+</section>
+<section class="cta">
+<h2>Upgrade your documentation with Read the Docs</h2>
+<div class="code-example">
+<pre>
+import os
+import sys
+
+sys.path.append(os.path.abspath('_ext'))
+extensions = ['yasfb']
+
+# Breathe configuration
+extensions += ['breathe']
+breathe_default_project = "myproject"
+		
+# Setup the breathe extension
+breathe_projects = {
+    "myproject": "./doxyoutput/xml"
+}
+
+html_theme = 'sphinx_rtd_theme'
+		
+source_suffix = ['.rst', '.md']
+		</pre>
+</div>
+<div>
+<h3>Create an account</h3>
+<p>Sign up for a Read the Docs account.</p>
+</div>
+<div>
+<h3>Import your project</h3>
+<p>Import a code from GitHub, GitLab, Bitbucket, or a public or private Git repository.</p>
+</div>
+<div>
+<h3>Add YML config</h3>
+<p>Tell Read the Docs where your documentation files live and you're all set!</p>
+</div>
+<div>
+<h3>Your docs look factory content</h3>
+<p>With one click you can build and serve your documentation.</p>
+</div>
+<h3>Join thousands of happy users</h3>
+<div class="product-grid">
+<div class="product">
+<img alt="Flask" src="placeholder.png"/>
+<h4>Flask</h4>
+<p>The Python micro framework that keeps a small core and easy to extend philosophy.</p>
+</div>
+<div class="product">
+<img alt="Jupyter" src="placeholder.png"/>
+<h4>Jupyter</h4>
+<p>Jupyter Notebook is a web-based interactive computational environment for creating Jupyter notebooks, code, and data visualizations.</p>
+</div>
+<div class="product">
+<img alt="Cloud Engine" src="placeholder.png"/>
+<h4>Cloud Engine</h4>
+<p>Cloud Engine is a fast and open source serverless platform. Deploy code up to 100ms of a single engine.</p>
+</div>
+</div>
+<p>Get your docs online in 5 minutes.</p>
+<button>Learn more →</button>
+</section>
+</main>
+<footer>
+<nav>
+<a href="#">EVA UPDATES</a>
+<a href="#">Changelog</a>
+<a href="#">Newsletter</a>
+<a href="#">Blog</a>
+<a href="#">Docs</a>
+</nav>
+<nav>
+<a href="#">LEARN MORE</a>
+<a href="#">Getting started</a>
+<a href="#">Installation guide</a>
+<a href="#">Command reference</a>
+<a href="#">Contributing</a>
+<a href="#">Version control</a>
+</nav>
+<nav>
+<a href="#">PRODUCT</a>
+<a href="#">Features</a>
+<a href="#">Pricing</a>
+<a href="#">Security policy</a>
+<a href="#">Status</a>
+<a href="#">Product updates</a>
+</nav>
+<nav>
+<a href="#">COMPANY</a>
+<a href="#">About us</a>
+<a href="#">Careers</a>
+<a href="#">Customers with Us</a>
+</nav>
+<p>© Copyright 2023, Read the Docs, Inc. All rights reserved.</p>
+</footer>
+</body>
+</html>
+</p></body></html>

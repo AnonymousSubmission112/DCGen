@@ -1,0 +1,520 @@
+<html><body><p>
+<!DOCTYPE html>
+
+<html>
+<head>
+<style>
+body {
+  background-color: #f2f2f2;
+  font-family: sans-serif;
+}
+
+.header {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.header h1 {
+  margin: 0;
+}
+
+.header .logo {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 20px;
+}
+
+.header .nav {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.header .nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header .nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.header .nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.header .nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.header .buttons {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.header .buttons button {
+  background-color: #f8f9fa;
+  border: none;
+  color: #333;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 4px;
+}
+
+.header .buttons button:hover {
+  background-color: #e9ecef;
+}
+
+.header .language {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 20px;
+}
+
+.header .language a {
+  color: white;
+  text-decoration: none;
+}
+
+.header .language a:hover {
+  text-decoration: underline;
+}
+
+.header .language select {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 16px;
+  padding: 8px 16px;
+  margin: 4px 2px;
+  border-radius: 4px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.header .language select:hover {
+  background-color: #e9ecef;
+}
+
+.header .language select option {
+  color: black;
+}
+
+.container {
+  background-color: #fff;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 8px;
+}
+
+.container h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.container p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.container .buttons {
+  margin-top: 20px;
+}
+
+.container .buttons button {
+  background-color: #ffc107;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 4px;
+}
+
+.container .buttons button:hover {
+  background-color: #e0a800;
+}
+
+.container .image {
+  width: 300px;
+  height: 200px;
+  background-color: #ccc;
+  margin-left: 20px;
+}
+
+.partners {
+  padding: 20px;
+  margin: 20px;
+  border-radius: 8px;
+}
+
+.partners h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.partners .logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.partners .logos .logo {
+  width: 150px;
+  height: 100px;
+  background-color: #ccc;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.partners .logos .logo img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.partners .content {
+  padding: 20px;
+  background-color: #fff;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+.partners .content h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.partners .content p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.partners .content .buttons {
+  margin-top: 20px;
+}
+
+.partners .content .buttons button {
+  background-color: #ffc107;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 4px;
+}
+
+.partners .content .buttons button:hover {
+  background-color: #e0a800;
+}
+
+.footer {
+  background-color: #007bff;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.footer ul li {
+  margin: 0 20px;
+}
+
+.footer ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer .contact {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.footer .contact button {
+  background-color: #ffc107;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 4px;
+}
+
+.footer .contact button:hover {
+  background-color: #e0a800;
+}
+
+.footer .social {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.footer .social .icon {
+  width: 30px;
+  height: 30px;
+  background-color: #ccc;
+  margin: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer .social .icon img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.footer .copyright {
+  margin-top: 20px;
+}
+
+.footer .copyright ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.footer .copyright ul li {
+  margin: 0 20px;
+}
+
+.footer .copyright ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer .copyright ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer .copyright .social {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.footer .copyright .social .icon {
+  width: 30px;
+  height: 30px;
+  background-color: #ccc;
+  margin: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer .copyright .social .icon img {
+  max-width: 100%;
+  max-height: 100%;
+}
+</style>
+</head>
+<body>
+<header class="header">
+<div class="container">
+<img alt="Taboola Logo" class="logo" src="placeholder.png"/>
+<nav class="nav">
+<ul>
+<li><a href="#">Advertisers</a></li>
+<li><a href="#">Publishers</a></li>
+<li><a href="#">Taboola News</a></li>
+<li><a href="#">About</a></li>
+<li><a href="#">Resources</a></li>
+<li><a href="#">Investors</a></li>
+</ul>
+</nav>
+<div class="buttons">
+<button>CONTACT</button>
+<button>LOGIN</button>
+</div>
+<div class="language">
+<a href="#">
+<img alt="Globe Icon" src="placeholder.png"/>
+</a>
+<select>
+<option value="en">EN</option>
+<option value="fr">FR</option>
+<option value="es">ES</option>
+</select>
+</div>
+</div>
+</header>
+<section class="container">
+<h2>REACH YOUR CUSTOMERS ON WEBSITES THEY TRUST</h2>
+<p>Drive business results by reaching people genuinely, effectively and at the right moment.</p>
+<div class="buttons">
+<button>Contact Us</button>
+<button>Learn More</button>
+</div>
+<div class="image">
+<img alt="Image Placeholder" src="placeholder.png"/>
+</div>
+</section>
+<section class="partners">
+<h3>Exclusive Partnerships with Top Publishers Around the Globe</h3>
+<div class="logos">
+<div class="logo">
+<img alt="Logo Placeholder" src="placeholder.png"/>
+</div>
+<div class="logo">
+<img alt="Logo Placeholder" src="placeholder.png"/>
+</div>
+<div class="logo">
+<img alt="Logo Placeholder" src="placeholder.png"/>
+</div>
+<div class="logo">
+<img alt="Logo Placeholder" src="placeholder.png"/>
+</div>
+<div class="logo">
+<img alt="Logo Placeholder" src="placeholder.png"/>
+</div>
+<div class="logo">
+<img alt="Logo Placeholder" src="placeholder.png"/>
+</div>
+</div>
+<div class="content">
+<h4>Reach your audience in new places</h4>
+<p>Find and engage over one billion relevant users across premium publishers, at a massive scale on the world leading native advertising platform.</p>
+<h4>Create meaningful engagements</h4>
+<p>Create unique and relevant ad experiences using Taboola's user behaviour data and flexible creative formats.</p>
+<h4>Drive marketing results</h4>
+<p>Meet your marketing objectives – build awareness, generate high value leads and encourage customers to take action online.</p>
+<div class="buttons">
+<button>Learn More</button>
+</div>
+</div>
+</section>
+<footer class="footer">
+<div class="container">
+<ul>
+<li>
+<h4>Advertisers</h4>
+<ul>
+<li><a href="#">Advertise</a></li>
+<li><a href="#">Awareness</a></li>
+<li><a href="#">Consideration</a></li>
+<li><a href="#">Conversions</a></li>
+<li><a href="#">Native Advertising</a></li>
+<li><a href="#">GenAI Ad Maker</a></li>
+<li><a href="#">Creative Shop</a></li>
+<li><a href="#">Connexity</a></li>
+</ul>
+</li>
+<li>
+<h4>Digital Properties</h4>
+<ul>
+<li><a href="#">Publishers</a></li>
+<li><a href="#">Taboola Newsroom</a></li>
+<li><a href="#">Taboola News</a></li>
+<li><a href="#">Skimlinks</a></li>
+</ul>
+</li>
+<li>
+<h4>About</h4>
+<ul>
+<li><a href="#">Our Story</a></li>
+<li><a href="#">Social Responsibility</a></li>
+<li><a href="#">Careers</a></li>
+<li><a href="#">Offices</a></li>
+<li><a href="#">Press Center</a></li>
+<li><a href="#">Management</a></li>
+<li><a href="#">Board</a></li>
+</ul>
+</li>
+<li>
+<h4>Resources</h4>
+<ul>
+<li><a href="#">Taboola Blog</a></li>
+<li><a href="#">Engineering Blog</a></li>
+<li><a href="#">All Resources</a></li>
+<li><a href="#">Brand Guidelines</a></li>
+<li><a href="#">Advertisers Help Center</a></li>
+<li><a href="#">Publishers Help Center</a></li>
+<li><a href="#">Dev Center</a></li>
+<li><a href="#">Content Policies</a></li>
+<li><a href="#">Trust Center</a></li>
+</ul>
+</li>
+<li>
+<h4>Contact Us</h4>
+<div class="contact">
+<button>Contact Us</button>
+</div>
+<div class="social">
+<div class="icon">
+<img alt="Social Icon" src="placeholder.png"/>
+</div>
+<div class="icon">
+<img alt="Social Icon" src="placeholder.png"/>
+</div>
+<div class="icon">
+<img alt="Social Icon" src="placeholder.png"/>
+</div>
+<div class="icon">
+<img alt="Social Icon" src="placeholder.png"/>
+</div>
+</div>
+</li>
+</ul>
+<div class="copyright">
+<ul>
+<li><a href="#">Cookie Policy</a></li>
+<li><a href="#">Terms of Use</a></li>
+<li><a href="#">Opt Out</a></li>
+<li><a href="#">3rd Party Online Advertising</a></li>
+<li><a href="#">Do Not Sell or Share My Personal Info</a></li>
+<li><a href="#">OSS Attribution</a></li>
+</ul>
+<div class="social">
+<div class="icon">
+<img alt="Social Icon" src="placeholder.png"/>
+</div>
+<div class="icon">
+<img alt="Social Icon" src="placeholder.png"/>
+</div>
+<div class="icon">
+<img alt="Social Icon" src="placeholder.png"/>
+</div>
+</div>
+</div>
+</div>
+</footer>
+</body>
+</html>
+</p></body></html>

@@ -1,0 +1,171 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lencr.org</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+            color: #333;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #F1F1F1;
+            border-bottom: 1px solid #E1E1E1;
+        }
+
+        header nav a {
+            text-decoration: none;
+            color: #0063cb;
+            margin: 0 10px;
+            font-size: 14px;
+        }
+
+        header nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        h1 {
+            font-size: 2em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 1.5em;
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+
+        h3 {
+            font-size: 1.2em;
+            margin-bottom: 5px;
+        }
+
+        img {
+            width: 100%;
+            max-width: 150px;
+            display: block;
+            margin: 0 auto 20px auto;
+        }
+
+        a {
+            color: #0063cb;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        p {
+            line-height: 1.5;
+            margin-bottom: 15px;
+        }
+
+        .footer {
+            background-color: #F1F1F1;
+            padding: 10px 20px;
+            margin-top: 40px;
+            border-top: 1px solid #E1E1E1;
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+            color: #666;
+        }
+
+        .footer a {
+            margin: 0 5px;
+            color: #0063cb;
+        }
+
+        .newsletter {
+            padding: 10px;
+            border: 1px solid #E1E1E1;
+            background-color: #fff;
+            width: calc(50% - 20px);
+        }
+
+        .newsletter h3 {
+            font-size: 1em;
+            margin-top: 0;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#"><img src="placeholder.png" alt="Logo"></a>
+        <nav>
+            <a href="#">Documentation</a>
+            <a href="#">Get Help</a>
+            <a href="#">Donate</a>
+            <a href="#">About Us</a>
+            <a href="#">Languages</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>lencr.org</h1>
+        <p><a href="#">该页面的中文版本在此访问.</a></p>
+        <p>Last updated: Sep 30, 2022 | <a href="#">See all Documentation</a></p>
+
+        <h2>What's <img src="placeholder.png" alt="lencr.org logo">?</h2>
+        <p><strong>lencr.org</strong> is a domain name owned by Let's Encrypt. We use it to host data that is referenced inside the certificates we issue.</p>
+
+        <h2>Why is my computer fetching this data? Is it malicious?</h2>
+        <p>No, the data on <strong>lencr.org</strong> is never malicious. When a device connects to <strong>lencr.org</strong>, it's because client software on that device (like a web browser or an app) connected to another site, saw a Let's Encrypt certificate, and is trying to verify that it's valid. This is routine for many clients.</p>
+        <p>We can't speak to whether the other site being connected to is malicious. If you're investigating network activity that seems unusual, then you may want to focus on the connection that started just before the connection to <strong>lencr.org</strong>.</p>
+        <p>The pattern of 'client' connections to <strong>lencr.org</strong> might look unusual or intermittent. Clients might never retrieve this data, only retrieve subsets of it, or 'cache' some data for efficiency, so they'll only access it sometimes (the first time they need it, and when the data may have expired).</p>
+
+        <h2>What exactly is this data for?</h2>
+        <p>When client software (like a web browser or an app) connects to a site, and that site presents a certificate, the client should verify that the certificate is authentic and valid. This data helps clients do that in several ways:</p>
+        <ul>
+            <li>Under <strong>r3.lencr.org</strong>, we provide Online Certificate Status Protocol (OCSP) data. A client may use this data to confirm whether an individual unexpired certificate that we issued is still valid, or was revoked. (This is only for "end-entity" or "leaf" certificates, which we've issued to subscribers from one of our intermediate certificates).</li>
+            <li>Under <strong>a.lencr.org</strong>, we provide Certificate Revocation Lists (CRLs) listing all the unexpired certificates that we issued and later revoked.</li>
+            <li>Under <strong>i.lencr.org</strong>, we provide copies of our intermediate "issuer" certificates, which are either signed by one of our root certificates or "cross-signed" by another Certificate Authority (CA). A client may use this data to confirm the "chain of trust" from the end-entity certificate it's verifying, via one or more intermediate steps, to a root CA certificate that it recognizes and trusts.</li>
+        </ul>
+
+        <h2>Why are connections to <strong>a.lencr.org</strong> over insecure HTTP?</h2>
+        <p>OCSP responses are always served over HTTP. If they were served over HTTPS, there would be an "infinite loop" problem: in order to verify the OCSP server's certificate, the client would have to use OCSP!</p>
+        <p>The OCSP response itself is timestamped and cryptographically signed, so the anti-tampering properties of TLS aren't needed in this case.</p>
+
+        <h2>Why "<strong>lencr.org</strong>"?</h2>
+        <p>We used to use longer URLs like "http://ocsp.int-x1.letsencrypt.org/". However, when we issued our new root and intermediate certificates, we wanted to make them as small as possible. Every HTTPS connection on the web (before and after) has to send a copy of a certificate, so every byte matters. We chose "lencr.org" because of its similarity with our name, Let's Encrypt, yet we shortened it into the shortest region of letters in Terry Pratchett's Discworld novels.</p>
+
+        <p>Let's Encrypt is a free, automated, and open certificate authority brought to you by the nonprofit Internet Security Research Group. <a href="#">Read all about our nonprofit work this year in our 2022 Annual Report.</a></p>
+        <p>548 Market St, PMB 77519, San Francisco, CA 94104-5401, USA</p>
+
+        <p>Send all mail or inquiries to:</p>
+        <p>P.O.Box 19666, Minneapolis, MN 55418-0666, USA</p>
+    </div>
+
+    <div class="footer">
+        <div>
+            <p>Learn more about our <a href="#">annual report</a></p>
+            <p>P.O. Box 1688, Minneapolis, MN 55416-0688, USA</p>
+        </div>
+        <div class="newsletter">
+            <h3>Subscribe to our Newsletter</h3>
+            <p><a href="#">View our newsletter archives</a></p>
+            <p><a href="#">View our privacy policy</a></p>
+            <p><a href="#">View our statement policy</a></p>
+        </div>
+    </div>
+</body>
+</html>

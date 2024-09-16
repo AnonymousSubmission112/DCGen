@@ -1,0 +1,227 @@
+<html><body><p><!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>UNPKG</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        line-height: 1.6;
+        background-color: #fff;
+        color: #333;
+    }
+    .container {
+        width: 60%;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    h1 {
+        text-align: center;
+        font-size: 3em;
+        margin-top: 20px;
+    }
+    p {
+        text-align: left;
+        font-size: 1em;
+        color: #666;
+    }
+    code {
+        display: block;
+        text-align: left;
+        background-color: #f9f9f9;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        margin: 20px 0;
+        width: 95%;
+    }
+    a {
+        color: #007bff;
+        text-decoration: none;
+    }
+    .section h2 {
+        font-size: 1.5em;
+        margin-top: 30px;
+    }
+    .section p, .section ul {
+        margin: 10px 0;
+    }
+    ul {
+        list-style-type: disc;
+        padding-left: 20px;
+    }
+    ul li {
+        margin: 5px 0;
+    }
+    ul li a {
+        display: block;
+    }
+    img {
+        display: block;
+        margin: 20px auto;
+        width: 150px;
+        height: 150px;
+        background-image: url('placeholder.png');
+        background-size: cover;
+    }
+    footer {
+        text-align: center;
+        margin-top: 50px;
+        color: #666;
+        font-size: 0.8em;
+    }
+    footer a {
+        color: #333;
+    }
+    .section ul {
+        list-style: none;
+    }
+    .section ul li {
+        margin: 5px 0;
+    }
+    .section ul li a {
+        display: block;
+    }
+    .section p {
+        margin: 10px 0;
+    }
+    .section p:last-of-type {
+        margin-bottom: 20px;
+    }
+    footer a {
+        color: #333;
+    }
+    footer .heart {
+        font-size: 1.2em;
+        position: relative;
+        top: 2px;
+    }
+    footer .twitter {
+        background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNnB4IiBoZWlnaHQ9IjE2cHgibmllPSJ0cmFuc2Zvcm0oMC41LDApIj48cGF0aCBmaWxsPSIjMzMzIiBkPSJNMjUuMDk0LDE2LjU2NCAxMi4wNzMsOS41NjkgNC4wNTIsMTUuNTY0IDEuMDc2LDguNTczIDEyLjA3Myw0LjU2OSAyNS4wOTQsMTAuNTY0IDE2LjA3MywxNS41NjkgdjE2LjA3MyB6Ii8+PC9zdmc+");
+        background-size: contain;
+        background-repeat: no-repeat;
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        margin-left: 10px;
+        vertical-align: middle;
+    }
+    footer .github {
+        background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNnB4IiBoZWlnaHQ9IjE2cHgibmllPSJ0cmFuc2Zvcm0oMC41LDApIj48cGF0aCBmaWxsPSIjMzMzIiBkPSJNMjAuNjg3LDguMTQ0IDEwLjM2MiwyLjgwMyAzLjM0MSw5LjI2NyAxLjYyOCwyLjU3NyA2LjAwNSwyLjgwMyAxNy4zMjYsOC4xNDQgMTcuMzI2LDIzLjQzNyA2LjAwNSwyMy43NzkgMS42MjgsMjEuMDg5IDMuMzQxLDIzLjI4NCAxMC4zNjIsMjkuMjA4IDIwLjY4NywyMy40MzcgMjAuNjg3LDguMTQ0IFoiLz48L3N2Zz4=");
+        background-size: contain;
+        background-repeat: no-repeat;
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        margin-left: 10px;
+        vertical-align: middle;
+    }
+    .section ul li {
+        margin-left: 30px;
+    }
+    .section ul li a {
+        color: #007bff;
+    }
+    .section ul li a:hover {
+        color: #0056b3;
+    }
+    .section p:nth-child(odd) {
+        text-align: left;
+    }
+    .section p:nth-child(even) {
+        text-align: left;
+        font-style: italic;
+    }
+    .section p:nth-child(even) strong {
+        font-weight: bold;
+        font-style: normal;
+    }
+    .section p:last-of-type {
+        margin-bottom: 20px;
+    }
+    p:last-of-type {
+        margin-bottom: 20px;
+    }
+    .section h2 {
+        font-weight: bold;
+    }
+    .section p strong {
+        font-weight: bold;
+    }
+    .section p:first-of-type {
+        margin-top: 20px;
+    }
+    .section ul li:first-of-type {
+        margin-top: 10px;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+<h1>UNPKG</h1>
+<p>unpkg is a fast, global content delivery network for everything on <a href="#">npm</a>. Use it to quickly and easily load any file from any package using a URL like:</p>
+<code>unpkg.com/[package]@[version][/file]</code>
+<div class="section">
+<h2>Examples</h2>
+<p>Using a fixed version:</p>
+<ul>
+<li><a href="#">unpkg.com/react@16.7.0/umd/react.production.min.js</a></li>
+<li><a href="#">unpkg.com/react-dom@16.7.0/umd/react-dom.production.min.js</a></li>
+</ul>
+<p>You may also use a semver range or a tag instead of a fixed version number, or omit the version/ tag entirely to use the <strong>latest</strong> tag.</p>
+<ul>
+<li><a href="#">unpkg.com/react@16/umd/react.production.min.js</a></li>
+<li><a href="#">unpkg.com/react/umd/react.production.min.js</a></li>
+</ul>
+<p>If you omit the file path (i.e. use a "bare" URL), unpkg will serve the file specified by the unpkg field in <strong>package.json</strong>, or fall back to <strong>main</strong>.</p>
+<ul>
+<li><a href="#">unpkg.com/jquery</a></li>
+<li><a href="#">unpkg.com/three</a></li>
+</ul>
+<p>Append a <strong>/</strong> at the end of a URL to view a listing of all the files in a package.</p>
+<ul>
+<li><a href="#">unpkg.com/react/</a></li>
+<li><a href="#">unpkg.com/react-router/</a></li>
+</ul>
+</div>
+<div class="section">
+<h2>Query Parameters</h2>
+<p>?meta</p>
+<p><em>Returns metadata about any file in a package as JSON (e.g., /any/file?meta)</em></p>
+<p>?module</p>
+<p><em>Expands all <strong>"bare" import</strong> specifiers in JavaScript modules to unpkg URLs. This feature is very experimental</em></p>
+</div>
+<div class="section">
+<h2>Cache Behavior</h2>
+<p>The CDN caches files based on their permanent URL, which includes the npm package version. This works because npm does not allow package authors to overwrite a package that has already been published with a different one at the same version number.</p>
+<p>Browsers are instructed (via the <strong>Cache-Control</strong> header) to cache assets indefinitely (1 year).</p>
+<p>URLs that do not specify a package version number redirect to one that does. This is the <strong>latest</strong> version when no version is specified, or the <strong>next</strong> tag when a <strong>semver</strong> version is given. Redirects are cached for 10 minutes at the CDN, 1 minute in browsers.</p>
+<p>If you want users to be able to use the latest version when you cut a new release, the best policy is to put the version number in the URL directly in your installation instructions. This will also load more quickly because we won't have to resolve the latest version and redirect them.</p>
+</div>
+<div class="section">
+<h2>Workflow</h2>
+<p>For npm package authors, unpkg relieves the burden of publishing your code to a CDN in addition to the npm registry. All you need to do is include your <strong>UMD</strong> build in your npm package (not your repo, that's different!).</p>
+<p>You can do this easily using the following setup:</p>
+<ul>
+<li>Add the <strong>umd</strong> (or <strong>dist</strong>) directory to your <strong>.gitignore</strong> file</li>
+<li>Add the <strong>umd</strong> directory to your <strong>files</strong> array in <strong>package.json</strong></li>
+<li>Use a build script to generate your <strong>UMD</strong> build in the <strong>umd</strong> directory when you publish</li>
+</ul>
+<p>That's it! Now when you <strong>npm publish</strong> you'll have a version available on unpkg as well.</p>
+</div>
+<div class="section">
+<h2>About</h2>
+<p>unpkg is an <a href="#">open source</a> project built and maintained by <a href="#">Michael Jackson</a>. unpkg is not affiliated with or supported by npm, Inc. in any way. Please do not contact npm for help with unpkg. Instead, please reach out to <a href="#"> @unpkg</a> or <a href="#">twitter</a> with any questions or concerns.</p>
+<p>The unpkg CDN is powered by <a href="#">Cloudflare</a>, one of the world's largest and fastest cloud network platforms.</p>
+<img alt="Placeholder Image" src="placeholder.png"/>
+<p>The origin server runs on auto-scaling infrastructure provided by <a href="#">Fly.io</a>. The app servers run in 17 cities around the world, and come and go based on active requests.</p>
+<img alt="Placeholder Image" src="placeholder.png"/>
+</div>
+<footer>Built with <a href="#"><span class="heart">❤️</span></a> by <a href="#">Zefir</a> © 2024 UNPKG <a class="twitter" href="#"></a><a class="github" href="#"></a></footer>
+</div>
+</body>
+</html></p></body></html>

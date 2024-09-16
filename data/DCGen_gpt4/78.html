@@ -1,0 +1,450 @@
+<html><body><p>
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Replicated Webpage</title>
+<style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+
+        .header {
+            background-color: #e5f7fb;
+            color: #0092d6;
+            text-align: center;
+            padding: 5px 0;
+            font-size: 0.9em;
+        }
+
+        .header a {
+            color: #0092d6;
+            text-decoration: none;
+            margin-left: 10px;
+        }
+
+        .header a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f6f8fa;
+            padding: 40px;
+        }
+
+        .content {
+            max-width: 1200px;
+            display: flex;
+            background-color: #ffffff;
+        }
+
+        .image-section,
+        .text-section {
+            width: 50%;
+            padding: 20px;
+        }
+
+        .image-section img {
+            width: 100%;
+            height: auto;
+        }
+
+        .text-section {
+            color: #333;
+            margin-left: 20px;
+        }
+
+        .text-section h2 {
+            font-size: 28px;
+            font-weight: bold;
+            color: #004b91;
+        }
+
+        .text-section p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        .segment-container {
+            background-color: #d4f0f7;
+            padding: 50px;
+            text-align: center;
+        }
+
+        .segment-container h2 {
+            color: #004d76;
+            font-size: 24px;
+            margin-bottom: 40px;
+        }
+
+        .metrics {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .metric {
+            margin: 20px;
+        }
+
+        .metric-value {
+            color: #0099cc;
+            font-size: 36px;
+            font-weight: 700;
+        }
+
+        .metric-label {
+            color: #004d76;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+        .content-area {
+            display: flex;
+            justify-content: space-between;
+            padding: 40px;
+        }
+
+        .content-box {
+            width: 48%;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .content-box img {
+            width: 64px;
+            height: 64px;
+            margin-bottom: 20px;
+        }
+
+        .content-box h3 {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .content-box p {
+            font-size: 1em;
+            margin-bottom: 20px;
+            color: #666;
+        }
+
+        .content-box a {
+            font-size: 1em;
+            color: #ff6600;
+            text-decoration: none;
+        }
+
+        .content-box a:hover {
+            text-decoration: underline;
+        }
+
+        .testimonial-section {
+            background-color: #d6f2ff;
+            padding: 40px;
+            text-align: center;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+
+        .testimonial-quote {
+            font-size: 24px;
+            font-style: italic;
+            color: #03396c;
+            margin-bottom: 20px;
+        }
+
+        .testimonial-author {
+            font-size: 18px;
+            color: #03396c;
+            font-weight: bold;
+        }
+
+        .section {
+            background-color: #EAF8F7;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .section h2 {
+            font-size: 24px;
+            font-weight: bold;
+            color: #E34613;
+            margin-bottom: 20px;
+        }
+
+        .images {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .images img {
+            width: 100px;
+            height: 100px;
+        }
+
+        .engagement-section {
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ff0000;
+            margin: 10px 0;
+        }
+
+        .subtitle {
+            font-size: 18px;
+            color: #888888;
+            margin: 10px 0;
+        }
+
+        .button-container {
+            margin-top: 20px;
+        }
+
+        .button {
+            background-color: #007bff;
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .footer {
+            background-color: #f9f9f9;
+            padding: 40px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            border-top: 1px solid #e1e1e1;
+        }
+
+        .footer-column h4 {
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .footer-column ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-column ul li {
+            margin-bottom: 8px;
+        }
+
+        .footer-column ul li a {
+            text-decoration: none;
+            color: #0077cc;
+        }
+
+        .footer-column ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-bottom {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 14px;
+            color: #777;
+            width: 100%;
+        }
+
+        .footer-bottom a {
+            color: #0077cc;
+            text-decoration: none;
+        }
+
+        .footer-bottom a:hover {
+            text-decoration: underline;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        .social-icons a {
+            margin: 0 10px;
+            color: #0077cc;
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    ★ New Science &amp; Nature Channel is live! 🎉 <a href="#">Join the fun »</a>
+</div>
+<div class="content">
+<div class="image-section">
+<img alt="Placeholder Image" src="placeholder.png"/>
+</div>
+<div class="text-section">
+<h2>More publishers trust us than any other audience engagement platform.</h2>
+<p>With the deprecation of third-party cookies, the rise of the walled gardens, and the era of internet toxicity spurred by mis- and dis-information, it’s a challenging time to be a publisher.</p>
+<p>All of these issues have potential impact on how publishers maintain a loyal, engaged community and generate revenue from quality content.</p>
+<p>Disqus is in business to preserve the future of audience engagement on the open internet. We are the largest audience engagement platform, used by hundreds of thousands of publishers that want to keep conversations and community on-site where they belong.</p>
+<p>Whether you’re a small blog or large media hub, Disqus connects you to millions of global users in our web-wide community network. Our suite of customizable, easy-to-implement tools gives you widgets to fabricate rich comments systems, advanced administration and moderation options, and other extensive community functions, helping you turn readership into revenue without the manual work.</p>
+</div>
+</div>
+<div class="segment-container">
+<h2>The web's largest conversation platform</h2>
+<div class="metrics">
+<div class="metric">
+<div class="metric-value">50M+</div>
+<div class="metric-label">Monthly Comments</div>
+</div>
+<div class="metric">
+<div class="metric-value">2.5B+</div>
+<div class="metric-label">Monthly Impressions</div>
+</div>
+<div class="metric">
+<div class="metric-value">20M+<!--</div-->
+<div class="metric-label">Monthly Logged-in Commenters</div>
+</div>
+<div class="metric">
+<div class="metric-value">200+</div>
+<div class="metric-label">Countries Using Disqus</div>
+</div>
+</div>
+</div>
+<div class="content-area">
+<div class="content-box">
+<img alt="Placeholder Image" src="placeholder.png"/>
+<h3>Transform your casual, anonymous readers into loyal, authenticated users.</h3>
+<p>Build engaged communities by artfully promoting your best content and carefully fueling the best conversations.</p>
+<a href="#">Engage now »</a>
+</div>
+<div class="content-box">
+<img alt="Placeholder Image" src="placeholder.png"/>
+<h3>Protect your brand and loyal users with our best-in-class moderation panel and tooling.</h3>
+<p>Maintain a brand-safe comments section with automatic, AI-powered capabilities that cut the need to manually read and approve each post.</p>
+<a href="#">Moderate now »</a>
+</div>
+<div class="content-box">
+<img alt="Placeholder Image" src="placeholder.png"/>
+<h3>Track and understand your audience engagement with robust insights.</h3>
+<p>Understand which articles are performing best with your audience, and then optimize your content strategy to increase traffic and engagement.</p>
+<a href="#">Analyze now »</a>
+</div>
+<div class="content-box">
+<img alt="Placeholder Image" src="placeholder.png"/>
+<h3>Harness the power of your direct user relationships to unlock new revenue streams.</h3>
+<p>Whether it’s ramping up registrations using first-party data, setting up subscriptions, or activating advertising, our platform is built to support your growth.</p>
+<a href="#">Monetize now »</a>
+</div>
+</div>
+<div class="testimonial-section">
+<p class="testimonial-quote">
+        “With Disqus, we’ve been able to boost our registered audiences by 155% in just six months.”
+    </p>
+<p class="testimonial-author">
+        Destructoid
+    </p>
+</div>
+<div class="section">
+<h2>Flexible and optimized for your site’s needs</h2>
+<div class="images">
+<img alt="Placeholder Image" src="placeholder.png"/>
+<img alt="Placeholder Image" src="placeholder.png"/>
+<img alt="Placeholder Image" src="placeholder.png"/>
+<img alt="Placeholder Image" src="placeholder.png"/>
+<img alt="Placeholder Image" src="placeholder.png"/>
+<img alt="Placeholder Image" src="placeholder.png"/>
+<img alt="Placeholder Image" src="placeholder.png"/>
+<img alt="Placeholder Image" src="placeholder.png"/>
+<img alt="Placeholder Image" src="placeholder.png"/>
+<img alt="Placeholder Image" src="placeholder.png"/>
+<img alt="Placeholder Image" src="placeholder.png"/>
+<img alt="Placeholder Image" src="placeholder.png"/>
+</div>
+</div>
+<div class="engagement-section">
+<div class="title">
+        Turbocharge audience engagement with Disqus.
+    </div>
+<div class="subtitle">
+        Take control of community-building to rev up your revenue-generating potential.
+    </div>
+<div class="button-container">
+<a class="button" href="#">Get Started</a>
+</div>
+</div>
+<div class="footer">
+<div class="footer-column">
+<h4>Disqus</h4>
+<ul>
+<li><a href="#">Platform Overview</a></li>
+<li><a href="#">Engagement</a></li>
+<li><a href="#">Moderation &amp; Safety</a></li>
+<li><a href="#">Audience</a></li>
+<li><a href="#">Monetization</a></li>
+<li><a href="#">Pricing</a></li>
+<li><a href="#">Disqus Pro</a></li>
+<li><a href="#">Disqus for Business</a></li>
+<li><a href="#">Zeta SSP</a></li>
+</ul>
+</div>
+<div class="footer-column">
+<h4>Resources</h4>
+<ul>
+<li><a href="#">Blog</a></li>
+<li><a href="#">Support</a></li>
+<li><a href="#">Knowledge Base</a></li>
+<li><a href="#">Disqus 101</a></li>
+<li><a href="#">Discuss Disqus</a></li>
+<li><a href="#">Case Studies</a></li>
+<li><a href="#">API</a></li>
+<li><a href="#">Logos</a></li>
+</ul>
+</div>
+<div class="footer-column">
+<h4>About Us</h4>
+<ul>
+<li><a href="#">History</a></li>
+<li><a href="#">Mission</a></li>
+<li><a href="#">Culture</a></li>
+</ul>
+</div>
+<div class="footer-column">
+<h4>Learn</h4>
+<ul>
+<li><a href="#">How Does Disqus Work?</a></li>
+<li><a href="#">Community Tips</a></li>
+<li><a href="#">Increase Engagement &amp; Retention</a></li>
+<li><a href="#">Moderating 101</a></li>
+<li><a href="#">Developers</a></li>
+<li><a href="#">Other Integrations</a></li>
+</ul>
+</div>
+<div class="footer-bottom">
+        Channels
+        <div class="social-icons">
+<a href="#"><img alt="Social Icon" src="placeholder.png"/></a>
+<a href="#"><img alt="Social Icon" src="placeholder.png"/></a>
+<a href="#"><img alt="Social Icon" src="placeholder.png"/></a>
+</div>
+        © 2024 Disqus <a href="#">Terms</a> <a href="#">Privacy</a> <a href="#">Cookies</a> <a href="#">Do Not Sell or Share My Info</a>
+</div>
+</div>
+</div></body>
+</html>
+</p></body></html>

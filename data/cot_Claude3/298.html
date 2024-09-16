@@ -1,0 +1,332 @@
+<html><body><p>
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Website</title>
+<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+			background-color: #f2f2f2;
+		}
+		header {
+			background-color: #fff;
+			padding: 20px;
+			text-align: right;
+		}
+		header a {
+			color: #00b3e3;
+			text-decoration: none;
+			padding: 10px 20px;
+			border: 2px solid #00b3e3;
+			border-radius: 20px;
+		}
+		.hero {
+			background-color: #fff;
+			padding: 50px;
+			text-align: center;
+			position: relative;
+		}
+		.hero h1 {
+			color: #333;
+			font-size: 36px;
+			margin-bottom: 20px;
+		}
+		.hero p {
+			color: #666;
+			font-size: 18px;
+			margin-bottom: 40px;
+		}
+		.hero-image {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: 400px;
+			height: 200px;
+			background-color: #ccc;
+			border: 2px solid #00b3e3;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			color: #00b3e3;
+			font-size: 24px;
+			font-weight: bold;
+		}
+		.features {
+			display: flex;
+			justify-content: space-between;
+			padding: 50px;
+			background-color: #fff;
+		}
+		.feature {
+			width: 30%;
+			padding: 20px;
+			background-color: #f2f2f2;
+			text-align: center;
+		}
+		.feature h3 {
+			color: #333;
+			font-size: 24px;
+			margin-bottom: 10px;
+		}
+		.feature p {
+			color: #666;
+			font-size: 16px;
+		}
+		.testimonial {
+			background-color: #00b3e3;
+			color: #fff;
+			padding: 50px;
+			text-align: center;
+			position: relative;
+		}
+		.testimonial blockquote {
+			font-size: 24px;
+			margin-bottom: 20px;
+		}
+		.testimonial cite {
+			font-size: 18px;
+		}
+		.testimonial-image {
+			position: absolute;
+			bottom: 20px;
+			right: 20px;
+			width: 100px;
+			height: 100px;
+			background-color: #ccc;
+			border-radius: 50%;
+		}
+		.trends {
+			background-color: #fff;
+			padding: 50px;
+			text-align: center;
+		}
+		.trends h2 {
+			color: #333;
+			font-size: 36px;
+			margin-bottom: 20px;
+		}
+		.trends a {
+			color: #00b3e3;
+			text-decoration: none;
+			padding: 10px 20px;
+			border: 2px solid #00b3e3;
+			border-radius: 20px;
+		}
+		.trend-items {
+			display: flex;
+			justify-content: space-between;
+			margin-top: 40px;
+		}
+		.trend-item {
+			width: 30%;
+			background-color: #f2f2f2;
+			padding: 20px;
+			text-align: center;
+		}
+		.trend-item img {
+			width: 100%;
+			height: 200px;
+			object-fit: cover;
+			margin-bottom: 10px;
+		}
+		.trend-item h4 {
+			color: #333;
+			font-size: 18px;
+			margin-bottom: 10px;
+		}
+		.trend-item p {
+			color: #666;
+			font-size: 14px;
+		}
+		.stats {
+			background-color: #f2f2f2;
+			padding: 50px;
+			text-align: center;
+		}
+		.stats h2 {
+			color: #333;
+			font-size: 36px;
+			margin-bottom: 20px;
+		}
+		.stat-items {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin-top: 40px;
+		}
+		.stat-item {
+			width: 200px;
+			height: 200px;
+			background-color: #fff;
+			margin: 0 20px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			border-radius: 50%;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+		}
+		.stat-item h3 {
+			color: #333;
+			font-size: 48px;
+			margin-bottom: 10px;
+		}
+		.stat-item p {
+			color: #666;
+			font-size: 18px;
+		}
+		.cta {
+			background-color: #fff;
+			padding: 50px;
+			text-align: center;
+		}
+		.cta a {
+			color: #fff;
+			background-color: #00b3e3;
+			text-decoration: none;
+			padding: 10px 20px;
+			border-radius: 20px;
+			font-size: 18px;
+		}
+		footer {
+			background-color: #333;
+			color: #fff;
+			padding: 20px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+		footer nav ul {
+			list-style: none;
+			display: flex;
+		}
+		footer nav li {
+			margin-right: 20px;
+		}
+		footer nav a {
+			color: #fff;
+			text-decoration: none;
+		}
+		footer .social-icons a {
+			color: #fff;
+			margin-left: 10px;
+			font-size: 24px;
+		}
+	</style>
+</head>
+<body>
+<header>
+<a href="#">CONTACT US</a>
+</header>
+<div class="hero">
+<h1>WHO WILL WIN THEIR FAIR SHARE OF COMMERCE-MEDIA?</h1>
+<p>PubMatic maximizes customer value by delivering the programmatic digital marketing supply chain of the future</p>
+<div class="hero-image">placeholder.png</div>
+</div>
+<div class="features">
+<div class="feature">
+<h3>Our Mission</h3>
+<p>We are committed to helping publishers maximize their revenue from every source and segment.</p>
+</div>
+<div class="feature">
+<h3>Our Approach</h3>
+<p>PubMatic delivers purpose-built software and data activation to meet the similar and unique needs of Web publishers, mobile app developers, and video players for their businesses.</p>
+</div>
+<div class="feature">
+<h3>Our Difference</h3>
+<p>We build products to enable an open digital media future and power everything we do.</p>
+</div>
+</div>
+<div class="testimonial">
+<blockquote>"PubMatic's unique demand and marketing of SPO deals with their key buy-side relationships really pushed our partnership forward, helping maximize our revenue. PubMatic's team was there every step of the way to support us and our advertisers to ensure deals were accepted and spend flowed quickly."</blockquote>
+<cite>JASON MILLS, HEAD OF REVENUE OPERATIONS</cite>
+<div class="testimonial-image">placeholder.png</div>
+</div>
+<div class="trends">
+<h2>WE HELP YOU STAY AHEAD OF INDUSTRY TRENDS</h2>
+<a href="#">SUBSCRIBE TO UPDATES</a>
+<div class="trend-items">
+<div class="trend-item">
+<img alt="Trend Item" src="placeholder.png"/>
+<h4>Publisher's Playbook: Unlock the Full Revenue Potential of Digital Advertising</h4>
+<p>Practical tips on optimizing revenue promised in this ebook</p>
+</div>
+<div class="trend-item">
+<img alt="Trend Item" src="placeholder.png"/>
+<h4>Elevating Monetization: AVOC Mobile Publishers: Tack to Prosper</h4>
+<p>As the world's most mobile-centric roars</p>
+</div>
+<div class="trend-item">
+<img alt="Trend Item" src="placeholder.png"/>
+<h4>LA NUITEERS ROB</h4>
+<p>May 29, 2024</p>
+</div>
+<div class="trend-item">
+<img alt="Trend Item" src="placeholder.png"/>
+<h4>Quarterly Global Advertising Spend Trends: Q4 2023</h4>
+<p>PubMatic's Quarterly Ad Spend report was...</p>
+</div>
+<div class="trend-item">
+<img alt="Trend Item" src="placeholder.png"/>
+<h4>Supercharging Data Processing: The Spark Tsunami</h4>
+<p>Introduction With over $50 billion ed i...</p>
+</div>
+<div class="trend-item">
+<img alt="Trend Item" src="placeholder.png"/>
+<h4>Programmatic Meeting CTIA/VIDEXPO 2024</h4>
+<p>May 30, 2024</p>
+</div>
+</div>
+<a href="#">MORE REPORTS</a>
+<a href="#">MORE BLOG POSTS</a>
+<a href="#">MORE EVENTS</a>
+</div>
+<div class="stats">
+<h2>SCALE THAT DELIVERS VALUE</h2>
+<div class="stat-items">
+<div class="stat-item">
+<h3>971</h3>
+<p>EMPLOYEES</p>
+</div>
+<div class="stat-item">
+<h3>1.7T</h3>
+<p>ADS SCORED PER DAY</p>
+</div>
+<div class="stat-item">
+<h3>18.2</h3>
+<p>$B IN MANAGED SPEND TRANSACTION VALUE</p>
+</div>
+</div>
+<p>*PubMatic has created a global infrastructure to maximize customer value and yet only consumes a fraction of their digital advertising revenues.</p>
+<a href="#">ABOUT US</a>
+</div>
+<div class="cta">
+<a href="#">SUBSCRIBE TO UPDATES</a>
+</div>
+<footer>
+<nav>
+<ul>
+<li><a href="#">SOLUTIONS</a></li>
+<li><a href="#">PRODUCTS</a></li>
+<li><a href="#">RESOURCES</a></li>
+<li><a href="#">ABOUT US</a></li>
+<li><a href="#">CAREERS</a></li>
+<li><a href="#">INVESTOR RELATIONS</a></li>
+<li><a href="#">COMMUNITY</a></li>
+</ul>
+</nav>
+<div class="social-icons">
+<a href="#"></a>
+<a href="#"></a>
+<a href="#"></a>
+<a href="#"></a>
+<a href="#"></a>
+</div>
+</footer>
+</body>
+</html>
+</p></body></html>

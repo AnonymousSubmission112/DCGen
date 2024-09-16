@@ -1,0 +1,118 @@
+<html><body><p>
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Weather Site</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+        }
+
+        .header {
+            background-color: white;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .weather-info {
+            color: #666;
+            font-size: 14px;
+        }
+
+        .search-bar {
+            background-color: #f5f5f5;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+            padding: 5px 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .search-input {
+            border: none;
+            outline: none;
+            background-color: transparent;
+            margin-right: 10px;
+        }
+
+        .search-icons {
+            display: flex;
+        }
+
+        .search-icons img {
+            width: 20px;
+            height: 20px;
+            margin-left: 5px;
+        }
+
+        .forecast {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .forecast-item {
+            text-align: center;
+            margin: 0 10px;
+        }
+
+        .forecast-temp {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .forecast-currency {
+            font-size: 14px;
+            color: #666;
+        }
+
+        .gohome-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: purple;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-weight: bold;
+            font-size: 24px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+<div class="weather-info">Сегодня, дождь<br/>+25...+28° слабый ветер<br/>1-2 м/c</div>
+<div class="search-bar">
+<input class="search-input" placeholder="Найдется всё" type="text"/>
+<div class="search-icons">
+<img alt="Voice Search" src="placeholder.png"/>
+<img alt="Settings" src="placeholder.png"/>
+</div>
+</div>
+<div class="login">Войти</div>
+</div>
+<div class="forecast">
+<div class="forecast-item">
+<div class="forecast-temp">25°</div>
+<div class="forecast-currency">USD 90.19</div>
+</div>
+<div class="forecast-item">
+<div class="forecast-temp">EUR 97.90</div>
+</div>
+</div>
+<div class="gohome-button">O</div>
+</body>
+</html>
+</p></body></html>

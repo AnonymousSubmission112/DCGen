@@ -1,0 +1,401 @@
+<html><body><p>
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Website</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+        header {
+            background: #831619;
+            padding: 10px 0;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+        header img {
+            position: absolute;
+            left: 20px;
+            top: 10px;
+            width: 40px;
+            height: 40px;
+        }
+        header a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 14px;
+            text-transform: uppercase;
+        }
+        header .search {
+            position: absolute;
+            right: 20px;
+            top: 12px;
+            width: 20px;
+            height: 20px;
+        }
+        nav {
+            background: white;
+            padding: 10px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        nav a {
+            color: #333;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        .hero {
+            background: #e1e1e1;
+            padding: 60px 0;
+            text-align: center;
+        }
+        .hero img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        .hero .text {
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            display: inline-block;
+            padding: 10px;
+            font-size: 22px;
+        }
+        .content {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            margin: 40px 0;
+        }
+        .content .news, .content .sidebar {
+            background: white;
+            padding: 20px;
+            width: 45%;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .content .news img, .content .sidebar img {
+            width: 100%;
+            height: auto;
+        }
+        .content .news h2, .content .sidebar h2 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .content .news p, .content .sidebar p {
+            font-size: 14px;
+            color: #555;
+        }
+        .content .news .dates {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .content .news .dates div {
+            width: 30%;
+            text-align: center;
+        }
+        .content .news .dates div .date {
+            display: block;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .content .news .dates div p {
+            font-size: 12px;
+            color: #555;
+        }
+        .content .sidebar .news-more {
+            display: block;
+            margin-top: 20px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        .content .sidebar .news-more:hover {
+            text-decoration: underline;
+        }
+        .footer {
+            background: #333;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .footer-links {
+            margin-bottom: 40px;
+            display: flex;
+            justify-content: space-around;
+        }
+        .footer-links div {
+            width: 30%;
+        }
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            display: block;
+        }
+        .footer img {
+            width: 100px;
+            height: auto;
+        }
+        .footer p {
+            font-size: 12px;
+            margin-top: 10px;
+        }
+        .footer p a {
+            color: #ccc;
+            text-decoration: none;
+        }
+        .footer p a:hover {
+            text-decoration: underline;
+        }
+        .explore {
+            display: block;
+            margin-top: 20px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            background: #e1e1e1;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+        .explore:hover {
+            text-decoration: underline;
+        }
+        .social-media {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .social-media img {
+            width: 40px;
+            height: 40px;
+        }
+        .social-media img:hover {
+            opacity: 0.8;
+        }
+        .social-media-directory {
+            display: block;
+            margin-top: 20px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            background: #e1e1e1;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+        .social-media-directory:hover {
+            text-decoration: underline;
+        }
+        .learn-more {
+            display: block;
+            margin-top: 20px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            background: #831619;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+        .learn-more:hover {
+            text-decoration: underline;
+        }
+        .experience-cornell {
+            display: block;
+            margin-top: 20px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            background: #831619;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+        .experience-cornell:hover {
+            text-decoration: underline;
+        }
+        .experience-cornell i {
+            margin-right: 10px;
+        }
+        .footer-links h3 {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .footer-links a {
+            font-size: 14px;
+        }
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+        .footer-links div {
+            width: 25%;
+        }
+        .footer-links .ithaca-today {
+            width: 50%;
+            text-align: center;
+        }
+        .footer-links .ithaca-today div {
+            display: inline-block;
+            margin: 0 10px;
+        }
+        .footer-links .ithaca-today div img {
+            width: 20px;
+            height: 20px;
+        }
+    </style>
+</head>
+<body>
+<header>
+<img alt="Logo" src="placeholder.png"/>
+<a href="#">Apply</a>
+<a href="#">Visit</a>
+<a href="#">Give</a>
+<a href="#">Students</a>
+<a href="#">Families</a>
+<a href="#">Faculty &amp; Staff</a>
+<a href="#">Alumni</a>
+<img alt="Search" class="search" src="placeholder.png"/>
+</header>
+<nav>
+<a href="#">About Cornell</a>
+<a href="#">Admissions</a>
+<a href="#">Academics</a>
+<a href="#">Research</a>
+<a href="#">Public Engagement</a>
+<a href="#">Life at Cornell</a>
+</nav>
+<div class="hero">
+<img alt="Hero Image" src="placeholder.png"/>
+<div class="text">High stalks: Could rhubarb be New York State's next big crop?</div>
+</div>
+<div class="content">
+<div class="news">
+<img alt="News Image" src="placeholder.png"/>
+<h2>Cornell gets ready for Commencement, Convocation</h2>
+<p>Community college transfers flourish at Cornell</p>
+<img alt="News Image" src="placeholder.png"/>
+<h2>Important Dates:</h2>
+<div class="dates">
+<div>
+<p class="date">MAY</p>
+<p>24</p>
+<p>University Commencement Weekend</p>
+</div>
+<div>
+<p class="date">MAY</p>
+<p>28</p>
+<p>Summer Special Session 1 and 2 Instruction Begins</p>
+</div>
+<div>
+<p class="date">JUN</p>
+<p>19</p>
+<p>Juneteenth Holiday/No Classes</p>
+</div>
+</div>
+</div>
+<div class="sidebar">
+<h2>Cornell Chronicle</h2>
+<p>Engagement:
+                Students transmit health care data without cell service, internet<br/>
+                Research:
+                Kenyan fishers face increased drowning risk from climate change<br/>
+                Sustainability:
+                Houston to Vatican climate summit: Ag is 'most powerful weapon'<br/></p>
+<a class="news-more" href="#">More news</a>
+<a class="news-more" href="#">For media</a>
+</div>
+</div>
+<div class="content">
+<div class="news">
+<img alt="News Image" src="placeholder.png"/>
+<h2>Class of 2024 celebrated at Carnegie Hall Commencement</h2>
+</div>
+<div class="news">
+<img alt="News Image" src="placeholder.png"/>
+<h2>Hard work, personal stories bring speech team big wins</h2>
+</div>
+<div class="sidebar">
+<img alt="News Image" src="placeholder.png"/>
+<h2>New method produces fresher, tastier cold-pressed Concord grape juice</h2>
+</div>
+<div class="sidebar">
+<img alt="News Image" src="placeholder.png"/>
+<h2>Renovations to revitalize Sibley Dome as vibrant hub for AAP</h2>
+</div>
+</div>
+<div class="content">
+<div class="news">
+<h2>Explore #Cornell on Social Media</h2>
+<div class="social-media">
+<img alt="Social Media Image" src="placeholder.png"/>
+<img alt="Social Media Image" src="placeholder.png"/>
+<img alt="Social Media Image" src="placeholder.png"/>
+<img alt="Social Media Image" src="placeholder.png"/>
+<img alt="Social Media Image" src="placeholder.png"/>
+<img alt="Social Media Image" src="placeholder.png"/>
+</div>
+<a class="social-media-directory" href="#">Social Media Directory</a>
+</div>
+<div class="sidebar">
+<h2>Cornellians are united by a shared purpose.</h2>
+<a class="explore" href="#">Explore</a>
+</div>
+</div>
+<div class="content">
+<div class="news">
+<img alt="News Image" src="placeholder.png"/>
+<h2>"I would found an institution where any person can find instruction in any study."</h2>
+<p>Ezra Cornell, 1868</p>
+</div>
+<div class="sidebar">
+<img alt="News Image" src="placeholder.png"/>
+<a class="learn-more" href="#">Learn More</a>
+</div>
+</div>
+<div class="footer">
+<div class="footer-links">
+<div>
+<h3>Helpful Links</h3>
+<a href="#">Academic Calendar</a>
+<a href="#">Leadership</a>
+<a href="#">Careers</a>
+<a href="#">Events</a>
+<a href="#">News</a>
+<a href="#">Title IX</a>
+<a href="#">Emergency Preparedness</a>
+<a href="#">University Statements</a>
+</div>
+<div>
+<h3>Visiting Cornell</h3>
+<a href="#">Campus and Virtual Tours</a>
+<a href="#">Maps &amp; Directions</a>
+<a href="#">Ithaca-NYC Travel</a>
+<a href="#">Johnson Museum</a>
+<a href="#">Botanic Gardens</a>
+<a href="#">Ithaca</a>
+</div>
+<div class="ithaca-today">
+<h3>Ithaca Today</h3>
+<div>
+<img alt="Live View Icon" src="placeholder.png"/>
+<p>Live View</p>
+</div>
+<div>
+<img alt="Weather Icon" src="placeholder.png"/>
+<p>74°F / 23°C</p>
+</div>
+</div>
+</div>
+<img alt="Footer Image" src="placeholder.png"/>
+<p>Ithaca, New York</p>
+<p><a href="#">University Relations</a> | <a href="#">University Privacy</a> | <a href="#">Web Accessibility Assistance</a> | <a href="#">Copyright</a> | <a href="#">Site Information</a> | <a href="#">Contact</a></p>
+</div>
+</body>
+</html>
+</p></body></html>

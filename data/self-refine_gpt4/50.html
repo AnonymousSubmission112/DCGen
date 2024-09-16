@@ -1,0 +1,153 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lencr.org</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+            color: #000;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #F1F1F1;
+            border-bottom: 1px solid #E1E1E1;
+        }
+
+        header nav a {
+            text-decoration: none;
+            color: #0063cb;
+            margin: 0 10px;
+        }
+
+        header nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        h1 {
+            font-size: 2em;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 1.5em;
+            margin-top: 30px;
+        }
+
+        h3 {
+            font-size: 1.2em;
+        }
+
+        img {
+            width: 100%;
+            max-width: 150px;
+            display: block;
+            margin: 0 auto 20px auto;
+        }
+
+        a {
+            color: #0063cb;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .footer {
+            background-color: #F1F1F1;
+            padding: 10px 20px;
+            margin-top: 40px;
+            border-top: 1px solid #E1E1E1;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .footer a {
+            margin: 0 5px;
+        }
+
+        .footer div {
+            flex: 1;
+        }
+
+        .newsletter {
+            padding: 10px;
+            border: 1px solid #E1E1E1;
+            background-color: #fff;
+            max-width: 200px;
+        }
+
+        .newsletter h3 {
+            font-size: 1em;
+            margin-top: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="#"><img src="placeholder.png" alt="Logo"></a>
+        <nav>
+            <a href="#">Documentation</a>
+            <a href="#">Get Help</a>
+            <a href="#">Donate</a>
+            <a href="#">About Us</a>
+            <a href="#">Languages</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>lencr.org</h1>
+        <p><a href="#">该页面的中文版本在此访问.</a></p>
+        <p>Last updated: Sep 30, 2022 | <a href="#">See all Documentation</a></p>
+
+        <h2>What’s <img src="placeholder.png" alt="lencr.org logo">?</h2>
+        <p><strong>lencr.org</strong> is a domain name owned by Let’s Encrypt. We use it to host data that is referenced inside the certificates we issue.</p>
+
+        <h2>Why is my computer fetching this data? Is it malicious?</h2>
+        <p>No, the data on <strong>lencr.org</strong> is never malicious. When a device connects to <strong>lencr.org</strong>, it’s because the client software on that device (like a web browser or an app) connected to another site, saw a Let’s Encrypt certificate, and is trying to verify that it’s valid. This is routine for many devices.</p>
+
+        <h2>What exactly is this data for?</h2>
+        <p>When client software (like a web browser or an app) connects to a site, and that site presents a certificate, the client should verify that the certificate is authentic and valid. This data helps clients do that in several ways. Under <strong>lencr.org</strong>, we provide Online Certificate Status Protocol (OCSP) data... (content abbreviated for brevity).</p>
+
+        <h2>Why are connections to <strong>lencr.org</strong> over insecure HTTP?</h2>
+        <p>OCSP responses are always served over HTTP. If they were served over HTTPS, there would be an "infinite loop" problem in order to verify the OCSP server's certificate, the client would have to use OCSP... (content abbreviated for brevity).</p>
+
+        <h2>Why "<strong>lencr.org</strong>"?</h2>
+        <p>We used to use longer URLs like <a href="http://ocsp.int-x3.letsencrypt.org/">http://ocsp.int-x3.letsencrypt.org</a>. However, when we issued our new root and intermediate certificates, we wanted to make them as small as possible... (content abbreviated for brevity).</p>
+
+        <p><a href="#">Read all about our nonprofit work in the...</a></p>
+        <p>2925 Serra Mall, Stanford, CA</p>
+        <p>Send email and legal...</p>
+    </div>
+
+    <div class="footer">
+        <div>
+            <p>Learn more about our <a href="#">annual report</a></p>
+            <p>P.O. Box 1688, Minneapolis, MN 55416-0688, USA</p>
+        </div>
+        <div class="newsletter">
+            <h3>Subscribe to our Newsletter</h3>
+            <p><a href="#">View our newsletter archives</a></p>
+        </div>
+    </div>
+</body>
+
+</html>

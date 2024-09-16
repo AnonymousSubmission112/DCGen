@@ -1,0 +1,206 @@
+<html><body><p>
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>jQuery</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #0767A6;
+            color: #333;
+        }
+        .header {
+            background-color: #0D2D5D;
+            padding: 10px 0;
+        }
+        .header .menu {
+            max-width: 980px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            color: white;
+        }
+        .header .menu a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .main {
+            max-width: 980px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 4px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        .search {
+            float: right;
+            margin-bottom: 20px;
+        }
+        .search input {
+            padding: 5px 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            font-size: 14px;
+        }
+        .main h2 {
+            font-size: 24px;
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+        .sidebar {
+            float: right;
+            width: 30%;
+            background-color: #F8F8F8;
+            padding: 20px;
+            border-radius: 4px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+        .sidebar h3 {
+            font-size: 18px;
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        .sidebar ul li {
+            margin-bottom: 5px;
+        }
+        .sidebar ul li a {
+            color: #0767A6;
+            text-decoration: none;
+        }
+        .content {
+            float: left;
+            width: 65%;
+        }
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        .footer {
+            background-color: #292929;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            font-size: 14px;
+        }
+        .footer p {
+            margin: 5px 0;
+        }
+        .download-button {
+            display: inline-block;
+            background-color: #F5B400;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 3px;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        .feature {
+            display: inline-block;
+            background-color: #F5B400;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 3px;
+            margin-right: 10px;
+            font-size: 14px;
+        }
+        img {
+            width: 100%;
+            height: auto;
+            margin-top: 10px;
+        }
+        code {
+            display: block;
+            background: #f8f8f8;
+            padding: 10px;
+            border-left: 4px solid #ddd;
+            margin: 10px 0;
+            font-family: monospace;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+<div class="menu">
+<div class="nav-left">
+<a href="#">Plugins</a> |
+                <a href="#">Contribute</a> |
+                <a href="#">Events</a> |
+                <a href="#">Support</a> |
+                <a href="#">Donate/Join</a>
+</div>
+<div class="nav-right">
+<a href="#">GitHub</a>
+</div>
+</div>
+</div>
+<div class="main clearfix">
+<div class="content">
+<a class="download-button" href="#">Download jQuery</a>
+<span class="feature">Lightweight</span>
+<span class="feature">CSS3 Compliant</span>
+<span class="feature">Cross-Browser</span>
+<div class="search">
+<input placeholder="Search" type="text"/>
+</div>
+<h2>What Is jQuery?</h2>
+<p>jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers. With a combination of versatility and extensibility, jQuery has changed the way that millions of people write JavaScript.</p>
+<h2>A Brief Look</h2>
+<h3>DOM Traversal and Manipulation</h3>
+<p>Get the <code>&lt;button&gt;</code> element with the class 'continue' and change its HTML to 'Next Step...'</p>
+<code>$('button.continue').html('Next Step...');</code>
+<h3>Event Handling</h3>
+<p>Show the #banner-message element that is hidden with opacity:0 by default, whenever the user clicks the #banner-container element.</p>
+<code>var hiddenBox = $('#banner-message');
+$('#banner-container button').on('click', function(event) {
+    hiddenBox.show('slow');
+});</code>
+<h3>Ajax</h3>
+<p>Call a local script on the server '/api/getmessage' with the query parameter 'id=123', and replace the element #message-body's html with the returned text.</p>
+<code>$.ajax({
+    url: '/api/getmessage',
+    data: {
+        id: 123
+    },
+    success: function(response) {
+        $('#message-body').html(response + '<strong>' + response + '</strong>');
+    }
+});</code>
+<h2>Related Projects</h2>
+<p><a href="#">jQuery UI</a><br/>
+            The project for a maintainable, intuitive UI. Learn more.</p>
+<p><a href="#">jQuery Mobile</a><br/>
+            The project for responsive web apps. Learn more.</p>
+</div>
+<div class="sidebar">
+<h3>Resources</h3>
+<ul>
+<li><a href="#">jQuery Core API Documentation</a></li>
+<li><a href="#">jQuery Learning Center</a></li>
+<li><a href="#">jQuery Blog</a></li>
+<li><a href="#">Contribute to jQuery</a></li>
+<li><a href="#">Browser Support</a></li>
+</ul>
+<img alt="Image" src="placeholder.png"/>
+</div>
+</div>
+<div class="footer">
+<p>Copyright The jQuery Foundation and other contributors</p>
+<p>Terms of Service | Privacy Policy | Code of Conduct | Trademark Policy | Security Policy | Privacy Shield</p>
+<p>Learning Center | Chat | Twitter | GitHub</p>
+<img alt="Image" src="placeholder.png"/>
+</div>
+</body>
+</html>
+</p></body></html>

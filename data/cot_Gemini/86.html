@@ -1,0 +1,383 @@
+<html><body><p>
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>BootstrapCDN</title>
+<style>
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  color: #fff;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.header .logo {
+  display: flex;
+  align-items: center;
+}
+
+.header .logo img {
+  margin-right: 10px;
+}
+
+.header .logo h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.header .nav {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.header .nav li {
+  margin-right: 20px;
+}
+
+.header .nav li a {
+  color: #333;
+  text-decoration: none;
+}
+
+.header .nav li a:hover {
+  text-decoration: underline;
+}
+
+.header .actions {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.header .actions li {
+  margin-right: 20px;
+}
+
+.header .actions li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+}
+
+.header .actions li a img {
+  width: 24px;
+  height: 24px;
+}
+
+.quick-start {
+  margin-bottom: 40px;
+}
+
+.quick-start h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.quick-start p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.version {
+  margin-bottom: 20px;
+}
+
+.version h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.version .links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.version .links .link {
+  width: calc(100% - 50px);
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #fff;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.version .links .link .copy {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.version .links .link .copy img {
+  width: 16px;
+  height: 16px;
+}
+
+.learn-more {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 300px;
+}
+
+.learn-more h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.learn-more p {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.learn-more img {
+  width: 100%;
+  height: auto;
+}
+
+.footer {
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.footer .logo {
+  margin-bottom: 20px;
+}
+
+.footer .logo img {
+  width: 50px;
+  height: auto;
+}
+
+.footer .powered {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.footer .links {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer .links li {
+  margin-right: 20px;
+}
+
+.footer .links li a {
+  color: #333;
+  text-decoration: none;
+}
+
+.footer .links li a:hover {
+  text-decoration: underline;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.social-links li {
+  margin-right: 10px;
+}
+
+.social-links li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+}
+
+.social-links li a img {
+  width: 24px;
+  height: 24px;
+}
+
+.copy {
+  font-size: 12px;
+  color: #6c757d;
+  margin-top: 20px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="header">
+<div class="logo">
+<img alt="BootstrapCDN Logo" src="placeholder.png"/>
+<h2>BootstrapCDN</h2>
+</div>
+<ul class="nav">
+<li><a href="#">Font Awesome CDN</a></li>
+<li><a href="#">Bootswatch CDN</a></li>
+<li><a href="#">Bootlint CDN</a></li>
+</ul>
+<ul class="actions">
+<li><a href="#" target="_blank"><img alt="GitHub Project" src="placeholder.png"/></a></li>
+<li><a href="#" target="_blank"><img alt="Resources" src="placeholder.png"/></a></li>
+</ul>
+</div>
+<h1>BootstrapCDN</h1>
+<p>The recommended CDN for Bootstrap, Font Awesome, Bootswatch and Bootstrap Icons</p>
+<div class="btn-group">
+<a class="btn btn-primary" href="#">Follow @jsdelivr</a>
+<a class="btn btn-secondary" href="#">Sponsor</a>
+</div>
+<div class="quick-start">
+<h2>Quick Start</h2>
+<p>Get your production ready CDN links below. You can also automate your upgrades by pulling the latest versions from our API.</p>
+<div class="version">
+<h3>v5.3.2</h3>
+<div class="links">
+<div class="link">
+<p>https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css</p>
+<span class="copy"><img alt="Copy" src="placeholder.png"/></span>
+</div>
+<span class="copy">Click to copy</span>
+</div>
+<div class="links">
+<div class="link">
+<p>https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js</p>
+<span class="copy"><img alt="Copy" src="placeholder.png"/></span>
+</div>
+<span class="copy">Click to copy</span>
+</div>
+<div class="links">
+<div class="link">
+<p>https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js</p>
+<span class="copy"><img alt="Copy" src="placeholder.png"/></span>
+</div>
+<span class="copy">Click to copy</span>
+</div>
+</div>
+<div class="version">
+<h3>v4.6.2</h3>
+<div class="links">
+<div class="link">
+<p>https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css</p>
+<span class="copy"><img alt="Copy" src="placeholder.png"/></span>
+</div>
+<span class="copy">Click to copy</span>
+</div>
+<div class="links">
+<div class="link">
+<p>https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js</p>
+<span class="copy"><img alt="Copy" src="placeholder.png"/></span>
+</div>
+<span class="copy">Click to copy</span>
+</div>
+<div class="links">
+<div class="link">
+<p>https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js</p>
+<span class="copy"><img alt="Copy" src="placeholder.png"/></span>
+</div>
+<span class="copy">Click to copy</span>
+</div>
+</div>
+</div>
+<div class="learn-more">
+<h3>LEARN MORE</h3>
+<h4>Check what makes us production ready</h4>
+<img alt="Learn More" src="placeholder.png"/>
+</div>
+</div>
+<footer class="footer">
+<div class="logo">
+<img alt="JSDelivr Logo" src="placeholder.png"/>
+</div>
+<div class="powered">
+    Powered by <a href="#" target="_blank">JSDelivr</a> and sponsored by <a href="#" target="_blank">Cloudflare</a>, <a href="#" target="_blank">Fastly</a>, <a href="#" target="_blank">NS1</a>, <a href="#" target="_blank">BunnyCDN</a> &amp; <a href="#" target="_blank">Dmitry Akulov</a>
+</div>
+<ul class="links">
+<li><a href="#">About</a></li>
+<li><a href="#">Privacy Policy</a></li>
+</ul>
+</footer>
+</body>
+</html>
+</p></body></html>

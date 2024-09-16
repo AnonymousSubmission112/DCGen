@@ -1,0 +1,402 @@
+<html><body><p>
+<!DOCTYPE html>
+
+<html>
+<head>
+<style>
+body {
+  background-color: white;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #222;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #00A4CC;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav a {
+  color: #222;
+  font-weight: bold;
+  transition: color 0.2s ease;
+}
+
+.nav a:hover {
+  color: #00A4CC;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 0;
+}
+
+.hero-text {
+  text-align: center;
+  max-width: 600px;
+}
+
+.hero-text h1 {
+  font-size: 3em;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 1.2em;
+  line-height: 1.6;
+}
+
+.hero-button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #00A4CC;
+  color: white;
+  border-radius: 4px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+  margin-top: 20px;
+}
+
+.hero-button:hover {
+  background-color: #0080B0;
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 40px 0;
+}
+
+.feature {
+  width: 30%;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.feature-icon {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+.feature-icon img {
+  width: 100%;
+  height: 100%;
+}
+
+.feature-title {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.feature-description {
+  font-size: 1em;
+  line-height: 1.6;
+}
+
+.feature-paid {
+  display: inline-block;
+  padding: 4px 8px;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+  font-size: 0.8em;
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+.discover-button {
+  display: block;
+  margin: 20px auto;
+  padding: 12px 24px;
+  background-color: #00A4CC;
+  color: white;
+  border-radius: 4px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.discover-button:hover {
+  background-color: #0080B0;
+}
+
+.cta {
+  background-color: #f5f5f5;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.cta-text {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.cta-code {
+  background-color: #222;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-family: monospace;
+  margin-bottom: 20px;
+  white-space: pre;
+  font-size: 0.9em;
+}
+
+.cta-description {
+  font-size: 1em;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #00A4CC;
+  color: white;
+  border-radius: 4px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.cta-button:hover {
+  background-color: #0080B0;
+}
+
+.users {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 40px 0;
+}
+
+.user {
+  width: 30%;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.user-icon {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+.user-icon img {
+  width: 100%;
+  height: 100%;
+}
+
+.user-title {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.user-description {
+  font-size: 1em;
+  line-height: 1.6;
+}
+
+.footer {
+  background-color: #222;
+  color: white;
+  padding: 40px 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  margin-bottom: 20px;
+}
+
+.footer-section h3 {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section li {
+  margin-bottom: 5px;
+}
+
+.footer-section a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-section a:hover {
+  color: #00A4CC;
+}
+
+.footer-copyright {
+  text-align: center;
+}
+
+.footer-copyright p {
+  font-size: 0.8em;
+}
+
+@media (max-width: 768px) {
+  .features {
+    flex-direction: column;
+  }
+
+  .feature {
+    width: 100%;
+  }
+
+  .users {
+    flex-direction: column;
+  }
+
+  .user {
+    width: 100%;
+  }
+
+  .footer-container {
+    flex-direction: column;
+  }
+
+  .footer-section {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+</style>
+</head>
+<body>
+<header class="container">
+<div class="logo">
+<img alt="Read the Docs Logo" src="placeholder.png"/>
+<h1>Read the Docs</h1>
+</div>
+<nav class="nav">
+<a href="#">Product</a>
+<a href="#">Pricing</a>
+<a href="#">Resources</a>
+<a href="#">Log in</a>
+<a class="hero-button" href="#">Sign up</a>
+</nav>
+</header>
+<section class="hero container">
+<div class="hero-text">
+<h1>Documentation simplified</h1>
+<p>Build, host, and share documentation, all with a single platform.</p>
+<a class="hero-button" href="#">Sign up now</a>
+</div>
+<img alt="Hero Image" src="placeholder.png"/>
+</section>
+<section class="features container">
+<div class="feature" style="background-color: #bdbdbd;">
+<img alt="Easy Previews and Deploys" class="feature-icon" src="placeholder.png"/>
+<h3 class="feature-title">Easy previews and deploys</h3>
+<p class="feature-description">Preview changes on every commit to your pull requests. Release documentation to your users on each merge.</p>
+</div>
+<div class="feature" style="background-color: #333;">
+<img alt="Ideal Developer Experience" class="feature-icon" src="placeholder.png"/>
+<h3 class="feature-title">Ideal developer experience</h3>
+<p class="feature-description">Write documentation without changing your workflow or your tools using a docs as code approach.</p>
+</div>
+<div class="feature" style="background-color: #8000ff;">
+<img alt="Work Privately or Publicly" class="feature-icon" src="placeholder.png"/>
+<h3 class="feature-title">Work privately or publicly</h3>
+<p class="feature-description">Easily share within your team or with the whole world. Manage permissions yourself or automatically with GitHub.</p>
+</div>
+</section>
+<section class="container">
+<h2>Features</h2>
+<div class="feature" style="background-color: white;">
+<img alt="Supports any doc tool" class="feature-icon" src="placeholder.png"/>
+<h3 class="feature-title">Supports any doc tool</h3>
+<p class="feature-description">Integrated support for <a href="#">Sphinx</a>, <a href="#">MkDocs</a>, <a href="#">Jupyter Book</a>. Flexible enough to work with any documentation tool.</p>
+</div>
+<div class="feature" style="background-color: white;">
+<img alt="Integrated search" class="feature-icon" src="placeholder.png"/>
+<h3 class="feature-title">Integrated search</h3>
+<p class="feature-description">Easily search all your docs via our dashboard, and offer your users a more powerful search with our search API.</p>
+</div>
+<div class="feature" style="background-color: white;">
+<img alt="Pull request previews" class="feature-icon" src="placeholder.png"/>
+<h3 class="feature-title">Pull request previews</h3>
+<p class="feature-description">Preview each pull request before releasing any changes, allowing for fast collaboration across your organization.</p>
+</div>
+<div class="feature" style="background-color: white;">
+<img alt="Versioned docs" class="feature-icon" src="placeholder.png"/>
+<h3 class="feature-title">Versioned docs</h3>
+<p class="feature-description">Match your product release cycle with multiple versions of your docs. Automatically build versions from any branch or tag.</p>
+</div>
+<div class="feature" style="background-color: white;">
+<img alt="Private repository support" class="feature-icon" src="placeholder.png"/>
+<h3 class="feature-title">Private repository support</h3>
+<p class="feature-description"><span class="feature-paid">Paid plan feature</span> Clone private repositories using a connected GitHub, GitLab, or Bitbucket account, or clone from any Git provider with an SSH key. Control who has access to your documentation and easily manage permissions in one place.</p>
+</div>
+<div class="feature" style="background-color: white;">
+<img alt="Single Sign On" class="feature-icon" src="placeholder.png"/>
+<h3 class="feature-title">Single Sign On</h3>
+<p class="feature-description">Control access to sections or your documentation with integrated authentication. Enable SSO with GitHub or GitLab to</p>
+</div>
+<button class="discover-button">Discover all our features</button>
+</section>
+<section class="cta container">
+<h3>TRY IT OUT</h3>
+<div class="cta-text">Upgrade your documentation with Read the Docs</div>
+<div class="cta-code">
+</div></section></body></html></p></body></html>

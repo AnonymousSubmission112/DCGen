@@ -1,0 +1,524 @@
+<html><body><p>
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>MediaFire</title>
+<style>
+        body {
+            background-color: lightblue;
+            font-family: sans-serif;
+        }
+
+        .header {
+            background-color: blue;
+            color: white;
+            padding: 10px;
+            text-align: right;
+            position: relative;
+        }
+
+        .header button {
+            background-color: blue;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .header button:hover {
+            opacity: 0.8;
+        }
+
+        .content {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px;
+            align-items: center;
+        }
+
+        .text-block {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .section {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .column {
+            width: 25%;
+            padding: 10px;
+        }
+
+        .column.dark {
+            background-color: darkgray;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .card h3 {
+            color: white;
+            background-color: blue;
+            padding: 5px;
+            margin: 0;
+            border-radius: 5px 5px 0 0;
+            text-align: center;
+        }
+
+        .testimonial {
+            background-color: white;
+            border-radius: 10px;
+            padding: 10px;
+            margin-bottom: 10px;
+            width: 300px;
+        }
+
+        .testimonial h3 {
+            color: black;
+            background-color: white;
+            padding: 5px;
+            margin: 0;
+            border-radius: 5px 5px 0 0;
+            text-align: center;
+        }
+
+        .testimonial p {
+            margin-top: 5px;
+        }
+
+        .testimonial .quote {
+            margin-top: 10px;
+            font-style: italic;
+        }
+
+        .testimonial .author {
+            margin-top: 5px;
+            text-align: right;
+            font-style: italic;
+        }
+
+        .feature-card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 10px;
+            margin-bottom: 10px;
+            width: 300px;
+        }
+
+        .feature-card h3 {
+            color: white;
+            background-color: blue;
+            padding: 5px;
+            margin: 0;
+            border-radius: 5px 5px 0 0;
+            text-align: center;
+        }
+
+        .feature-card p {
+            margin-top: 5px;
+        }
+
+        .feature-card img {
+            width: 48px;
+            height: 48px;
+            margin-bottom: 10px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .banner {
+            background-color: darkblue;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .banner button {
+            background-color: white;
+            color: black;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .banner button:hover {
+            opacity: 0.8;
+        }
+
+        .footer {
+            background-color: darkblue;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        .footer .section {
+            display: inline-block;
+            margin: 0 20px;
+        }
+
+        .cookie-banner {
+            background-color: darkblue;
+            color: white;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+        }
+
+        .cookie-banner button {
+            background-color: blue;
+            color: white;
+            border: 1px solid white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .cookie-banner .close-button {
+            background-color: grey;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        .cookie-banner .close-button:hover {
+            background-color: lightgrey;
+        }
+
+        .section-title {
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .section-description {
+            font-size: 12px;
+            text-align: center;
+        }
+
+        .section-container {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .section-box {
+            width: 25%;
+            padding: 10px;
+            background-color: white;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .section-icon {
+            width: 48px;
+            height: 48px;
+            margin-bottom: 10px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .pro-feature-card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 10px;
+            margin-bottom: 10px;
+            width: 300px;
+        }
+
+        .pro-feature-card h3 {
+            color: white;
+            background-color: blue;
+            padding: 5px;
+            margin: 0;
+            border-radius: 5px 5px 0 0;
+            text-align: center;
+        }
+
+        .pro-feature-card p {
+            margin-top: 5px;
+        }
+
+        .pro-feature-card img {
+            width: 48px;
+            height: 48px;
+            margin-bottom: 10px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .pro-button {
+            background-color: lightblue;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            border-radius: 5px;
+            cursor: pointer;
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+        }
+
+        .pro-button:hover {
+            opacity: 0.8;
+        }
+
+        .pro-text {
+            text-align: center;
+            margin-top: 20px;
+            color: white;
+        }
+
+        .pro-header {
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .pro-description {
+            font-size: 16px;
+            color: white;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+<button style="width: 73px; height: 34px;">UPGRADE</button>
+<button style="width: 73px; height: 34px;">SIGN UP</button>
+<button style="width: 64px; height: 34px;">LOG IN</button>
+</div>
+<div class="content">
+<div>
+<img src="placeholder.png" style="border-radius: 10px; width: 100px; height: 100px; margin-right: 20px;"/>
+<img src="placeholder.png" style="border-radius: 10px; width: 100px; height: 100px;"/>
+</div>
+<div>
+<h1 style="font-size: 24px; text-align: center;">File storage and sharing made simple</h1>
+<div style="width: 20px; height: 25px; background-color: gray; border-radius: 10px; margin: 20px auto;"></div>
+</div>
+</div>
+<div class="section">
+<div class="column">
+<h3 class="section-title">SHARE</h3>
+<p class="section-description">Share through email, link, or social network. Unlimited ad-supported downloads with no wait times.</p>
+<img src="placeholder.png" style="width: 48px; height: 48px; margin-bottom: 10px; display: block; margin-left: auto; margin-right: auto;"/>
+</div>
+<div class="column dark">
+<h3 class="section-title">COLLABORATE</h3>
+<p class="section-description">Store and share any file type. Share folders of project files. Easily email large files.</p>
+<img src="placeholder.png" style="width: 48px; height: 48px; margin-bottom: 10px; display: block; margin-left: auto; margin-right: auto;"/>
+</div>
+<div class="column">
+<h3 class="section-title">STORE</h3>
+<p class="section-description">10GB for free. Up to 50GB free with bonuses. Store all your photos, audio, and videos.</p>
+<img src="placeholder.png" style="width: 48px; height: 48px; margin-bottom: 10px; display: block; margin-left: auto; margin-right: auto;"/>
+</div>
+<div class="column">
+<h3 class="section-title">ACCESS</h3>
+<p class="section-description">Always have your important files with you. Never forget work at home. View, manage, and share from anywhere.</p>
+<img src="placeholder.png" style="width: 48px; height: 48px; margin-bottom: 10px; display: block; margin-left: auto; margin-right: auto;"/>
+</div>
+</div>
+<div style="text-align: center; font-size: 24px; color: white; margin-bottom: 20px;">Over 150 million people trust MediaFire every month</div>
+<div class="section-container">
+<div class="section-box">
+<h3 class="section-title">GREAT FOR OUR GROUP</h3>
+<p class="section-description">We use MediaFire to share the sheet music and audio practice files for our choir. I can easily print the sheet music from my desktop, etc. Great for sharing audio to using the music apps to practice, all the songs we have at our fingertips. Simple to use &amp; very helpful to our group.</p>
+<p class="section-description">- Choir member</p>
+</div>
+<div class="section-box">
+<h3 class="section-title">ONE OF MY FAVORITE APPS!</h3>
+<p class="section-description">Perfect for storing sheet music and all this daily practice for my piano. I practice for saving audio, video, lyrics, chords, etc. and MediaFire. Thank you, it has really helped me time and again.</p>
+<p class="section-description">- TheNewKTFan</p>
+</div>
+<div class="section-box">
+<h3 class="section-title">GREAT APP!</h3>
+<p class="section-description">I like this service a lot since I work in TV and Film and use it for sending off effects shots or just collaborating with friends or coworkers. I've invested and purchased one of their offerings. Love the free one too. It's great whether business or just your own convenience! I say run don't walk and go have fun with this!</p>
+<p class="section-description">- Frootite Films</p>
+</div>
+</div>
+<div class="banner">
+<h2 style="font-size: 24px;">Get started for FREE</h2>
+<button style="width: 176px; height: 32px;">SIGN UP FOR FREE</button>
+<img src="placeholder.png" style="width: 54px; height: 53px;"/>
+<img src="placeholder.png" style="width: 54px; height: 53px;"/>
+</div>
+<h2 style="text-align: center; font-size: 24px; color: white; margin-bottom: 20px;">Top features</h2>
+<div class="section-container">
+<div class="section-box">
+<img class="section-icon" src="placeholder.png"/>
+<h3 class="section-title">10GB Free/Up to 4GB per file</h3>
+<p class="section-description">With up to 50GB of free space, you can use MediaFire to back up all your important files - even your not-so-important ones too.</p>
+</div>
+<div class="section-box">
+<img class="section-icon" src="placeholder.png"/>
+<h3 class="section-title">Unlimited bandwidth &amp; downloads</h3>
+<p class="section-description">Make sure your downloads are always available and fast. You'll never hit a download limit with ad-supported downloads, no matter how popular your file is.</p>
+</div>
+<div class="section-box">
+<img class="section-icon" src="placeholder.png"/>
+<h3 class="section-title">Easily share after uploading</h3>
+<p class="section-description">Share folders and files immediately after they upload. MediaFire makes it easy to share through email, on your website, social media, messenger, or anywhere with a link.</p>
+</div>
+</div>
+<div class="section-container">
+<div class="section-box">
+<img class="section-icon" src="placeholder.png"/>
+<h3 class="section-title">Multiple uploads at once</h3>
+<p class="section-description">Upload hundreds or even thousands of files at once through any web browser or with our handy apps for Android, BlackBerry, Windows, iPhone, or iPad.</p>
+</div>
+<div class="section-box">
+<img class="section-icon" src="placeholder.png"/>
+<h3 class="section-title">Organize with ease</h3>
+<p class="section-description">Make it easy to find your documents and files by using MediaFire's powerful manager. Upload, copy, move, and control access to your files from desktop or phone.</p>
+</div>
+<div class="section-box">
+<img class="section-icon" src="placeholder.png"/>
+<h3 class="section-title">One-Time Links</h3>
+<p class="section-description">Keep control of your downloads. Share a file using a free One-Time Link and your recipient won't be able to share the link with anyone else. It's perfect for sensitive personal or work documents!</p>
+</div>
+</div>
+<h2 style="text-align: center; font-size: 24px; color: white; margin-bottom: 20px;">No matter where you go - take your files with you.</h2>
+<p style="text-align: center; color: white; font-size: 16px; margin-bottom: 20px;">Upload, download, view, and organize your files with ease and simplicity using MediaFire for Android, BlackBerry, Windows, iPhone, or iPad. Whether it's your music collection, home videos, your resume, or your important work docs, have them in your pocket whenever you need them.</p>
+<button style="text-align: center; color: white; background-color: blue; border-radius: 5px; padding: 10px 20px; font-size: 16px; margin-bottom: 20px; display: block; margin-left: auto; margin-right: auto;">Download now in your favorite app store &gt;&gt; </button>
+<div class="pro-header">Looking for more? Go Pro!</div>
+<div class="pro-description">You demand a service as professional as you are. Whether you're an avid collector, independent professional photographer, or a large Fortune 500 company, MediaFire Pro brings you the business-class features you need to get an edge on the competition.</div>
+<div class="section-container">
+<div class="section-box">
+<img class="section-icon" src="placeholder.png"/>
+<h3 class="section-title">1 TB of storage</h3>
+<p class="section-description">More space for big files like video, PDF's, and audio. All the space you need for your mission-critical business files.</p>
+</div>
+<div class="section-box">
+<img class="section-icon" src="placeholder.png"/>
+<h3 class="section-title">No ads</h3>
+<p class="section-description">A more professional, ad-free experience for your employees and clients.</p>
+</div>
+<div class="section-box">
+<img class="section-icon" src="placeholder.png"/>
+<h3 class="section-title">Upload from any website</h3>
+<p class="section-description">Save hours of time: skip the download and transfer files directly from any website into your MediaFire storage! Just paste in any link to a file, and MediaFire will automatically upload it to your account.</p>
+</div>
+</div>
+<div class="section-container">
+<div class="section-box">
+<img class="section-icon" src="placeholder.png"/>
+<h3 class="section-title">Direct download link to files</h3>
+<p class="section-description">Skip MediaFire.com when sharing files. Download directly from your own website, email, or social network. Stream media files and high-resolution images in your own media players.</p>
+</div>
+<div class="section-box">
+<img class="section-icon" src="placeholder.png"/>
+<h3 class="section-title">Bulk Download</h3>
+<p class="section-description">With a single click, you can download your entire photo collection, project files, or work documents in one convenient ZIP file.</p>
+</div>
+<div class="section-box">
+<img class="section-icon" src="placeholder.png"/>
+<h3 class="section-title">One-Time Links (100/day)</h3>
+<p class="section-description">Control access to your downloads and make sure people don't share your download links. One-Time Links only let one computer download your file.</p>
+</div>
+</div>
+<button class="pro-button">VIEW PRICING</button>
+<div class="footer">
+<div class="section">
+<h4>COMPANY</h4>
+<a href="#">About Us</a>
+<a href="#">Careers</a>
+<a href="#">Press</a>
+</div>
+<div class="section">
+<h4>TOOLS</h4>
+<a href="#">MediaFire Mobile</a>
+<a href="#">Team File Sharing</a>
+</div>
+<div class="section">
+<h4>UPGRADE</h4>
+<a href="#">Professional</a>
+<a href="#">Business</a>
+</div>
+<div class="section">
+<h4>SUPPORT</h4>
+<a href="#">Get Support</a>
+</div>
+<div class="section">
+<p>©2024 MediaFire Build 121930</p>
+<a href="#">Advertising</a>
+<a href="#">Terms</a>
+<a href="#">Privacy Policy</a>
+<a href="#">Copyright</a>
+<a href="#">Abuse</a>
+<a href="#">Credits</a>
+<a href="#">More...</a>
+<p>This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.</p>
+</div>
+<div class="section">
+<p>Made with love in Texas.</p>
+</div>
+</div>
+<div class="cookie-banner">
+<p>MediaFire uses cookies to provide you with a personalized browsing experience. By continuing to use this site, you agree to our Privacy Policy.</p>
+<button class="close-button">X</button>
+<button>I Accept</button>
+</div>
+<script>
+        const closeButton = document.querySelector('.close-button');
+        const cookieBanner = document.querySelector('.cookie-banner');
+
+        closeButton.addEventListener('click', () => {
+            cookieBanner.style.display = 'none';
+        });
+    </script>
+</body>
+</html>
+</p></body></html>

@@ -1,0 +1,239 @@
+<html><body><p>
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Debian Website</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background: #fff;
+        }
+        header {
+            background: #d70a53;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #fff;
+            font-size: 14px;
+        }
+        nav a {
+            margin-right: 20px;
+            color: #fff;
+            text-decoration: none;
+        }
+        input[type="text"] {
+            padding: 5px 10px;
+            border: none;
+            border-radius: 3px;
+        }
+        .main-header {
+            background: #516bc6;
+            color: white;
+            padding: 40px;
+            text-align: center;
+            font-size: 24px;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            padding: 30px;
+            background: #d3d3d3;
+        }
+        .section {
+            width: 45%;
+            background: white;
+            padding: 20px;
+            margin: 0 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .section img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            background: url('placeholder.png') no-repeat center;
+            background-size: cover;
+        }
+        h2 {
+            font-size: 24px;
+            color: #516bc6;
+            margin-bottom: 10px;
+        }
+        h3 {
+            font-size: 16px;
+            color: #516bc6;
+            margin-bottom: 5px;
+        }
+        .download-btn {
+            display: block;
+            width: 100%;
+            text-align: center;
+            background: #d70a53;
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+            margin-top: 10px;
+            font-size: 18px;
+        }
+        .download-btn.other-version {
+            background: #333;
+        }
+        .news {
+            max-width: 80%;
+            margin: 30px auto;
+            background: white;
+            padding: 15px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .news-item {
+            display: flex;
+            border-bottom: 1px solid #ddd;
+            padding: 10px 0;
+            align-items: center;
+        }
+        .news-date {
+            background: #d70a53;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            margin-right: 10px;
+            width: 50px;
+        }
+        .news-date div {
+            font-size: 12px;
+        }
+        .news-article {
+            flex: 1;
+        }
+        footer {
+            background: #d3d3d3;
+            padding: 20px;
+            text-align: center;
+            font-size: 14px;
+        }
+        .languages {
+            margin-top: 10px;
+        }
+        .languages a {
+            color: #516bc6;
+            text-decoration: none;
+            margin: 0 5px;
+        }
+    </style>
+</head>
+<body>
+<header>
+<nav>
+<a href="#">Blog</a>
+<a href="#">Micronews</a>
+<a href="#">Planet</a>
+</nav>
+<input placeholder="Search" type="text"/>
+</header>
+<div class="main-header">
+<h1>Debian Project</h1>
+</div>
+<div class="container">
+<div class="section">
+<h2>THE COMMUNITY</h2>
+<p>Debian is a Community of People!</p>
+<img alt="Community Image" src="placeholder.png"/>
+<h3>People</h3>
+<p>Who we are and what we do</p>
+<h3>Our Philosophy</h3>
+<p>Why we do it, and how we do it</p>
+<h3>Get Involved, Contribute</h3>
+<p>How you can join us!</p>
+<h3>More...</h3>
+<p>Additional information about the Debian community</p>
+</div>
+<div class="section">
+<h2>THE OPERATING SYSTEM</h2>
+<p>Debian is a complete Free Operating System!</p>
+<img alt="Operating System Image" src="placeholder.png"/>
+<a class="download-btn" href="#">Download</a>
+<a class="download-btn other-version" href="#">Other downloads</a>
+<h3>Why Debian</h3>
+<p>What makes Debian special</p>
+<h3>User Support</h3>
+<p>Getting help and documentation</p>
+<h3>Security Updates</h3>
+<p>Debian Security Advisories (DSA)</p>
+<h3>More...</h3>
+<p>Further links to downloads and software</p>
+</div>
+</div>
+<div class="news">
+<h2>PROJECT NEWS</h2>
+<p>News and Announcements about Debian</p>
+<div class="news-item">
+<div class="news-date">
+<div>February</div>
+<div>10</div>
+<div>2024</div>
+</div>
+<div class="news-article">
+<h3>Updated Debian 12: 12.5 released</h3>
+</div>
+</div>
+<div class="news-item">
+<div class="news-date">
+<div>February</div>
+<div>10</div>
+<div>2024</div>
+</div>
+<div class="news-article">
+<h3>Updated Debian 11: 11.9 released</h3>
+</div>
+</div>
+<div class="news-item">
+<div class="news-date">
+<div>February</div>
+<div>10</div>
+<div>2024</div>
+</div>
+<div class="news-article">
+<h3>Updated Debian 12: 12.4 released</h3>
+</div>
+</div>
+<div class="news-item">
+<div class="news-date">
+<div>October</div>
+<div>10</div>
+<div>2023</div>
+</div>
+<div class="news-article">
+<h3>Debian 12.4 to supersede Debian 12.3</h3>
+</div>
+</div>
+<div class="news-item">
+<div class="news-date">
+<div>October</div>
+<div>09</div>
+<div>2023</div>
+</div>
+<div class="news-article">
+<h3>Debian 12.3 image releases delayed</h3>
+</div>
+</div>
+</div>
+<footer>
+<p>This page is also available in the following languages:</p>
+<div class="languages">
+<a href="#">English</a>
+<a href="#">French</a>
+<a href="#">Spanish</a>
+<a href="#">Chinese</a>
+<a href="#">Russian</a>
+<a href="#">... Other languages ...</a>
+</div>
+</footer>
+</body>
+</html>
+</p></body></html>

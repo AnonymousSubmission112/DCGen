@@ -1,0 +1,451 @@
+<html><body><p>
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>California.gov</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            color: #333;
+        }
+
+        .header {
+            background-color: #e8f3f9;
+            text-align: center;
+            padding: 15px 0;
+        }
+
+        .header .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header .header-content .left-side {
+            display: flex;
+            align-items: center;
+        }
+
+        .header .header-content .left-side img {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+        }
+
+        .header .header-content .right-side {
+            display: flex;
+            align-items: center;
+        }
+
+        .header .header-content .right-side a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #333;
+        }
+
+        .header .header-content .right-side img {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+        }
+
+        .top-notice {
+            background-color: #f5f5f5;
+            text-align: center;
+            padding: 15px 0;
+        }
+
+        .top-notice a {
+            color: #0074d9;
+            text-decoration: none;
+        }
+
+        .navbar {
+            background-color: #00396a;
+            color: white;
+            padding: 15px 0;
+        }
+
+        .navbar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .navbar ul li {
+            margin: 0 15px;
+        }
+
+        .navbar ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .main-content {
+            padding: 30px;
+            text-align: center;
+        }
+
+        .main-content img {
+            width: 300px;
+            height: 200px;
+            margin-bottom: 20px;
+        }
+
+        .search-bar,
+        .service-buttons {
+            margin: 10px 0;
+        }
+
+        .search-bar input {
+            width: 400px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-right: 10px;
+        }
+
+        .search-bar button {
+            padding: 10px 20px;
+            background-color: #00396a;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .service-buttons div {
+            display: inline-block;
+            background-color: #000;
+            color: #fff;
+            padding: 15px 20px;
+            margin: 10px;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+
+        .info-bars {
+            display: flex;
+            background-color: #000;
+            color: #fff;
+            justify-content: space-around;
+            padding: 20px 0;
+        }
+
+        .info-bars div {
+            flex: 1;
+            padding: 0 20px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .info-bars div a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .info-bars div img {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+        }
+
+        .profile-section {
+            background-color: #00558b;
+            padding: 30px 20px;
+            color: white;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .profile-section .profile {
+            text-align: center;
+        }
+
+        .profile-section .profile img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        .statistics {
+            display: flex;
+            justify-content: space-around;
+            background-color: #505050;
+            color: white;
+            padding: 20px 0;
+            margin: 20px 0;
+        }
+
+        .statistics div {
+            text-align: center;
+        }
+
+        .statistics div h2 {
+            font-size: 3em;
+        }
+
+        .statistics div p {
+            font-size: 14px;
+        }
+
+        .disaster-resources {
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        .disaster-resources img {
+            width: 200px;
+            height: 150px;
+            margin-bottom: 20px;
+        }
+
+        .resource-buttons {
+            display: flex;
+            justify-content: center;
+        }
+
+        .resource-buttons button {
+            padding: 10px 20px;
+            margin: 10px;
+            background-color: #00396a;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .data-section {
+            background-color: #e8f3f9;
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        .data-section h2 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        .data-section p {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        .data-section button {
+            padding: 10px 20px;
+            background-color: #00396a;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .footer {
+            background-color: #343a40;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .footer .footer-links {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .footer .footer-links div {
+            padding: 15px;
+        }
+
+        .footer-bottom {
+            background-color: #000;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        .footer-bottom a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .footer-bottom img {
+            width: 20px;
+            height: 20px;
+            margin-right: 5px;
+        }
+
+        .footer-bottom .social-links {
+            display: flex;
+            align-items: center;
+        }
+
+        .footer-bottom .social-links a {
+            margin: 0 10px;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .footer-bottom .social-links img {
+            width: 20px;
+            height: 20px;
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+<div class="header-content">
+<div class="left-side">
+<img alt="California Logo" src="placeholder.png"/>
+<h2>California.gov</h2>
+</div>
+<div class="right-side">
+<a href="#">State Agencies</a>
+<img alt="Location Icon" src="placeholder.png"/>
+<a href="#">Set Location</a>
+<img alt="Contact Icon" src="placeholder.png"/>
+<a href="#">Contact Us</a>
+<img alt="Translate Icon" src="placeholder.png"/>
+<a href="#">Translate</a>
+<img alt="Settings Icon" src="placeholder.png"/>
+<a href="#">Settings</a>
+</div>
+</div>
+</div>
+<div class="top-notice">
+        For more information on COVID-19 in California, please visit <a href="#">COVID19.CA.gov</a>.
+    </div>
+<div class="navbar">
+<ul>
+<li><a href="#">Getting Services</a></li>
+<li><a href="#">Doing Business</a></li>
+<li><a href="#">Working</a></li>
+<li><a href="#">Learning</a></li>
+<li><a href="#">Living</a></li>
+<li><a href="#">Visiting</a></li>
+<li><a href="#">Government</a></li>
+<li><a href="#">Search</a></li>
+</ul>
+</div>
+<div class="main-content">
+<img alt="Placeholder" src="placeholder.png"/>
+<div class="search-bar">
+<input placeholder="Search this website..." type="text"/>
+<button>Search</button>
+</div>
+<div class="service-buttons">
+<div>Find State Agencies</div>
+<div>Find State Services</div>
+<div>Common Questions</div>
+</div>
+</div>
+<div class="info-bars">
+<div>CalFile - File return for free <img alt="CalFile Icon" src="placeholder.png"/></div>
+<div>Get COVID-19 Information and Help <img alt="COVID-19 Icon" src="placeholder.png"/></div>
+<div>Get Digital Vaccine Record <img alt="Vaccine Record Icon" src="placeholder.png"/></div>
+<div>Get Disaster Relief Assistance <img alt="Disaster Relief Icon" src="placeholder.png"/></div>
+</div>
+<div class="profile-section">
+<div class="profile">
+<img alt="Placeholder" src="placeholder.png"/>
+<h2>Gavin Newsom</h2>
+<p>California Governor</p>
+<a href="#">Visit Governor's Website</a>
+</div>
+<div class="profile">
+<img alt="Placeholder" src="placeholder.png"/>
+<h2>Eleni Kounalakis</h2>
+<p>California Lt. Governor</p>
+<a href="#">Visit Lieutenant Governor's Website</a>
+</div>
+</div>
+<div class="statistics">
+<div>
+<h2>39+</h2>
+<p>Million people as of July 2015</p>
+</div>
+<div>
+<h2>5th</h2>
+<p>Largest Economy in the World</p>
+</div>
+<div>
+<h2>65+</h2>
+<p>Million annual visitors</p>
+</div>
+<div>
+<h2>19+</h2>
+<p>Million civilians in Labor Force</p>
+</div>
+</div>
+<div class="disaster-resources">
+<img alt="Placeholder" src="placeholder.png"/>
+<h2>Disaster Resources</h2>
+<p>California has been hit with devastating wildfires and other natural disasters in both the northern and southern parts of the state. If you need more information about recovery or resources visit the following resources:
+        </p>
+<div class="resource-buttons">
+<button>Emergency Services</button>
+<button>Wild Fire Recovery</button>
+<button>Disaster Assistance</button>
+</div>
+</div>
+<div class="data-section">
+<h2>1500+ Data Sets</h2>
+<p>California believes in the power of unlocking government data.</p>
+<button>Visit Open Data Portal</button>
+</div>
+<div class="footer">
+<div class="footer-links">
+<div>
+<h3>Campaigns</h3>
+<a href="#">Register to Vote</a>
+<a href="#">Save Our Water</a>
+<a href="#">Flex Alert</a>
+</div>
+<div>
+<h3>Alerts</h3>
+<a href="#">Amber Alert</a>
+<a href="#">Cal Alerts</a>
+<a href="#">My Hazards</a>
+</div>
+<div>
+<h3>About</h3>
+<a href="#">Governor</a>
+<a href="#">Lt. Governor</a>
+<a href="#">California Data</a>
+</div>
+<div>
+<h3>Support</h3>
+<a href="#">State Directory</a>
+<a href="#">Technical Issues</a>
+</div>
+</div>
+<div class="footer-bottom">
+<a href="#">Back to Top</a>
+<a href="#">Sitemap</a>
+<a href="#">Accessibility</a>
+<a href="#">Conditions of Use</a>
+<a href="#">Privacy Policy</a>
+<a href="#">Contact Us</a>
+<p>Copyright © 2024 State of California</p>
+<div class="social-links">
+<img alt="Website Accessibility Certification" src="placeholder.png"/>
+<a href="#">Website Accessibility Certification</a>
+<img alt="Twitter Icon" src="placeholder.png"/>
+<a href="#">Twitter</a>
+<img alt="Facebook Icon" src="placeholder.png"/>
+<a href="#">Facebook</a>
+<img alt="YouTube Icon" src="placeholder.png"/>
+<a href="#">YouTube</a>
+</div>
+</div>
+</div>
+</body>
+</html>
+</p></body></html>

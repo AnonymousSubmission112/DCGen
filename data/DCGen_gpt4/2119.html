@@ -1,0 +1,222 @@
+<html><body><p>
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>OpenStreetMap Clone</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #fff;
+            padding: 10px 20px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .header-left {
+            display: flex;
+            align-items: center;
+        }
+
+        .header-left img {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+        }
+
+        .header-left a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            margin-right: 20px;
+        }
+
+        .header-right a {
+            text-decoration: none;
+            color: #333;
+            margin-left: 15px;
+        }
+
+        .header-right .button {
+            border: 1px solid #ccc;
+            padding: 5px 10px;
+            background-color: #f5f5f5;
+            border-radius: 3px;
+        }
+
+        .welcome-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: calc(100vh - 70px);
+            background-color: #f7f7f7;
+        }
+
+        .welcome-box {
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            text-align: center;
+        }
+
+        .welcome-box h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .welcome-box p {
+            margin-bottom: 20px;
+            color: #666;
+        }
+
+        .input-group {
+            display: flex;
+            margin-bottom: 20px;
+        }
+
+        .input-group input {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 3px 0 0 3px;
+        }
+
+        .input-group span {
+            background-color: #f5f5f5;
+            color: #666;
+            padding: 0 10px;
+            border: 1px solid #ddd;
+            border-left: none;
+            display: flex;
+            align-items: center;
+            border-radius: 0 3px 3px 0;
+        }
+
+        .input-group button {
+            background-color: #007bff;
+            padding: 10px 15px;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .buttons a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+
+        .buttons a.learn-more {
+            background-color: #007bff;
+        }
+
+        .buttons a.start-mapping {
+            background-color: #28a745;
+        }
+
+        .map-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            margin: 20px 0;
+        }
+
+        .map-container img {
+            width: 100%;
+            height: auto;
+        }
+
+        .map-widget {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-left: 10px;
+        }
+
+        .map-widget button {
+            width: 40px;
+            height: 40px;
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-bottom: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+<div class="header-left">
+<img alt="Logo" src="placeholder.png"/>
+<a href="#">OpenStreetMap</a>
+<a href="#">Edit</a>
+<a href="#">History</a>
+<a href="#">Export</a>
+</div>
+<div class="header-right">
+<a href="#">GPS Traces</a>
+<a href="#">User Diaries</a>
+<a href="#">Communities</a>
+<a href="#">Copyright</a>
+<a href="#">Help</a>
+<a href="#">About</a>
+<a class="button" href="#">Log In</a>
+<a class="button" href="#">Sign Up</a>
+</div>
+</div>
+<div class="welcome-container">
+<div class="welcome-box">
+<div class="input-group">
+<input placeholder="Search" type="text"/>
+<span>Where is this?</span>
+<button>Go</button>
+</div>
+<h1>Welcome to OpenStreetMap!</h1>
+<p>OpenStreetMap is a map of the world, created by people like you and free to use under an open license.</p>
+<p>Hosting is supported by Fastly, OSMF corporate members, and other partners.</p>
+<div class="buttons">
+<a class="learn-more" href="#">Learn More</a>
+<a class="start-mapping" href="#">Start Mapping</a>
+</div>
+</div>
+</div>
+<div class="map-container">
+<img alt="Map" src="placeholder.png"/>
+<img alt="Map" src="placeholder.png"/>
+<img alt="Map" src="placeholder.png"/>
+<img alt="Map" src="placeholder.png"/>
+<img alt="Map" src="placeholder.png"/>
+<img alt="Map" src="placeholder.png"/>
+<img alt="Map" src="placeholder.png"/>
+<img alt="Map" src="placeholder.png"/>
+</div>
+<div class="map-widget">
+<button>+</button>
+<button>-</button>
+<button>...</button>
+</div>
+</body>
+</html>
+</p></body></html>

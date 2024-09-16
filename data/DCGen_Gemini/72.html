@@ -1,0 +1,253 @@
+<html><body><p>
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Facebook Login</title>
+<style>
+        body {
+            background-color: #f0f2f5;
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 800px;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .logo img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+
+        .logo h2 {
+            margin-left: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .form input {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .form button {
+            padding: 12px 20px;
+            background-color: #1877f2;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .form button:hover {
+            opacity: 0.8;
+        }
+
+        .form .forgot {
+            margin-top: 10px;
+            text-align: right;
+            font-size: 14px;
+            color: #606770;
+        }
+
+        .footer {
+            margin-top: 30px;
+            text-align: center;
+            font-size: 14px;
+            color: #606770;
+        }
+
+        .language-selection {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .language-selection ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        .language-selection li {
+            margin-right: 10px;
+            font-size: 14px;
+            color: #606770;
+        }
+
+        .language-selection li:last-child {
+            margin-right: 0;
+        }
+
+        .language-selection li input {
+            width: 50px;
+            height: 25px;
+            margin-left: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            -webkit-appearance: none;
+            appearance: none;
+            background: #fff;
+            cursor: pointer;
+            position: relative;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .language-selection li input:before {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            top: 0;
+            left: 0;
+            background: #fff;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .language-selection li input:checked:before {
+            transform: translateX(25px);
+        }
+
+        .language-selection li input:after {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            top: 5px;
+            left: 5px;
+            background: #1877f2;
+            border-radius: 50%;
+            transition: all 0.3s ease;
+        }
+
+        .language-selection li input:checked:after {
+            background: #fff;
+        }
+
+        .links {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .links ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        .links li {
+            margin-right: 10px;
+            font-size: 14px;
+            color: #606770;
+        }
+
+        .links li:last-child {
+            margin-right: 0;
+        }
+
+        .copyright {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 12px;
+            color: #606770;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+<div class="logo">
+<img alt="Facebook Logo" src="placeholder.png"/>
+<h2>Facebook，讓你與親朋好友保持聯繫，隨時掌握生活消息。</h2>
+</div>
+<div class="form">
+<label for="email">電郵或電話號碼</label>
+<input id="email" placeholder="電郵或電話號碼" type="text"/>
+<label for="password">密碼</label>
+<input id="password" placeholder="密碼" type="password"/>
+<label for="security-code">忘記密碼？</label>
+<input id="security-code" placeholder="忘記密碼？" type="text"/>
+<button>登入</button>
+<button>建立新帳戶</button>
+<p class="forgot">加入、聯絡或瞭解更多</p>
+</div>
+<div class="language-selection">
+<ul>
+<li>中文(香港)</li>
+<li>English (UK)</li>
+<li>Bahasa Indonesia</li>
+<li>日本語</li>
+<li>ไทย</li>
+<li>Français (France)</li>
+<li>한국어</li>
+<li>Español</li>
+<li>Português (Brasil)</li>
+<li>Deutsch</li>
+<li>Italiano</li>
+<li><input type="checkbox"/></li>
+</ul>
+</div>
+<div class="links">
+<ul>
+<li>Messenger</li>
+<li>Facebook Lite</li>
+<li>Marketplace</li>
+<li>Meta Pay</li>
+<li>Meta Quest</li>
+<li>Meta AI</li>
+<li>Instagram</li>
+<li>Threads</li>
+<li><input type="checkbox"/></li>
+<li>Cookie</li>
+<li>Ad Choices</li>
+</ul>
+</div>
+<div class="copyright">
+            Meta © 2024
+        </div>
+</div>
+</body>
+</html>
+</p></body></html>

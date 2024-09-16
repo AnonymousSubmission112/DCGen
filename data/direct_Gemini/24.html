@@ -1,0 +1,456 @@
+<html><body><p>
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>КонсультантПлюс</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+header {
+  background-color: #fff;
+  padding: 10px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.logo {
+  float: left;
+  margin-right: 20px;
+}
+
+.logo img {
+  height: 30px;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.search {
+  float: right;
+  margin-top: 10px;
+}
+
+.search input {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.search button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.content {
+  padding: 20px 0;
+}
+
+.section {
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.section h2 {
+  margin-top: 0;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.section p {
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #555;
+}
+
+.section ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.section li {
+  margin-bottom: 10px;
+}
+
+.section a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+}
+
+.section a:hover {
+  text-decoration: underline;
+}
+
+.footer {
+  background-color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.footer p {
+  margin: 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.social {
+  margin-top: 10px;
+}
+
+.social a {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.social img {
+  height: 20px;
+}
+
+.featured {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.featured-item {
+  width: 32%;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.featured-item h3 {
+  margin-top: 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.featured-item p {
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #555;
+}
+
+.featured-item img {
+  width: 100%;
+  height: auto;
+}
+
+.featured-item a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+}
+
+.featured-item a:hover {
+  text-decoration: underline;
+}
+
+.news {
+  margin-bottom: 20px;
+}
+
+.news-item {
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+}
+
+.news-item h4 {
+  margin-top: 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+.news-item p {
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #555;
+}
+
+.news-item a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+}
+
+.news-item a:hover {
+  text-decoration: underline;
+}
+
+.news-item .date {
+  font-size: 12px;
+  color: #777;
+}
+
+.products {
+  display: flex;
+  justify-content: space-between;
+}
+
+.products-item {
+  width: 24%;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.products-item h3 {
+  margin-top: 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.products-item p {
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #555;
+}
+
+.products-item a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+}
+
+.products-item a:hover {
+  text-decoration: underline;
+}
+</style>
+</head>
+<body>
+<header>
+<div class="container">
+<div class="logo">
+<img alt="КонсультантПлюс" src="placeholder.png"/>
+</div>
+<nav>
+<ul>
+<li><a href="#">Некоммерческие интернет-версии</a></li>
+<li><a href="#">О компании и продуктах</a></li>
+<li><a href="#">Купить КонсультантПлюс</a></li>
+<li><a href="#">Новости и акции</a></li>
+<li><a href="#">Пробный доступ</a></li>
+<li><a href="#">Вакансии</a></li>
+</ul>
+</nav>
+<div class="search">
+<input placeholder="Поиск Кодексы, законы и другие материалы" type="text"/>
+<button>НАЙТИ</button>
+</div>
+</div>
+</header>
+<main class="content">
+<div class="container">
+<div class="featured">
+<div class="featured-item">
+<h3>Вход для клиентов</h3>
+<p>Вход в систему</p>
+<p>КонсультантПлюс для клиентов</p>
+<img alt="Вход в систему" src="placeholder.png"/>
+<p>Пробный доступ к системе КонсультантПлюс бесплатно</p>
+<img alt="Пробный доступ" src="placeholder.png"/>
+<p>Получите специальное предложение на покупку системы КонсультантПлюс</p>
+<img alt="Купить систему" src="placeholder.png"/>
+<h3>310 744 893</h3>
+<p>документы в системе КонсультантПлюс</p>
+<p>Обзоры законодательства</p>
+<p>Подписка на рассылки</p>
+<p>Интернет-интервью</p>
+<p>Студенты и преподавателю</p>
+</div>
+<div class="featured-item">
+<h3>Президент определил национальные цели развития России</h3>
+<img alt="Президент определил национальные цели развития России" src="placeholder.png"/>
+</div>
+<div class="featured-item">
+<h3>«Горячие» документы</h3>
+<p>Новые законы РФ, указы Президента, постановления Правительства и другие нормативные акты. Новые документы поступают несколько раз в день.</p>
+<img alt="Горячие документы" src="placeholder.png"/>
+<h3>Новый профиль</h3>
+<p>«Специалист по охране труда» в КонсультантПлюс</p>
+<img alt="Специалист по охране труда" src="placeholder.png"/>
+</div>
+</div>
+<div class="section news">
+<h2>Новости</h2>
+<div class="news-item">
+<p class="date">сегодня</p>
+<h4>Изменения налоговой системы: Минфин сообщил, какие новшества готов поддержать</h4>
+<img alt="Изменения налоговой системы" src="placeholder.png"/>
+</div>
+<div class="news-item">
+<p class="date">сегодня</p>
+<h4>ФАС планирует выявлять антиконкурентные соглашения с помощью новой информсистемы</h4>
+<p>Не пропустите</p>
+<p>Договоры с самозанятыми: яркие споры о переквалификации их в трудовые за январь – май 2024 года</p>
+</div>
+<div class="news-item">
+<p class="date">сегодня</p>
+<h4>Отзыв ПБО в 2024 году: Казначейство подготовило план-график мероприятий</h4>
+</div>
+<div class="news-item">
+<p class="date">сегодня</p>
+<h4>Медосмотры работников: интересные примеры споров за 2022 – 2024 годы</h4>
+</div>
+<div class="news-item">
+<p class="date">сегодня</p>
+<h4>Президент установил порядок приобретения исключительных прав у лиц недружественных стран</h4>
+</div>
+<a href="#">Все новости</a>
+</div>
+<div class="section products">
+<h2>Продукты</h2>
+<div class="products-item">
+<h3>Юристу</h3>
+<p>Законодательство, судебная практика и ее анализ. Комментарии и разъяснения. Конструктор договоров.</p>
+<img alt="Юристу" src="placeholder.png"/>
+</div>
+<div class="products-item">
+<h3>Бухгалтеру</h3>
+<p>Готовые решения, разъяснения ведомств, образцы заполнения. Видеосеминары. Конструкторы, калькуляторы.</p>
+<img alt="Бухгалтеру" src="placeholder.png"/>
+</div>
+<div class="products-item">
+<h3>Бюджетной организации</h3>
+<p>Законодательство и разъяснения. Образцы заполнения, видеосеминары, новости, конструкторы.</p>
+<img alt="Бюджетной организации" src="placeholder.png"/>
+</div>
+<div class="products-item">
+<h3>Другим специалистам</h3>
+<img alt="Другим специалистам" src="placeholder.png"/>
+</div>
+</div>
+<div class="section">
+<h2>Кодексы</h2>
+<p>Гражданский кодекс (ГК РФ)</p>
+<p>Жилищный кодекс (ЖК РФ)</p>
+<p>Налоговый кодекс (НК РФ)</p>
+<p>Трудовой кодекс (ТК РФ)</p>
+<p>Уголовный кодекс (УК РФ)</p>
+<p>Кодекс об административных правонарушениях (КоАП РФ)</p>
+<p>Бюджетный кодекс БК РФ)</p>
+<p>Таможенный кодекс ЕАЭС</p>
+<p>Арбитражный процессуальный кодекс (АПК РФ)</p>
+<p>Земельный кодекс (ЗК РФ)</p>
+<p>Популярные документы для бухгалтеров</p>
+<p>Все документы</p>
+</div>
+<div class="section">
+<h2>Законы</h2>
+<p>О защите прав потребителей</p>
+<p>О банкротстве</p>
+<p>Об исполнительном производстве</p>
+<p>О персональных данных</p>
+<p>О налогах на имущество физических лиц, ОКВЭД</p>
+<p>Расходы организации ПБУ 10/99</p>
+<p>О судебных приставах</p>
+<p>О государственной регистрации недвижимости</p>
+<p>Конституция РФ</p>
+</div>
+<div class="section">
+<h2>Справочная информация</h2>
+<p>Правовой календарь на II квартал 2024 г.</p>
+<p>Календарь бухгалтера на 2024 г.</p>
+<p>Производственный календарь на 2024 г.</p>
+<p>Производственный календарь на 2023 г.</p>
+<p>Таможенный календарь на 2024 г.</p>
+<p>Калькуляторы</p>
+<p>Государственная регистрация юридических лиц</p>
+<p>Государственная регистрация индивидуальных предпринимателей</p>
+<p>Налоговая декларация по НДС</p>
+<p>Формы бухгалтерской отчетности</p>
+<p>Процентная ставка рефинансирования (учетная ставка), установленная ЦБ РФ</p>
+<p>Ключевая ставка ЦБ РФ на сегодня</p>
+<p>Должностные инструкции</p>
+<p>Пособия и их расчетные данные на 2024 г.</p>
+<p>МРОТ 2024</p>
+<p>Подборки материалов, акты, образцы, формы, договоры</p>
+<p>Частичная мобилизация: обзор новостей</p>
+<p>Вся справочная информация</p>
+</div>
+</div>
+</main>
+<footer class="footer">
+<div class="container">
+<p>Контактная информация</p>
+<p>117292, Москва, ул. Кржижановского, 6 (центральный офис)</p>
+<p>+7 (495) 956-82-83</p>
+<p>+7 (495) 787-92-92</p>
+<p>contact@consultant.ru</p>
+<p>Все права защищены © 1997–2024 КонсультантПлюс</p>
+<img alt="КонсультантПлюс" src="placeholder.png"/>
+<p>Свидетельство МПТР России Эл №77-6731</p>
+<p>Политика обработки персональных данных</p>
+<p>Условия доступа к сайту</p>
+<div class="social">
+<a href="#"><img alt="ВКонтакте" src="placeholder.png"/></a>
+<a href="#"><img alt="Telegram" src="placeholder.png"/></a>
+<a href="#"><img alt="Одноклассники" src="placeholder.png"/></a>
+<a href="#"><img alt="Дзен" src="placeholder.png"/></a>
+</div>
+</div>
+</footer>
+</body>
+</html>
+</p></body></html>

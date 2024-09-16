@@ -1,0 +1,217 @@
+<html><body><p>
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Gravatar</title>
+<style>
+        /* Reset some default styles */
+        body, h1, h2, h3, p, ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* General styles */
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            line-height: 1.5;
+        }
+
+        /* Header */
+        header {
+            background-color: #fff;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li:first-child {
+            margin-left: 0;
+        }
+
+        /* Hero section */
+        .hero {
+            background-color: #f2f2f2;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 40px;
+        }
+
+        .hero img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Features section */
+        .features {
+            background-color: #003d72;
+            color: #fff;
+            padding: 80px 20px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .feature {
+            max-width: 300px;
+            text-align: center;
+        }
+
+        .feature img {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 20px;
+        }
+
+        /* Developer section */
+        .developer {
+            background-color: #000;
+            color: #fff;
+            padding: 80px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .developer-text {
+            max-width: 500px;
+        }
+
+        .developer-text h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .developer-code {
+            background-color: #333;
+            padding: 20px;
+            font-family: monospace;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #003d72;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer p {
+            margin-bottom: 10px;
+        }
+
+        footer nav ul {
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+<header>
+<a href="#"><img alt="Gravatar Logo" src="placeholder.png"/></a>
+<nav>
+<ul>
+<li><a href="#">Developers</a></li>
+<li><a href="#">Support</a></li>
+<li><a href="#">Blog</a></li>
+<li><a href="#">Log in</a></li>
+<li><a href="#">Sign up</a></li>
+</ul>
+</nav>
+</header>
+<section class="hero">
+<h1>One profile for everything, everywhere.</h1>
+<p>One avatar attached to everything you do online. Control and manage your personal data with complete control over your personal data.</p>
+<img alt="Hero Image" src="placeholder.png"/>
+</section>
+<section class="features">
+<div class="feature">
+<img alt="Icon" src="placeholder.png"/>
+<h3>Set once, seen everywhere.</h3>
+<p>When you change your avatar profile, your avatar updates everywhere. No need to update your avatar in multiple places.</p>
+</div>
+<div class="feature">
+<img alt="Icon" src="placeholder.png"/>
+<h3>It starts with an email.</h3>
+<p>Your Gravatar profile is tied to your email address. When you sign up or log in with your email account, the web site knows to load your profile from Gravatar.</p>
+</div>
+<div class="feature">
+<img alt="Icon" src="placeholder.png"/>
+<h3>Trusted by big platforms.</h3>
+<p>Millions of websites like WordPress, Stack, and Discord use your Gravatar profile automatically. Whenever you use any of those services, your profile will appear.</p>
+</div>
+<div class="feature">
+<img alt="Icon" src="placeholder.png"/>
+<h3>Public, open, and responsible.</h3>
+<p>You control over the data that you share with the tools you use. You decide when to share your profile and how public or private it is. With Gravatar, your data is yours and yours only.</p>
+<a href="#">Read our Privacy Policy</a>
+</div>
+</section>
+<section class="developer">
+<div class="developer-text">
+<h2>Unlock personalized user experiences.</h2>
+<p>Gravatar lets developers personalize content based on user information from our Gravatar profile database. This information can be integrated with your app in mere minutes.</p>
+<a href="#">Use the Developer API</a>
+</div>
+<div class="developer-code">
+<pre>
+&lt;script&gt;
+    window._gravatar = window._gravatar || [];
+    _gravatar.push(['profile', {
+        email: 'example@example.com',
+        callback: function(profile) {
+            // Display user's avatar
+            var avatar = profile.profileUrl;
+            document.getElementById('avatar').src = avatar;
+        }
+    }]);
+    var gravatar=document.createElement('script');
+    gravatar.type='text/javascript';
+    gravatar.async=true;
+    gravatar.src=('https:'==document.location.protocol ?
+        'https://secure' : 'http://insecure')+
+        '.gravatar.com/js/gprofiles.js';
+    var s=document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gravatar, s);
+&lt;/script&gt;
+            </pre>
+</div>
+</section>
+<footer>
+<p>We are building the open web.</p>
+<p>Gravatar, a service by Automattic, has powered avatars and profiles since 2004. We are passionate about open source and making the web a more connected place. We are on a mission to build a better internet experience.</p>
+<a href="#">Claim your free profile</a>
+<nav>
+<ul>
+<li><a href="#">Gravatar</a></li>
+<li><a href="#">Languages</a></li>
+<li><a href="#">Developer Resources</a></li>
+<li><a href="#">Privacy Policy</a></li>
+<li><a href="#">Support</a></li>
+</ul>
+</nav>
+<p>© Automattic</p>
+</footer>
+</body>
+</html>
+</p></body></html>

@@ -1,0 +1,164 @@
+<html><body><p>
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Recreated Webpage</title>
+<link href="styles.css" rel="stylesheet"/>
+<style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f9f9f9;
+        }
+
+        .header {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .login-button {
+            background-color: #ffffff;
+            border: 1px solid #ccc;
+            padding: 10px 15px;
+            border-radius: 5px;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+
+        .menu-icon {
+            width: 20px;
+            height: 20px;
+            background-color: #ccc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 3px;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .menu-icon::before,
+        .menu-icon::after {
+            content: '';
+            width: 100%;
+            height: 1px;
+            background-color: #000;
+            position: absolute;
+            left: 0;
+            transform-origin: center;
+        }
+
+        .menu-icon::before {
+            top: 7px;
+        }
+
+        .menu-icon::after {
+            bottom: 7px;
+        }
+
+        .search-container {
+            margin-top: 50px;
+            display: flex;
+            align-items: center;
+        }
+
+        .search-bar {
+            width: 500px;
+            height: 40px;
+            border: 1px solid #FFDD00;
+            border-radius: 25px;
+            padding: 0 10px;
+            box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+            font-size: 18px;
+        }
+
+        .search-icons {
+            display: flex;
+            align-items: center;
+            margin-left: -40px;
+        }
+        
+        .search-icons img {
+            margin-left: 10px;
+        }
+
+        .weather-info {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .weather-info img {
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        .weather-text {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .weather-details {
+            display: flex;
+            align-items: center;
+        }
+
+        .footer {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+        }
+
+        .footer-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #6200EE;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+<button class="login-button">Войти</button>
+<div class="menu-icon"></div>
+</div>
+<div class="search-container">
+<input class="search-bar" placeholder="Найдётся всё" type="text"/>
+<div class="search-icons">
+<img alt="Microphone Icon" class="icon" src="placeholder.png" style="height: 24px;"/>
+<img alt="Settings Icon" class="icon" src="placeholder.png" style="height: 24px;"/>
+</div>
+</div>
+<div class="weather-info">
+<img alt="Weather Icon" src="placeholder.png"/>
+<div class="weather-text">
+<div class="weather-details">
+<span>25°</span>
+<span style="margin-left: 15px;">USD 90,25</span>
+<span style="margin-left: 15px;">EUR 97,88</span>
+</div>
+<span>Гонконг</span>
+</div>
+</div>
+<div class="footer">
+<div class="footer-icon">⬤</div>
+</div>
+</body>
+</html>
+</p></body></html>

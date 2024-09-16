@@ -1,0 +1,433 @@
+<html><body><p>
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Track, prioritize, and fix app crashes faster</title>
+<style>
+  body {
+    background-color: #1a1a1a;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  header {
+    background-color: #282828;
+    padding: 16px 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-left {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-left a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 24px;
+  }
+
+  .nav-left a:hover {
+    text-decoration: underline;
+  }
+
+  .nav-right {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-right a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 24px;
+  }
+
+  .nav-right a:hover {
+    text-decoration: underline;
+  }
+
+  .hero {
+    padding: 80px 32px;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+
+  .hero p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 32px;
+  }
+
+  .hero button {
+    background-color: #ff6f00;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 16px;
+  }
+
+  .hero button:hover {
+    background-color: #ff8c37;
+  }
+
+  .section {
+    padding: 80px 32px;
+  }
+
+  .section h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+
+  .section p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 32px;
+  }
+
+  .feature {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 64px;
+  }
+
+  .feature-content {
+    flex: 1;
+    margin-right: 32px;
+  }
+
+  .feature-content h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+
+  .feature-content p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .feature-image {
+    width: 300px;
+    height: 200px;
+    background-color: #ccc;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .feature-image img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .cta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 64px;
+  }
+
+  .cta button {
+    background-color: #ff6f00;
+    color: #fff;
+    border: none;
+    padding: 16px 32px;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .cta button:hover {
+    background-color: #ff8c37;
+  }
+
+  .case-studies {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .case-study {
+    width: calc(33.33% - 24px);
+    margin-bottom: 32px;
+    background-color: #282828;
+    padding: 32px;
+    border-radius: 8px;
+  }
+
+  .case-study h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+
+  .case-study p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 24px;
+  }
+
+  .case-study a {
+    color: #ff6f00;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .case-study a:hover {
+    text-decoration: underline;
+  }
+
+  .case-study-image {
+    width: 100%;
+    height: 150px;
+    background-color: #ccc;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+
+  .case-study-image img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  footer {
+    background-color: #1a1a1a;
+    padding: 40px 32px;
+    text-align: center;
+  }
+
+  .footer-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 32px;
+  }
+
+  .footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 24px;
+  }
+
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
+
+  .footer-copyright {
+    font-size: 14px;
+  }
+</style>
+</head>
+<body>
+<header>
+<div class="nav-left">
+<a href="#">Build</a>
+<a href="#">Run</a>
+<a href="#">Solutions</a>
+<a href="#">More</a>
+</div>
+<div class="nav-right">
+<input class="search" placeholder="search" type="text"/>
+<a href="#">Go to console</a>
+<a href="#">Sign in</a>
+</div>
+</header>
+<section class="hero">
+<h1>Track, prioritize, and fix app crashes faster</h1>
+<p>Real time crash and error reporting and analysis to help keep your apps running flawlessly. Easily integrates with Android, Apple, Flutter and Unity apps.</p>
+<button>Get Started</button>
+<button>View Docs</button>
+</section>
+<section class="section">
+<h2>Spend less time troubleshooting crashes and ANRs</h2>
+<p>Crashlytics starts capturing crashes right out of the box and groups them into manageable issues based on the impact on real users - to help you prioritize what to fix first.</p>
+<button>Get Started</button>
+</section>
+<section class="section">
+<h2>Get AI-powered insights and troubleshooting tips with Gemini in Firebase</h2>
+<p>Speed up the time it takes for you to understand why a crash happened and what to do about it with AI crash insights. Firebase's wealth of crash knowledge can provide actionable insights to help you get to the root cause faster.</p>
+<div class="feature">
+<div class="feature-content">
+<h3>Easy integration into your existing workflow</h3>
+<p>Firebase Crashlytics works seamlessly with industry-standard tools including Jira, Slack, BigQuery, and more. And, with integrations for Android Studio, you can view Crashlytics data directly within the App Quality Insights window, making it easy to debug crashes without leaving the IDE.</p>
+</div>
+<div class="feature-image">
+<img alt="Feature Image" src="placeholder.png"/>
+</div>
+</div>
+<div class="feature">
+<div class="feature-content">
+<h3>Get contextual information about crashes to make debugging easier</h3>
+<p>Understand the timeline of events leading up to app crashes and visualizations of metadata that surface common characteristics of crashes so you can quickly reproduce bugs and uncover the root cause.</p>
+</div>
+<div class="feature-image">
+<img alt="Feature Image" src="placeholder.png"/>
+</div>
+</div>
+<div class="feature">
+<div class="feature-content">
+<h3>Real-time release monitoring</h3>
+<p>Track your new release adoption and stability in real-time, so you can catch errors and address emerging problems before they impact a large number of users.</p>
+</div>
+<div class="feature-image">
+<img alt="Feature Image" src="placeholder.png"/>
+</div>
+</div>
+<div class="feature">
+<div class="feature-content">
+<h3>Custom logging &amp; breadcrumbs</h3>
+<p>Instrument logs, keys, non-fatal state events, and custom information and capture what happened leading up to crashes. You can log your own contextual data or use existing Google Analytics user behavior and paths leading up to a crash.</p>
+</div>
+<div class="feature-image">
+<img alt="Feature Image" src="placeholder.png"/>
+</div>
+</div>
+<div class="feature">
+<div class="feature-content">
+<h3>Alerts</h3>
+<p>Receive real time alerts for new errors, regressed errors, and errors that are starting to happen at higher rates, no matter where you are so you never miss a critical crash.</p>
+</div>
+<div class="feature-image">
+<img alt="Feature Image" src="placeholder.png"/>
+</div>
+</div>
+<button>Add our SDK</button>
+</section>
+<section class="section">
+<h2>Documentation</h2>
+<p>Review our technical documentation to get started</p>
+<button>View Docs</button>
+</section>
+<section class="section">
+<h2>Pricing</h2>
+<p>There's no cost to using Crashlytics</p>
+</section>
+<section class="section">
+<h2>Learn how Crashlytics helps teams across the world improve app quality</h2>
+<div class="case-studies">
+<div class="case-study">
+<h3>STAGE uses Firebase and Flutter to cut release time in half</h3>
+<p>STAGE paired Flutter's front-end tools with Firebase's back-end services to build a multi-platform app, with infrastructure that securely stores and delivers content to almost 2 million users in real time for a smooth viewing experience - helping them stand out on a fiercely competitive streaming market.</p>
+<a href="#">Read more arrow_forward</a>
+<div class="case-study-image">
+<img alt="Case Study Image" src="placeholder.png"/>
+</div>
+</div>
+<div class="case-study">
+<h3>Gameloft uses Crashlytics to lower crash rates and increase player session duration by 15%</h3>
+<p>Gameloft, an award-winning global game studio needed a robust crash reporting tool to monitor game stability across their vast portfolio in a holistic way. They turned to Crashlytics to reduce crash rates, improve player engagement, and increase App Store rating.</p>
+<a href="#">Read more arrow_forward</a>
+<div class="case-study-image">
+<img alt="Case Study Image" src="placeholder.png"/>
+</div>
+</div>
+<div class="case-study">
+<h3>Pomelo Games used Firebase to increase revenue by up to 35% without losing players</h3>
+<p>Pomelo Games, one of the top game studios in Uruguay, used Remote Config, A/B Testing, Google Analytics, and Crashlytics to test an increase in both ad revenue and in-app purchases with no decline to interstitial ads in their game. This led to an increase in both ad revenue and retention or stability.</p>
+<a href="#">Read more arrow_forward</a>
+<div class="case-study-image">
+<img alt="Case Study Image" src="placeholder.png"/>
+</div>
+</div>
+</div>
+</section>
+<section class="cta">
+<h2>Try Firebase today</h2>
+<p>Integrating it into your app is easy.</p>
+<button>Get Started</button>
+</section>
+<footer>
+<h2>All Firebase products</h2>
+<div class="footer-links">
+<a href="#">Build</a>
+<a href="#">Run</a>
+<a href="#">Solutions</a>
+</div>
+<div>
+<h3>BUILD</h3>
+<ul>
+<li>App Check</li>
+<li>App Hosting</li>
+<li>Authentication</li>
+<li>Cloud Functions</li>
+<li>Cloud Storage</li>
+<li>Data Connect</li>
+<li>Generative AI</li>
+</ul>
+</div>
+<div>
+<h3>RUN</h3>
+<ul>
+<li>A/B Testing</li>
+<li>App Distribution</li>
+<li>Cloud Messaging</li>
+<li>Crashlytics</li>
+<li>Google Analytics</li>
+<li>In-App Messaging</li>
+</ul>
+</div>
+<div>
+<h3>SOLUTIONS</h3>
+<ul>
+<li>Extensions</li>
+<li>Firestore</li>
+<li>Firebase ML</li>
+<li>Genkit</li>
+<li>Hosting</li>
+<li>Realtime Database</li>
+</ul>
+</div>
+<div>
+<h3>SOLUTIONS</h3>
+<ul>
+<li>Performance Monitoring</li>
+<li>Remote Config</li>
+<li>Test Lab</li>
+</ul>
+</div>
+<div class="footer-links">
+<a href="#">Learn</a>
+<a href="#">Stay connected</a>
+<a href="#">Support</a>
+</div>
+<div class="footer-copyright">
+<p>
+        © 2023 Google LLC
+      </p>
+<ul>
+<li>Android</li>
+<li>Chrome</li>
+<li>Firebase</li>
+<li>Google Cloud Platform</li>
+<li>All products</li>
+</ul>
+</div>
+</footer>
+</body>
+</html>
+</p></body></html>

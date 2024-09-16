@@ -1,0 +1,290 @@
+<html><body><p>
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Website Layout</title>
+<style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            text-align: center;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 50px;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        header img {
+            height: 40px;
+        }
+
+        nav a {
+            margin: 0 15px;
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .cta-buttons {
+            display: flex;
+            align-items: center;
+        }
+
+        .cta-buttons a {
+            margin-left: 20px;
+            padding: 10px 20px;
+            border: 1px solid #333;
+            color: #333;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .cta-buttons a.contact {
+            background-color: #ff4e4e;
+            color: #fff;
+        }
+
+        .banner {
+            padding: 100px 20px;
+            background-color: #e0e0e0;
+            text-align: center;
+            color: #333;
+        }
+
+        .banner h1 {
+            font-size: 42px;
+            color: #67a1e2;
+        }
+
+        .banner h2 {
+            font-size: 36px;
+        }
+
+        .banner p {
+            font-size: 18px;
+            margin-top: 20px;
+        }
+
+        .company-logos {
+            background-color: #fff;
+            padding: 50px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .company-logos img {
+            height: 80px;
+            margin: 0 20px;
+        }
+
+        .tech-section {
+            padding: 70px 20px;
+        }
+
+        .tech-section h2 {
+            font-size: 36px;
+        }
+
+        .tech-items {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 50px;
+        }
+
+        .tech-items div {
+            width: 30%;
+            text-align: center;
+        }
+
+        .tech-items img {
+            height: 40px;
+            display: block;
+            margin: 0 auto 20px auto;
+        }
+
+        .tech-items p {
+            font-size: 16px;
+        }
+
+        .ads-section {
+            padding: 70px 20px;
+            background-color: #f4f4f4;
+        }
+
+        .ads-section h2 {
+            font-size: 36px;
+            text-align: center;
+        }
+
+        .ads-items {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 50px;
+        }
+
+        .ads-item {
+            width: 33%;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .ads-item img {
+            width: 100%;
+            height: 200px;
+            background-color: #e0e0e0;
+            margin-bottom: 20px;
+        }
+
+        .ads-item h3 {
+            font-size: 24px;
+        }
+
+        .ads-item p {
+            font-size: 16px;
+        }
+
+        .ads-item .cta-buttons{
+            margin: 20px 0 0 0;
+        }
+
+        footer {
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        footer p {
+            font-size: 14px;
+            margin: 0;
+        }
+
+        footer a {
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 10px;
+        }
+
+        .footer-links {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            margin: 0 10px;
+        }
+        
+    </style>
+</head>
+<body>
+<header>
+<img alt="Logo" src="placeholder.png"/>
+<nav>
+<a href="#">HOME</a>
+<a href="#">MARKETPLACE</a>
+<a href="#">CONTEXTUAL ADS</a>
+<a href="#">PROGRAMMATIC</a>
+<a href="#">BUYERS</a>
+</nav>
+<div class="cta-buttons">
+<a href="#">SIGN IN</a>
+<a class="contact" href="#">CONTACT US</a>
+</div>
+</header>
+<section class="banner">
+<h1>Are you ready to</h1>
+<h2>maximize your revenue?</h2>
+<p>Tap into one of the largest pools of advertisers in the world and let our ads maximize your monetization.</p>
+</section>
+<section class="company-logos">
+<h2>Keep Good Company.</h2>
+<div>
+<img alt="Company Logo" src="placeholder.png"/>
+<img alt="Company Logo" src="placeholder.png"/>
+<img alt="Company Logo" src="placeholder.png"/>
+<img alt="Company Logo" src="placeholder.png"/>
+<img alt="Company Logo" src="placeholder.png"/>
+<img alt="Company Logo" src="placeholder.png"/>
+</div>
+</section>
+<section class="tech-section">
+<h2>Tech That Ups Your Monetization Game.</h2>
+<div class="tech-items">
+<div>
+<img alt="Logo" src="placeholder.png"/>
+<p>Monetize your content with exclusive access to search demand worth billions from the Yahoo! Bing Network.</p>
+</div>
+<div>
+<img alt="Logo" src="placeholder.png"/>
+<p>Leverage competitive demand from search, direct advertisers and traditional RTB sources to maximize your yield.</p>
+</div>
+<div>
+<img alt="Logo" src="placeholder.png"/>
+<p>Harness the power of our next-gen cross-format header bidding platform with server-side enablement.</p>
+</div>
+</div>
+</section>
+<section class="ads-section">
+<h2>One Tag, Many Possibilities.</h2>
+<div class="ads-items">
+<div class="ads-item">
+<img alt="Ad Image" src="placeholder.png"/>
+<h3>Contextual Ads</h3>
+<p>Revolutionize your ad strategy. Based on our proprietary ad format, contextual ads open up advertising search budgets worth billions of dollars. This format filters the user's intent via relevant search keywords, resulting in finely targeted ads and much higher revenues as advertisers are willing to pay more for visitors with qualified intent.</p>
+</div>
+<div class="ads-item">
+<img alt="Ad Image" src="placeholder.png"/>
+<h3>Display Ads</h3>
+<p>Get global demand for your inventory. We provide you easy access to high-quality display ads by connecting with major buyer networks and managing operational overheads so that you don't have to. You also benefit from our strong relationships with DSPs, Agency Trading Desks, Horizontal Networks, Vertical Networks, Performance Networks, AMP, DMPs, etc.</p>
+</div>
+<div class="ads-item">
+<img alt="Ad Image" src="placeholder.png"/>
+<h3>Native Ads</h3>
+<p>Prioritize your user experience. Tap into ever-increasing native budgets with Media.net's native ad formats. They are completely customized to the look and feel of your pages for higher user engagement. You also have the option to drive your audience to contextually relevant articles on your site through the native ad unit.</p>
+</div>
+</div>
+<div class="ads-item">
+<img alt="Ad Image" src="placeholder.png"/>
+<h3>Apply for the Media.net advantage</h3>
+<div class="cta-buttons">
+<a class="contact" href="#">CONTACT US</a>
+</div>
+</div>
+</section>
+<footer>
+<p>© 2024 Media.net. All rights reserved.</p>
+<div class="footer-links">
+<a href="#">ABOUT</a>
+<a href="#">MARKETPLACE</a>
+<a href="#">PROGRAMMATIC</a>
+<a href="#">CONTEXTUAL ADS</a>
+<a href="#">BUYERS</a>
+<a href="#">CAREERS</a>
+<a href="#">RESOURCES</a>
+<a href="#">CONTACT US</a>
+<a href="#">OPT OUT</a>
+<a href="#">COOKIES SETTINGS</a>
+<a href="#">INVENTORY POLICY</a>
+<a href="#">AD QUALITY</a>
+<a href="#">PRIVACY POLICY</a>
+<a href="#">PREFERENCES</a>
+</div>
+</footer>
+</body>
+</html>
+</p></body></html>

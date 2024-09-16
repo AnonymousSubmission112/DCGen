@@ -1,0 +1,1003 @@
+<html><body><p>```html
+<!DOCTYPE html>
+
+<html>
+<head>
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #fff;
+}
+
+.header {
+  background-color: #000;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo {
+  margin-right: 20px;
+}
+
+.header-logo img {
+  height: 20px;
+}
+
+.header-links {
+  display: flex;
+  align-items: center;
+}
+
+.header-links a {
+  color: #fff;
+  margin-right: 20px;
+  text-decoration: none;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.header-right a {
+  color: #fff;
+  margin-right: 20px;
+  text-decoration: none;
+}
+
+.header-button {
+  background-color: #F2711C;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.header-button:hover {
+  background-color: #d25c0e;
+}
+
+.content {
+  padding: 20px;
+}
+
+.section {
+  margin-bottom: 40px;
+}
+
+.section-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.section-text {
+  font-size: 16px;
+}
+
+.section-cta {
+  background-color: #F2711C;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: #fff;
+  text-decoration: none;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.section-cta:hover {
+  background-color: #d25c0e;
+}
+
+.cta-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-image {
+  background-color: #2f2f2f;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-image img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.footer {
+  background-color: #000;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-left {
+  display: flex;
+  align-items: center;
+}
+
+.footer-logo {
+  margin-right: 20px;
+}
+
+.footer-logo img {
+  height: 20px;
+}
+
+.footer-links {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.footer-links a {
+  color: #fff;
+  margin-right: 20px;
+  text-decoration: none;
+}
+
+.footer-right {
+  display: flex;
+  align-items: center;
+}
+
+.footer-right a {
+  color: #fff;
+  margin-right: 20px;
+  text-decoration: none;
+}
+
+.footer-button {
+  background-color: #F2711C;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-button:hover {
+  background-color: #d25c0e;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 12px;
+  margin-top: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container-left {
+  width: 50%;
+}
+
+.container-right {
+  width: 50%;
+}
+
+.card {
+  background-color: #2f2f2f;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 14px;
+}
+
+.card-image {
+  background-color: #2f2f2f;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-image img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  background-color: #F2711C;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: #fff;
+  text-decoration: none;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.button:hover {
+  background-color: #d25c0e;
+}
+
+.blog-section {
+  margin-top: 40px;
+}
+
+.blog-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.blog-post {
+  background-color: #2f2f2f;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.blog-post-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.blog-post-text {
+  font-size: 14px;
+}
+
+.blog-post-button {
+  background-color: #F2711C;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: #fff;
+  text-decoration: none;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.blog-post-button:hover {
+  background-color: #d25c0e;
+}
+
+.blog-button-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.close-button:hover {
+  color: #F2711C;
+}
+
+.close-button:focus {
+  outline: none;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  max-width: 600px;
+  position: relative;
+}
+
+.modal-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.modal-text {
+  font-size: 16px;
+}
+
+.modal-button {
+  background-color: #F2711C;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: #fff;
+  text-decoration: none;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.modal-button:hover {
+  background-color: #d25c0e;
+}
+
+.cookie-banner {
+  background-color: #2f2f2f;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cookie-banner-text {
+  font-size: 14px;
+}
+
+.cookie-banner-button {
+  background-color: #F2711C;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.cookie-banner-button:hover {
+  background-color: #d25c0e;
+}
+
+.cookie-banner-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.cookie-banner-link:hover {
+  text-decoration: underline;
+}
+
+.try-now {
+  background-color: #F2711C;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: #fff;
+  text-decoration: none;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.try-now:hover {
+  background-color: #d25c0e;
+}
+
+.read-more {
+  color: #F2711C;
+  text-decoration: none;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.close-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.close-icon:hover {
+  color: #F2711C;
+}
+
+.close-icon:focus {
+  outline: none;
+}
+
+.header-right-button {
+  background-color: #F2711C;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.header-right-button:hover {
+  background-color: #d25c0e;
+}
+
+.section-title-2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.section-text-2 {
+  font-size: 14px;
+}
+
+.section-cta-2 {
+  background-color: #F2711C;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: #fff;
+  text-decoration: none;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.section-cta-2:hover {
+  background-color: #d25c0e;
+}
+
+.section-image-2 {
+  background-color: #2f2f2f;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-image-2 img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.section-title-3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.section-text-3 {
+  font-size: 12px;
+}
+
+.section-cta-3 {
+  background-color: #F2711C;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: #fff;
+  text-decoration: none;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.section-cta-3:hover {
+  background-color: #d25c0e;
+}
+
+.section-image-3 {
+  background-color: #2f2f2f;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-image-3 img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.section-title-4 {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.section-text-4 {
+  font-size: 10px;
+}
+
+.section-cta-4 {
+  background-color: #F2711C;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: #fff;
+  text-decoration: none;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.section-cta-4:hover {
+  background-color: #d25c0e;
+}
+
+.section-image-4 {
+  background-color: #2f2f2f;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-image-4 img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.section-title-5 {
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.section-text-5 {
+  font-size: 8px;
+}
+
+.section-cta-5 {
+  background-color: #F2711C;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: #fff;
+  text-decoration: none;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.section-cta-5:hover {
+  background-color: #d25c0e;
+}
+
+.section-image-5 {
+  background-color: #2f2f2f;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-image-5 img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.section-title-6 {
+  font-size: 10px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.section-text-6 {
+  font-size: 6px;
+}
+
+.section-cta-6 {
+  background-color: #F2711C;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: #fff;
+  text-decoration: none;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.section-cta-6:hover {
+  background-color: #d25c0e;
+}
+
+.section-image-6 {
+  background-color: #2f2f2f;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-image-6 img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.section-title-7 {
+  font-size: 8px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.section-text-7 {
+  font-size: 4px;
+}
+
+.section-cta-7 {
+  background-color: #F2711C;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: #fff;
+  text-decoration: none;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.section-cta-7:hover {
+  background-color: #d25c0e;
+}
+
+.section-image-7 {
+  background-color: #2f2f2f;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-image-7 img {
+  max-width: 100%;
+  max-height: 100%;
+}
+</style>
+</head>
+<body>
+<div class="header">
+<div class="header-left">
+<div class="header-logo"><img alt="Logo" src="placeholder.png"/></div>
+<div class="header-links">
+<a href="#">PRODUCTS</a>
+<a href="#">SERVICES</a>
+<a href="#">SUPPORT &amp; RESOURCES</a>
+</div>
+</div>
+<div class="header-right">
+<div class="dropdown">
+<button class="dropdown-button">EN</button>
+<div class="dropdown-content">
+<a href="#">EN</a>
+</div>
+</div>
+<a class="header-right-button" href="#">SIGN IN</a>
+<a class="header-button" href="#">TRY NOW</a>
+</div>
+</div>
+<div class="content">
+<div class="section">
+<div class="section-image">
+<img alt="Image" src="placeholder.png"/>
+</div>
+<h1 class="section-title">Command Your Attack Surface</h1>
+<h2 class="section-title">Anticipate, Pinpoint, Act</h2>
+<div class="cta-wrapper">
+<a class="section-cta" href="#">EXPLORE OUR MDR SOLUTION</a>
+<a class="section-cta" href="#">ACCESS NEW RESEARCH</a>
+</div>
+</div>
+<div class="section">
+<div class="cookie-banner">
+<div class="cookie-banner-text">We use cookies on our site to enhance site navigation, analyze site usage, and assist in our marketing efforts. <a class="cookie-banner-link" href="#">Privacy Policy</a>.</div>
+<button class="cookie-banner-button">Cookies Settings</button>
+</div>
+</div>
+<div class="section">
+<h2 class="section-title">Helping 11,000+ global companies take the gloves off - <a class="read-more" href="#">View Customer Stories</a></h2>
+</div>
+<div class="section">
+<h2 class="section-title">Level up SecOps. With the only endpoint to cloud, unified cybersecurity platform.</h2>
+<p class="section-text">Analyze attack vectors distinct to your organization, link them to exposures, and confidently act to prevent breaches with leading MDR.</p>
+<div class="container">
+<div class="container-left">
+<div class="card">
+<div class="card-image">
+<img alt="Image" src="placeholder.png"/>
+</div>
+<h3 class="card-title">MDR with Unlimited Incident Response</h3>
+<p class="card-text">Gain 24/7 XDR, monitoring, remediation, and DFIR from SOC experts.</p>
+</div>
+</div>
+<div class="container-right">
+<div class="card">
+<div class="card-image">
+<img alt="Image" src="placeholder.png"/>
+</div>
+<h3 class="card-title">Next-Gen SIEM</h3>
+<p class="card-text">Pinpoint threats wherever they start with cloud-first detection and response.</p>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="container-left">
+<div class="card">
+<div class="card-image">
+<img alt="Image" src="placeholder.png"/>
+</div>
+<h3 class="card-title">Cloud Security</h3>
+<p class="card-text">Secure multi-cloud environments with complete visibility.</p>
+</div>
+</div>
+<div class="container-right">
+<div class="card">
+<div class="card-image">
+<img alt="Image" src="placeholder.png"/>
+</div>
+<h3 class="card-title">Vulnerability Management</h3>
+<p class="card-text">Understand risk across hybrid environments.</p>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="container-left">
+<div class="card">
+<div class="card-image">
+<img alt="Image" src="placeholder.png"/>
+</div>
+<h3 class="card-title">Threat Intelligence</h3>
+<p class="card-text">Discover and remediate external threats.</p>
+</div>
+</div>
+<div class="container-right">
+<div class="card">
+<div class="card-image">
+<img alt="Image" src="placeholder.png"/>
+</div>
+<h3 class="card-title">Exposure Management</h3>
+<p class="card-text">Get continuous assessment and validation of your attack surface.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-image">
+<img alt="Image" src="placeholder.png"/>
+</div>
+<h2 class="section-title">Get unparalleled insights from Rapid7 Labs</h2>
+<p class="section-text">Our industry-leading attack experts analyze vulnerabilities, misconfigurations and threat data to deliver guidance and intelligence that organizations can use to proactively inform, build, and improve their security programs.</p>
+<h3 class="section-title">
+<div class="section-image-2">
+<img alt="Image" src="placeholder.png"/>
+</div>
+      #1 open-source communities fueling purple teams and DFIR
+    </h3>
+<p class="section-text-2">Join the world's largest open-source communities, Velociraptor and Metasploit, and leverage world class vulnerability research from the AttackerKB.</p>
+<h3 class="section-title-2">
+<div class="section-image-2">
+<img alt="Image" src="placeholder.png"/>
+</div>
+      Embedded intelligence
+    </h3>
+<p class="section-text-2">Gain clarity across your evolving environment with solutions and services that have Rapid7 Labs intelligence baked in.</p>
+<h3 class="section-title-2">
+<div class="section-image-2">
+<img alt="Image" src="placeholder.png"/>
+</div>
+      Emergent threat response
+    </h3>
+<p class="section-text-2">Expert analysis delivers valuable context on attack trends, emergent threats, and high-priority vulnerabilities correlated to your specific environment.</p>
+<h3 class="section-title-2">
+<div class="section-image-2">
+<img alt="Image" src="placeholder.png"/>
+</div>
+      Internet exposure projects
+    </h3>
+<p class="section-text-2">Better understand your exposure to the public internet with insights from Project Sonar and Project Lorelei.</p>
+<div class="button-wrapper">
+<a class="button" href="#">LEARN MORE ABOUT RAPID7 LABS</a>
+</div>
+</div>
+<div class="section">
+<div class="section-image">
+<img alt="Image" src="placeholder.png"/>
+</div>
+<h2 class="section-title">Analyze this: our difference is real</h2>
+<p class="section-text">Bringing a unique practitioner focus to security operations means we're ranked as a "Leader", with a "Visionary" model that puts your success at the center of all we do.</p>
+<div class="button-wrapper">
+<a class="button" href="#">GARTNER® MDR RESEARCH</a>
+</div>
+</div>
+<div class="section">
+<div class="section-image">
+<img alt="Image" src="placeholder.png"/>
+</div>
+<h2 class="section-title">One stop for security news, research and real-time analysis.</h2>
+<p class="section-text">Subscribe to our blog, and stay ahead of trending topics, emergent threats and real-time, expert analysis.</p>
+<div class="blog-section">
+<h3 class="blog-title">
+<div class="close-icon" onclick="closeModal()">×</div>
+<div class="modal-overlay" id="modal-overlay"></div>
+<div class="modal" id="modal">
+<h2 class="modal-title"></h2>
+<p class="modal-text"></p>
+<a class="modal-button" href="#">READ FULL POST</a>
+</div>
+</h3>
+<div class="container">
+<div class="container-left">
+<div class="blog-post">
+<h4 class="blog-post-title">EVENTS</h4>
+<p class="blog-post-text">The Take Command Summit: A Day of Resilience and Preparation</p>
+<a class="blog-post-button" href="#" onclick="openModal('The Take Command Summit: A Day of Resilience and Preparation', 'The Take Command Summit: A Day of Resilience and Preparation')">READ FULL POST</a>
+</div>
+</div>
+<div class="container-right">
+<div class="blog-post">
+<h4 class="blog-post-title">MANAGED DETECTION AND RESPONSE</h4>
+<p class="blog-post-text">CVE-2024-4978: Backdoored Justice AV Solutions Viewer Software Used in Apparent Supply Chain Attack</p>
+<a class="blog-post-button" href="#" onclick="openModal('CVE-2024-4978: Backdoored Justice AV Solutions Viewer Software Used in Apparent Supply Chain Attack', 'CVE-2024-4978: Backdoored Justice AV Solutions Viewer Software Used in Apparent Supply Chain Attack')">READ FULL POST</a>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="container-left">
+<div class="blog-post">
+<h4 class="blog-post-title">RESEARCH</h4>
+<p class="blog-post-text">Rapid7 Releases the 2024 Attack Intelligence Report</p>
+<a class="blog-post-button" href="#" onclick="openModal('Rapid7 Releases the 2024 Attack Intelligence Report', 'Rapid7 Releases the 2024 Attack Intelligence Report')">READ FULL POST</a>
+</div>
+</div>
+<div class="container-right">
+<div class="blog-post">
+<h4 class="blog-post-title">METASPLOIT</h4>
+<p class="blog-post-text">Metasploit Wrap-Up 05/17/2024</p>
+<a class="blog-post-button" href="#" onclick="openModal('Metasploit Wrap-Up 05/17/2024', 'Metasploit Wrap-Up 05/17/2024')">READ FULL POST</a>
+</div>
+</div>
+</div>
+<div class="blog-button-wrapper">
+<a class="section-cta" href="#">VIEW ALL POSTS</a>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-image">
+<img alt="Image" src="placeholder.png"/>
+</div>
+<h2 class="section-title">Confidently anticipate, pinpoint, and act to secure your organization.</h2>
+<div class="cta-wrapper">
+<a class="section-cta" href="#">LET'S TALK</a>
+<a class="section-cta" href="#">FOLLOW US</a>
+</div>
+</div>
+</div>
+<div class="footer">
+<div class="footer-left">
+<div class="footer-logo"><img alt="Logo" src="placeholder.png"/></div>
+<div class="footer-links">
+<a href="#">SOLUTIONS</a>
+<a href="#">Insight Platform</a>
+<a href="#">Managed Threat Complete</a>
+<a href="#">Cloud Risk Complete</a>
+</div>
+</div>
+<div class="footer-right">
+<div class="footer-links">
+<a href="#">SUPPORT &amp; RESOURCES</a>
+<a href="#">Product Support</a>
+<a href="#">Resource Library</a>
+<a href="#">Our Customers</a>
+<a href="#">Events &amp; Webcasts</a>
+<a href="#">Training &amp; Certification</a>
+<a href="#">Cybersecurity Fundamentals</a>
+<a href="#">Vulnerability &amp; Exploit Database</a>
+</div>
+</div>
+<div class="footer-links">
+<div class="footer-links">
+<a href="#">CUSTOMER SUPPORT</a>
+<a href="#">+1-866-930-8113 (Toll Free)</a>
+</div>
+<div class="footer-links">
+<a href="#">SALES SUPPORT</a>
+<a href="#">+1-866-772-7437 (Toll Free)</a>
+</div>
+<div class="footer-links">
+<a href="#">Need to report an Escalation or a Breach?</a>
+<a class="footer-button" href="#">GET HELP</a>
+</div>
+</div>
+</div>
+<div class="footer">
+<div class="footer-left">
+<div class="footer-links">
+<a href="#">ABOUT US</a>
+<a href="#">Company</a>
+<a href="#">Diversity, Equity, and Inclusion</a>
+<a href="#">Leadership</a>
+<a href="#">News &amp; Press Releases</a>
+<a href="#">Public Policy</a>
+<a href="#">Open Source</a>
+<a href="#">Investors</a>
+</div>
+</div>
+<div class="footer-right">
+<div class="footer-links">
+<a href="#">CONNECT WITH US</a>
+<a href="#">Contact</a>
+<a href="#">Blog</a>
+<a href="#">Support Login</a>
+<a href="#">Careers</a>
+</div>
+<div class="footer-links">
+<a href="#"><img alt="Image" src="placeholder.png"/></a>
+<a href="#"><img alt="Image" src="placeholder.png"/></a>
+<a href="#"><img alt="Image" src="placeholder.png"/></a>
+</div>
+</div>
+</div>
+<div class="copyright">
+  © Rapid7
+  <a class="footer-links" href="#">Legal Terms</a>
+<a class="footer-links" href="#">Privacy Policy</a>
+<a class="footer-links" href="#">Export Notice</a>
+<a class="footer-links" href="#">Trust</a>
+<a href<="" p=""></a></div></body></html></p></body></html>

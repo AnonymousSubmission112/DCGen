@@ -1,0 +1,169 @@
+<html><body><p>
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>jQuery</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f8f8f8;
+        }
+        .header {
+            background-color: #131313;
+            padding: 10px 0;
+        }
+        .header .menu {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            color: white;
+        }
+        .header .menu a {
+            color: white;
+            text-decoration: none;
+        }
+        .main {
+            background-color: #0074a2;
+            padding-top: 20px;
+        }
+        .main-content {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 4px;
+        }
+        .search {
+            float: right;
+        }
+        .search input {
+            padding: 5px 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        .main-content h2 {
+            border-top: 1px solid #eee;
+            padding-top: 20px;
+        }
+        .sidebar {
+            float: right;
+            width: 30%;
+        }
+        .sidebar h3 {
+            font-size: 1.2em;
+            margin-top: 0;
+        }
+        .content {
+            float: left;
+            width: 65%;
+        }
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        .footer {
+            background-color: #3e3e3e;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            font-size: 14px;
+        }
+        .download-button {
+            display: block;
+            background-color: #f5b400;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 3px;
+            margin: 10px 0;
+        }
+        img {
+            width: 100%;
+            height: auto;
+        }
+        code {
+            display: block;
+            background: #f8f8f8;
+            padding: 10px;
+            border-left: 4px solid #ddd;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+<div class="menu">
+<div class="nav-left">
+<a href="#">Plugins</a> | 
+                <a href="#">Contribute</a> | 
+                <a href="#">Events</a> | 
+                <a href="#">Support</a> | 
+                <a href="#">Donate</a>
+</div>
+<div class="nav-right">
+<a href="#">Github</a>
+</div>
+</div>
+</div>
+<div class="main">
+<div class="main-content clearfix">
+<a class="download-button" href="#">Download jQuery v3.7.0</a>
+<div class="search">
+<input placeholder="Search" type="text"/>
+</div>
+<div class="content">
+<h2>What is jQuery?</h2>
+<p>jQuery is a fast, small, and feature-rich JavaScript library...</p>
+<h2>A Brief Look</h2>
+<h3>DOM Traversal and Manipulation</h3>
+<code>
+                    $('button.continue').html('Next Step...');
+                </code>
+<h3>Event Handling</h3>
+<code>
+                    $('#banner-message').on('click', function(event) {
+                     $('#banner-message').html('Hello World!');
+                    });
+                </code>
+<h3>Ajax</h3>
+<code>
+                    $.ajax({
+                        url: 'example.php',
+                        data: {
+                            id: 123
+                        },
+                        success: function(response) {
+                            $('#result').html(response);
+                        }
+                    });
+                </code>
+<h2>Related Projects</h2>
+<p><a href="#">jQuery UI</a></p>
+<p><a href="#">jQuery Mobile</a></p>
+</div>
+<div class="sidebar">
+<h3>Resources</h3>
+<ul>
+<li><a href="#">jQuery Core API Documentation</a></li>
+<li><a href="#">jQuery Learning Center</a></li>
+<li><a href="#">jQuery Blog</a></li>
+<li><a href="#">Contribute to jQuery</a></li>
+<li><a href="#">Browser &amp; Support</a></li>
+</ul>
+<img alt="Image" src="placeholder.png"/>
+</div>
+</div>
+</div>
+<div class="footer">
+<p>Copyright The jQuery Foundation. All rights reserved.</p>
+<p>Terms of Service | Privacy Policy | Code of Conduct</p>
+<p>Learning Center | Chat | Twitter | GitHub</p>
+</div>
+</body>
+</html>
+</p></body></html>

@@ -1,0 +1,214 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Launchpad</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header img {
+            height: 30px;
+        }
+        header form {
+            display: flex;
+            align-items: center;
+        }
+        header input[type="text"] {
+            padding: 5px;
+            border: none;
+            border-radius: 3px 0 0 3px;
+        }
+        header button[type="submit"] {
+            background-color: #0e59a4;
+            color: #fff;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 0 3px 3px 0;
+            cursor: pointer;
+        }
+        main {
+            max-width: 960px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        section h2 {
+            color: #0e59a4;
+            margin-bottom: 10px;
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        .feature {
+            background-color: #f5f5f5;
+            padding: 10px;
+            text-align: center;
+        }
+        .feature img {
+            max-width: 100%;
+            height: auto;
+        }
+        .get-started {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .get-started button {
+            background-color: #0e59a4;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="placeholder.png" alt="Logo">
+        <form>
+            <input type="text" placeholder="Search">
+            <button type="submit">Search</button>
+        </form>
+    </header>
+    <main>
+        <section>
+            <h2>Launchpad</h2>
+            <p>A software collaboration platform that provides</p>
+            <div class="features">
+                <div class="feature">
+                    <h3>Bug tracking</h3>
+                    <p>One place to track bugs across projects, teammates, and time.</p>
+                    <img src="placeholder.png" alt="Bug Tracking">
+                </div>
+                <div class="feature">
+                    <h3>Code hosting using Git and Bazaar</h3>
+                    <p>Easy for anyone to get your project's code using Git or Bazaar.</p>
+                    <img src="placeholder.png" alt="Code Hosting">
+                </div>
+                <div class="feature">
+                    <h3>Code reviews</h3>
+                    <p>Full control of who can test code in your project reviews with you.</p>
+                    <img src="placeholder.png" alt="Code Reviews">
+                </div>
+                <div class="feature">
+                    <h3>Ubuntu package building and hosting</h3>
+                    <p>Publishing your software is simple with Personal Package Archives.</p>
+                    <img src="placeholder.png" alt="Package Building">
+                </div>
+                <div class="feature">
+                    <h3>Crowd source translations</h3>
+                    <p>Build an open community to translate your software into almost any language.</p>
+                    <img src="placeholder.png" alt="Translations">
+                </div>
+                <div class="feature">
+                    <h3>Mailing lists</h3>
+                    <p>Chat and work with the right people by building a focused network of individuals and teams around projects.</p>
+                    <img src="placeholder.png" alt="Mailing Lists">
+                </div>
+                <div class="feature">
+                    <h3>Answer tracking and FAQs</h3>
+                    <p>Free software forums so people helping each other solves the unanswered  happens.</p>
+                    <img src="placeholder.png" alt="FAQs">
+                </div>
+                <div class="feature">
+                    <h3>Specification tracking</h3>
+                    <p>Track ideas and chunks of work as "blueprints".</p>
+                    <img src="placeholder.png" alt="Specifications">
+                </div>
+            </div>
+        </section>
+        <section class="get-started">
+            <button>Create an account</button>
+            <button>Take the tour</button>
+            <button>Find answers</button>
+        </section>
+        <section>
+            <h2>Featured projects</h2>
+            <div class="features">
+                <div class="feature">
+                    <img src="placeholder.png" alt="Beautiful Soup">
+                    <h3>Beautiful Soup</h3>
+                    <p>A program designed for screen-scraping HTML. The discussion area is at: http://groups.google.com...</p>
+                </div>
+                <div class="feature">
+                    <img src="placeholder.png" alt="Breezy">
+                    <h3>Breezy</h3>
+                    <p>Breezy is a friendly cross-platform version control system.</p>
+                </div>
+                <div class="feature">
+                    <img src="placeholder.png" alt="Inkscape">
+                    <h3>Inkscape</h3>
+                    <p>Inkscape is an Open-source vector graphics editor featuring alpha blending, web editing, high colours, and more...</p>
+                </div>
+                <div class="feature">
+                    <img src="placeholder.png" alt="Landscape Server">
+                    <h3>Landscape Server</h3>
+                    <p>Landscape tool for managing Ubuntu servers.</p>
+                </div>
+                <div class="feature">
+                    <img src="placeholder.png" alt="Launchpad Itself">
+                    <h3>Launchpad Itself</h3>
+                    <p>Launchpad is a set of tools to allow you to collaborate on software.</p>
+                </div>
+                <div class="feature">
+                    <img src="placeholder.png" alt="OpenMW">
+                    <h3>OpenMW</h3>
+                    <p>An open-source remake of the popular open-source RPG Elder Scrolls III: Morrowind 3.0.</p>
+                </div>
+                <div class="feature">
+                    <img src="placeholder.png" alt="OpenShot Video Editor">
+                    <h3>OpenShot Video Editor</h3>
+                    <p>OpenShot Video Editor is a free, open-source, non-linear video editor. It can create non-destructive edit.</p>
+                </div>
+                <div class="feature">
+                    <img src="placeholder.png" alt="OpenStack">
+                    <h3>OpenStack</h3>
+                    <p>The OpenStack Open Source Cloud Computing PL. Massive to produce the ubiquitous Open Source Cloud Computing PL.</p>
+                </div>
+                <div class="feature">
+                    <img src="placeholder.png" alt="Ubuntu">
+                    <h3>Ubuntu</h3>
+                    <p>Ubuntu is a complete Linux-based operating system, freely available with both community and professional...</p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2>Recent Launchpad blog posts</h2>
+            <a href="#">Read the blog</a>
+            <p>Launchpad's new features... - 01 Mar 2023</p>
+            <p>As you may have noticed, Launchpad has been getting a steady stream of updates recently, concluding the first burst. If you were still running the version we still launched, you'll notice a quite clear difference from what it has looked like for the past 10 years - it has been updated! The goal was to modernize a little [...]</p>
+            <p>Launchpad Batch-included future accounts... - 22 Jan 2023</p>
+            <p>Users can now add their future accounts to their profile in Launchpad, as requested by Canonical Community team. We also took the chance to slightly reword the forward and how we display your accounts in the user profile, instead of having different sections in the profile for each type of account. All your accounts are [...] </p>
+            <p>Launchpad now handles builds for non-GPL'd software... - 26 Oct 2022</p>
+            <p>Earlier this year, the Ubuntu Builders for non-GPL'd was a requirement to get Ubuntu's rebuild packages. We don't actually have cloud building in our datacenter; along with those servers, data backends with the OpenStack controller use their TLS in a storage install, we do full system emulation of non-GPL'd serfty parallel hardware [...]</p>
+            <p>Simplifying Results: Expired Access Tokens... - 05 May 2023</p>
+            <p>Access tokens can be used to access repositories on behalf of someone. They have scope limitations, granted expiry dates, and can be revoked. Even after they are deleted, you still see evidence in terms like your Authorization token keeping it versioned simply in your application. It would be much safer to expire the access token.</p>
+            <p>New documentation for PPAs... - 14 Jul 2022</p>
+            <p>We've been updating our PPAs documentation to make it easier for Ubuntu Authors! Details have always been helpful on packaging for PPAs, but they also generally covered, such, but one significant area became clear that our 4+ use-offload to add HTTPS support for PPAs due to the way that content work on the web. Launchpad team is made for your [...]</p>
+            <p>Blog email now use the best address in the team. header... - 09 May 2020</p>
+            <p>The From: addresses used by Launchpad's bug notifications have changed. To improve the chances of our messages being delivered over potentially untrusted networks, we've changed our default sender address to be the public at Launchpad.atem performing some kind of cache, for example, when somebody who unsubscribed to a bug and ping that [...]</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2004 Canonical Ltd. - Terms of use - Data privacy - Contact Launchpad Support - Help - Careers - System Status - Affiliate [Get the code]</p>
+    </footer>
+</body>
+</html>

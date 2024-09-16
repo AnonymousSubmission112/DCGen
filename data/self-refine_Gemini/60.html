@@ -1,0 +1,426 @@
+<html><body><p>
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>SHEIN</title>
+<style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #fff;
+            border-bottom: 1px solid #e5e5e5;
+        }
+        .header .logo {
+            display: flex;
+            align-items: center;
+        }
+        .header .logo h1 {
+            margin: 0;
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+        .header .navigation {
+            display: flex;
+            align-items: center;
+        }
+        .header .navigation ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        .header .navigation ul li {
+            margin-right: 20px;
+            font-size: 14px;
+        }
+        .header .navigation ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+        .header .search-bar {
+            display: flex;
+            align-items: center;
+        }
+        .header .search-bar input {
+            padding: 5px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: 200px;
+        }
+        .header .search-bar button {
+            padding: 5px 10px;
+            font-size: 14px;
+            border: none;
+            cursor: pointer;
+            background-color: #f08080;
+            color: white;
+            margin-left: 5px;
+            border-radius: 4px;
+        }
+        .main-image {
+            width: 100%;
+            max-width: 1200px;
+            margin: 30px auto;
+            display: block;
+            background-color: #f0f0f0;
+            border-radius: 8px;
+        }
+        .section-title {
+            text-align: center;
+            font-size: 24px;
+            margin: 30px 0;
+        }
+        .thumbnails-section {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 20px 0;
+        }
+        .thumbnail {
+            width: 150px;
+            height: 150px;
+            background-color: #f0f0f0;
+            border-radius: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        .thumbnail img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+        .thumbnail .button {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            background-color: #007bff;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-size: 12px;
+            border: none;
+            cursor: pointer;
+        }
+        .footer {
+            background-color: #f5f5f5;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+        .footer > div {
+            margin-bottom: 10px;
+        }
+        .footer .contact, .footer .newsletter {
+            display: flex;
+            flex-direction: column;
+        }
+        .footer .newsletter input {
+            padding: 5px;
+            margin-bottom: 10px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .footer .newsletter button {
+            padding: 5px 10px;
+            font-size: 14px;
+            border: none;
+            cursor: pointer;
+            background-color: #333;
+            color: white;
+            border-radius: 4px;
+        }
+        .footer-links ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .footer-links ul li {
+            margin-right: 20px;
+            margin-bottom: 10px;
+            font-size: 12px;
+        }
+        .footer-links ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+        .footer .social-icons img {
+            margin-right: 10px;
+        }
+        .footer .app-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .footer .app-info img {
+            margin-bottom: 10px;
+        }
+        .footer .app-info p {
+            font-size: 12px;
+            color: #666;
+        }
+        .footer .app-info button {
+            padding: 5px 10px;
+            font-size: 14px;
+            border: none;
+            cursor: pointer;
+            background-color: #333;
+            color: white;
+            border-radius: 4px;
+            margin-top: 10px;
+        }
+        .footer .app-info input {
+            width: 200px;
+            padding: 5px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+        .button {
+            display: inline-block;
+            padding: 8px 16px;
+            font-size: 14px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            outline: none;
+            color: #fff;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 9px #999;
+        }
+
+        .button:hover {
+            background-color: #3e8e41;
+        }
+
+        .button:active {
+            background-color: #367c39;
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+        }
+        .thumbnails-section .button {
+            background-color: #007bff;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-size: 12px;
+            border: none;
+            cursor: pointer;
+        }
+        .footer .app-info img {
+            max-width: 50px;
+            max-height: 50px;
+            margin-bottom: 10px;
+        }
+        .footer .app-info p {
+            font-size: 12px;
+            color: #666;
+            margin-bottom: 10px;
+        }
+        .footer .app-info button {
+            padding: 5px 10px;
+            font-size: 14px;
+            border: none;
+            cursor: pointer;
+            background-color: #333;
+            color: white;
+            border-radius: 4px;
+            margin-top: 10px;
+        }
+        .footer .app-info input {
+            width: 200px;
+            padding: 5px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+        .footer .app-info .app-icons img {
+            width: 24px;
+            height: 24px;
+            margin-right: 5px;
+        }
+        .footer .app-info .app-icons {
+            display: flex;
+            align-items: center;
+        }
+        .footer .contact, .footer .newsletter, .footer .app-info {
+            width: 200px;
+            margin-right: 20px;
+        }
+        .footer .contact p {
+            font-size: 12px;
+            color: #666;
+            margin-bottom: 5px;
+        }
+        .footer .contact a {
+            color: #666;
+            text-decoration: none;
+        }
+        .footer .contact ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .footer .contact ul li {
+            font-size: 12px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+<header class="header">
+<div class="logo">
+<h1>SHEIN</h1>
+</div>
+<nav class="navigation">
+<ul>
+<li><a href="#">全部分類</a></li>
+<li><a href="#">新款上架</a></li>
+<li><a href="#">大碼女裝</a></li>
+<li><a href="#">男士時尚</a></li>
+<li><a href="#">男裝</a></li>
+<li><a href="#">鞋履用品</a></li>
+<li><a href="#">女仕外套及裙裝</a></li>
+<li><a href="#">女仕服裝飾品</a></li>
+<li><a href="#">商品</a></li>
+<li><a href="#">女仕鞋</a></li>
+<li><a href="#">運動服外</a></li>
+<li><a href="#">美容&amp;護髮</a></li>
+<li><a href="#">家居服飾</a></li>
+<li><a href="#">工具&amp;裝修</a></li>
+<li><a href="#">寵物用品</a></li>
+<li><a href="#">電子產品</a></li>
+<li><a href="#">工具</a></li>
+<li><a href="#">家居</a></li>
+<li><a href="#">寵物商城</a></li>
+</ul>
+</nav>
+<div class="search-bar">
+<input placeholder="搜索" type="text"/>
+<button type="button"><i class="fa fa-search"></i></button>
+</div>
+<div class="hot">
+<button type="button">熱</button>
+</div>
+</header>
+<img alt="Main Image" class="main-image" src="placeholder.png"/>
+<h2 class="section-title">買家秀</h2>
+<div class="thumbnails-section">
+<div class="thumbnail">
+<img alt="Thumbnail 1" src="placeholder.png"/>
+<div class="button">Fall Style</div>
+</div>
+<div class="thumbnail">
+<img alt="Thumbnail 2" src="placeholder.png"/>
+<div class="button">Cozy Comforts</div>
+</div>
+<div class="thumbnail">
+<img alt="Thumbnail 3" src="placeholder.png"/>
+<div class="button">Casual Lookbook</div>
+</div>
+<div class="thumbnail">
+<img alt="Thumbnail 4" src="placeholder.png"/>
+<div class="button">Electric Nights</div>
+</div>
+<div class="thumbnail">
+<img alt="Thumbnail 5" src="placeholder.png"/>
+<div class="button">Time To Shine</div>
+</div>
+<div class="thumbnail">
+<img alt="Thumbnail 6" src="placeholder.png"/>
+<div class="button">Urban Chic</div>
+</div>
+<div class="thumbnail">
+<img alt="Thumbnail 7" src="placeholder.png"/>
+<div class="button">Chic &amp; Chill</div>
+</div>
+<div class="thumbnail">
+<img alt="Thumbnail 8" src="placeholder.png"/>
+<div class="button">Denim Guide</div>
+</div>
+<div class="thumbnail">
+<img alt="Thumbnail 9" src="placeholder.png"/>
+<div class="button">Highstreet Fashion</div>
+</div>
+<div class="thumbnail">
+<img alt="Thumbnail 10" src="placeholder.png"/>
+<div class="button">Date Wear</div>
+</div>
+</div>
+<footer class="footer">
+<div class="contact">
+<h3>公司信息</h3>
+<p>關於SHEIN</p>
+<p>時尚博客</p>
+<p>社會責任</p>
+</div>
+<div class="contact">
+<h3>客戶問題</h3>
+<ul>
+<li><a href="#">聯絡客服</a></li>
+<li><a href="#">退換貨</a></li>
+<li><a href="#">訂單</a></li>
+<li><a href="#">如何訂購</a></li>
+<li><a href="#">送貨信息</a></li>
+<li><a href="#">尺碼指南</a></li>
+</ul>
+</div>
+<div class="contact">
+<h3>客戶服務</h3>
+<p>聯絡我們</p>
+<p>支付方式</p>
+<p>物流跟踪</p>
+</div>
+<div class="newsletter">
+<h3>接收折扣</h3>
+<input placeholder="輸入你的電郵地址" type="email"/>
+<p>訂閱 SHEIN 電子郵件，搶先了解最新時尚趨勢，最新產品及優惠資訊！</p>
+<button type="button">訂閱</button>
+</div>
+<div class="app-info">
+<p>APP</p>
+<div class="app-icons">
+<img alt="App Store" src="placeholder.png"/>
+<img alt="Google Play" src="placeholder.png"/>
+</div>
+<p>掃描二維碼，將SHEIN應用程式新增到您的手機!</p>
+<img alt="QR Code" src="placeholder.png"/>
+<input placeholder="付款方式及貨幣設定" type="text"/>
+<button type="button">前往</button>
+</div>
+<div class="social-icons">
+<img alt="Social Icon 1" height="24" src="placeholder.png" width="24"/>
+<img alt="Social Icon 2" height="24" src="placeholder.png" width="24"/>
+<img alt="Social Icon 3" height="24" src="placeholder.png" width="24"/>
+</div>
+</footer>
+<div class="copyright">
+<p>© 2009-2024 SHEIN 版權所有</p>
+<p><a href="#">私隱政策</a> | <a href="#">Cookie 政策</a> | <a href="#">條款條件</a> | <a href="#">版權聲明</a> | <a href="#">Ad Choice</a></p>
+</div>
+</body>
+</html>
+</p></body></html>

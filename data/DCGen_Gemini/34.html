@@ -1,0 +1,425 @@
+<html><body><p>
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>CDC.gov</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.header {
+    background-color: #2980b9;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.header-left .small-text {
+    font-size: 12px;
+    color: #888;
+}
+
+.header-left .large-text {
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.header-right a {
+    color: #2980b9;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 14px;
+}
+
+.section {
+    background-color: #fff;
+    padding: 20px;
+}
+
+.section-heading {
+    color: #2980b9;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.section-content {
+    background-color: #d9edf7;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #333;
+    text-decoration: none;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.button.blue {
+    background-color: #2980b9;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.image {
+    width: 100%;
+    height: auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 10px;
+    margin-bottom: 20px;
+}
+
+.grid-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    text-align: center;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.news-section {
+    background-color: #d9edf7;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.news-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.news-item .date {
+    font-weight: bold;
+}
+
+.news-item .title {
+    color: #2980b9;
+    text-decoration: none;
+}
+
+.journals-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.journal-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: calc(33.33% - 20px);
+}
+
+.journal-item .title {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.science-section {
+    background-color: #d9edf7;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.science-section .text {
+    margin-bottom: 20px;
+}
+
+.science-section .bullet-point {
+    margin-bottom: 10px;
+}
+
+.science-section .bullet-point .bold {
+    font-weight: bold;
+}
+
+.about-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.about-section .column {
+    width: calc(50% - 20px);
+}
+
+.about-section .title {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.about-section .text {
+    margin-bottom: 20px;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer .links {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.footer .link {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.footer .icon {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.footer .director {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    width: 200px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.footer .director .icon {
+    margin-right: 10px;
+}
+
+.footer .buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    margin-bottom: 20px;
+}
+
+.footer .button {
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+}
+</style>
+</head>
+<body>
+<header class="header">
+<div class="header-left">
+<span class="small-text">An official website of the United States government. Here's how you know</span>
+<span class="large-text">CDC.gov</span>
+</div>
+<div class="header-right">
+<a href="#">Español</a>
+</div>
+</header>
+<section class="section">
+<div class="section-heading">HEALTH TOPICS</div>
+<div class="section-content">
+<a class="button blue" href="#">OUTBREAKS</a>
+<a class="button blue" href="#">ABOUT CDC</a>
+<a class="button blue" href="#">SEARCH</a>
+<img alt="Image" class="image" src="placeholder.png"/>
+<div class="section-heading">Bird Flu</div>
+<a class="button blue" href="#">Learn More</a>
+<a class="button" href="#">Med Flv</a>
+<a class="button" href="#">High Blood Pressure</a>
+<a class="button" href="#">A New CDC.gov</a>
+</div>
+</section>
+<section class="section">
+<div class="section-heading">Featured Topics</div>
+<div class="section-content">
+<a class="button" href="#">Essentials for Parenting</a>
+<a class="button" href="#">Asthma Awareness</a>
+<a class="button" href="#">Tornado Safety</a>
+<a class="button" href="#">Quit Smoking</a>
+<a class="button" href="#">Mental Health Awareness</a>
+<a class="button" href="#">Protect Your Eyes</a>
+<a class="button" href="#">Physical Activity Benefits</a>
+<a class="button" href="#">Prepare for Wildfires</a>
+</div>
+</section>
+<section class="section">
+<div class="section-heading">A to Z</div>
+<div class="section-content">
+<div class="grid">
+<div class="grid-item">A</div>
+<div class="grid-item">B</div>
+<div class="grid-item">C</div>
+<div class="grid-item">D</div>
+<div class="grid-item">E</div>
+<div class="grid-item">F</div>
+<div class="grid-item">G</div>
+<div class="grid-item">H</div>
+<div class="grid-item">I</div>
+<div class="grid-item">J</div>
+<div class="grid-item">K</div>
+<div class="grid-item">L</div>
+<div class="grid-item">M</div>
+<div class="grid-item">N</div>
+<div class="grid-item">O</div>
+<div class="grid-item">P</div>
+<div class="grid-item">Q</div>
+<div class="grid-item">R</div>
+<div class="grid-item">S</div>
+<div class="grid-item">T</div>
+<div class="grid-item">U</div>
+<div class="grid-item">V</div>
+<div class="grid-item">W</div>
+<div class="grid-item">X</div>
+<div class="grid-item">Y</div>
+<div class="grid-item">Z</div>
+<div class="grid-item">#</div>
+</div>
+<p>Find diseases and conditions; healthy living; workplace safety; environmental health; injury, violence and safety; global health; travelers' health and more.</p>
+</div>
+</section>
+<section class="section">
+<div class="section-heading">News</div>
+<div class="news-section">
+<div class="news-item">
+<span class="date">MAY 22</span>
+<a class="title" href="#">CDC Reports Second Human Case of H5 Bird Flu Tied to Dairy Cow Outbreak</a>
+</div>
+<div class="news-item">
+<span class="date">MAY 21</span>
+<a class="title" href="#">Readout of CDC Call with State Public Health Partners on H5N1 Influenza Monitoring</a>
+</div>
+<div class="news-item">
+<span class="date">MAY 17</span>
+<a class="title" href="#">CDC Releases Guidance for Preventing Spread of Infections in Schools to Keep Children Healthy and Learning</a>
+</div>
+<div class="news-item">
+<span class="date">MAY 16</span>
+<a class="title" href="#">CDC unveils newly revamped CDC.gov</a>
+</div>
+<div class="news-item">
+<span class="date">MAY 15</span>
+<a class="title" href="#">Statement from CDC Chief Medical Officer Dr. DeAnn Houry on 2023 Overdose Death Data</a>
+</div>
+<a class="button blue" href="#">ALL NEWS</a>
+</div>
+</section>
+<section class="section">
+<div class="section-heading">Scientific Journals</div>
+<div class="journals-section">
+<div class="journal-item">
+<div class="title">MMWR</div>
+<p>MMWR is a weekly epidemiological digest that provides timely, reliable, objective, and useful public health information.</p>
+<img alt="Image" class="image" src="placeholder.png"/>
+</div>
+<div class="journal-item">
+<div class="title">EID</div>
+<p>EID is a monthly peer reviewed journal covering research, public health findings, innovations, and practices on chronic diseases.</p>
+<img alt="Image" class="image" src="placeholder.png"/>
+<a class="button blue" href="#">Learn More</a>
+</div>
+<div class="journal-item">
+<div class="title">PCD</div>
+<p>PCD is a peer reviewed journal covering research, public health findings, innovations, and practices control, and elimination.</p>
+<img alt="Image" class="image" src="placeholder.png"/>
+<a class="button blue" href="#">Learn More</a>
+</div>
+</div>
+</section>
+<section class="section">
+<div class="section-heading">Science at CDC</div>
+<div class="science-section">
+<p class="text">To make science and data easier for broad audiences to interpret, CDC is translating science into practical, easy to understand policy by clarifying and presenting scientific language so that anyone can understand it and standardizing guideline development across the agency.</p>
+<div class="bullet-point"><span class="bold">CDC Moving Forward</span></div>
+<div class="bullet-point"><span class="bold">Advancing Science &amp; Health Equity</span></div>
+<div class="about-section">
+<div class="column">
+<div class="title">About CDC</div>
+<p class="text">CDC is the nation's leading science-based, data-driven, service organization that protects the public's health. CDC works 24/7 to protect America from health, safety and security threats, both foreign and in the U.S.</p>
+<img alt="Image" class="image" src="placeholder.png"/>
+</div>
+<div class="column">
+<div class="title">About CDC</div>
+<div class="bullet-point">Organization and Mission</div>
+<div class="bullet-point">Leadership</div>
+<div class="bullet-point">Lab Safety</div>
+<div class="title">Funding and Grants</div>
+<div class="bullet-point">Careers at CDC</div>
+<div class="bullet-point">Fellowships and Training</div>
+<div class="bullet-point">CDC Museum</div>
+<img alt="Image" class="image" src="placeholder.png"/>
+<div class="title">CDC Director</div>
+<p>Mandy K. Cohen, MD, MPH</p>
+</div>
+</div>
+</div>
+</section>
+<footer class="footer">
+<div class="links">
+<a class="link" href="#">Contact Us</a>
+<a class="link" href="#">About CDC</a>
+<a class="link" href="#">Policies</a>
+<a class="link" href="#">Languages</a>
+</div>
+<div class="director">
+<img alt="Icon" class="icon" src="placeholder.png"/>
+<span>CDC Director</span>
+<span>Mandy K. Cohen, MD, MPH</span>
+</div>
+<div class="buttons">
+<div class="button">501</div>
+<div class="button">501</div>
+<div class="button">501</div>
+<div class="button">501</div>
+<div class="button">501</div>
+<div class="button">501</div>
+<div class="button">501</div>
+<div class="button">501</div>
+<div class="button">501</div>
+</div>
+<div class="links">
+<a class="link" href="#">HHS.GOV</a>
+<a class="link" href="#">USA.GOV</a>
+</div>
+<a class="link" href="#">Archive</a>
+</footer>
+</body>
+</html>
+</p></body></html>

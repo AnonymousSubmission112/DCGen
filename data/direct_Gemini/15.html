@@ -1,0 +1,219 @@
+<html><body><p>
+<!DOCTYPE html>
+
+<html>
+<head>
+<style>
+body {
+  background-color: #f5f5f5;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.header-right button {
+  background-color: #fff;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.header-right button:hover {
+  background-color: #eee;
+}
+
+.header-right .menu-icon {
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.weather-info {
+  position: absolute;
+  top: 50px;
+  right: 20px;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.weather-info .temp {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.weather-info .description {
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+.weather-info img {
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+}
+
+.search-bar {
+  position: absolute;
+  top: 100px;
+  left: 20px;
+  right: 20px;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.search-bar .search-icons {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.search-bar .search-icons i {
+  font-size: 20px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.search-bar .search-icons i:hover {
+  color: #ccc;
+}
+
+.search-bar .search-text {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #777;
+}
+
+.currency-info {
+  position: absolute;
+  top: 180px;
+  left: 20px;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.currency-info .currency-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.currency-info .currency-box .currency-icon {
+  width: 30px;
+  height: 30px;
+  background-color: #eee;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.currency-info .currency-box .currency-text {
+  font-size: 16px;
+}
+
+.currency-info .currency-box .currency-value {
+  margin-left: auto;
+  font-size: 16px;
+}
+
+.currency-info .location {
+  font-size: 14px;
+  color: #777;
+}
+
+.footer {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #6200ee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.footer .footer-icon {
+  color: #fff;
+  font-size: 24px;
+}
+</style>
+</head>
+<body>
+<div class="header">
+<div class="header-left">
+</div>
+<div class="header-right">
+<button>Войти</button>
+<div class="menu-icon">
+<span></span>
+<span></span>
+<span></span>
+</div>
+</div>
+</div>
+<div class="weather-info">
+<p>Сегодня: дождь</p>
+<p class="temp">+25...+28°</p>
+<p class="description">слабый ветер 1-2 м/с</p>
+<img alt="weather icon" src="placeholder.png"/>
+</div>
+<div class="search-bar">
+<input placeholder="Найдется всё" type="text"/>
+<div class="search-icons">
+<i class="fas fa-microphone"></i>
+<i class="fas fa-camera"></i>
+</div>
+<p class="search-text">Гонконг</p>
+</div>
+<div class="currency-info">
+<div class="currency-box">
+<div class="currency-icon"></div>
+<div class="currency-text">25°</div>
+<div class="currency-value">USD 90,19</div>
+</div>
+<div class="currency-box">
+<div class="currency-icon"></div>
+<div class="currency-text">EUR 97,90</div>
+<div class="currency-value"></div>
+</div>
+<p class="location">Гонконг</p>
+</div>
+<div class="footer">
+<i class="fas fa-circle"></i>
+</div>
+</body>
+</html>
+</p></body></html>

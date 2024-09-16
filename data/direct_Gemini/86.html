@@ -1,0 +1,333 @@
+<html><body><p>
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>BootstrapCDN</title>
+<style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+                'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+                sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        .container {
+            width: 90%;
+            margin: 0 auto;
+            padding-top: 50px;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header a {
+            color: #333;
+            text-decoration: none;
+        }
+        .header a:hover {
+            text-decoration: underline;
+        }
+        .brand {
+            display: flex;
+            align-items: center;
+        }
+        .brand-icon {
+            width: 32px;
+            height: 32px;
+            background-color: #337ab7;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .brand-text {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .nav {
+            display: flex;
+            align-items: center;
+        }
+        .nav a {
+            margin-left: 20px;
+        }
+        .hero {
+            margin-top: 30px;
+        }
+        .hero-title {
+            font-size: 48px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .hero-desc {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        .buttons {
+            display: flex;
+        }
+        .button {
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: none;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+        .button-primary {
+            background-color: #337ab7;
+            color: #fff;
+        }
+        .button-secondary {
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        .social {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .social-icon {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 10px;
+            cursor: pointer;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .social-icon:hover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .social-icon img {
+            width: 24px;
+            height: 24px;
+        }
+        .section {
+            margin-top: 50px;
+        }
+        .section-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .section-desc {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        .links {
+            margin-top: 20px;
+        }
+        .link {
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 10px;
+            position: relative;
+        }
+        .link-title {
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .link-content {
+            font-size: 14px;
+            margin-top: 5px;
+        }
+        .link-copy {
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%);
+            font-size: 18px;
+            cursor: pointer;
+        }
+        .link-copy:hover {
+            color: #337ab7;
+        }
+        .version {
+            margin-bottom: 10px;
+        }
+        .learn-more {
+            width: 300px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .learn-more-title {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .learn-more-content {
+            font-size: 14px;
+        }
+        .learn-more-img {
+            width: 100%;
+            height: 150px;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .learn-more-img img {
+            width: 50px;
+            height: 50px;
+        }
+        .footer {
+            padding: 20px;
+            background-color: #fff;
+            border-top: 1px solid #eee;
+            text-align: center;
+        }
+        .footer a {
+            color: #333;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        .powered {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        .powered-icon {
+            width: 32px;
+            height: 32px;
+            margin-right: 10px;
+        }
+        .powered-text {
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+<div class="header">
+<div class="brand">
+<div class="brand-icon">
+<span>B</span>
+</div>
+<div class="brand-text">BootstrapCDN</div>
+</div>
+<div class="nav">
+<a href="#">Font Awesome CDN</a>
+<a href="#">Bootstrap Icons CDN</a>
+<a href="#">Bootswatch CDN</a>
+<a href="#">Bootlint CDN</a>
+<div class="social">
+<a class="social-icon" href="#"><img alt="GitHub" src="placeholder.png"/></a>
+<a class="social-icon" href="#"><img alt="Project" src="placeholder.png"/></a>
+<a class="social-icon" href="#"><img alt="Resources" src="placeholder.png"/></a>
+</div>
+</div>
+</div>
+<div class="hero">
+<h1 class="hero-title">BootstrapCDN</h1>
+<p class="hero-desc">The recommended CDN for Bootstrap, Font Awesome, Bootswatch and Bootstrap Icons</p>
+<div class="buttons">
+<button class="button button-primary">Follow @jsdelivr</button>
+<button class="button button-secondary">Sponsor</button>
+</div>
+<div class="social">
+<a class="social-icon" href="#"><img alt="Bootstrap" src="placeholder.png"/></a>
+<a class="social-icon" href="#"><img alt="Font Awesome" src="placeholder.png"/></a>
+<a class="social-icon" href="#"><img alt="Bootswatch" src="placeholder.png"/></a>
+<a class="social-icon" href="#"><img alt="Bootstrap Icons" src="placeholder.png"/></a>
+</div>
+</div>
+<div class="section">
+<h2 class="section-title">Quick Start</h2>
+<p class="section-desc">Get your production ready CDN links below. You can also automate your upgrades by pulling the latest versions from our API.</p>
+<div class="version">
+<h3>v5.3.2</h3>
+<div class="links">
+<div class="link">
+<div class="link-title">CSS</div>
+<div class="link-content">https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css</div>
+<div class="link-copy">
+<span>✔</span>
+</div>
+</div>
+<div class="link">
+<div class="link-title">JavaScript</div>
+<div class="link-content">https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js</div>
+<div class="link-copy">
+<span>✔</span>
+</div>
+</div>
+<div class="link">
+<div class="link-title">JavaScript Bundle</div>
+<div class="link-content">https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js</div>
+<div class="link-copy">
+<span>✔</span>
+</div>
+</div>
+</div>
+</div>
+<div class="version">
+<h3>v4.6.2</h3>
+<div class="links">
+<div class="link">
+<div class="link-title">CSS</div>
+<div class="link-content">https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css</div>
+<div class="link-copy">
+<span>✔</span>
+</div>
+</div>
+<div class="link">
+<div class="link-title">JavaScript</div>
+<div class="link-content">https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js</div>
+<div class="link-copy">
+<span>✔</span>
+</div>
+</div>
+<div class="link">
+<div class="link-title">JavaScript Bundle</div>
+<div class="link-content">https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js</div>
+<div class="link-copy">
+<span>✔</span>
+</div>
+</div>
+</div>
+</div>
+<div class="learn-more">
+<div class="learn-more-title">LEARN MORE</div>
+<div class="learn-more-content">Check what makes us production ready</div>
+<div class="learn-more-img">
+<img alt="Production Ready" src="placeholder.png"/>
+</div>
+</div>
+</div>
+<div class="footer">
+<a href="#">About</a>
+<a href="#">Privacy Policy</a>
+<div class="powered">
+<div class="powered-icon">
+<img alt="jsDelivr" src="placeholder.png"/>
+</div>
+<div class="powered-text">Powered by <a href="#">jsDelivr</a> and sponsored by <a href="#">Cloudflare</a>, <a href="#">Fastly</a>, <a href="#">NS1</a>, <a href="#">BunnyCDN</a> &amp; <a href="#">Dmitry Akulov</a></div>
+</div>
+</div>
+</div>
+</body>
+</html>
+</p></body></html>

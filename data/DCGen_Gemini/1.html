@@ -1,0 +1,285 @@
+<html><body><p>
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>VK</title>
+<style>
+body {
+  background-color: #f5f5f5;
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.left-column, .right-column {
+  width: 45%;
+  padding: 20px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.phone-images {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.phone-image {
+  width: 250px;
+  height: 150px;
+  background-color: #ddd;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.phone-image img {
+  width: 50%;
+  height: 50%;
+}
+
+.app-store-links {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.app-store-link {
+  color: blue;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.all-products {
+  color: blue;
+  font-size: 14px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.all-products i {
+  margin-left: 5px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin-top: 20px;
+  color: #777;
+}
+
+.footer a {
+  color: blue;
+  text-decoration: none;
+  font-size: 12px;
+  margin-right: 10px;
+}
+
+.vk-logo {
+  width: 40px;
+  height: 40px;
+  background-color: blue;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.login-form {
+  margin-bottom: 20px;
+}
+
+.login-form label {
+  font-size: 14px;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.login-form input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+.login-form input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+.login-form .save-user {
+  display: flex;
+  align-items: center;
+}
+
+.login-form .save-user i {
+  margin-left: 5px;
+}
+
+.login-form .info-icon {
+  margin-left: 10px;
+}
+
+.login-form button {
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+}
+
+.qr-code-login {
+  margin-bottom: 20px;
+}
+
+.qr-code-login p {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.qr-code-login .learn-more {
+  color: blue;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.sign-up-button {
+  background-color: green;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.sign-up-text {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.sign-up-text .learn-more {
+  color: blue;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.recommendation-technologies {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.language-selection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+}
+
+.language-selection a {
+  color: blue;
+  text-decoration: none;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="left-column">
+<div class="vk-logo">VK</div>
+<h1>VK for mobile devices</h1>
+<p>Install our official mobile app and stay in touch with your friends anytime and anywhere.</p>
+<div class="phone-images">
+<div class="phone-image">
+<img alt="Phone Image" src="placeholder.png"/>
+</div>
+<div class="phone-image">
+<img alt="Phone Image" src="placeholder.png"/>
+</div>
+</div>
+<div class="app-store-links">
+<a class="app-store-link" href="#">Google Play</a>
+<a class="app-store-link" href="#">RuStore</a>
+<a class="app-store-link" href="#">App Store</a>
+</div>
+<a class="all-products" href="#">All products <i></i></a>
+<div class="footer">
+<p>VK © 2006-2024</p>
+<div>
+<a href="#">About VK</a>
+<a href="#">Terms</a>
+<a href="#">Developers</a>
+</div>
+</div>
+</div>
+<div class="right-column">
+<div class="vk-logo">VK</div>
+<h1>Sign in to VK</h1>
+<form class="login-form">
+<label for="phone-email">Phone or email</label>
+<input id="phone-email" placeholder="Phone or email" type="text"/>
+<div class="save-user">
+<input id="save-user" type="checkbox"/>
+<label for="save-user">Save user</label>
+<i class="info-icon"></i>
+</div>
+<button type="submit">Sign in</button>
+</form>
+<div class="qr-code-login">
+<h2>Quick login with QR code</h2>
+<p>Use your phone's camera</p>
+<img alt="QR Code" src="placeholder.png"/>
+<a class="learn-more" href="#">Learn more</a>
+</div>
+<button class="sign-up-button">Sign up</button>
+<div class="sign-up-text">
+<p>After signing up, you'll get access to all of VK ID's features</p>
+<a class="learn-more" href="#">Learn more</a>
+</div>
+<div class="recommendation-technologies">
+<p>Recommendation technologies used</p>
+</div>
+<div class="language-selection">
+<a href="#">Русский</a>
+<a href="#">English</a>
+<a href="#">All languages</a>
+</div>
+</div>
+</div>
+</body>
+</html>
+</p></body></html>

@@ -1,0 +1,437 @@
+<html><body><p>
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>GOV.UK</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .cookies-banner {
+            background-color: #f8f8f8;
+            padding: 20px;
+            border-bottom: 1px solid #dcdcdc;
+            text-align: center;
+        }
+
+        .cookies-banner p {
+            font-size: 14px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .cookies-banner button {
+            background-color: #005ea5;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            font-size: 14px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+
+        .cookies-banner a {
+            color: #005ea5;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .header {
+            background-color: #1d70b8;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        .header img {
+            width: 60px;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+
+        .header h1 {
+            font-size: 36px;
+            margin: 0;
+            display: inline-block;
+        }
+
+        .header p {
+            font-size: 24px;
+            margin-top: 5px;
+        }
+
+        .search-container {
+            margin: 20px 0;
+            text-align: center;
+            position: relative;
+        }
+
+        .search-container input[type="text"] {
+            padding: 10px;
+            width: 300px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-right: 10px;
+        }
+
+        .search-container button {
+            background-color: #005ea5;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .section {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .section h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+
+        .links a {
+            margin: 10px;
+            display: block;
+            padding: 10px;
+            background-color: #f3f3f3;
+            border: 1px solid #ccc;
+            text-align: center;
+            text-decoration: none;
+            color: #005ea5;
+            width: 200px;
+        }
+
+        .services, .featured {
+            display: inline-block;
+            vertical-align: top;
+            width: 45%;
+            margin: 20px;
+        }
+
+        .services ul, .activity ul {
+            list-style-type: none;
+            padding: 0;
+            margin-bottom: 0;
+        }
+
+        .services ul li, .activity ul li {
+            padding: 10px;
+            border-bottom: 1px solid #e5e5e5;
+        }
+
+        .services ul li a, .activity ul li a {
+            text-decoration: none;
+            color: #005ea5;
+            display: block;
+        }
+
+        .activity {
+            border-top: 1px solid #dcdcdc;
+            padding: 10px 0;
+        }
+
+        .footer {
+            background-color: #f8f8f8;
+            padding: 20px;
+            border-top: 1px solid #dcdcdc;
+            text-align: center;
+        }
+
+        .footer p {
+            margin: 0;
+            font-size: 12px;
+            color: #666;
+        }
+
+        .container {
+            width: 90%;
+            margin: 0 auto;
+            max-width: 1200px;
+        }
+
+        .header .menu {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 16px;
+            color: white;
+        }
+
+        .header .menu a {
+            color: white;
+            text-decoration: none;
+            margin-left: 10px;
+        }
+
+        .header .menu .search-icon {
+            cursor: pointer;
+            margin-left: 10px;
+        }
+
+        .popular-links {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .popular-links .link {
+            display: inline-block;
+            padding: 10px;
+            background-color: #f3f3f3;
+            border: 1px solid #ccc;
+            text-align: center;
+            text-decoration: none;
+            color: #005ea5;
+            width: 25%;
+        }
+
+        .popular-links .link:nth-child(2) {
+            margin-right: 20px;
+        }
+
+        .popular-links .link:nth-child(3) {
+            margin-left: 20px;
+        }
+
+        .services-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .services-list li {
+            width: 48%;
+            margin-bottom: 10px;
+        }
+
+        .services-list li a {
+            display: block;
+            padding: 10px;
+            background-color: #f3f3f3;
+            border: 1px solid #ccc;
+            text-align: center;
+            text-decoration: none;
+            color: #005ea5;
+        }
+
+        .services-list li a:hover {
+            background-color: #e5e5e5;
+        }
+
+        .featured-list {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+        }
+
+        .featured-list li {
+            margin-bottom: 10px;
+        }
+
+        .featured-list li a {
+            display: block;
+            padding: 10px;
+            background-color: #f3f3f3;
+            border: 1px solid #ccc;
+            text-align: center;
+            text-decoration: none;
+            color: #005ea5;
+        }
+
+        .featured-list li a:hover {
+            background-color: #e5e5e5;
+        }
+
+        .footer .links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .footer .links p {
+            margin: 0;
+            font-size: 12px;
+            color: #666;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="cookies-banner">
+<p>Cookies on GOV.UK</p>
+<button>Accept additional cookies</button>
+<button>Reject additional cookies</button>
+<a href="#">View cookies</a>
+</div>
+<div class="header container">
+<img alt="GOV.UK logo" src="placeholder.png"/>
+<h1>GOV.UK</h1>
+<p>The best place to find government services and information</p>
+<div class="search-container">
+<input placeholder="Search" type="text"/>
+<button>Search</button>
+</div>
+<div class="menu">
+<a href="#">Menu</a>
+<a class="search-icon" href="#">
+<svg fill="none" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+<path d="M11.5 11.5L14 14" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+<path d="M7 11.5C10.3137 11.5 13 8.8137 13 5.5C13 2.1863 10.3137 0.5 7 0.5C3.6863 0.5 1 2.1863 1 5.5C1 8.8137 3.6863 11.5 7 11.5Z" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</a>
+</div>
+</div>
+<div class="section container">
+<h2>Popular on GOV.UK</h2>
+<div class="popular-links">
+<a class="link" href="#">HMRC account: sign in or set up</a>
+<a class="link" href="#">Universal Credit account: sign in</a>
+<a class="link" href="#">Personal tax account: sign in or set up</a>
+<a class="link" href="#">Visit the UK on a Standard Visitor visa</a>
+</div>
+<div class="popular-links">
+<a class="link" href="#">Self Assessment tax return: sign in</a>
+<a class="link" href="#">Childcare account: sign in</a>
+</div>
+</div>
+<div class="section container">
+<div class="services">
+<h2>Services and information</h2>
+<ul class="services-list">
+<li><a href="#">Benefits</a></li>
+<li><a href="#">Births, deaths, marriages and care</a></li>
+<li><a href="#">Business and self-employed</a></li>
+<li><a href="#">Childcare and parenting</a></li>
+<li><a href="#">Citizenship and living in the UK</a></li>
+<li><a href="#">Crime, justice and the law</a></li>
+<li><a href="#">Disabled people</a></li>
+<li><a href="#">Driving and transport</a></li>
+<li><a href="#">Education and learning</a></li>
+<li><a href="#">Employing people</a></li>
+<li><a href="#">Environment and countryside</a></li>
+<li><a href="#">Housing and local services</a></li>
+<li><a href="#">Money and tax</a></li>
+<li><a href="#">Passports, travel and living abroad</a></li>
+<li><a href="#">Visas and immigration</a></li>
+<li><a href="#">Working, jobs and pensions</a></li>
+</ul>
+</div>
+<div class="featured">
+<h2>Featured</h2>
+<ul class="featured-list">
+<li><a href="#">Find a job</a></li>
+<li><a href="#">National Insurance</a></li>
+<li><a href="#">Cost of living support</a></li>
+</ul>
+</div>
+</div>
+<div class="section container activity">
+<div class="services">
+<h2>Government activity</h2>
+<ul class="services-list">
+<li><a href="#">Departments</a></li>
+<li><a href="#">News</a></li>
+<li><a href="#">Guidance and regulation</a></li>
+<li><a href="#">Research and statistics</a></li>
+<li><a href="#">Policy papers and consultations</a></li>
+<li><a href="#">Transparency documents</a></li>
+<li><a href="#">How government works</a></li>
+<li><a href="#">Get involved</a></li>
+</ul>
+</div>
+<div class="featured">
+<h2>More on GOV.UK</h2>
+<ul class="featured-list">
+<li><a href="#">HMRC services: sign in</a></li>
+<li><a href="#">Check MOT history of a vehicle</a></li>
+<li><a href="#">Tax your vehicle</a></li>
+<li><a href="#">Universal Credit</a></li>
+<li><a href="#">Foreign travel advice</a></li>
+<li><a href="#">Check your State Pension age</a></li>
+<li><a href="#">Childcare account: sign in</a></li>
+<li><a href="#">Student finance: sign in</a></li>
+<li><a href="#">Self Assessment tax returns</a></li>
+<li><a href="#">Apply for a passport</a></li>
+</ul>
+</div>
+</div>
+<div class="section container">
+<h2>Services and information</h2>
+<ul class="services-list">
+<li><a href="#">Benefits</a></li>
+<li><a href="#">Births, deaths, marriages and care</a></li>
+<li><a href="#">Business and self-employed</a></li>
+<li><a href="#">Childcare and parenting</a></li>
+<li><a href="#">Citizenship and living in the UK</a></li>
+<li><a href="#">Crime, justice and the law</a></li>
+<li><a href="#">Disabled people</a></li>
+<li><a href="#">Driving and transport</a></li>
+</ul>
+<ul class="services-list">
+<li><a href="#">Education and learning</a></li>
+<li><a href="#">Employing people</a></li>
+<li><a href="#">Environment and countryside</a></li>
+<li><a href="#">Housing and local services</a></li>
+<li><a href="#">Money and tax</a></li>
+<li><a href="#">Passports, travel and living abroad</a></li>
+<li><a href="#">Visas and immigration</a></li>
+<li><a href="#">Working, jobs and pensions</a></li>
+</ul>
+</div>
+<div class="section container">
+<h2>Government activity</h2>
+<ul class="services-list">
+<li><a href="#">Departments</a></li>
+<li><a href="#">News</a></li>
+<li><a href="#">Guidance and regulation</a></li>
+<li><a href="#">Research and statistics</a></li>
+<li><a href="#">Policy papers and consultations</a></li>
+<li><a href="#">Transparency documents</a></li>
+<li><a href="#">How government works</a></li>
+<li><a href="#">Get involved</a></li>
+</ul>
+</div>
+<div class="footer">
+<div class="container">
+<div class="links">
+<p>Help</p>
+<p>Privacy</p>
+<p>Cookies</p>
+<p>Accessibility statement</p>
+<p>Contact</p>
+<p>Terms and conditions</p>
+</div>
+<div class="links">
+<p>Rhesr o Wasanaethau Cymraeg</p>
+<p>Government Digital Service</p>
+<p>OGL</p>
+</div>
+<p>© Crown copyright</p>
+</div>
+</div>
+</body>
+</html>
+</p></body></html>

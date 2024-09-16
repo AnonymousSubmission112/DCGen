@@ -1,0 +1,531 @@
+<html><body><p>
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Document</title>
+<style>
+        body {
+            margin: 0;
+            font-family: sans-serif;
+            background-color: #f2f2f2;
+        }
+        header {
+            background-color: #192032;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            width: 1100px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+        }
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header-left {
+            font-size: 14px;
+            text-transform: uppercase;
+        }
+        .header-right {
+            display: flex;
+            gap: 10px;
+        }
+        .header-right a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 12px;
+            border: 1px solid white;
+            border-radius: 5px;
+        }
+        .title {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 36px;
+            font-weight: bold;
+        }
+        .subtitle {
+            text-align: center;
+            font-size: 18px;
+            margin-top: 10px;
+        }
+        .btn-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            gap: 10px;
+        }
+        .btn {
+            background-color: #ff6600;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .info-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .info-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            width: 300px;
+        }
+        .info-item img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+        }
+        .info-item h3 {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .info-item p {
+            font-size: 14px;
+            text-align: center;
+        }
+        .features {
+            margin-top: 40px;
+        }
+        .features-container {
+            display: flex;
+            justify-content: space-between;
+        }
+        .feature-item {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .feature-item img {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 10px;
+        }
+        .feature-item h3 {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .feature-item p {
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+        .how-to-use {
+            margin-top: 40px;
+        }
+        .how-to-use-container {
+            display: flex;
+            justify-content: space-between;
+        }
+        .how-to-use-item {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .how-to-use-item h3 {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .how-to-use-item p {
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+        .how-to-use-item ul {
+            list-style: none;
+            padding: 0;
+        }
+        .how-to-use-item ul li {
+            margin-bottom: 5px;
+        }
+        .how-to-use-item img {
+            width: 20px;
+            height: 20px;
+            margin-right: 5px;
+        }
+        .enterprise-use {
+            margin-top: 40px;
+        }
+        .enterprise-use-container {
+            display: flex;
+            justify-content: space-between;
+        }
+        .enterprise-use-item {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .enterprise-use-item h3 {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .enterprise-use-item p {
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+        .enterprise-use-item img {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 10px;
+        }
+        .enterprise-use-item ul {
+            list-style: none;
+            padding: 0;
+        }
+        .enterprise-use-item ul li {
+            margin-bottom: 5px;
+        }
+        .enterprise-use-item ul li img {
+            width: 20px;
+            height: 20px;
+            margin-right: 5px;
+        }
+        .personal-use {
+            margin-top: 40px;
+        }
+        .personal-use-container {
+            display: flex;
+            justify-content: space-between;
+        }
+        .personal-use-item {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .personal-use-item h3 {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .personal-use-item p {
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+        .personal-use-item img {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 10px;
+        }
+        .personal-use-item ul {
+            list-style: none;
+            padding: 0;
+        }
+        .personal-use-item ul li {
+            margin-bottom: 5px;
+        }
+        .personal-use-item ul li img {
+            width: 20px;
+            height: 20px;
+            margin-right: 5px;
+        }
+        .coverage {
+            margin-top: 40px;
+        }
+        .coverage-container {
+            display: flex;
+            justify-content: space-between;
+        }
+        .coverage-item {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .coverage-item h3 {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .coverage-item p {
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+        .coverage-item ul {
+            list-style: none;
+            padding: 0;
+        }
+        .coverage-item ul li {
+            margin-bottom: 5px;
+        }
+        .coverage-item ul li img {
+            width: 20px;
+            height: 20px;
+            margin-right: 5px;
+        }
+        .products {
+            margin-top: 40px;
+        }
+        .products-container {
+            display: flex;
+            justify-content: space-between;
+        }
+        .products-item {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .products-item h3 {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .products-item p {
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+        .products-item img {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 10px;
+        }
+        .products-item ul {
+            list-style: none;
+            padding: 0;
+        }
+        .products-item ul li {
+            margin-bottom: 5px;
+        }
+        .products-item ul li img {
+            width: 20px;
+            height: 20px;
+            margin-right: 5px;
+        }
+        .footer {
+            background-color: #192032;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+        }
+        .footer-left {
+            font-size: 14px;
+            text-transform: uppercase;
+        }
+        .footer-right {
+            display: flex;
+            gap: 10px;
+        }
+        .footer-right a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 12px;
+            border: 1px solid white;
+            border-radius: 5px;
+        }
+        .copyrights {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 12px;
+        }
+        .copyright-links {
+            text-align: center;
+            margin-top: 10px;
+            font-size: 12px;
+        }
+        .copyright-links a {
+            color: white;
+            text-decoration: none;
+        }
+        .copyright-links a:hover {
+            text-decoration: underline;
+        }
+        .copyright-links span {
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+<header>
+<div class="header-container">
+<div class="header-left">
+<a href="#">公共DNS</a>
+<a href="#">解决方案</a>
+<a href="#">知识中心</a>
+</div>
+<div class="header-right">
+<a href="#">免费使用</a>
+<a href="#">企业入驻</a>
+</div>
+</div>
+</header>
+<div class="container">
+<div class="title">阿里云公共DNS<br/>223.5.5.5</div>
+<div class="subtitle">更懂用户体验的互联网接入口</div>
+<div class="btn-container">
+<button class="btn">免费使用</button>
+<button class="btn">企业入驻</button>
+</div>
+<div class="info-container">
+<div class="info-item">
+<img alt="Info 1" src="placeholder.png"/>
+<h3>服务稳定可靠</h3>
+<p>始终如一的高可用性，保障网络稳定流畅</p>
+</div>
+<div class="info-item">
+<img alt="Info 2" src="placeholder.png"/>
+<h3>全球领先技术</h3>
+<p>自主研发DNS解析技术，性能优异</p>
+</div>
+<div class="info-item">
+<img alt="Info 3" src="placeholder.png"/>
+<h3>安全性能卓越</h3>
+<p>提供多种安全防护机制，保障网络安全</p>
+</div>
+</div>
+<div class="features">
+<h2>阿里云公共DNS 会是你最佳选择</h2>
+<p>阿里云公共DNS，是阿里云面向所有用户的公共DNS解析服务，提供稳定可靠的互联网访问服务，加速您的网络，提升用户体验。</p>
+<div class="features-container">
+<div class="feature-item">
+<img alt="Feature 1" src="placeholder.png"/>
+<h3>快速</h3>
+<p>公共DNS智能解析 + 云解析fDNS极速解析，一站式DNS解析优化；</p>
+<p>先进的算法技术为您加速，加速您的网络。</p>
+</div>
+<div class="feature-item">
+<img alt="Feature 2" src="placeholder.png"/>
+<h3>稳定</h3>
+<p>全球范围智能节点部署，覆盖全球资源；</p>
+<p>多年来在DNS运营领域的积累，稳定高效。</p>
+</div>
+<div class="feature-item">
+<img alt="Feature 3" src="placeholder.png"/>
+<h3>安全</h3>
+<p>支持用户EC5T技术，智能解析，</p>
+<p>支持DoT/DoH协议，保护用户隐私，安全抵御攻击。</p>
+</div>
+</div>
+</div>
+<div class="how-to-use">
+<h2>如何使用阿里云公共DNS</h2>
+<div class="how-to-use-container">
+<div class="how-to-use-item">
+<h3>企业用户</h3>
+<p>企业用户，可以轻松接入，管理解析更便捷、高效。</p>
+<ul>
+<li><img alt="Icon 1" src="placeholder.png"/> SDK</li>
+<li><img alt="Icon 2" src="placeholder.png"/> DoH JSON API</li>
+<li><img alt="Icon 3" src="placeholder.png"/> DoT/DoH 隧道</li>
+</ul>
+</div>
+<div class="how-to-use-item">
+<img alt="How to use" src="placeholder.png"/>
+<h3>普通用户</h3>
+<p>普通用户，可以轻松设置DNS解析的访问模式，便于网络安全。</p>
+<ul>
+<li><img alt="Icon 1" src="placeholder.png"/> 传统DNS接入方法</li>
+<ul>
+<li>Windows</li>
+<li>Linux</li>
+<li>macOS</li>
+</ul>
+<li><img alt="Icon 2" src="placeholder.png"/> DoT接入方法</li>
+<ul>
+<li>Android</li>
+</ul>
+<li><img alt="Icon 3" src="placeholder.png"/> DoH接入方法</li>
+<ul>
+<li>Firefox</li>
+<li>Chrome</li>
+</ul>
+</ul>
+</div>
+</div>
+</div>
+<div class="coverage">
+<h2>国内节点</h2>
+<h2>海外节点</h2>
+<div class="coverage-container">
+<div class="coverage-item">
+<h3>省份</h3>
+<ul>
+<li>北京</li>
+<li>上海</li>
+<li>广东</li>
+<li>浙江</li>
+<li>江苏</li>
+</ul>
+</div>
+<div class="coverage-item">
+<h3>城市</h3>
+<ul>
+<li>北京</li>
+<li>上海</li>
+<li>广州</li>
+<li>杭州</li>
+<li>南京</li>
+</ul>
+</div>
+</div>
+<p>覆盖京、津、冀、鲁、豫、皖、闽、赣、湘、粤、桂、琼、渝、川、贵、云、陕、甘、青、宁、新、黑、吉、辽，以及海外150多个主要城市</p>
+</div>
+<div class="products">
+<h2>热门产品</h2>
+<div class="products-container">
+<div class="products-item">
+<img alt="Product 1" src="placeholder.png"/>
+<h3>云解析DNS</h3>
+<p>提供高效稳定的DNS解析服务，帮助您快速构建全球化网络。</p>
+</div>
+<div class="products-item">
+<img alt="Product 2" src="placeholder.png"/>
+<h3>全球流量管理GTM</h3>
+<p>提供智能化的流量分发服务，帮助您优化网站性能和用户体验。</p>
+</div>
+<div class="products-item">
+<img alt="Product 3" src="placeholder.png"/>
+<h3>内部网络Private Zone</h3>
+<p>提供安全的私有域名解析服务，帮助您保护您的内部网络安全。</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<div class="footer-container">
+<div class="footer-left">
+<a href="#">关于我们</a>
+<a href="#">联系我们</a>
+<a href="#">合作伙伴</a>
+<a href="#">隐私政策</a>
+</div>
+<div class="footer-right">
+<a href="#">免费使用</a>
+<a href="#">企业入驻</a>
+</div>
+</div>
+<div class="copyrights">
+<p>产品咨询热线: Benadu</p>
+</div>
+<div class="copyright-links">
+<a href="#">© 2024 alidns.com 版权所有 浙ICP证00002875-29</a>
+<span>浙公网安备 33010002000088号</span>
+</div>
+</div>
+</div>
+</body>
+</html>
+</p></body></html>

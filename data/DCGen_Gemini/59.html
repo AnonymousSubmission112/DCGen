@@ -1,0 +1,552 @@
+<html><body><p>
+<!DOCTYPE html>
+
+<html>
+<head>
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  background-color: #FFFFE0;
+  padding: 10px;
+  border-bottom: 2px solid #003399;
+  text-align: center;
+}
+
+.header a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.header a:hover {
+  text-decoration: underline;
+  color: #000099;
+}
+
+.header .icon {
+  display: inline-block;
+  margin: 0 5px;
+  width: 16px;
+  height: 16px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.header .icon-search {
+  background-image: url('placeholder.png');
+}
+
+.header .icon-building {
+  background-image: url('placeholder.png');
+}
+
+.header .icon-location {
+  background-image: url('placeholder.png');
+}
+
+.header .icon-message {
+  background-image: url('placeholder.png');
+}
+
+.header .icon-globe {
+  background-image: url('placeholder.png');
+}
+
+.header .icon-gear {
+  background-image: url('placeholder.png');
+}
+
+.navbar {
+  background-color: #ADD8E6;
+  height: 26px;
+  padding: 5px;
+  text-align: center;
+}
+
+.navbar .text {
+  color: #FFFFFF;
+  font-size: 14px;
+}
+
+.navbar .button {
+  background-color: #FFFFFF;
+  color: #000000;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin: 0 5px;
+  font-size: 14px;
+}
+
+.navbar .button.state-agencies {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+}
+
+.navbar .icon {
+  display: inline-block;
+  margin: 0 5px;
+  width: 16px;
+  height: 16px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.navbar .icon-location {
+  background-image: url('placeholder.png');
+}
+
+.navbar .icon-message {
+  background-image: url('placeholder.png');
+}
+
+.navbar .icon-globe {
+  background-image: url('placeholder.png');
+}
+
+.navbar .icon-gear {
+  background-image: url('placeholder.png');
+}
+
+.content {
+  padding: 20px;
+}
+
+.section-1 {
+  background-color: #EEEEEE;
+  padding: 20px;
+  height: 274px;
+}
+
+.section-1 .search-bar {
+  display: flex;
+  align-items: center;
+  border: 1px solid #CCCCCC;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.section-1 .search-bar input {
+  border: none;
+  padding: 5px;
+  font-size: 14px;
+  width: 100%;
+}
+
+.section-1 .search-bar .icon {
+  display: inline-block;
+  margin-left: 5px;
+  width: 16px;
+  height: 16px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.section-1 .search-bar .icon-search {
+  background-image: url('placeholder.png');
+}
+
+.section-1 .button {
+  background-color: #000000;
+  color: #FFFFFF;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin: 10px;
+  font-size: 14px;
+}
+
+.section-2 {
+  background-color: #333333;
+  padding: 20px;
+  height: 116px;
+}
+
+.section-2 .button {
+  background-color: #000000;
+  color: #FFFFFF;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin: 10px;
+  font-size: 14px;
+}
+
+.section-2 .button .icon {
+  display: inline-block;
+  margin-left: 5px;
+  width: 16px;
+  height: 16px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.section-2 .button .icon-file {
+  background-image: url('placeholder.png');
+}
+
+.section-2 .button .icon-medical {
+  background-image: url('placeholder.png');
+}
+
+.section-2 .button .icon-vaccine {
+  background-image: url('placeholder.png');
+}
+
+.section-2 .button .icon-house {
+  background-image: url('placeholder.png');
+}
+
+.section-2 .text {
+  color: #FFFFFF;
+  font-size: 14px;
+  text-align: center;
+}
+
+.section-3 {
+  background-color: #000066;
+  padding: 20px;
+  height: 98px;
+}
+
+.section-3 .profile {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.section-3 .profile .image {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  margin-right: 10px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.section-3 .profile .image-placeholder {
+  background-image: url('placeholder.png');
+}
+
+.section-3 .profile .text {
+  color: #FFFFFF;
+  font-size: 14px;
+}
+
+.section-3 .profile .text-small {
+  font-size: 12px;
+}
+
+.section-4 {
+  background-color: #333333;
+  padding: 20px;
+  height: 64px;
+}
+
+.section-4 .stat {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  width: 100px;
+}
+
+.section-4 .stat .number {
+  font-size: 24px;
+  color: #FFFF00;
+}
+
+.section-4 .stat .text {
+  font-size: 12px;
+  color: #FFFFFF;
+}
+
+.section-5 {
+  background-color: #EEEEEE;
+  padding: 20px;
+  height: 174px;
+}
+
+.section-5 .title {
+  font-size: 18px;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.section-5 .description {
+  color: #666666;
+  font-size: 13px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.section-5 .button {
+  background-color: #000066;
+  color: #FFFFFF;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin: 10px;
+  font-size: 12px;
+}
+
+.section-6 {
+  background-color: #ADD8E6;
+  padding: 20px;
+  height: 110px;
+}
+
+.section-6 .title {
+  font-size: 36px;
+  color: #000066;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.section-6 .text {
+  color: #000066;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.section-6 .button {
+  background-color: #000066;
+  color: #FFFFFF;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin: 10px;
+  font-size: 12px;
+  text-align: right;
+}
+
+.section-7 {
+  background-color: #000066;
+  padding: 20px;
+  height: 60px;
+}
+
+.section-7 .title {
+  font-size: 13px;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.section-7 .button {
+  background-color: #FFFFFF;
+  color: #000066;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin: 10px;
+  font-size: 12px;
+}
+
+.section-8 {
+  background-color: #333333;
+  padding: 20px;
+}
+
+.section-8 .column {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+}
+
+.section-8 .column .title {
+  font-size: 14px;
+  color: #FFFFFF;
+  margin-bottom: 10px;
+}
+
+.section-8 .column .link {
+  color: #FFFFFF;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+.section-9 {
+  background-color: #000000;
+  padding: 20px;
+  height: 52px;
+}
+
+.section-9 .button {
+  background-color: #000000;
+  color: #FFFFFF;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin: 10px;
+  font-size: 12px;
+}
+
+.section-10 {
+  background-color: #FFFFFF;
+  padding: 20px;
+  height: 40px;
+  text-align: center;
+}
+
+.section-10 .text {
+  color: #000000;
+  font-size: 12px;
+}
+
+.section-10 .icon {
+  display: inline-block;
+  margin-left: 5px;
+  width: 16px;
+  height: 16px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.section-10 .icon-accessibility {
+  background-image: url('placeholder.png');
+}
+</style>
+</head>
+<body>
+<div class="header">
+<div class="icon icon-search"></div>
+  For more information on COVID in California, please visit <a href="#">COVID19.CA.gov</a>
+<div style="float: right;">
+<a href="#">State Agencies</a> <div class="icon icon-building"></div>
+<a href="#">Set Location</a> <div class="icon icon-location"></div>
+<a href="#">Contact Us</a> <div class="icon icon-message"></div>
+<a href="#">Translate</a> <div class="icon icon-globe"></div>
+<a href="#">Settings</a> <div class="icon icon-gear"></div>
+<div style="color: #666666; font-size: 16px;">x</div>
+</div>
+</div>
+<div class="navbar">
+<div class="button state-agencies">State Agencies</div>
+<div style="float: right;">
+<div class="button">Getting Services</div>
+<div class="button">Doing Business</div>
+<div class="button">Working</div>
+<div class="button">Learning</div>
+<div class="button">Living</div>
+<div class="button">Visiting</div>
+<div class="button">Government</div>
+<div class="button">Search</div>
+</div>
+<div class="text">For more information on COVID in California, please visit COVID19.CA.gov</div>
+</div>
+<div class="content">
+<div class="section-1">
+<div class="search-bar">
+<div class="icon icon-search"></div>
+<input placeholder="Search this website" type="text"/>
+</div>
+<div class="button">Find State Agencies</div>
+<div class="button">Find State Services</div>
+<div class="button">Common Questions</div>
+</div>
+<div class="section-2">
+<div class="button">
+<div class="icon icon-file"></div>
+      CalFile - File return for free
+    </div>
+<div class="button">
+<div class="icon icon-medical"></div>
+      Get COVID-19 Information and Help
+    </div>
+<div class="button">
+<div class="icon icon-vaccine"></div>
+      Get Digital Vaccine Record
+    </div>
+<div class="button">
+<div class="icon icon-house"></div>
+      Get Disaster Relief Assistance
+    </div>
+<div class="text">More Services</div>
+</div>
+<div class="section-3">
+<div class="profile">
+<div class="image image-placeholder"></div>
+<div class="text">Gavin Newsom</div>
+<div class="text text-small">California Governor</div>
+<div class="text text-small">Visit Governor's Website</div>
+</div>
+<div class="profile">
+<div class="image image-placeholder"></div>
+<div class="text">Eleni Kounalakis</div>
+<div class="text text-small">California Lt. Governor</div>
+<div class="text text-small">Visit Lieutenant Governor's Website</div>
+</div>
+</div>
+<div class="section-4">
+<div class="stat">
+<div class="number">39+</div>
+<div class="text">Million people as of July 2015</div>
+</div>
+<div class="stat">
+<div class="number">5th</div>
+<div class="text">Largest Economy in the World</div>
+</div>
+<div class="stat">
+<div class="number">65+</div>
+<div class="text">Million annual visitors</div>
+</div>
+</div>
+<div class="section-5">
+<div class="title">Disaster Resources</div>
+<div class="description">California has been hit with devastating wildfires and other natural disasters in both the northern and southern parts of the state. If you need more information about recovery or resources visit the following resources:</div>
+<div class="button">Emergency Services</div>
+<div class="button">Wild Fire Recovery</div>
+<div class="button">Disaster Assistance</div>
+</div>
+<div class="section-6">
+<div class="title">1500+ Data Sets</div>
+<div class="text">California believes in the power of unlocking government data.</div>
+<div class="button">Visit Open Data Portal</div>
+</div>
+<div class="section-7">
+<div class="title">Did you find what you were looking for?</div>
+<div class="button">Yes</div>
+<div class="button">No</div>
+</div>
+<div class="section-8">
+<div class="column">
+<div class="title">Campaigns</div>
+<div class="link">5 Register to Vote</div>
+<div class="link">5 Save Our Water</div>
+<div class="link">5 Flex Alert</div>
+</div>
+<div class="column">
+<div class="title">Alerts</div>
+<div class="link">5 Amber Alert</div>
+<div class="link">5 Cal Alerts</div>
+<div class="link">5 My Hazards</div>
+</div>
+<div class="column">
+<div class="title">About</div>
+<div class="link">5 Governor</div>
+<div class="link">5 Lt. Governor</div>
+<div class="link">5 California Data</div>
+</div>
+<div class="column">
+<div class="title">Support</div>
+<div class="link">5 State Directory</div>
+<div class="link">5 Technical Issues</div>
+</div>
+</div>
+<div class="section-9">
+<div class="button">Back to Top</div>
+<div class="button">Sitemap</div>
+<div class="button">Accessibility</div>
+<div class="button">Conditions of Use</div>
+<div class="button">Privacy Policy</div>
+<div class="button">Contact Us</div>
+</div>
+<div class="section-10">
+<div class="text">Copyright © 2024 State of California</div>
+<div class="icon icon-accessibility"></div>
+<div class="text">Website Accessibility Certification</div>
+</div>
+</div>
+</body>
+</html>
+</p></body></html>

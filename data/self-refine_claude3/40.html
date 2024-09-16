@@ -1,0 +1,300 @@
+<html><body><p>
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Gravatar Clone</title>
+<style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background: white;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+        .header img {
+            height: 24px;
+        }
+        .header nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 600;
+        }
+        .header .buttons a {
+            margin-left: 10px;
+            padding: 8px 16px;
+            border: 1px solid #0073e6;
+            border-radius: 4px;
+            text-decoration: none;
+            color: #0073e6;
+            font-weight: bold;
+            transition: all 0.2s ease-in-out;
+        }
+        .header .buttons a.signup {
+            background: #0073e6;
+            color: white;
+        }
+        .header .buttons a:hover {
+            background: #0073e6;
+            color: white;
+        }
+        .intro {
+            text-align: center;
+            padding: 60px 20px;
+            background: white;
+        }
+        .intro .images {
+            margin: 20px auto;
+            max-width: 400px;
+        }
+        .intro .images img {
+            width: 100%;
+            height: auto;
+        }
+        .intro form {
+            margin: 20px auto;
+            max-width: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .intro form input[type="email"] {
+            width: 70%;
+            padding: 10px;
+            border: 1px solid #e0e0e0;
+            border-radius: 4px;
+            margin-right: 10px;
+        }
+        .intro form button {
+            width: 28%;
+            padding: 10px;
+            border: none;
+            background: #333;
+            color: white;
+            font-weight: bold;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .feature-section {
+            display: flex;
+            justify-content: center;
+            padding: 80px 20px;
+            background: #0033a0;
+            color: white;
+        }
+        .feature {
+            flex: 1;
+            margin: 0 20px;
+            text-align: center;
+            max-width: 300px;
+        }
+        .feature img {
+            width: 64px;
+            height: 64px;
+        }
+        .trusted-section {
+            padding: 80px 20px;
+            text-align: center;
+            background: white;
+        }
+        .trusted-section h2 {
+            font-size: 36px;
+            font-weight: normal;
+            margin-bottom: 40px;
+        }
+        .trusted-section img {
+            max-width: 100px;
+            margin: 10px;
+        }
+        .code-section {
+            display: flex;
+            justify-content: space-around;
+            padding: 80px 20px;
+            background: #000;
+            color: white;
+        }
+        .code-section .code-block {
+            background: #333;
+            padding: 20px;
+            border-radius: 4px;
+            font-family: monospace;
+            max-width: 500px;
+        }
+        .code-section .code-block pre {
+            margin: 0;
+            white-space: pre-wrap;
+        }
+        .code-section .content {
+            max-width: 400px;
+        }
+        .code-section .content h2 {
+            font-size: 36px;
+            font-weight: normal;
+            margin-bottom: 20px;
+        }
+        .code-section .content p {
+            margin-bottom: 20px;
+        }
+        .code-section .content a {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #0073e6;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            transition: all 0.2s ease-in-out;
+        }
+        .code-section .content a:hover {
+            background: #005cb2;
+        }
+        .code-section .content a i {
+            margin-left: 5px;
+            font-size: 12px;
+        }
+        .footer-section {
+            padding: 80px 20px;
+            background: #0033a0;
+            color: white;
+            text-align: center;
+        }
+        .footer-section img {
+            height: 24px;
+            margin-bottom: 20px;
+        }
+        .footer-section .links a {
+            margin: 0 10px;
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .footer-section .cta {
+            margin-top: 40px;
+        }
+        .footer-section .cta a {
+            display: inline-block;
+            padding: 10px 20px;
+            background: white;
+            color: #0033a0;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            transition: all 0.2s ease-in-out;
+        }
+        .footer-section .cta a:hover {
+            background: #e6e6e6;
+        }
+    </style>
+</head>
+<body>
+<header class="header">
+<img alt="Gravatar Logo" src="placeholder.png"/>
+<nav>
+<a href="#">Developers</a>
+<a href="#">Support</a>
+<a href="#">Blog</a>
+</nav>
+<div class="buttons">
+<a class="login" href="#">Log in</a>
+<a class="signup" href="#">Sign up</a>
+</div>
+</header>
+<section class="intro">
+<p>More than 200 million users and growing</p>
+<h1>One profile for everything, everywhere.</h1>
+<p>Your email address becomes your passport to the digital world, empowering you with complete control over your personal data.</p>
+<form>
+<input placeholder="Enter email address" type="email"/>
+<button type="button">View profile</button>
+</form>
+<div class="images">
+<img alt="Profile Images" src="placeholder.png"/>
+</div>
+</section>
+<section class="feature-section">
+<div class="feature">
+<img alt="Feature Icon" src="placeholder.png"/>
+<h2>Set once, seen everywhere.</h2>
+<p>Create and manage your profile from a single place, telling the web who you are and where people can find you. Skip filling out profile pages forever.</p>
+</div>
+<div class="feature">
+<img alt="Feature Icon" src="placeholder.png"/>
+<h2>It starts with an email.</h2>
+<p>Each Gravatar profile is connected to an email address. When you use this email around the web, your entire profile comes with you.</p>
+</div>
+<div class="feature">
+<img alt="Feature Icon" src="placeholder.png"/>
+<h2>Trusted by big platforms.</h2>
+<p>Millions of websites like WordPress, Slack, and OpenAI use your Gravatar profile automatically, saving you time and improving your experience.</p>
+</div>
+<div class="feature">
+<img alt="Feature Icon" src="placeholder.png"/>
+<h2>Public, open, and responsible.</h2>
+<p>We control over the data that you share with the tools you use. You decide what in your profile and how much of yourself is visible. Your data is yours and yours only.</p>
+<a href="#">Read our Privacy Policy</a>
+</div>
+</section>
+<section class="trusted-section">
+<h2>Gravatar is used by</h2>
+<img alt="WordPress Logo" src="placeholder.png"/>
+<img alt="Github Logo" src="placeholder.png"/>
+<img alt="Slack Logo" src="placeholder.png"/>
+<!-- Add more logos as necessary -->
+</section>
+<section class="code-section">
+<div class="code-block">
+<pre>
+const md5 = require("js-md5");
+let email = "someone@example.com";
+// trim and lowercase the email to remove spaces
+let address = String(email).trim().toLowerCase();
+// md5 hash the final string
+let hash = md5(address);
+// form the Gravatar URL
+let gravatar_url = "https://www.gravatar.com/avatar/" + hash;
+console.log(gravatar_url);
+            </pre>
+</div>
+<div class="content">
+<h2>For developers &amp; app makers</h2>
+<p>Unlock personalized user experiences.</p>
+<p>Gravatar helps developers create personal signup flows and tailored user journeyswith a privacy-forward way. Gravatar can be integrated with your app in mere minutes.</p>
+<a class="login" href="#">Use the developer API<i>→</i></a>
+</div>
+</section>
+<section class="footer-section">
+<img alt="Gravatar Icon" src="placeholder.png"/>
+<p>We are building the open web.</p>
+<p>Gravatar, a service by Automattic, has powered online and profiles since 2008. We are passionate about open source and making the web a more connected place. We are an active tech community and have worked hard over the last decade and beyond to make the internet a better place.</p>
+<div class="links">
+<a href="#">Privacy Policy</a>
+<a href="#">Support</a>
+<a href="#">Blog</a>
+</div>
+<div class="cta">
+<a href="#">Claim your free profile</a>
+</div>
+</section>
+<footer class="footer">
+<div>
+<img alt="Gravatar Logo" src="placeholder.png"/>
+<span>Languages</span>
+</div>
+<div>
+<span>Developer Resources</span>
+<span>Privacy Policy</span>
+<span>Support</span>
+</div>
+</footer>
+</body>
+</html>
+</p></body></html>

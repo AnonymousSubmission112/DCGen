@@ -1,0 +1,234 @@
+<html><body><p>
+<!DOCTYPE html>
+
+<html>
+<head>
+<style>
+body {
+  margin: 0;
+  background-color: #f8f8f8;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  background-color: #ff3e6c;
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+
+.header h1 {
+  margin: 0;
+}
+
+.content {
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.container > div {
+  width: 48%;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.container img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto 20px;
+}
+
+.container h2 {
+  margin-top: 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.container p {
+  margin-bottom: 0;
+}
+
+.button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #ff3e6c;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #ff5c8d;
+}
+
+.footer {
+  background-color: #00264d;
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+
+.footer-section {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.footer-section h3 {
+  margin-top: 0;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section li {
+  margin-bottom: 5px;
+}
+
+.footer-section a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+.cookie-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #222;
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cookie-banner p {
+  margin: 0;
+}
+
+.cookie-banner .button {
+  background-color: #ff3e6c;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 14px;
+}
+
+.cookie-banner .button:hover {
+  background-color: #ff5c8d;
+}
+
+.close-button {
+  cursor: pointer;
+  font-size: 20px;
+  color: white;
+}
+</style>
+</head>
+<body>
+<div class="header">
+<h1>Customer Engagement Platform</h1>
+<p>Optimize your customer insights to deliver 1:1 personalized experiences across push, email, and SMS.</p>
+<a class="button" href="#">LEARN MORE</a>
+</div>
+<div class="content">
+<div class="cookie-banner">
+<p>This website uses cookies to ensure you get the best experience on our website. By clicking "Accept All Cookies", you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts. <a href="#">Learn more.</a></p>
+<div>
+<button class="button">Accept All Cookies</button>
+<button class="button">Reject All Cookies</button>
+</div>
+<span class="close-button">x</span>
+</div>
+<div class="container">
+<div>
+<img alt="Image" src="placeholder.png"/>
+<h2>Launch sophisticated, highly dynamic cross-channel campaigns</h2>
+<p>Swrve, a MessageGears company, has delivered success to marketers across industries for over 10 years with a versatile, powerful customer engagement platform.</p>
+</div>
+<div>
+<img alt="Image" src="placeholder.png"/>
+<h2>Trusted by the brands you know and love</h2>
+<div class="container">
+<div><img alt="Image" src="placeholder.png"/></div>
+<div><img alt="Image" src="placeholder.png"/></div>
+<div><img alt="Image" src="placeholder.png"/></div>
+<div><img alt="Image" src="placeholder.png"/></div>
+<div><img alt="Image" src="placeholder.png"/></div>
+</div>
+</div>
+</div>
+<div class="container">
+<div>
+<img alt="Image" src="placeholder.png"/>
+<h2>Start building smarter cross-channel campaigns today.</h2>
+<a class="button" href="#">LEARN MORE</a>
+</div>
+<div>
+<a class="button" href="#">LEARN MORE</a>
+</div>
+</div>
+</div>
+<div class="footer">
+<div class="footer-section">
+<img alt="Image" src="placeholder.png"/>
+<p>© 2024 Swrve Inc. All rights reserved.</p>
+</div>
+<div class="footer-section">
+<h3>RESOURCES</h3>
+<ul>
+<li><a href="#">Login</a></li>
+<li><a href="#">Support</a></li>
+<li><a href="#">Documentation</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+</div>
+<div class="footer-section">
+<h3>LEGAL</h3>
+<ul>
+<li><a href="#">Cookies</a></li>
+<li><a href="#">Privacy Policy</a></li>
+<li><a href="#">Security</a></li>
+<li><a href="#">Terms of Service</a></li>
+</ul>
+</div>
+<div class="footer-section">
+<h3>SOCIAL</h3>
+<ul>
+<li><a href="#"><img alt="Image" src="placeholder.png"/></a></li>
+<li><a href="#"><img alt="Image" src="placeholder.png"/></a></li>
+<li><a href="#"><img alt="Image" src="placeholder.png"/></a></li>
+</ul>
+<a class="button" href="#">CONTACT</a>
+</div>
+</div>
+<script>
+const closeButton = document.querySelector('.close-button');
+const cookieBanner = document.querySelector('.cookie-banner');
+
+closeButton.addEventListener('click', () => {
+  cookieBanner.style.display = 'none';
+});
+</script>
+</body>
+</html>
+</p></body></html>

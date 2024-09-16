@@ -1,0 +1,328 @@
+<html><body><p>
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Google Search</title>
+<style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #fff;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      padding: 20px;
+      background-color: #fff;
+    }
+
+    .search-bar {
+      display: flex;
+      align-items: center;
+      width: 600px;
+      height: 40px;
+      border: 1px solid #ccc;
+      border-radius: 20px;
+      background-color: #fff;
+    }
+
+    .search-bar input {
+      width: 100%;
+      height: 30px;
+      border: none;
+      padding: 0 10px;
+      font-size: 16px;
+    }
+
+    .search-icon {
+      margin-left: 10px;
+      color: #ccc;
+    }
+
+    .voice-search {
+      margin-left: 10px;
+      color: #ccc;
+    }
+
+    .google-logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .google-logo .g {
+      font-size: 30px;
+      font-weight: bold;
+      color: #4285f4;
+    }
+
+    .google-logo .circle {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background-color: #4285f4;
+      margin-left: 10px;
+    }
+
+    .buttons {
+      display: flex;
+      margin-top: 10px;
+    }
+
+    .button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      background-color: #4285f4;
+      color: #fff;
+      font-weight: bold;
+      margin-right: 10px;
+      cursor: pointer;
+    }
+
+    .language {
+      display: flex;
+      align-items: center;
+      margin-top: 10px;
+      color: #777;
+    }
+
+    .language-links {
+      margin-left: 10px;
+    }
+
+    .language-links a {
+      color: #4285f4;
+      text-decoration: none;
+      margin-right: 10px;
+    }
+
+    .camera-icon {
+      width: 100px;
+      height: 100px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+    }
+
+    .camera-icon img {
+      width: 50%;
+      height: 50%;
+    }
+
+    .pop-up {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      width: 300px;
+    }
+
+    .pop-up-title {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .pop-up-content {
+      margin-bottom: 10px;
+    }
+
+    .pop-up-buttons {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .pop-up-button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .pop-up-button.gray {
+      background-color: #eee;
+      color: #333;
+    }
+
+    .pop-up-button.blue {
+      background-color: #4285f4;
+      color: #fff;
+    }
+
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background-color: #f2f2f2;
+      width: 100%;
+      margin-top: 20px;
+    }
+
+    .footer-section {
+      display: flex;
+      align-items: center;
+    }
+
+    .footer-link {
+      color: #777;
+      text-decoration: none;
+      margin-right: 10px;
+    }
+
+    .footer-text {
+      color: #777;
+    }
+
+    .gmail {
+      margin-right: 20px;
+      color: #4285f4;
+      text-decoration: none;
+    }
+
+    .image {
+      margin-right: 10px;
+      color: #4285f4;
+      text-decoration: none;
+    }
+
+    .grid {
+      margin-right: 10px;
+      color: #ccc;
+    }
+
+    .login {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      background-color: #4285f4;
+      color: #fff;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .footer-row {
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+      margin-top: 20px;
+    }
+
+    .footer-row-item {
+      display: flex;
+      align-items: center;
+    }
+
+    .footer-row-text {
+      font-size: 20px;
+      font-weight: bold;
+      margin-right: 10px;
+    }
+
+    .footer-row-link {
+      color: #333;
+      text-decoration: none;
+      margin-right: 10px;
+    }
+
+  </style>
+</head>
+<body>
+<div class="container">
+<div class="header">
+<div class="gmail">Gmail</div>
+<div class="image">圖片</div>
+<div class="grid">🗓</div>
+<button class="login">登入</button>
+<div class="pop-up">
+<h2 class="pop-up-title">Google 建議使用 Chrome 瀏覽器</h2>
+<div class="camera-icon">
+<img alt="camera icon" src="placeholder.png"/>
+</div>
+<p class="pop-up-content">專為 Windows 設計. 使用我們的安全瀏覽器在 Google 上輕鬆搜尋</p>
+<div class="pop-up-buttons">
+<button class="pop-up-button gray">不要切換</button>
+<button class="pop-up-button blue">是</button>
+</div>
+</div>
+</div>
+<div class="camera-icon">
+<img alt="camera icon" src="placeholder.png"/>
+</div>
+<div class="search-bar">
+<span class="search-icon">🔍</span>
+<input placeholder="搜尋 Google 或輸入網址" type="text"/>
+<span class="voice-search">📟</span>
+<div class="google-logo">
+<span class="g">G</span>
+<span class="circle"></span>
+</div>
+</div>
+<div class="buttons">
+<button class="button">Google 搜尋</button>
+<button class="button">好手氣</button>
+</div>
+<div class="language">
+      Google 透過以下語言提供
+      <div class="language-links">
+<a href="#">中文(台灣)</a>
+<a href="#">English</a>
+</div>
+</div>
+<div class="footer">
+<div class="footer-section">
+<a class="footer-link" href="#">關於</a>
+<a class="footer-link" href="#">廣告</a>
+<a class="footer-link" href="#">企業</a>
+</div>
+<div class="footer-section">
+<span class="footer-text">隱私權的運作方式</span>
+</div>
+<div class="footer-section">
+<a class="footer-link" href="#">設定隱私權</a>
+<a class="footer-link" href="#">條款</a>
+<a class="footer-link" href="#">設定</a>
+</div>
+</div>
+<div class="footer-row">
+<div class="footer-row-item">
+<span class="footer-row-text">關於</span>
+<a class="footer-row-link" href="#">關於</a>
+<a class="footer-row-link" href="#">廣告</a>
+<a class="footer-row-link" href="#">企業</a>
+</div>
+<div class="footer-row-item">
+<span class="footer-row-text">隱私權和條款</span>
+<a class="footer-row-link" href="#">設定隱私權</a>
+<a class="footer-row-link" href="#">條款</a>
+</div>
+<div class="footer-row-item">
+<span class="footer-row-text">設定</span>
+<a class="footer-row-link" href="#">設定</a>
+</div>
+</div>
+</div>
+</body>
+</html>
+</p></body></html>

@@ -1,0 +1,429 @@
+<html><body><p>
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>TP-Link</title>
+<style>
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #f5f5f5;
+}
+.header {
+  background-color: #333;
+  padding: 15px 0;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.header-logo {
+  width: 100px;
+  height: 30px;
+  background-color: #fff;
+}
+.header-nav {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.header-nav li {
+  margin-left: 20px;
+  color: #fff;
+}
+.header-nav li a {
+  color: #fff;
+  text-decoration: none;
+}
+.header-right {
+  display: flex;
+  align-items: center;
+}
+.header-right-lang {
+  border: 1px solid #fff;
+  padding: 5px 10px;
+  margin-right: 10px;
+  color: #fff;
+  cursor: pointer;
+}
+.header-right-icon {
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  margin-right: 10px;
+}
+.hero {
+  background-color: #fff;
+  padding: 60px 0;
+  text-align: center;
+}
+.hero-title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.hero-text {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 40px;
+}
+.hero-img {
+  width: 500px;
+  height: 300px;
+  background-color: #ddd;
+  margin: 0 auto 40px;
+  border: 1px solid #ddd;
+}
+.hero-dots {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.hero-dots li {
+  width: 10px;
+  height: 10px;
+  background-color: #ccc;
+  margin: 0 5px;
+  border-radius: 50%;
+}
+.hero-dots li.active {
+  background-color: #007bff;
+}
+.section {
+  padding: 40px 0;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.section-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.section-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.section-item {
+  width: 300px;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.section-item-img {
+  width: 100%;
+  height: 200px;
+  background-color: #ddd;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+}
+.section-item-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.section-item-text {
+  font-size: 14px;
+  line-height: 1.5;
+}
+.stay-updated {
+  background-color: #fff;
+  padding: 40px 0;
+  text-align: center;
+}
+.stay-updated-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.stay-updated-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.stay-updated-item {
+  width: 300px;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.stay-updated-item-img {
+  width: 100%;
+  height: 200px;
+  background-color: #ddd;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+}
+.stay-updated-item-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.stay-updated-item-text {
+  font-size: 14px;
+  line-height: 1.5;
+}
+.subscription {
+  background-color: #fff;
+  padding: 40px 0;
+  text-align: center;
+}
+.subscription-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.subscription-input {
+  width: 300px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+.subscription-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.footer {
+  background-color: #333;
+  padding: 40px 0;
+  text-align: center;
+  color: #fff;
+}
+.footer-nav {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.footer-nav-column {
+  margin-bottom: 20px;
+}
+.footer-nav-column h4 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.footer-nav-column ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.footer-nav-column li {
+  margin-bottom: 5px;
+}
+.footer-nav-column li a {
+  color: #fff;
+  text-decoration: none;
+}
+.footer-copyright {
+  font-size: 14px;
+}
+.follow-us {
+  text-align: center;
+  padding: 40px 0;
+}
+.follow-us-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.follow-us-icons {
+  display: flex;
+  justify-content: center;
+}
+.follow-us-icons li {
+  width: 40px;
+  height: 40px;
+  background-color: #ccc;
+  margin: 0 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+<header class="header">
+<div class="header-container">
+<div class="header-logo"></div>
+<nav class="header-nav">
+<li><a href="#">HOME</a></li>
+<li><a href="#">SMART HOME</a></li>
+<li><a href="#">BUSINESS</a></li>
+<li><a href="#">SERVICE PROVIDER</a></li>
+<li><a href="#">HOT DEALS</a></li>
+</nav>
+<div class="header-right">
+<span class="header-right-lang">Hong Kong, China / English | 简体中文</span>
+<div class="header-right-icon"></div>
+</div>
+</div>
+</header>
+<section class="hero">
+<h1 class="hero-title">What's New at TP-Link</h1>
+<p class="hero-text">Add connectivity and smartness to your home.</p>
+<div class="hero-img"></div>
+<ul class="hero-dots">
+<li class="active"></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+</ul>
+</section>
+<section class="section">
+<h2 class="section-title">Recommended</h2>
+<div class="section-content">
+<div class="section-item">
+<div class="section-item-img"></div>
+<h3 class="section-item-title">Deco XE75</h3>
+<p class="section-item-text">AXE5400 Tri-Band Mesh Wi-Fi 6E System</p>
+</div>
+<div class="section-item">
+<div class="section-item-img"></div>
+<h3 class="section-item-title">Archer AXE75</h3>
+<p class="section-item-text">AXE5400 Tri-Band Gigabit Wi-Fi 6E Router</p>
+</div>
+<div class="section-item">
+<div class="section-item-img"></div>
+<h3 class="section-item-title">Archer T9UH</h3>
+<p class="section-item-text">AC1900 High Gain Wireless Dual Band USB Adapter</p>
+</div>
+<div class="section-item">
+<div class="section-item-img"></div>
+<h3 class="section-item-title">Archer MR600</h3>
+<p class="section-item-text">4G+ Cat6 AC1200 Wireless Dual Band Gigabit Router</p>
+</div>
+</div>
+</section>
+<section class="section">
+<h2 class="section-title">Latest</h2>
+<div class="section-content">
+<div class="section-item">
+<div class="section-item-img"></div>
+<h3 class="section-item-title">Take a 2-min survey and help us improve!</h3>
+<p class="section-item-text">Survey</p>
+</div>
+<div class="section-item">
+<div class="section-item-img"></div>
+<h3 class="section-item-title">Wi-Fi Like Never Before</h3>
+<p class="section-item-text">Technology</p>
+</div>
+<div class="section-item">
+<div class="section-item-img"></div>
+<h3 class="section-item-title">What's WiFi 6E? Explore the New Frontier WiFi with TP-Link</h3>
+<p class="section-item-text">Technology</p>
+</div>
+</div>
+</section>
+<section class="stay-updated">
+<h2 class="stay-updated-title">Stay Updated</h2>
+<div class="stay-updated-content">
+<div class="stay-updated-item">
+<div class="stay-updated-item-img"></div>
+<h3 class="stay-updated-item-title">TP-Link Corporation Group Announces Completion of Corporate Restructuring, Marking a New Era in its Future Evolution</h3>
+<p class="stay-updated-item-text">News | 05-11-2024</p>
+</div>
+<div class="stay-updated-item">
+<div class="stay-updated-item-img"></div>
+<h3 class="stay-updated-item-title">Tapo Cameras Come Out on Top in PCMag Review: Best Outdoor Home Security Cameras for 2024</h3>
+<p class="stay-updated-item-text">News | 04-25-2024</p>
+</div>
+<div class="stay-updated-item">
+<div class="stay-updated-item-img"></div>
+<h3 class="stay-updated-item-title">Tapo Champions Sustainability with The Great Cleanup</h3>
+<p class="stay-updated-item-text">News | 04-22-2024</p>
+</div>
+<div class="stay-updated-item">
+<div class="stay-updated-item-img"></div>
+<h3 class="stay-updated-item-title">VIGI by TP-Link Unveils New Professional Business Surveillance Solutions at ISC West 2024</h3>
+<p class="stay-updated-item-text">News | 04-10-2024</p>
+</div>
+<div class="stay-updated-item">
+<div class="stay-updated-item-img"></div>
+<h3 class="stay-updated-item-title">TP-Link Introduces Festa - An Easy, Effective, Reliable Cloud-based Solution</h3>
+<p class="stay-updated-item-text">News | 05-11-2024</p>
+</div>
+</div>
+<div class="section-content">
+<a class="section-item" href="#">News &gt;</a>
+<a class="section-item" href="#">Blog &gt;</a>
+</div>
+</section>
+<section class="subscription">
+<h2 class="subscription-title">Subscription</h2>
+<input class="subscription-input" placeholder="Email Address" type="email"/>
+<button class="subscription-button">Sign Up</button>
+</section>
+<section class="follow-us">
+<h2 class="follow-us-title">Follow Us</h2>
+<ul class="follow-us-icons">
+<li></li>
+<li></li>
+</ul>
+</section>
+<footer class="footer">
+<div class="footer-nav">
+<div class="footer-nav-column">
+<h4>About</h4>
+<ul>
+<li><a href="#">Corporate Profile</a></li>
+<li><a href="#">About Us</a></li>
+<li><a href="#">Contact Us</a></li>
+<li><a href="#">Privacy Policy</a></li>
+</ul>
+</div>
+<div class="footer-nav-column">
+<h4>Press</h4>
+<ul>
+<li><a href="#">News</a></li>
+<li><a href="#">Awards</a></li>
+<li><a href="#">Security Advisory</a></li>
+</ul>
+</div>
+<div class="footer-nav-column">
+<h4>Where to Buy</h4>
+<ul>
+<li><a href="#">Distributor</a></li>
+<li><a href="#">Reseller/Chain Store</a></li>
+</ul>
+</div>
+<div class="footer-nav-column">
+<h4>Learning Center</h4>
+<ul>
+<li><a href="#">Technology Library</a></li>
+</ul>
+</div>
+<div class="footer-nav-column">
+<h4>Promotions</h4>
+</div>
+</div>
+<div class="footer-copyright">
+<span class="header-right-lang">Hong Kong, China / English | 简体中文</span><br/>
+    © 2024 TP-LINK CORPORATION PTE. LTD. All rights reserved.
+  </div>
+</footer>
+</body>
+</html>
+</p></body></html>

@@ -1,0 +1,394 @@
+<html><body><p>
+<!DOCTYPE html>
+
+<html>
+<head>
+<style>
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #f0f0f0;
+}
+
+.header {
+  background-color: #fff;
+  padding: 15px 20px;
+  border-bottom: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.header .nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.header .nav ul li {
+  margin-left: 20px;
+}
+
+.header .nav ul li a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.header .nav ul li a:hover {
+  color: #007bff;
+}
+
+.section {
+  padding: 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.intro {
+  text-align: center;
+}
+
+.intro h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.intro p {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #555;
+}
+
+.apps {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.app {
+  width: 150px;
+  height: 150px;
+  margin: 10px;
+  background-color: #eee;
+  border-radius: 5px;
+  text-align: center;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.app img {
+  max-width: 100%;
+  height: auto;
+}
+
+.app h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.app p {
+  font-size: 12px;
+  color: #777;
+}
+
+.news {
+  margin-top: 40px;
+}
+
+.news h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.news .item {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 10px;
+}
+
+.news .item h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.news .item p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #555;
+}
+
+.news .item .date {
+  font-size: 12px;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.why {
+  margin-top: 40px;
+}
+
+.why h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.feature {
+  width: 20%;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.feature h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.feature p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #555;
+}
+
+.footer {
+  background-color: #fff;
+  padding: 20px;
+  border-top: 1px solid #ddd;
+}
+
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer .col {
+  width: 20%;
+  margin-bottom: 20px;
+}
+
+.footer .col h4 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer .col ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer .col ul li {
+  margin-bottom: 5px;
+}
+
+.footer .col ul li a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer .col ul li a:hover {
+  color: #007bff;
+}
+
+.footer .social {
+  display: flex;
+  align-items: center;
+}
+
+.footer .social a {
+  display: inline-block;
+  margin-right: 10px;
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer .social a:hover {
+  color: #007bff;
+}
+</style>
+</head>
+<body>
+<header class="header">
+<div class="container">
+<div class="logo">Telegram</div>
+<nav class="nav">
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">FAQ</a></li>
+<li><a href="#">Apps</a></li>
+<li><a href="#">API</a></li>
+<li><a href="#">Protocol</a></li>
+</ul>
+</nav>
+</div>
+</header>
+<section class="section intro">
+<div class="container">
+<h1>Telegram</h1>
+<p>a new era of messaging</p>
+<div class="apps">
+<div class="app">
+<img alt="Telegram for Android" src="placeholder.png"/>
+<h3>Telegram for Android</h3>
+</div>
+<div class="app">
+<img alt="Telegram for iPhone/iPad" src="placeholder.png"/>
+<h3>Telegram for iPhone/iPad</h3>
+</div>
+<div class="app">
+<img alt="Telegram for PC/Linux" src="placeholder.png"/>
+<h3>Telegram for PC/Linux</h3>
+</div>
+<div class="app">
+<img alt="Telegram for macOS" src="placeholder.png"/>
+<h3>Telegram for macOS</h3>
+</div>
+</div>
+</div>
+</section>
+<section class="section news">
+<div class="container">
+<h2>Recent News</h2>
+<div class="item">
+<div class="date">Apr 25, 2024</div>
+<h3>My Profile, Recommended Channels and 15 More Features</h3>
+<p>This month we've added more than 15 new features, including recommended channels, a way to view your own profile and display your channel...</p>
+</div>
+<div class="item">
+<div class="date">Apr 14, 2024</div>
+<h3>Sticker Editor — Create Your Own Stickers</h3>
+<p>Starting today, anyone can quickly create stickers and entire sticker sets using a new powerful editor — without leaving Telegram.</p>
+</div>
+<div class="item">
+<div class="date">Mar 31, 2024</div>
+<h3>Introducing Telegram Business</h3>
+</div>
+</div>
+</section>
+<section class="section why">
+<div class="container">
+<h2>Why Telegram?</h2>
+<div class="features">
+<div class="feature">
+<img alt="Simple" src="placeholder.png"/>
+<h3>Simple</h3>
+<p>Telegram is so simple you already know how to use it.</p>
+</div>
+<div class="feature">
+<img alt="Private" src="placeholder.png"/>
+<h3>Private</h3>
+<p>Telegram messages are heavily encrypted and can self-destruct.</p>
+</div>
+<div class="feature">
+<img alt="Synced" src="placeholder.png"/>
+<h3>Synced</h3>
+<p>Telegram lets you access your chats from multiple devices.</p>
+</div>
+<div class="feature">
+<img alt="Fast" src="placeholder.png"/>
+<h3>Fast</h3>
+<p>Telegram delivers messages faster than any other application.</p>
+</div>
+<div class="feature">
+<img alt="Powerful" src="placeholder.png"/>
+<h3>Powerful</h3>
+<p>Telegram has no limits on the size of your media and chats.</p>
+</div>
+<div class="feature">
+<img alt="Open" src="placeholder.png"/>
+<h3>Open</h3>
+<p>Telegram has an open API and source code free for everyone.</p>
+</div>
+<div class="feature">
+<img alt="Secure" src="placeholder.png"/>
+<h3>Secure</h3>
+<p>Telegram keeps your messages safe from hacker attacks.</p>
+</div>
+<div class="feature">
+<img alt="Social" src="placeholder.png"/>
+<h3>Social</h3>
+<p>Telegram groups can hold up to 200,000 members.</p>
+</div>
+<div class="feature">
+<img alt="Expressive" src="placeholder.png"/>
+<h3>Expressive</h3>
+<p>Telegram lets you completely customize your messenger.</p>
+</div>
+</div>
+</div>
+</section>
+<footer class="footer">
+<div class="container">
+<div class="col">
+<h4>Telegram</h4>
+<p>Telegram is a cloud-based mobile and desktop messaging app with a focus on security and speed.</p>
+</div>
+<div class="col">
+<h4>About</h4>
+<ul>
+<li><a href="#">FAQ</a></li>
+<li><a href="#">Privacy</a></li>
+<li><a href="#">Press</a></li>
+</ul>
+</div>
+<div class="col">
+<h4>Mobile Apps</h4>
+<ul>
+<li><a href="#">iPhone/iPad</a></li>
+<li><a href="#">Android</a></li>
+<li><a href="#">Mobile Web</a></li>
+</ul>
+</div>
+<div class="col">
+<h4>Desktop Apps</h4>
+<ul>
+<li><a href="#">PC/Mac/Linux</a></li>
+<li><a href="#">macOS</a></li>
+<li><a href="#">Web-browser</a></li>
+</ul>
+</div>
+<div class="col">
+<h4>Platform</h4>
+<ul>
+<li><a href="#">API</a></li>
+<li><a href="#">Translations</a></li>
+<li><a href="#">Instant View</a></li>
+</ul>
+</div>
+</div>
+</footer>
+</body>
+</html>
+</p></body></html>

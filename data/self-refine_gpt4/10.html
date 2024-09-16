@@ -1,0 +1,153 @@
+<html><body><p>
+<!DOCTYPE html>
+
+<html lang="zh">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Webpage Replica</title>
+<style>
+        body {
+            background-color: #f5f5f5;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: white;
+            width: 900px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            font-size: 14px;
+        }
+        .left, .right {
+            padding: 20px;
+        }
+        .left {
+            text-align: center;
+            border-right: 1px solid #e6e6e6;
+            flex: 0.8;
+        }
+        .left img {
+            width: 150px;
+            height: 150px;
+            margin: 15px 0;
+        }
+        .left p {
+            margin: 10px 0;
+        }
+        .right {
+            flex: 1.2;
+        }
+        .tabs {
+            display: flex;
+            border-bottom: 2px solid #e6e6e6;
+            margin-bottom: 20px;
+        }
+        .tab {
+            flex: 1;
+            padding: 10px;
+            font-size: 18px;
+            text-align: center;
+            cursor: pointer;
+        }
+        .tab.active {
+            border-bottom: 2px solid #1890ff;
+            color: #1890ff;
+        }
+        .phone-code {
+            display: flex;
+            align-items: center;
+            border: 1px solid #e6e6e6;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            color: #bfbfbf;
+        }
+        .phone-code span {
+            margin-right: 10px;
+        }
+        .phone-code input {
+            flex: 1;
+            border: none;
+            outline: none;
+            background-color: transparent;
+        }
+        .otp-button, .verify-button {
+            background-color: #1890ff;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            margin: 10px 0;
+            text-align: center;
+        }
+        .verify-button {
+            border: 1px solid #1890ff;
+            background-color: white;
+            color: #1890ff;
+            width: auto;
+            padding: 0 15px;
+            margin-left: 10px;
+        }
+        .other-login {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+        .login-option img {
+            width: 40px;
+            height: 40px;
+        }
+        .footer {
+            text-align: center;
+            font-size: 12px;
+            color: #bfbfbf;
+        }
+        .footer a {
+            color: #bfbfbf;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+<div class="left">
+<p>打开知乎App</p>
+<p>[ 我的二维码 ] 右上角打开扫码</p>
+<img alt="QR Code" src="placeholder.png"/>
+<p>其他扫一扫方式: 微信</p>
+</div>
+<div class="right">
+<div class="tabs">
+<div class="tab active">验证码登录</div>
+<div class="tab">密码登录</div>
+</div>
+<div class="phone-code">
+<span>中国 +86</span>
+<input placeholder="手机号" type="text"/>
+</div>
+<div class="phone-code">
+<input placeholder="输入 6 位验证码" type="text"/>
+<button class="verify-button">获取短信验证码</button>
+</div>
+<button class="otp-button">登录/注册</button>
+<div class="other-login">
+<div class="login-option"><img alt="Other Option 1" src="placeholder.png"/></div>
+<div class="login-option"><img alt="Other Option 2" src="placeholder.png"/></div>
+<div class="login-option"><img alt="Other Option 3" src="placeholder.png"/></div>
+</div>
+<div class="footer">
+<p>未注册的手机号验证后将自动创建知乎账号，注册即代表同意《用户协议》《隐私保护指引》</p>
+</div>
+</div>
+</div>
+</body>
+</html>
+</p></body></html>

@@ -1,0 +1,286 @@
+<html><body><p>
+<!DOCTYPE html>
+
+<html>
+<head>
+<style>
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.header {
+  background-color: #1c395d;
+  color: white;
+  padding: 10px;
+}
+
+.header a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .logo {
+  display: flex;
+  align-items: center;
+}
+
+.header .logo img {
+  margin-right: 10px;
+}
+
+.header .search {
+  display: flex;
+  align-items: center;
+}
+
+.header .search input {
+  border: 1px solid #ccc;
+  padding: 5px;
+  margin-right: 10px;
+}
+
+.content {
+  padding: 20px;
+  background-color: #f2f2f2;
+}
+
+.content .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content .headline {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.content .subheadline {
+  font-size: 16px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.content .image {
+  width: 100px;
+  height: 70px;
+  background-color: #ccc;
+  margin-left: 20px;
+}
+
+.explore-noaa {
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.explore-noaa .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.explore-noaa .text {
+  flex: 1;
+}
+
+.explore-noaa .image {
+  width: 100px;
+  height: 100px;
+  background-color: #ccc;
+  margin-left: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  margin-bottom: 20px;
+}
+
+.grid .item {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.grid .item .title {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.grid .item .content {
+  background-color: #f2f2f2;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.grid .item .content .icon {
+  width: 20px;
+  height: 20px;
+  background-color: #ccc;
+  margin-right: 10px;
+}
+
+.button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.footer {
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer .left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer .left .section {
+  margin-bottom: 10px;
+}
+
+.footer .right {
+  display: flex;
+  align-items: center;
+}
+
+.footer .right .social {
+  display: flex;
+  margin-right: 20px;
+}
+
+.footer .right .social a {
+  margin-right: 5px;
+}
+
+.footer .right .social a img {
+  width: 20px;
+  height: 20px;
+}
+
+.footer .right .text {
+  font-size: 12px;
+}
+</style>
+</head>
+<body>
+<header class="header">
+<div class="container">
+<div class="logo">
+<img alt="NOAA Logo" src="placeholder.png"/>
+<div>
+<p>National Oceanic and Atmospheric Administration</p>
+<p>U.S. Department of Commerce</p>
+</div>
+</div>
+<nav>
+<a href="#">An official website of the United States government</a>
+<a href="#">Here's how you know</a>
+<a href="#">Find your local weather</a>
+<a href="#">News</a>
+<a href="#">Tools</a>
+<a href="#">About</a>
+</nav>
+<div class="search">
+<p>Search NOAA sites</p>
+<input placeholder="Search..." type="text"/>
+</div>
+</div>
+</header>
+<main class="content">
+<div class="container">
+<div class="headline"><strong>NOAA predicts above-normal 2024 Atlantic hurricane season</strong></div>
+<div class="subheadline">La Nina and warmer-than-average ocean temperatures are major drivers of tropical activity</div>
+<div class="image"></div>
+</div>
+<div class="explore-noaa">
+<div class="container">
+<div class="text">
+<h3>Explore NOAA »</h3>
+<p>NOAA predicts a below-normal 2024 central Pacific hurricane season</p>
+<p>Researchers capture unique pollution data following Key Bridge collapse</p>
+<p>April 2024 was Earth's warmest on record</p>
+<p>NOAA social scientist to lead nation's Sixth National Climate Assessment</p>
+<a href="#">More NOAA news and features »</a>
+</div>
+<div class="image"></div>
+</div>
+</div>
+<div class="grid">
+<div class="item">
+<div class="title">RESEARCH</div>
+<div class="content">
+<div class="icon"></div>
+<p>World's benchmark climate monitoring station celebrates 50-year milestone</p>
+</div>
+</div>
+<div class="item">
+<div class="title">EDUCATIONAL OPPORTUNITIES</div>
+<div class="content">
+<div class="icon"></div>
+<p>High school students: Apply now for NOAA's Young Changemakers Fellowship</p>
+</div>
+</div>
+<div class="item">
+<div class="title">CLIMATE.GOV</div>
+<div class="content">
+<div class="icon"></div>
+<p>5 things to know about an 'ice-free' Arctic</p>
+</div>
+</div>
+</div>
+<button class="button">Help improve this site</button>
+</main>
+<footer class="footer">
+<div class="container">
+<div class="left">
+<div class="section">
+<p>Science. Service. Stewardship.</p>
+</div>
+<div class="section">
+<p>News | Tools | About</p>
+</div>
+<div class="section">
+<p>Resources for Tribal &amp; Indigenous Communities | Bipartisan Infrastructure Law (BIL) | Inflation Reduction Act (IRA) | Protecting Your Privacy | FOIA | Information Quality | Accessibility | Guidance | Budget &amp; Performance | Disclaimer | EEO | No-Fear Act | USA.gov | Ready.gov | Employee Check-In | Staff Directory | Contact Us | Need Help? | COVID-19 hub for NOAA personnel</p>
+</div>
+</div>
+<div class="right">
+<div class="social">
+<a href="#"><img alt="Social Media Icon" src="placeholder.png"/></a>
+<a href="#"><img alt="Social Media Icon" src="placeholder.png"/></a>
+<a href="#"><img alt="Social Media Icon" src="placeholder.png"/></a>
+<a href="#"><img alt="Social Media Icon" src="placeholder.png"/></a>
+</div>
+<div class="text">
+<p>Stay connected to NOAA</p>
+</div>
+</div>
+</div>
+</footer>
+</body>
+</html>
+</p></body></html>

@@ -1,0 +1,319 @@
+<html><body><p>
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Webpage Layout</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        
+        header {
+            background: #ffffff;
+            padding: 20px 0;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        header img {
+            height: 50px;
+        }
+        
+        .navbar {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar li {
+            margin: 0 20px;
+        }
+
+        .navbar li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .auth-buttons {
+            display: flex;
+            align-items: center;
+        }
+
+        .auth-buttons a {
+            text-decoration: none;
+            color: #333;
+            padding: 10px 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-left: 10px;
+        }
+
+        .auth-buttons a.sign-up {
+            background: #007bff;
+            color: #fff;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        .hero img {
+            width: 100%;
+            max-width: 600px;
+        }
+
+        .hero h1 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .hero .btn {
+            background: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .features {
+            display: flex;
+            justify-content: space-around;
+            margin: 50px 0;
+        }
+
+        .features .box {
+            width: 30%;
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .features .box:nth-child(1) {
+            background: #eeeeee;
+        }
+
+        .features .box:nth-child(2) {
+            background: #444444;
+            color: #fff;
+        }
+
+        .features .box:nth-child(3) {
+            background: #8e44ad;
+            color: #fff;
+        }
+
+        .features h3 {
+            margin: 15px 0;
+            font-size: 18px;
+        }
+
+        .features p {
+            color: #777;
+        }
+
+        .features .box p {
+            color: inherit;
+        }
+
+        .detailed-features {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .detailed-features h2 {
+            font-size: 2em;
+            margin-bottom: 40px;
+            font-weight: bold;
+        }
+
+        .detailed-features ul {
+            list-style: none;
+            padding: 0;
+            text-align: left;
+        }
+
+        .detailed-features li {
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+
+        .detailed-features a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .call-to-action {
+            background: #f8f8f8;
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .call-to-action .btn {
+            background: #007bff;
+            color: #fff;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .code-section {
+            text-align: center;
+            margin: 50px 0;
+        }
+
+        .code-section h2 {
+            font-size: 2em;
+            margin-bottom: 30px;
+        }
+
+        .code-section img {
+            width: 80%;
+            max-width: 600px;
+            border-radius: 5px;
+        }
+
+        .footer {
+            background: #333;
+            color: #fff;
+            padding: 20px;
+        }
+
+        .footer .navbar {
+            justify-content: center;
+        }
+
+        .footer .navbar li {
+            margin: 0 10px;
+        }
+
+        .footer .navbar li a {
+            color: #fff;
+            font-size: 14px;
+        }
+
+        .footer p {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+
+    </style>
+</head>
+<body>
+<header>
+<img alt="Logo" src="placeholder.png"/>
+<ul class="navbar">
+<li><a href="#">Product</a></li>
+<li><a href="#">Pricing</a></li>
+<li><a href="#">Resources</a></li>
+</ul>
+<div class="auth-buttons">
+<a href="#">Log in</a>
+<a class="sign-up" href="#">Sign up</a>
+</div>
+</header>
+<section class="hero">
+<img alt="Hero Image" src="placeholder.png"/>
+<h1>Documentation simplified</h1>
+<p>Build, host, and share documentation, all with a single platform.</p>
+<a class="btn" href="#">Sign up now</a>
+</section>
+<section class="features">
+<div class="box">
+<h3>Easy previews and deploys</h3>
+<p>Preview changes on every commit to your pull requests. Release documentation to your users on each merge.</p>
+</div>
+<div class="box">
+<h3>Ideal developer experience</h3>
+<p>Write documentation without changing your workflow or your tools using a docs as code approach.</p>
+</div>
+<div class="box">
+<h3>Work privately or publicly</h3>
+<p>Easily share within your team or with the whole world. Manage permissions yourself or automatically with GitHub.</p>
+</div>
+</section>
+<section class="detailed-features">
+<h2>Features</h2>
+<ul>
+<li>Supports any doc tool</li>
+<li>Integrated search</li>
+<li>Pull request previews</li>
+<li>Versioned docs</li>
+<li>Private repository support</li>
+<li>Single-Sign On</li>
+</ul>
+</section>
+<div class="call-to-action">
+<a class="btn" href="#">Discover all our features</a>
+</div>
+<section class="code-section">
+<h2>TRY IT OUT</h2>
+<img alt="Code Example" src="placeholder.png"/>
+</section>
+<section class="code-section">
+<h2>Join thousands of happy users</h2>
+<ul class="navbar">
+<li>
+<img alt="flask" src="placeholder.png"/>
+<p>Flask</p>
+</li>
+<li>
+<img alt="Jupyter" src="placeholder.png"/>
+<p>Jupyter</p>
+</li>
+<li>
+<img alt="Godot Engine" src="placeholder.png"/>
+<p>Godot Engine</p>
+</li>
+</ul>
+</section>
+<div class="call-to-action">
+<a class="btn" href="#">Create an account</a>
+</div>
+<footer class="footer">
+<ul class="navbar">
+<li><a href="#">Blog</a></li>
+<li><a href="#">Newsletter</a></li>
+<li><a href="#">Status</a></li>
+</ul>
+<ul class="navbar">
+<li><a href="#">Documentation</a></li>
+<li><a href="#">Getting started guide</a></li>
+<li><a href="#">Configure your project</a></li>
+</ul>
+<ul class="navbar">
+<li><a href="#">Features</a></li>
+<li><a href="#">Pricing</a></li>
+<li><a href="#">Privacy Policy</a></li>
+</ul>
+<ul class="navbar">
+<li><a href="#">About us</a></li>
+<li><a href="#">Support</a></li>
+<li><a href="#">Advertise with Us</a></li>
+</ul>
+<p>© Copyright 2022, Read the Docs, Inc &amp; contributors</p>
+</footer>
+</body>
+</html>
+</p></body></html>

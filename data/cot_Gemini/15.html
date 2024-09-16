@@ -1,0 +1,246 @@
+<html><body><p>
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Document</title>
+<style>
+body {
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.header-left {
+  display: flex;
+  align-items: center;
+}
+.header-right {
+  display: flex;
+  align-items: center;
+}
+.header-right button {
+  background-color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.header-right button:hover {
+  background-color: #eee;
+}
+.header-right .menu {
+  font-size: 24px;
+  cursor: pointer;
+}
+.search {
+  position: relative;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.search input {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  padding: 0;
+}
+.search input::placeholder {
+  color: #999;
+}
+.search-icon {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: #999;
+  cursor: pointer;
+}
+.search-icon:hover {
+  color: #666;
+}
+.search-icon:first-child {
+  right: 60px;
+}
+.location {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.location-temp {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+.location-temp img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+.location-temp span {
+  font-size: 18px;
+  font-weight: bold;
+}
+.location-currency {
+  display: flex;
+  align-items: center;
+}
+.location-currency span {
+  font-size: 16px;
+}
+.location-currency span:first-child {
+  margin-right: 10px;
+}
+.weather {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 10px;
+  z-index: 10;
+}
+.weather h3 {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+.weather p {
+  font-size: 12px;
+  margin-bottom: 2px;
+}
+.weather img {
+  width: 30px;
+  height: 30px;
+  margin-top: 10px;
+}
+.footer {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #6200ee;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+.footer img {
+  width: 30px;
+  height: 30px;
+}
+.search input {
+  border-bottom: 1px solid #ddd;
+}
+.search-icon {
+  color: #999;
+}
+.search-icon:hover {
+  color: #666;
+}
+.location-temp span {
+  font-size: 18px;
+  font-weight: bold;
+}
+.location-currency span {
+  font-size: 16px;
+}
+.location-currency span:first-child {
+  margin-right: 10px;
+}
+.weather {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 10px;
+  z-index: 10;
+}
+.weather h3 {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+.weather p {
+  font-size: 12px;
+  margin-bottom: 2px;
+}
+.weather img {
+  width: 30px;
+  height: 30px;
+  margin-top: 10px;
+}
+.footer {
+  background-color: #6200ee;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+.footer img {
+  width: 30px;
+  height: 30px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="header">
+<div class="header-left">
+<div class="search">
+<input placeholder="Найдется всё" type="text"/>
+<i class="search-icon fas fa-microphone"></i>
+<i class="search-icon fas fa-camera"></i>
+</div>
+</div>
+<div class="header-right">
+<button>Войти</button>
+<i class="menu fas fa-bars"></i>
+</div>
+</div>
+<div class="location">
+<div class="location-temp">
+<img alt="weather icon" src="placeholder.png"/>
+<span>25°</span>
+</div>
+<div class="location-currency">
+<span>USD 90,19</span>
+<span>EUR 97,90</span>
+</div>
+</div>
+<p>Гонконг</p>
+</div>
+<div class="weather">
+<h3>Сегодня: дождь</h3>
+<p>+25...+28° · слабый ветер</p>
+<p>1-2 м/с</p>
+<img alt="weather icon" src="placeholder.png"/>
+</div>
+<div class="footer">
+<img alt="footer icon" src="placeholder.png"/>
+</div>
+</body>
+</html>
+</p></body></html>

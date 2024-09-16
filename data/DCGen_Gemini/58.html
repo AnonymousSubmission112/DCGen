@@ -1,0 +1,372 @@
+<html><body><p>
+<!DOCTYPE html>
+
+<html>
+<head>
+<style>
+body {
+  background-color: #000000;
+  margin: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #000000;
+}
+
+.header-right {
+  display: flex;
+  gap: 10px;
+}
+
+.header-button {
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.header-button-signin {
+  width: 60px;
+  height: 28px;
+  background-color: #69B4F7;
+  color: #ffffff;
+}
+
+.header-button-signup {
+  width: 100px;
+  height: 28px;
+  background-color: #69B4F7;
+  color: #ffffff;
+}
+
+.header-search {
+  width: 100px;
+  height: 28px;
+  border: none;
+  border-radius: 5px;
+  background-color: #cccccc;
+  color: #ffffff;
+  padding: 5px;
+}
+
+.main {
+  display: flex;
+  background-color: #69B4F7;
+  padding: 20px;
+}
+
+.main-left {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.main-center {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.main-right {
+  flex: 1;
+}
+
+.notice-card {
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 10px 10px 0 0;
+  margin-bottom: 10px;
+}
+
+.notice-card-title {
+  font-weight: bold;
+  font-size: 16px;
+  color: #000000;
+  margin-bottom: 5px;
+}
+
+.notice-card-date {
+  color: #000000;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.notice-card-body {
+  color: #000000;
+}
+
+.main-center-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.main-center-header-title {
+  font-weight: bold;
+  font-size: 24px;
+  color: #000000;
+}
+
+.main-center-header-button {
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #cccccc;
+  color: #000000;
+  cursor: pointer;
+}
+
+.main-center-notices {
+  display: flex;
+  gap: 20px;
+}
+
+.main-center-notices-notice {
+  width: 300px;
+  background-color: #ffffff;
+  border-radius: 10px 10px 0 0;
+  padding: 10px;
+}
+
+.main-center-notices-notice-title {
+  font-weight: bold;
+  font-size: 18px;
+  color: #000000;
+  margin-bottom: 5px;
+}
+
+.main-center-notices-notice-date {
+  color: #000000;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.main-center-notices-notice-body {
+  color: #000000;
+}
+
+.main-center-notices-notice-body-bullet {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.main-center-notices-notice-body-bullet li {
+  color: #000000;
+}
+
+.main-center-separator {
+  width: 100%;
+  height: 10px;
+  background-color: #cccccc;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.main-center-separator-line {
+  width: 100%;
+  height: 2px;
+  background-color: #000000;
+  margin-top: 5px;
+}
+
+.main-center-button {
+  width: 100px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  background-color: #cccccc;
+  color: #000000;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-center-button-inner {
+  width: 20px;
+  height: 20px;
+  background-color: #000000;
+  border-radius: 5px;
+}
+
+.main-right-notices {
+  display: flex;
+  gap: 20px;
+}
+
+.main-right-notices-notice {
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 10px 10px 0 0;
+  margin-bottom: 10px;
+}
+
+.main-right-notices-notice-title {
+  font-weight: bold;
+  font-size: 16px;
+  color: #000000;
+  margin-bottom: 5px;
+}
+
+.main-right-notices-notice-date {
+  color: #000000;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.main-right-notices-notice-body {
+  color: #000000;
+}
+
+.main-right-more {
+  width: 50px;
+  height: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #cccccc;
+  color: #000000;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-right-separator {
+  width: 100%;
+  height: 10px;
+  background-color: #cccccc;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.main-right-separator-line {
+  width: 100%;
+  height: 2px;
+  background-color: #000000;
+  margin-top: 5px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.footer-left {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-right {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-link {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer-copyright {
+  color: #ffffff;
+}
+</style>
+</head>
+<body>
+<div class="header">
+<div class="header-right">
+<button class="header-button header-button-signin">Sign In</button>
+<button class="header-button header-button-signup">Sign Up Now</button>
+<input class="header-search" type="text" value="ENGLISH"/>
+</div>
+</div>
+<div class="main">
+<div class="main-left">
+<div class="notice-card">
+<div class="notice-card-title">[Notice] Change of payment currencies in 5 countries an...</div>
+<div class="notice-card-date">2024-05-20</div>
+<div class="notice-card-body">Hello! This is the Galaxy Store Seller Portal. Thank you for always using the Seller Portal and for your continued interest. To reduce fluctuations in product prices due to some exchange rate changes and preserve the profits...</div>
+</div>
+<div class="notice-card">
+<div class="notice-card-title">[Notice] Galaxy Store Sales Tax Remittance</div>
+<div class="notice-card-date">2024-03-28</div>
+<div class="notice-card-body">Galaxy Store Sales Tax Remittance For any purchase made in Galaxy Store, Galaxy Store automatically collects the sales tax or value added tax (VAT) from the user according to the tax laws of each country. In this notice, "sales...</div>
+</div>
+<div class="notice-card">
+<div class="notice-card-title">[Notice] Notice on conversion to free store (6 countries includi...</div>
+<div class="notice-card-date">2024-02-22</div>
+<div class="notice-card-body">A message from the Galaxy Store Seller Portal. From March 4, 2024, sales of paid content (paid apps, IAP content, etc.) will be discontinued in the six countries below: • Armenia • Ghana • Kenya • Kyrgyzstan •</div>
+</div>
+</div>
+<div class="main-center">
+<div class="main-center-header">
+<div class="main-center-header-title">Notices</div>
+<button class="main-center-header-button">+ More</button>
+</div>
+<div class="main-center-notices">
+<div class="main-center-notices-notice">
+<div class="main-center-notices-notice-title">[Notice] Change of payment currencies in 5 countries an...</div>
+<div class="main-center-notices-notice-date">2024-05-20</div>
+<div class="main-center-notices-notice-body">Hello! This is the Galaxy Store Seller Portal. Thank you for always using the Seller Portal and for your continued interest. To reduce fluctuations in product prices due to some exchange rate changes and preserve the profits...</div>
+</div>
+<div class="main-center-notices-notice">
+<div class="main-center-notices-notice-title">[Notice] Galaxy Store Sales Tax Remittance</div>
+<div class="main-center-notices-notice-date">2024-03-28</div>
+<div class="main-center-notices-notice-body">Galaxy Store Sales Tax Remittance For any purchase made in Galaxy Store, Galaxy Store automatically collects the sales tax or value added tax (VAT) from the user according to the tax laws of each country. In this notice, "sales...</div>
+</div>
+<div class="main-center-notices-notice">
+<div class="main-center-notices-notice-title">[Notice] Notice on conversion to free store (6 countries includi...</div>
+<div class="main-center-notices-notice-date">2024-02-22</div>
+<div class="main-center-notices-notice-body">A message from the Galaxy Store Seller Portal. From March 4, 2024, sales of paid content (paid apps, IAP content, etc.) will be discontinued in the six countries below: <ul class="main-center-notices-notice-body-bullet"><li>Armenia</li><li>Ghana</li><li>Kenya</li><li>Kyrgyzstan</li></ul></div>
+</div>
+</div>
+<div class="main-center-separator"></div>
+<div class="main-center-separator-line"></div>
+<div class="main-center-button">
+<div class="main-center-button-inner"></div>
+</div>
+</div>
+<div class="main-right">
+<div class="main-right-notices">
+<div class="main-right-notices-notice">
+<div class="main-right-notices-notice-title">[Notice] Change of payment currencies in 5 countries an...</div>
+<div class="main-right-notices-notice-date">2024-05-20</div>
+<div class="main-right-notices-notice-body">Hello! This is the Galaxy Store Seller Portal. Thank you for always using the Seller Portal and for your continued interest. To reduce fluctuations in product prices due to some exchange rate changes and preserve the profits...</div>
+</div>
+<div class="main-right-notices-notice">
+<div class="main-right-notices-notice-title">[Notice] Galaxy Store Sales Tax Remittance</div>
+<div class="main-right-notices-notice-date">2024-03-28</div>
+<div class="main-right-notices-notice-body">Galaxy Store Sales Tax Remittance For any purchase made in Galaxy Store, Galaxy Store automatically collects the sales tax or value added tax (VAT) from the user according to the tax laws of each country. In this notice, "sales...</div>
+</div>
+<div class="main-right-notices-notice">
+<div class="main-right-notices-notice-title">[Notice] Notice on conversion to free store (6 countries includi...</div>
+<div class="main-right-notices-notice-date">2024-02-22</div>
+<div class="main-right-notices-notice-body">A message from the Galaxy Store Seller Portal. From March 4, 2024, sales of paid content (paid apps, IAP content, etc.) will be discontinued in the six countries below: • Armenia • Ghana • Kenya • Kyrgyzstan •</div>
+</div>
+</div>
+<div class="main-right-more">+ More</div>
+<div class="main-right-separator"></div>
+<div class="main-right-separator-line"></div>
+</div>
+</div>
+<div class="footer">
+<div class="footer-left">
+<a class="footer-link" href="#">Terms and Conditions</a>
+<a class="footer-link" href="#">Privacy Policy</a>
+<a class="footer-link" href="#">Seller Portal Policy</a>
+<a class="footer-link" href="#">Guides</a>
+<a class="footer-link" href="#">Related Sites</a>
+</div>
+<div class="footer-right">
+<div class="footer-copyright">Copyright © 2009-2024 SAMSUNG All Rights Reserved.</div>
+</div>
+</div>
+</body>
+</html>
+</p></body></html>

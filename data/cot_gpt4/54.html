@@ -1,0 +1,289 @@
+<html><body><p>
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Launchpad</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #ffffff;
+            color: #000000;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+            background: #f9f9f9;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .login-register {
+            font-size: 14px;
+        }
+        .search-bar {
+            display: flex;
+            margin: 20px 0;
+            justify-content: center;
+        }
+        .search-bar input[type="text"] {
+            padding: 10px;
+            width: 50%;
+            font-size: 18px;
+        }
+        .search-bar input[type="submit"] {
+            padding: 10px 20px;
+            font-size: 18px;
+            background: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .stats {
+            text-align: center;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+        .main-content {
+            padding: 0 20px;
+            text-align: center;
+        }
+        .main-content h1 {
+            font-size: 36px;
+        }
+        .main-content .platform {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        .grid-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .grid-item {
+            width: 23%;
+            margin: 10px 0;
+            text-align: left;
+        }
+        .grid-item h3 {
+            font-size: 18px;
+            color: #1E88E5;
+        }
+        .grid-item p {
+            font-size: 14px;
+            color: #333;
+        }
+        .get-started {
+            text-align: center;
+            margin: 30px 0;
+            font-size: 14px;
+        }
+        .get-started a {
+            margin: 0 15px;
+            display: inline-block;
+            padding: 10px 20px;
+            border: 1px solid #1E88E5;
+            color: #1E88E5;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .featured-projects, .blog-posts {
+            padding: 0 20px;
+        }
+        .featured-projects h2, .blog-posts h2 {
+            font-size: 24px;
+        }
+        .featured-projects .project, .blog-posts .post {
+            border: 1px solid #e0e0e0;
+            padding: 10px;
+            margin: 10px 0;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+        }
+        .featured-projects .project img, .blog-posts .post img {
+            width: 50px;
+            height: 50px;
+            margin-right: 15px;
+        }
+        .blog-posts .post {
+            text-align: left;
+        }
+        .blog-posts .post h3 {
+            font-size: 16px;
+            color: #1E88E5;
+        }
+        .blog-posts .post p {
+            color: #555;
+        }
+        .footer {
+            text-align: center;
+            padding: 10px;
+            border-top: 1px solid #e0e0e0;
+            font-size: 12px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+<header>
+<div class="login-register">
+<a href="#">Log in / Register</a>
+</div>
+</header>
+<div class="search-bar">
+<input placeholder="Search" type="text"/>
+<input type="submit" value="Search"/>
+</div>
+<div class="stats">
+<p>46,521 projects, 2,043,171 bugs, 1,009,369 branches, 76,692 git repositories, 3,113,649 translations, 813,706 answers, 76,676 blueprints, and counting...</p>
+</div>
+<div class="main-content">
+<h1>Launchpad</h1>
+<p class="platform">A software collaboration platform that provides</p>
+<div class="grid-container">
+<div class="grid-item">
+<h3>Bug tracking</h3>
+<p>One place to track bugs across project boundaries and tools</p>
+</div>
+<div class="grid-item">
+<h3>Code hosting using Git and Bazaar</h3>
+<p>Easy for anyone to get your project's code using Git &amp; Bazaar</p>
+</div>
+<div class="grid-item">
+<h3>Code reviews</h3>
+<p>Full control of who can land code in your project; remains with you</p>
+</div>
+<div class="grid-item">
+<h3>Ubuntu package building and hosting</h3>
+<p>Publishing your software is simple with Personal Package Archives</p>
+</div>
+<div class="grid-item">
+<h3>Crowd source translations</h3>
+<p>Build an open community to translate your software into almost any language</p>
+</div>
+<div class="grid-item">
+<h3>Mailing lists</h3>
+<p>Find and work with the right people by building a social network of individuals and teams around projects</p>
+</div>
+<div class="grid-item">
+<h3>Answer tracking and FAQs</h3>
+<p>Free software thrives on people helping each other when the unexpected happens</p>
+</div>
+<div class="grid-item">
+<h3>Specification tracking</h3>
+<p>Track ideas and chunks of work as "Blueprints"</p>
+</div>
+</div>
+</div>
+<div class="get-started">
+<p>Learn more about Launchpad in the <a href="#">user guide</a> or try it for yourself in our <a href="#">sandbox environment</a>. If you're ready, you can:</p>
+<a href="#">Create an account</a>
+<a href="#">Take the tour</a>
+<a href="#">Find answers</a>
+</div>
+<div class="featured-projects">
+<h2>Featured projects</h2>
+<div class="project">
+<img alt="Beautiful Soup" src="placeholder.png"/>
+<div>
+<h3>Beautiful Soup</h3>
+<p>A program designed for screen-scraping HTML. The discussion group is at http://groups.google.com/...</p>
+</div>
+</div>
+<div class="project">
+<img alt="Breezy" src="placeholder.png"/>
+<div>
+<h3>Breezy</h3>
+<p>Breezy is a friendly powerful distributed version control system.</p>
+</div>
+</div>
+<div class="project">
+<img alt="Inkscape" src="placeholder.png"/>
+<div>
+<h3>Inkscape</h3>
+<p>Inkscape is an SVG-based graphics editor featuring alpha blending, node editing, SVG to PNG expo...</p>
+</div>
+</div>
+<div class="project">
+<img alt="Landscape Server" src="placeholder.png"/>
+<div>
+<h3>Landscape Server</h3>
+<p>Web-based tool for managing Ubuntu systems.</p>
+</div>
+</div>
+<div class="project">
+<img alt="Launchpad itself" src="placeholder.png"/>
+<div>
+<h3>Launchpad itself</h3>
+<p>Launchpad is a set of web services to help software developers collaborate.</p>
+</div>
+</div>
+<div class="project">
+<img alt="OpenMW" src="placeholder.png"/>
+<div>
+<h3>OpenMW</h3>
+<p>OpenMW is an attempt to reimplement the popular role-playing game Morrowind. It aims to be a full...</p>
+</div>
+</div>
+<div class="project">
+<img alt="OpenShot Video Editor" src="placeholder.png"/>
+<div>
+<h3>OpenShot Video Editor</h3>
+<p>OpenShot video editor is a free, open-source, non-linear video editor. It can create and edit vid...</p>
+</div>
+</div>
+<div class="project">
+<img alt="OpenStack" src="placeholder.png"/>
+<div>
+<h3>OpenStack</h3>
+<p>The OpenStack Open Source Cloud Mission: to produce the ubiquitous Open Source Cloud Computing p...</p>
+</div>
+</div>
+<div class="project">
+<img alt="Ubuntu" src="placeholder.png"/>
+<div>
+<h3>Ubuntu</h3>
+<p>Ubuntu is a complete Linux-based operating system, freely available with both community and profe...</p>
+</div>
+</div>
+<div class="project">
+        Browse all 465231 projects
+    </div>
+</div>
+<div class="blog-posts">
+<h2>Recent Launchpad blog posts</h2>
+<div class="post">
+<h3><a href="#">Launchpad's new homepage</a> - 04 Mar 2024</h3>
+<p>Launchpad's new homepage Launchpad has been around for a while, and its frontpage has remained untouched for a few years now. If you go to <a href="#">launchpad.net</a> now, you'll notice it looks different from what it has looked like for the past 10 years - it has been updated! The goal was to modernize it w...</p>
+</div>
+<div class="post">
+<h3><a href="#">Launchpad added Federated Matrix Accounts</a> - 23 Jan 2024</h3>
+<p>Launchpad added Federated Matrix accounts to further open the platform, as requested by Canonical's Community Team. We also took the chance to play with the new Mastodon and other majorly social accounts in user profiles. Instead of having different sections in the profile for each social account, all accoun...</p>
+</div>
+<div class="post">
+<h3><a href="#">Get your SSH keys for tasks for free</a> - 22 Nov 2023</h3>
+<p>Launchpad also supports multiple SSH keys for a while now, since it was a requirement to get into Ubuntu's fold-for git, pkg, etc. We don't actually have a vault, however in the field domain, as we find we need hosted services for whatever the hypervisor extension and that's all it's intricate-never needed, so for important sections of Nicola we've built 3 Android Hardware-...</p>
+</div>
+<div class="post">
+<h3><a href="#">Introducing Pre-Signed Access Tokens</a> - 16 Nov 2023</h3>
+<p>Access tokens can be used to access repositories on behalf of someone. They have scope limitations, optional expiry dates, and can be revoked at any time. They also share some central similarities to using your email authorization when needing to authenticate pushing under GitHub from your own repositories. This is a concept that has m...</p>
+</div>
+<div class="post">
+<h3><a href="#">New domain names for PPAs</a> - 16 Oct 2023</h3>
+<p>Since they were introduced in 2006, Canonical's Personal Package Archives (PPAs) have always been hosted on ppa.launchpad.net. That has generally worked well, but we also suspect Launchpad became harder for us; it was difficult to add HTTPS support for PPAs due to the way that cookies work on the web. Launchpad uses a cookie for all w...</p>
+</div>
+<div class="post">
+<h3><a href="#">Reduce spam in the bug notifier</a> - 04 May 2020</h3>
+<p>To improve the chances of our messages being delivered without getting filtered as spam, we've introduced a simple change in our bug notifications that changes the name and address of the email used. It Works™!This email sent Launchpad adds a kind of email redirect, on which the results of Launchpad users performing some kind of action. For example, when somebody adds a comment to a bug, Launchpad sends [...]</p>
+</div>
+</div>
+<div class="footer">
+<p>© 2004 Canonical Ltd. • <a href="#">Terms of use</a> • <a href="#">Data privacy</a> • <a href="#">Contact Launchpad Support</a> • <a href="#">Blog</a> • <a href="#">Careers</a> • <a href="#">System status</a> • 061c47dc (Get the code!)</p>
+</div>
+</body>
+</html>
+</p></body></html>
