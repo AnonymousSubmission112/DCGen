@@ -1,8 +1,7 @@
 This is the artifact for the paper "Divide-and-Conquer: Generating UI Code from Screenshots". This artifact supplies the DCGen toolkit and supplementary materials for the paper. 
 
 
-
-**This repository contains:**
+This repository contains:
 
 1. **Code implementation of DCGen**, i.e., the Python script and instructions to run DCGen to preprocess websites, segment images, and generate UI code from screenshot with DCGen algorithm. 
 2. **Sample dataset**. The sample of our experiment data (both original and generated) is available in `/data`. We will release the full dataset as soon as the paper is published.
@@ -10,9 +9,7 @@ This is the artifact for the paper "Divide-and-Conquer: Generating UI Code from 
 4. **A user-friendly tool based on DCGen**.
 
 
-
 Quick links: [Demo video](#Demo-video) | [Successful cases](#Successful-cases) | [Code usage](#Code-usage) | [Tool usage](#DCGen-tool) 
-
 
 
 # Abstract
@@ -25,15 +22,13 @@ To explore automatic design-to-code solutions, we begin with a motivating study 
 
 This video demonstrates how developers can use DCGen to create a webpage from a UI design through *simple copy and paste*. DCGen enables users to review and regenerate code for specific image segments, easily replacing any erroneous code with the correct version for the final webpage.
 
-
-
-
+https://github.com/user-attachments/assets/0c85b175-5e4a-4db8-97c6-97de3aad09fb
 
 # Successful cases
 
 Here are examples from the usefulness study. DCGen demonstrates its effectiveness by significantly reducing element omissions and distortions, leading to faster development and improved webpage quality.
 
-<img src="./assets/case_usefulness.png" alt="case_usefulness" style="zoom: 33%;" />
+<img src="./assets/case_usefulness.png" alt="case_usefulness" style="zoom: 30%;" />
 
 
 
