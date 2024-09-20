@@ -1,28 +1,52 @@
-# Introduction
-
 This is the artifact for the paper "Divide-and-Conquer: Generating UI Code from Screenshots". This artifact supplies the DCGen toolkit and supplementary materials for the paper. 
-
-
-
-In this paper, to explore automatic design-to-code solutions, we first conduct a motivating study on GPT-4o and identify three types of issues in generating UI code: element omission, element distortion, and element misarrangement. We further reveal that a focus on smaller visual segments can help multimodal large language models (MLLMs) mitigate these failures in the generation process. In this paper, we propose DCGen, a divide-and-conquer-based approach to automate the translation of webpage design to UI code. DCGen starts by dividing screenshots into manageable segments, generating descriptions for each segment, and then reassembling them into complete UI code for the entire screenshot. We conduct extensive testing with a dataset comprised of real-world websites and various MLLMs and demonstrate that DCGen achieves up to a 14\% improvement in visual similarity over competing methods. Human evaluations show that DCGen can help developers implement webpages significantly faster and more similar to the UI designs. To the best of our knowledge, DCGen is the first segment-aware MLLM-based approach for generating UI code directly from screenshots.
 
 
 
 **This repository contains:**
 
-1. **Code implementation of DCGen**, i.e., the Python script and instructions to run DCGen to preprocess websites, segment images, and generate UI code from screenshot with DCGen algorithm.
-2. **Sample dataset**. The sample of our experiment data (original and generated) is available in `/data`. We will release the full dataset as soon as the paper is published.
+1. **Sample dataset**. The sample of our experiment data (both original and generated) is available in `/data`. We will release the full dataset as soon as the paper is published.
+2. **Code implementation of DCGen**, i.e., the Python script and instructions to run DCGen to preprocess websites, segment images, and generate UI code from screenshot with DCGen algorithm.
 3. **A user-friendly tool based on DCGen**. 
+4. **Link to supplementary materials.** We provide all the screen recordings in the usefulness study and our prompt details via this [link](https://drive.google.com/drive/folders/1FnR6MTKCSWFsUP__qO-J5YRhSB7RRDI-?usp=sharing) 
 
 
 
-# Code implementation
+Quick links: [Demo video](#Demo-video) | [Successful cases](#Successful-cases) | [Code usage](#Code-usage) | [Tool usage](#DCGen-tool) 
+
+
+
+# Abstract
+
+To explore automatic design-to-code solutions, we begin with a motivating study on GPT-4o, identifying three key issues in UI code generation: element omission, distortion, and misarrangement. We find that focusing on smaller visual segments helps multimodal large language models (MLLMs) mitigate these failures. In this paper, we introduce DCGen, a divide-and-conquer approach that automates the translation of webpage designs into UI code. DCGen divides screenshots into manageable segments, generates descriptions for each, and reassembles them into a complete UI code for the full design. Extensive testing on real-world websites and various MLLMs demonstrates that DCGen improves visual similarity by up to 14% compared to competing methods. Human evaluations confirm that DCGen enables developers to implement webpages faster and with greater fidelity to the original designs. To our knowledge, DCGen is the first segment-aware, MLLM-based solution for generating UI code directly from screenshots.
+
+
+
+# Demo video
+
+This video demonstrates how developers can use DCGen to create a webpage from a UI design through *simple copy and paste*. DCGen enables users to review and regenerate code for specific image segments, easily replacing any erroneous code with the correct version for the final webpage.
+
+<video src="./assets/demo.mp4"></video>
+
+
+
+# Successful cases
+
+Here are examples from the usefulness study. DCGen demonstrates its effectiveness by significantly reducing element omissions and distortions, leading to faster development and improved webpage quality.
+
+<img src="C:\Users\Tony\Desktop\3rd_iter\user_study\figs\case_usefulness.png" alt="case_usefulness" style="zoom: 33%;" />
+
+
+
+
+
+# Code usage
 
 ## 0. Setup
 
-```sh
+```she
 pip install -r requirements.txt
 ```
+
 
 ```python
 from utils import *
@@ -83,3 +107,28 @@ dc_trace.display_tree()
 	cd metrics/Design2Code
 	python metrics/multi_processing_eval.py
 
+
+
+# DCGen tool
+
+1. Start the server
+
+```shell
+cd Tool
+python app.py
+```
+
+2. Visit http://127.0.0.1:5000 via local browser
+
+3. Usage:
+
+   **Generate image for entire screenshot**
+   <img src="./assets/dcgenui1.png" alt="dcgenui1" style="zoom:20%;" />
+
+   **View the code of any image segment**
+   <img src="./assets/dcgenui2.png" alt="dcgenui2" style="zoom:20%;" />
+
+   **Generate code for a image segment**
+   <img src="./assets/dcgenui3.png" alt="dcgenui3" style="zoom:20%;" />
+
+   
