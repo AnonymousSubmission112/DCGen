@@ -25,7 +25,8 @@ To explore automatic design-to-code solutions, we begin with a motivating study 
 
 This video demonstrates how developers can use DCGen to create a webpage from a UI design through *simple copy and paste*. DCGen enables users to review and regenerate code for specific image segments, easily replacing any erroneous code with the correct version for the final webpage.
 
-https://user-images.githubusercontent.com/AnonymousSubmission112/DCGen/raw/main/assets/demo.mp4
+
+
 
 
 # Successful cases
