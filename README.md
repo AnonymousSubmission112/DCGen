@@ -26,7 +26,7 @@ https://github.com/user-attachments/assets/93e70ae9-c119-4838-94c8-6628be5af7d5
 
 # Examples
 
-Here are examples from the usefulness study. DCGen demonstrates its effectiveness by significantly reducing element omissions and distortions, leading to faster development and improved webpage quality.
+Here are two examples from the usefulness study. DCGen demonstrates its effectiveness by significantly reducing element omissions and distortions, leading to faster development and improved webpage quality.
 
 <img src="./assets/case_usefulness.png" alt="case_usefulness" style="zoom: 30%;" />
 
