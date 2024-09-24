@@ -14,3 +14,4 @@ pyqt5
 lxml==5.2.2
 BeautifulSoup4 
 requests
+flask=3.0.3

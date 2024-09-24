@@ -6,10 +6,10 @@ This repository contains:
 1. **Code implementation of DCGen**, i.e., the Python script and instructions to run DCGen to preprocess websites, segment images, and generate UI code from screenshots with DCGen algorithm. 
 2. **Sample dataset**. The sample of our experiment data (both original and generated) is available in `/data`. We will release the full dataset as soon as the paper is published.
 3. **Link to supplementary materials.** We provide all the screen recordings in the usefulness study and our prompt details via this [link](https://drive.google.com/drive/folders/1FnR6MTKCSWFsUP__qO-J5YRhSB7RRDI-?usp=sharing).
-4. **A user-friendly tool based on DCGen**.
+4. **A user-friendly tool based on DCGen**. You can try out the tool [here](http://13.229.66.240:8080/).
 
 
-Quick links: [Demo video](#Demo-video) | [DCGen Examples](#Examples) | [Code usage](#Code-usage) | [Tool usage](#DCGen-tool) 
+Quick links:  [Online tool](http://13.229.66.240:8080/) | [Demo video](#Demo-video) | [DCGen Examples](#Examples) | [Code usage](#Code-usage) | [Tool usage](#DCGen-tool) 
 
 
 # Abstract
@@ -80,6 +80,14 @@ dc_trace.display_tree()
 
 ## 4. Calculate Score (linux only)
 
+0. Install requirements for the metric toolkit
+
+   ```shell
+   pip install -r metrics/requirements.txt
+   ```
+
+   
+
 1. Modify configurations in `./metrics/Design2Code/metrics/multi_processing_eval.py`: 
 
    ```python
@@ -103,12 +111,18 @@ dc_trace.display_tree()
 
 # DCGen tool
 
-1. Start the server
+**Online demo**
 
-```shell
-cd Tool
-python app.py
-```
+A online demo of the tool is available at this [link](http://13.229.66.240:8080/). 
+
+**Run locally**
+
+1. Start a server
+
+  ```shell
+  cd Tool
+  python app.py
+  ```
 
 2. Visit http://127.0.0.1:5000 via local browser
 
