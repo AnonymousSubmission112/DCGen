@@ -3,13 +3,13 @@ This is the artifact for the paper "Divide-and-Conquer: Generating UI Code from 
 
 This repository contains:
 
-1. **Code implementation of DCGen**, i.e., the Python script and instructions to run DCGen to preprocess websites, segment images, and generate UI code from screenshot with DCGen algorithm. 
+1. **Code implementation of DCGen**, i.e., the Python script and instructions to run DCGen to preprocess websites, segment images, and generate UI code from screenshots with DCGen algorithm. 
 2. **Sample dataset**. The sample of our experiment data (both original and generated) is available in `/data`. We will release the full dataset as soon as the paper is published.
 3. **Link to supplementary materials.** We provide all the screen recordings in the usefulness study and our prompt details via this [link](https://drive.google.com/drive/folders/1FnR6MTKCSWFsUP__qO-J5YRhSB7RRDI-?usp=sharing).
 4. **A user-friendly tool based on DCGen**.
 
 
-Quick links: [Demo video](#Demo-video) | [Successful cases](#Successful-cases) | [Code usage](#Code-usage) | [Tool usage](#DCGen-tool) 
+Quick links: [Demo video](#Demo-video) | [DCGen Examples](#Examples) | [Code usage](#Code-usage) | [Tool usage](#DCGen-tool) 
 
 
 # Abstract
@@ -22,16 +22,13 @@ To explore automatic design-to-code solutions, we begin with a motivating study 
 
 This video demonstrates how developers can use DCGen to create a webpage from a UI design through *simple copy and paste*. DCGen enables users to review and regenerate code for specific image segments, easily replacing any erroneous code with the correct version for the final webpage.
 
-https://github.com/user-attachments/assets/0c85b175-5e4a-4db8-97c6-97de3aad09fb
+https://github.com/user-attachments/assets/93e70ae9-c119-4838-94c8-6628be5af7d5
 
-# Successful cases
+# Examples
 
-Here are examples from the usefulness study. DCGen demonstrates its effectiveness by significantly reducing element omissions and distortions, leading to faster development and improved webpage quality.
+Here are two examples from the usefulness study. DCGen demonstrates its effectiveness by significantly reducing element omissions and distortions, leading to faster development and improved webpage quality.
 
 <img src="./assets/case_usefulness.png" alt="case_usefulness" style="zoom: 30%;" />
-
-
-
 
 
 # Code usage
