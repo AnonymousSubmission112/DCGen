@@ -69,8 +69,8 @@ def generate():
     # create bot
     if algo == 'Line Detection':
         try:
-            bot = GPT4(key, model="gpt-4o", patience=2)
-            # bot = GPT4("../keys/key_self.txt", model="gpt-4o")
+            # bot = GPT4(key, model="gpt-4o", patience=2)
+            bot = GPT4("./demo.key", model="gpt-4o")
             # bot = FakeBot(key)
             # convert base64 to image
             img = Image.open(BytesIO(base64.b64decode(image_base64.split(',')[1])))
