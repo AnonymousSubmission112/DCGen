@@ -1,4 +1,4 @@
-This is the artifact for the paper "Divide-and-Conquer: Generating UI Code from Screenshots". This artifact supplies the DCGen toolkit and supplementary materials for the paper. Please try our online tool at [Online tool](http://13.229.66.240:8080/)!!!
+This is the artifact for the paper "Divide-and-Conquer: Generating UI Code from Screenshots". This artifact supplies the DCGen toolkit and supplementary materials for the paper. Please try our online tool at [Online tool](http://47.129.250.221:8080/)!!!
 
 
 This repository contains:
@@ -113,7 +113,7 @@ dc_trace.display_tree()
 
 **Online demo**
 
-A online demo of the tool is available at this [link](http://13.229.66.240:8080/). 
+A online demo of the tool is available at this [link](http://47.129.250.221:8080/). 
 
 **Run locally**
 
